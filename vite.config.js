@@ -6,7 +6,12 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [vue(), vueDevTools()],
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url))
+    }
+  },
   build: {
     outDir: 'dist', // 必须与 vercel.json 中的 distDir 一致
     assetsDir: 'assets', // 静态资源目录
