@@ -1,0 +1,66 @@
+.father_box {
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    background: #fff;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    /* 小标题共用 */
+    .title {
+        font-size: 32px;
+        color: #0037ff7e;
+    }
+    .title_en {
+        font-size: 22px;
+        margin-top: 5px;
+        color: #ccc;
+    }
+    .intro {
+        color:rgb(17, 17, 17);
+        font-size: 19px;
+    }
+    .title_en::after{
+        content: "";
+        display: block;
+        width: 100px;
+        height: 2px;
+        background-color: #ccc;
+        margin: 20px 0 40px 0;
+    }
+
+    /* 更多箭头 */
+    .card-more {
+        width: 35px;
+        height: 25px;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        border-radius: 5px;
+        background-color: #7e98f8;
+        text-align: center;
+        border: 2px solid #ffffffcf;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        p {
+            font-weight: 700;
+            transition: all 0.3s ease;
+            color: #fff;
+        }
+    }
+
+    /* 视察滚动 */
+    .scoll_common {
+        position: relative;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        background-attachment: fixed;
+    }
+}

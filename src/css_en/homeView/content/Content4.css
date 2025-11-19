@@ -1,0 +1,208 @@
+.content4 {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .scoll_backImg {
+        width: 100%;
+        height: 600px;
+        background-image: url('@/assets/img/scoll/scoll1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        position: relative;
+
+        .scoll_cover {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 600px;
+            background-image: linear-gradient(-65deg, rgba(49, 51, 53, 0.9) 20%, rgba(4, 65, 144, 0.9) 90%);
+            opacity: 0.6;
+        }
+
+        .cover_content {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 500px;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+
+            .content_desc {
+                h2 {
+                    margin-top: 60px;
+                    font-size: 30px;
+                    font-weight: normal;
+                    color: white;
+                    margin-bottom: 0px;
+                }
+
+                span {
+                    color: rgba(255, 255, 255, .8);
+                    font-size: 20px;
+                }
+                span:after {
+                    content: "";
+                    display: block;
+                    width: 130px;
+                    height: 1.5px;
+                    background-color: white;
+                    margin: 10px auto;
+                }
+            }
+            
+            .content_body {
+                margin-top: 40px;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 1px;
+
+                .nums_display {
+                    height: 200px;
+                    width: 350px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    gap: 10px;
+                    p {
+                        color: #fff;
+                        font-weight: 600;
+                        margin: 0;
+                    }
+                    .num {
+                        font-size: 60px;
+                        font-weight: 600;
+                        margin-right: 5px;
+                        background-image: linear-gradient(45deg, #90c7ff, #569df0);
+                        color: transparent;
+                        background-clip: text;
+                    }
+                }
+
+                .nums_display::after {
+                    content: "";
+                    display: block;
+                    width: 1px;
+                    height: 30px;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+
+    .scoll_content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        .scoll_content1 {
+            width: 1400px;
+            height: 140px;
+            border-radius: 6px;
+            background-image: linear-gradient(360deg, #eae8e1, #fff);
+
+            transform: translateY(-70px);
+        }
+
+        .scoll_content2 {
+            margin-top: -20px ;
+
+            width: 100%;
+            height: 135px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            h2 {
+                font-size: 30px;
+                font-weight: 400;
+                color: #0037ff7e;
+                margin-bottom: 0;
+            }
+
+            span {
+                font-size: 20px;
+                color: #ccc;
+            }
+            span::after {
+                content: "";
+                display: block;
+                width: 150px;
+                height: 2px;
+                background-color: #ccc;
+                margin: 10px auto;
+            }
+        }
+        .p3 {
+            text-align: center;
+        }
+
+        .scoll_content3 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            gap: 15px;
+            margin: 60px 0 100px 0;
+
+            .content3_body {
+                height: 350px;
+                width: 250px;
+                padding: 5px;
+                border-radius: 6px;
+                border: 1px solid #eee;
+                box-shadow: 0 2px 5px 2px rgba(0, 79, 144, 0.1);
+                transition: all 0.3s ease;
+
+                img {
+                width: 100%;
+                height: 150px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                }
+
+                p {
+                    width: 100%;
+                    font-size: 20px;
+                    color: #0037ff7e;
+                    margin: 10px 0;
+                    text-align: center;
+                }
+
+                span {
+                    font-size: 14px;
+                    color: #333;
+                    line-height: 10px;
+                    text-align: justify;
+                    margin-bottom: 0;
+                    line-height: 1.4;
+                }
+            }
+
+            .content3_body:hover {
+                transform: translateY(-5px);
+                transition: all 0.3s ease;
+                background-color: white;
+                filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+                cursor: default;
+            }
+        }
+    }
+}
