@@ -12,16 +12,24 @@
   ],
   "routes": [
     {
-      "src": "/",
+      "src": "^/assets/(.*)$",
+      "dest": "/assets/$1"
+    },
+    {
+      "src": "^/([^/]+\\.\\w+)/?$",
       "dest": "/index.html"
     },
     {
-      "src": "/favicon.ico",
-      "dest": "/favicon.ico"
+      "src": "^/(company|company_en)/(.*)$",
+      "dest": "/index.html"
     },
     {
-      "src": "/assets/(.*)",  
-      "dest": "/assets/$1"
+      "src": "^/(en)/?$",
+      "dest": "/index.html"
+    },
+    {
+      "src": "^/$",
+      "dest": "/index.html"
     }
   ]
 }
