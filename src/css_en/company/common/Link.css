@@ -23,7 +23,7 @@
 .menu-item {
     padding: 20px 20px;
     margin: 0 5px;
-    background-color: #418cdc2f;
+    background-color: #418cdc6f;
     border-bottom: 3px solid transparent;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -41,15 +41,9 @@
 }
 
 .menu-item.active {
-    background: linear-gradient(90deg, #44a2ffb0 0%, #6fc4fdb0 50%, #00a2ffb0 100%);
+    background: linear-gradient(90deg, #44a2ffd0 0%, #6fc4fdd0 50%, #00a2ffd0 100%);
     color: white;
     border-bottom: 3px solid #0056b3;
-}
-
-.menu-item.current-region {
-    background: linear-gradient(90deg, #0056b3, #003d80);
-    color: white;
-    font-weight: bold;
 }
 
 .content {
@@ -80,10 +74,4 @@
     color: white;
     cursor: pointer;
     transition: all 0.3s ease;
-}
-
-.country-item.active-country {
-    background: linear-gradient(90deg, #007bff, #0056b3);
-    color: white;
-    font-weight: bold;
 }
