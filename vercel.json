@@ -2,33 +2,18 @@
   "version": 2,
   "builds": [
     {
-      "src": "index.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "assets/**/*",  
-      "use": "@vercel/static"
+      "src": "package.json",
+      "use": "@vercel/node",
+      "config": {
+        "buildCommand": "npm run build",
+        "outputDirectory": "dist"
+      }
     }
   ],
   "routes": [
+    { "handle": "filesystem" },
     {
-      "src": "^/assets/(.*)$",
-      "dest": "/assets/$1"
-    },
-    {
-      "src": "^/([^/]+\\.\\w+)/?$",
-      "dest": "/index.html"
-    },
-    {
-      "src": "^/(company|company_en)/(.*)$",
-      "dest": "/index.html"
-    },
-    {
-      "src": "^/(en)/?$",
-      "dest": "/index.html"
-    },
-    {
-      "src": "^/$",
+      "src": "/(.*)",
       "dest": "/index.html"
     }
   ]
