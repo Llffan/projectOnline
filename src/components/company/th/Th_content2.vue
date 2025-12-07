@@ -8,9 +8,9 @@
                 <div class="intro">
                     <img src="@/assets/img/company/th/TH-2.jpg" alt="">
                     <div class="text">
-                        <P>泰国是东南亚第二大经济体，拥有开放的投资环境和良好的基础设施。</P>
-                        <P>作为东盟重要成员国，泰国与中国有着密切的经贸往来，在"一带一路"倡议下合作不断深化。</P>
-                        <P>凭借独特的地理优势和丰富的自然资源，泰国成为外国投资者在东南亚的重要投资目的地。</P>
+                        <P>泰国历来注重吸引外商投资，是东南亚地区较为吸引外商投资的国家之一。</P>
+                        <P>根据泰国投资促进协会（BOI）公布的数据，2022年季度外商直接投资占计划总额的70%，与以往相比增长了29%。</P>
+                        <P>相对稳定的社会环境、较高的政策透明度和经济发展水平，使得泰国吸引了越来越多的投资者。</P>
                     </div>
                 </div>
             </div>
@@ -31,27 +31,27 @@
             </div>
             <div class="content3">
                 <div class="title">
-                    条件和所需资料
+                    泰国公司注册条件和所需资料
                 </div>
                 <div class="intro">
                     <div class="left">
-                        <div class="condition-item">年满18岁以上的股东或董事</div>
-                        <div class="condition-item">注册地址（我司提供）</div>
-                        <div class="condition-item">法定秘书（我司提供）</div>
-                        <div class="condition-item">公司章程</div>
+                        <div class="condition-item">至少需要有3名发起人</div>
+                        <div class="condition-item">至少需要有1名董事（指定泰国人）及1名审计</div>
+                        <div class="condition-item">公司股东必须出资公司全部股份的25%</div>
+                        <div class="condition-item">召开股东会议，股东享有表决权</div>
                     </div>
                     <div class="center"></div>
                     <div class="right">
-                        <div class="condition-item">董事和股东身份证明文件</div>
-                        <div class="condition-item">公司名称（提供多个备选）</div>
-                        <div class="condition-item">注册资本</div>
-                        <div class="condition-item">签署相关文件</div>
+                        <div class="condition-item">如符合条件，外国人可以拥有100%股权</div>
+                        <div class="condition-item">以公司章程和组织大纲的登记为公司组成程序</div>
+                        <div class="condition-item">确认泰国公司注册地址</div>
+                        <div class="condition-item">拟定公司经营范围和注册资本</div>
                     </div>
                 </div>
             </div>
             <div class="content4">
                 <div class="title">
-                    公司注册流程
+                    泰国公司注册流程
                 </div>
                 <div class="intro">
                     <div v-for="(item, index) in registrationProcess" :key="index" class="advantage">
@@ -87,7 +87,7 @@
             </div>
             <div class="content6">
                 <div class="title">
-                    注册泰国公司常见问题
+                    泰国公司注册常见问题
                 </div>
                 <div class="intro">
                     <div 
@@ -126,110 +126,106 @@ gsap.registerPlugin(ScrollTrigger)
 const registrationProcess = [
     {
         img: '',
-        title: '开始公司核名',
-        description: '核名查询，核验名称是否可用。'
+        title: '第一步 泰国公司核名',
+        description: '提供3个英文公司名称，并递交商业发展厅申请核准'
     },
     {
         img: '',
-        title: '选择注册地址',
-        description: '确定可注册公司用的地址，我司可提供。'
+        title: '第二步 准备注册材料',
+        description: '确认注册地址、拟定经营范围、注册资本等'
     },
     {
         img: '',
-        title: '办理税务登记',
-        description: '专属财税顾问免费提供日常财务账目管理建议。'
+        title: '第三步 申请注册公司',
+        description: '由法定签字人签字盖章后递交商业发展厅注册'
     },
     {
         img: '',
-        title: '提交申请资料',
-        description: '提供法人/股东身份证原件复印件、 固定电话、等相关材料。'
+        title: '第四步 开通银行账户',
+        description: '公司注册完成后，前往银行申请开通公司帐户'
     },
     {
         img: '',
-        title: '领取营业执照',
-        description: '公司注册顺利完成，顾问将营业执照正/副本等交付。'
+        title: '第五步 后续服务',
+        description: '提供年审、变更、注销等后续服务'
     },
     {
         img: '',
-        title: '额外赠送服务',
-        description: '公章、财务章、私章、最新创业补贴标准、最新创业社保补贴标准。'
+        title: '第六步 完成注册',
+        description: '公司注册成功，正式运营'
     }
 ]
 
 const advantage = [
     {
         img: '',
-        adv: '地理位置优越，连接东南亚各国市场'
+        adv: '可成立在中国难以被批准注册的各类企业'
     },
     {
         img: '',
-        adv: '政策稳定，投资环境良好'
+        adv: '以自己境外公司名义和大陆公司合资，享受减免所得税'
     },
     {
         img: '',
-        adv: '劳动力成本相对较低，人力资源丰富'
+        adv: '自然人或法人及其亲属可申办长期居住、多次往返签证'
     },
     {
         img: '',
-        adv: '旅游业发达，消费市场广阔'
+        adv: '居住期满3年可申请转为长期居住，期满5年可申请转入泰籍'
     },
     {
         img: '',
-        adv: '政府鼓励外商投资，优惠政策多'
+        adv: '以境外公司名义到中国开展商务活动享外侨同等待遇'
     },
     {
         img: '',
-        adv: '基础设施完善，交通便利'
+        adv: '方便自由出入境及申请欧美签证'
     }
 ]
 
 const advantages = [
     {
         img: '',
-        title: '专业团队',
-        description: '拥有经验丰富的专业顾问团队，提供一站式服务解决方案'
+        title: '快速通道服务',
+        description: '外国投资者注册企业可以享受快速通道服务，通过无纸化电子方式提交申请，仅需二周时间即可完成注册。'
     },
     {
         img: '',
-        title: '高效办理',
-        description: '流程优化，快速响应，大大缩短办理时间'
+        title: '经验丰富，大量成功案例',
+        description: '昶嘉捷以中小企业发展为核心目标，为大量企业提供专业的咨询服务。'
     },
     {
         img: '',
-        title: '价格透明',
-        description: '明码标价，无隐性收费，提供高性价比服务'
+        title: '提供专业增值服务',
+        description: '昶嘉捷在境外拥有自己的团队，也与境外的各大银行、事务所、税务机构建立了良好的合作关系，能协助企业客户提供综合全面的服务。'
     },
     {
         img: '',
-        title: '全程服务',
-        description: '从咨询到后续维护，提供全周期贴心服务支持'
+        title: '专业专属商务对接和支持',
+        description: '昶嘉捷的顾问、咨询师、会计师等多数毕业于国内外著名大学，为每个客户建立计划小组，负责一对一的咨询服务。'
     }
 ]
 
 const faqs = ref([
     {
-        question: "注册泰国公司需要多少资本？",
-        answer: "泰国公司注册资本没有最低限额要求，一般建议注册资本为200万泰铢，无需验资。"
+        question: "泰国注册公司发起人至少要有几位，有什么要求？",
+        answer: "泰国注册有限公司至少需要3位发起人，发起人必须为自然人而不是法人。"
     },
     {
-        question: "注册泰国公司需要多长时间？",
-        answer: "通常情况下，注册泰国公司需要5-7个工作日。"
+        question: "泰国外资公司的最低本额为多少？",
+        answer: "非该法限制外资从事的三大类产业，设立公司的最低资本额要求为200万泰铢；若为该法所限制外资从事的三大类产业，设立公司的最低资本额要求为300万泰铢。"
     },
     {
-        question: "泰国公司需要年审吗？",
-        answer: "是的，泰国公司每年都需要进行年审，包括递交年度报告和续期商业登记证。"
+        question: "依泰国法令登记的有限公司，是否要求泰籍股东必须持股51%以上？",
+        answer: "不一定，倘若外籍股东持股超过50%以上，依据泰国外资商业法的规定，该公司的性质便视为外资公司，将被限制禁止从事该法规定的第一类产业，或必须取得外资公司经营许可才能从事第二类或第三类产业。"
     },
     {
-        question: "泰国公司的税务申报如何进行？",
-        answer: "泰国公司需要每年向税务局申报企业所得税，首次报税可以豁免审计。"
+        question: "泰国公司注册需要多长时间？",
+        answer: "公司注册时间约需要15工作日左右。"
     },
     {
-        question: "泰国公司做账审计有什么要求？",
-        answer: "泰国公司需要每年做账并进行审计，无论是否有业务发生。"
-    },
-    {
-        question: "泰国公司可以在中国大陆经营吗？",
-        answer: "泰国公司不能直接在大陆经营，如需在大陆经营需要设立代表处或投资设立外商投资企业。"
+        question: "泰国公司注册费用是多少？",
+        answer: "注册费用具体可咨询昶嘉捷专业顾问。"
     }
 ])
 

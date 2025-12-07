@@ -1,4 +1,5 @@
 <template>
+    <!-- 法国公司 -->
     <div class="fr_box">
         <Top />
         <Frcontent1 />

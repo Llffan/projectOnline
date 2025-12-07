@@ -3,20 +3,20 @@
         <div class="content_box">
             <div class="content1">
                 <div class="title">
-                    印度尼西亚公司注册
+                    印尼公司注册
                 </div>
                 <div class="intro">
                     <img src="@/assets/img/company/id/ID-2.jpg" alt="">
                     <div class="text">
-                        <P>印度尼西亚是东南亚最大的经济体，拥有2.7亿人口的巨大市场和丰富的自然资源。</P>
-                        <P>作为"一带一路"倡议的重要沿线国家，印度尼西亚在基础设施建设、制造业和数字经济等领域具有巨大发展潜力。</P>
-                        <P>凭借庞大的消费市场、年轻的人口结构和政府对外资的开放政策，印度尼西亚成为东南亚地区最具吸引力的投资目的地之一。</P>
+                        <P>印尼是东盟最大经济体和20国集团重要成员，经济增速多年来一直保持在5%左右，在全球主要经济体中位列前茅。</P>
+                        <P>印尼拥有丰富天然资源，包括石油、天然气、锡、铜及黄金。主要进口品为机械设备、化学制品、燃料、食品等。</P>
+                        <P>印尼地理位置重要，控制着关键的国际海洋交通线，且人口众多，市场潜力巨大，对外资投资持鼓励态度。</P>
                     </div>
                 </div>
             </div>
             <div class="content2">
                 <div class="title">
-                    印度尼西亚公司注册优势
+                    印尼公司注册优势
                 </div>
                 <div class="intro">
                     <div v-for="(item, index) in advantage" :key="index" class="advantage">
@@ -35,17 +35,17 @@
                 </div>
                 <div class="intro">
                     <div class="left">
-                        <div class="condition-item">年满18岁以上的股东或董事</div>
-                        <div class="condition-item">注册地址（我司提供）</div>
-                        <div class="condition-item">法定秘书（我司提供）</div>
-                        <div class="condition-item">公司章程</div>
+                        <div class="condition-item">经营范围：外资公司可经营任何不被负面投资清单禁止的商业活动。</div>
+                        <div class="condition-item">注册资本：最低3亿印尼盾，剩余注册资金要求在5年内到位。</div>
+                        <div class="condition-item">股东要求：股东至少2人，可为个人或公司。</div>
+                        <div class="condition-item">注册地址：需提供1个当地有效注册地址，多选择写字楼。</div>
                     </div>
                     <div class="center"></div>
                     <div class="right">
-                        <div class="condition-item">董事和股东身份证明文件</div>
-                        <div class="condition-item">公司名称（提供多个备选）</div>
-                        <div class="condition-item">注册资本</div>
-                        <div class="condition-item">签署相关文件</div>
+                        <div class="condition-item">资金要求：营业执照签发前需开立银行账户接收到位资本。</div>
+                        <div class="condition-item">董事/监事：董事会和监事会架构里，董事和监事至少各1人。</div>
+                        <div class="condition-item">后续要求：注册后需存款25%资本金，否则不能操作任何变更。</div>
+                        <div class="condition-item">绿卡资格：董事长及总经理在印尼经营三年以上能够申请绿卡。</div>
                     </div>
                 </div>
             </div>
@@ -56,8 +56,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in registrationProcess" :key="index" class="advantage">
                         <div class="img">
-                            <!-- <img :src="item.img" :alt="item.title"> -->
-                        </div>
+                            </div>
                         <div class="text1">
                             {{ item.title }}
                         </div>
@@ -74,8 +73,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in advantages" :key="index" class="advantage">
                         <div class="img">
-                            <!-- <img :src="item.img" :alt="item.title"> -->
-                        </div>
+                            </div>
                         <div class="text1">
                             {{ item.title }}
                         </div>
@@ -87,7 +85,7 @@
             </div>
             <div class="content6">
                 <div class="title">
-                    注册印度尼西亚公司常见问题
+                    注册印尼公司常见问题
                 </div>
                 <div class="intro">
                     <div 
@@ -119,117 +117,106 @@
 import { ref, onMounted } from 'vue'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
-import '@/css/company/id/Id_content2.css'
+// 保持导入路径不变
+import '@/css/company/id/Id_content2.css' 
 
 gsap.registerPlugin(ScrollTrigger)
 
 const registrationProcess = [
     {
         img: '',
-        title: '开始公司核名',
-        description: '核名查询，核验名称是否可用。'
+        title: '签署协议及交付款项',
+        description: '签署委托书和协议，并交付定金。'
     },
     {
         img: '',
-        title: '选择注册地址',
-        description: '确定可注册公司用的地址，我司可提供。'
+        title: '准备资料及开立账户',
+        description: '开立银行账户，用于接收到位注册资本。'
     },
     {
         img: '',
-        title: '办理税务登记',
-        description: '专属财税顾问免费提供日常财务账目管理建议。'
+        title: '办理公司文件',
+        description: '到政府部门办理公司大纲及章程、商业授权文件等。'
     },
     {
         img: '',
-        title: '提交申请资料',
-        description: '提供法人/股东身份证原件复印件、 固定电话、等相关材料。'
+        title: '递交当局审核注册',
+        description: '向政府部门办理相关手续，等待审核注册。'
     },
     {
         img: '',
-        title: '领取营业执照',
-        description: '公司注册顺利完成，顾问将营业执照正/副本等交付。'
+        title: '完成注册及领取资料',
+        description: '注册完成（约30-50个工作日），支付余款并领取全套资料。'
     },
     {
         img: '',
-        title: '额外赠送服务',
-        description: '公章、财务章、私章、最新创业补贴标准、最新创业社保补贴标准。'
+        title: '后续资金存放',
+        description: '注册完成后需存放注册资金的25%，否则不能操作任何变更。'
     }
 ]
 
 const advantage = [
     {
         img: '',
-        adv: '东南亚最大经济体，市场潜力巨大'
+        adv: '政局总体稳定，政府重视扩大外资投资。'
     },
     {
         img: '',
-        adv: '人口红利显著，消费市场广阔'
+        adv: '自然资源丰富，拥有石油、天然气、锡、铜及黄金等。'
     },
     {
         img: '',
-        adv: '政府政策支持，投资环境改善'
+        adv: '经济增长前景好，是东盟最大经济体，市场潜力巨大。'
     },
     {
         img: '',
-        adv: '自然资源丰富，产业链完整'
+        adv: '地理位置重要，控制着关键的国际海洋交通线。'
     },
     {
         img: '',
-        adv: '地理位置优越，辐射整个东南亚'
+        adv: '人口众多，拥有丰富且廉价的劳动力资源。'
     },
     {
         img: '',
-        adv: '劳动力成本相对较低，人力资源充足'
+        adv: '市场化程度高，金融市场较为开放。'
     }
 ]
 
 const advantages = [
     {
         img: '',
-        title: '专业团队',
-        description: '拥有经验丰富的专业顾问团队，提供一站式服务解决方案'
+        title: '快速通道服务',
+        description: '外国投资者注册企业可以享受快速通道服务，并可以通过无纸化电子方式提交申请，仅需二周时间即可完成注册。'
     },
     {
         img: '',
-        title: '高效办理',
-        description: '流程优化，快速响应，大大缩短办理时间'
+        title: '经验丰富，大量成功案例',
+        description: '昶嘉捷以中小企业发展为核心目标，为大量企业提供专业的咨询服务。'
     },
     {
         img: '',
-        title: '价格透明',
-        description: '明码标价，无隐性收费，提供高性价比服务'
+        title: '提供专业增值服务',
+        description: '昶嘉捷在境外拥有自己的团队，协助客户提供综合全面的财务、税务、法律等服务，做到“在外有昶嘉捷，更快捷”。'
     },
     {
         img: '',
-        title: '全程服务',
-        description: '从咨询到后续维护，提供全周期贴心服务支持'
+        title: '专业专属商务对接和支持',
+        description: '顾问、咨询师、会计师等建立计划小组，负责客户一对一的咨询、案子进度和客户协调计划等服务工作。'
     }
 ]
 
 const faqs = ref([
     {
-        question: "注册印度尼西亚公司需要多少资本？",
-        answer: "印度尼西亚公司注册资本没有最低限额要求，一般建议注册资本为100亿印尼盾，无需验资。"
+        question: "注册印尼公司可以获得绿卡吗？",
+        answer: "董事长及总经理在印尼经营三年以上能够申请得到印尼的绿卡。"
     },
     {
-        question: "注册印度尼西亚公司需要多长时间？",
-        answer: "通常情况下，注册印度尼西亚公司需要7-10个工作日。"
+        question: "外资在印尼注册公司能占多少股份？",
+        answer: "外资占股比例取决于公司所做的相关行业，有些行业不开放，有些行业有规定，有些行业外资能占百分之百的股份。"
     },
     {
-        question: "印度尼西亚公司需要年审吗？",
-        answer: "是的，印度尼西亚公司每年都需要进行年审，包括递交年度报告和续期商业登记证。"
-    },
-    {
-        question: "印度尼西亚公司的税务申报如何进行？",
-        answer: "印度尼西亚公司需要每年向税务局申报企业所得税，首次报税可以豁免审计。"
-    },
-    {
-        question: "印度尼西亚公司做账审计有什么要求？",
-        answer: "印度尼西亚公司需要每年做账并进行审计，无论是否有业务发生。"
-    },
-    {
-        question: "印度尼西亚公司可以在中国大陆经营吗？",
-        answer: "印度尼西亚公司不能直接在大陆经营，如需在大陆经营需要设立代表处或投资设立外商投资企业。"
+        question: "印尼公司注册后是否需要存放注册资金？不存放注册资金会带来什么影响?",
+        answer: "公司注册完成后，在司法部批文出来60天后公司必须存款最少注册资金的25%，没有存放注册资金的公司，将不能操作任何的变更。"
     }
 ])
 
@@ -239,7 +226,7 @@ const toggleFaq = (index) => {
     expandedItems.value[index] = !expandedItems.value[index]
 }
 
-// 添加过渡动画
+// 保持动画脚本不变
 onMounted(() => {
     // content1 动画
     gsap.from('.content1 .title', {
@@ -296,7 +283,6 @@ onMounted(() => {
         duration: 0.8
     })
 
-    // 使用fromTo方法解决动画与浮动效果冲突
     const conditionItems = document.querySelectorAll('.content3 .condition-item');
     conditionItems.forEach((item, index) => {
         gsap.fromTo(item,
@@ -309,7 +295,7 @@ onMounted(() => {
                 ease: 'power2.out',
                 scrollTrigger: {
                     trigger: '.content3 .intro',
-                    start: 'top 80%'  // 元素进入视口80%位置时触发
+                    start: 'top 80%'  
                 },
                 onComplete: function() {
                     gsap.set(item, { clearProps: "x,opacity,transition" })
@@ -351,7 +337,6 @@ onMounted(() => {
         duration: 0.8
     })
 
-    // 使用fromTo方法解决动画与浮动效果冲突
     const content5Advantages = document.querySelectorAll('.content5 .advantage');
     content5Advantages.forEach((item, index) => {
         gsap.fromTo(item,

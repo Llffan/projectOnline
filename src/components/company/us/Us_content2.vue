@@ -9,8 +9,8 @@
                     <img src="@/assets/img/company/us/US-2.jpg" alt="">
                     <div class="text">
                         <P>美国是全球最大的经济体，拥有完善的法律体系和高度发达的资本市场。</P>
-                        <P>作为世界科技创新中心，美国在互联网、人工智能、生物技术等领域引领全球发展。</P>
-                        <P>凭借开放的商业环境、强大的消费市场和先进的基础设施，美国成为全球企业的重要投资目的地。</P>
+                        <P>作为世界科技创新中心，在互联网、人工智能、生物技术等领域引领全球发展。</P>
+                        <P>凭借开放的商业环境、庞大的消费市场和先进的基础设施，成为全球企业的重要投资目的地。</P>
                     </div>
                 </div>
             </div>
@@ -31,27 +31,27 @@
             </div>
             <div class="content3">
                 <div class="title">
-                    条件和所需资料
+                    美国公司注册条件和所需资料
                 </div>
                 <div class="intro">
                     <div class="left">
-                        <div class="condition-item">年满18岁以上的股东或董事</div>
-                        <div class="condition-item">注册地址（我司提供）</div>
-                        <div class="condition-item">法定秘书（我司提供）</div>
-                        <div class="condition-item">公司章程</div>
+                        <div class="condition-item">一位以上的公司董事及股东（无国籍限制）</div>
+                        <div class="condition-item">有效的身份证明文件（身份证或护照）</div>
+                        <div class="condition-item">公司名称（提供多个备选）</div>
+                        <div class="condition-item">不同的州，注册资本不一样，一般为50,000美金</div>
                     </div>
                     <div class="center"></div>
                     <div class="right">
-                        <div class="condition-item">董事和股东身份证明文件</div>
-                        <div class="condition-item">公司名称（提供多个备选）</div>
-                        <div class="condition-item">注册资本</div>
-                        <div class="condition-item">签署相关文件</div>
+                        <div class="condition-item">公司名称无限制，只要查册没有重名即可</div>
+                        <div class="condition-item">注册资金无须验资及到位</div>
+                        <div class="condition-item">可用公司名称买卖物业</div>
+                        <div class="condition-item">公司名称限制少，可加"国际"、"集团"等字眼</div>
                     </div>
                 </div>
             </div>
             <div class="content4">
                 <div class="title">
-                    公司注册流程
+                    美国公司注册流程
                 </div>
                 <div class="intro">
                     <div v-for="(item, index) in registrationProcess" :key="index" class="advantage">
@@ -87,7 +87,7 @@
             </div>
             <div class="content6">
                 <div class="title">
-                    注册美国公司常见问题
+                    美国公司注册常见问题
                 </div>
                 <div class="intro">
                     <div 
@@ -126,110 +126,106 @@ gsap.registerPlugin(ScrollTrigger)
 const registrationProcess = [
     {
         img: '',
-        title: '开始公司核名',
-        description: '核名查询，核验名称是否可用。'
+        title: '第一步 签署委托书',
+        description: '客户签署委托书及相关协议文件'
     },
     {
         img: '',
-        title: '选择注册地址',
-        description: '确定可注册公司用的地址，我司可提供。'
+        title: '第二步 交付费用',
+        description: '支付相关注册费用及服务费用'
     },
     {
         img: '',
-        title: '办理税务登记',
-        description: '专属财税顾问免费提供日常财务账目管理建议。'
+        title: '第三步 政府办理',
+        description: '到政府部门办理相关注册手续'
     },
     {
         img: '',
-        title: '提交申请资料',
-        description: '提供法人/股东身份证原件复印件、 固定电话、等相关材料。'
+        title: '第四步 领取资料',
+        description: '25个工作日内领取全套公司资料'
     },
     {
         img: '',
-        title: '领取营业执照',
-        description: '公司注册顺利完成，顾问将营业执照正/副本等交付。'
+        title: '第五步 后续服务',
+        description: '提供银行开户、税务申报等后续服务'
     },
     {
         img: '',
-        title: '额外赠送服务',
-        description: '公章、财务章、私章、最新创业补贴标准、最新创业社保补贴标准。'
+        title: '第六步 完成注册',
+        description: '公司注册成功，正式运营'
     }
 ]
 
 const advantage = [
     {
         img: '',
-        adv: '全球最大经济体，市场潜力巨大'
+        adv: '国际信誉度及认同度高，可于全球银行开设公司账户'
     },
     {
         img: '',
-        adv: '法律体系完善，知识产权保护严格'
+        adv: '国际法律地位高，受美国政府保护，认受性极好'
     },
     {
         img: '',
-        adv: '资本市场发达，融资渠道多样'
+        adv: '打造全球知名品牌'
     },
     {
         img: '',
-        adv: '科技创新环境优越，人才集中'
+        adv: '注册资金无须验资及到位'
     },
     {
         img: '',
-        adv: '消费市场庞大，购买力强'
+        adv: '可用公司名称买卖物业'
     },
     {
         img: '',
-        adv: '基础设施完善，营商环境优越'
+        adv: '公司名称限制少，可加"国际"、"集团"等字眼'
     }
 ]
 
 const advantages = [
     {
         img: '',
-        title: '专业团队',
-        description: '拥有经验丰富的专业顾问团队，提供一站式服务解决方案'
+        title: '快速通道服务',
+        description: '外国投资者注册企业可以享受快速通道服务，通过无纸化电子方式提交申请，仅需二周时间即可完成注册。'
     },
     {
         img: '',
-        title: '高效办理',
-        description: '流程优化，快速响应，大大缩短办理时间'
+        title: '经验丰富，大量成功案例',
+        description: '昶嘉捷以中小企业发展为核心目标，为大量企业提供专业的咨询服务。'
     },
     {
         img: '',
-        title: '价格透明',
-        description: '明码标价，无隐性收费，提供高性价比服务'
+        title: '提供专业增值服务',
+        description: '昶嘉捷在境外拥有自己的团队，也与境外的各大银行、事务所、税务机构建立了良好的合作关系，能协助企业客户提供综合全面的服务。'
     },
     {
         img: '',
-        title: '全程服务',
-        description: '从咨询到后续维护，提供全周期贴心服务支持'
+        title: '专业专属商务对接和支持',
+        description: '昶嘉捷的顾问、咨询师、会计师等多数毕业于国内外著名大学，为每个客户建立计划小组，负责一对一的咨询服务。'
     }
 ]
 
 const faqs = ref([
     {
-        question: "注册美国公司需要多少资本？",
-        answer: "美国公司注册资本没有最低限额要求，一般建议注册资本为1000美元，无需验资。"
+        question: "美国注册公司经营范围有什么限制？",
+        answer: "美国注册公司对于公司的经营行业及经营项目并没有多大的限制，所以所注册的美国公司可以经营任何合法的商务业务。"
     },
     {
-        question: "注册美国公司需要多长时间？",
-        answer: "通常情况下，注册美国公司需要5-7个工作日。"
+        question: "在给美国起名时需要注意什么？",
+        answer: "在美国注册公司时对公司的名称是没有任何限制的，因此只要公司名称没有被其公司注册就可以使用，当然可在公司名称后面冠以'CORP'、'LTD'、'INC'或'CO'、'LLC'等字样。"
     },
     {
-        question: "美国公司需要年审吗？",
-        answer: "是的，美国公司每年都需要进行年审，包括递交年度报告和续期商业登记证。"
+        question: "美国公司注册成功后如何证明公司的存在和合法？",
+        answer: "公司的注册证书是公司的有效法律文件，也可要求我司提供当地代理出具的INCUMBENCY证书来确认公司合法存在，另外公司资料是可以在州政府的官方网站上查询的到的。"
     },
     {
-        question: "美国公司的税务申报如何进行？",
-        answer: "美国公司需要每年向税务局申报企业所得税，首次报税可以豁免审计。"
+        question: "美国公司注册资本需要到位吗？",
+        answer: "不同的州，注册资本不一样，一般为50,000美金，不需要验资及到位。"
     },
     {
-        question: "美国公司做账审计有什么要求？",
-        answer: "美国公司需要每年做账并进行审计，无论是否有业务发生。"
-    },
-    {
-        question: "美国公司可以在中国大陆经营吗？",
-        answer: "美国公司不能直接在大陆经营，如需在大陆经营需要设立代表处或投资设立外商投资企业。"
+        question: "美国公司注册需要多长时间？",
+        answer: "通常情况下，注册美国公司需要25个工作日左右。"
     }
 ])
 

@@ -1,4 +1,5 @@
 <template>
+    <!-- 塞舌尔公司 -->
     <div class="sc_box">
         <Top />
         <Sccontent1 />

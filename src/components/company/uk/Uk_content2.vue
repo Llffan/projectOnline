@@ -8,9 +8,9 @@
                 <div class="intro">
                     <img src="@/assets/img/company/uk/UK-2.jpg" alt="">
                     <div class="text">
-                        <P>英国是世界著名的金融中心和商业枢纽，拥有悠久的商业传统和完善的法律体系。</P>
-                        <P>作为欧洲重要的经济体之一，英国在金融服务、科技创新、文化创意等领域具有显著优势。</P>
-                        <P>凭借稳定的法律环境、开放的市场政策和优越的地理位置，英国成为全球企业设立欧洲总部的首选地之一。</P>
+                        <P>英国是老牌资本主义国家，拥有全世界最健全的法制系统，以及完善的经济系统及银行体制。</P>
+                        <P>对于世界各国的投资者而言，注册英国公司对于树立企业国际形象，开拓海外市场具有重要作用。</P>
+                        <P>注册英国公司，企业可以更加方便的办离岸账户，为以后的出国、留学、投资铺平道路。</P>
                     </div>
                 </div>
             </div>
@@ -31,27 +31,27 @@
             </div>
             <div class="content3">
                 <div class="title">
-                    条件和所需资料
+                    英国公司注册条件和所需资料
                 </div>
                 <div class="intro">
                     <div class="left">
-                        <div class="condition-item">年满18岁以上的股东或董事</div>
-                        <div class="condition-item">注册地址（我司提供）</div>
-                        <div class="condition-item">法定秘书（我司提供）</div>
-                        <div class="condition-item">公司章程</div>
+                        <div class="condition-item">公司名称以"有限公司"结尾，不能以"信托公司"、"银行"等结尾</div>
+                        <div class="condition-item">有限责任公司，需要有两位自然人组成</div>
+                        <div class="condition-item">必须有一位公司秘书（可以由两位自然人中的一位担任）</div>
+                        <div class="condition-item">提供英国注册地址（我司可提供注册地址）</div>
                     </div>
                     <div class="center"></div>
                     <div class="right">
+                        <div class="condition-item">无限制，标准的注册资本金是100英镑</div>
+                        <div class="condition-item">超过此注册资金需要再缴纳0.5%英镑的厘印税</div>
+                        <div class="condition-item">不需要实际验资到位</div>
                         <div class="condition-item">董事和股东身份证明文件</div>
-                        <div class="condition-item">公司名称（提供多个备选）</div>
-                        <div class="condition-item">注册资本</div>
-                        <div class="condition-item">签署相关文件</div>
                     </div>
                 </div>
             </div>
             <div class="content4">
                 <div class="title">
-                    公司注册流程
+                    英国公司注册流程
                 </div>
                 <div class="intro">
                     <div v-for="(item, index) in registrationProcess" :key="index" class="advantage">
@@ -87,7 +87,7 @@
             </div>
             <div class="content6">
                 <div class="title">
-                    注册英国公司常见问题
+                    英国公司注册常见问题
                 </div>
                 <div class="intro">
                     <div 
@@ -126,110 +126,106 @@ gsap.registerPlugin(ScrollTrigger)
 const registrationProcess = [
     {
         img: '',
-        title: '开始公司核名',
-        description: '核名查询，核验名称是否可用。'
+        title: '第一步 英国公司名称查册',
+        description: '查询公司名称是否可用'
     },
     {
         img: '',
-        title: '选择注册地址',
-        description: '确定可注册公司用的地址，我司可提供。'
+        title: '第二步 签订委托书',
+        description: '签订注册英国公司委托书，提交登记表'
     },
     {
         img: '',
-        title: '办理税务登记',
-        description: '专属财税顾问免费提供日常财务账目管理建议。'
+        title: '第三步 提交资料',
+        description: '客户提供注册所需资料，交由英国政府审核'
     },
     {
         img: '',
-        title: '提交申请资料',
-        description: '提供法人/股东身份证原件复印件、 固定电话、等相关材料。'
+        title: '第四步 等待审核',
+        description: '等待审核通过，领取执照'
     },
     {
         img: '',
-        title: '领取营业执照',
-        description: '公司注册顺利完成，顾问将营业执照正/副本等交付。'
+        title: '第五步 领取文件',
+        description: '10-15个工作日后拿到英国公司注册相关文件'
     },
     {
         img: '',
-        title: '额外赠送服务',
-        description: '公章、财务章、私章、最新创业补贴标准、最新创业社保补贴标准。'
+        title: '第六步 后续服务',
+        description: '提供银行开户、税务申报等后续服务'
     }
 ]
 
 const advantage = [
     {
         img: '',
-        adv: '世界金融中心地位，便于开展全球业务'
+        adv: '营商环境良好，吸引外商投资项目最多'
     },
     {
         img: '',
-        adv: '法律体系完善，知识产权保护严格'
+        adv: '贸易自由程度高，经济法律体系发达'
     },
     {
         img: '',
-        adv: '税收政策优惠，无外汇管制'
+        adv: '树立国际形象，连接欧洲及英联邦市场'
     },
     {
         img: '',
-        adv: '地理位置优越，连接欧洲市场'
+        adv: '无外汇管制，可开立离岸账户'
     },
     {
         img: '',
-        adv: '营商环境开放，政策稳定'
+        adv: '注册灵活性大，股东可为一名或多名'
     },
     {
         img: '',
-        adv: '高素质人才集中，创新环境优越'
+        adv: '资料公开查询方便，24小时可查'
     }
 ]
 
 const advantages = [
     {
         img: '',
-        title: '专业团队',
-        description: '拥有经验丰富的专业顾问团队，提供一站式服务解决方案'
+        title: '快速通道服务',
+        description: '外国投资者注册企业可以享受快速通道服务，通过无纸化电子方式提交申请，仅需二周时间即可完成注册。'
     },
     {
         img: '',
-        title: '高效办理',
-        description: '流程优化，快速响应，大大缩短办理时间'
+        title: '经验丰富，大量成功案例',
+        description: '昶嘉捷以中小企业发展为核心目标，为大量企业提供专业的咨询服务。'
     },
     {
         img: '',
-        title: '价格透明',
-        description: '明码标价，无隐性收费，提供高性价比服务'
+        title: '提供专业增值服务',
+        description: '昶嘉捷在境外拥有自己的团队，也与境外的各大银行、事务所、税务机构建立了良好的合作关系，能协助企业客户提供综合全面的服务。'
     },
     {
         img: '',
-        title: '全程服务',
-        description: '从咨询到后续维护，提供全周期贴心服务支持'
+        title: '专业专属商务对接和支持',
+        description: '昶嘉捷的顾问、咨询师、会计师等多数毕业于国内外著名大学，为每个客户建立计划小组，负责一对一的咨询服务。'
     }
 ]
 
 const faqs = ref([
     {
-        question: "注册英国公司需要多少资本？",
-        answer: "英国公司注册资本没有最低限额要求，一般建议注册资本为1英镑，无需验资。"
+        question: "注册英国公司资本是否有最低要求？",
+        answer: "没有最低要求，一般是1000英镑。"
+    },
+    {
+        question: "英国公司名称可以用中文名称注册吗？",
+        answer: "不能，要以英文名注册，全部大写字母。"
+    },
+    {
+        question: "如果我在英国注册公司之后不在英国本土经营，我需要缴税吗?",
+        answer: "您不需要缴纳任何税款。根据英国税务局的规定如果要是公司没有任何经营行为或不盈利，该公司可以合法免税。"
     },
     {
         question: "注册英国公司需要多长时间？",
-        answer: "通常情况下，注册英国公司需要3-5个工作日。"
+        answer: "通常情况下，注册英国公司需要10-15个工作日。"
     },
     {
         question: "英国公司需要年审吗？",
-        answer: "是的，英国公司每年都需要进行年审，包括递交年度报告和续期商业登记证。"
-    },
-    {
-        question: "英国公司的税务申报如何进行？",
-        answer: "英国公司需要每年向税务局申报企业所得税，首次报税可以豁免审计。"
-    },
-    {
-        question: "英国公司做账审计有什么要求？",
-        answer: "英国公司需要每年做账并进行审计，无论是否有业务发生。"
-    },
-    {
-        question: "英国公司可以在中国大陆经营吗？",
-        answer: "英国公司不能直接在大陆经营，如需在大陆经营需要设立代表处或投资设立外商投资企业。"
+        answer: "是的，英国公司注册成立后需要每年向官方公司管理部门提供年检报告。"
     }
 ])
 

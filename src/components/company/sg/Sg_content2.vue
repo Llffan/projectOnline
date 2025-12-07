@@ -8,9 +8,9 @@
                 <div class="intro">
                     <img src="@/assets/img/company/sg/SG-2.jpg" alt="">
                     <div class="text">
-                        <P>新加坡是亚洲四小龙之一，拥有高度发达的经济和优越的商业环境。</P>
-                        <P>作为全球最国际化的国家之一，新加坡以其廉洁高效的政府、健全的法律体系和便利的经商环境而闻名。</P>
-                        <P>凭借优越的地理位置、先进的基础设施和开放的经济政策，新加坡成为亚洲乃至全球企业的重要运营基地。</P>
+                        <P>新加坡非营利组织基金会，是在新加坡会计与企业发展局(ACRA)登记注册，类型为公众公司。</P>
+                        <P>由于非营利组织没有注册资金，不用交税，所以限制比较多，要求比较严格。</P>
+                        <P>新加坡以稳定而健全的法律及金融环境著称，在这里注册基金是安全与便捷的首选。</P>
                     </div>
                 </div>
             </div>
@@ -31,27 +31,27 @@
             </div>
             <div class="content3">
                 <div class="title">
-                    条件和所需资料
+                    新加坡公司注册条件和所需资料
                 </div>
                 <div class="intro">
                     <div class="left">
-                        <div class="condition-item">年满18岁以上的股东或董事</div>
-                        <div class="condition-item">注册地址（我司提供）</div>
-                        <div class="condition-item">法定秘书（我司提供）</div>
-                        <div class="condition-item">公司章程</div>
+                        <div class="condition-item">年满18周岁且拥有合法身份的人士可申请</div>
+                        <div class="condition-item">股东无限制，可为自然人或法人团体</div>
+                        <div class="condition-item">董事会可由一名或多名董事组成</div>
+                        <div class="condition-item">但必须至少包括一名本地董事（我司可提供）</div>
                     </div>
                     <div class="center"></div>
                     <div class="right">
-                        <div class="condition-item">董事和股东身份证明文件</div>
+                        <div class="condition-item">本地董事指新加坡公民、永久居民或准证持有人</div>
                         <div class="condition-item">公司名称（提供多个备选）</div>
-                        <div class="condition-item">注册资本</div>
-                        <div class="condition-item">签署相关文件</div>
+                        <div class="condition-item">注册地址（我司可提供）</div>
+                        <div class="condition-item">法定秘书（我司可提供）</div>
                     </div>
                 </div>
             </div>
             <div class="content4">
                 <div class="title">
-                    公司注册流程
+                    新加坡公司注册流程
                 </div>
                 <div class="intro">
                     <div v-for="(item, index) in registrationProcess" :key="index" class="advantage">
@@ -87,7 +87,7 @@
             </div>
             <div class="content6">
                 <div class="title">
-                    注册新加坡公司常见问题
+                    新加坡公司注册常见问题
                 </div>
                 <div class="intro">
                     <div 
@@ -126,110 +126,106 @@ gsap.registerPlugin(ScrollTrigger)
 const registrationProcess = [
     {
         img: '',
-        title: '开始公司核名',
-        description: '核名查询，核验名称是否可用。'
+        title: '第一步 签署交易合同',
+        description: '昶嘉捷签署交易合同并支付相关服务金额'
     },
     {
         img: '',
-        title: '选择注册地址',
-        description: '确定可注册公司用的地址，我司可提供。'
+        title: '第二步 准备文件',
+        description: '客户按我司要求进行准备，并且发送文件至昶嘉捷'
     },
     {
         img: '',
-        title: '办理税务登记',
-        description: '专属财税顾问免费提供日常财务账目管理建议。'
+        title: '第三步 办理注册',
+        description: '收到文件后，昶嘉捷团队将开始操办公司注册业务'
     },
     {
         img: '',
-        title: '提交申请资料',
-        description: '提供法人/股东身份证原件复印件、 固定电话、等相关材料。'
+        title: '第四步 领取资料',
+        description: '注册成功后，领取全套公司注册资料'
     },
     {
         img: '',
-        title: '领取营业执照',
-        description: '公司注册顺利完成，顾问将营业执照正/副本等交付。'
+        title: '第五步 后续服务',
+        description: '提供银行开户、税务申报等后续服务'
     },
     {
         img: '',
-        title: '额外赠送服务',
-        description: '公章、财务章、私章、最新创业补贴标准、最新创业社保补贴标准。'
+        title: '第六步 完成注册',
+        description: '公司注册成功，正式运营'
     }
 ]
 
 const advantage = [
     {
         img: '',
-        adv: '地理位置优越，连接亚洲各大市场'
+        adv: '地理位置优越，国际转口贸易中心'
     },
     {
         img: '',
-        adv: '政府廉洁高效，营商环境优越'
+        adv: '快速提升国际品牌形象，知识产权资产管理中心'
     },
     {
         img: '',
-        adv: '法律体系健全，知识产权保护严格'
+        adv: '国际贸易优势，实现真正意义上的离岸贸易'
     },
     {
         img: '',
-        adv: '税收政策优惠，无外汇管制'
+        adv: '税率优势，多项税务优惠政策'
     },
     {
         img: '',
-        adv: '金融中心地位，便于融资和投资'
+        adv: '东盟优势，享受东盟10国间零关税自由贸易'
     },
     {
         img: '',
-        adv: '高素质人才集中，国际化程度高'
+        adv: '享受政策优势，制定系列优惠政策'
     }
 ]
 
 const advantages = [
     {
         img: '',
-        title: '专业团队',
-        description: '拥有经验丰富的专业顾问团队，提供一站式服务解决方案'
+        title: '快速通道服务',
+        description: '外国投资者注册企业可以享受快速通道服务，通过无纸化电子方式提交申请，仅需二周时间即可完成注册。'
     },
     {
         img: '',
-        title: '高效办理',
-        description: '流程优化，快速响应，大大缩短办理时间'
+        title: '经验丰富，大量成功案例',
+        description: '昶嘉捷以中小企业发展为核心目标，为大量企业提供专业的咨询服务。'
     },
     {
         img: '',
-        title: '价格透明',
-        description: '明码标价，无隐性收费，提供高性价比服务'
+        title: '提供专业增值服务',
+        description: '昶嘉捷在境外拥有自己的团队，也与境外的各大银行、事务所、税务机构建立了良好的合作关系，能协助企业客户提供综合全面的服务。'
     },
     {
         img: '',
-        title: '全程服务',
-        description: '从咨询到后续维护，提供全周期贴心服务支持'
+        title: '专业专属商务对接和支持',
+        description: '昶嘉捷的顾问、咨询师、会计师等多数毕业于国内外著名大学，为每个客户建立计划小组，负责一对一的咨询服务。'
     }
 ]
 
 const faqs = ref([
     {
-        question: "注册新加坡公司需要多少资本？",
-        answer: "新加坡公司注册资本没有最低限额要求，一般建议注册资本为1新币，无需验资。"
+        question: "新加坡基金会公司为什么要做法律意见书？",
+        answer: "根据新加坡金融法和证券法，如果包含有证券性质的虚拟货币需要申请特殊金融牌照，所以需要证明该项目不包含有证券性质，那么就需要律师出具TOKEN非证券化法律意见书，以及证明该项目合法合规的白皮书合规法律意见书，这两者是大部分客户都要做的。"
     },
     {
-        question: "注册新加坡公司需要多长时间？",
+        question: "新加坡基金会公司从事区块链项目注册新加坡基金会和私人公司有什么区别吗？",
+        answer: "新加坡基金会属于非盈利公众担保公司，此类公司对于从事区块链企业来说，更容易获得客户的信任。而且有前期成功的项目做铺垫，所以注册新加坡非盈利基金会比私人公司更适合做区块链项目。"
+    },
+    {
+        question: "新加坡基金会公司注册好之后可以开户吗？",
+        answer: "可以开户，但是不建议开户。其次是开这个账户对公司来说没太大用处，这个账户开通之后只能收美金和外币，不能收人民币或者代币，除非您这边客户都是国外的，不然的话也没什么用。"
+    },
+    {
+        question: "新加坡公司注册需要多长时间？",
         answer: "通常情况下，注册新加坡公司需要1-3个工作日。"
     },
     {
         question: "新加坡公司需要年审吗？",
         answer: "是的，新加坡公司每年都需要进行年审，包括递交年度报告和续期商业登记证。"
-    },
-    {
-        question: "新加坡公司的税务申报如何进行？",
-        answer: "新加坡公司需要每年向税务局申报企业所得税，首次报税可以豁免审计。"
-    },
-    {
-        question: "新加坡公司做账审计有什么要求？",
-        answer: "新加坡公司需要每年做账并进行审计，无论是否有业务发生。"
-    },
-    {
-        question: "新加坡公司可以在中国大陆经营吗？",
-        answer: "新加坡公司不能直接在大陆经营，如需在大陆经营需要设立代表处或投资设立外商投资企业。"
     }
 ])
 

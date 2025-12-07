@@ -8,9 +8,9 @@
                 <div class="intro">
                     <img src="@/assets/img/company/fr/FR-2.jpg" alt="">
                     <div class="text">
-                        <P>法国是欧洲第三大经济体，也是世界领先的工业强国之一，以其时尚、奢侈品、航空航天和核能产业而闻名全球。</P>
-                        <P>法国拥有稳定的政治环境、完善的法律体系、先进的基础设施和高度发达的科技水平，在全球商业环境中占据重要地位。</P>
-                        <P>法国地处欧洲西部，是通往欧盟市场的重要门户，吸引了众多国际企业在法国设立公司和分支机构。</P>
+                        <P>法国是最发达国家之一，实行自由贸易政策，与欧盟内各国及美国建立了紧密关系，商品能自由便捷地在欧美销售。</P>
+                        <P>随着中欧贸易深化和协定落地，中欧双方市场将更加开放。欧洲市场，特别是法国，是我们未来最重要的市场之一。</P>
+                        <P>在欧盟VAT代扣代缴政策实施后，注册法国公司能以自我申报方式缴税，将极大减轻非欧盟卖家商品销售的增值税负担。</P>
                     </div>
                 </div>
             </div>
@@ -35,17 +35,17 @@
                 </div>
                 <div class="intro">
                     <div class="left">
-                        <div class="condition-item">年满18岁以上的股东或董事</div>
-                        <div class="condition-item">注册地址（我司提供）</div>
-                        <div class="condition-item">公司章程</div>
-                        <div class="condition-item">公司名称（提供多个备选）</div>
+                        <div class="condition-item">公司成员要求：至少一位年满18周岁的法人和股东，可为同一人。</div>
+                        <div class="condition-item">董事/股东国籍：法人和股东没有国籍限制，可为在法居住者或境外非法国籍人士。</div>
+                        <div class="condition-item">法定秘书：要求必须有一位法定秘书（法籍自然人或法团公司）。</div>
+                        <div class="condition-item">注册地址：必须位于法国，合规真实，我司提供巴黎市中心商业地址。</div>
                     </div>
                     <div class="center"></div>
                     <div class="right">
-                        <div class="condition-item">董事和股东身份证明文件</div>
-                        <div class="condition-item">注册资本</div>
-                        <div class="condition-item">银行资信证明</div>
-                        <div class="condition-item">签署相关文件</div>
+                        <div class="condition-item">注册资本：最低1欧元，SARL类型无需实缴，可先注册后开户。</div>
+                        <div class="condition-item">公司名称：可以是法语或英文，不能和已注册的名称相同或相似。</div>
+                        <div class="condition-item">名称限制：特殊字眼如“银行”、“保险”等敏感行业需取得相关牌照。</div>
+                        <div class="condition-item">公司章程：必须根据法律要求具备公司章程（注册时一并出具）。</div>
                     </div>
                 </div>
             </div>
@@ -56,8 +56,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in registrationProcess" :key="index" class="advantage">
                         <div class="img">
-                            <!-- <img :src="item.img" :alt="item.title"> -->
-                        </div>
+                            </div>
                         <div class="text1">
                             {{ item.title }}
                         </div>
@@ -74,8 +73,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in advantages" :key="index" class="advantage">
                         <div class="img">
-                            <!-- <img :src="item.img" :alt="item.title"> -->
-                        </div>
+                            </div>
                         <div class="text1">
                             {{ item.title }}
                         </div>
@@ -119,117 +117,105 @@
 import { ref, onMounted } from 'vue'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
-import '@/css/company/fr/Fr_content2.css'
+import '@/css/company/fr/Fr_content2.css' 
 
 gsap.registerPlugin(ScrollTrigger)
 
 const registrationProcess = [
     {
         img: '',
-        title: '开始公司核名',
-        description: '核名查询，核验名称是否可用。'
+        title: '填写委托书及签署协议',
+        description: '填写注册委托书、签署办理协议，并准备公司名称。'
     },
     {
         img: '',
-        title: '准备注册资料',
-        description: '准备法人/股东身份证件、公司章程等相关材料。'
+        title: '准备公证文件',
+        description: '准备公司成员、法定秘书及地址证明文件等全套资料。'
     },
     {
         img: '',
-        title: '选择注册地址',
-        description: '确定可注册公司用的地址，我司可提供。'
+        title: '安排银行开户及验资',
+        description: '安排到CIC银行（或其他银行）开户及验资（SARL类型可先注册后开户）。'
     },
     {
         img: '',
-        title: '公证认证',
-        description: '对相关文件进行公证认证。'
+        title: '提交公司章程及文件公证',
+        description: '准备公司章程，并在法院进行商业登记。'
     },
     {
         img: '',
-        title: '提交申请资料',
-        description: '向法国相关部门提交完整的注册申请资料。'
+        title: '政府部门审核及登报',
+        description: '政府部门办理相关手续，审核完成后进行登报公示。'
     },
     {
         img: '',
-        title: '领取营业执照',
-        description: '公司注册顺利完成，领取营业执照等相关证件。'
+        title: '完成注册及领取资料',
+        description: '约15个工作日完成注册，获得KBIS、TVA/EOR号、章程等全套资料。'
     }
 ]
 
 const advantage = [
     {
         img: '',
-        adv: '欧洲第三大经济体，市场潜力巨大'
+        adv: '减轻欧盟内商品销售增值税负担，可选择自我申报。'
     },
     {
         img: '',
-        adv: '完善的法律体系，保护投资者权益'
+        adv: '注册维护成本低、管理方便、政策宽松，流程简单。'
     },
     {
         img: '',
-        adv: '地理位置优越，连接欧洲市场'
+        adv: '有利于打造国际品牌，国际诚信度和法律地位高。'
     },
     {
         img: '',
-        adv: '高素质人才集中，技术实力雄厚'
+        adv: '有助于减少企业成本，减少采购中间环节和贸易壁垒。'
     },
     {
         img: '',
-        adv: '税收制度合理，优惠政策多样'
+        adv: '国际法律地位高，受欧洲联盟保护，利于迅速提升企业形象。'
     },
     {
         img: '',
-        adv: '基础设施完善，营商环境优良'
+        adv: '可自由在法国境内或境外经营，并可于法国境内外设立公司银行账号。'
     }
 ]
 
 const advantages = [
     {
         img: '',
-        title: '专业团队',
-        description: '拥有经验丰富的专业顾问团队，提供一站式服务解决方案'
+        title: '快速通道服务',
+        description: '外国投资者注册企业可以享受快速通道服务，并可以通过无纸化电子方式提交申请，仅需二周时间即可完成注册。'
     },
     {
         img: '',
-        title: '高效办理',
-        description: '流程优化，快速响应，大大缩短办理时间'
+        title: '经验丰富，大量成功案例',
+        description: '昶嘉捷以中小企业发展为核心目标，为大量企业提供专业的咨询服务。'
     },
     {
         img: '',
-        title: '价格透明',
-        description: '明码标价，无隐性收费，提供高性价比服务'
+        title: '提供专业增值服务',
+        description: '昶嘉捷在境外拥有自己的团队，协助客户提供综合全面的财务、税务、法律等服务，做到“在外有昶嘉捷，更快捷”。'
     },
     {
         img: '',
-        title: '全程服务',
-        description: '从咨询到后续维护，提供全周期贴心服务支持'
+        title: '专业专属商务对接和支持',
+        description: '顾问、咨询师、会计师等建立计划小组，负责客户一对一的咨询、案子进度和客户协调计划等服务工作。'
     }
 ]
 
 const faqs = ref([
     {
-        question: "注册法国公司需要多少资本？",
-        answer: "法国有限责任公司（SARL）最低注册资本为1欧元，股份有限公司（SAS）无最低注册资本要求。"
+        question: "注册法国公司需要准备什么资料？",
+        answer: "所需材料包括：《咨询服务合约》、股东身份证复印件或护照、委托书、无犯罪记录证明、营业执照副本复印件、公司简介、公司名称（备选）、注册资本到位证明、地址证明、公司章程、法定董事身份证明/资信证明等。"
     },
     {
-        question: "注册法国公司需要多长时间？",
-        answer: "通常情况下，注册法国公司需要2-4周时间。"
+        question: "法国公司需要做审核报告吗？",
+        answer: "公司每年需委任当地会计师做公司审核报告，除非公司满足以下任一条件可免：雇员少于50名；营业额低于2千万法朗；资产净值低于1千万法朗。"
     },
     {
-        question: "法国公司需要年审吗？",
-        answer: "是的，法国公司每年都需要进行年报和税务申报。"
-    },
-    {
-        question: "法国公司的税务申报如何进行？",
-        answer: "法国公司需要按月或按季度进行增值税申报，年度所得税申报。"
-    },
-    {
-        question: "外国人可以在法国注册公司吗？",
-        answer: "可以，外国人可以在法国注册公司，但需要满足相关条件。"
-    },
-    {
-        question: "法国公司可以在中国大陆经营吗？",
-        answer: "法国公司不能直接在大陆经营，如需在大陆经营需要设立代表处或投资设立外商投资企业。"
+        question: "法国公司税制如何？",
+        answer: "法国公司税金包括年度基税（IFA，必缴税种，约750欧元/年）、营业税（TP，各地税率不同，巴黎市区约5.5%）和增值税（TVA，全国统一税率19.6%）。"
     }
 ])
 
@@ -239,7 +225,7 @@ const toggleFaq = (index) => {
     expandedItems.value[index] = !expandedItems.value[index]
 }
 
-// 添加过渡动画
+// 保持动画脚本不变
 onMounted(() => {
     // content1 动画
     gsap.from('.content1 .title', {
@@ -296,7 +282,6 @@ onMounted(() => {
         duration: 0.8
     })
 
-    // 使用fromTo方法解决动画与浮动效果冲突
     const conditionItems = document.querySelectorAll('.content3 .condition-item');
     conditionItems.forEach((item, index) => {
         gsap.fromTo(item,
@@ -309,7 +294,7 @@ onMounted(() => {
                 ease: 'power2.out',
                 scrollTrigger: {
                     trigger: '.content3 .intro',
-                    start: 'top 80%'  // 元素进入视口80%位置时触发
+                    start: 'top 80%'  
                 },
                 onComplete: function() {
                     gsap.set(item, { clearProps: "x,opacity,transition" })
@@ -351,7 +336,6 @@ onMounted(() => {
         duration: 0.8
     })
 
-    // 使用fromTo方法解决动画与浮动效果冲突
     const content5Advantages = document.querySelectorAll('.content5 .advantage');
     content5Advantages.forEach((item, index) => {
         gsap.fromTo(item,

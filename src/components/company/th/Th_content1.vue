@@ -4,10 +4,10 @@
             <img src="@/assets/img/company/th/TH.jpg" alt="">
         </div>
         <div class="intro">
-            <div class="th-title">泰国公司注册全攻略</div>
+            <div class="th-title">泰国公司注册</div>
             <div class="th-subtitle">优势、流程、条件、资料、时间、费用及常见问题</div>
             <div class="th-description">
-                <p>- 泰国公司注册</p>
+                <p>- Thailand Company Registration</p>
             </div>
         </div>
     </div>

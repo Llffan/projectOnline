@@ -8,9 +8,9 @@
                 <div class="intro">
                     <img src="@/assets/img/company/vn/VN-2.jpg" alt="">
                     <div class="text">
-                        <P>越南是一个快速发展的发展中国家，经济增长稳定，投资环境日益改善。</P>
+                        <P>越南是一个快速发展的发展中国家，经济增长稳定，投资环境日益改善。凭借在亚洲-太平洋地区的战略地理位置，越南正成为外国投资者的热门目的地。</P>
                         <P>作为东南亚最大的经济体之一，越南拥有年轻的人口、丰富的劳动力资源和充满潜力的消费市场。</P>
-                        <P>凭借在亚洲-太平洋地区的战略地理位置，越南正成为外国投资者的热门目的地。</P>
+                        <P>自从越南加入世界贸易组织后，经济飞速增长，为外国投资者提供了无数的机会和挑战。越南统计总局透露，今年11月份越南新设企业数量达近1.23万家，同比增长近5.4%。</P>
                     </div>
                 </div>
             </div>
@@ -31,27 +31,27 @@
             </div>
             <div class="content3">
                 <div class="title">
-                    条件和所需资料
+                    越南公司注册条件和所需资料
                 </div>
                 <div class="intro">
                     <div class="left">
-                        <div class="condition-item">年满18岁以上的股东或董事</div>
-                        <div class="condition-item">注册地址（我司提供）</div>
-                        <div class="condition-item">法定秘书（我司提供）</div>
-                        <div class="condition-item">公司章程</div>
+                        <div class="condition-item">注册资本：在取得公司注册证书90天内验资到位</div>
+                        <div class="condition-item">注册地址：可由我方协助当地寻找</div>
+                        <div class="condition-item">营业范围</div>
+                        <div class="condition-item">法人名单：1位即可</div>
                     </div>
                     <div class="center"></div>
                     <div class="right">
-                        <div class="condition-item">董事和股东身份证明文件</div>
-                        <div class="condition-item">公司名称（提供多个备选）</div>
-                        <div class="condition-item">注册资本</div>
-                        <div class="condition-item">签署相关文件</div>
+                        <div class="condition-item">董事名单：无国籍限制，外籍人士需在当地取得工作证及暂住证</div>
+                        <div class="condition-item">股东名单、股份金额及股东财务证明：最少1位股东，股份金额无上限</div>
+                        <div class="condition-item">所有股东、董事及法人护照扫描件/地址证明</div>
+                        <div class="condition-item">股东身份证明及财务证明需国内公证及越南驻中国使领馆认证</div>
                     </div>
                 </div>
             </div>
             <div class="content4">
                 <div class="title">
-                    公司注册流程
+                    越南公司注册流程
                 </div>
                 <div class="intro">
                     <div v-for="(item, index) in registrationProcess" :key="index" class="advantage">
@@ -87,7 +87,7 @@
             </div>
             <div class="content6">
                 <div class="title">
-                    注册越南公司常见问题
+                    越南公司注册常见问题
                 </div>
                 <div class="intro">
                     <div 
@@ -126,110 +126,98 @@ gsap.registerPlugin(ScrollTrigger)
 const registrationProcess = [
     {
         img: '',
-        title: '开始公司核名',
-        description: '核名查询，核验名称是否可用。'
+        title: '第一步 公司设立及文件准备',
+        description: '设立境外控股公司并收集相关文件'
     },
     {
         img: '',
-        title: '选择注册地址',
-        description: '确定可注册公司用的地址，我司可提供。'
+        title: '第二步 文件翻译及公证',
+        description: '公司文件经越语翻译及大使馆公证'
     },
     {
         img: '',
-        title: '办理税务登记',
-        description: '专属财税顾问免费提供日常财务账目管理建议。'
+        title: '第三步 名称预查及申请书准备',
+        description: '进行公司名称预查并准备公司章程及申请书'
     },
     {
         img: '',
-        title: '提交申请资料',
-        description: '提供法人/股东身份证原件复印件、 固定电话、等相关材料。'
+        title: '第四步 审批及许可颁发',
+        description: '提交审批机关审批并获得投资许可证'
     },
     {
         img: '',
-        title: '领取营业执照',
-        description: '公司注册顺利完成，顾问将营业执照正/副本等交付。'
+        title: '第五步 公告发布及登记',
+        description: '报刊登载公告并完成董事会议、公安登记等'
     },
     {
         img: '',
-        title: '额外赠送服务',
-        description: '公章、财务章、私章、最新创业补贴标准、最新创业社保补贴标准。'
+        title: '第六步 银行开户及税务登记',
+        description: '完成银行开户、税务登记、海关编码登记等'
     }
 ]
 
 const advantage = [
     {
         img: '',
-        adv: '国际金融中心地位，便于开展全球业务'
+        adv: '越南自然资源丰富，地理位置优越'
     },
     {
         img: '',
-        adv: '税制简单，税率低，无外汇管制'
+        adv: '越南公司注册可享用潜力较大的人力资源'
     },
     {
         img: '',
-        adv: '资金自由流动，便于融资和投资'
+        adv: '具备发展对外经济、吸收外资的有利条件'
     },
     {
         img: '',
-        adv: '法律体系完善，知识产权保护严格'
+        adv: '越南已具备了一定的物质基础'
     },
     {
         img: '',
-        adv: '便利的地理位置，连接中国与世界'
+        adv: '积累了丰富的发展经济经验'
     },
     {
         img: '',
-        adv: '高素质人才集中，营商环境优越'
+        adv: '改革中阻力相对较少'
     }
 ]
 
 const advantages = [
     {
         img: '',
-        title: '专业团队',
-        description: '拥有经验丰富的专业顾问团队，提供一站式服务解决方案'
+        title: '快速通道服务',
+        description: '外国投资者可享受快速通道服务，通过无纸化电子方式提交申请，仅需二周即可完成注册。'
     },
     {
         img: '',
-        title: '高效办理',
-        description: '流程优化，快速响应，大大缩短办理时间'
+        title: '经验丰富，大量成功案例',
+        description: '昶嘉捷专注中小企业发展，为大量企业提供专业的咨询服务。'
     },
     {
         img: '',
-        title: '价格透明',
-        description: '明码标价，无隐性收费，提供高性价比服务'
+        title: '提供专业增值服务',
+        description: '昶嘉捷在境外拥有自己的团队，与各大银行、事务所、税务机构建立了良好合作关系，能协助客户提供综合全面的服务。'
     },
     {
         img: '',
-        title: '全程服务',
-        description: '从咨询到后续维护，提供全周期贴心服务支持'
+        title: '专业专属商务对接和支持',
+        description: '昶嘉捷的顾问、咨询师、会计师多数毕业于国内外著名大学，为每个客户建立计划小组，负责一对一咨询服务。'
     }
 ]
 
 const faqs = ref([
     {
-        question: "注册越南公司需要多少资本？",
-        answer: "越南公司注册资本没有最低限额要求，一般建议注册资本为1亿越盾，无需验资。"
+        question: "越南公司注册资本需要到位吗？",
+        answer: "注册资本10,000~300,000 美金 （ 每个行业不一样），在取得公司注册证书90天内验资到位。"
     },
     {
-        question: "注册越南公司需要多长时间？",
-        answer: "通常情况下，注册越南公司需要7-10个工作日。"
+        question: "越南注册公司公证及认证的材料，应在哪个部门办理？",
+        answer: "关于公证：如以外国公司投资，应前往外国公司注册地的公证处进行公证。如以个人投资，应前往户口所在地的公证处进行公证。关于认证：拿到公证书后，将公证书递交至越南驻所在国之外交单位进行认证。注：如外籍当事人在越南， 则护照可以直接递交越南公证处公证即可。"
     },
     {
-        question: "越南公司需要年审吗？",
-        answer: "是的，越南公司每年都需要进行年审，包括递交年度报告和续期商业登记证。"
-    },
-    {
-        question: "越南公司的税务申报如何进行？",
-        answer: "越南公司需要每年向税务局申报企业所得税，首次报税可以豁免审计。"
-    },
-    {
-        question: "越南公司做账审计有什么要求？",
-        answer: "越南公司需要每年做账并进行审计，无论是否有业务发生。"
-    },
-    {
-        question: "越南公司可以在中国大陆经营吗？",
-        answer: "越南公司不能直接在大陆经营，如需在大陆经营需要设立代表处或投资设立外商投资企业。"
+        question: "在越南注册公司需要多长时间？",
+        answer: "对于没有条件限制的投资项目，大约需要30个工作日。 对于在越南投资有条件的项目，因为需要由相关政府机构审批，时间会较长，约需要60个工作日。 在经济特区设立公司时，时间依据政府机构所需时间。"
     }
 ])
 

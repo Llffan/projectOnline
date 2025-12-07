@@ -8,9 +8,9 @@
                 <div class="intro">
                     <img src="@/assets/img/company/ws/WS-2.jpg" alt="">
                     <div class="text">
-                        <P>萨摩亚是南太平洋的岛国，以其美丽的自然风光和稳定的政局而闻名，是亚太地区重要的离岸金融中心之一。</P>
-                        <P>萨摩亚拥有健全的法律体系和优越的税收政策，为全球投资者提供了良好的营商环境和投资机会。</P>
-                        <P>萨摩亚国际商业公司（IBC）享有税收豁免、资产保护、隐私保护等优势，是进行国际贸易、投资控股、财富管理的理想选择。</P>
+                        <P>一九八七年制定的信托公司法奠定了日后服务离岸客户的信托公司的领牌及规管细则。其它法规包括一九八七年制定的国际公司法、国际信托基金法、离岸银行法、以及在一九八八年制定的国际保险法。</P>
+                        <P>萨摩亚国际公司及信托基金是无需缴付任何当地税项，这包括印花税、资产增值税及应课税。此外，萨摩亚亦不高外汇管制及奉行严密的私隐保护。</P>
+                        <P>一九八七年制定的国际公司法是主要的企业法规，它订明有关萨摩亚国际公司的注册规则、现有公司迁入萨摩亚的手续、以及美式年期有限公司的注册细则等。法例容许相当程度的弹性及机密性。</P>
                     </div>
                 </div>
             </div>
@@ -31,27 +31,27 @@
             </div>
             <div class="content3">
                 <div class="title">
-                    条件和所需资料
+                    萨摩亚公司注册条件和所需资料
                 </div>
                 <div class="intro">
                     <div class="left">
-                        <div class="condition-item">年满18岁以上的股东或董事</div>
-                        <div class="condition-item">注册地址（我司提供）</div>
-                        <div class="condition-item">公司章程</div>
-                        <div class="condition-item">公司名称（提供多个备选）</div>
+                        <div class="condition-item">股东：一位或以上年满18周岁自然人或法人（无国籍限制）</div>
+                        <div class="condition-item">董事：一位或以上年满18周岁自然人或法人（无国籍限制）</div>
+                        <div class="condition-item">证件：填写《注册公司委托书》，2个有效证件影印件</div>
+                        <div class="condition-item">注册资本：标准注册资本100万美元，可任何货币表达</div>
                     </div>
                     <div class="center"></div>
                     <div class="right">
-                        <div class="condition-item">董事和股东身份证明文件</div>
-                        <div class="condition-item">注册资本</div>
-                        <div class="condition-item">公司秘书（我司提供）</div>
-                        <div class="condition-item">签署相关文件</div>
+                        <div class="condition-item">公司名称：必须包括Limited等字样，可注册中文名称</div>
+                        <div class="condition-item">公司秘书：每家公司都要委任一名公司秘书</div>
+                        <div class="condition-item">注册地址：我司提供</div>
+                        <div class="condition-item">公司章程</div>
                     </div>
                 </div>
             </div>
             <div class="content4">
                 <div class="title">
-                    公司注册流程
+                    萨摩亚公司注册流程
                 </div>
                 <div class="intro">
                     <div v-for="(item, index) in registrationProcess" :key="index" class="advantage">
@@ -126,110 +126,117 @@ gsap.registerPlugin(ScrollTrigger)
 const registrationProcess = [
     {
         img: '',
-        title: '开始公司核名',
-        description: '核名查询，核验名称是否可用。'
+        title: '第一步 签署委托书',
+        description: '客户签署委托书，确认注册意向。'
     },
     {
         img: '',
-        title: '准备注册资料',
-        description: '准备法人/股东身份证件、公司章程等相关材料。'
+        title: '第二步 签署协议',
+        description: '双方签署服务协议，明确权利义务。'
     },
     {
         img: '',
-        title: '选择注册地址',
-        description: '确定可注册公司用的地址，我司可提供。'
+        title: '第三步 交付定金',
+        description: '支付注册费用的一半作为定金。'
     },
     {
         img: '',
-        title: '提交申请资料',
-        description: '向萨摩亚相关部门提交完整的注册申请资料。'
+        title: '第四步 办理手续',
+        description: '我们代为向萨摩亚政府部门提交注册申请。'
     },
     {
         img: '',
-        title: '领取营业执照',
-        description: '公司注册顺利完成，领取营业执照等相关证件。'
-    },
-    {
-        img: '',
-        title: '额外赠送服务',
-        description: '公司印章、公司章程、公司证书。'
+        title: '第五步 完成注册',
+        description: '注册完成后支付尾款并领取全套公司文件。'
     }
 ]
 
 const advantage = [
     {
         img: '',
-        adv: '税收优惠，萨摩亚公司免征所得税、资本利得税等'
+        adv: '政治、经济和贸易环境非常稳定'
     },
     {
         img: '',
-        adv: '高度保密性，无需公开股东和董事信息'
+        adv: '良好的金融法律设施，方便建立各种金融机构'
     },
     {
         img: '',
-        adv: '无外汇管制，资金可自由流动'
+        adv: '一个董事即可，可以以企业出任董事'
     },
     {
         img: '',
-        adv: '注册简便，维护成本低'
+        adv: '政府保护股东利益，不需要公布受益人身份'
     },
     {
         img: '',
-        adv: '法律体系完善，保护投资者权益'
+        adv: '政府为企业提供私隐保护，董事资料绝对保密'
     },
     {
         img: '',
-        adv: '全球认可度高，便于开设离岸账户'
+        adv: '在世界各地均可开立银行账户'
+    },
+    {
+        img: '',
+        adv: '注册资金无须到位'
+    },
+    {
+        img: '',
+        adv: '不需要缴纳任何直接税或其他税项'
+    },
+    {
+        img: '',
+        adv: '不需要提交财务报表'
     }
 ]
 
 const advantages = [
     {
         img: '',
-        title: '专业团队',
-        description: '拥有经验丰富的专业顾问团队，提供一站式服务解决方案'
+        title: '快速通道服务',
+        description: '外国投资者注册企业可以享受快速通道服务，通过无纸化电子方式提交申请，仅需二周时间即可完成注册。'
     },
     {
         img: '',
-        title: '高效办理',
-        description: '流程优化，快速响应，大大缩短办理时间'
+        title: '经验丰富',
+        description: '昶嘉捷以中小企业发展为核心目标，为大量企业提供专业的咨询服务。'
     },
     {
         img: '',
-        title: '价格透明',
-        description: '明码标价，无隐性收费，提供高性价比服务'
+        title: '专业增值服务',
+        description: '昶嘉捷在境外拥有自己的团队，也与境外的各大银行、事务所、税务机构建立了良好的合作关系。'
     },
     {
         img: '',
-        title: '全程服务',
-        description: '从咨询到后续维护，提供全周期贴心服务支持'
+        title: '专业专属商务对接',
+        description: '昶嘉捷的顾问、咨询师、会计师等多数毕业于国内外著名大学，对于每个客户都会建立计划小组。'
     }
 ]
 
 const faqs = ref([
     {
-        question: "注册萨摩亚公司需要多少资本？",
-        answer: "萨摩亚公司没有最低注册资本要求，一般建议注册资本为50000美元，无需验资。"
+        question: "在萨摩亚成立公司，需要多少个股东？",
+        answer: "在萨摩亚成立公司，一个股东就可以。中国内地人士只要提供有效护照即可。"
     },
     {
-        question: "注册萨摩亚公司需要多长时间？",
-        answer: "通常情况下，注册萨摩亚公司需要3-5个工作日。"
+        question: "在萨摩亚是否可以注册中文公司名称？",
+        answer: "现在该岛政府已经允许注册中文名称了。中文名称的注册费用是在原注册费用上增加1000人民币。"
     },
     {
-        question: "萨摩亚公司需要年审吗？",
-        answer: "是的，萨摩亚公司每年都需要进行年审和提交财务报表。"
+        question: "什么人士才可以到萨摩亚开立公司？",
+        answer: "一位以上年满18岁股东（有护照的内地公民或海外人士）"
     },
     {
-        question: "萨摩亚公司的税务申报如何进行？",
-        answer: "萨摩亚公司无需在当地缴纳税款，但需按时提交年度申报表。"
+        question: "萨摩亚开立的公司可以到全世界任何地方开户吗？",
+        answer: "可以。但银行账号必须在成立公司后才能申请。开户一般要求董事亲临银行办理。"
     },
     {
-        question: "外国人可以在萨摩亚注册公司吗？",
-        answer: "可以，外国人可以在萨摩亚注册公司，且无任何限制。"
+        question: "萨摩亚公司每年的维护费用是多少？",
+        answer: "每年维持费用6500RMB，此费用随政府的调整而浮动。"
     },
     {
-        question: "萨摩亚公司可以在中国大陆经营吗？",
-        answer: "萨摩亚公司不能直接在大陆经营，如需在大陆经营需要设立代表处或投资设立外商投资企业。"
+        question: "如果我们想注册一家萨摩亚公司，应该如何办理？",
+        answer: "您只要填一份委托书和传真有效证件的影印件给我们就可以了，剩下的工作我们会主动联系您。"
     }
 ])
 

@@ -4,10 +4,10 @@
             <img src="@/assets/img/company/sg/SG.jpg" alt="">
         </div>
         <div class="intro">
-            <div class="sg-title">新加坡公司注册全攻略</div>
+            <div class="sg-title">新加坡公司注册</div>
             <div class="sg-subtitle">优势、流程、条件、资料、时间、费用及常见问题</div>
             <div class="sg-description">
-                <p>- 新加坡公司注册</p>
+                <p>- Singapore Company Registration</p>
             </div>
         </div>
     </div>

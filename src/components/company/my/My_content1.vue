@@ -4,10 +4,10 @@
             <img src="@/assets/img/company/my/MY.jpg" alt="">
         </div>
         <div class="intro">
-            <div class="my-title">马来西亚公司注册全攻略</div>
-            <div class="my-subtitle">优势、流程、条件、资料、时间、费用及常见问题</div>
+            <div class="my-title">马来西亚公司注册</div>
+            <div class="my-subtitle">马来西亚公司注册优势、流程、条件、资料、时间、费用及常见问题</div>
             <div class="my-description">
-                <p>- 马来西亚公司注册</p>
+                <p>- Malaysia Company Registration</p>
             </div>
         </div>
     </div>

@@ -8,9 +8,9 @@
                 <div class="intro">
                     <img src="@/assets/img/company/bvi/BVI-2.jpg" alt="">
                     <div class="text">
-                        <P>英属维尔京群岛(BVI)是世界著名的离岸金融中心之一，以其宽松的监管环境、灵活的公司法规和极低的税收负担而闻名全球。</P>
-                        <P>作为英国的海外领土，BVI拥有稳定的政治环境和完善的法律体系，为全球投资者提供了安全可靠的商业平台。</P>
-                        <P>BVI公司享有高度保密性、无外汇管制、资产保护等优势，是国际贸易、投资控股、财富管理等领域的理想选择。</P>
+                        <P>BVI又称为英属维尔京群岛或英属处女群岛，是英联邦成员国之一，旅游业及海外离岸公司注册是其两大支柱产业。</P>
+                        <P>BVI的金融环境非常利于离岸公司发展，因其被称作为“免税天堂”，基本上所有离岸经营的公司不用缴税。</P>
+                        <P>BVI公司每年仅需少数的年审成本，因此发展成世界上最快的海外离岸投资中心之一。</P>
                     </div>
                 </div>
             </div>
@@ -35,17 +35,17 @@
                 </div>
                 <div class="intro">
                     <div class="left">
-                        <div class="condition-item">年满18岁以上的股东或董事</div>
-                        <div class="condition-item">注册地址（我司提供）</div>
-                        <div class="condition-item">公司章程</div>
-                        <div class="condition-item">公司名称（提供多个备选）</div>
+                        <div class="condition-item">公司名称：英文需以LIMITED等结尾，也可递交中文名称。</div>
+                        <div class="condition-item">董事要求：一名或多名（年满18岁自然人），无国籍限制。</div>
+                        <div class="condition-item">股东要求：一名或多名，可以是自然人或法人单位。</div>
+                        <div class="condition-item">注册地址：BVI公司注册地址必须在英属维尔京群岛。</div>
                     </div>
                     <div class="center"></div>
                     <div class="right">
-                        <div class="condition-item">董事和股东身份证明文件</div>
-                        <div class="condition-item">注册资本</div>
-                        <div class="condition-item">公司秘书（我司提供）</div>
-                        <div class="condition-item">签署相关文件</div>
+                        <div class="condition-item">注册资本：标准50,000股，每股币值不受限制。</div>
+                        <div class="condition-item">验资要求：注册资本无须验资到位。</div>
+                        <div class="condition-item">个人注册资料：股东身份文件和地址证明。</div>
+                        <div class="condition-item">公司名义注册：需提供公司全套注册文件和CPA核证。</div>
                     </div>
                 </div>
             </div>
@@ -56,8 +56,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in registrationProcess" :key="index" class="advantage">
                         <div class="img">
-                            <!-- <img :src="item.img" :alt="item.title"> -->
-                        </div>
+                            </div>
                         <div class="text1">
                             {{ item.title }}
                         </div>
@@ -74,8 +73,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in advantages" :key="index" class="advantage">
                         <div class="img">
-                            <!-- <img :src="item.img" :alt="item.title"> -->
-                        </div>
+                            </div>
                         <div class="text1">
                             {{ item.title }}
                         </div>
@@ -126,110 +124,98 @@ gsap.registerPlugin(ScrollTrigger)
 const registrationProcess = [
     {
         img: '',
-        title: '开始公司核名',
-        description: '核名查询，核验名称是否可用。'
+        title: '公司名称核准',
+        description: '核准公司名称，我司将免费查册。'
     },
     {
         img: '',
-        title: '准备注册资料',
-        description: '准备法人/股东身份证件、公司章程等相关材料。'
+        title: '签署委托书及交付费用',
+        description: '填写委托书，签署协议书，并交付费用。'
     },
     {
         img: '',
-        title: '选择注册地址',
-        description: '确定可注册公司用的地址，我司可提供。'
+        title: '签署法定文件',
+        description: '安排所有股东及董事签署全套法定文件，并回签政府文件。'
     },
     {
         img: '',
-        title: '提交申请资料',
-        description: '向BVI相关部门提交完整的注册申请资料。'
+        title: '政府部门办理手续',
+        description: '到政府各部门办理有关注册手续。'
     },
     {
         img: '',
-        title: '领取营业执照',
-        description: '公司注册顺利完成，领取营业执照等相关证件。'
+        title: '完成注册及交接文件',
+        description: '约15个工作天完成注册，交接全套注册公司文件。'
     },
     {
         img: '',
-        title: '额外赠送服务',
-        description: '公司印章、公司章程、公司证书。'
+        title: '后续经济实质申报',
+        description: '完成文件备档及后续经济实质法案申报指导。'
     }
 ]
 
 const advantage = [
     {
         img: '',
-        adv: '税收优惠，BVI公司免征所得税、资本利得税等'
+        adv: '政治经济稳定，有良好的金融法律设施。'
     },
     {
         img: '',
-        adv: '高度保密性，无需公开股东和董事信息'
+        adv: '股东信息保密，董事、股东资料享有高度隐秘性。'
     },
     {
         img: '',
-        adv: '无外汇管制，资金可自由流动'
+        adv: '免税天堂，离岸经营所得实现零税率。'
     },
     {
         img: '',
-        adv: '注册简便，维护成本低'
+        adv: '申请条件简单，一人即可注册，取名自由，注册资本无上限。'
     },
     {
         img: '',
-        adv: '法律体系完善，保护投资者权益'
+        adv: '后续维护简单，仅需年审和经济实质法案申报，无需做账、报税、审计。'
     },
     {
         img: '',
-        adv: '全球认可度高，便于开设离岸账户'
+        adv: '经营范围没有限制（不包括数字货币、虚拟货币等），无外汇管制。'
     }
 ]
 
 const advantages = [
     {
         img: '',
-        title: '专业团队',
-        description: '拥有经验丰富的专业顾问团队，提供一站式服务解决方案'
+        title: '快速通道服务',
+        description: '外国投资者注册企业可以享受快速通道服务，并可以通过无纸化电子方式提交申请，仅需二周时间即可完成注册。'
     },
     {
         img: '',
-        title: '高效办理',
-        description: '流程优化，快速响应，大大缩短办理时间'
+        title: '经验丰富，大量成功案例',
+        description: '昶嘉捷以中小企业发展为核心目标，为大量企业提供专业的咨询服务。'
     },
     {
         img: '',
-        title: '价格透明',
-        description: '明码标价，无隐性收费，提供高性价比服务'
+        title: '提供专业增值服务',
+        description: '昶嘉捷在境外拥有自己的团队，协助客户提供综合全面的财务、税务、法律等服务，做到“在外有昶嘉捷，更快捷”。'
     },
     {
         img: '',
-        title: '全程服务',
-        description: '从咨询到后续维护，提供全周期贴心服务支持'
+        title: '专业专属商务对接和支持',
+        description: '顾问、咨询师、会计师等建立计划小组，负责客户一对一的咨询、案子进度和客户协调计划等服务工作。'
     }
 ]
 
 const faqs = ref([
     {
-        question: "注册BVI公司需要多少资本？",
-        answer: "BVI公司没有最低注册资本要求，一般建议注册资本为50000美元，无需验资。"
+        question: "BVI公司有无企业所得税？",
+        answer: "BVI公司对于离岸企业不征收所得税，且无公司资产税、印花税等。对公司信息保密度高，可以以BVI公司持有物业资本，物业或资本转移时，只需转移公司股权，简单免税。"
     },
     {
-        question: "注册BVI公司需要多长时间？",
-        answer: "通常情况下，注册BVI公司需要3-5个工作日。"
+        question: "注册BVI公司后续维护方便吗？",
+        answer: "BVI公司每年仅需年审（续年费）和做经济实质法案申报，不用在BVI做账报税，维护简单，成本低。"
     },
     {
-        question: "BVI公司需要年审吗？",
-        answer: "是的，BVI公司每年都需要进行年审和提交财务报表。"
-    },
-    {
-        question: "BVI公司的税务申报如何进行？",
-        answer: "BVI公司无需在当地缴纳税款，但需按时提交年度申报表。"
-    },
-    {
-        question: "外国人可以在BVI注册公司吗？",
-        answer: "可以，外国人可以在BVI注册公司，且无任何限制。"
-    },
-    {
-        question: "BVI公司可以在中国大陆经营吗？",
-        answer: "BVI公司不能直接在大陆经营，如需在大陆经营需要设立代表处或投资设立外商投资企业。"
+        question: "注册BVI公司需要多久？",
+        answer: "全套注册下来需要时间约1个月（15个工作日左右）。"
     }
 ])
 
@@ -239,7 +225,7 @@ const toggleFaq = (index) => {
     expandedItems.value[index] = !expandedItems.value[index]
 }
 
-// 添加过渡动画
+// 保持动画脚本不变
 onMounted(() => {
     // content1 动画
     gsap.from('.content1 .title', {
@@ -296,7 +282,6 @@ onMounted(() => {
         duration: 0.8
     })
 
-    // 使用fromTo方法解决动画与浮动效果冲突
     const conditionItems = document.querySelectorAll('.content3 .condition-item');
     conditionItems.forEach((item, index) => {
         gsap.fromTo(item,
@@ -309,7 +294,7 @@ onMounted(() => {
                 ease: 'power2.out',
                 scrollTrigger: {
                     trigger: '.content3 .intro',
-                    start: 'top 80%'  // 元素进入视口80%位置时触发
+                    start: 'top 80%'  
                 },
                 onComplete: function() {
                     gsap.set(item, { clearProps: "x,opacity,transition" })
@@ -351,7 +336,6 @@ onMounted(() => {
         duration: 0.8
     })
 
-    // 使用fromTo方法解决动画与浮动效果冲突
     const content5Advantages = document.querySelectorAll('.content5 .advantage');
     content5Advantages.forEach((item, index) => {
         gsap.fromTo(item,

@@ -8,9 +8,9 @@
                 <div class="intro">
                     <img src="@/assets/img/company/ca/CA-2.jpg" alt="">
                     <div class="text">
-                        <P>加拿大是全球最发达的国家之一，拥有稳定的经济环境和完善的法律体系。</P>
-                        <P>作为G7成员国，加拿大在科技、能源、金融等领域具有强大的竞争力，是北美洲重要的经济体。</P>
-                        <P>凭借高质量的生活环境、开放的移民政策和优越的营商环境，加拿大成为全球投资者和企业家的理想选择。</P>
+                        <P>加拿大是一个高度发达的资本主义国家，拥有丰富的自然资源和高度发达的科技，是全球生活水准最高的国家之一。</P>
+                        <P>加拿大在教育、政府的透明度、社会自由度、生活品质及经济自由的国际排名都名列前茅，是八国集团、20国集团等重要国际组织的成员国。</P>
+                        <P>注册加拿大公司程序便捷、成本低廉，且产品可自由进入北美和英联邦国家市场，为企业提供了广阔的跨国发展机遇。</P>
                     </div>
                 </div>
             </div>
@@ -35,17 +35,17 @@
                 </div>
                 <div class="intro">
                     <div class="left">
-                        <div class="condition-item">年满18岁以上的股东或董事</div>
-                        <div class="condition-item">注册地址（我司提供）</div>
-                        <div class="condition-item">法定秘书（我司提供）</div>
-                        <div class="condition-item">公司章程</div>
+                        <div class="condition-item">拟注册加拿大公司名称（英文）。</div>
+                        <div class="condition-item">股东及董事名称、身份证或护照。</div>
+                        <div class="condition-item">股东及董事联系电话、联系地址。</div>
+                        <div class="condition-item">公司的经营范围（营业范围和地区没有限制）。</div>
                     </div>
                     <div class="center"></div>
                     <div class="right">
-                        <div class="condition-item">董事和股东身份证明文件</div>
-                        <div class="condition-item">公司名称（提供多个备选）</div>
-                        <div class="condition-item">注册资本</div>
-                        <div class="condition-item">签署相关文件</div>
+                        <div class="condition-item">至少一位加拿大公司董事（温哥华地区注册不需提供）。</div>
+                        <div class="condition-item">股东/董事需年满18周岁，无国籍限制。</div>
+                        <div class="condition-item">公司组织形式：可选择个人独资、合伙或有限责任股份公司。</div>
+                        <div class="condition-item">公司制企业（股份公司）：股东以出资额为限，承担有限责任。</div>
                     </div>
                 </div>
             </div>
@@ -56,8 +56,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in registrationProcess" :key="index" class="advantage">
                         <div class="img">
-                            <!-- <img :src="item.img" :alt="item.title"> -->
-                        </div>
+                            </div>
                         <div class="text1">
                             {{ item.title }}
                         </div>
@@ -74,8 +73,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in advantages" :key="index" class="advantage">
                         <div class="img">
-                            <!-- <img :src="item.img" :alt="item.title"> -->
-                        </div>
+                            </div>
                         <div class="text1">
                             {{ item.title }}
                         </div>
@@ -126,110 +124,98 @@ gsap.registerPlugin(ScrollTrigger)
 const registrationProcess = [
     {
         img: '',
-        title: '开始公司核名',
-        description: '核名查询，核验名称是否可用。'
+        title: '签署委托书及交付费用',
+        description: '签署委托书、协议并交付费用。'
     },
     {
         img: '',
-        title: '选择注册地址',
-        description: '确定可注册公司用的地址，我司可提供。'
+        title: '提供资料及名称查册',
+        description: '提供公司名称、董事股东资料，进行名称查册。'
     },
     {
         img: '',
-        title: '办理税务登记',
-        description: '专属财税顾问免费提供日常财务账目管理建议。'
+        title: '准备和签署法定文档',
+        description: '准备公司章程等法定文档，并安排签署。'
     },
     {
         img: '',
-        title: '提交申请资料',
-        description: '提供法人/股东身份证原件复印件、 固定电话、等相关材料。'
+        title: '递交政府部门办理手续',
+        description: '向公司注册处递交所有文件，办理相关注册手续。'
     },
     {
         img: '',
-        title: '领取营业执照',
-        description: '公司注册顺利完成，顾问将营业执照正/副本等交付。'
+        title: '完成注册及领取资料',
+        description: '约2-3个月完成注册，领取公司证书、章程等全套资料。'
     },
     {
         img: '',
-        title: '额外赠送服务',
-        description: '公章、财务章、私章、最新创业补贴标准、最新创业社保补贴标准。'
+        title: '后续年报及纳税申报',
+        description: '公司每年需向省政府递交年报，并向联邦税务局交纳入息税。'
     }
 ]
 
 const advantage = [
     {
         img: '',
-        adv: '政治环境稳定，法律体系完善'
+        adv: '注册便捷成本低廉，注册资本无要求，公司名称选择自由。'
     },
     {
         img: '',
-        adv: '自然资源丰富，经济基础雄厚'
+        adv: '产品自由进入北美和英联邦国家，提升企业国际形象。'
     },
     {
         img: '',
-        adv: '税收政策合理，营商环境优越'
+        adv: '可在海外银行开设账户，资金进出自由，合理避开外汇管制。'
     },
     {
         img: '',
-        adv: '教育水平高，人才资源充足'
+        adv: '招商引资享有优惠，在内地投资可享受地方政府的优惠政策。'
     },
     {
         img: '',
-        adv: '地理位置优越，贸易便利'
+        adv: '建立个人信用等级，对个人或公司信贷、房贷及加拿大移民申请有帮助。'
     },
     {
         img: '',
-        adv: '社会福利完善，生活质量高'
+        adv: '股份公司股东责任有限，公司存续连续性强，股权转让容易。'
     }
 ]
 
 const advantages = [
     {
         img: '',
-        title: '专业团队',
-        description: '拥有经验丰富的专业顾问团队，提供一站式服务解决方案'
+        title: '快速通道服务',
+        description: '外国投资者注册企业可以享受快速通道服务，并可以通过无纸化电子方式提交申请，仅需二周时间即可完成注册。'
     },
     {
         img: '',
-        title: '高效办理',
-        description: '流程优化，快速响应，大大缩短办理时间'
+        title: '经验丰富，大量成功案例',
+        description: '昶嘉捷以中小企业发展为核心目标，为大量企业提供专业的咨询服务。'
     },
     {
         img: '',
-        title: '价格透明',
-        description: '明码标价，无隐性收费，提供高性价比服务'
+        title: '提供专业增值服务',
+        description: '昶嘉捷在境外拥有自己的团队，协助客户提供综合全面的财务、税务、法律等服务，做到“在外有昶嘉捷，更快捷”。'
     },
     {
         img: '',
-        title: '全程服务',
-        description: '从咨询到后续维护，提供全周期贴心服务支持'
+        title: '专业专属商务对接和支持',
+        description: '顾问、咨询师、会计师等建立计划小组，负责客户一对一的咨询、案子进度和客户协调计划等服务工作。'
     }
 ]
 
 const faqs = ref([
     {
-        question: "注册加拿大公司需要多少资本？",
-        answer: "加拿大公司注册资本没有最低限额要求，一般建议注册资本为加币1元，无需验资。"
+        question: "加拿大股份公司有什么特点？",
+        answer: "特点包括：股东责任有限，不对超出其股份比例的公司债务负责；公司存在的连续性，股东变更不影响公司存续；股权转让容易。"
     },
     {
-        question: "注册加拿大公司需要多长时间？",
-        answer: "通常情况下，注册加拿大公司需要3-5个工作日。"
+        question: "加拿大公司年报包括什么？",
+        answer: "每年要向省政府公司注册处递交年报，内容包括：公司董事名单、地址及交纳费用。若两年欠交公司注册费用，公司会被取消。"
     },
     {
-        question: "加拿大公司需要年审吗？",
-        answer: "是的，加拿大公司每年都需要进行年审，包括递交年度报告和续期商业登记证。"
-    },
-    {
-        question: "加拿大公司的税务申报如何进行？",
-        answer: "加拿大公司需要每年向税务局申报企业所得税，首次报税可以豁免审计。"
-    },
-    {
-        question: "加拿大公司做账审计有什么要求？",
-        answer: "加拿大公司需要每年做账并进行审计，无论是否有业务发生。"
-    },
-    {
-        question: "加拿大公司可以在中国大陆经营吗？",
-        answer: "加拿大公司不能直接在大陆经营，如需在大陆经营需要设立代表处或投资设立外商投资企业。"
+        question: "加拿大公司一定要交纳入息税吗？",
+        answer: "加拿大公司在注册后，可以经营任何合法生意，但须每季度向加拿大联邦税务局交纳入息税。如果公司暂时未经营，也需要填交报表并告之税务局。"
     }
 ])
 
@@ -239,7 +225,7 @@ const toggleFaq = (index) => {
     expandedItems.value[index] = !expandedItems.value[index]
 }
 
-// 添加过渡动画
+// 保持动画脚本不变
 onMounted(() => {
     // content1 动画
     gsap.from('.content1 .title', {
@@ -296,7 +282,6 @@ onMounted(() => {
         duration: 0.8
     })
 
-    // 使用fromTo方法解决动画与浮动效果冲突
     const conditionItems = document.querySelectorAll('.content3 .condition-item');
     conditionItems.forEach((item, index) => {
         gsap.fromTo(item,
@@ -309,7 +294,7 @@ onMounted(() => {
                 ease: 'power2.out',
                 scrollTrigger: {
                     trigger: '.content3 .intro',
-                    start: 'top 80%'  // 元素进入视口80%位置时触发
+                    start: 'top 80%'  
                 },
                 onComplete: function() {
                     gsap.set(item, { clearProps: "x,opacity,transition" })
@@ -351,7 +336,6 @@ onMounted(() => {
         duration: 0.8
     })
 
-    // 使用fromTo方法解决动画与浮动效果冲突
     const content5Advantages = document.querySelectorAll('.content5 .advantage');
     content5Advantages.forEach((item, index) => {
         gsap.fromTo(item,

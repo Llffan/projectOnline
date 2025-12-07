@@ -4,10 +4,10 @@
             <img src="@/assets/img/company/us/US.jpg" alt="">
         </div>
         <div class="intro">
-            <div class="us-title">美国公司注册全攻略</div>
+            <div class="us-title">美国公司注册</div>
             <div class="us-subtitle">优势、流程、条件、资料、时间、费用及常见问题</div>
             <div class="us-description">
-                <p>- 美国公司注册</p>
+                <p>- USA Company Registration</p>
             </div>
         </div>
     </div>

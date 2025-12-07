@@ -1,4 +1,5 @@
 <template>
+    <!-- 越南公司 -->
     <div class="vn_box">
         <Top />
         <Vncontent1 />

@@ -4,7 +4,7 @@
             <img src="@/assets/img/company/ws/WS.jpg" alt="">
         </div>
         <div class="intro">
-            <div class="ws-title">萨摩亚公司注册全攻略</div>
+            <div class="ws-title">萨摩亚公司注册</div>
             <div class="ws-subtitle">优势、流程、条件、资料、时间、费用及常见问题</div>
             <div class="ws-description">
                 <p>- Samoa Company Registration</p>

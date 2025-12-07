@@ -8,9 +8,9 @@
                 <div class="intro">
                     <img src="@/assets/img/company/kr/KR-2.jpg" alt="">
                     <div class="text">
-                        <P>韩国是亚洲四小龙之一，拥有发达的科技和制造业，是全球重要的经济体之一。韩国政府积极推动外商投资，提供了良好的营商环境和优惠政策。</P>
-                        <P>在韩国设立公司，可以充分利用韩国在电子、汽车、造船等领域的技术优势，同时享受与美国、欧盟、中国等多个国家和地区签署的自由贸易协定带来的贸易便利。</P>
-                        <P>韩国公司注册程序相对简便，法律体系完善，为外国投资者提供了稳定可靠的投资环境和广阔的发展空间。</P>
+                        <P>韩国位于东亚朝鲜半岛南部，是一个发达的资本主义国家，资讯科技、制造业发达，造船、汽车、电子等产业居世界前列。</P>
+                        <P>韩国拥有世界闻名的高速互联网服务、优良的营商环境和发达的市场经济，是投资者开展业务的理想地。</P>
+                        <P>基于韩国政府制定出的多样化鼓励机制，以及亚太地区高收益的特点，吸引了众多跨国企业在此投资。</P>
                     </div>
                 </div>
             </div>
@@ -35,17 +35,17 @@
                 </div>
                 <div class="intro">
                     <div class="left">
-                        <div class="condition-item">至少一名董事和一名股东（可以是同一人）</div>
-                        <div class="condition-item">注册地址（需为韩国实际地址）</div>
-                        <div class="condition-item">公司名称（韩文或英文）</div>
-                        <div class="condition-item">公司章程</div>
+                        <div class="condition-item">人数要求：2人起（股东/代表理事/监事需根据股本和架构确定）</div>
+                        <div class="condition-item">注册资金：默认1亿韩元，必须一次性实缴验资到位。</div>
+                        <div class="condition-item">注册地址：需为韩国本地的注册地址（我司可提供）。</div>
+                        <div class="condition-item">经营范围：限制少，一般的正常业务都可以经营。</div>
                     </div>
                     <div class="center"></div>
                     <div class="right">
-                        <div class="condition-item">董事和股东身份证明文件</div>
-                        <div class="condition-item">注册资本（无最低要求）</div>
-                        <div class="condition-item">公司业务描述</div>
-                        <div class="condition-item">签署相关文件</div>
+                        <div class="condition-item">公司名称：以韩文命名，执照显示韩文（可用英文名称）。</div>
+                        <div class="condition-item">身份证明：提供代表理事和监事的身份证件（身份证和护照）。</div>
+                        <div class="condition-item">公证文件：代表理事和监事需在国内办理公证原件。</div>
+                        <div class="condition-item">资金注入：注册款需从韩国境外汇入才能被认可为外商投资。</div>
                     </div>
                 </div>
             </div>
@@ -56,8 +56,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in registrationProcess" :key="index" class="advantage">
                         <div class="img">
-                            <!-- <img :src="item.img" :alt="item.title"> -->
-                        </div>
+                            </div>
                         <div class="text1">
                             {{ item.title }}
                         </div>
@@ -74,8 +73,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in advantages" :key="index" class="advantage">
                         <div class="img">
-                            <!-- <img :src="item.img" :alt="item.title"> -->
-                        </div>
+                            </div>
                         <div class="text1">
                             {{ item.title }}
                         </div>
@@ -126,60 +124,60 @@ gsap.registerPlugin(ScrollTrigger)
 const registrationProcess = [
     {
         img: '',
-        title: '公司名称核查',
-        description: '核查公司名称是否可用，准备备选名称。'
+        title: '提交名称及评估',
+        description: '核名、确定公司名称、营业范围、代表理事和监事。'
     },
     {
         img: '',
-        title: '准备注册文件',
-        description: '准备公司章程、股东董事资料等必要文件。'
+        title: '签署协议及交付款项',
+        description: '签署委托协议，支付定金，并准备公证文件。'
     },
     {
         img: '',
-        title: '提交注册申请',
-        description: '向相关机构提交公司注册申请及相关文件。'
+        title: '办理公证文件',
+        description: '代表理事和监事在国内办理公证后，将公证原件邮到我司。'
     },
     {
         img: '',
-        title: '领取注册证书',
-        description: '注册审核通过后，领取公司注册证书。'
+        title: '申报外商投资及注资',
+        description: '办理外商投资申报，客户从境外汇入注册资金到银行托管账户（可提供垫资服务）。'
     },
     {
         img: '',
-        title: '办理税务登记',
-        description: '完成国税厅和地税部门的税务登记手续。'
+        title: '递交申请并完成注册',
+        description: '资金到账后，我司办理注册手续，时间约为7-9个工作日。'
     },
     {
         img: '',
-        title: '开立银行账户',
-        description: '凭公司文件在韩国银行开设公司账户。'
+        title: '领取执照及后续开户',
+        description: '客户到韩国领取营业执照，我司协助客户开设银行账户。'
     }
 ]
 
 const advantage = [
     {
         img: '',
-        adv: '发达的科技产业，创新环境优越'
+        adv: '优秀人才资源：97%以上的职业人士拥有大学学历或受过职业培训。'
     },
     {
         img: '',
-        adv: '完善的法律制度，投资保障充分'
+        adv: 'IT强国：拥有世界最高的宽带网入网率和移动电话普及率。'
     },
     {
         img: '',
-        adv: '优越的地理位置，便于拓展亚洲市场'
+        adv: '高政府鼓励机制：在经济合作发展组织会员国中属于最宽大。'
     },
     {
         img: '',
-        adv: '政府积极推动外商投资，政策支持'
+        adv: '最佳地理位置：距东北亚主要城市（北京、东京、上海）航班行程均在3小时以内。'
     },
     {
         img: '',
-        adv: '高素质人才集中，劳动力资源丰富'
+        adv: '高收益中心：外资企业的净利润远高于国内企业。'
     },
     {
         img: '',
-        adv: '自由贸易协定网络广泛，贸易便利'
+        adv: '贸易便利：公司注册后即拥有进出口权，无需额外申请。'
     }
 ]
 
@@ -208,28 +206,16 @@ const advantages = [
 
 const faqs = ref([
     {
-        question: "注册韩国公司需要多少资本？",
-        answer: "韩国公司注册资本没有最低限额要求，可根据实际需要设定。"
+        question: "韩国公司办理完成后所得到的文件有哪些？",
+        answer: "1.营业执照；2.法人登记簿誊本；3.印鉴证明；4.法人公章；5.公司章程，股东名册；6.公司卡。"
     },
     {
-        question: "注册韩国公司需要多长时间？",
-        answer: "通常情况下，注册韩国公司需要1-2周时间。"
+        question: "韩国公司对注册资本的要求如何？",
+        answer: "最低注册资本为1亿韩元，约合人民币60万。此费用需由境外汇入韩国，注册时按当天汇率兑换为韩币，且必须实缴验资到位。"
     },
     {
-        question: "是否需要韩国人作为董事？",
-        answer: "不需要，外国人也可以担任韩国公司的董事。"
-    },
-    {
-        question: "韩国公司需要年审吗？",
-        answer: "是的，韩国公司需要每年提交年度申报并更新相关信息。"
-    },
-    {
-        question: "注册韩国公司后如何开银行账户？",
-        answer: "注册完成后可凭公司文件在韩国银行开设公司账户，也可通过代理协助办理。"
-    },
-    {
-        question: "韩国公司可以在中国经营吗？",
-        answer: "韩国公司不能直接在中国经营，如需在中国经营需要设立代表处或投资设立外商投资企业。"
+        question: "韩国公司可以实地经营吗？",
+        answer: "可以的。我司可以提供注册韩国国外经营公司和韩国实体经营公司。"
     }
 ])
 
@@ -239,7 +225,7 @@ const toggleFaq = (index) => {
     expandedItems.value[index] = !expandedItems.value[index]
 }
 
-// 添加过渡动画
+// 保持动画脚本不变
 onMounted(() => {
     // content1 动画
     gsap.from('.content1 .title', {
@@ -296,7 +282,6 @@ onMounted(() => {
         duration: 0.8
     })
 
-    // 使用fromTo方法解决动画与浮动效果冲突
     const conditionItems = document.querySelectorAll('.content3 .condition-item');
     conditionItems.forEach((item, index) => {
         gsap.fromTo(item,
@@ -309,7 +294,7 @@ onMounted(() => {
                 ease: 'power2.out',
                 scrollTrigger: {
                     trigger: '.content3 .intro',
-                    start: 'top 80%'  // 元素进入视口80%位置时触发
+                    start: 'top 80%'  
                 },
                 onComplete: function() {
                     gsap.set(item, { clearProps: "x,opacity,transition" })
@@ -351,7 +336,6 @@ onMounted(() => {
         duration: 0.8
     })
 
-    // 使用fromTo方法解决动画与浮动效果冲突
     const content5Advantages = document.querySelectorAll('.content5 .advantage');
     content5Advantages.forEach((item, index) => {
         gsap.fromTo(item,

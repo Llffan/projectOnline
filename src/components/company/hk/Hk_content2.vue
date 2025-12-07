@@ -8,9 +8,9 @@
                 <div class="intro">
                     <img src="@/assets/img/company/hk/HK-2.jpg" alt="">
                     <div class="text">
-                        <P>香港是一个融合机遇、创意和进取精神的都市，连续24年被美国传统基金会评为"全球最自由经济体"。</P>
-                        <P>作为国际金融中心，香港完善的法律制度、简单的税制、低税率、配套齐全的基建及通讯设施、高素质的专业人才，得到世界各地投资者的青睐。</P>
-                        <P>香港蕴藏着无限商机，是通往全球经贸的平台，香港的优势广为人知，数以万计的国际企业都因在香港设立公司而受惠。</P>
+                        <P>香港是一个融合机遇、创意和进取精神的都市，连续24年被美国传统基金会评为“全球最自由经济体”。</P>
+                        <P>作为国际金融中心，香港完善的法律制度、简单的税制、低税率、配套齐全的基建，得到世界各地投资者的青睐。</P>
+                        <P>香港蕴藏着无限商机，是通往全球经贸的平台，其国际优势广为人知，数以万计的国际企业因在此设立公司而受惠。</P>
                     </div>
                 </div>
             </div>
@@ -35,17 +35,17 @@
                 </div>
                 <div class="intro">
                     <div class="left">
-                        <div class="condition-item">年满18岁以上的股东或董事</div>
-                        <div class="condition-item">注册地址（我司提供）</div>
-                        <div class="condition-item">法定秘书（我司提供）</div>
-                        <div class="condition-item">公司章程</div>
+                        <div class="condition-item">董事/股东：至少一位（不限国籍，年满18岁），需提供身份证明。</div>
+                        <div class="condition-item">公司名义股东：提供营业执照复印件加盖公章，确认股份比例。</div>
+                        <div class="condition-item">法定秘书：委任香港人或香港公司担任（我方可提供）。</div>
+                        <div class="condition-item">经营范围：中文限28字，英文限60字母。</div>
                     </div>
                     <div class="center"></div>
                     <div class="right">
-                        <div class="condition-item">董事和股东身份证明文件</div>
-                        <div class="condition-item">公司名称（提供多个备选）</div>
-                        <div class="condition-item">注册资本</div>
-                        <div class="condition-item">签署相关文件</div>
+                        <div class="condition-item">注册资金：10000港元，不需实缴到位。</div>
+                        <div class="condition-item">注册地址：须提供香港公司注册地址（我方可提供）。</div>
+                        <div class="condition-item">公司名称：中英文名/英文名，需以“有限公司”或“LIMITED”结尾。</div>
+                        <div class="condition-item">尽职调查/地址证明：需填写尽职调查表格，并提供股东地址证明。</div>
                     </div>
                 </div>
             </div>
@@ -56,8 +56,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in registrationProcess" :key="index" class="advantage">
                         <div class="img">
-                            <!-- <img :src="item.img" :alt="item.title"> -->
-                        </div>
+                            </div>
                         <div class="text1">
                             {{ item.title }}
                         </div>
@@ -74,8 +73,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in advantages" :key="index" class="advantage">
                         <div class="img">
-                            <!-- <img :src="item.img" :alt="item.title"> -->
-                        </div>
+                            </div>
                         <div class="text1">
                             {{ item.title }}
                         </div>
@@ -126,110 +124,98 @@ gsap.registerPlugin(ScrollTrigger)
 const registrationProcess = [
     {
         img: '',
-        title: '开始公司核名',
-        description: '核名查询，核验名称是否可用。'
+        title: '公司名称查册',
+        description: '提交名称，进行查册，确保无重复。'
     },
     {
         img: '',
-        title: '选择注册地址',
-        description: '确定可注册公司用的地址，我司可提供。'
+        title: '签署协议及交付费用',
+        description: '提交委托书、签署协议，并交付费用。'
     },
     {
         img: '',
-        title: '办理税务登记',
-        description: '专属财税顾问免费提供日常财务账目管理建议。'
+        title: '签署法定文档',
+        description: '安排所有股东及董事签署全套法定文件。'
     },
     {
         img: '',
-        title: '提交申请资料',
-        description: '提供法人/股东身份证原件复印件、 固定电话、等相关材料。'
+        title: '政府审批及注册',
+        description: '我司提交政府审批，最快2小时内完成审批并出示证书扫描件。'
     },
     {
         img: '',
-        title: '领取营业执照',
-        description: '公司注册顺利完成，顾问将营业执照正/副本等交付。'
+        title: '制作绿盒',
+        description: '制作绿盒，内含章程、股票本、会议记录、印章等法定文件。'
     },
     {
         img: '',
-        title: '额外赠送服务',
-        description: '公章、财务章、私章、最新创业补贴标准、最新创业社保补贴标准。'
+        title: '成立完毕及领取资料',
+        description: '快至两个工作日领取全套资料，绿盒可寄到指定地点。'
     }
 ]
 
 const advantage = [
     {
         img: '',
-        adv: '国际金融中心地位，便于开展全球业务'
+        adv: '国际金融地位：香港是世界著名的金融贸易港，方便收汇用汇。'
     },
     {
         img: '',
-        adv: '税制简单，税率低，无外汇管制'
+        adv: '国际形象：香港良好的国际形象，提升企业的国际地位和产品竞争力。'
     },
     {
         img: '',
-        adv: '资金自由流动，便于融资和投资'
+        adv: '政策优势：不在香港经营不用缴税的政策（地域来源原则），便于快速积累资本。'
     },
     {
         img: '',
-        adv: '法律体系完善，知识产权保护严格'
+        adv: '物流优势：庞大且完善的海陆空物流优势，让商品快速送达消费者。'
     },
     {
         img: '',
-        adv: '便利的地理位置，连接中国与世界'
+        adv: '简单易办：成立手续简单，门槛低，无需当地实地办公，低成本开启事业。'
     },
     {
         img: '',
-        adv: '高素质人才集中，营商环境优越'
+        adv: '国际信誉：香港的国际信誉，让您的对外投资更值得被信任。'
     }
 ]
 
 const advantages = [
     {
         img: '',
-        title: '专业团队',
-        description: '拥有经验丰富的专业顾问团队，提供一站式服务解决方案'
+        title: '快速通道服务',
+        description: '外国投资者注册企业可以享受快速通道服务，并可以通过无纸化电子方式提交申请，仅需二周时间即可完成注册。'
     },
     {
         img: '',
-        title: '高效办理',
-        description: '流程优化，快速响应，大大缩短办理时间'
+        title: '经验丰富，大量成功案例',
+        description: '昶嘉捷以中小企业发展为核心目标，为大量企业提供专业的咨询服务。'
     },
     {
         img: '',
-        title: '价格透明',
-        description: '明码标价，无隐性收费，提供高性价比服务'
+        title: '提供专业增值服务',
+        description: '昶嘉捷在境外拥有自己的团队，协助客户提供综合全面的财务、税务、法律等服务，做到“在外有昶嘉捷，更快捷”。'
     },
     {
         img: '',
-        title: '全程服务',
-        description: '从咨询到后续维护，提供全周期贴心服务支持'
+        title: '专业专属商务对接和支持',
+        description: '顾问、咨询师、会计师等建立计划小组，负责客户一对一的咨询、案子进度和客户协调计划等服务工作。'
     }
 ]
 
 const faqs = ref([
     {
-        question: "注册香港公司需要多少资本？",
-        answer: "香港公司注册资本没有最低限额要求，一般建议注册资本为1万港币，无需验资。"
+        question: "想在香港成立一家有限公司，需要什么条件？",
+        answer: "只要您年满18岁，持有身份证或护照就可以在香港注册公司。另外，您必须提供一个位于香港的地址作为公司注册地址，和一个香港居民/或一家香港公司出任公司法定秘书一职。（注册地址和公司秘书我司可提供）。"
     },
     {
-        question: "注册香港公司需要多长时间？",
-        answer: "通常情况下，注册香港公司需要8-10个工作日。"
+        question: "注册资金怎么打入香港公司账户？",
+        answer: "香港公司注册不需要资金到位，认缴就可以了。"
     },
     {
-        question: "香港公司需要年审吗？",
-        answer: "是的，香港公司每年都需要进行年审，包括递交周年申报表和续期商业登记证。"
-    },
-    {
-        question: "香港公司做账审计有什么要求？",
-        answer: "香港公司需要每年做账并进行审计，无论是否有业务发生。"
-    },
-    {
-        question: "香港公司的税务申报如何进行？",
-        answer: "香港公司需要每年向税务局申报利得税，首次报税可以豁免审计。"
-    },
-    {
-        question: "香港公司可以在中国大陆经营吗？",
-        answer: "香港公司不能直接在大陆经营，如需在大陆经营需要设立代表处或投资设立外商投资企业。"
+        question: "香港公司按时如实报税的有什么好处？",
+        answer: "如实申报税务有利于公司长期运营，可享受展位费减半优惠，亏损可持续弥补利润，有利银行融资/开立信用证，并有利于业务拓展、商业合作以及公司未来在香港上市。"
     }
 ])
 
@@ -239,7 +225,7 @@ const toggleFaq = (index) => {
     expandedItems.value[index] = !expandedItems.value[index]
 }
 
-// 添加过渡动画
+// 保持动画脚本不变
 onMounted(() => {
     // content1 动画
     gsap.from('.content1 .title', {
@@ -296,7 +282,6 @@ onMounted(() => {
         duration: 0.8
     })
 
-    // 使用fromTo方法解决动画与浮动效果冲突
     const conditionItems = document.querySelectorAll('.content3 .condition-item');
     conditionItems.forEach((item, index) => {
         gsap.fromTo(item,
@@ -309,7 +294,7 @@ onMounted(() => {
                 ease: 'power2.out',
                 scrollTrigger: {
                     trigger: '.content3 .intro',
-                    start: 'top 80%'  // 元素进入视口80%位置时触发
+                    start: 'top 80%'  
                 },
                 onComplete: function() {
                     gsap.set(item, { clearProps: "x,opacity,transition" })
@@ -351,7 +336,6 @@ onMounted(() => {
         duration: 0.8
     })
 
-    // 使用fromTo方法解决动画与浮动效果冲突
     const content5Advantages = document.querySelectorAll('.content5 .advantage');
     content5Advantages.forEach((item, index) => {
         gsap.fromTo(item,

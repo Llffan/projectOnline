@@ -8,9 +8,9 @@
                 <div class="intro">
                     <img src="@/assets/img/company/mh/MH-2.jpg" alt="">
                     <div class="text">
-                        <P>马绍尔群岛是太平洋上的岛国，以其稳定的政局和有利的商业环境而闻名，是亚太地区重要的离岸金融中心之一。</P>
-                        <P>马绍尔拥有健全的法律体系和优越的税收政策，为全球投资者提供了良好的营商环境和投资机会。</P>
-                        <P>马绍尔国际商业公司（IBC）享有税收豁免、资产保护、隐私保护等优势，是进行国际贸易、投资控股、财富管理的理想选择。</P>
+                        <P>马绍尔是著名的离岸注册地之一，尤其受到想进行离岸操作的外贸企业青睐，近年来声名鹊起。</P>
+                        <P>马绍尔公司若非由原居民成立，可合法免除一切税项，并享有高度保密性。</P>
+                        <P>公司管理模式灵活，可选择英式（常务董事及公司秘书）或美式（董事及行政人员）管理，且允许发行不记名股票。</P>
                     </div>
                 </div>
             </div>
@@ -35,17 +35,17 @@
                 </div>
                 <div class="intro">
                     <div class="left">
-                        <div class="condition-item">年满18岁以上的股东或董事</div>
-                        <div class="condition-item">注册地址（我司提供）</div>
-                        <div class="condition-item">公司章程</div>
-                        <div class="condition-item">公司名称（提供多个备选）</div>
+                        <div class="condition-item">股东：一位或以上股东，无国籍要求。</div>
+                        <div class="condition-item">董事：无最少董事人数规定，法人亦可出任董事。</div>
+                        <div class="condition-item">公司名称：名称可加上标准词尾，可免费预留半年。</div>
+                        <div class="condition-item">注册资本：最低50,000美金；标准股份500份无票面价值。</div>
                     </div>
                     <div class="center"></div>
                     <div class="right">
-                        <div class="condition-item">董事和股东身份证明文件</div>
-                        <div class="condition-item">注册资本</div>
-                        <div class="condition-item">公司秘书（我司提供）</div>
-                        <div class="condition-item">签署相关文件</div>
+                        <div class="condition-item">公司架构用途：确定公司架构、用途及股份分配比例。</div>
+                        <div class="condition-item">注册地址：确定公司注册地址（地址可代为提供）。</div>
+                        <div class="condition-item">股东证件：提供股东身份证或护照影印本。</div>
+                        <div class="condition-item">签字样本：提供股东中英文签字样本。</div>
                     </div>
                 </div>
             </div>
@@ -56,8 +56,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in registrationProcess" :key="index" class="advantage">
                         <div class="img">
-                            <!-- <img :src="item.img" :alt="item.title"> -->
-                        </div>
+                            </div>
                         <div class="text1">
                             {{ item.title }}
                         </div>
@@ -74,8 +73,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in advantages" :key="index" class="advantage">
                         <div class="img">
-                            <!-- <img :src="item.img" :alt="item.title"> -->
-                        </div>
+                            </div>
                         <div class="text1">
                             {{ item.title }}
                         </div>
@@ -119,117 +117,110 @@
 import { ref, onMounted } from 'vue'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
-import '@/css/company/mh/Mh_content2.css'
+// 注意: 这里引用的是马绍尔公司的CSS，如果您没有 Mh_content2.css，请确保使用之前修改的 Mo_content2.css
+import '@/css/company/mh/Mh_content2.css' 
 
 gsap.registerPlugin(ScrollTrigger)
 
 const registrationProcess = [
     {
         img: '',
-        title: '开始公司核名',
-        description: '核名查询，核验名称是否可用。'
+        title: '公司名称查册与预留',
+        description: '提交最满意名称，免费核名，公司名称可获免费预留半年。'
     },
     {
         img: '',
-        title: '准备注册资料',
-        description: '准备法人/股东身份证件、公司章程等相关材料。'
+        title: '注册条件评估及合同签署',
+        description: '确定公司架构、股本、董事、地址，并按双方协商签订代理协议合同。'
     },
     {
         img: '',
-        title: '选择注册地址',
-        description: '确定可注册公司用的地址，我司可提供。'
+        title: '准备申报资料',
+        description: '准备股东证件、签字样本、股份分配比例等，安排所有股东及董事签署全套文件。'
     },
     {
         img: '',
-        title: '提交申请资料',
-        description: '向马绍尔相关部门提交完整的注册申请资料。'
+        title: '递交申请与审核',
+        description: '马绍尔主管机关审核，我司全程跟进政府办理注册手续，并及时反馈。'
     },
     {
         img: '',
-        title: '领取营业执照',
-        description: '公司注册顺利完成，领取营业执照等相关证件。'
+        title: '回签文件及注册完成',
+        description: '扫描所得公司文件进行确认，公司注册完毕，时间约需15个工作日左右。'
     },
     {
         img: '',
-        title: '额外赠送服务',
-        description: '公司印章、公司章程、公司证书。'
+        title: '支付余款与资料领取',
+        description: '客户支付余款，领取全套注册成功所得资料（如注册证书、章程、印章等）。'
     }
 ]
 
 const advantage = [
     {
         img: '',
-        adv: '税收优惠，马绍尔公司免征所得税、资本利得税等'
+        adv: '合法免税：非原居民成立的公司可合法免除一切税项。'
     },
     {
         img: '',
-        adv: '高度保密性，无需公开股东和董事信息'
+        adv: '高度保密：股东身份、董事名册、收益等资料高度保密，公众不能查阅。'
     },
     {
         img: '',
-        adv: '无外汇管制，资金可自由流动'
+        adv: '公司运作方便：无需做账审计、无需报税、无需缴纳当地税款。'
     },
     {
         img: '',
-        adv: '注册简便，维护成本低'
+        adv: '注册简单快捷：注册时间短，注册资料简单，手续便捷，下证快。'
     },
     {
         img: '',
-        adv: '法律体系完善，保护投资者权益'
+        adv: '中文名称有效：拥有真正有效的中文名称，正式归档，名字不会重复。'
     },
     {
         img: '',
-        adv: '全球认可度高，便于开设离岸账户'
+        adv: '国际声誉良好：法体制仿效英美法系，允许英或美式管理，法律支持完善。'
     }
 ]
 
 const advantages = [
     {
         img: '',
-        title: '专业团队',
-        description: '拥有经验丰富的专业顾问团队，提供一站式服务解决方案'
+        title: '快速通道服务',
+        description: '外国投资者注册企业可以享受快速通道服务，并可以通过无纸化电子方式提交申请，仅需二周时间即可完成注册。'
     },
     {
         img: '',
-        title: '高效办理',
-        description: '流程优化，快速响应，大大缩短办理时间'
+        title: '经验丰富，大量成功案例',
+        description: '昶嘉捷以中小企业发展为核心目标，为大量企业提供专业的咨询服务。'
     },
     {
         img: '',
-        title: '价格透明',
-        description: '明码标价，无隐性收费，提供高性价比服务'
+        title: '提供专业增值服务',
+        description: '昶嘉捷在境外拥有自己的团队，也与境外的各大银行、事务所、税务机构建立了良好的合作关系，除了提供注册服务，对于后续境外主体财务、税务、法律等都能协助企业客户提供综合全面的服务，做到“在外有昶嘉捷，更快捷”。'
     },
     {
         img: '',
-        title: '全程服务',
-        description: '从咨询到后续维护，提供全周期贴心服务支持'
+        title: '专业专属商务对接和支持',
+        description: '昶嘉捷的顾问、咨询师、会计师等多数毕业于国内外著名大学，对于每个客户都会建立计划小组，负责客户一对一的咨询、案子进度和客户协调计划等服务工作，服务过程积极听取客户意见，建立客户意见档案和增值服务平台，旨在为客户提供专业和安全保障服务。'
     }
 ]
 
 const faqs = ref([
     {
-        question: "注册马绍尔公司需要多少资本？",
-        answer: "马绍尔公司没有最低注册资本要求，一般建议注册资本为50000美元，无需验资。"
+        question: "马绍尔船舶注册有优势吗？",
+        answer: "马绍尔群岛的船舶注计划发展迅速，可注册成油轮、客轮、散装船、集装箱船等。船舶可由马绍尔群岛的公司、合夥企业或认可的外国海事法团拥有。"
     },
     {
-        question: "注册马绍尔公司需要多长时间？",
-        answer: "通常情况下，注册马绍尔公司需要3-5个工作日。"
+        question: "马绍尔开户如何办理？",
+        answer: "客户申请开设银行帐户时，如属新公司，银行会要求出示Certificate of Incumbency（董事在职证明）以及经由会计师或律师行签证的注册文件核证副本，我司可代办，需付相应费用。"
     },
     {
-        question: "马绍尔公司需要年审吗？",
-        answer: "是的，马绍尔公司每年都需要进行年审和提交财务报表。"
+        question: "注册马绍尔公司要不要验资？",
+        answer: "在马绍尔注册公司资金无需验资及到位，亦没有最低资本要求，而且注册后不需将资金打到国外公司，每年也不需要验资。"
     },
     {
-        question: "马绍尔公司的税务申报如何进行？",
-        answer: "马绍尔公司无需在当地缴纳税款，但需按时提交年度申报表。"
-    },
-    {
-        question: "外国人可以在马绍尔注册公司吗？",
-        answer: "可以，外国人可以在马绍尔注册公司，且无任何限制。"
-    },
-    {
-        question: "马绍尔公司可以在中国大陆经营吗？",
-        answer: "马绍尔公司不能直接在大陆经营，如需在大陆经营需要设立代表处或投资设立外商投资企业。"
+        question: "马绍尔群岛豁免税收是怎么样的？",
+        answer: "由非原居民成立的马绍尔公司，可合法免除一切税收，即不必就其任何收入或资产交纳任何税项。"
     }
 ])
 
@@ -239,7 +230,7 @@ const toggleFaq = (index) => {
     expandedItems.value[index] = !expandedItems.value[index]
 }
 
-// 添加过渡动画
+// 添加过渡动画（保持与 Mo_content2.vue 一致的逻辑）
 onMounted(() => {
     // content1 动画
     gsap.from('.content1 .title', {
@@ -296,7 +287,6 @@ onMounted(() => {
         duration: 0.8
     })
 
-    // 使用fromTo方法解决动画与浮动效果冲突
     const conditionItems = document.querySelectorAll('.content3 .condition-item');
     conditionItems.forEach((item, index) => {
         gsap.fromTo(item,
@@ -309,7 +299,7 @@ onMounted(() => {
                 ease: 'power2.out',
                 scrollTrigger: {
                     trigger: '.content3 .intro',
-                    start: 'top 80%'  // 元素进入视口80%位置时触发
+                    start: 'top 80%'  
                 },
                 onComplete: function() {
                     gsap.set(item, { clearProps: "x,opacity,transition" })
@@ -351,7 +341,6 @@ onMounted(() => {
         duration: 0.8
     })
 
-    // 使用fromTo方法解决动画与浮动效果冲突
     const content5Advantages = document.querySelectorAll('.content5 .advantage');
     content5Advantages.forEach((item, index) => {
         gsap.fromTo(item,

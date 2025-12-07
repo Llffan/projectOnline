@@ -8,9 +8,9 @@
                 <div class="intro">
                     <img src="@/assets/img/company/mo/MO-2.jpg" alt="">
                     <div class="text">
-                        <P>澳门是中华人民共和国的特别行政区，享有独特的"一国两制"优势，是连接中国与葡语国家的桥梁。</P>
-                        <P>作为世界知名的旅游休闲中心，澳门拥有开放的经济政策、低税率、简化的营商环境，以及完善的金融和法律服务体系。</P>
-                        <P>澳门公司注册程序简便，为投资者提供了良好的商业平台，是拓展亚洲及葡语国家市场的理想选择。</P>
+                        <P>澳门特别行政区，位于中国珠江三角洲西岸，毗邻珠海，隔海香港，是国际自由港和世界旅游休闲中心，世界人口密度最高的地区之一。</P>
+                        <P>也是世界四大赌城之一，其著名的轻工业、旅游业、酒店业和娱乐场使澳门长盛不衰，成为全球最发达富裕的地区之一。</P>
+                        <P>另外，中共中央国务院印发《横琴粤澳深度合作区建设总体方案》，明确了横琴粤澳深度合作区四大战略定位。</P>
                     </div>
                 </div>
             </div>
@@ -35,17 +35,17 @@
                 </div>
                 <div class="intro">
                     <div class="left">
-                        <div class="condition-item">至少一名股东和一名董事（可以是同一人）</div>
-                        <div class="condition-item">注册地址（需为澳门实际地址）</div>
-                        <div class="condition-item">公司章程</div>
-                        <div class="condition-item">公司秘书（可选）</div>
+                        <div class="condition-item">股东人数：一般2人，最多30人，不限国籍（允许一人有限公司）</div>
+                        <div class="condition-item">董事及秘书：须委任一名或多名董事，不限国籍（无须委任法定秘书）</div>
+                        <div class="condition-item">注册地址：须提供在澳门的注册地址（我司可提供）</div>
+                        <div class="condition-item">注册资本及费用：最少25,000澳门元；政府按实际资本额收取千分之一至千分之四的印花税。</div>
                     </div>
                     <div class="center"></div>
                     <div class="right">
-                        <div class="condition-item">董事和股东身份证明文件</div>
-                        <div class="condition-item">公司名称（提供多个备选）</div>
-                        <div class="condition-item">注册资本（无最低要求）</div>
-                        <div class="condition-item">签署相关文件</div>
+                        <div class="condition-item">拟注册公司名称及经营范围（需查册）</div>
+                        <div class="condition-item">股东为个人时：需提供身份证复印件、婚姻状况、配偶姓名及财产制</div>
+                        <div class="condition-item">股东为公司时：需提供经公证的商业登记、会议记录及授权书</div>
+                        <div class="condition-item">选择开户方式，提供相对应资料</div>
                     </div>
                 </div>
             </div>
@@ -56,8 +56,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in registrationProcess" :key="index" class="advantage">
                         <div class="img">
-                            <!-- <img :src="item.img" :alt="item.title"> -->
-                        </div>
+                            </div>
                         <div class="text1">
                             {{ item.title }}
                         </div>
@@ -74,8 +73,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in advantages" :key="index" class="advantage">
                         <div class="img">
-                            <!-- <img :src="item.img" :alt="item.title"> -->
-                        </div>
+                            </div>
                         <div class="text1">
                             {{ item.title }}
                         </div>
@@ -127,109 +125,97 @@ const registrationProcess = [
     {
         img: '',
         title: '公司名称核查',
-        description: '核查公司名称是否可用，准备备选名称。'
+        description: '确认名称及经营范围，并进行查册（约3-4个工作天）。'
     },
     {
         img: '',
-        title: '准备注册文件',
-        description: '准备公司章程、股东董事资料等必要文件。'
+        title: '签署委托与定金支付',
+        description: '客户签署委托协议并支付定金。'
     },
     {
         img: '',
-        title: '提交注册申请',
-        description: '向澳门财政局商业及动产登记局提交注册申请。'
+        title: '制作法定文件',
+        description: '制作法定文档，客户签署后寄回原件。'
     },
     {
         img: '',
-        title: '领取注册证书',
-        description: '注册审核通过后，领取公司注册证书。'
+        title: '向政府部门提交申请',
+        description: '代理向政府部门递交文件，办理相关设立手续。'
     },
     {
         img: '',
-        title: '办理税务登记',
-        description: '完成财政局税务登记手续。'
+        title: '完成注册',
+        description: '注册完成，取得注册文件（约21-25个工作天）。'
     },
     {
         img: '',
-        title: '开立银行账户',
-        description: '凭公司文件在澳门银行开设公司账户。'
+        title: '支付余款',
+        description: '支付余款，领取公司全套资料。'
     }
 ]
 
 const advantage = [
     {
         img: '',
-        adv: '低税率环境，税收优惠明显'
+        adv: '低税率优势：采用利润来源地税收原则，境外收入免税，且对大陆投资可享税收优惠。' // 合并原2, 6
     },
     {
         img: '',
-        adv: '简化的营商环境，注册流程便捷'
+        adv: '贸易便利：可借助CEPA享受零关税产品进入大陆的便利，并通过转移价格实现节税。' // 合并原1, 5
     },
     {
         img: '',
-        adv: '连接中国与葡语国家的桥梁'
+        adv: '注册要求宽松：注册资本无需实缴到位。'
     },
     {
         img: '',
-        adv: '完善的金融和法律服务体系'
+        adv: '法制稳定：法制体系健全且稳定。'
     },
     {
         img: '',
-        adv: '开放的经济政策，投资自由度高'
+        adv: '国际金融便利：可在世界任何银行开银行账户。'
     },
     {
         img: '',
-        adv: '独特的"一国两制"优势'
+        adv: '提升品牌形象：有利于建立高信誉度的国际品牌。' // 压缩原8
     }
 ]
 
 const advantages = [
     {
         img: '',
-        title: '专业团队',
-        description: '拥有经验丰富的专业顾问团队，提供一站式服务解决方案'
+        title: '快速通道服务',
+        description: '外国投资者可享受快速通道服务，无纸化电子方式提交申请，仅需二周时间即可完成注册。'
     },
     {
         img: '',
-        title: '高效办理',
-        description: '流程优化，快速响应，大大缩短办理时间'
+        title: '经验丰富，大量成功案例',
+        description: '昶嘉捷以中小企业发展为核心目标，为大量企业提供专业的咨询服务。'
     },
     {
         img: '',
-        title: '价格透明',
-        description: '明码标价，无隐性收费，提供高性价比服务'
+        title: '提供专业增值服务',
+        description: '在境外拥有自己的团队，协助客户提供综合全面的财务、税务、法律等服务，做到“在外有昶嘉捷，更快捷”。'
     },
     {
         img: '',
-        title: '全程服务',
-        description: '从咨询到后续维护，提供全周期贴心服务支持'
+        title: '专业专属商务对接和支持',
+        description: '顾问、咨询师、会计师等建立计划小组，负责客户一对一的咨询、案子进度和客户协调计划等服务工作。'
     }
 ]
 
 const faqs = ref([
     {
-        question: "注册澳门公司需要多少资本？",
-        answer: "澳门公司注册资本没有最低限额要求，可根据实际需要设定。"
+        question: "澳门公司注册完成后有哪些资料？",
+        answer: "澳门公司全套资料：商业登记证（营业执照）；公司资料登记文件；M1营业税表格；章程；公司设立合同一份，含澳门特别行政区认证；一套公司章。"
     },
     {
-        question: "注册澳门公司需要多长时间？",
-        answer: "通常情况下，注册澳门公司需要5-7个工作日。"
+        question: "注册澳门公司要提供什么？",
+        answer: "1、拟使用的澳门公司商业名称。2、股东资料：身份证明、住址、婚姻状况等，法人股东需提供经公证的会议录。3、注册股本由最低澳门币贰万伍仟元起。4、业务范围。5、被委任人（如有）的个人身份证明资料。"
     },
     {
-        question: "是否需要澳门居民作为董事？",
-        answer: "不需要，外国人也可以担任澳门公司的董事。"
-    },
-    {
-        question: "澳门公司需要年审吗？",
-        answer: "是的，澳门公司需要每年提交年度申报并更新相关信息。"
-    },
-    {
-        question: "注册澳门公司后如何开银行账户？",
-        answer: "注册完成后可凭公司文件在澳门银行开设公司账户，也可通过代理协助办理。"
-    },
-    {
-        question: "澳门公司可以在中国大陆经营吗？",
-        answer: "澳门公司不能直接在中国大陆经营，如需在大陆经营需要设立代表处或投资设立外商投资企业。"
+        question: "澳门公司如何在澳门工商银行开户？",
+        answer: "企业银行帐户必须等成立后才能申请，一般要求董事亲自到银行办理。开户前必须办理政府公证处见证副本，确定介绍人以及提交公司注册的相关文件。具体请与昶嘉捷顾问联系。"
     }
 ])
 

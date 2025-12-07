@@ -1,4 +1,5 @@
 <template>
+    <!-- 泰国公司 -->
     <div class="th_box">
         <Top />
         <Thcontent1 />

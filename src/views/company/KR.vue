@@ -1,4 +1,5 @@
 <template>
+    <!-- 韩国公司 -->
     <div class="kr_box">
         <Top />
         <Krcontent1 />

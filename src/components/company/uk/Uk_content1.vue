@@ -4,10 +4,10 @@
             <img src="@/assets/img/company/uk/UK.jpg" alt="">
         </div>
         <div class="intro">
-            <div class="uk-title">英国公司注册全攻略</div>
+            <div class="uk-title">英国公司注册</div>
             <div class="uk-subtitle">优势、流程、条件、资料、时间、费用及常见问题</div>
             <div class="uk-description">
-                <p>- 英国公司注册</p>
+                <p>- UK Company Registration</p>
             </div>
         </div>
     </div>

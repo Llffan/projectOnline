@@ -8,9 +8,9 @@
                 <div class="intro">
                     <img src="@/assets/img/company/jp/JP-2.jpg" alt="">
                     <div class="text">
-                        <P>日本是世界第三大经济体，拥有先进的科技、完善的法律制度和高度发达的基础设施。作为亚洲重要的商业中心，日本以其稳定的经济环境、严格的知识产权保护和优质的商业服务吸引着全球投资者。</P>
-                        <P>在日本设立公司，不仅可以享受进入亚洲市场的重要门户优势，还能充分利用日本在技术创新、高端制造和品牌管理方面的领先地位。</P>
-                        <P>日本公司注册体系完善，法律环境透明，为外国投资者提供了良好的营商环境和广阔的发展空间。</P>
+                        <P>日本是目前世界上经济发展较好的发达国家之一，亦为世界第三大经济体，是世界八大工业国成员国之一。</P>
+                        <P>日本公司的品牌效应受到世界各国认可，尤其在化妆品、餐饮、重工机械、游戏等行业，有利于企业包装和未来的市场推广。</P>
+                        <P>日本在国际上的亲密盟友为美国，其良好的基础设施和健全的法律制度，为企业家和商人提供了得天独厚的营商环境。</P>
                     </div>
                 </div>
             </div>
@@ -35,17 +35,17 @@
                 </div>
                 <div class="intro">
                     <div class="left">
-                        <div class="condition-item">至少一名董事和一名股东（可以是同一人）</div>
-                        <div class="condition-item">注册地址（需为日本实际地址）</div>
-                        <div class="condition-item">公司名称（日文或英文）</div>
-                        <div class="condition-item">公司章程</div>
+                        <div class="condition-item">公司名称：选择自由，允许平假名、片假名、数字、英文等文字。</div>
+                        <div class="condition-item">名称限制：禁止使用“银行”、“信托”、“生命保险”等受限字眼。</div>
+                        <div class="condition-item">注册资金：注册资本金不受限制，1日元起业也可（1万日元也可）。</div>
+                        <div class="condition-item">注册地址：地址租赁费包含在注册费中，实体公司地址须自行提供。</div>
                     </div>
                     <div class="center"></div>
                     <div class="right">
-                        <div class="condition-item">董事和股东身份证明文件</div>
-                        <div class="condition-item">注册资本（无最低要求）</div>
-                        <div class="condition-item">公司业务描述</div>
-                        <div class="condition-item">签署相关文件</div>
+                        <div class="condition-item">经营范围：在合法范围内，绝大部分行业都可以申请注册。</div>
+                        <div class="condition-item">公司代表：需确定日本公司日本代表。</div>
+                        <div class="condition-item">资料提供：需提供股东的名章公证书。</div>
+                        <div class="condition-item">签证/永居：出资500万日元以上注册公司，可申请投资经营签证。</div>
                     </div>
                 </div>
             </div>
@@ -56,8 +56,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in registrationProcess" :key="index" class="advantage">
                         <div class="img">
-                            <!-- <img :src="item.img" :alt="item.title"> -->
-                        </div>
+                            </div>
                         <div class="text1">
                             {{ item.title }}
                         </div>
@@ -74,8 +73,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in advantages" :key="index" class="advantage">
                         <div class="img">
-                            <!-- <img :src="item.img" :alt="item.title"> -->
-                        </div>
+                            </div>
                         <div class="text1">
                             {{ item.title }}
                         </div>
@@ -119,112 +117,110 @@
 import { ref, onMounted } from 'vue'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
-import '@/css/company/jp/Jp_content2.css'
+// 保持导入路径不变
+import '@/css/company/jp/Jp_content2.css' 
 
 gsap.registerPlugin(ScrollTrigger)
 
 const registrationProcess = [
     {
         img: '',
-        title: '公司名称核查',
-        description: '核查公司名称是否可用，准备备选名称。'
+        title: '确定公司信息',
+        description: '确定公司名称、注册地址和日本代表。'
     },
     {
         img: '',
-        title: '准备注册文件',
-        description: '准备公司章程、股东董事资料等必要文件。'
+        title: '准备公证资料',
+        description: '按规定准备股东的名章公证书等相关资料。'
     },
     {
         img: '',
-        title: '提交注册申请',
-        description: '向法务局提交公司注册申请及相关文件。'
+        title: '制作及公证申请文件',
+        description: '专业行政书士做成全部申请书类，并在日本公证。'
     },
     {
         img: '',
-        title: '领取注册证书',
-        description: '注册审核通过后，领取公司注册证书。'
+        title: '递交法务局登记',
+        description: '将公证后的文件送交日本法务局进行登记。'
     },
     {
         img: '',
-        title: '办理税务登记',
-        description: '完成国税厅和地税部门的税务登记手续。'
-    }
-]
-
-const advantages = [
-    {
-        img: '',
-        title: '专业团队',
-        description: '拥有经验丰富的专业顾问团队，提供一站式服务解决方案'
+        title: '完成注册及领取资料',
+        description: '约15-20个工作天完成注册，取得营业执照证明书、法人印章证明书等。'
     },
     {
         img: '',
-        title: '高效办理',
-        description: '流程优化，快速响应，大大缩短办理时间'
-    },
-    {
-        img: '',
-        title: '价格透明',
-        description: '明码标价，无隐性收费，提供高性价比服务'
-    },
-    {
-        img: '',
-        title: '全程服务',
-        description: '从咨询到后续维护，提供全周期贴心服务支持'
+        title: '税务部门开户及后续',
+        description: '进行税务部门开户、休眠手续处理、年检手续等后续管理。'
     }
 ]
 
 const advantage = [
     {
         img: '',
-        adv: '世界第三大经济体，市场潜力巨大'
+        adv: '品牌形象优势：日本公司品牌效应高，有利于产品和品牌的市场推广和发展。'
     },
     {
         img: '',
-        adv: '完善的法律制度，稳定的经济环境'
+        adv: '营商环境优越：更容易开辟日本市场，拥有良好的基础设施和健全的法律制度。'
     },
     {
         img: '',
-        adv: '严格的知识产权保护'
+        adv: '名称与范围自由：公司名称选择比较自由，经营范围原则上没有太大的限制。'
     },
     {
         img: '',
-        adv: '先进的科技和制造业基础'
+        adv: '注册资本金无限制：注册资本金不受限制，1日元起业也可以。'
     },
     {
         img: '',
-        adv: '高素质的人才资源'
+        adv: '签证优势：出资500万日元以上注册，可申请来日投资经营签证。'
     },
     {
         img: '',
-        adv: '便利的亚洲市场门户'
+        adv: '移民跳板：持续经营和居住满足条件，可申请日本国籍或永久签证。'
+    }
+]
+
+const advantages = [
+    {
+        img: '',
+        title: '快速通道服务',
+        description: '外国投资者注册企业可以享受快速通道服务，并可以通过无纸化电子方式提交申请，仅需二周时间即可完成注册。'
+    },
+    {
+        img: '',
+        title: '经验丰富，大量成功案例',
+        description: '昶嘉捷以中小企业发展为核心目标，为大量企业提供专业的咨询服务。'
+    },
+    {
+        img: '',
+        title: '提供专业增值服务',
+        description: '昶嘉捷在境外拥有自己的团队，协助客户提供综合全面的财务、税务、法律等服务，做到“在外有昶嘉捷，更快捷”。'
+    },
+    {
+        img: '',
+        title: '专业专属商务对接和支持',
+        description: '顾问、咨询师、会计师等建立计划小组，负责客户一对一的咨询、案子进度和客户协调计划等服务工作。'
     }
 ]
 
 const faqs = ref([
     {
-        question: "注册日本公司需要多少资本？",
-        answer: "日本公司注册资本没有最低限额要求，可根据实际需要设定。"
+        question: "日本公司是否有核名阶段，及设立公司的周期？",
+        answer: "日本没有核名过程，可重名。公司设立周期一般为3至4周即可设立完成。"
     },
     {
-        question: "注册日本公司需要多长时间？",
-        answer: "通常情况下，注册日本公司需要1-2周时间。"
+        question: "设立日本公司的注册资本金如何要求？",
+        answer: "日本对新设立公司的金额无要求，最少1日元即可，无实缴制度。"
     },
     {
-        question: "是否需要日本人作为董事？",
-        answer: "不需要，外国人也可以担任日本公司的董事。"
+        question: "日本公司如何查册？",
+        answer: "日本公司可以在国税厅网站查册，凭借公司法人番号、公司名称、注册地址均可查询。"
     },
     {
-        question: "日本公司需要年审吗？",
-        answer: "是的，日本公司需要每年提交年度申报并更新相关信息。"
-    },
-    {
-        question: "注册日本公司后如何开银行账户？",
-        answer: "注册完成后可凭公司文件在日本银行开设公司账户，也可通过代理协助办理。"
-    },
-    {
-        question: "日本公司可以在中国经营吗？",
-        answer: "日本公司不能直接在中国经营，如需在中国经营需要设立代表处或投资设立外商投资企业。"
+        question: "日本公司办理完成后所得到的文件有哪些？",
+        answer: "日本株式会社的营业执照证明书、法人章、银行章、发票章各一枚、法人印章证明书、法务局登陆的印章卡、定款（章程）。"
     }
 ])
 
@@ -234,7 +230,7 @@ const toggleFaq = (index) => {
     expandedItems.value[index] = !expandedItems.value[index]
 }
 
-// 添加过渡动画
+// 保持动画脚本不变
 onMounted(() => {
     // content1 动画
     gsap.from('.content1 .title', {
@@ -291,7 +287,6 @@ onMounted(() => {
         duration: 0.8
     })
 
-    // 使用fromTo方法解决动画与浮动效果冲突
     const conditionItems = document.querySelectorAll('.content3 .condition-item');
     conditionItems.forEach((item, index) => {
         gsap.fromTo(item,
@@ -304,7 +299,7 @@ onMounted(() => {
                 ease: 'power2.out',
                 scrollTrigger: {
                     trigger: '.content3 .intro',
-                    start: 'top 80%'  // 元素进入视口80%位置时触发
+                    start: 'top 80%'  
                 },
                 onComplete: function() {
                     gsap.set(item, { clearProps: "x,opacity,transition" })
@@ -346,7 +341,6 @@ onMounted(() => {
         duration: 0.8
     })
 
-    // 使用fromTo方法解决动画与浮动效果冲突
     const content5Advantages = document.querySelectorAll('.content5 .advantage');
     content5Advantages.forEach((item, index) => {
         gsap.fromTo(item,

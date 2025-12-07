@@ -8,9 +8,9 @@
                 <div class="intro">
                     <img src="@/assets/img/company/sc/SC-2.jpg" alt="">
                     <div class="text">
-                        <P>塞舌尔是位于印度洋的群岛国家，以其优美的自然环境和稳定的政局而闻名，是非洲地区重要的离岸金融中心之一。</P>
-                        <P>塞舌尔拥有健全的法律体系和优越的税收政策，为全球投资者提供了良好的营商环境和投资机会。</P>
-                        <P>塞舌尔国际商业公司（IBC）享有税收豁免、资产保护、隐私保护等优势，是进行国际贸易、投资控股、财富管理的理想选择。</P>
+                        <P>塞舌尔，SEYCHELLES，位于印度洋西部和肯尼亚以东约1609公里处。</P>
+                        <P>塞舌尔由115个大小岛屿组成，其中马埃岛最大，全国90%的居民住在该岛。</P>
+                        <P>塞舌尔以其优美的自然环境和稳定的政局而闻名，是非洲地区重要的离岸金融中心之一。</P>
                     </div>
                 </div>
             </div>
@@ -31,27 +31,27 @@
             </div>
             <div class="content3">
                 <div class="title">
-                    条件和所需资料
+                    塞舌尔公司注册条件和所需资料
                 </div>
                 <div class="intro">
                     <div class="left">
-                        <div class="condition-item">年满18岁以上的股东或董事</div>
-                        <div class="condition-item">注册地址（我司提供）</div>
-                        <div class="condition-item">公司章程</div>
-                        <div class="condition-item">公司名称（提供多个备选）</div>
+                        <div class="condition-item">公司名称以Limited, Corporation, Incorporated等结尾</div>
+                        <div class="condition-item">提供1位董事1位股东（可同为1人担任）</div>
+                        <div class="condition-item">注册资本美金（US$）100万</div>
+                        <div class="condition-item">无需公司秘书，股份转让容易且免收厘印费</div>
                     </div>
                     <div class="center"></div>
                     <div class="right">
-                        <div class="condition-item">董事和股东身份证明文件</div>
-                        <div class="condition-item">注册资本</div>
-                        <div class="condition-item">公司秘书（我司提供）</div>
-                        <div class="condition-item">签署相关文件</div>
+                        <div class="condition-item">可另加中文公司名称</div>
+                        <div class="condition-item">董事及股东个人资料隐密性极高</div>
+                        <div class="condition-item">可选择发行不记名股票</div>
+                        <div class="condition-item">注册后可于香港开立银行账户</div>
                     </div>
                 </div>
             </div>
             <div class="content4">
                 <div class="title">
-                    公司注册流程
+                    塞舌尔公司注册流程
                 </div>
                 <div class="intro">
                     <div v-for="(item, index) in registrationProcess" :key="index" class="advantage">
@@ -87,7 +87,7 @@
             </div>
             <div class="content6">
                 <div class="title">
-                    注册塞舌尔公司常见问题
+                    塞舌尔公司注册常见问题
                 </div>
                 <div class="intro">
                     <div 
@@ -126,110 +126,106 @@ gsap.registerPlugin(ScrollTrigger)
 const registrationProcess = [
     {
         img: '',
-        title: '开始公司核名',
-        description: '核名查询，核验名称是否可用。'
+        title: '第一步 公司名称查册',
+        description: '查询公司名称是否可用'
     },
     {
         img: '',
-        title: '准备注册资料',
-        description: '准备法人/股东身份证件、公司章程等相关材料。'
+        title: '第二步 签署协议',
+        description: '签署注册协议书和委托书'
     },
     {
         img: '',
-        title: '选择注册地址',
-        description: '确定可注册公司用的地址，我司可提供。'
+        title: '第三步 交付款项',
+        description: '支付相关注册费用'
     },
     {
         img: '',
-        title: '提交申请资料',
-        description: '向塞舌尔相关部门提交完整的注册申请资料。'
+        title: '第四步 提交注册',
+        description: '向相关部门提交注册申请'
     },
     {
         img: '',
-        title: '领取营业执照',
-        description: '公司注册顺利完成，领取营业执照等相关证件。'
+        title: '第五步 制作文件',
+        description: '制作公司相关文件'
     },
     {
         img: '',
-        title: '额外赠送服务',
-        description: '公司印章、公司章程、公司证书。'
+        title: '第六步 文件交接',
+        description: '完成注册并交接文件'
     }
 ]
 
 const advantage = [
     {
         img: '',
-        adv: '税收优惠，塞舌尔公司免征所得税、资本利得税等'
+        adv: '注册时可另加中文公司名称'
     },
     {
         img: '',
-        adv: '高度保密性，无需公开股东和董事信息'
+        adv: '保障董事及股东个人资料，隐密性极高'
     },
     {
         img: '',
-        adv: '无外汇管制，资金可自由流动'
+        adv: '无需公司秘书，股份转让容易且免收厘印费'
     },
     {
         img: '',
-        adv: '注册简便，维护成本低'
+        adv: '可选择发行不记名股票'
     },
     {
         img: '',
-        adv: '法律体系完善，保护投资者权益'
+        adv: '注册后可于香港开立银行账户'
     },
     {
         img: '',
-        adv: '全球认可度高，便于开设离岸账户'
+        adv: '无须缴交周年申报表和公司帐目'
     }
 ]
 
 const advantages = [
     {
         img: '',
-        title: '专业团队',
-        description: '拥有经验丰富的专业顾问团队，提供一站式服务解决方案'
+        title: '快速通道服务',
+        description: '外国投资者注册企业可以享受快速通道服务，通过无纸化电子方式提交申请，仅需二周时间即可完成注册。'
     },
     {
         img: '',
-        title: '高效办理',
-        description: '流程优化，快速响应，大大缩短办理时间'
+        title: '经验丰富，大量成功案例',
+        description: '昶嘉捷以中小企业发展为核心目标，为大量企业提供专业的咨询服务。'
     },
     {
         img: '',
-        title: '价格透明',
-        description: '明码标价，无隐性收费，提供高性价比服务'
+        title: '提供专业增值服务',
+        description: '昶嘉捷在境外拥有自己的团队，也与境外的各大银行、事务所、税务机构建立了良好的合作关系，能协助企业客户提供综合全面的服务。'
     },
     {
         img: '',
-        title: '全程服务',
-        description: '从咨询到后续维护，提供全周期贴心服务支持'
+        title: '专业专属商务对接和支持',
+        description: '昶嘉捷的顾问、咨询师、会计师等多数毕业于国内外著名大学，为每个客户建立计划小组，负责一对一的咨询服务。'
     }
 ]
 
 const faqs = ref([
     {
-        question: "注册塞舌尔公司需要多少资本？",
-        answer: "塞舌尔公司没有最低注册资本要求，一般建议注册资本为50000美元，无需验资。"
+        question: "塞舌尔股东和董事的要求是什么？",
+        answer: "塞舌尔至少需要一个股东和董事，可以是同一个人，没有国籍限制。"
+    },
+    {
+        question: "塞舌尔公司的注册资本是多少？",
+        answer: "塞舌尔的准授权资本为50，000美元，按每股1.00美元分为50，000股，无需验资。注册资本超过50，000美元的，发行股数应大于50，000股。"
+    },
+    {
+        question: "塞舌尔公司税务制度是怎么样的？",
+        answer: "海外离岸公司免除其在塞舌尔群岛的税收，包括：全部股息、利息、租金、补偿以及从其它证券、债权中获得的收入及其它公司收入。除此之外，海外离岸公司没有财产继承税和赠与税。同时，塞舌尔群岛的海外离岸公司被免除所有经营的印花税。"
     },
     {
         question: "注册塞舌尔公司需要多长时间？",
-        answer: "通常情况下，注册塞舌尔公司需要3-5个工作日。"
+        answer: "公司注册时间约需要15工作日左右。"
     },
     {
-        question: "塞舌尔公司需要年审吗？",
-        answer: "是的，塞舌尔公司每年都需要进行年审和提交财务报表。"
-    },
-    {
-        question: "塞舌尔公司的税务申报如何进行？",
-        answer: "塞舌尔公司无需在当地缴纳税款，但需按时提交年度申报表。"
-    },
-    {
-        question: "外国人可以在塞舌尔注册公司吗？",
-        answer: "可以，外国人可以在塞舌尔注册公司，且无任何限制。"
-    },
-    {
-        question: "塞舌尔公司可以在中国大陆经营吗？",
-        answer: "塞舌尔公司不能直接在大陆经营，如需在大陆经营需要设立代表处或投资设立外商投资企业。"
+        question: "注册塞舌尔公司费用是多少？",
+        answer: "注册费用具体可咨询昶嘉捷专业顾问。"
     }
 ])
 

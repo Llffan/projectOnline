@@ -4,10 +4,10 @@
             <img src="@/assets/img/company/vn/VN.jpg" alt="">
         </div>
         <div class="intro">
-            <div class="vn-title">越南公司注册全攻略</div>
+            <div class="vn-title">越南公司注册</div>
             <div class="vn-subtitle">优势、流程、条件、资料、时间、费用及常见问题</div>
             <div class="vn-description">
-                <p>- 越南公司注册</p>
+                <p>- Vietnam Company Registration</p>
             </div>
         </div>
     </div>

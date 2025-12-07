@@ -8,9 +8,9 @@
                 <div class="intro">
                     <img src="@/assets/img/company/ky/KY-2.jpg" alt="">
                     <div class="text">
-                        <P>开曼群岛是世界第四大离岸金融中心，以其稳定的法律体系、宽松的监管环境和税收优惠政策而闻名全球。</P>
-                        <P>作为英国的海外领土，开曼群岛拥有完善的普通法法律体系，为全球投资者提供了安全可靠的投资环境。</P>
-                        <P>开曼公司享有零税收、高度保密性、无外汇管制等优势，是国际投资、基金设立、财富管理等领域的首选离岸司法管辖区。</P>
+                        <P>开曼群岛是英国在西印度群岛的海外属地，由三大岛屿组成，是世界第4大离岸金融中心。</P>
+                        <P>开曼被誉为真正的税务避风港，公司对个人、公司和信托行业不征收所得税、利润税或财产税。</P>
+                        <P>当地政府提供20年有效的免税证书，确保公司无需缴税的地位，仅需缴纳进口税、工商登记税和印花税等简单税种。</P>
                     </div>
                 </div>
             </div>
@@ -35,17 +35,17 @@
                 </div>
                 <div class="intro">
                     <div class="left">
-                        <div class="condition-item">年满18岁以上的股东或董事</div>
-                        <div class="condition-item">注册地址（我司提供）</div>
-                        <div class="condition-item">公司章程</div>
-                        <div class="condition-item">公司名称（提供多个备选）</div>
+                        <div class="condition-item">注册授权资本：最低注册资本为 50,000 美金。</div>
+                        <div class="condition-item">董事要求：最少1名董事，无国籍限制的自然人或法人均可。</div>
+                        <div class="condition-item">股东要求：最少1名股东，无国籍限制的自然人或法人均可。</div>
+                        <div class="condition-item">董事资料：必须向注册处披露，但不公开作公众查册。</div>
                     </div>
                     <div class="center"></div>
                     <div class="right">
-                        <div class="condition-item">董事和股东身份证明文件</div>
-                        <div class="condition-item">注册资本</div>
-                        <div class="condition-item">公司秘书（我司提供）</div>
-                        <div class="condition-item">签署相关文件</div>
+                        <div class="condition-item">股东资料：只需存档于注册代理人，高度保密。</div>
+                        <div class="condition-item">注册地址：公司注册地址必须在开曼群岛。</div>
+                        <div class="condition-item">注册代理人：须委任开曼公司或个人（有居留身份）担任。</div>
+                        <div class="condition-item">所需资料：需提供专业人士（会计师或律师）出示的介绍信。</div>
                     </div>
                 </div>
             </div>
@@ -56,8 +56,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in registrationProcess" :key="index" class="advantage">
                         <div class="img">
-                            <!-- <img :src="item.img" :alt="item.title"> -->
-                        </div>
+                            </div>
                         <div class="text1">
                             {{ item.title }}
                         </div>
@@ -74,8 +73,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in advantages" :key="index" class="advantage">
                         <div class="img">
-                            <!-- <img :src="item.img" :alt="item.title"> -->
-                        </div>
+                            </div>
                         <div class="text1">
                             {{ item.title }}
                         </div>
@@ -119,117 +117,101 @@
 import { ref, onMounted } from 'vue'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
-import '@/css/company/ky/Ky_content2.css'
+import '@/css/company/ky/_content2.css' 
 
 gsap.registerPlugin(ScrollTrigger)
 
 const registrationProcess = [
     {
         img: '',
-        title: '开始公司核名',
-        description: '核名查询，核验名称是否可用。'
+        title: '提供公司名称并进行核名',
+        description: '核查公司名称是否可用。'
     },
     {
         img: '',
-        title: '准备注册资料',
-        description: '准备法人/股东身份证件、公司章程等相关材料。'
+        title: '签署注册协议并准备文件',
+        description: '与我司签署注册协议，同时准备股东、董事及专业人士介绍信等所需文件。'
     },
     {
         img: '',
-        title: '选择注册地址',
-        description: '确定可注册公司用的地址，我司可提供。'
+        title: '整理并提交全套注册文件',
+        description: '由注册代理人将文件整理并提交至开曼当地。'
     },
     {
         img: '',
-        title: '提交申请资料',
-        description: '向开曼相关部门提交完整的注册申请资料。'
+        title: '递交当局审核注册',
+        description: '等待开曼群岛当局审核并注册。'
     },
     {
         img: '',
-        title: '领取营业执照',
-        description: '公司注册顺利完成，领取营业执照等相关证件。'
+        title: '完成注册获得全套公司文件',
+        description: '注册完成，获得注册证书、章程、名册等全套公司文件，时间约3-4周。'
     },
     {
         img: '',
-        title: '额外赠送服务',
-        description: '公司印章、公司章程、公司证书。'
+        title: '申请免税证书',
+        description: '免除公司可申请一个20年有效的免除证书，确保无须缴税地位。'
     }
 ]
 
 const advantage = [
     {
         img: '',
-        adv: '零税收政策，开曼公司免征所得税、资本利得税等'
+        adv: '合法免税：当地政府保证20年豁免任何税收，是真正的税务避风港。'
     },
     {
         img: '',
-        adv: '高度保密性，无需公开股东和董事信息'
+        adv: '国际金融地位高：可在美国、香港、新加坡等主要证券交易市场挂牌买卖。'
     },
     {
         img: '',
-        adv: '无外汇管制，资金可自由流动'
+        adv: '经营范围广泛：公司成立后，可在世界任何国家从事任何合法的商业活动。'
     },
     {
         img: '',
-        adv: '注册简便，维护成本低'
+        adv: '资产管理灵活：可用公司名义开设银行账户、设立信托、押汇等。'
     },
     {
         img: '',
-        adv: '法律体系完善，保护投资者权益'
-    },
-    {
-        img: '',
-        adv: '全球认可度高，便于开设离岸账户'
+        adv: '架构灵活：可拥有其他公司的股份、房地产及其他动产。'
     }
 ]
 
 const advantages = [
     {
         img: '',
-        title: '专业团队',
-        description: '拥有经验丰富的专业顾问团队，提供一站式服务解决方案'
+        title: '快速通道服务',
+        description: '外国投资者注册企业可以享受快速通道服务，并可以通过无纸化电子方式提交申请，仅需二周时间即可完成注册。'
     },
     {
         img: '',
-        title: '高效办理',
-        description: '流程优化，快速响应，大大缩短办理时间'
+        title: '经验丰富，大量成功案例',
+        description: '昶嘉捷以中小企业发展为核心目标，为大量企业提供专业的咨询服务。'
     },
     {
         img: '',
-        title: '价格透明',
-        description: '明码标价，无隐性收费，提供高性价比服务'
+        title: '提供专业增值服务',
+        description: '昶嘉捷在境外拥有自己的团队，协助客户提供综合全面的财务、税务、法律等服务，做到“在外有昶嘉捷，更快捷”。'
     },
     {
         img: '',
-        title: '全程服务',
-        description: '从咨询到后续维护，提供全周期贴心服务支持'
+        title: '专业专属商务对接和支持',
+        description: '顾问、咨询师、会计师等建立计划小组，负责客户一对一的咨询、案子进度和客户协调计划等服务工作。'
     }
 ]
 
 const faqs = ref([
     {
-        question: "注册开曼公司需要多少资本？",
-        answer: "开曼公司没有最低注册资本要求，一般建议注册资本为50000美元，无需验资。"
+        question: "注册开曼公司有哪些税呢？",
+        answer: "开曼群岛内税种只有进口税、印花税、工商登记税、旅游者税等几个简单的税种。几十年来没有开征过个人所得税、公司所得税、资本利得税、不动产税、遗产税等直接税。"
     },
     {
-        question: "注册开曼公司需要多长时间？",
-        answer: "通常情况下，注册开曼公司需要3-5个工作日。"
+        question: "注册开曼公司要多久？",
+        answer: "全部完结大概在3-4周（约15-20个工作日）。"
     },
     {
-        question: "开曼公司需要年审吗？",
-        answer: "是的，开曼公司每年都需要进行年审和提交财务报表。"
-    },
-    {
-        question: "开曼公司的税务申报如何进行？",
-        answer: "开曼公司无需在当地缴纳税款，但需按时提交年度申报表。"
-    },
-    {
-        question: "外国人可以在开曼注册公司吗？",
-        answer: "可以，外国人可以在开曼注册公司，且无任何限制。"
-    },
-    {
-        question: "开曼公司可以在中国大陆经营吗？",
-        answer: "开曼公司不能直接在大陆经营，如需在大陆经营需要设立代表处或投资设立外商投资企业。"
+        question: "一个人可以申请注册开曼公司吗？",
+        answer: "一个人即可注册，取名自由；开曼公司注册资金无上限，无需交纳厘印税；经营范围没有限制（但不包括数字货币、虚拟货币等），无外汇管制。"
     }
 ])
 
@@ -239,7 +221,7 @@ const toggleFaq = (index) => {
     expandedItems.value[index] = !expandedItems.value[index]
 }
 
-// 添加过渡动画
+// 保持动画脚本不变
 onMounted(() => {
     // content1 动画
     gsap.from('.content1 .title', {
@@ -296,7 +278,6 @@ onMounted(() => {
         duration: 0.8
     })
 
-    // 使用fromTo方法解决动画与浮动效果冲突
     const conditionItems = document.querySelectorAll('.content3 .condition-item');
     conditionItems.forEach((item, index) => {
         gsap.fromTo(item,
@@ -309,7 +290,7 @@ onMounted(() => {
                 ease: 'power2.out',
                 scrollTrigger: {
                     trigger: '.content3 .intro',
-                    start: 'top 80%'  // 元素进入视口80%位置时触发
+                    start: 'top 80%'  
                 },
                 onComplete: function() {
                     gsap.set(item, { clearProps: "x,opacity,transition" })
@@ -351,7 +332,6 @@ onMounted(() => {
         duration: 0.8
     })
 
-    // 使用fromTo方法解决动画与浮动效果冲突
     const content5Advantages = document.querySelectorAll('.content5 .advantage');
     content5Advantages.forEach((item, index) => {
         gsap.fromTo(item,

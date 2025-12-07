@@ -8,9 +8,9 @@
                 <div class="intro">
                     <img src="@/assets/img/company/de/DE-2.jpg" alt="">
                     <div class="text">
-                        <P>德国是欧洲最大经济体，也是世界第四大经济体，拥有强大的工业基础和先进的技术。德国以其高质量的产品和服务、稳定的经济环境以及良好的商业法规而闻名。</P>
-                        <P>作为欧盟核心成员国，德国为外国投资者提供了开放的投资环境和有利的税收政策。德国的有限责任公司（GmbH）是最受欢迎的企业类型之一，适合各种规模的企业。</P>
-                        <P>德国地处欧洲中心，是连接东西欧的重要枢纽，为企业拓展欧洲市场提供了绝佳的地理位置优势。许多跨国公司选择在德国设立总部或分支机构。</P>
+                        <P>德国是欧洲四大经济体之一，欧盟经济总量最高的国家，也是世界第三大出口国和第四大经济大国。</P>
+                        <P>以汽车和精密机床为代表的高端制造业是德国的重要象征。德国是世界贸易大国，同230多个国家和地区保持贸易关系。</P>
+                        <P>德国出口素以质量高、服务周到、交货准时而享誉世界，为注册成立德国公司提供了强大的品牌背书。</P>
                     </div>
                 </div>
             </div>
@@ -35,17 +35,17 @@
                 </div>
                 <div class="intro">
                     <div class="left">
-                        <div class="condition-item">年满18岁以上的股东或董事</div>
-                        <div class="condition-item">注册地址（我司提供）</div>
-                        <div class="condition-item">注册资本至少25,000欧元</div>
-                        <div class="condition-item">公司章程</div>
+                        <div class="condition-item">公司名称：必须以“有限公司”结尾（如GmbH），禁止使用“银行”等受限词汇。</div>
+                        <div class="condition-item">董事股东：至少1人股东，需年满18周岁，无国籍限制。</div>
+                        <div class="condition-item">股东资料：提供至少1人股东的护照影印本。</div>
+                        <div class="condition-item">注册地址：在德国当地需有实际存在的办公场地。</div>
                     </div>
                     <div class="center"></div>
                     <div class="right">
-                        <div class="condition-item">董事和股东身份证明文件</div>
-                        <div class="condition-item">公司名称（提供多个备选）</div>
-                        <div class="condition-item">银行资信证明</div>
-                        <div class="condition-item">签署相关文件</div>
+                        <div class="condition-item">注册资本：GmbH最低注册资本为€25,000。</div>
+                        <div class="condition-item">验资要求：实缴只需存入€12,500（必须由股东个人账户汇出）。</div>
+                        <div class="condition-item">经营范围：经营范围原则上没有太大的限制，企业可经营任何合法业务。</div>
+                        <div class="condition-item">税务优势：德国公司税赋低于中国公司，可有效节省成本提高利润。</div>
                     </div>
                 </div>
             </div>
@@ -56,8 +56,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in registrationProcess" :key="index" class="advantage">
                         <div class="img">
-                            <!-- <img :src="item.img" :alt="item.title"> -->
-                        </div>
+                            </div>
                         <div class="text1">
                             {{ item.title }}
                         </div>
@@ -74,8 +73,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in advantages" :key="index" class="advantage">
                         <div class="img">
-                            <!-- <img :src="item.img" :alt="item.title"> -->
-                        </div>
+                            </div>
                         <div class="text1">
                             {{ item.title }}
                         </div>
@@ -126,110 +124,98 @@ gsap.registerPlugin(ScrollTrigger)
 const registrationProcess = [
     {
         img: '',
-        title: '公司名称核查',
-        description: '核查拟注册公司名称的可用性。'
+        title: '公司核名与资料提交',
+        description: '提供备选名称进行核名，提交董事股东护照、地址证明。'
     },
     {
         img: '',
-        title: '准备注册文件',
-        description: '准备公司章程、股东董事信息等必要文件。'
+        title: '签署协议及文件',
+        description: '签署德国委托协议，支付费用，并签署设立公司申请文件。'
     },
     {
         img: '',
-        title: '公证认证',
-        description: '对相关文件进行公证认证。'
+        title: '银行开户与实缴',
+        description: '至银行办理开户；实缴验资款项€12,500。'
     },
     {
         img: '',
-        title: '提交注册申请',
-        description: '向当地法院商业登记处提交注册申请。'
+        title: '递交政府申请',
+        description: '实缴完成后，递交政府办理登记手续。'
     },
     {
         img: '',
-        title: '开设银行账户',
-        description: '完成注册资本注入并开设公司银行账户。'
+        title: '领取执照',
+        description: '约2-3周获得营业执照证明，可进行商业活动。'
     },
     {
         img: '',
-        title: '办理税号',
-        description: '申请税号、增值税号等相关税务登记。'
+        title: '获得税号',
+        description: '后续约2-4周可获得VAT税号。'
     }
 ]
 
 const advantage = [
     {
         img: '',
-        adv: '欧洲最大经济体，市场潜力巨大'
+        adv: '打造德国品牌，提升国际形象，国际法律地位高，受欧洲联盟保护。'
     },
     {
         img: '',
-        adv: '完善的法律体系，保护投资者权益'
+        adv: '利于发展跨国贸易，买卖物业、资金出入境自由，可信度高。'
     },
     {
         img: '',
-        adv: '地理位置优越，辐射整个欧洲市场'
+        adv: '德国公司利于开立境外账号，非德国公民可自由在境内外/香港开立银行账户。'
     },
     {
         img: '',
-        adv: '高素质人才资源丰富，科研实力强'
+        adv: '可节税，使税收能保持在最低水准，有效节省成本，提高利润。'
     },
     {
         img: '',
-        adv: '税收制度合理，优惠政策多'
+        adv: '利于商务签证及获得德国绿卡/永居身份（需满足特定投资条件）。'
     },
     {
         img: '',
-        adv: '基础设施完善，交通便利'
+        adv: '高端制造业象征，德国出口产品素以质量高、服务周到享誉世界。'
     }
 ]
 
 const advantages = [
     {
         img: '',
-        title: '专业团队',
-        description: '拥有精通德国公司法的专业顾问团队，提供一站式服务解决方案'
+        title: '快速通道服务',
+        description: '外国投资者注册企业可以享受快速通道服务，并可以通过无纸化电子方式提交申请，仅需二周时间即可完成注册。'
     },
     {
         img: '',
-        title: '高效办理',
-        description: '熟悉注册流程，快速响应，大大缩短办理时间'
+        title: '经验丰富，大量成功案例',
+        description: '昶嘉捷以中小企业发展为核心目标，为大量企业提供专业的咨询服务。'
     },
     {
         img: '',
-        title: '价格透明',
-        description: '明码标价，无隐性收费，提供高性价比服务'
+        title: '提供专业增值服务',
+        description: '昶嘉捷在境外拥有自己的团队，协助客户提供综合全面的财务、税务、法律等服务，做到“在外有昶嘉捷，更快捷”。'
     },
     {
         img: '',
-        title: '全程服务',
-        description: '从咨询到后续维护，提供全周期贴心服务支持'
+        title: '专业专属商务对接和支持',
+        description: '顾问、咨询师、会计师等建立计划小组，负责客户一对一的咨询、案子进度和客户协调计划等服务工作。'
     }
 ]
 
 const faqs = ref([
     {
-        question: "注册德国公司需要多少注册资本？",
-        answer: "德国有限责任公司（GmbH）的最低注册资本为25,000欧元，其中至少50%需要在注册前缴纳。"
+        question: "德国公司注册后有什么注意事项？",
+        answer: "德国公司注册后，客户不直接管理的情况下，挂名经理、财务服务、挂名地址及其他管理费用为必选服务。这些服务都是公司良好存在的必须条件。"
     },
     {
-        question: "注册德国公司需要多长时间？",
-        answer: "通常情况下，注册德国公司需要4-8周时间，具体取决于文件准备情况和审批进度。"
+        question: "注册德国公司需要什么资料？",
+        answer: "注册公司需提供公司名称和有效证件（如护照、地址证明），我司可以代为办理。"
     },
     {
-        question: "德国公司需要年审吗？",
-        answer: "德国公司需要每年进行财务报表审计并向税务局申报，但没有类似其他国家的年审制度。"
-    },
-    {
-        question: "德国公司的税务申报如何进行？",
-        answer: "德国公司需要按月申报增值税，按年申报所得税和贸易税。"
-    },
-    {
-        question: "德国公司可以在中国大陆经营吗？",
-        answer: "德国公司不能直接在大陆经营，如需在大陆经营需要设立代表处或投资设立外商投资企业。"
-    },
-    {
-        question: "注册德国公司需要亲自到场吗？",
-        answer: "不需要，可以通过授权委托书委托代理机构办理所有手续。"
+        question: "德国公司的经营范围有要求吗？",
+        answer: "德国公司经营项目限制非常少。"
     }
 ])
 
@@ -239,7 +225,7 @@ const toggleFaq = (index) => {
     expandedItems.value[index] = !expandedItems.value[index]
 }
 
-// 添加过渡动画
+// 保持动画脚本不变
 onMounted(() => {
     // content1 动画
     gsap.from('.content1 .title', {
@@ -296,7 +282,6 @@ onMounted(() => {
         duration: 0.8
     })
 
-    // 使用fromTo方法解决动画与浮动效果冲突
     const conditionItems = document.querySelectorAll('.content3 .condition-item');
     conditionItems.forEach((item, index) => {
         gsap.fromTo(item,
@@ -309,7 +294,7 @@ onMounted(() => {
                 ease: 'power2.out',
                 scrollTrigger: {
                     trigger: '.content3 .intro',
-                    start: 'top 80%'  // 元素进入视口80%位置时触发
+                    start: 'top 80%'  
                 },
                 onComplete: function() {
                     gsap.set(item, { clearProps: "x,opacity,transition" })
@@ -351,7 +336,6 @@ onMounted(() => {
         duration: 0.8
     })
 
-    // 使用fromTo方法解决动画与浮动效果冲突
     const content5Advantages = document.querySelectorAll('.content5 .advantage');
     content5Advantages.forEach((item, index) => {
         gsap.fromTo(item,

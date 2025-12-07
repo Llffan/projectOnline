@@ -4,7 +4,7 @@
             <img src="@/assets/img/company/sc/SC.jpg" alt="">
         </div>
         <div class="intro">
-            <div class="sc-title">塞舌尔公司注册全攻略</div>
+            <div class="sc-title">塞舌尔公司注册</div>
             <div class="sc-subtitle">优势、流程、条件、资料、时间、费用及常见问题</div>
             <div class="sc-description">
                 <p>- Seychelles Company Registration</p>
