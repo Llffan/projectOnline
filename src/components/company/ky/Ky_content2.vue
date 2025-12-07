@@ -117,7 +117,7 @@
 import { ref, onMounted } from 'vue'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
-import '@/css/company/ky/_content2.css' 
+import '@/css/company/ky/Ky_content2.css' 
 
 gsap.registerPlugin(ScrollTrigger)
 
