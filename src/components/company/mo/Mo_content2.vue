@@ -19,9 +19,11 @@
                     澳门公司注册优势
                 </div>
                 <div class="intro">
-                    <div v-for="(item, index) in advantage" :key="index" class="advantage">
+                    <div v-for="(item, index) in advantage" :key="index" class="advantage" :ref="el => { if (el) advantageRefs[index] = el }">
                         <div class="img">
-                            <img :src="item.img" alt="">
+                            <svg class="icon" aria-hidden="true">
+                                <use :xlink:href="item.iconId"></use> 
+                            </svg>
                         </div>
                         <div class="text">
                             {{ item.adv }}
@@ -54,9 +56,12 @@
                     公司注册流程
                 </div>
                 <div class="intro">
-                    <div v-for="(item, index) in registrationProcess" :key="index" class="advantage">
+                    <div v-for="(item, index) in registrationProcess" :key="index" class="advantage" :ref="el => { if (el) registrationProcessRefs[index] = el }">
                         <div class="img">
-                            </div>
+                            <svg class="icon" aria-hidden="true">
+                                <use :xlink:href="item.iconId"></use> 
+                            </svg>
+                        </div>
                         <div class="text1">
                             {{ item.title }}
                         </div>
@@ -73,7 +78,8 @@
                 <div class="intro">
                     <div v-for="(item, index) in advantages" :key="index" class="advantage">
                         <div class="img">
-                            </div>
+                            <img :src="item.imgSrc" :alt="item.title">
+                        </div>
                         <div class="text1">
                             {{ item.title }}
                         </div>
@@ -114,41 +120,42 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, nextTick } from 'vue'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
-import '@/css/company/mo/Mo_content2.css'
+// 保持导入路径不变
+import '@/css/company/mo/Mo_content2.css' 
 
 gsap.registerPlugin(ScrollTrigger)
 
 const registrationProcess = [
     {
-        img: '',
+        iconId: '#icon-message-search',
         title: '公司名称核查',
         description: '确认名称及经营范围，并进行查册（约3-4个工作天）。'
     },
     {
-        img: '',
+        iconId: '#icon-agreement',
         title: '签署委托与定金支付',
         description: '客户签署委托协议并支付定金。'
     },
     {
-        img: '',
+        iconId: '#icon-notes',
         title: '制作法定文件',
         description: '制作法定文档，客户签署后寄回原件。'
     },
     {
-        img: '',
+        iconId: '#icon-government-line',
         title: '向政府部门提交申请',
         description: '代理向政府部门递交文件，办理相关设立手续。'
     },
     {
-        img: '',
+        iconId: '#icon-message-success',
         title: '完成注册',
         description: '注册完成，取得注册文件（约21-25个工作天）。'
     },
     {
-        img: '',
+        iconId: '#icon-file-success',
         title: '支付余款',
         description: '支付余款，领取公司全套资料。'
     }
@@ -156,49 +163,49 @@ const registrationProcess = [
 
 const advantage = [
     {
-        img: '',
-        adv: '低税率优势：采用利润来源地税收原则，境外收入免税，且对大陆投资可享税收优惠。' // 合并原2, 6
+        iconId: '#icon-finance',
+        adv: '低税率优势：采用利润来源地税收原则，境外收入免税，且对大陆投资可享税收优惠。'
     },
     {
-        img: '',
-        adv: '贸易便利：可借助CEPA享受零关税产品进入大陆的便利，并通过转移价格实现节税。' // 合并原1, 5
+        iconId: '#icon-transaction',
+        adv: '贸易便利：可借助CEPA享受零关税产品进入大陆的便利，并通过转移价格实现节税。'
     },
     {
-        img: '',
+        iconId: '#icon-natural-mode',
         adv: '注册要求宽松：注册资本无需实缴到位。'
     },
     {
-        img: '',
+        iconId: '#icon-balance-two',
         adv: '法制稳定：法制体系健全且稳定。'
     },
     {
-        img: '',
+        iconId: '#icon-world',
         adv: '国际金融便利：可在世界任何银行开银行账户。'
     },
     {
-        img: '',
-        adv: '提升品牌形象：有利于建立高信誉度的国际品牌。' // 压缩原8
+        iconId: '#icon-award-line',
+        adv: '提升品牌形象：有利于建立高信誉度的国际品牌。'
     }
 ]
 
 const advantages = [
     {
-        img: '',
+        imgSrc: new URL('@/assets/img/temp_img/1.jpg', import.meta.url).href,
         title: '快速通道服务',
         description: '外国投资者可享受快速通道服务，无纸化电子方式提交申请，仅需二周时间即可完成注册。'
     },
     {
-        img: '',
+        imgSrc: new URL('@/assets/img/temp_img/3.jpg', import.meta.url).href,
         title: '经验丰富，大量成功案例',
-        description: '昶嘉捷以中小企业发展为核心目标，为大量企业提供专业的咨询服务。'
+        description: '十洲通以中小企业发展为核心目标，为大量企业提供专业的咨询服务。'
     },
     {
-        img: '',
+        imgSrc: new URL('@/assets/img/temp_img/4.jpg', import.meta.url).href,
         title: '提供专业增值服务',
-        description: '在境外拥有自己的团队，协助客户提供综合全面的财务、税务、法律等服务，做到“在外有昶嘉捷，更快捷”。'
+        description: '在境外拥有自己的团队，协助客户提供综合全面的财务、税务、法律等服务，做到"外有十洲通，注册更通畅"。'
     },
     {
-        img: '',
+        imgSrc: new URL('@/assets/img/temp_img/5.jpg', import.meta.url).href,
         title: '专业专属商务对接和支持',
         description: '顾问、咨询师、会计师等建立计划小组，负责客户一对一的咨询、案子进度和客户协调计划等服务工作。'
     }
@@ -225,8 +232,13 @@ const toggleFaq = (index) => {
     expandedItems.value[index] = !expandedItems.value[index]
 }
 
-// 添加过渡动画
-onMounted(() => {
+const advantageRefs = ref([])
+const registrationProcessRefs = ref([])
+
+// 保持动画脚本不变
+onMounted(async () => {
+    await nextTick()
+    
     // content1 动画
     gsap.from('.content1 .title', {
         scrollTrigger: {
@@ -235,7 +247,8 @@ onMounted(() => {
         },
         opacity: 0,
         y: 50,
-        duration: 0.8
+        duration: 0.8,
+        ease: 'power2.out'
     })
 
     gsap.from('.content1 .intro', {
@@ -246,10 +259,11 @@ onMounted(() => {
         opacity: 0,
         y: 50,
         duration: 0.8,
-        delay: 0.2
+        delay: 0.2,
+        ease: 'power2.out'
     })
 
-    // content2 动画
+    // content2 动画 - 参照其他页面统一动画效果
     gsap.from('.content2 .title', {
         scrollTrigger: {
             trigger: '.content2 .title',
@@ -257,18 +271,29 @@ onMounted(() => {
         },
         opacity: 0,
         y: 50,
-        duration: 0.8
+        duration: 0.8,
+        ease: 'power2.out'
     })
 
-    gsap.from('.content2 .advantage', {
-        scrollTrigger: {
-            trigger: '.content2 .intro',
-            start: 'top 80%'
-        },
-        opacity: 0,
-        y: 50,
-        duration: 0.8,
-        stagger: 0.1
+    // 为每个优势项添加动画 - 参照其他页面统一动画效果
+    advantageRefs.value.forEach((el, index) => {
+        gsap.fromTo(el,
+            { 
+                opacity: 0, 
+                y: 50
+            },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.6,
+                delay: index * 0.1,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: '.content2 .intro',
+                    start: 'top 80%'
+                }
+            }
+        )
     })
 
     // content3 动画
@@ -282,7 +307,6 @@ onMounted(() => {
         duration: 0.8
     })
 
-    // 使用fromTo方法解决动画与浮动效果冲突
     const conditionItems = document.querySelectorAll('.content3 .condition-item');
     conditionItems.forEach((item, index) => {
         gsap.fromTo(item,
@@ -295,7 +319,7 @@ onMounted(() => {
                 ease: 'power2.out',
                 scrollTrigger: {
                     trigger: '.content3 .intro',
-                    start: 'top 80%'  // 元素进入视口80%位置时触发
+                    start: 'top 80%'  
                 },
                 onComplete: function() {
                     gsap.set(item, { clearProps: "x,opacity,transition" })
@@ -304,7 +328,7 @@ onMounted(() => {
         );
     });
 
-    // content4 动画
+    // content4 动画 - 参照其他页面统一动画效果
     gsap.from('.content4 .title', {
         scrollTrigger: {
             trigger: '.content4 .title',
@@ -312,18 +336,29 @@ onMounted(() => {
         },
         opacity: 0,
         y: 50,
-        duration: 0.8
+        duration: 0.8,
+        ease: 'power2.out'
     })
 
-    gsap.from('.content4 .advantage', {
-        scrollTrigger: {
-            trigger: '.content4 .intro',
-            start: 'top 80%'
-        },
-        opacity: 0,
-        y: 50,
-        duration: 0.8,
-        stagger: 0.1
+    // 为每个注册流程项添加动画 - 参照其他页面统一动画效果
+    registrationProcessRefs.value.forEach((el, index) => {
+        gsap.fromTo(el,
+            { 
+                opacity: 0, 
+                y: 50
+            },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.6,
+                delay: index * 0.1,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: '.content4 .intro',
+                    start: 'top 80%'
+                }
+            }
+        )
     })
 
     // content5 动画
@@ -337,7 +372,6 @@ onMounted(() => {
         duration: 0.8
     })
 
-    // 使用fromTo方法解决动画与浮动效果冲突
     const content5Advantages = document.querySelectorAll('.content5 .advantage');
     content5Advantages.forEach((item, index) => {
         gsap.fromTo(item,

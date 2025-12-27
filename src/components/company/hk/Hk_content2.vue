@@ -8,7 +8,7 @@
                 <div class="intro">
                     <img src="@/assets/img/company/hk/HK-2.jpg" alt="">
                     <div class="text">
-                        <P>香港是一个融合机遇、创意和进取精神的都市，连续24年被美国传统基金会评为“全球最自由经济体”。</P>
+                        <P>香港是一个融合机遇、创意和进取精神的都市，连续24年被美国传统基金会评为"全球最自由经济体"。</P>
                         <P>作为国际金融中心，香港完善的法律制度、简单的税制、低税率、配套齐全的基建，得到世界各地投资者的青睐。</P>
                         <P>香港蕴藏着无限商机，是通往全球经贸的平台，其国际优势广为人知，数以万计的国际企业因在此设立公司而受惠。</P>
                     </div>
@@ -19,9 +19,11 @@
                     香港公司注册优势
                 </div>
                 <div class="intro">
-                    <div v-for="(item, index) in advantage" :key="index" class="advantage">
+                    <div v-for="(item, index) in advantage" :key="index" class="advantage" :ref="el => { if (el) advantageRefs[index] = el }">
                         <div class="img">
-                            <img :src="item.img" alt="">
+                            <svg class="icon" aria-hidden="true">
+                                <use :xlink:href="item.iconId"></use> 
+                            </svg>
                         </div>
                         <div class="text">
                             {{ item.adv }}
@@ -44,7 +46,7 @@
                     <div class="right">
                         <div class="condition-item">注册资金：10000港元，不需实缴到位。</div>
                         <div class="condition-item">注册地址：须提供香港公司注册地址（我方可提供）。</div>
-                        <div class="condition-item">公司名称：中英文名/英文名，需以“有限公司”或“LIMITED”结尾。</div>
+                        <div class="condition-item">公司名称：中英文名/英文名，需以"有限公司"或"LIMITED"结尾。</div>
                         <div class="condition-item">尽职调查/地址证明：需填写尽职调查表格，并提供股东地址证明。</div>
                     </div>
                 </div>
@@ -54,9 +56,12 @@
                     公司注册流程
                 </div>
                 <div class="intro">
-                    <div v-for="(item, index) in registrationProcess" :key="index" class="advantage">
+                    <div v-for="(item, index) in registrationProcess" :key="index" class="advantage" :ref="el => { if (el) registrationProcessRefs[index] = el }">
                         <div class="img">
-                            </div>
+                            <svg class="icon" aria-hidden="true">
+                                <use :xlink:href="item.iconId"></use> 
+                            </svg>
+                        </div>
                         <div class="text1">
                             {{ item.title }}
                         </div>
@@ -73,7 +78,8 @@
                 <div class="intro">
                     <div v-for="(item, index) in advantages" :key="index" class="advantage">
                         <div class="img">
-                            </div>
+                            <img :src="item.imgSrc" :alt="item.title">
+                        </div>
                         <div class="text1">
                             {{ item.title }}
                         </div>
@@ -114,7 +120,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, nextTick } from 'vue'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import '@/css/company/hk/Hk_content2.css'
@@ -123,32 +129,32 @@ gsap.registerPlugin(ScrollTrigger)
 
 const registrationProcess = [
     {
-        img: '',
+        iconId: '#icon-message-search',
         title: '公司名称查册',
         description: '提交名称，进行查册，确保无重复。'
     },
     {
-        img: '',
+        iconId: '#icon-agreement',
         title: '签署协议及交付费用',
         description: '提交委托书、签署协议，并交付费用。'
     },
     {
-        img: '',
+        iconId: '#icon-notes',
         title: '签署法定文档',
         description: '安排所有股东及董事签署全套法定文件。'
     },
     {
-        img: '',
+        iconId: '#icon-government-line',
         title: '政府审批及注册',
         description: '我司提交政府审批，最快2小时内完成审批并出示证书扫描件。'
     },
     {
-        img: '',
+        iconId: '#icon-protection',
         title: '制作绿盒',
         description: '制作绿盒，内含章程、股票本、会议记录、印章等法定文件。'
     },
     {
-        img: '',
+        iconId: '#icon-file-success',
         title: '成立完毕及领取资料',
         description: '快至两个工作日领取全套资料，绿盒可寄到指定地点。'
     }
@@ -156,49 +162,49 @@ const registrationProcess = [
 
 const advantage = [
     {
-        img: '',
+        iconId: '#icon-finance',
         adv: '国际金融地位：香港是世界著名的金融贸易港，方便收汇用汇。'
     },
     {
-        img: '',
+        iconId: '#icon-award-line',
         adv: '国际形象：香港良好的国际形象，提升企业的国际地位和产品竞争力。'
     },
     {
-        img: '',
+        iconId: '#icon-bank-transfer',
         adv: '政策优势：不在香港经营不用缴税的政策（地域来源原则），便于快速积累资本。'
     },
     {
-        img: '',
+        iconId: '#icon-ship',
         adv: '物流优势：庞大且完善的海陆空物流优势，让商品快速送达消费者。'
     },
     {
-        img: '',
+        iconId: '#icon-natural-mode',
         adv: '简单易办：成立手续简单，门槛低，无需当地实地办公，低成本开启事业。'
     },
     {
-        img: '',
+        iconId: '#icon-certificate',
         adv: '国际信誉：香港的国际信誉，让您的对外投资更值得被信任。'
     }
 ]
 
 const advantages = [
     {
-        img: '',
+        imgSrc: new URL('@/assets/img/temp_img/1.jpg', import.meta.url).href,
         title: '快速通道服务',
         description: '外国投资者注册企业可以享受快速通道服务，并可以通过无纸化电子方式提交申请，仅需二周时间即可完成注册。'
     },
     {
-        img: '',
+        imgSrc: new URL('@/assets/img/temp_img/3.jpg', import.meta.url).href,
         title: '经验丰富，大量成功案例',
-        description: '昶嘉捷以中小企业发展为核心目标，为大量企业提供专业的咨询服务。'
+        description: '十洲通以中小企业发展为核心目标，为大量企业提供专业的咨询服务。'
     },
     {
-        img: '',
+        imgSrc: new URL('@/assets/img/temp_img/4.jpg', import.meta.url).href,
         title: '提供专业增值服务',
-        description: '昶嘉捷在境外拥有自己的团队，协助客户提供综合全面的财务、税务、法律等服务，做到“在外有昶嘉捷，更快捷”。'
+        description: '十洲通在境外拥有自己的团队，协助客户提供综合全面的财务、税务、法律等服务，做到"在外有十洲通，更快捷"。'
     },
     {
-        img: '',
+        imgSrc: new URL('@/assets/img/temp_img/5.jpg', import.meta.url).href,
         title: '专业专属商务对接和支持',
         description: '顾问、咨询师、会计师等建立计划小组，负责客户一对一的咨询、案子进度和客户协调计划等服务工作。'
     }
@@ -225,8 +231,13 @@ const toggleFaq = (index) => {
     expandedItems.value[index] = !expandedItems.value[index]
 }
 
+const advantageRefs = ref([])
+const registrationProcessRefs = ref([])
+
 // 保持动画脚本不变
-onMounted(() => {
+onMounted(async () => {
+    await nextTick()
+    
     // content1 动画
     gsap.from('.content1 .title', {
         scrollTrigger: {
@@ -235,7 +246,8 @@ onMounted(() => {
         },
         opacity: 0,
         y: 50,
-        duration: 0.8
+        duration: 0.8,
+        ease: 'power2.out'
     })
 
     gsap.from('.content1 .intro', {
@@ -246,10 +258,11 @@ onMounted(() => {
         opacity: 0,
         y: 50,
         duration: 0.8,
-        delay: 0.2
+        delay: 0.2,
+        ease: 'power2.out'
     })
 
-    // content2 动画
+    // content2 动画 - 参照其他页面统一动画效果
     gsap.from('.content2 .title', {
         scrollTrigger: {
             trigger: '.content2 .title',
@@ -257,18 +270,29 @@ onMounted(() => {
         },
         opacity: 0,
         y: 50,
-        duration: 0.8
+        duration: 0.8,
+        ease: 'power2.out'
     })
 
-    gsap.from('.content2 .advantage', {
-        scrollTrigger: {
-            trigger: '.content2 .intro',
-            start: 'top 80%'
-        },
-        opacity: 0,
-        y: 50,
-        duration: 0.8,
-        stagger: 0.1
+    // 为每个优势项添加动画 - 参照其他页面统一动画效果
+    advantageRefs.value.forEach((el, index) => {
+        gsap.fromTo(el,
+            { 
+                opacity: 0, 
+                y: 50
+            },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.6,
+                delay: index * 0.1,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: '.content2 .intro',
+                    start: 'top 80%'
+                }
+            }
+        )
     })
 
     // content3 动画
@@ -303,7 +327,7 @@ onMounted(() => {
         );
     });
 
-    // content4 动画
+    // content4 动画 - 参照其他页面统一动画效果
     gsap.from('.content4 .title', {
         scrollTrigger: {
             trigger: '.content4 .title',
@@ -311,18 +335,29 @@ onMounted(() => {
         },
         opacity: 0,
         y: 50,
-        duration: 0.8
+        duration: 0.8,
+        ease: 'power2.out'
     })
 
-    gsap.from('.content4 .advantage', {
-        scrollTrigger: {
-            trigger: '.content4 .intro',
-            start: 'top 80%'
-        },
-        opacity: 0,
-        y: 50,
-        duration: 0.8,
-        stagger: 0.1
+    // 为每个注册流程项添加动画 - 参照其他页面统一动画效果
+    registrationProcessRefs.value.forEach((el, index) => {
+        gsap.fromTo(el,
+            { 
+                opacity: 0, 
+                y: 50
+            },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.6,
+                delay: index * 0.1,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: '.content4 .intro',
+                    start: 'top 80%'
+                }
+            }
+        )
     })
 
     // content5 动画

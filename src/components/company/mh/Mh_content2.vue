@@ -19,9 +19,11 @@
                     马绍尔公司注册优势
                 </div>
                 <div class="intro">
-                    <div v-for="(item, index) in advantage" :key="index" class="advantage">
+                    <div v-for="(item, index) in advantage" :key="index" class="advantage" :ref="el => { if (el) advantageRefs[index] = el }">
                         <div class="img">
-                            <img :src="item.img" alt="">
+                            <svg class="icon" aria-hidden="true">
+                                <use :xlink:href="item.iconId"></use> 
+                            </svg>
                         </div>
                         <div class="text">
                             {{ item.adv }}
@@ -54,9 +56,12 @@
                     公司注册流程
                 </div>
                 <div class="intro">
-                    <div v-for="(item, index) in registrationProcess" :key="index" class="advantage">
+                    <div v-for="(item, index) in registrationProcess" :key="index" class="advantage" :ref="el => { if (el) registrationProcessRefs[index] = el }">
                         <div class="img">
-                            </div>
+                            <svg class="icon" aria-hidden="true">
+                                <use :xlink:href="item.iconId"></use> 
+                            </svg>
+                        </div>
                         <div class="text1">
                             {{ item.title }}
                         </div>
@@ -73,7 +78,8 @@
                 <div class="intro">
                     <div v-for="(item, index) in advantages" :key="index" class="advantage">
                         <div class="img">
-                            </div>
+                            <img :src="item.imgSrc" :alt="item.title">
+                        </div>
                         <div class="text1">
                             {{ item.title }}
                         </div>
@@ -114,42 +120,42 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, nextTick } from 'vue'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
-// 注意: 这里引用的是马绍尔公司的CSS，如果您没有 Mh_content2.css，请确保使用之前修改的 Mo_content2.css
+// 保持导入路径不变
 import '@/css/company/mh/Mh_content2.css' 
 
 gsap.registerPlugin(ScrollTrigger)
 
 const registrationProcess = [
     {
-        img: '',
+        iconId: '#icon-message-search',
         title: '公司名称查册与预留',
         description: '提交最满意名称，免费核名，公司名称可获免费预留半年。'
     },
     {
-        img: '',
+        iconId: '#icon-agreement',
         title: '注册条件评估及合同签署',
         description: '确定公司架构、股本、董事、地址，并按双方协商签订代理协议合同。'
     },
     {
-        img: '',
+        iconId: '#icon-notes',
         title: '准备申报资料',
         description: '准备股东证件、签字样本、股份分配比例等，安排所有股东及董事签署全套文件。'
     },
     {
-        img: '',
+        iconId: '#icon-government-line',
         title: '递交申请与审核',
         description: '马绍尔主管机关审核，我司全程跟进政府办理注册手续，并及时反馈。'
     },
     {
-        img: '',
+        iconId: '#icon-message-success',
         title: '回签文件及注册完成',
         description: '扫描所得公司文件进行确认，公司注册完毕，时间约需15个工作日左右。'
     },
     {
-        img: '',
+        iconId: '#icon-file-success',
         title: '支付余款与资料领取',
         description: '客户支付余款，领取全套注册成功所得资料（如注册证书、章程、印章等）。'
     }
@@ -157,51 +163,51 @@ const registrationProcess = [
 
 const advantage = [
     {
-        img: '',
+        iconId: '#icon-sun',
         adv: '合法免税：非原居民成立的公司可合法免除一切税项。'
     },
     {
-        img: '',
+        iconId: '#icon-protection',
         adv: '高度保密：股东身份、董事名册、收益等资料高度保密，公众不能查阅。'
     },
     {
-        img: '',
+        iconId: '#icon-natural-mode',
         adv: '公司运作方便：无需做账审计、无需报税、无需缴纳当地税款。'
     },
     {
-        img: '',
+        iconId: '#icon-positive-dynamics',
         adv: '注册简单快捷：注册时间短，注册资料简单，手续便捷，下证快。'
     },
     {
-        img: '',
+        iconId: '#icon-certificate',
         adv: '中文名称有效：拥有真正有效的中文名称，正式归档，名字不会重复。'
     },
     {
-        img: '',
+        iconId: '#icon-balance-two',
         adv: '国际声誉良好：法体制仿效英美法系，允许英或美式管理，法律支持完善。'
     }
 ]
 
 const advantages = [
     {
-        img: '',
+        imgSrc: new URL('@/assets/img/temp_img/1.jpg', import.meta.url).href,
         title: '快速通道服务',
         description: '外国投资者注册企业可以享受快速通道服务，并可以通过无纸化电子方式提交申请，仅需二周时间即可完成注册。'
     },
     {
-        img: '',
+        imgSrc: new URL('@/assets/img/temp_img/3.jpg', import.meta.url).href,
         title: '经验丰富，大量成功案例',
-        description: '昶嘉捷以中小企业发展为核心目标，为大量企业提供专业的咨询服务。'
+        description: '十洲通以中小企业发展为核心目标，为大量企业提供专业的咨询服务。'
     },
     {
-        img: '',
+        imgSrc: new URL('@/assets/img/temp_img/4.jpg', import.meta.url).href,
         title: '提供专业增值服务',
-        description: '昶嘉捷在境外拥有自己的团队，也与境外的各大银行、事务所、税务机构建立了良好的合作关系，除了提供注册服务，对于后续境外主体财务、税务、法律等都能协助企业客户提供综合全面的服务，做到“在外有昶嘉捷，更快捷”。'
+        description: '十洲通在境外拥有自己的团队，也与境外的各大银行、事务所、税务机构建立了良好的合作关系，除了提供注册服务，对于后续境外主体财务、税务、法律等都能协助企业客户提供综合全面的服务，做到"在外有十洲通，更快捷"。'
     },
     {
-        img: '',
+        imgSrc: new URL('@/assets/img/temp_img/5.jpg', import.meta.url).href,
         title: '专业专属商务对接和支持',
-        description: '昶嘉捷的顾问、咨询师、会计师等多数毕业于国内外著名大学，对于每个客户都会建立计划小组，负责客户一对一的咨询、案子进度和客户协调计划等服务工作，服务过程积极听取客户意见，建立客户意见档案和增值服务平台，旨在为客户提供专业和安全保障服务。'
+        description: '我们的顾问、咨询师、会计师等多数毕业于国内外著名大学，对于每个客户都会建立计划小组，负责客户一对一的咨询、案子进度和客户协调计划等服务工作，服务过程积极听取客户意见，建立客户意见档案和增值服务平台，旨在为客户提供专业和安全保障服务。'
     }
 ]
 
@@ -230,8 +236,13 @@ const toggleFaq = (index) => {
     expandedItems.value[index] = !expandedItems.value[index]
 }
 
-// 添加过渡动画（保持与 Mo_content2.vue 一致的逻辑）
-onMounted(() => {
+const advantageRefs = ref([])
+const registrationProcessRefs = ref([])
+
+// 保持动画脚本不变
+onMounted(async () => {
+    await nextTick()
+    
     // content1 动画
     gsap.from('.content1 .title', {
         scrollTrigger: {
@@ -240,7 +251,8 @@ onMounted(() => {
         },
         opacity: 0,
         y: 50,
-        duration: 0.8
+        duration: 0.8,
+        ease: 'power2.out'
     })
 
     gsap.from('.content1 .intro', {
@@ -251,10 +263,11 @@ onMounted(() => {
         opacity: 0,
         y: 50,
         duration: 0.8,
-        delay: 0.2
+        delay: 0.2,
+        ease: 'power2.out'
     })
 
-    // content2 动画
+    // content2 动画 - 参照其他页面统一动画效果
     gsap.from('.content2 .title', {
         scrollTrigger: {
             trigger: '.content2 .title',
@@ -262,18 +275,29 @@ onMounted(() => {
         },
         opacity: 0,
         y: 50,
-        duration: 0.8
+        duration: 0.8,
+        ease: 'power2.out'
     })
 
-    gsap.from('.content2 .advantage', {
-        scrollTrigger: {
-            trigger: '.content2 .intro',
-            start: 'top 80%'
-        },
-        opacity: 0,
-        y: 50,
-        duration: 0.8,
-        stagger: 0.1
+    // 为每个优势项添加动画 - 参照其他页面统一动画效果
+    advantageRefs.value.forEach((el, index) => {
+        gsap.fromTo(el,
+            { 
+                opacity: 0, 
+                y: 50
+            },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.6,
+                delay: index * 0.1,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: '.content2 .intro',
+                    start: 'top 80%'
+                }
+            }
+        )
     })
 
     // content3 动画
@@ -308,7 +332,7 @@ onMounted(() => {
         );
     });
 
-    // content4 动画
+    // content4 动画 - 参照其他页面统一动画效果
     gsap.from('.content4 .title', {
         scrollTrigger: {
             trigger: '.content4 .title',
@@ -316,18 +340,29 @@ onMounted(() => {
         },
         opacity: 0,
         y: 50,
-        duration: 0.8
+        duration: 0.8,
+        ease: 'power2.out'
     })
 
-    gsap.from('.content4 .advantage', {
-        scrollTrigger: {
-            trigger: '.content4 .intro',
-            start: 'top 80%'
-        },
-        opacity: 0,
-        y: 50,
-        duration: 0.8,
-        stagger: 0.1
+    // 为每个注册流程项添加动画 - 参照其他页面统一动画效果
+    registrationProcessRefs.value.forEach((el, index) => {
+        gsap.fromTo(el,
+            { 
+                opacity: 0, 
+                y: 50
+            },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.6,
+                delay: index * 0.1,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: '.content4 .intro',
+                    start: 'top 80%'
+                }
+            }
+        )
     })
 
     // content5 动画

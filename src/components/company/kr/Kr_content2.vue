@@ -19,9 +19,11 @@
                     韩国公司注册优势
                 </div>
                 <div class="intro">
-                    <div v-for="(item, index) in advantage" :key="index" class="advantage">
+                    <div v-for="(item, index) in advantage" :key="index" class="advantage" :ref="el => { if (el) advantageRefs[index] = el }">
                         <div class="img">
-                            <img :src="item.img" alt="">
+                            <svg class="icon" aria-hidden="true">
+                                <use :xlink:href="item.iconId"></use> 
+                            </svg>
                         </div>
                         <div class="text">
                             {{ item.adv }}
@@ -54,9 +56,12 @@
                     公司注册流程
                 </div>
                 <div class="intro">
-                    <div v-for="(item, index) in registrationProcess" :key="index" class="advantage">
+                    <div v-for="(item, index) in registrationProcess" :key="index" class="advantage" :ref="el => { if (el) registrationProcessRefs[index] = el }">
                         <div class="img">
-                            </div>
+                            <svg class="icon" aria-hidden="true">
+                                <use :xlink:href="item.iconId"></use> 
+                            </svg>
+                        </div>
                         <div class="text1">
                             {{ item.title }}
                         </div>
@@ -73,7 +78,8 @@
                 <div class="intro">
                     <div v-for="(item, index) in advantages" :key="index" class="advantage">
                         <div class="img">
-                            </div>
+                            <img :src="item.imgSrc" :alt="item.title">
+                        </div>
                         <div class="text1">
                             {{ item.title }}
                         </div>
@@ -114,41 +120,42 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, nextTick } from 'vue'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
-import '@/css/company/kr/Kr_content2.css'
+// 保持导入路径不变
+import '@/css/company/kr/Kr_content2.css' 
 
 gsap.registerPlugin(ScrollTrigger)
 
 const registrationProcess = [
     {
-        img: '',
+        iconId: '#icon-message-search',
         title: '提交名称及评估',
         description: '核名、确定公司名称、营业范围、代表理事和监事。'
     },
     {
-        img: '',
+        iconId: '#icon-agreement',
         title: '签署协议及交付款项',
         description: '签署委托协议，支付定金，并准备公证文件。'
     },
     {
-        img: '',
+        iconId: '#icon-audit',
         title: '办理公证文件',
         description: '代表理事和监事在国内办理公证后，将公证原件邮到我司。'
     },
     {
-        img: '',
+        iconId: '#icon-bank-transfer',
         title: '申报外商投资及注资',
         description: '办理外商投资申报，客户从境外汇入注册资金到银行托管账户（可提供垫资服务）。'
     },
     {
-        img: '',
+        iconId: '#icon-government-line',
         title: '递交申请并完成注册',
         description: '资金到账后，我司办理注册手续，时间约为7-9个工作日。'
     },
     {
-        img: '',
+        iconId: '#icon-file-success',
         title: '领取执照及后续开户',
         description: '客户到韩国领取营业执照，我司协助客户开设银行账户。'
     }
@@ -156,49 +163,49 @@ const registrationProcess = [
 
 const advantage = [
     {
-        img: '',
-        adv: '优秀人才资源：97%以上的职业人士拥有大学学历或受过职业培训。'
+        iconId: '#icon-degree-hat',
+        adv: '优秀人才资源：97%以上的职业人士拥有大学学历 or 受过职业培训。'
     },
     {
-        img: '',
+        iconId: '#icon-effects',
         adv: 'IT强国：拥有世界最高的宽带网入网率和移动电话普及率。'
     },
     {
-        img: '',
+        iconId: '#icon-award-line',
         adv: '高政府鼓励机制：在经济合作发展组织会员国中属于最宽大。'
     },
     {
-        img: '',
+        iconId: '#icon-earth',
         adv: '最佳地理位置：距东北亚主要城市（北京、东京、上海）航班行程均在3小时以内。'
     },
     {
-        img: '',
+        iconId: '#icon-positive-dynamics',
         adv: '高收益中心：外资企业的净利润远高于国内企业。'
     },
     {
-        img: '',
+        iconId: '#icon-transaction',
         adv: '贸易便利：公司注册后即拥有进出口权，无需额外申请。'
     }
 ]
 
 const advantages = [
     {
-        img: '',
+        imgSrc: new URL('@/assets/img/temp_img/1.jpg', import.meta.url).href,
         title: '专业团队',
         description: '拥有经验丰富的专业顾问团队，提供一站式服务解决方案'
     },
     {
-        img: '',
+        imgSrc: new URL('@/assets/img/temp_img/3.jpg', import.meta.url).href,
         title: '高效办理',
         description: '流程优化，快速响应，大大缩短办理时间'
     },
     {
-        img: '',
+        imgSrc: new URL('@/assets/img/temp_img/4.jpg', import.meta.url).href,
         title: '价格透明',
         description: '明码标价，无隐性收费，提供高性价比服务'
     },
     {
-        img: '',
+        imgSrc: new URL('@/assets/img/temp_img/5.jpg', import.meta.url).href,
         title: '全程服务',
         description: '从咨询到后续维护，提供全周期贴心服务支持'
     }
@@ -225,8 +232,13 @@ const toggleFaq = (index) => {
     expandedItems.value[index] = !expandedItems.value[index]
 }
 
+const advantageRefs = ref([])
+const registrationProcessRefs = ref([])
+
 // 保持动画脚本不变
-onMounted(() => {
+onMounted(async () => {
+    await nextTick()
+    
     // content1 动画
     gsap.from('.content1 .title', {
         scrollTrigger: {
@@ -235,7 +247,8 @@ onMounted(() => {
         },
         opacity: 0,
         y: 50,
-        duration: 0.8
+        duration: 0.8,
+        ease: 'power2.out'
     })
 
     gsap.from('.content1 .intro', {
@@ -246,10 +259,11 @@ onMounted(() => {
         opacity: 0,
         y: 50,
         duration: 0.8,
-        delay: 0.2
+        delay: 0.2,
+        ease: 'power2.out'
     })
 
-    // content2 动画
+    // content2 动画 - 参照其他页面统一动画效果
     gsap.from('.content2 .title', {
         scrollTrigger: {
             trigger: '.content2 .title',
@@ -257,18 +271,29 @@ onMounted(() => {
         },
         opacity: 0,
         y: 50,
-        duration: 0.8
+        duration: 0.8,
+        ease: 'power2.out'
     })
 
-    gsap.from('.content2 .advantage', {
-        scrollTrigger: {
-            trigger: '.content2 .intro',
-            start: 'top 80%'
-        },
-        opacity: 0,
-        y: 50,
-        duration: 0.8,
-        stagger: 0.1
+    // 为每个优势项添加动画 - 参照其他页面统一动画效果
+    advantageRefs.value.forEach((el, index) => {
+        gsap.fromTo(el,
+            { 
+                opacity: 0, 
+                y: 50
+            },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.6,
+                delay: index * 0.1,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: '.content2 .intro',
+                    start: 'top 80%'
+                }
+            }
+        )
     })
 
     // content3 动画
@@ -303,7 +328,7 @@ onMounted(() => {
         );
     });
 
-    // content4 动画
+    // content4 动画 - 参照其他页面统一动画效果
     gsap.from('.content4 .title', {
         scrollTrigger: {
             trigger: '.content4 .title',
@@ -311,18 +336,29 @@ onMounted(() => {
         },
         opacity: 0,
         y: 50,
-        duration: 0.8
+        duration: 0.8,
+        ease: 'power2.out'
     })
 
-    gsap.from('.content4 .advantage', {
-        scrollTrigger: {
-            trigger: '.content4 .intro',
-            start: 'top 80%'
-        },
-        opacity: 0,
-        y: 50,
-        duration: 0.8,
-        stagger: 0.1
+    // 为每个注册流程项添加动画 - 参照其他页面统一动画效果
+    registrationProcessRefs.value.forEach((el, index) => {
+        gsap.fromTo(el,
+            { 
+                opacity: 0, 
+                y: 50
+            },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.6,
+                delay: index * 0.1,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: '.content4 .intro',
+                    start: 'top 80%'
+                }
+            }
+        )
     })
 
     // content5 动画
