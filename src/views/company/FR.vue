@@ -12,7 +12,7 @@
 
 <script setup>
 import '@/css/company/fr/FR.css'
-import Top from '@/components/company/common/Top.vue'
+import Top from '@/components/common/Top.vue'
 import Frcontent1 from '@/components/company/fr/Fr_content1.vue'
 import Frcontent2 from '@/components/company/fr/Fr_content2.vue'
 import Link from '@/components/company/common/Link.vue'

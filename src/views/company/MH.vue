@@ -1,5 +1,5 @@
 <template>
-    <!-- 马绍尔公司 -->
+    <!-- 马绍尔公�?-->
     <div class="mh_box">
         <Top />
         <Mhcontent1 />
@@ -12,7 +12,7 @@
 
 <script setup>
 import '@/css/company/mh/MH.css'
-import Top from '@/components/company/common/Top.vue'
+import Top from '@/components/common/Top.vue'
 import Mhcontent1 from '@/components/company/mh/Mh_content1.vue'
 import Mhcontent2 from '@/components/company/mh/Mh_content2.vue'
 import Link from '@/components/company/common/Link.vue'

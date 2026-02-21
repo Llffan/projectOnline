@@ -21,51 +21,19 @@
         </div>
         <div class="scoll_content">
             <div class="scoll_content1">
-                <div>
-                    <img src="" alt="">
-
-                    <div>
-                        <p>
-                            价格透明
-                        </p>
-                        <span>
-                            统一报价，无隐形消费
-                        </span>
+                <div v-for="(item, index) in features" :key="index">
+                    <div class="icon_wrapper">
+                        <svg class="icon" aria-hidden="true">
+                            <use :xlink:href="item.icon"></use> 
+                        </svg>
                     </div>
-                </div>
 
-                <div>
-                    <img src="" alt="">
                     <div>
                         <p>
-                            专业高效
+                            {{ item.title }}
                         </p>
                         <span>
-                            100人专业团队，效率高
-                        </span>
-                    </div>
-                </div>
-
-                <div>
-                    <img src="" alt="">
-                    <div>
-                        <p>
-                            安全保障
-                        </p>
-                        <span>
-                            资料不外泄，安全保密
-                        </span>
-                    </div>
-                </div>
-
-                <div>
-                    <img src="" alt="">
-                    <div>
-                        <p>
-                            专业服务
-                        </p>
-                        <span>
-                            专业客服1对1服务
+                            {{ item.desc }}
                         </span>
                     </div>
                 </div>
@@ -95,6 +63,13 @@ import '@/css/homeView/content/Content4.css'
 import { stepsEmits } from 'element-plus'
 import { ref, onMounted } from 'vue'
 import gsap from 'gsap'
+
+const features = [
+    { title: '价格透明', desc: '统一报价，无隐形消费', icon: '#icon-finance' },
+    { title: '专业高效', desc: '100人专业团队，效率高', icon: '#icon-award-line' },
+    { title: '安全保障', desc: '资料不外泄，安全保密', icon: '#icon-audit' },
+    { title: '专业服务', desc: '专业客服1对1服务', icon: '#icon-cooperative-handshake' }
+]
 
 let cover_content = ref([
     {

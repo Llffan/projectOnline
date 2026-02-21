@@ -1,5 +1,5 @@
 <template>
-    <!-- 新加坡公司 -->
+    <!-- 新加坡公�?-->
     <div class="sg_box">
         <Top />
         <Sgcontent1 />
@@ -12,7 +12,7 @@
 
 <script setup>
 import '@/css/company/sg/SG.css'
-import Top from '@/components/company/common/Top.vue'
+import Top from '@/components/common/Top.vue'
 import Sgcontent1 from '@/components/company/sg/Sg_content1.vue'
 import Sgcontent2 from '@/components/company/sg/Sg_content2.vue'
 import Link from '@/components/company/common/Link.vue'

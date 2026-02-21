@@ -1,5 +1,5 @@
 <template>
-    <!-- 塞舌尔公司 -->
+    <!-- 塞舌尔公�?-->
     <div class="sc_box">
         <Top />
         <Sccontent1 />
@@ -12,7 +12,7 @@
 
 <script setup>
 import '@/css/company/sc/SC.css'
-import Top from '@/components/company/common/Top.vue'
+import Top from '@/components/common/Top.vue'
 import Sccontent1 from '@/components/company/sc/Sc_content1.vue'
 import Sccontent2 from '@/components/company/sc/Sc_content2.vue'
 import Link from '@/components/company/common/Link.vue'

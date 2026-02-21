@@ -132,10 +132,21 @@
                 align-items: center;
                 gap: 5px;
 
-                img {
+                .icon_wrapper {
                     width: 100px;
                     height: 100px;
-                    background-color: #569df0;
+                    border-radius: 50%;
+                    background: linear-gradient(135deg, #cce6ff 0%, #66b3ff 100%);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-shadow: 0 2px 3px 1px rgba(0, 79, 144, 0.1);
+
+                    .icon {
+                        width: 60px;
+                        height: 60px;
+                        fill: white;
+                    }
                 }
 
                 >div {

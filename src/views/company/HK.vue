@@ -12,7 +12,7 @@
 
 <script setup>
 import '@/css/company/hk/HK.css'
-import Top from '@/components/company/common/Top.vue'
+import Top from '@/components/common/Top.vue'
 import Hkcontent1 from '@/components/company/hk/Hk_content1.vue'
 import Hkcontent2 from '@/components/company/hk/Hk_content2.vue'
 import Link from '@/components/company/common/Link.vue'

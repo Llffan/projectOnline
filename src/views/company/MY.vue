@@ -12,7 +12,7 @@
 
 <script setup>
 import '@/css/company/my/MY.css'
-import Top from '@/components/company/common/Top.vue'
+import Top from '@/components/common/Top.vue'
 import Mycontent1 from '@/components/company/my/My_content1.vue'
 import Mycontent2 from '@/components/company/my/My_content2.vue'
 import Link from '@/components/company/common/Link.vue'

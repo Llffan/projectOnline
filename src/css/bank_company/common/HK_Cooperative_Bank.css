@@ -1,0 +1,99 @@
+﻿.HK_Cooperative_Bank {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  background: linear-gradient(135deg, #ffffff 0%, #f0f8ff 100%);
+}
+
+.HK_Cooperative_Bank .title {
+  text-align: center;
+  font-size: 32px;
+  color: #0037ff7e;
+  margin-top: 30px;
+}
+
+.HK_Cooperative_Bank .title::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 500px;
+  background: linear-gradient(to right, #f5f5f5, #0037ff7e, #f5f5f5);
+  margin: 20px auto;
+}
+
+.HK_Cooperative_Bank .bank-grid {
+  width: 90%;
+  max-width: 1150px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.HK_Cooperative_Bank .bank-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.HK_Cooperative_Bank .bank-item:hover {
+  transform: translateY(-3px);
+}
+
+.HK_Cooperative_Bank .img-box {
+  width: 100%;
+  aspect-ratio: 3 / 1;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  transition: box-shadow 0.3s ease;
+}
+
+.HK_Cooperative_Bank .bank-item:hover .img-box {
+  box-shadow: 0 4px 12px rgba(0, 55, 255, 0.15);
+}
+
+.HK_Cooperative_Bank .img-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.HK_Cooperative_Bank .bank-name {
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+}
+
+/* Response for smaller screens */
+@media (max-width: 1200px) {
+  .HK_Cooperative_Bank .bank-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .HK_Cooperative_Bank .bank-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .HK_Cooperative_Bank .bank-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .HK_Cooperative_Bank .bank-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

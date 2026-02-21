@@ -135,6 +135,27 @@
         display: flex;
     }
     
+    /* 为每个下拉菜单添加独立的最小宽度设置 */
+    .nav-dropdown-1 > .dropdown-menu {
+        min-width: 650px;
+    }
+    
+    .nav-dropdown-2 > .dropdown-menu {
+        min-width: 500px;
+    }
+    
+    .nav-dropdown-3 > .dropdown-menu {
+        min-width: 500px;
+    }
+    
+    .nav-dropdown-4 > .dropdown-menu {
+        min-width: 350px;
+    }
+    
+    .nav-dropdown-5 > .dropdown-menu {
+        min-width: 300px;
+    }
+    
     .dropdown-menu .region-group {
         display: flex;
         flex-direction: column;
@@ -173,6 +194,46 @@
         align-content: flex-start;
     }
     
+    /* 公司注册菜单样式 */
+    .menu-company .menu-company-countries {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+        align-content: flex-start;
+    }
+    
+    /* 公证认证菜单样式 */
+    .menu-cert .menu-cert-countries {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        align-content: flex-start;
+    }
+    
+    /* 银行开户菜单样式 */
+    .menu-bank .menu-bank-countries {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        align-content: flex-start;
+    }
+    
+    /* 知识产权服务菜单样式 */
+    .menu-ip .menu-ip-countries {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        align-content: flex-start;
+    }
+    
+    /* 秘书服务菜单样式 */
+    .menu-secretary .menu-secretary-countries {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        align-content: flex-start;
+    }
+    
     .dropdown-menu .region-countries a {
         margin: 0;
         padding: 8px 5px;
@@ -201,15 +262,32 @@
         margin: 0 auto;
     }
     .menu3 a {
+        padding: 16px 42px;
+        margin: 0 auto;
+    }
+    .menu4 a {
         padding: 16px 10px;
         width: 130px;
     }
-    .menu4 a {
+    .menu5 a {
         padding: 16px 25px;
+        margin: 0 auto;
+    }
+    .menu-ip a {
+        padding: 8px 5px;
+        width: 160px;
+    }
+    .menu-secretary a {
+        padding: 16px 42px;
         margin: 0 auto;
     }
     .dropdown-menu a:hover {
         background: linear-gradient(90deg, #f0fcff70 0%, #e3f9fd70 50%, #d9fafd70 100%);
         color: #0037ff7e;
+    }
+    
+    /* 添加激活状态下的区域组样式 */
+    .menu-secretary .region-group.active-region {
+        opacity: 1;
     }
 }

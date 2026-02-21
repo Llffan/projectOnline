@@ -12,7 +12,7 @@
 
 <script setup>
 import '@/css/company/bvi/BVI.css'
-import Top from '@/components/company/common/Top.vue'
+import Top from '@/components/common/Top.vue'
 import Bvicontent1 from '@/components/company/bvi/Bvi_content1.vue'
 import Bvicontent2 from '@/components/company/bvi/Bvi_content2.vue'
 import Link from '@/components/company/common/Link.vue'

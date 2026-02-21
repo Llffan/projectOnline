@@ -1,5 +1,5 @@
 <template>
-    <!-- 加拿大公司 -->
+    <!-- 加拿大公�?-->
     <div class="ca_box">
         <Top />
         <Cacontent1 />
@@ -12,7 +12,7 @@
 
 <script setup>
 import '@/css/company/ca/CA.css'
-import Top from '@/components/company/common/Top.vue'
+import Top from '@/components/common/Top.vue'
 import Cacontent1 from '@/components/company/ca/Ca_content1.vue'
 import Cacontent2 from '@/components/company/ca/Ca_content2.vue'
 import Link from '@/components/company/common/Link.vue'
