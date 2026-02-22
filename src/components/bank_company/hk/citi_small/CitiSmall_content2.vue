@@ -7,7 +7,7 @@
                     香港小花旗银行简介
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/Citibank.jpg" alt="香港小花旗银行">
+                    <img src="@/assets/img/bank/hk/citibank2.jpg" alt="香港小花旗银行">
                     <div class="text">
                         <P>香港小花旗银行香港花旗银行 Citibank（Hong Kong）是香港一家提供理财、投资、信用卡、保险和贷款等服务的银行。它是花旗银行在香港经营的子公司。 香港花旗银行于1902年开始在香港运营，从而成为香港第一家提供服务的外资银行。花旗银行（香港）有限公司是一家在香港注册成立的持牌银行。香港花旗银行在香港岛，九龙，新界和澳门开设48家分行。</P>
                     </div>
