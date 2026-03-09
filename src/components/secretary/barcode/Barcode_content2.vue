@@ -129,17 +129,17 @@ gsap.registerPlugin(ScrollTrigger)
 
 const registrationProcess = [
     {
-        iconId: '#icon-shopping-cart', 
+        iconId: '#icon-consume', 
         title: '食品饮料',
         description: '各类预包装食品、饮料、酒类、土特产品等。'
     },
     {
-        iconId: '#icon-pills', 
+        iconId: '#icon-natural-mode', 
         title: '日用化工',
         description: '化妆品、牙膏、香皂、洗衣粉、医药品等。'
     },
     {
-        iconId: '#icon-T-shirt', 
+        iconId: '#icon-user', 
         title: '服装鞋帽',
         description: '各类服装、鞋袜、帽子及纺织品。'
     },
@@ -149,12 +149,12 @@ const registrationProcess = [
         description: '图书、胶卷、办公用品、文教体育用品。'
     },
     {
-        iconId: '#icon-tv', 
+        iconId: '#icon-ad-product', 
         title: '家用电器',
         description: '电视机、冰箱、洗衣机及各类电子产品。'
     },
     {
-        iconId: '#icon-tools', 
+        iconId: '#icon-gavel', 
         title: '日用五金',
         description: '手工工具、剪刀、日用塑料及橡胶制品等。'
     }
@@ -162,27 +162,27 @@ const registrationProcess = [
 
 const advantage = [
     {
-        iconId: '#icon-global-line', 
+        iconId: '#icon-world', 
         adv: '商业现代化：条形码是实现商业现代化和流通环节自动化的基础。'
     },
     {
-        iconId: '#icon-store', 
+        iconId: '#icon-city', 
         adv: '进驻商城：商品入驻大型超市、商场及电商平台（如亚马逊）的必要条件。'
     },
     {
-        iconId: '#icon-shield-check', 
+        iconId: '#icon-shield-add', 
         adv: '产品防伪：增加产品辨识度，防止假冒伪劣，维护品牌形象。'
     },
     {
-        iconId: '#icon-inventory', 
+        iconId: '#icon-view-list', 
         adv: '库存管理：方便企业进行出入库管理，库存盘点，提高效率。'
     },
     {
-        iconId: '#icon-scan', 
+        iconId: '#icon-secure-payment-line', 
         adv: '快速结算：收银台扫描条码即可结算，减少顾客等待时间。'
     },
     {
-        iconId: '#icon-data', 
+        iconId: '#icon-positive-dynamics', 
         adv: '结构调整：帮助制造商及时掌握销售数据，调整产品结构。'
     }
 ]

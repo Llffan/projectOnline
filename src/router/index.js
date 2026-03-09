@@ -214,6 +214,36 @@ const router = createRouter({
       component: () => import("@/views/secretary/Tax_ov.vue"),
     },
     {
+      path: "/secretary/change",
+      name: "change",
+      component: () => import("@/views/secretary/Change.vue"),
+    },
+    {
+      path: "/secretary/dissolution",
+      name: "dissolution",
+      component: () => import("@/views/secretary/Dissolution.vue"),
+    },
+    {
+      path: "/secretary/restoration",
+      name: "restoration",
+      component: () => import("@/views/secretary/Restoration.vue"),
+    },
+    {
+      path: "/secretary/tax-planning",
+      name: "tax_planning",
+      component: () => import("@/views/secretary/Tax_planning.vue"),
+    },
+    {
+      path: "/secretary/accounting",
+      name: "accounting",
+      component: () => import("@/views/secretary/Accounting.vue"),
+    },
+    {
+      path: "/secretary/tax-filing",
+      name: "tax_filing",
+      component: () => import("@/views/secretary/Tax_filing.vue"),
+    },
+    {
       path: "/secretary/hk-msb",
       name: "hk_msb",
       component: () => import("@/views/secretary/Hk_msb.vue"),
@@ -359,9 +389,174 @@ const router = createRouter({
       component: () => import("@/views/bank_company/us/Cbi.vue"),
     },
     {
-      path: "/notary",
-      name: "notary",
-      component: () => import("@/views/notary/Notary.vue"),
+      path: "/bank/us/ew",
+      name: "us_ew",
+      component: () => import("@/views/bank_company/us/Ew.vue"),
+    },
+    {
+      path: "/bank/us/jpm",
+      name: "us_jpm",
+      component: () => import("@/views/bank_company/us/Jpm.vue"),
+    },
+    {
+      path: "/bank/us/cathay",
+      name: "us_cathay",
+      component: () => import("@/views/bank_company/us/Cathay.vue"),
+    },
+    {
+      path: "/bank/us/boa",
+      name: "us_boa",
+      component: () => import("@/views/bank_company/us/Boa.vue"),
+    },
+    {
+      path: "/bank/us/banc-cal",
+      name: "us_banc_cal",
+      component: () => import("@/views/bank_company/us/BancCal.vue"),
+    },
+    {
+      path: "/bank/us/arival",
+      name: "us_arival",
+      component: () => import("@/views/bank_company/us/Arival.vue"),
+    },
+    {
+      path: "/bank/us/mercury",
+      name: "us_mercury",
+      component: () => import("@/views/bank_company/us/Mercury.vue"),
+    },
+    {
+      path: "/bank/us/axos",
+      name: "us_axos",
+      component: () => import("@/views/bank_company/us/Axos.vue"),
+    },
+    {
+      path: "/bank/us/hsbc",
+      name: "us_hsbc",
+      component: () => import("@/views/bank_company/us/Hsbc.vue"),
+    },
+    {
+      path: "/bank/sg/ocbc",
+      name: "sg_ocbc",
+      component: () => import("@/views/bank_company/sg/Ocbc.vue"),
+    },
+    {
+      path: "/bank/sg/hsbc",
+      name: "sg_hsbc",
+      component: () => import("@/views/bank_company/sg/Hsbc.vue"),
+    },
+    {
+      path: "/bank/sg/maybank",
+      name: "sg_maybank",
+      component: () => import("@/views/bank_company/sg/Maybank.vue"),
+    },
+    {
+      path: "/bank/sg/sc",
+      name: "sg_sc",
+      component: () => import("@/views/bank_company/sg/Sc.vue"),
+    },
+    {
+      path: "/bank/sg/uob",
+      name: "sg_uob",
+      component: () => import("@/views/bank_company/sg/Uob.vue"),
+    },
+    {
+      path: "/bank/sg/dbs",
+      name: "sg_dbs",
+      component: () => import("@/views/bank_company/sg/Dbs.vue"),
+    },
+    {
+      path: "/bank/sg/citi",
+      name: "sg_citi",
+      component: () => import("@/views/bank_company/sg/Citi.vue"),
+    },
+    {
+      path: "/bank/sg/aspire",
+      name: "sg_aspire",
+      component: () => import("@/views/bank_company/sg/Aspire.vue"),
+    },
+    {
+      path: "/bank/sg/bos",
+      name: "sg_bos",
+      component: () => import("@/views/bank_company/sg/Bos.vue"),
+    },
+    {
+      path: "/bank/sg/boc",
+      name: "sg_boc",
+      component: () => import("@/views/bank_company/sg/Boc.vue"),
+    },
+    {
+      path: "/bank/mo/icbc",
+      name: "mo_icbc",
+      component: () => import("@/views/bank_company/mo/Icbc.vue"),
+    },
+    {
+      path: "/bank/mo/wl",
+      name: "mo_wl",
+      component: () => import("@/views/bank_company/mo/Wl.vue"),
+    },
+    {
+      path: "/bank/mo/icbc-asia",
+      name: "mo_icbc-asia",
+      component: () => import("@/views/bank_company/mo/IcbcAsia.vue"),
+    },
+    {
+      path: "/bank/mo/boc",
+      name: "mo_boc",
+      component: () => import("@/views/bank_company/mo/Boc.vue"),
+    },
+    {
+      path: "/bank/mo/lusobank",
+      name: "mo_lusobank",
+      component: () => import("@/views/bank_company/mo/Lusobank.vue"),
+    },{
+      path: "/bank/mo/hsbc",
+      name: "mo_hsbc",
+      component: () => import("@/views/bank_company/mo/Hsbc.vue"),
+    },{
+      path: "/bank/mo/bcp",
+      name: "mo_bcp",
+      component: () => import("@/views/bank_company/mo/Bcp.vue"),
+    },{
+      path: "/bank/mo/bnu",
+      name: "mo_bnu",
+      component: () => import("@/views/bank_company/mo/Bnu.vue"),
+    },{
+      path: "/bank/mo/cgb",
+      name: "mo_cgb",
+      component: () => import("@/views/bank_company/mo/Cgb.vue"),
+    },{
+      path: "/bank/mo/ocbc",
+      name: "mo_ocbc",
+      component: () => import("@/views/bank_company/mo/Ocbc.vue"),
+    },
+    {
+      path: "/notary/hague",
+      name: "hague",
+      component: () => import("@/views/notary/HagueNotary.vue"),
+    },
+    {
+      path: "/notary/hk",
+      name: "notary_hk",
+      component: () => import("@/views/notary/HkNotary.vue"),
+    },
+    {
+      path: "/notary/us",
+      name: "notary_us",
+      component: () => import("@/views/notary/UsNotary.vue"),
+    },
+    {
+      path: "/notary/uk",
+      name: "notary_uk",
+      component: () => import("@/views/notary/UkNotary.vue"),
+    },
+    {
+      path: "/notary/jp",
+      name: "notary_jp",
+      component: () => import("@/views/notary/JpNotary.vue"),
+    },
+    {
+      path: "/notary/sg",
+      name: "notary_sg",
+      component: () => import("@/views/notary/SgNotary.vue"),
     },
   ],
   scrollBehavior(to, from, savedPosition) {

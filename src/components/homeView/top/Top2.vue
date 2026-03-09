@@ -55,7 +55,7 @@
                     </div>
                 </div>
                 <div class="nav-dropdown nav-dropdown-2">
-                    <router-link to="/secretary" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': route.path.startsWith('/secretary') }">秘书服务</router-link>
+                    <router-link to="/secretary" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': route.path.startsWith('secretary/hk-annual') }">秘书服务</router-link>
                     <div class="dropdown-menu menu-secretary">
                         <div class="region-group">
                             <div class="region-title">公司年审服务</div>
@@ -76,6 +76,7 @@
                         <div class="region-group">
                             <div class="region-title">公司变更服务</div>
                             <div class="region-countries menu-secretary-countries">
+                                <router-link to="/secretary/change">公司变更</router-link>
                                 <router-link to="/secretary/dissolution">公司注销</router-link>
                                 <router-link to="/secretary/restoration">公司恢复</router-link>
                             </div>
@@ -104,21 +105,21 @@
                             <div class="region-title">新加坡银行开户</div>
                             <div class="region-countries menu-bank-countries">
                                 <router-link to="/bank/sg/personal">新加坡个人账户</router-link>
-                                <router-link to="/bank/sg/company">新加坡公司账户</router-link>
+                                <router-link to="/bank/sg/ocbc">新加坡公司账户</router-link>
                             </div>
                         </div>
                         <div class="region-group">
                             <div class="region-title">澳门银行开户</div>
                             <div class="region-countries menu-bank-countries">
                                 <router-link to="/bank/mo/personal">澳门个人账户</router-link>
-                                <router-link to="/bank/mo/company">澳门公司账户</router-link>
+                                <router-link to="/bank/mo/icbc">澳门公司账户</router-link>
                             </div>
                         </div>
                         <div class="region-group">
                             <div class="region-title">美国银行开户</div>
                             <div class="region-countries menu-bank-countries">
                                 <router-link to="/bank/us/personal">美国个人账户</router-link>
-                                <router-link to="/bank/us/company">美国公司账户</router-link>
+                                <router-link to="/bank/us/cbi">美国公司账户</router-link>
                             </div>
                         </div>
                     </div>
@@ -209,6 +210,7 @@ const countryToRegionMap = {
   '/secretary/overseas-annual': 'annual-review',
   '/secretary/msb': 'hk-license',
   '/secretary/telecom': 'hk-license',
+  '/secretary/change': 'company-changes',
   '/secretary/dissolution': 'company-changes',
   '/secretary/restoration': 'company-changes',
   '/secretary/barcode': 'financial-tax',

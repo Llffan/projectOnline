@@ -1,7 +1,7 @@
 ﻿<template>
     <div class="HK_Cooperative_Bank">
         <div class="title">
-            合作银行
+            香港合作银行
         </div>
         <div class="bank-grid">
             <div v-for="(bank, index) in banks" :key="index" class="bank-item">

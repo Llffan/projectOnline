@@ -77,22 +77,6 @@ const categories = ref([
     ] 
   },
   { 
-    id: 'us', 
-    name: '美国银行', 
-    services: [
-      { name: '美国富港银行', route: '/bank/us/cbi' },
-      { name: '美国华美银行', route: '/bank/us/ew' },
-      { name: '美国摩根大通银行', route: '/bank/us/jpm' },
-      { name: '美国国泰银行', route: '/bank/us/cathay' },
-      { name: '美国银行', route: '/bank/us/boa' },
-      { name: '美国加州银行', route: '/bank/us/banc-cal' },
-      { name: '美国Arival银行', route: '/bank/us/arival' },
-      { name: '美国水星银行', route: '/bank/us/mercury' },
-      { name: '美国Axos银行', route: '/bank/us/axos' },
-      { name: '美国汇丰银行', route: '/bank/us/hsbc' }
-    ] 
-  },
-  { 
     id: 'sg', 
     name: '新加坡银行', 
     services: [
@@ -104,7 +88,7 @@ const categories = ref([
       { name: '新加坡星展银行', route: '/bank/sg/dbs' },
       { name: '新加坡花旗银行', route: '/bank/sg/citi' },
       { name: '新加坡Aspire银行', route: '/bank/sg/aspire' },
-      { name: '新加坡银行', route: '/bank/sg/bank-of-singapore' },
+      { name: '新加坡银行', route: '/bank/sg/bos' },
       { name: '新加坡中国银行', route: '/bank/sg/boc' }
     ] 
   },
@@ -121,10 +105,25 @@ const categories = ref([
       { name: '澳门葡萄牙商业银行', route: '/bank/mo/bcp' },
       { name: '澳门大西洋银行', route: '/bank/mo/bnu' },
       { name: '澳门广发银行', route: '/bank/mo/cgb' },
-      { name: '澳门华侨银行', route: '/bank/mo/ocbc' },
-      { name: '澳门交通银行', route: '/bank/mo/bocom' }
+      { name: '澳门华侨银行', route: '/bank/mo/ocbc' }
     ] 
-  }
+  },
+  { 
+    id: 'us', 
+    name: '美国银行', 
+    services: [
+      { name: '美国富港银行', route: '/bank/us/cbi' },
+      { name: '美国华美银行', route: '/bank/us/ew' },
+      { name: '美国摩根大通银行', route: '/bank/us/jpm' },
+      { name: '美国国泰银行', route: '/bank/us/cathay' },
+      { name: '美国银行', route: '/bank/us/boa' },
+      { name: '美国加州银行', route: '/bank/us/banc-cal' },
+      { name: '美国Arival银行', route: '/bank/us/arival' },
+      { name: '美国水星银行', route: '/bank/us/mercury' },
+      { name: '美国Axos银行', route: '/bank/us/axos' },
+      { name: '美国汇丰银行', route: '/bank/us/hsbc' }
+    ] 
+  } 
 ])
 
 // 计算当前激活的分类

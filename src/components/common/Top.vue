@@ -77,6 +77,7 @@
                         <div class="region-group" :class="{ 'active-region': activeRegion === 'company-changes' }">
                             <div class="region-title">公司变更服务</div>
                             <div class="region-countries menu-secretary-countries">
+                                <router-link to="/secretary/change">公司变更</router-link>
                                 <router-link to="/secretary/dissolution">公司注销</router-link>
                                 <router-link to="/secretary/restoration">公司恢复</router-link>
                             </div>
@@ -98,44 +99,44 @@
                             <div class="region-title">香港银行开户</div>
                             <div class="region-countries menu-bank-countries">
                                 <router-link to="/bank/hk/personal">香港个人账户</router-link>
-                                <router-link to="/bank/hk/company">香港公司账户</router-link>
+                                <router-link to="/bank/hk/constructions">香港公司账户</router-link>
                             </div>
                         </div>
                         <div class="region-group" :class="{ 'active-region': activeRegion === 'bank-sg' }">
                             <div class="region-title">新加坡银行开户</div>
                             <div class="region-countries menu-bank-countries">
                                 <router-link to="/bank/sg/personal">新加坡个人账户</router-link>
-                                <router-link to="/bank/sg/company">新加坡公司账户</router-link>
+                                <router-link to="/bank/sg/ocbc">新加坡公司账户</router-link>
                             </div>
                         </div>
                         <div class="region-group" :class="{ 'active-region': activeRegion === 'bank-mo' }">
                             <div class="region-title">澳门银行开户</div>
                             <div class="region-countries menu-bank-countries">
                                 <router-link to="/bank/mo/personal">澳门个人账户</router-link>
-                                <router-link to="/bank/mo/company">澳门公司账户</router-link>
+                                <router-link to="/bank/mo/icbc">澳门公司账户</router-link>
                             </div>
                         </div>
                         <div class="region-group" :class="{ 'active-region': activeRegion === 'bank-us' }">
                             <div class="region-title">美国银行开户</div>
                             <div class="region-countries menu-bank-countries">
                                 <router-link to="/bank/us/personal">美国个人账户</router-link>
-                                <router-link to="/bank/us/company">美国公司账户</router-link>
+                                <router-link to="/bank/us/cbi">美国公司账户</router-link>
                             </div>
                         </div>
                     </div>
                 </div>
                  <div class="nav-dropdown nav-dropdown-4">
-                    <router-link to="/certification/hague" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': isCertRoute }">公证认证</router-link>
+                    <router-link to="/notary/hague" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': isCertRoute }">公证认证</router-link>
                     <div class="dropdown-menu menu-cert">
                         <div class="region-group" :class="{ 'active-region': activeRegion === 'cert-global' }">
                             <div class="region-countries menu-cert-countries">
-                                <router-link to="/certification/hague">海牙公证认证</router-link>
-                                <router-link to="/certification/embassy">使馆公证认证</router-link>
-                                <router-link to="/certification/hk">香港公证认证</router-link>
-                                <router-link to="/certification/us">美国公证认证</router-link>
-                                <router-link to="/certification/uk">英国公证认证</router-link>
-                                <router-link to="/certification/jp">日本公证认证</router-link>
-                                <router-link to="/certification/sg">新加坡公证认证</router-link>
+                                <router-link to="/notary/hague">海牙公证认证</router-link>
+                                <router-link to="/notary/embassy">使馆公证认证</router-link>
+                                <router-link to="/notary/hk">香港公证认证</router-link>
+                                <router-link to="/notary/us">美国公证认证</router-link>
+                                <router-link to="/notary/uk">英国公证认证</router-link>
+                                <router-link to="/notary/jp">日本公证认证</router-link>
+                                <router-link to="/notary/sg">新加坡公证认证</router-link>
                             </div>
                         </div>
                     </div>
@@ -205,6 +206,7 @@ const countryToRegionMap = {
   '/secretary/hk-msb': 'hk-license',
   '/secretary/telecom': 'hk-license',
   '/secretary/investment-filing': 'hk-license',
+  '/secretary/change': 'company-changes',
   '/secretary/dissolution': 'company-changes',
   '/secretary/restoration': 'company-changes',
   '/secretary/accounting': 'financial-tax',
@@ -213,22 +215,22 @@ const countryToRegionMap = {
   
   // 银行开户
   '/bank/hk/personal': 'bank-hk',
-  '/bank/hk/company': 'bank-hk',
+  '/bank/hk/constructions': 'bank-hk',
   '/bank/sg/personal': 'bank-sg',
-  '/bank/sg/company': 'bank-sg',
+  '/bank/sg/ocbc': 'bank-sg',
   '/bank/mo/personal': 'bank-mo',
-  '/bank/mo/company': 'bank-mo',
+  '/bank/mo/icbc': 'bank-mo',
   '/bank/us/personal': 'bank-us',
-  '/bank/us/company': 'bank-us',
+  '/bank/us/cbi': 'bank-us',
 
   // 公证认证
-  '/certification/hague': 'cert-global',
-  '/certification/embassy': 'cert-global',
-  '/certification/hk': 'cert-global',
-  '/certification/us': 'cert-global',
-  '/certification/uk': 'cert-global',
-  '/certification/jp': 'cert-global',
-  '/certification/sg': 'cert-global',
+  '/notary/hague': 'cert-global',
+  '/notary/embassy': 'cert-global',
+  '/notary/hk': 'cert-global',
+  '/notary/us': 'cert-global',
+  '/notary/uk': 'cert-global',
+  '/notary/jp': 'cert-global',
+  '/notary/sg': 'cert-global',
 
   // 知识产权服务
   '/intellectual/domestic-trademark': 'ip-global',
@@ -240,7 +242,7 @@ const countryToRegionMap = {
 const isCompanyRoute = computed(() => route.path.startsWith('/company') && route.path !== '/');
 const isSecretaryRoute = computed(() => route.path.startsWith('/secretary'));
 const isBankRoute = computed(() => route.path.startsWith('/bank'));
-const isCertRoute = computed(() => route.path.startsWith('/certification'));
+const isCertRoute = computed(() => route.path.startsWith('/notary'));
 const isIpRoute = computed(() => route.path.startsWith('/intellectual'));
 
 // 计算当前激活的区域

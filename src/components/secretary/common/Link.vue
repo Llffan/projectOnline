@@ -57,6 +57,7 @@ const routeToCategoryMap = {
   '/secretary/hk-odi': 'license',
   
   // 公司变更服务
+  '/secretary/change': 'change',
   '/secretary/dissolution': 'change',
   '/secretary/restoration': 'change',
   
@@ -100,6 +101,7 @@ const categories = ref([
     id: 'change', 
     name: '公司变更服务', 
     services: [
+      { name: '公司变更', route: '/secretary/change' },
       { name: '公司注销', route: '/secretary/dissolution' },
       { name: '公司恢复', route: '/secretary/restoration' }
     ] 
