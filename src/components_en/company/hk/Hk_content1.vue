@@ -4,10 +4,10 @@
             <img src="@/assets/img/company/hk/HK.jpg" alt="">
         </div>
         <div class="intro">
-            <div class="hk-title">Hong Kong Company Registration Complete Guide</div>
-            <div class="hk-subtitle">Advantages, Process, Requirements, Documents, Timeline, Costs and FAQ</div>
+            <div class="hk-title">Hong Kong Company Registration Guide</div>
+            <div class="hk-subtitle">Advantages, Procedures, Conditions, Materials, Time, Fees & FAQs</div>
             <div class="hk-description">
-                <p>Hong Kong Company Registration</p>
+                <p>- Hong Kongese Company Registration</p>
             </div>
         </div>
     </div>
@@ -18,11 +18,11 @@ import { ref, onMounted } from 'vue'
 import gsap from 'gsap'
 import '@/css_en/company/hk/Hk_content1.css'
 
-// Transition animation
+// 过渡动画
 onMounted(() => {
     const tl = gsap.timeline()
     
-    // Initial state setup
+    // 初始状态设置
     gsap.set('.hk-title', { 
         opacity: 0, 
         y: 50 
@@ -38,7 +38,7 @@ onMounted(() => {
         y: 50 
     })
     
-    // Add animation sequence
+    // 添加动画序列
     tl.to('.hk-title', {
         opacity: 1,
         y: 0,

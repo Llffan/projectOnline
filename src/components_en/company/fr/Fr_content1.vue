@@ -5,9 +5,9 @@
         </div>
         <div class="intro">
             <div class="fr-title">France Company Registration Guide</div>
-            <div class="fr-subtitle">Advantages, Process, Requirements, Documents, Timeline, Costs and FAQs</div>
+            <div class="fr-subtitle">Advantages, Procedures, Conditions, Materials, Time, Fees & FAQs</div>
             <div class="fr-description">
-                <p>- France Company Registration</p>
+                <p>- Franceese Company Registration</p>
             </div>
         </div>
     </div>

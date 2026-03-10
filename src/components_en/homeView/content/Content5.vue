@@ -4,8 +4,8 @@
             <div class="scoll_cover"></div>
             <div class="cover_content">
                 <div class="content_desc">
-                    <p ref="introRef">Shizhoutong provides offshore registration services in over 60 countries, specializing in company registration, bank accounts, annual reviews, accounting, auditing, and trademark protection.</p>
-                    <div ref="bottonRef" class="button">Learn More<p class="p1">→</p></div>
+                    <p ref="introRef">SHI ZHOU TONG provides global offshore registration platforms in more than 60 countries and regions, focusing on offshore company registration, account opening, annual review, accounting & auditing, tax filing, and trademark brand protection.</p>
+                    <div ref="bottonRef" class="button">Details<p class="p1">→</p></div>
                 </div>
                 <div class="content_body">
                     <div class="num_display" ref="coverRef">
@@ -40,11 +40,11 @@
         <div class="scoll_content">
             <div class="scoll_content1">
                 <h2>
-                    Why Choose Shizhoutong
+                    Why Choose SHI ZHOU TONG
                 </h2>
                 <span>Why Choose SHI ZHOU TONG</span>
             </div>
-            <p class="p3">Driven by customer needs and development concepts to create international one-stop services</p>
+            <p class="p3">Driven by customer needs and development concepts, to create one-stop international services.</p>
             <div class="scoll_content2">
                 1
             </div>
@@ -61,19 +61,19 @@ let num_display = ref([
     {
         initialValue: 0,
         finalValue: 40,
-        desc: 'Global Bank Accounts'
+        desc: 'Global Bank Accounts Opened'
     },{
         initialValue: 0,
         finalValue: 60,
-        desc: 'Countries for Registration'
+        desc: 'Countries for Company Registration'
     },{
         initialValue: 0,
         finalValue: 50,
-        desc: 'Financial Licenses'
+        desc: 'Countries for Financial License'
     },{
         initialValue: 0,
         finalValue: 30,
-        desc: 'Trademark Registrations'
+        desc: 'Countries for Trademark Registration'
     }
 ])
 

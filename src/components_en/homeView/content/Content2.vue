@@ -1,5 +1,5 @@
 <template>
-    <!-- Business Introduction -->
+    <!-- 业务介绍 -->
     <div class="content2" ref="content2Ref">
         <div class="register_company">
             <div class="company_intro">
@@ -12,7 +12,7 @@
                     </div>
                 </div>
                 <div class="intro" ref="introRef">
-                    In today's global economy, registering an overseas company is a crucial step for businesses to go international and enhance their image.
+                    In today's global economic integration, registering an overseas company is a crucial way for enterprises to go international and enhance their brand image.
                 </div>
                 <div class="button1" ref="bottonRef">
                     <button class="btn_l" type="button" @click="handlePrev" :disabled="currentIndex === 0">&lt;</button>
@@ -51,11 +51,11 @@ import { computed } from 'vue'
 import gsap from 'gsap'
 
 const isSwitching = ref(false)
-const switchDuration = 500 // ms, can be adjusted based on carousel animation time
+const switchDuration = 500 // ms，可根据轮播动画实际时间调整
 const currentIndex = ref(0)
 const totalPages = computed(() => displayCompanies.value.length)
 
-// Previous/Next buttons
+// 前后箭头
 function handlePrev() {
     if (isSwitching.value || currentIndex.value === 0) return
     isSwitching.value = true
@@ -91,25 +91,25 @@ const displayCompanies = computed(() => {
   return arr
 })
 
-// Mount animations
+// 挂载动画
 const titleRef = ref(null)
 const introRef = ref(null)
 const content2Ref = ref(null)
 const bottonRef = ref(null)
 const cardRef = ref(null)
-// Store all company-card-body refs
+// 用于存储所有 company-card-body 的 refs
 const cardBodyRefs = ref([])
 
 function setCardBodyRef(el, groupIdx, cardIdx) {
     if (!el) return
-    // Calculate unique index
+    // 计算唯一索引
     const idx = `${groupIdx}-${cardIdx}`
     cardBodyRefs.value[idx] = el
 }
 
 onMounted(() => {
     carouselInstance = companyCarousel.value
-    // Title animation
+    // 标题动画
     const titleObserver = new window.IntersectionObserver((entries) => {
         if (entries[0].isIntersecting) {
             titleObserver.unobserve(entries[0].target)
@@ -123,7 +123,7 @@ onMounted(() => {
     })
     if (titleRef.value) titleObserver.observe(titleRef.value)
 
-    // Introduction animation
+    // 介绍动画
     const introObserver = new window.IntersectionObserver((entries) => {
         if (entries[0].isIntersecting) {
             introObserver.unobserve(entries[0].target)
@@ -137,7 +137,7 @@ onMounted(() => {
     })
     if (introRef.value) introObserver.observe(introRef.value)
 
-    // Button animation
+    // 按钮动画
     const buttonObserver = new window.IntersectionObserver((entries) => {
         if (entries[0].isIntersecting) {
             buttonObserver.unobserve(entries[0].target)
@@ -151,7 +151,7 @@ onMounted(() => {
     })
     if (bottonRef.value) buttonObserver.observe(bottonRef.value)
 
-    // Individual company-card-body animations
+    // 每个 company-card-body 独立动画
     setTimeout(() => {
         Object.values(cardBodyRefs.value).forEach((el) => {
             if (!el) return
@@ -159,7 +159,7 @@ onMounted(() => {
                 if (entries[0].isIntersecting) {
                     gsap.fromTo(el,
                         { opacity: 0, y: 220, transition: 'none' },
-                        { opacity: 1, y: 160, duration: 0.7, delay: 0.15, ease: 'power2.out', onComplete: function() {
+                        { opacity: 1, y: 190, duration: 0.7, delay: 0.15, ease: 'power2.out', onComplete: function() {
                             gsap.set(el, {clearProps: 'y,opacity,transition'})
                         }}
                     )
@@ -176,41 +176,41 @@ onMounted(() => {
 const Companies = ref([
     {
         name: 'Hong Kong Company Registration',
-        description: 'International financial center with mature legal system and low-tax environment. Bridges mainland China and the world.',
+        description: 'As a global financial hub, HK offers a mature legal system, low taxes, and acts as a bridge connecting China to the world with free capital flow.',
         img: new URL('@/assets/img/company/香港.jpg', import.meta.url).href
     },{
         name: 'Macao Company Registration',
-        description: 'World-renowned tourism center with unique Chinese-Western culture blend and transparent tax system.',
+        description: 'A renowned tourism center blending Eastern and Western cultures, Macao features a simple, transparent tax system for ideal Asian commercial services.',
         img: new URL('@/assets/img/company/澳门.jpg', import.meta.url).href
     },{
         name: 'US Company Registration',
-        description: 'World\'s largest economy with comprehensive legal system and diversified market environment.',
+        description: 'As the world\'s largest economy, the US provides a robust legal framework and diverse markets with various tax and commercial advantages across states.',
         img: new URL('@/assets/img/company/1.png', import.meta.url).href
     },{
         name: 'Singapore Company Registration',
-        description: 'Southeast Asia\'s economic center with stable political environment and advanced financial system.',
+        description: 'The economic heart of Southeast Asia, Singapore attracts global investors with a stable political environment, advanced finance, and prime location.',
         img: new URL('@/assets/img/company/新加坡.png', import.meta.url).href
     },
     {
         name: 'Japan Company Registration',
-        description: 'World\'s third-largest economy with advanced technology industries and IP protection system.',
+        description: 'The world\'s 3rd largest economy, Japan excels in advanced tech and strict IP protection, serving as a vital Asian R&D and investment center.',
         img: new URL('@/assets/img/company/日本.jpg', import.meta.url).href
     },{
-        name: 'Korea Company Registration',
-        description: 'Asian Tiger with developed manufacturing and innovative technology sector. Open business environment.',
+        name: 'South Korea Company Registration',
+        description: 'An Asian Tiger with strong manufacturing and innovative tech, South Korea provides an open, transparent business environment for foreign investment.',
         img: new URL('@/assets/img/company/韩国.jpg', import.meta.url).href
     },{
         name: 'UK Company Registration',
-        description: 'World financial center with long commercial tradition and comprehensive legal system.',
+        description: 'A premier global financial hub, the UK boasts a rich business tradition and sophisticated legal system, connecting Europe to global markets.',
         img: new URL('@/assets/img/company/英国.png', import.meta.url).href
     },{
         name: 'Germany Company Registration',
-        description: 'Europe\'s largest economy with advanced manufacturing and engineering technologies.',
+        description: 'Europe\'s largest economy, Germany is famed globally for its advanced manufacturing, high-quality engineering, and stable business climate.',
         img: new URL('@/assets/img/company/德国.png', import.meta.url).href
     },
     {
         name: 'France Company Registration',
-        description: 'Major European economy with well-developed infrastructure and high-quality living environment.',
+        description: 'A major European economy with excellent infrastructure, France serves as a vital hub linking European, African, and Middle Eastern markets.',
         img: new URL('@/assets/img/company/法国.png', import.meta.url).href
     }
 ])

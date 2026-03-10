@@ -5,9 +5,9 @@
         </div>
         <div class="intro">
             <div class="uk-title">UK Company Registration Guide</div>
-            <div class="uk-subtitle">Advantages, Process, Requirements, Documents, Timeline, Costs and FAQs</div>
+            <div class="uk-subtitle">Advantages, Procedures, Conditions, Materials, Time, Fees & FAQs</div>
             <div class="uk-description">
-                <p>- UK Company Registration</p>
+                <p>- UKese Company Registration</p>
             </div>
         </div>
     </div>
@@ -18,11 +18,11 @@ import { ref, onMounted } from 'vue'
 import gsap from 'gsap'
 import '@/css_en/company/uk/Uk_content1.css'
 
-// Transition animation
+// 过渡动画
 onMounted(() => {
     const tl = gsap.timeline()
     
-    // Initial state setup
+    // 初始状态设置
     gsap.set('.uk-title', { 
         opacity: 0, 
         y: 50 
@@ -38,7 +38,7 @@ onMounted(() => {
         y: 50 
     })
     
-    // Add animation sequence
+    // 添加动画序列
     tl.to('.uk-title', {
         opacity: 1,
         y: 0,

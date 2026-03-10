@@ -23,8 +23,12 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
-            text-align: justify;
+            text-align: left;
             margin-left: 50px;
+            
+            .title, .title_en {
+                text-align: left;
+            }
         }
 
         .account_type {
@@ -118,7 +122,7 @@
                     align-items: center;
 
                     p {
-                        font-size: 20px;
+                        font-size: 18px;
                         position: relative;
                         margin-left: 30px;
                         transition: all 0.3s ease;
@@ -138,7 +142,7 @@
             }
 
             .account_desc {
-                font-size: 14px;
+                font-size: 15px;
                 padding: 20px 15px;
 
                 .card-more {

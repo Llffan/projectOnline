@@ -10,8 +10,8 @@
 </template>
 
 <script setup>
-import '@/css_en/company/ca/CA.css'
-import Top from '@/components_en/company/common/Top.vue'
+import '@/css/company/ca/CA.css'
+import Top from '@/components_en/common/Top.vue'
 import Cacontent1 from '@/components_en/company/ca/Ca_content1.vue'
 import Cacontent2 from '@/components_en/company/ca/Ca_content2.vue'
 import Link from '@/components_en/company/common/Link.vue'

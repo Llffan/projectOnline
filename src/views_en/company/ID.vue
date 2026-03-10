@@ -10,8 +10,8 @@
 </template>
 
 <script setup>
-import '@/css_en/company/id/ID.css'
-import Top from '@/components_en/company/common/Top.vue'
+import '@/css/company/id/ID.css'
+import Top from '@/components_en/common/Top.vue'
 import Idcontent1 from '@/components_en/company/id/Id_content1.vue'
 import Idcontent2 from '@/components_en/company/id/Id_content2.vue'
 import Link from '@/components_en/company/common/Link.vue'

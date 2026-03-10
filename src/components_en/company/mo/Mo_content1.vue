@@ -4,10 +4,10 @@
             <img src="@/assets/img/company/mo/MO.jpg" alt="">
         </div>
         <div class="intro">
-            <div class="mo-title">Complete Guide to Macau Company Registration</div>
-            <div class="mo-subtitle">Advantages, Process, Requirements, Documents, Timeline, Costs and FAQ</div>
+            <div class="mo-title">Macao Company Registration Guide</div>
+            <div class="mo-subtitle">Advantages, Procedures, Conditions, Materials, Time, Fees & FAQs</div>
             <div class="mo-description">
-                <p>- Macau Company Registration</p>
+                <p>- Macaoese Company Registration</p>
             </div>
         </div>
     </div>
@@ -18,11 +18,11 @@ import { ref, onMounted } from 'vue'
 import gsap from 'gsap'
 import '@/css_en/company/mo/Mo_content1.css'
 
-// Transition animation
+// 过渡动画
 onMounted(() => {
     const tl = gsap.timeline()
     
-    // Initial state setup
+    // 初始状态设置
     gsap.set('.mo-title', { 
         opacity: 0, 
         y: 50 
@@ -38,7 +38,7 @@ onMounted(() => {
         y: 50 
     })
     
-    // Add animation sequence
+    // 添加动画序列
     tl.to('.mo-title', {
         opacity: 1,
         y: 0,

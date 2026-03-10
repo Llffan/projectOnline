@@ -1,7 +1,7 @@
 <template>
     <div class="content3" ref="content3Ref">
         <div class="account_opening">
-            <!-- Bank Types -->
+            <!-- 银行类型 -->
             <div class="account_type" ref="accountTypeRef">
                 <img class="back_img" src="@/assets/img/company/上海.png" alt="">
                 <div class="back_display">
@@ -30,12 +30,12 @@
                     </div>
                 </div>
                 <div class="intro" ref="introRef">
-                    With global economic integration, opening overseas accounts has become an important way for individuals and enterprises to configure global assets.
+                    With global economic integration, opening overseas accounts has become an important channel for individuals and enterprises' global asset allocation.
                 </div>
             </div>
         </div>
         
-        <!-- Account Opening -->
+        <!-- 开户 -->
         <div class="account_body" ref="accountBodyRef">
             <div v-for="(item, i) in account_body" :key="item" :ref="el => setAccountCardRef(el, i)">
                 <div>
@@ -67,14 +67,14 @@ function setAccountCardRef(el, idx) {
     accountCardRefs.value[idx] = el
 }
 
-// Mount animations
+// 挂载动画
 const titleRef = ref(null)
 const titleEnRef = ref(null)
 const introRef = ref(null)
 const accountTypeRef = ref(null)
 
 onMounted(() => {
-    // Title animation
+    // 标题动画
     const titleObserver = new window.IntersectionObserver((entries) => {
         if (entries[0].isIntersecting) {
             titleObserver.unobserve(entries[0].target)
@@ -90,7 +90,7 @@ onMounted(() => {
     })
     if (titleRef.value) titleObserver.observe(titleRef.value)
 
-    // Introduction animation
+    // 介绍动画
     const introObserver = new window.IntersectionObserver((entries) => {
         if (entries[0].isIntersecting) {
             introObserver.unobserve(entries[0].target)
@@ -106,10 +106,10 @@ onMounted(() => {
     })
     if (introRef.value) introObserver.observe(introRef.value)
 
-    // Bank type animation
+    // 银行类型动画
     const typeObserver = new window.IntersectionObserver((entries) => {
         if (entries[0].isIntersecting) {
-            // Unobserve first to ensure it only triggers once
+            // 先取消观察，确保只触发一次
             typeObserver.unobserve(entries[0].target)
 
             gsap.fromTo(accountTypeRef.value,
@@ -124,10 +124,10 @@ onMounted(() => {
     })
     if (accountTypeRef.value) typeObserver.observe(accountTypeRef.value)
 
-    // Account card sequential appearance animation
+    // 开户卡片依次浮现动画
     const cardObserver = new window.IntersectionObserver((entries) => {
         if (entries[0].isIntersecting) {
-            // Unobserve first to ensure it only triggers once
+            // 先取消观察，确保只触发一次
             cardObserver.unobserve(entries[0].target)
 
             accountCardRefs.value.forEach((el, idx) => {
@@ -153,20 +153,20 @@ onMounted(() => {
 const account_body = ref([
     {
         img: new URL('@/assets/img/account/香港.png', import.meta.url).href,
-        title: 'Mainland Foreign Banks',
-        desc: 'Mainland foreign banks are wholly foreign-owned institutions offering more comprehensive financial services than domestic banks.'
+        title: 'Hong Kong Bank Account',
+        desc: 'Offers comprehensive international financial services under mature banking laws, providing flexible business solutions and free capital flow.'
     }, {
         img: new URL('@/assets/img/account/澳门.png', import.meta.url).href,
-        title: 'Macau Bank Accounts',
-        desc: 'Macau bank accounts enjoy financial freedom similar to Hong Kong with no foreign exchange controls and free capital flow.'
+        title: 'Macao Bank Account',
+        desc: 'Enjoy high financial freedom with no foreign exchange controls, offering free capital mobility and highly competitive financing costs.'
     }, {
         img: new URL('@/assets/img/account/新加坡.png', import.meta.url).href,
-        title: 'Singapore Bank Accounts',
-        desc: 'As an international financial center, Singapore\'s banking industry not only provides traditional deposit and loan services, but also covers complex comprehensive financial solutions.'
+        title: 'Singapore Bank Account',
+        desc: 'Provides both traditional and complex financial solutions to help global businesses efficiently manage international commercial needs.'
     }, {
         img: new URL('@/assets/img/account/美国.png', import.meta.url).href,
-        title: 'US Bank Accounts',
-        desc: 'As a leading global international financial center, the US banking industry is highly developed, providing preferential policy support for enterprises.'
+        title: 'US Bank Account',
+        desc: 'Enjoy advanced banking benefits, enabling quick North American payment collection, instant settlements, and enhanced commercial credibility.'
     }
 ])
 </script>

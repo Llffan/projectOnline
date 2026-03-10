@@ -1,5 +1,5 @@
 <template>
-    <!-- Carousel -->
+    <!-- 轮播图 -->
     <div class="content1">
         <div class="block text-center" m="t-4">
           <el-carousel 
@@ -17,11 +17,11 @@
                   <img :src="images[0]" alt="" draggable="false"/>
                   <div class="slide-content">
                     <h1 class="main-title animated-element" ref="mainTitleRef">SHI ZHOU TONG</h1>
-                    <h2 class="sub-title animated-element" ref="subTitleRef">Global Enterprise Services</h2>
+                    <h2 class="sub-title animated-element" ref="subTitleRef">Global Corporate Services Expert</h2>
                     <p class="description animated-element" ref="descriptionRef">
-                      Specializing in global company registration<br/>
-                      and overseas bank accounts,<br/>
-                      helping businesses expand globally
+                      Focusing on global company registration and overseas bank account opening,<br/>
+                      helping enterprises easily expand into international markets,<br/>
+                      and unblocking cross-border business operations.
                     </p>
                     <div class="button-container animated-element" ref="buttonContainerRef">
                       <button class="learn-more-btn" ref="learnMoreBtnRef">Learn More</button>
@@ -33,12 +33,12 @@
                <div class="carousel-slide slide-2">
                   <img :src="images[1]" alt="" draggable="false"/>
                   <div class="slide-content">
-                    <h1 class="main-title animated-element" ref="mainTitleRef2">Shizhoutong</h1>
-                    <h2 class="sub-title animated-element" ref="subTitleRef2">Global Enterprise Services</h2>
+                    <h1 class="main-title animated-element" ref="mainTitleRef2">SHI ZHOU TONG</h1>
+                    <h2 class="sub-title animated-element" ref="subTitleRef2">Global Corporate Services Expert</h2>
                     <p class="description animated-element" ref="descriptionRef2">
-                      Specializing in global company registration<br/>
-                      and overseas bank accounts,<br/>
-                      helping businesses expand globally
+                      Focusing on global company registration and overseas bank account opening,<br/>
+                      helping enterprises easily expand into international markets,<br/>
+                      and unblocking cross-border business operations.
                     </p>
                     <div class="button-container animated-element" ref="buttonContainerRef2">
                       <button class="learn-more-btn" ref="learnMoreBtnRef2">Learn More</button>
@@ -69,41 +69,50 @@ let startY = 0
 let endY = 0
 let isDragging = false
 
+// 动画相关的refs
 const mainTitleRef = ref(null)
 const subTitleRef = ref(null)
 const descriptionRef = ref(null)
 const buttonContainerRef = ref(null)
 const learnMoreBtnRef = ref(null)
 
-// Second slide refs
+// 第二张幻灯片的refs
 const mainTitleRef2 = ref(null)
 const subTitleRef2 = ref(null)
 const descriptionRef2 = ref(null)
 const buttonContainerRef2 = ref(null)
 const learnMoreBtnRef2 = ref(null)
 
+// 处理轮播图切换事件
 const handleSlideChange = (currentIndex) => {
+  // 延迟一小段时间确保DOM已经更新
   setTimeout(() => {
     playSlideAnimation(currentIndex);
   }, 50);
 }
 
+// 根据当前幻灯片索引播放对应动画
 const playSlideAnimation = (index) => {
   if (index === 0) {
+    // 播放第一张幻灯片的动画
     playFirstSlideAnimation();
   } else if (index === 1) {
+    // 播放第二张幻灯片的动画
     playSecondSlideAnimation();
   }
 }
 
-
+// 播放第一张幻灯片的动画
 const playFirstSlideAnimation = () => {
+  // 检查所有需要动画的元素是否存在
   if (!mainTitleRef.value || !subTitleRef.value || !descriptionRef.value || !buttonContainerRef.value) {
     return;
   }
 
+  // 使用GSAP时间线创建连续动画
   const tl = gsap.timeline();
 
+  // 先将所有元素设置为初始状态
   gsap.set([mainTitleRef.value, subTitleRef.value, descriptionRef.value, buttonContainerRef.value], {
     opacity: 0,
     y: 50
@@ -133,13 +142,17 @@ const playFirstSlideAnimation = () => {
   }, "-=0.6");
 }
 
+// 播放第二张幻灯片的动画
 const playSecondSlideAnimation = () => {
+  // 检查所有需要动画的元素是否存在
   if (!mainTitleRef2.value || !subTitleRef2.value || !descriptionRef2.value || !buttonContainerRef2.value) {
     return;
   }
 
+  // 使用GSAP时间线创建连续动画
   const tl = gsap.timeline();
 
+  // 先将所有元素设置为初始状态
   gsap.set([mainTitleRef2.value, subTitleRef2.value, descriptionRef2.value, buttonContainerRef2.value], {
     opacity: 0,
     y: 50
@@ -169,16 +182,20 @@ const playSecondSlideAnimation = () => {
   }, "-=0.6");
 }
 
+// 鼠标/触摸开始事件
 const handleStart = (clientX, clientY) => {
   startX = clientX
   startY = clientY
   isDragging = true
 }
 
+// 鼠标/触摸移动事件
 const handleMove = (clientX, clientY) => {
   if (!isDragging) return
+  // 可以在这里添加拖拽时的视觉反馈
 }
 
+// 鼠标/触摸结束事件
 const handleEnd = (clientX, clientY) => {
   if (!isDragging) return
   isDragging = false
@@ -189,22 +206,28 @@ const handleEnd = (clientX, clientY) => {
   const diffX = endX - startX
   const diffY = Math.abs(endY - startY)
   
+  // 判断是否为水平拖拽且拖拽距离足够
   if (Math.abs(diffX) > 50 && diffY < 100) {
     if (diffX > 0 && carouselRef.value) {
+      // 向右拖拽，显示上一张
       carouselRef.value.prev()
     } else if (carouselRef.value) {
+      // 向左拖拽，显示下一张
       carouselRef.value.next()
     }
   }
 }
 
+// 首次挂载时播放动画
 onMounted(() => {
+  // 初始播放第一张幻灯片的动画
   setTimeout(() => {
     playFirstSlideAnimation();
   }, 100);
 
   const carouselElement = carouselRef.value?.$el
   if (carouselElement) {
+    // 鼠标事件
     carouselElement.addEventListener('mousedown', (e) => handleStart(e.clientX, e.clientY))
     carouselElement.addEventListener('mousemove', (e) => handleMove(e.clientX, e.clientY))
     carouselElement.addEventListener('mouseup', (e) => handleEnd(e.clientX, e.clientY))
@@ -214,6 +237,7 @@ onMounted(() => {
       }
     })
     
+    // 触摸事件
     carouselElement.addEventListener('touchstart', (e) => {
       handleStart(e.touches[0].clientX, e.touches[0].clientY)
     })
@@ -228,6 +252,7 @@ onMounted(() => {
   }
 })
 
+// 移除事件监听器
 onUnmounted(() => {
   const carouselElement = carouselRef.value?.$el
   if (carouselElement) {
@@ -256,9 +281,10 @@ onUnmounted(() => {
 </script>
 
 <style lang="scss" scoped>
+// 为动画元素添加初始状态
 .animated-element {
   opacity: 0;
   transform: translateY(50px);
-  transition: none;
+  transition: none; // 禁用过渡效果，让GSAP完全控制动画
 }
 </style>

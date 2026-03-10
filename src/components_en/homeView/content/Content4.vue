@@ -21,16 +21,31 @@
         </div>
         <div class="scoll_content">
             <div class="scoll_content1">
-                1
+                <div v-for="(item, index) in features" :key="index">
+                    <div class="icon_wrapper">
+                        <svg class="icon" aria-hidden="true">
+                            <use :xlink:href="item.icon"></use> 
+                        </svg>
+                    </div>
+
+                    <div>
+                        <p>
+                            {{ item.title }}
+                        </p>
+                        <span>
+                            {{ item.desc }}
+                        </span>
+                    </div>
+                </div>
             </div>
 
             <div class="scoll_content2">
                 <h2>
-                    SHIZHOUTONG Service Advantages
+                    Secretarial Service
                 </h2>
-                <span>Service Advantages</span>
+                <span>Secretarial Service</span>
             </div>
-            <p class="p3">With a solid customer base, you're ready to start a business and register a company to boost your business development. But with so many options, you may have questions,<br />how to choose a service company that you can trust and that will save you trouble in the long run?</p>
+            <p class="p3">Secretarial services are essential for offshore companies to ensure compliance and gain professional support.<br />Choose SHI ZHOU TONG to handle the paperwork securely, so you can focus entirely on core business development.</p>
 
             <div class="scoll_content3" ref="accountBodyRef">
                 <div class="content3_body" v-for="(item, i) in content3_body" :key="item" :ref="el => setAccountCardRef(el, i)">
@@ -49,29 +64,37 @@ import { stepsEmits } from 'element-plus'
 import { ref, onMounted } from 'vue'
 import gsap from 'gsap'
 
+const features = [
+    { title: 'Transparent Pricing', desc: 'Unified quote, no hidden fees', icon: '#icon-finance' },
+    { title: 'Professional & Efficient', desc: 'Team of 100 professionals, high efficiency', icon: '#icon-award-line' },
+    { title: 'Security Guarantee', desc: 'Data is strictly confidential and secure', icon: '#icon-audit' },
+    { title: 'Professional Service', desc: '1-on-1 professional customer service', icon: '#icon-cooperative-handshake' }
+]
+
 let cover_content = ref([
     {
         initialValue: 1,
         finalValue: 10,
-        unit: 'Years',
-        desc: 'Experience in Company Registration'
+        unit: ' Years',
+        desc: 'Company Registration Experience'
     },{
         initialValue: 100,
         finalValue: 2000,
-        unit: 'Companies',
-        desc: 'Successfully Established Overseas'
+        unit: '+',
+        desc: 'Successful Overseas Companies Established'
     },{
         initialValue: 10,
         finalValue: 1120,
-        unit: 'Accounts',
-        desc: 'Successfully Opened Overseas'
+        unit: '+',
+        desc: 'Successful Overseas Bank Accounts Opened'
     },{
         initialValue: 10,
         finalValue: 1520,
-        unit: 'Clients',
-        desc: 'Long-term Corporate Customers'
+        unit: '+',
+        desc: 'Enterprises Became Long-Term Clients'
     },
 ])
+
 let cover_displayValues = ref(cover_content.value.map(item => item.initialValue))
 const coverRef = ref(null)
 function startCount() {
@@ -92,7 +115,7 @@ function startCount() {
     })
 }
 
-// Account card animation
+// 账号卡片动画
 const accountCardRefs = ref([])
 const accountBodyRef = ref(null)
 function setAccountCardRef(el, idx) {
@@ -111,7 +134,7 @@ onMounted(() => {
         observer.observe(coverRef.value)
     }
 
-    // Account card sequential appearance animation
+    // 开户卡片依次浮现动画
     const cardObserver = new window.IntersectionObserver((entries) => {
         if (entries[0].isIntersecting) {
             cardObserver.unobserve(entries[0].target)
@@ -137,24 +160,24 @@ onMounted(() => {
 let content3_body = ref([
     {
         img: new URL('@/assets/img/account/1.png', import.meta.url).href,
-        title: 'Licensed Secretarial',
-        desc: 'Shizhoutong holds a Hong Kong Trust or Company Service Provider license, serving as your company\'s statutory secretary and designated representative.'
+        title: 'Global Company Annual Review',
+        desc: 'Ensure global compliance with our professional annual review services, handling all reports and tax declarations promptly.'
     },{
         img: new URL('@/assets/img/account/1.png', import.meta.url).href,
-        title: 'Fast & Efficient',
-        desc: 'We have staff traveling between Shenzhen and Hong Kong daily, ensuring quick document submission and faster certification.'
+        title: 'Hong Kong Business Services',
+        desc: 'Expert handling of HK company registration, corporate changes, and deregistration with deep local market knowledge.'
     },{
         img: new URL('@/assets/img/account/1.png', import.meta.url).href,
-        title: 'Professional & Reliable',
-        desc: 'Our team members are law graduates with years of registration service experience, providing one-stop solutions.'
+        title: 'Barcode Service',
+        desc: 'Obtain international product identifiers quickly through our one-stop barcode service for instant global market access.'
     },{
         img: new URL('@/assets/img/account/1.png', import.meta.url).href,
-        title: 'High Cost-Effectiveness',
-        desc: 'We offer free name search, certificate delivery, monitoring, and tax consultation with personalized solutions.'
+        title: 'Overseas Direct Investment Filing',
+        desc: 'Professional guidance for overseas investment filings, ensuring full compliance with all necessary department approvals.'
     },{
         img: new URL('@/assets/img/account/1.png', import.meta.url).href,
-        title: 'Authentic & Reliable',
-        desc: 'We provide free name search, certificate delivery, monitoring, and tax consultation with dedicated one-on-one service.'
+        title: 'Company Deregistration & Restoration',
+        desc: 'Reliable support for complex company deregistration and restoration, expertly handling debt, tax, and creditor procedures.'
     }
 ])
 

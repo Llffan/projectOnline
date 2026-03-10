@@ -5,9 +5,9 @@
         </div>
         <div class="intro">
             <div class="bvi-title">BVI Company Registration Guide</div>
-            <div class="bvi-subtitle">Advantages, Process, Requirements, Documents, Timeline, Costs and FAQs</div>
+            <div class="bvi-subtitle">Advantages, Procedures, Conditions, Materials, Time, Fees & FAQs</div>
             <div class="bvi-description">
-                <p>- BVI Company Registration</p>
+                <p>- BVIese Company Registration</p>
             </div>
         </div>
     </div>

@@ -10,8 +10,8 @@
 </template>
 
 <script setup>
-import '@/css_en/company/kr/KR.css'
-import Top from '@/components_en/company/common/Top.vue'
+import '@/css/company/kr/KR.css'
+import Top from '@/components_en/common/Top.vue'
 import Krcontent1 from '@/components_en/company/kr/Kr_content1.vue'
 import Krcontent2 from '@/components_en/company/kr/Kr_content2.vue'
 import Link from '@/components_en/company/common/Link.vue'

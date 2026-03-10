@@ -3,18 +3,18 @@
         <div class="bottom_content">
             <div class="bottom_link">
                 <div class="link">
-                     <a href="/">Home</a>
-                     <a href="/1">Company Registration</a>
-                     <a href="/2">Bank Accounts</a>
+                     <a href="">Home</a>
+                     <a href="">Global Company Registration</a>
+                     <a href="">Overseas Bank Account Opening</a>
                 </div>
                 <div class="link">
-                    <a href="/3">Notarization</a>
-                    <a href="/4">Intellectual Property</a>
-                    <a href="/5">Investment Management</a>
+                    <a href="">International Notary & Apostille</a>
+                    <a href="">Cross-border Intellectual Property</a>
+                    <a href="">Overseas Investment Management</a>
                 </div>
                 <div class="contact_us">
                     <p>Contact Us</p>
-                    <p>Address: Room 1413, Building A, Zhongguan Times Square, Nanshan District, Shenzhen</p>
+                    <p>Address: Room 1413, Block A, Zhongguan Times Square, Nanshan District, Shenzhen</p>
                     <p>Email: yjx@yicomply.com</p>
                     <p>Phone: 400-930-8099</p>
                 </div>
@@ -28,7 +28,7 @@
             <img ref="img2" class="img2" src="@/assets/img/bottom/footer2.png" alt="">
         </div>
         <div class="bottom_text">
-            © 十洲通（深圳）科技有限公司 版权所有 粤ICP备2021170722号
+            © SHI ZHOU TONG (Shenzhen) Technology Co., Ltd. All rights reserved. 粤ICP备2021170722号
         </div>
     </div>
 </template>
@@ -43,12 +43,12 @@ const img1 = ref(null);
 const img2 = ref(null);
 
 let imgObserver = null;
-let tl = null; // Save animation timeline reference
+let tl = null; // 保存动画时间线引用
 
-// Reset elements to initial state
+// 重置元素到初始状态
 const resetElements = () => {
   if (img1.value && img2.value) {
-    // If there's a running animation, kill it first
+    // 如果有正在运行的动画，先杀死它
     if (tl) {
       tl.kill();
       tl = null;
@@ -59,13 +59,13 @@ const resetElements = () => {
   }
 };
 
-// Play animation
+// 播放动画
 const playAnimation = () => {
   if (img1.value && img2.value) {
-    // Ensure elements are in initial state first
+    // 先确保元素处于初始状态
     resetElements();
     
-    // Create animation sequence with timeline
+    // 使用timeline创建动画序列
     tl = gsap.timeline();
     
     tl.to(img1.value, { 
@@ -79,32 +79,32 @@ const playAnimation = () => {
       y: 0, 
       duration: 1, 
       ease: 'power4.out' 
-    }, "-=0.7"); // Overlap with previous animation by 0.3 seconds
+    }, "-=0.7"); // 与前一个动画重叠0.3秒
   }
 };
 
 onMounted(() => {
-  // Create Intersection Observer
+  // 创建 Intersection Observer
   imgObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        // Play animation when element enters viewport
+        // 元素进入视口时播放动画
         playAnimation();
       } else {
-        // Reset state when element leaves viewport
+        // 元素离开视口时重置状态
         resetElements();
       }
     });
   }, {
-    threshold: 0.5 // Lower threshold to make it easier to trigger
+    threshold: 0.5 // 降低阈值使更容易触发
   });
 
-  // Observe element
+  // 观察元素
   if (imgBox.value) {
     imgObserver.observe(imgBox.value);
   }
   
-  // Initialize element state
+  // 初始化元素状态
   resetElements();
 });
 
@@ -113,7 +113,7 @@ onBeforeUnmount(() => {
     imgObserver.disconnect();
   }
   
-  // Clean up animation
+  // 清理动画
   if (tl) {
     tl.kill();
   }

@@ -1,4 +1,5 @@
 <template>
+ 
     <div class="my_box">
         <Top />
         <Mycontent1 />
@@ -10,8 +11,8 @@
 </template>
 
 <script setup>
-import '@/css_en/company/my/MY.css'
-import Top from '@/components_en/company/common/Top.vue'
+import '@/css/company/my/MY.css'
+import Top from '@/components_en/common/Top.vue'
 import Mycontent1 from '@/components_en/company/my/My_content1.vue'
 import Mycontent2 from '@/components_en/company/my/My_content2.vue'
 import Link from '@/components_en/company/common/Link.vue'

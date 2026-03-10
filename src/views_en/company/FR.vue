@@ -10,8 +10,8 @@
 </template>
 
 <script setup>
-import '@/css_en/company/fr/FR.css'
-import Top from '@/components_en/company/common/Top.vue'
+import '@/css/company/fr/FR.css'
+import Top from '@/components_en/common/Top.vue'
 import Frcontent1 from '@/components_en/company/fr/Fr_content1.vue'
 import Frcontent2 from '@/components_en/company/fr/Fr_content2.vue'
 import Link from '@/components_en/company/common/Link.vue'

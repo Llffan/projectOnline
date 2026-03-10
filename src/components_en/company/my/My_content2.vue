@@ -8,20 +8,22 @@
                 <div class="intro">
                     <img src="@/assets/img/company/my/MY-2.jpg" alt="">
                     <div class="text">
-                        <P>Malaysia is one of the most economically stable countries in Southeast Asia, with a favorable investment environment and a sound legal system.</P>
-                        <P>As an important ASEAN member country, Malaysia has a superior geographical location connecting major Asian economies, making it an ideal gateway for foreign investors to enter the Southeast Asian market.</P>
-                        <P>With its diversified economic structure, open business policies, and relatively low operating costs, Malaysia is becoming a popular destination for increasing numbers of businesses to invest.</P>
+                        <P>Malaysia is one of the most highly developed economic nations worldwide, acting as the 3rd largest economy and a key member of the G8 industrialized nations.</P>
+                        <P>The brand effect of Malaysiaese companies is recognized globally, especially in sectors such as cosmetics, catering, heavy machinery, and gaming, uniquely benefiting corporate branding and marketing.</P>
+                        <P>As a core ally of the US, Malaysia’s exceptional corporate infrastructure and deeply robust administrative system ensure a paramount business environment naturally favored by international entrepreneurs.</P>
                     </div>
                 </div>
             </div>
             <div class="content2">
                 <div class="title">
-                    Advantages of Registering a Company in Malaysia
+                    Advantages
                 </div>
                 <div class="intro">
-                    <div v-for="(item, index) in advantage" :key="index" class="advantage">
+                    <div v-for="(item, index) in advantage" :key="index" class="advantage" :ref="el => { if (el) advantageRefs[index] = el }">
                         <div class="img">
-                            <img :src="item.img" alt="">
+                            <svg class="icon" aria-hidden="true">
+                                <use :xlink:href="item.iconId"></use> 
+                            </svg>
                         </div>
                         <div class="text">
                             {{ item.adv }}
@@ -31,32 +33,34 @@
             </div>
             <div class="content3">
                 <div class="title">
-                    Requirements and Required Documents
+                    Requirements & Preparation
                 </div>
                 <div class="intro">
                     <div class="left">
-                        <div class="condition-item">Shareholders or directors aged 18 or above</div>
-                        <div class="condition-item">Registered address (provided by us)</div>
-                        <div class="condition-item">Legal secretary (provided by us)</div>
-                        <div class="condition-item">Company charter</div>
+                        <div class="condition-item">Name: Extremely flexible; allows Katakana, Hiragana, Kanja, numbers, and English.</div>
+                        <div class="condition-item">Restrictions: Prohibits restricted terms like "Bank", "Trust", "Life Insurance", etc.</div>
+                        <div class="condition-item">Capital: No strict limit on registered capital; you can start with as low as 1 JPY.</div>
+                        <div class="condition-item">Address: Lease fee included. Entity operation must provide physical business location.</div>
                     </div>
                     <div class="center"></div>
                     <div class="right">
-                        <div class="condition-item">Identity documents of directors and shareholders</div>
-                        <div class="condition-item">Company name (multiple alternatives provided)</div>
-                        <div class="condition-item">Registered capital</div>
-                        <div class="condition-item">Signed relevant documents</div>
+                        <div class="condition-item">Scope of Business: Most sectors can be legally registered with virtually no limit.</div>
+                        <div class="condition-item">Representative: A Malaysiaese representative or resident must be officially appointed.</div>
+                        <div class="condition-item">Documents: The investor's personal seal certificate (Notarized) is generally necessary.</div>
+                        <div class="condition-item">Visa: Corporate capital ≥ 5M JPY opens up opportunities for a Business Manager Visa.</div>
                     </div>
                 </div>
             </div>
             <div class="content4">
                 <div class="title">
-                    Company Registration Process
+                    Registration Process
                 </div>
                 <div class="intro">
-                    <div v-for="(item, index) in registrationProcess" :key="index" class="advantage">
+                    <div v-for="(item, index) in registrationProcess" :key="index" class="advantage" :ref="el => { if (el) registrationProcessRefs[index] = el }">
                         <div class="img">
-                            <!-- <img :src="item.img" :alt="item.title"> -->
+                            <svg class="icon" aria-hidden="true">
+                                <use :xlink:href="item.iconId"></use> 
+                            </svg>
                         </div>
                         <div class="text1">
                             {{ item.title }}
@@ -69,12 +73,12 @@
             </div>
             <div class="content5">
                 <div class="title">
-                    Our Advantages
+                    Core Strengths
                 </div>
                 <div class="intro">
                     <div v-for="(item, index) in advantages" :key="index" class="advantage">
                         <div class="img">
-                            <!-- <img :src="item.img" :alt="item.title"> -->
+                            <img :src="item.imgSrc" :alt="item.title">
                         </div>
                         <div class="text1">
                             {{ item.title }}
@@ -87,7 +91,7 @@
             </div>
             <div class="content6">
                 <div class="title">
-                    Frequently Asked Questions About Registering a Company in Malaysia
+                    Frequently Asked Questions
                 </div>
                 <div class="intro">
                     <div 
@@ -116,120 +120,113 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, nextTick } from 'vue'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
-import '@/css_en/company/my/My_content2.css'
+// 保持导入路径不变
+import '@/css_en/company/my/My_content2.css' 
 
 gsap.registerPlugin(ScrollTrigger)
 
 const registrationProcess = [
     {
-        img: '',
-        title: 'Company Name Verification',
-        description: 'Check name availability.'
+        iconId: '#icon-agreement', 
+        title: 'Confirm Company Info',
+        description: 'Finalize the proposed company name, address, and Malaysiaese representative.'
     },
     {
-        img: '',
-        title: 'Select Registered Address',
-        description: 'Determine a registered address for the company, which we can provide.'
+        iconId: '#icon-audit', 
+        title: 'Prepare Notarization',
+        description: 'Organize required documents, such as shareholders\' seal certificates and notarization.'
     },
     {
-        img: '',
-        title: 'Tax Registration',
-        description: 'Our dedicated financial consultants provide free advice on daily financial management.'
+        iconId: '#icon-notes', 
+        title: 'Draft & Notarize Files',
+        description: 'A dedicated administrative scrivener prepares all required artifacts and gets them officially notarized.'
     },
     {
-        img: '',
-        title: 'Submit Application Documents',
-        description: 'Provide original copies of ID cards of legal representatives/shareholders, landline phone numbers, and other relevant materials.'
+        iconId: '#icon-government-line', 
+        title: 'Submit to Legal Affairs Bureau',
+        description: 'Notarized documents are efficiently submitted to the local Malaysiaese Legal Affairs Bureau for registration.'
     },
     {
-        img: '',
-        title: 'Receive Business License',
-        description: 'Upon successful completion of company registration, consultants will deliver the original and copy of the business license.'
+        iconId: '#icon-folder-success-one', 
+        title: 'Complete Registration & Collect Data',
+        description: 'Successfully registered in about 15-20 days, acquiring the business license and corporate seal certificates.'
     },
     {
-        img: '',
-        title: 'Additional Free Services',
-        description: 'Company seal, financial seal, private seal, latest entrepreneurial subsidy standards, latest social insurance subsidy standards for startups.'
+        iconId: '#icon-bank-line', 
+        title: 'Tax Account Opening & Operations',
+        description: 'Follow-up processes naturally include tax department banking open, dormancy application if applicable, and annual reviews.'
     }
 ]
 
 const advantage = [
     {
-        img: '',
-        adv: 'Superior geographical location connecting major Asian markets'
+        iconId: '#icon-award-line', 
+        adv: 'Brand Image Advantage: High Malaysiaese brand effect enhances product promotion and global business appeal.'
     },
     {
-        img: '',
-        adv: 'Political stability and sound legal system'
+        iconId: '#icon-city', 
+        adv: 'Superb Business Environment: Highly recognized institutional security paired with impeccable law and infrastructure.'
     },
     {
-        img: '',
-        adv: 'Multicultural environment conducive to multinational operations'
+        iconId: '#icon-trophy', 
+        adv: 'Flexible Scale & Name: High freedom in naming conventions without substantial boundaries on the scope of industries.'
     },
     {
-        img: '',
-        adv: 'Favorable tax policies and low operating costs'
+        iconId: '#icon-finance', 
+        adv: 'Limitless Capital Volume: Zero limitations on initial registered capital; registering a business starting from 1 JPY is possible.'
     },
     {
-        img: '',
-        adv: 'Government encourages foreign investment with policy support'
+        iconId: '#icon-airplane', 
+        adv: 'Potential Visa Pathway: Contributing capital above 5M JPY opens an assured application line for a Business Manager Visa.'
     },
     {
-        img: '',
-        adv: 'Well-developed infrastructure and favorable business environment'
+        iconId: '#icon-cooperative-handshake', 
+        adv: 'Immigration Stepping-stone: Living and actively operating helps clear pathways to secure a Malaysiaese permanent residency.'
     }
 ]
 
 const advantages = [
     {
-        img: '',
-        title: 'Professional Team',
-        description: 'Experienced professional consultant team providing one-stop service solutions'
+        imgSrc: new URL('@/assets/img/temp_img/1.jpg', import.meta.url).href,
+        title: 'Fast-Track Service',
+        description: 'Foreign investors uniquely benefit from our fast-track corporate setup line, enabling fully electronic submissions resolved in just two weeks.'
     },
     {
-        img: '',
-        title: 'Efficient Processing',
-        description: 'Optimized processes and rapid response greatly reduce processing time'
+        imgSrc: new URL('@/assets/img/temp_img/3.jpg', import.meta.url).href,
+        title: 'Profound Experience & Success Rates',
+        description: 'SHI ZHOU TONG primarily centralizes on SME global footprints, dispensing exceptionally experienced counseling to countless enterprises.'
     },
     {
-        img: '',
-        title: 'Transparent Pricing',
-        description: 'Clear pricing with no hidden costs, offering high cost-performance services'
+        imgSrc: new URL('@/assets/img/temp_img/4.jpg', import.meta.url).href,
+        title: 'Comprehensive Value-Added Scope',
+        description: 'Our proprietary overseas team extensively guarantees cohesive finance, tax, and legal support post-registration to assure continuous fluent operations.'
     },
     {
-        img: '',
-        title: 'Full-Service Support',
-        description: 'From consultation to follow-up maintenance, providing full-cycle thoughtful service support'
+        imgSrc: new URL('@/assets/img/temp_img/5.jpg', import.meta.url).href,
+        title: 'Dedicated 1-on-1 Commercial Sync',
+        description: 'Exclusively assigned consulting teams consisting of advisors and certified accountants are dispatched to smoothly maneuver your private timelines.'
     }
 ]
 
 const faqs = ref([
     {
-        question: "How much capital is required to register a company in Malaysia?",
-        answer: "There is no minimum limit for registered capital in Malaysia. Generally, it is recommended to have registered capital of 100,000 MYR, without capital verification."
+        question: "Is there a stringent name approval phase and what is the typical setup timeframe?",
+        answer: "There isn't a strict name confirmation phase in Malaysia. Duplication is allowed. Registration typically concludes successfully within 3 to 4 weeks."
     },
     {
-        question: "How long does it take to register a company in Malaysia?",
-        answer: "Under normal circumstances, it takes 5-7 working days to register a company in Malaysia."
+        question: "What are the core requirements regarding the minimum initial corporate capital?",
+        answer: "There are absolutely no restrictions. You can officially register with as minimal as 1 Malaysiaese Yen with no mandatory paid-in regulations."
     },
     {
-        question: "Does a Malaysian company need annual review?",
-        answer: "Yes, Malaysian companies need annual reviews, including submission of annual reports and renewal of commercial registration certificates."
+        question: "How can someone publicly review an established Malaysiaese Corporate profile?",
+        answer: "Corporate records can smoothly be traced on the official National Tax Agency portal leveraging the Corporate Number, Name, or localized Registration Address."
     },
     {
-        question: "How is tax filing conducted for Malaysian companies?",
-        answer: "Malaysian companies need to file corporate income tax annually with the tax authorities. The first tax filing can be exempted from audit."
-    },
-    {
-        question: "What are the accounting and auditing requirements for Malaysian companies?",
-        answer: "Malaysian companies need to do accounting and auditing annually, regardless of whether there is business activity or not."
-    },
-    {
-        question: "Can Malaysian companies operate in mainland China?",
-        answer: "Malaysian companies cannot directly operate in mainland China. To operate in mainland China, it is necessary to establish a representative office or invest in establishing a foreign-invested enterprise."
+        question: "What physical credentials will I obtain once the registration successfully concludes?",
+        answer: "Key deliverables prominently include the corporate Business License Certificate, the standard Corporate Seal, Bank Seal, Invoice Seal, Corporate Seal Certificate, Legal Affairs Bureau Login Card, and the verified Articles of Incorporation."
     }
 ])
 
@@ -239,9 +236,14 @@ const toggleFaq = (index) => {
     expandedItems.value[index] = !expandedItems.value[index]
 }
 
-// Transition animations
-onMounted(() => {
-    // content1 animation
+const advantageRefs = ref([])
+const registrationProcessRefs = ref([])
+
+// 保持动画脚本不变
+onMounted(async () => {
+    await nextTick()
+    
+    // content1 动画
     gsap.from('.content1 .title', {
         scrollTrigger: {
             trigger: '.content1 .title',
@@ -249,7 +251,8 @@ onMounted(() => {
         },
         opacity: 0,
         y: 50,
-        duration: 0.8
+        duration: 0.8,
+        ease: 'power2.out'
     })
 
     gsap.from('.content1 .intro', {
@@ -260,10 +263,11 @@ onMounted(() => {
         opacity: 0,
         y: 50,
         duration: 0.8,
-        delay: 0.2
+        delay: 0.2,
+        ease: 'power2.out'
     })
 
-    // content2 animation
+    // content2 动画 - 参照其他页面统一动画效果
     gsap.from('.content2 .title', {
         scrollTrigger: {
             trigger: '.content2 .title',
@@ -271,21 +275,32 @@ onMounted(() => {
         },
         opacity: 0,
         y: 50,
-        duration: 0.8
-    })
-
-    gsap.from('.content2 .advantage', {
-        scrollTrigger: {
-            trigger: '.content2 .intro',
-            start: 'top 80%'
-        },
-        opacity: 0,
-        y: 50,
         duration: 0.8,
-        stagger: 0.1
+        ease: 'power2.out'
     })
 
-    // content3 animation
+    // 为每个优势项添加动画 - 参照其他页面统一动画效果
+    advantageRefs.value.forEach((el, index) => {
+        gsap.fromTo(el,
+            { 
+                opacity: 0, 
+                y: 50
+            },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.6,
+                delay: index * 0.1,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: '.content2 .intro',
+                    start: 'top 80%'
+                }
+            }
+        )
+    })
+
+    // content3 动画
     gsap.from('.content3 .title', {
         scrollTrigger: {
             trigger: '.content3 .title',
@@ -296,7 +311,6 @@ onMounted(() => {
         duration: 0.8
     })
 
-    // Using fromTo method to resolve conflicts between animations and floating effects
     const conditionItems = document.querySelectorAll('.content3 .condition-item');
     conditionItems.forEach((item, index) => {
         gsap.fromTo(item,
@@ -309,7 +323,7 @@ onMounted(() => {
                 ease: 'power2.out',
                 scrollTrigger: {
                     trigger: '.content3 .intro',
-                    start: 'top 80%'  // Trigger when element enters 80% of viewport
+                    start: 'top 80%'  
                 },
                 onComplete: function() {
                     gsap.set(item, { clearProps: "x,opacity,transition" })
@@ -318,7 +332,7 @@ onMounted(() => {
         );
     });
 
-    // content4 animation
+    // content4 动画 - 参照其他页面统一动画效果
     gsap.from('.content4 .title', {
         scrollTrigger: {
             trigger: '.content4 .title',
@@ -326,21 +340,32 @@ onMounted(() => {
         },
         opacity: 0,
         y: 50,
-        duration: 0.8
-    })
-
-    gsap.from('.content4 .advantage', {
-        scrollTrigger: {
-            trigger: '.content4 .intro',
-            start: 'top 80%'
-        },
-        opacity: 0,
-        y: 50,
         duration: 0.8,
-        stagger: 0.1
+        ease: 'power2.out'
     })
 
-    // content5 animation
+    // 为每个注册流程项添加动画 - 参照其他页面统一动画效果
+    registrationProcessRefs.value.forEach((el, index) => {
+        gsap.fromTo(el,
+            { 
+                opacity: 0, 
+                y: 50
+            },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.6,
+                delay: index * 0.1,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: '.content4 .intro',
+                    start: 'top 80%'
+                }
+            }
+        )
+    })
+
+    // content5 动画
     gsap.from('.content5 .title', {
         scrollTrigger: {
             trigger: '.content5 .title',
@@ -351,7 +376,6 @@ onMounted(() => {
         duration: 0.8
     })
 
-    // Using fromTo method to resolve conflicts between animations and floating effects
     const content5Advantages = document.querySelectorAll('.content5 .advantage');
     content5Advantages.forEach((item, index) => {
         gsap.fromTo(item,
@@ -373,7 +397,7 @@ onMounted(() => {
         );
     })
 
-    // content6 title animation
+    // content6 标题动画
     gsap.fromTo('.content6 .title',
         { y: 50, opacity: 0, transition: 'none' },
         {
@@ -391,10 +415,10 @@ onMounted(() => {
         }
     );
 
-    // content6 FAQ animations
+    // content6 常见问题动画
     const faqItems = document.querySelectorAll('.content6 .faq-item');
     faqItems.forEach((item, index) => {
-        // FAQ item entrance animation
+        // FAQ项进入动画
         gsap.fromTo(item,
             { y: 30, opacity: 0, transition: 'none' },
             { 

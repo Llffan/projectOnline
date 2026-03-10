@@ -1,6 +1,6 @@
 <template>
   <div class="regions-container">
-    <!-- Primary Menu - Horizontal Layout -->
+    <!-- 一级菜单 - 横向排列 -->
     <div class="sidebar-horizontal">
       <div 
         v-for="region in regions" 
@@ -13,7 +13,7 @@
       </div>
     </div>
     
-    <!-- Secondary Content Display Area -->
+    <!-- 二级内容显示区域 -->
     <div class="content">
         <div v-if="selectedRegion" class="country-grid">
           <div 
@@ -39,36 +39,36 @@ import { useRoute, useRouter } from 'vue-router'
 const router = useRouter()
 const route = useRoute()
 
-// Route navigation method
+// 路由跳转方法
 const goToRoute = (routePath) => {
   router.push(routePath)
 }
 
-// Map country routes to region IDs
+// 映射国家路由到区域ID
 const countryToRegionMap = {
-  // East Asia
+  // 东亚
   '/company_en/jp': 'east-asia',
   '/company_en/kr': 'east-asia',
   '/company_en/hk': 'east-asia',
   '/company_en/mo': 'east-asia',
   
-  // Southeast Asia
+  // 东南亚
   '/company_en/vn': 'southeast-asia',
   '/company_en/th': 'southeast-asia',
   '/company_en/my': 'southeast-asia',
   '/company_en/id': 'southeast-asia',
   '/company_en/sg': 'southeast-asia',
   
-  // North America
+  // 北美
   '/company_en/us': 'north-america',
   '/company_en/ca': 'north-america',
   
-  // Europe
+  // 欧洲
   '/company_en/uk': 'europe',
   '/company_en/de': 'europe',
   '/company_en/fr': 'europe',
   
-  // Offshore Centers
+  // 离岸金融中心
   '/company_en/bvi': 'offshore',
   '/company_en/ky': 'offshore',
   '/company_en/sc': 'offshore',
@@ -76,25 +76,25 @@ const countryToRegionMap = {
   '/company_en/ws': 'offshore'
 }
 
-// Compute the active region
+// 计算当前激活的区域
 const activeRegion = computed(() => {
   return countryToRegionMap[route.path] || 'east-asia'
 })
 
-// Watch route changes and automatically switch to the corresponding region
+// 监听路由变化，自动切换到对应的区域
 watch(route, () => {
   selectedRegionId.value = activeRegion.value
 })
 
-// Define region data
+// 定义地区数据
 const regions = ref([
   { 
     id: 'east-asia', 
     name: 'East Asia', 
     countries: [
       { name: 'Japan', route: '/company_en/jp' },
-      { name: 'Korea', route: '/company_en/kr' },
-      { name: 'HK', route: '/company_en/hk' },
+      { name: 'South Korea', route: '/company_en/kr' },
+      { name: 'Hong Kong', route: '/company_en/hk' },
       { name: 'Macao', route: '/company_en/mo' },
     ] 
   },
@@ -113,7 +113,7 @@ const regions = ref([
     id: 'north-america', 
     name: 'North America', 
     countries: [
-      { name: 'USA', route: '/company_en/us' },
+      { name: 'United States', route: '/company_en/us' },
       { name: 'Canada', route: '/company_en/ca' }
     ] 
   },
@@ -121,14 +121,14 @@ const regions = ref([
     id: 'europe', 
     name: 'Europe', 
     countries: [
-      { name: 'UK', route: '/company_en/uk' },
+      { name: 'United Kingdom', route: '/company_en/uk' },
       { name: 'Germany', route: '/company_en/de' },
       { name: 'France', route: '/company_en/fr' }
     ] 
   },
   { 
     id: 'offshore', 
-    name: 'Offshore Centers', 
+    name: 'Offshore Sites', 
     countries: [
       { name: 'BVI', route: '/company_en/bvi' },
       { name: 'Cayman', route: '/company_en/ky' },
@@ -139,25 +139,25 @@ const regions = ref([
   }
 ])
 
-// Currently selected region
+// 当前选中的地区
 const selectedRegionId = ref('east-asia')
 
-// Computed property: Get the selected region object
+// 计算属性：获取选中的地区对象
 const selectedRegion = computed(() => {
   return regions.value.find(region => region.id === selectedRegionId.value)
 })
 
-// Check if it's the currently active region
+// 判断是否为当前激活的地区
 const isActiveRegion = (regionId) => {
   return selectedRegionId.value === regionId
 }
 
-// Select region
+// 选择地区
 const selectRegion = (regionId) => {
   selectedRegionId.value = regionId
 }
 
-// Select the corresponding region based on current route when component is mounted
+// 组件挂载时根据当前路由选择对应地区
 onMounted(() => {
   selectedRegionId.value = activeRegion.value
 })

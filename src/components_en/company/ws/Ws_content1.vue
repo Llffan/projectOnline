@@ -5,9 +5,9 @@
         </div>
         <div class="intro">
             <div class="ws-title">Samoa Company Registration Guide</div>
-            <div class="ws-subtitle">Advantages, Process, Requirements, Documents, Timeline, Costs and FAQs</div>
+            <div class="ws-subtitle">Advantages, Procedures, Conditions, Materials, Time, Fees & FAQs</div>
             <div class="ws-description">
-                <p>- Samoa Company Registration</p>
+                <p>- Samoaese Company Registration</p>
             </div>
         </div>
     </div>

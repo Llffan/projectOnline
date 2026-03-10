@@ -1,4 +1,5 @@
 <template>
+ 
     <div class="uk_box">
         <Top />
         <Ukcontent1 />
@@ -10,8 +11,8 @@
 </template>
 
 <script setup>
-import '@/css_en/company/uk/UK.css'
-import Top from '@/components_en/company/common/Top.vue'
+import '@/css/company/uk/UK.css'
+import Top from '@/components_en/common/Top.vue'
 import Ukcontent1 from '@/components_en/company/uk/Uk_content1.vue'
 import Ukcontent2 from '@/components_en/company/uk/Uk_content2.vue'
 import Link from '@/components_en/company/common/Link.vue'

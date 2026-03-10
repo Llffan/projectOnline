@@ -5,9 +5,9 @@
         </div>
         <div class="intro">
             <div class="mh-title">Marshall Islands Company Registration Guide</div>
-            <div class="mh-subtitle">Advantages, Process, Requirements, Documents, Timeline, Costs and FAQs</div>
+            <div class="mh-subtitle">Advantages, Procedures, Conditions, Materials, Time, Fees & FAQs</div>
             <div class="mh-description">
-                <p>- Marshall Islands Company Registration</p>
+                <p>- Marshall Islandsese Company Registration</p>
             </div>
         </div>
     </div>

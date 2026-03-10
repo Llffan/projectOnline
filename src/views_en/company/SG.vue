@@ -1,4 +1,5 @@
 <template>
+ 
     <div class="sg_box">
         <Top />
         <Sgcontent1 />
@@ -10,8 +11,8 @@
 </template>
 
 <script setup>
-import '@/css_en/company/sg/SG.css'
-import Top from '@/components_en/company/common/Top.vue'
+import '@/css/company/sg/SG.css'
+import Top from '@/components_en/common/Top.vue'
 import Sgcontent1 from '@/components_en/company/sg/Sg_content1.vue'
 import Sgcontent2 from '@/components_en/company/sg/Sg_content2.vue'
 import Link from '@/components_en/company/common/Link.vue'

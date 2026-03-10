@@ -5,9 +5,9 @@
         </div>
         <div class="intro">
             <div class="ky-title">Cayman Islands Company Registration Guide</div>
-            <div class="ky-subtitle">Advantages, Process, Requirements, Documents, Timeline, Costs and FAQs</div>
+            <div class="ky-subtitle">Advantages, Procedures, Conditions, Materials, Time, Fees & FAQs</div>
             <div class="ky-description">
-                <p>- Cayman Islands Company Registration</p>
+                <p>- Cayman Islandsese Company Registration</p>
             </div>
         </div>
     </div>

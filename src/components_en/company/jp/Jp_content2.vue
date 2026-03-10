@@ -3,25 +3,27 @@
         <div class="content_box">
             <div class="content1">
                 <div class="title">
-                    Japanese Company Registration
+                    Japan Company Registration
                 </div>
                 <div class="intro">
                     <img src="@/assets/img/company/jp/JP-2.jpg" alt="">
                     <div class="text">
-                        <P>Japan is the world's third-largest economy with advanced technology, a comprehensive legal system, and highly developed infrastructure. As a major business center in Asia, Japan attracts global investors with its stable economic environment, strict intellectual property protection, and high-quality business services.</P>
-                        <P>Establishing a company in Japan not only provides the important gateway advantage to the Asian market but also allows full utilization of Japan's leading position in technological innovation, high-end manufacturing, and brand management.</P>
-                        <P>Japan's company registration system is well-developed, and its transparent legal environment provides a favorable business environment and broad development space for foreign investors.</P>
+                        <P>Japan is one of the most highly developed economic nations worldwide, acting as the 3rd largest economy and a key member of the G8 industrialized nations.</P>
+                        <P>The brand effect of Japanese companies is recognized globally, especially in sectors such as cosmetics, catering, heavy machinery, and gaming, uniquely benefiting corporate branding and marketing.</P>
+                        <P>As a core ally of the US, Japan’s exceptional corporate infrastructure and deeply robust administrative system ensure a paramount business environment naturally favored by international entrepreneurs.</P>
                     </div>
                 </div>
             </div>
             <div class="content2">
                 <div class="title">
-                    Advantages of Japanese Company Registration
+                    Advantages
                 </div>
                 <div class="intro">
-                    <div v-for="(item, index) in advantage" :key="index" class="advantage">
+                    <div v-for="(item, index) in advantage" :key="index" class="advantage" :ref="el => { if (el) advantageRefs[index] = el }">
                         <div class="img">
-                            <img :src="item.img" alt="">
+                            <svg class="icon" aria-hidden="true">
+                                <use :xlink:href="item.iconId"></use> 
+                            </svg>
                         </div>
                         <div class="text">
                             {{ item.adv }}
@@ -31,32 +33,34 @@
             </div>
             <div class="content3">
                 <div class="title">
-                    Conditions and Required Documents
+                    Requirements & Preparation
                 </div>
                 <div class="intro">
                     <div class="left">
-                        <div class="condition-item">At least one director and one shareholder (can be the same person)</div>
-                        <div class="condition-item">Registered address (must be a real address in Japan)</div>
-                        <div class="condition-item">Company name (in Japanese or English)</div>
-                        <div class="condition-item">Articles of incorporation</div>
+                        <div class="condition-item">Name: Extremely flexible; allows Katakana, Hiragana, Kanja, numbers, and English.</div>
+                        <div class="condition-item">Restrictions: Prohibits restricted terms like "Bank", "Trust", "Life Insurance", etc.</div>
+                        <div class="condition-item">Capital: No strict limit on registered capital; you can start with as low as 1 JPY.</div>
+                        <div class="condition-item">Address: Lease fee included. Entity operation must provide physical business location.</div>
                     </div>
                     <div class="center"></div>
                     <div class="right">
-                        <div class="condition-item">Identity documents of directors and shareholders</div>
-                        <div class="condition-item">Registered capital (no minimum requirement)</div>
-                        <div class="condition-item">Company business description</div>
-                        <div class="condition-item">Signed relevant documents</div>
+                        <div class="condition-item">Scope of Business: Most sectors can be legally registered with virtually no limit.</div>
+                        <div class="condition-item">Representative: A Japanese representative or resident must be officially appointed.</div>
+                        <div class="condition-item">Documents: The investor's personal seal certificate (Notarized) is generally necessary.</div>
+                        <div class="condition-item">Visa: Corporate capital ≥ 5M JPY opens up opportunities for a Business Manager Visa.</div>
                     </div>
                 </div>
             </div>
             <div class="content4">
                 <div class="title">
-                    Company Registration Process
+                    Registration Process
                 </div>
                 <div class="intro">
-                    <div v-for="(item, index) in registrationProcess" :key="index" class="advantage">
+                    <div v-for="(item, index) in registrationProcess" :key="index" class="advantage" :ref="el => { if (el) registrationProcessRefs[index] = el }">
                         <div class="img">
-                            <!-- <img :src="item.img" :alt="item.title"> -->
+                            <svg class="icon" aria-hidden="true">
+                                <use :xlink:href="item.iconId"></use> 
+                            </svg>
                         </div>
                         <div class="text1">
                             {{ item.title }}
@@ -69,12 +73,12 @@
             </div>
             <div class="content5">
                 <div class="title">
-                    Our Advantages
+                    Core Strengths
                 </div>
                 <div class="intro">
                     <div v-for="(item, index) in advantages" :key="index" class="advantage">
                         <div class="img">
-                            <!-- <img :src="item.img" :alt="item.title"> -->
+                            <img :src="item.imgSrc" :alt="item.title">
                         </div>
                         <div class="text1">
                             {{ item.title }}
@@ -87,7 +91,7 @@
             </div>
             <div class="content6">
                 <div class="title">
-                    Frequently Asked Questions about Japanese Company Registration
+                    Frequently Asked Questions
                 </div>
                 <div class="intro">
                     <div 
@@ -116,122 +120,129 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, nextTick } from 'vue'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
-import '@/css_en/company/jp/Jp_content2.css'
+// 保持导入路径不变
+import '@/css_en/company/jp/Jp_content2.css' 
 
 gsap.registerPlugin(ScrollTrigger)
 
 const registrationProcess = [
     {
-        img: '',
-        title: 'Company Name Verification',
-        description: 'Verify the availability of the company name and prepare alternative names.'
+        iconId: '#icon-agreement', 
+        title: 'Confirm Company Info',
+        description: 'Finalize the proposed company name, address, and Japanese representative.'
     },
     {
-        img: '',
-        title: 'Prepare Registration Documents',
-        description: 'Prepare the articles of incorporation, shareholder and director information, and other necessary documents.'
+        iconId: '#icon-audit', 
+        title: 'Prepare Notarization',
+        description: 'Organize required documents, such as shareholders\' seal certificates and notarization.'
     },
     {
-        img: '',
-        title: 'Submit Registration Application',
-        description: 'Submit the company registration application and related documents to the Legal Affairs Bureau.'
+        iconId: '#icon-notes', 
+        title: 'Draft & Notarize Files',
+        description: 'A dedicated administrative scrivener prepares all required artifacts and gets them officially notarized.'
     },
     {
-        img: '',
-        title: 'Receive Registration Certificate',
-        description: 'After the registration review is approved, receive the company registration certificate.'
+        iconId: '#icon-government-line', 
+        title: 'Submit to Legal Affairs Bureau',
+        description: 'Notarized documents are efficiently submitted to the local Japanese Legal Affairs Bureau for registration.'
     },
     {
-        img: '',
-        title: 'Complete Tax Registration',
-        description: 'Complete the tax registration procedures with the National Tax Agency and local tax departments.'
-    }
-]
-
-const advantages = [
-    {
-        img: '',
-        title: 'Professional Team',
-        description: 'We have an experienced team of professional consultants providing one-stop service solutions'
+        iconId: '#icon-folder-success-one', 
+        title: 'Complete Registration & Collect Data',
+        description: 'Successfully registered in about 15-20 days, acquiring the business license and corporate seal certificates.'
     },
     {
-        img: '',
-        title: 'Efficient Processing',
-        description: 'Optimized processes and quick response significantly reduce processing time'
-    },
-    {
-        img: '',
-        title: 'Transparent Pricing',
-        description: 'Clear pricing with no hidden fees, providing cost-effective services'
-    },
-    {
-        img: '',
-        title: 'Full-Service Support',
-        description: 'From consultation to ongoing maintenance, we provide full-cycle caring service support'
+        iconId: '#icon-bank-line', 
+        title: 'Tax Account Opening & Operations',
+        description: 'Follow-up processes naturally include tax department banking open, dormancy application if applicable, and annual reviews.'
     }
 ]
 
 const advantage = [
     {
-        img: '',
-        adv: 'The world\'s third largest economy with huge market potential'
+        iconId: '#icon-award-line', 
+        adv: 'Brand Image Advantage: High Japanese brand effect enhances product promotion and global business appeal.'
     },
     {
-        img: '',
-        adv: 'Sound legal system, stable economic environment'
+        iconId: '#icon-city', 
+        adv: 'Superb Business Environment: Highly recognized institutional security paired with impeccable law and infrastructure.'
     },
     {
-        img: '',
-        adv: 'Strict intellectual property protection'
+        iconId: '#icon-trophy', 
+        adv: 'Flexible Scale & Name: High freedom in naming conventions without substantial boundaries on the scope of industries.'
     },
     {
-        img: '',
-        adv: 'Advanced technology and manufacturing base'
+        iconId: '#icon-finance', 
+        adv: 'Limitless Capital Volume: Zero limitations on initial registered capital; registering a business starting from 1 JPY is possible.'
     },
     {
-        img: '',
-        adv: 'High-quality talent resources'
+        iconId: '#icon-airplane', 
+        adv: 'Potential Visa Pathway: Contributing capital above 5M JPY opens an assured application line for a Business Manager Visa.'
     },
     {
-        img: '',
-        adv: 'Convenient gateway to the Asian market'
+        iconId: '#icon-cooperative-handshake', 
+        adv: 'Immigration Stepping-stone: Living and actively operating helps clear pathways to secure a Japanese permanent residency.'
+    }
+]
+
+const advantages = [
+    {
+        imgSrc: new URL('@/assets/img/temp_img/1.jpg', import.meta.url).href,
+        title: 'Fast-Track Service',
+        description: 'Foreign investors uniquely benefit from our fast-track corporate setup line, enabling fully electronic submissions resolved in just two weeks.'
+    },
+    {
+        imgSrc: new URL('@/assets/img/temp_img/3.jpg', import.meta.url).href,
+        title: 'Profound Experience & Success Rates',
+        description: 'SHI ZHOU TONG primarily centralizes on SME global footprints, dispensing exceptionally experienced counseling to countless enterprises.'
+    },
+    {
+        imgSrc: new URL('@/assets/img/temp_img/4.jpg', import.meta.url).href,
+        title: 'Comprehensive Value-Added Scope',
+        description: 'Our proprietary overseas team extensively guarantees cohesive finance, tax, and legal support post-registration to assure continuous fluent operations.'
+    },
+    {
+        imgSrc: new URL('@/assets/img/temp_img/5.jpg', import.meta.url).href,
+        title: 'Dedicated 1-on-1 Commercial Sync',
+        description: 'Exclusively assigned consulting teams consisting of advisors and certified accountants are dispatched to smoothly maneuver your private timelines.'
     }
 ]
 
 const faqs = ref([
     {
-        question: 'What are the benefits of registering a company in Japan?',
-        answer: 'Registering a company in Japan provides access to a highly developed market with advanced technology and infrastructure. It also offers a stable economic environment, strict intellectual property protection, and high-quality business services.'
+        question: "Is there a stringent name approval phase and what is the typical setup timeframe?",
+        answer: "There isn't a strict name confirmation phase in Japan. Duplication is allowed. Registration typically concludes successfully within 3 to 4 weeks."
     },
     {
-        question: 'What are the requirements for registering a company in Japan?',
-        answer: 'To register a company in Japan, you need at least one director and one shareholder (who can be the same person), a registered address in Japan, a company name (in Japanese or English), articles of incorporation, identity documents of directors and shareholders, registered capital (no minimum requirement), a company business description, and signed relevant documents.'
+        question: "What are the core requirements regarding the minimum initial corporate capital?",
+        answer: "There are absolutely no restrictions. You can officially register with as minimal as 1 Japanese Yen with no mandatory paid-in regulations."
     },
     {
-        question: 'What is the process for registering a company in Japan?',
-        answer: 'The process includes verifying the company name, preparing registration documents, submitting the registration application to the Legal Affairs Bureau, receiving the registration certificate, and completing tax registration with the National Tax Agency and local tax departments.'
+        question: "How can someone publicly review an established Japanese Corporate profile?",
+        answer: "Corporate records can smoothly be traced on the official National Tax Agency portal leveraging the Corporate Number, Name, or localized Registration Address."
     },
     {
-        question: 'What are the advantages of using your services for company registration?',
-        answer: 'Our services offer a professional team, efficient processing, transparent pricing, and full-service support from consultation to ongoing maintenance.'
+        question: "What physical credentials will I obtain once the registration successfully concludes?",
+        answer: "Key deliverables prominently include the corporate Business License Certificate, the standard Corporate Seal, Bank Seal, Invoice Seal, Corporate Seal Certificate, Legal Affairs Bureau Login Card, and the verified Articles of Incorporation."
     }
 ])
 
-const expandedItems = ref([])
+const expandedItems = ref({})
 
 const toggleFaq = (index) => {
-    if (expandedItems.value[index]) {
-        expandedItems.value[index] = false
-    } else {
-        expandedItems.value[index] = true
-    }
+    expandedItems.value[index] = !expandedItems.value[index]
 }
 
-// 添加过渡动画
-onMounted(() => {
+const advantageRefs = ref([])
+const registrationProcessRefs = ref([])
+
+// 保持动画脚本不变
+onMounted(async () => {
+    await nextTick()
+    
     // content1 动画
     gsap.from('.content1 .title', {
         scrollTrigger: {
@@ -240,7 +251,8 @@ onMounted(() => {
         },
         opacity: 0,
         y: 50,
-        duration: 0.8
+        duration: 0.8,
+        ease: 'power2.out'
     })
 
     gsap.from('.content1 .intro', {
@@ -251,10 +263,11 @@ onMounted(() => {
         opacity: 0,
         y: 50,
         duration: 0.8,
-        delay: 0.2
+        delay: 0.2,
+        ease: 'power2.out'
     })
 
-    // content2 动画
+    // content2 动画 - 参照其他页面统一动画效果
     gsap.from('.content2 .title', {
         scrollTrigger: {
             trigger: '.content2 .title',
@@ -262,18 +275,29 @@ onMounted(() => {
         },
         opacity: 0,
         y: 50,
-        duration: 0.8
+        duration: 0.8,
+        ease: 'power2.out'
     })
 
-    gsap.from('.content2 .advantage', {
-        scrollTrigger: {
-            trigger: '.content2 .intro',
-            start: 'top 80%'
-        },
-        opacity: 0,
-        y: 50,
-        duration: 0.8,
-        stagger: 0.1
+    // 为每个优势项添加动画 - 参照其他页面统一动画效果
+    advantageRefs.value.forEach((el, index) => {
+        gsap.fromTo(el,
+            { 
+                opacity: 0, 
+                y: 50
+            },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.6,
+                delay: index * 0.1,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: '.content2 .intro',
+                    start: 'top 80%'
+                }
+            }
+        )
     })
 
     // content3 动画
@@ -287,7 +311,6 @@ onMounted(() => {
         duration: 0.8
     })
 
-    // 使用fromTo方法解决动画与浮动效果冲突
     const conditionItems = document.querySelectorAll('.content3 .condition-item');
     conditionItems.forEach((item, index) => {
         gsap.fromTo(item,
@@ -300,7 +323,7 @@ onMounted(() => {
                 ease: 'power2.out',
                 scrollTrigger: {
                     trigger: '.content3 .intro',
-                    start: 'top 80%'  // 元素进入视口80%位置时触发
+                    start: 'top 80%'  
                 },
                 onComplete: function() {
                     gsap.set(item, { clearProps: "x,opacity,transition" })
@@ -309,7 +332,7 @@ onMounted(() => {
         );
     });
 
-    // content4 动画
+    // content4 动画 - 参照其他页面统一动画效果
     gsap.from('.content4 .title', {
         scrollTrigger: {
             trigger: '.content4 .title',
@@ -317,18 +340,29 @@ onMounted(() => {
         },
         opacity: 0,
         y: 50,
-        duration: 0.8
+        duration: 0.8,
+        ease: 'power2.out'
     })
 
-    gsap.from('.content4 .advantage', {
-        scrollTrigger: {
-            trigger: '.content4 .intro',
-            start: 'top 80%'
-        },
-        opacity: 0,
-        y: 50,
-        duration: 0.8,
-        stagger: 0.1
+    // 为每个注册流程项添加动画 - 参照其他页面统一动画效果
+    registrationProcessRefs.value.forEach((el, index) => {
+        gsap.fromTo(el,
+            { 
+                opacity: 0, 
+                y: 50
+            },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.6,
+                delay: index * 0.1,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: '.content4 .intro',
+                    start: 'top 80%'
+                }
+            }
+        )
     })
 
     // content5 动画
@@ -342,7 +376,6 @@ onMounted(() => {
         duration: 0.8
     })
 
-    // 使用fromTo方法解决动画与浮动效果冲突
     const content5Advantages = document.querySelectorAll('.content5 .advantage');
     content5Advantages.forEach((item, index) => {
         gsap.fromTo(item,

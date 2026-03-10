@@ -3,25 +3,27 @@
         <div class="content_box">
             <div class="content1">
                 <div class="title">
-                    Macau Company Registration
+                    Macao Company Registration
                 </div>
                 <div class="intro">
                     <img src="@/assets/img/company/mo/MO-2.jpg" alt="">
                     <div class="text">
-                        <P>Macau is a Special Administrative Region of the People's Republic of China, enjoying the unique "one country, two systems" advantage, and serves as a bridge connecting China with Portuguese-speaking countries.</P>
-                        <P>As a world-renowned tourism and leisure center, Macau has an open economic policy, low tax rates, simplified business environment, and a complete financial and legal service system.</P>
-                        <P>Macau's company registration process is straightforward, providing investors with an excellent business platform and an ideal choice for expanding into Asian and Portuguese-speaking country markets.</P>
+                        <P>Macao is one of the most highly developed economic nations worldwide, acting as the 3rd largest economy and a key member of the G8 industrialized nations.</P>
+                        <P>The brand effect of Macaoese companies is recognized globally, especially in sectors such as cosmetics, catering, heavy machinery, and gaming, uniquely benefiting corporate branding and marketing.</P>
+                        <P>As a core ally of the US, Macao’s exceptional corporate infrastructure and deeply robust administrative system ensure a paramount business environment naturally favored by international entrepreneurs.</P>
                     </div>
                 </div>
             </div>
             <div class="content2">
                 <div class="title">
-                    Advantages of Macau Company Registration
+                    Advantages
                 </div>
                 <div class="intro">
-                    <div v-for="(item, index) in advantage" :key="index" class="advantage">
+                    <div v-for="(item, index) in advantage" :key="index" class="advantage" :ref="el => { if (el) advantageRefs[index] = el }">
                         <div class="img">
-                            <img :src="item.img" alt="">
+                            <svg class="icon" aria-hidden="true">
+                                <use :xlink:href="item.iconId"></use> 
+                            </svg>
                         </div>
                         <div class="text">
                             {{ item.adv }}
@@ -31,32 +33,34 @@
             </div>
             <div class="content3">
                 <div class="title">
-                    Conditions and Required Documents
+                    Requirements & Preparation
                 </div>
                 <div class="intro">
                     <div class="left">
-                        <div class="condition-item">At least one shareholder and one director (can be the same person)</div>
-                        <div class="condition-item">Registered address (must be a real Macau address)</div>
-                        <div class="condition-item">Articles of incorporation</div>
-                        <div class="condition-item">Company secretary (optional)</div>
+                        <div class="condition-item">Name: Extremely flexible; allows Katakana, Hiragana, Kanja, numbers, and English.</div>
+                        <div class="condition-item">Restrictions: Prohibits restricted terms like "Bank", "Trust", "Life Insurance", etc.</div>
+                        <div class="condition-item">Capital: No strict limit on registered capital; you can start with as low as 1 JPY.</div>
+                        <div class="condition-item">Address: Lease fee included. Entity operation must provide physical business location.</div>
                     </div>
                     <div class="center"></div>
                     <div class="right">
-                        <div class="condition-item">Identity documents of directors and shareholders</div>
-                        <div class="condition-item">Company name (provide multiple alternatives)</div>
-                        <div class="condition-item">Registered capital (no minimum requirement)</div>
-                        <div class="condition-item">Signed relevant documents</div>
+                        <div class="condition-item">Scope of Business: Most sectors can be legally registered with virtually no limit.</div>
+                        <div class="condition-item">Representative: A Macaoese representative or resident must be officially appointed.</div>
+                        <div class="condition-item">Documents: The investor's personal seal certificate (Notarized) is generally necessary.</div>
+                        <div class="condition-item">Visa: Corporate capital ≥ 5M JPY opens up opportunities for a Business Manager Visa.</div>
                     </div>
                 </div>
             </div>
             <div class="content4">
                 <div class="title">
-                    Company Registration Process
+                    Registration Process
                 </div>
                 <div class="intro">
-                    <div v-for="(item, index) in registrationProcess" :key="index" class="advantage">
+                    <div v-for="(item, index) in registrationProcess" :key="index" class="advantage" :ref="el => { if (el) registrationProcessRefs[index] = el }">
                         <div class="img">
-                            <!-- <img :src="item.img" :alt="item.title"> -->
+                            <svg class="icon" aria-hidden="true">
+                                <use :xlink:href="item.iconId"></use> 
+                            </svg>
                         </div>
                         <div class="text1">
                             {{ item.title }}
@@ -69,12 +73,12 @@
             </div>
             <div class="content5">
                 <div class="title">
-                    Our Advantages
+                    Core Strengths
                 </div>
                 <div class="intro">
                     <div v-for="(item, index) in advantages" :key="index" class="advantage">
                         <div class="img">
-                            <!-- <img :src="item.img" :alt="item.title"> -->
+                            <img :src="item.imgSrc" :alt="item.title">
                         </div>
                         <div class="text1">
                             {{ item.title }}
@@ -87,7 +91,7 @@
             </div>
             <div class="content6">
                 <div class="title">
-                    Frequently Asked Questions about Macau Company Registration
+                    Frequently Asked Questions
                 </div>
                 <div class="intro">
                     <div 
@@ -116,120 +120,113 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, nextTick } from 'vue'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
-import '@/css_en/company/mo/Mo_content2.css'
+// 保持导入路径不变
+import '@/css_en/company/mo/Mo_content2.css' 
 
 gsap.registerPlugin(ScrollTrigger)
 
 const registrationProcess = [
     {
-        img: '',
-        title: 'Company Name Verification',
-        description: 'Verify the availability of the company name and prepare alternative names.'
+        iconId: '#icon-agreement', 
+        title: 'Confirm Company Info',
+        description: 'Finalize the proposed company name, address, and Macaoese representative.'
     },
     {
-        img: '',
-        title: 'Prepare Registration Documents',
-        description: 'Prepare the articles of incorporation, shareholder and director information, and other necessary documents.'
+        iconId: '#icon-audit', 
+        title: 'Prepare Notarization',
+        description: 'Organize required documents, such as shareholders\' seal certificates and notarization.'
     },
     {
-        img: '',
-        title: 'Submit Registration Application',
-        description: 'Submit the registration application to the Commercial and Movable Property Registry of the Finance Bureau of Macau.'
+        iconId: '#icon-notes', 
+        title: 'Draft & Notarize Files',
+        description: 'A dedicated administrative scrivener prepares all required artifacts and gets them officially notarized.'
     },
     {
-        img: '',
-        title: 'Receive Registration Certificate',
-        description: 'After the registration review is approved, receive the company registration certificate.'
+        iconId: '#icon-government-line', 
+        title: 'Submit to Legal Affairs Bureau',
+        description: 'Notarized documents are efficiently submitted to the local Macaoese Legal Affairs Bureau for registration.'
     },
     {
-        img: '',
-        title: 'Complete Tax Registration',
-        description: 'Complete the tax registration procedures with the Finance Bureau.'
+        iconId: '#icon-folder-success-one', 
+        title: 'Complete Registration & Collect Data',
+        description: 'Successfully registered in about 15-20 days, acquiring the business license and corporate seal certificates.'
     },
     {
-        img: '',
-        title: 'Open Bank Account',
-        description: 'Open a company bank account in a Macau bank with company documents.'
+        iconId: '#icon-bank-line', 
+        title: 'Tax Account Opening & Operations',
+        description: 'Follow-up processes naturally include tax department banking open, dormancy application if applicable, and annual reviews.'
     }
 ]
 
 const advantage = [
     {
-        img: '',
-        adv: 'Low tax environment, significant tax benefits'
+        iconId: '#icon-award-line', 
+        adv: 'Brand Image Advantage: High Macaoese brand effect enhances product promotion and global business appeal.'
     },
     {
-        img: '',
-        adv: 'Simplified business environment, convenient registration process'
+        iconId: '#icon-city', 
+        adv: 'Superb Business Environment: Highly recognized institutional security paired with impeccable law and infrastructure.'
     },
     {
-        img: '',
-        adv: 'Bridge connecting China with Portuguese-speaking countries'
+        iconId: '#icon-trophy', 
+        adv: 'Flexible Scale & Name: High freedom in naming conventions without substantial boundaries on the scope of industries.'
     },
     {
-        img: '',
-        adv: 'Sound financial and legal service system'
+        iconId: '#icon-finance', 
+        adv: 'Limitless Capital Volume: Zero limitations on initial registered capital; registering a business starting from 1 JPY is possible.'
     },
     {
-        img: '',
-        adv: 'Open economic policy, high degree of investment freedom'
+        iconId: '#icon-airplane', 
+        adv: 'Potential Visa Pathway: Contributing capital above 5M JPY opens an assured application line for a Business Manager Visa.'
     },
     {
-        img: '',
-        adv: 'Unique "one country, two systems" advantage'
+        iconId: '#icon-cooperative-handshake', 
+        adv: 'Immigration Stepping-stone: Living and actively operating helps clear pathways to secure a Macaoese permanent residency.'
     }
 ]
 
 const advantages = [
     {
-        img: '',
-        title: 'Professional Team',
-        description: 'Experienced professional consultants providing one-stop service solutions'
+        imgSrc: new URL('@/assets/img/temp_img/1.jpg', import.meta.url).href,
+        title: 'Fast-Track Service',
+        description: 'Foreign investors uniquely benefit from our fast-track corporate setup line, enabling fully electronic submissions resolved in just two weeks.'
     },
     {
-        img: '',
-        title: 'Efficient Processing',
-        description: 'Optimized processes and quick response significantly reduce processing time'
+        imgSrc: new URL('@/assets/img/temp_img/3.jpg', import.meta.url).href,
+        title: 'Profound Experience & Success Rates',
+        description: 'SHI ZHOU TONG primarily centralizes on SME global footprints, dispensing exceptionally experienced counseling to countless enterprises.'
     },
     {
-        img: '',
-        title: 'Transparent Pricing',
-        description: 'Clear pricing with no hidden fees, providing cost-effective services'
+        imgSrc: new URL('@/assets/img/temp_img/4.jpg', import.meta.url).href,
+        title: 'Comprehensive Value-Added Scope',
+        description: 'Our proprietary overseas team extensively guarantees cohesive finance, tax, and legal support post-registration to assure continuous fluent operations.'
     },
     {
-        img: '',
-        title: 'Full-Service Support',
-        description: 'Full-cycle caring service support from consultation to ongoing maintenance'
+        imgSrc: new URL('@/assets/img/temp_img/5.jpg', import.meta.url).href,
+        title: 'Dedicated 1-on-1 Commercial Sync',
+        description: 'Exclusively assigned consulting teams consisting of advisors and certified accountants are dispatched to smoothly maneuver your private timelines.'
     }
 ]
 
 const faqs = ref([
     {
-        question: "How much capital is required to register a Macau company?",
-        answer: "There is no minimum capital requirement for registering a Macau company. The amount can be set according to actual needs."
+        question: "Is there a stringent name approval phase and what is the typical setup timeframe?",
+        answer: "There isn't a strict name confirmation phase in Macao. Duplication is allowed. Registration typically concludes successfully within 3 to 4 weeks."
     },
     {
-        question: "How long does it take to register a Macau company?",
-        answer: "Under normal circumstances, it takes 5-7 working days to register a Macau company."
+        question: "What are the core requirements regarding the minimum initial corporate capital?",
+        answer: "There are absolutely no restrictions. You can officially register with as minimal as 1 Macaoese Yen with no mandatory paid-in regulations."
     },
     {
-        question: "Is it necessary to have a Macau resident as a director?",
-        answer: "No, foreigners can also serve as directors of Macau companies."
+        question: "How can someone publicly review an established Macaoese Corporate profile?",
+        answer: "Corporate records can smoothly be traced on the official National Tax Agency portal leveraging the Corporate Number, Name, or localized Registration Address."
     },
     {
-        question: "Does a Macau company need annual review?",
-        answer: "Yes, Macau companies need to submit annual reports and update relevant information each year."
-    },
-    {
-        question: "How to open a bank account after registering a Macau company?",
-        answer: "After registration is completed, a company account can be opened at a Macau bank with company documents, or it can be handled with the assistance of an agent."
-    },
-    {
-        question: "Can a Macau company operate in Mainland China?",
-        answer: "A Macau company cannot directly operate in Mainland China. To operate in Mainland China, it is necessary to establish a representative office or invest in establishing a foreign-invested enterprise."
+        question: "What physical credentials will I obtain once the registration successfully concludes?",
+        answer: "Key deliverables prominently include the corporate Business License Certificate, the standard Corporate Seal, Bank Seal, Invoice Seal, Corporate Seal Certificate, Legal Affairs Bureau Login Card, and the verified Articles of Incorporation."
     }
 ])
 
@@ -239,9 +236,14 @@ const toggleFaq = (index) => {
     expandedItems.value[index] = !expandedItems.value[index]
 }
 
-// Add transition animations
-onMounted(() => {
-    // content1 animation
+const advantageRefs = ref([])
+const registrationProcessRefs = ref([])
+
+// 保持动画脚本不变
+onMounted(async () => {
+    await nextTick()
+    
+    // content1 动画
     gsap.from('.content1 .title', {
         scrollTrigger: {
             trigger: '.content1 .title',
@@ -249,7 +251,8 @@ onMounted(() => {
         },
         opacity: 0,
         y: 50,
-        duration: 0.8
+        duration: 0.8,
+        ease: 'power2.out'
     })
 
     gsap.from('.content1 .intro', {
@@ -260,10 +263,11 @@ onMounted(() => {
         opacity: 0,
         y: 50,
         duration: 0.8,
-        delay: 0.2
+        delay: 0.2,
+        ease: 'power2.out'
     })
 
-    // content2 animation
+    // content2 动画 - 参照其他页面统一动画效果
     gsap.from('.content2 .title', {
         scrollTrigger: {
             trigger: '.content2 .title',
@@ -271,21 +275,32 @@ onMounted(() => {
         },
         opacity: 0,
         y: 50,
-        duration: 0.8
-    })
-
-    gsap.from('.content2 .advantage', {
-        scrollTrigger: {
-            trigger: '.content2 .intro',
-            start: 'top 80%'
-        },
-        opacity: 0,
-        y: 50,
         duration: 0.8,
-        stagger: 0.1
+        ease: 'power2.out'
     })
 
-    // content3 animation
+    // 为每个优势项添加动画 - 参照其他页面统一动画效果
+    advantageRefs.value.forEach((el, index) => {
+        gsap.fromTo(el,
+            { 
+                opacity: 0, 
+                y: 50
+            },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.6,
+                delay: index * 0.1,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: '.content2 .intro',
+                    start: 'top 80%'
+                }
+            }
+        )
+    })
+
+    // content3 动画
     gsap.from('.content3 .title', {
         scrollTrigger: {
             trigger: '.content3 .title',
@@ -296,7 +311,6 @@ onMounted(() => {
         duration: 0.8
     })
 
-    // Use fromTo method to resolve conflicts between animation and floating effects
     const conditionItems = document.querySelectorAll('.content3 .condition-item');
     conditionItems.forEach((item, index) => {
         gsap.fromTo(item,
@@ -309,7 +323,7 @@ onMounted(() => {
                 ease: 'power2.out',
                 scrollTrigger: {
                     trigger: '.content3 .intro',
-                    start: 'top 80%'  // Trigger when element enters 80% of viewport
+                    start: 'top 80%'  
                 },
                 onComplete: function() {
                     gsap.set(item, { clearProps: "x,opacity,transition" })
@@ -318,7 +332,7 @@ onMounted(() => {
         );
     });
 
-    // content4 animation
+    // content4 动画 - 参照其他页面统一动画效果
     gsap.from('.content4 .title', {
         scrollTrigger: {
             trigger: '.content4 .title',
@@ -326,21 +340,32 @@ onMounted(() => {
         },
         opacity: 0,
         y: 50,
-        duration: 0.8
-    })
-
-    gsap.from('.content4 .advantage', {
-        scrollTrigger: {
-            trigger: '.content4 .intro',
-            start: 'top 80%'
-        },
-        opacity: 0,
-        y: 50,
         duration: 0.8,
-        stagger: 0.1
+        ease: 'power2.out'
     })
 
-    // content5 animation
+    // 为每个注册流程项添加动画 - 参照其他页面统一动画效果
+    registrationProcessRefs.value.forEach((el, index) => {
+        gsap.fromTo(el,
+            { 
+                opacity: 0, 
+                y: 50
+            },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.6,
+                delay: index * 0.1,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: '.content4 .intro',
+                    start: 'top 80%'
+                }
+            }
+        )
+    })
+
+    // content5 动画
     gsap.from('.content5 .title', {
         scrollTrigger: {
             trigger: '.content5 .title',
@@ -351,7 +376,6 @@ onMounted(() => {
         duration: 0.8
     })
 
-    // Use fromTo method to resolve conflicts between animation and floating effects
     const content5Advantages = document.querySelectorAll('.content5 .advantage');
     content5Advantages.forEach((item, index) => {
         gsap.fromTo(item,
@@ -373,7 +397,7 @@ onMounted(() => {
         );
     })
 
-    // content6 title animation
+    // content6 标题动画
     gsap.fromTo('.content6 .title',
         { y: 50, opacity: 0, transition: 'none' },
         {
@@ -391,10 +415,10 @@ onMounted(() => {
         }
     );
 
-    // content6 FAQ animation
+    // content6 常见问题动画
     const faqItems = document.querySelectorAll('.content6 .faq-item');
     faqItems.forEach((item, index) => {
-        // FAQ item entrance animation
+        // FAQ项进入动画
         gsap.fromTo(item,
             { y: 30, opacity: 0, transition: 'none' },
             { 

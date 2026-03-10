@@ -1,4 +1,5 @@
 <template>
+ 
     <div class="sc_box">
         <Top />
         <Sccontent1 />
@@ -10,8 +11,8 @@
 </template>
 
 <script setup>
-import '@/css_en/company/sc/SC.css'
-import Top from '@/components_en/company/common/Top.vue'
+import '@/css/company/sc/SC.css'
+import Top from '@/components_en/common/Top.vue'
 import Sccontent1 from '@/components_en/company/sc/Sc_content1.vue'
 import Sccontent2 from '@/components_en/company/sc/Sc_content2.vue'
 import Link from '@/components_en/company/common/Link.vue'

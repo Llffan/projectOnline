@@ -10,8 +10,8 @@
 </template>
 
 <script setup>
-import '@/css_en/company/mh/MH.css'
-import Top from '@/components_en/company/common/Top.vue'
+import '@/css/company/mh/MH.css'
+import Top from '@/components_en/common/Top.vue'
 import Mhcontent1 from '@/components_en/company/mh/Mh_content1.vue'
 import Mhcontent2 from '@/components_en/company/mh/Mh_content2.vue'
 import Link from '@/components_en/company/common/Link.vue'

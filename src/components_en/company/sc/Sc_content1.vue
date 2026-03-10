@@ -5,9 +5,9 @@
         </div>
         <div class="intro">
             <div class="sc-title">Seychelles Company Registration Guide</div>
-            <div class="sc-subtitle">Advantages, Process, Requirements, Documents, Timeline, Costs and FAQs</div>
+            <div class="sc-subtitle">Advantages, Procedures, Conditions, Materials, Time, Fees & FAQs</div>
             <div class="sc-description">
-                <p>- Seychelles Company Registration</p>
+                <p>- Seychellesese Company Registration</p>
             </div>
         </div>
     </div>

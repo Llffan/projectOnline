@@ -11,18 +11,17 @@
 
     /* 小标题共用 */
     .title {
-        font-size: 32px;
+        font-size: 26px;
         color: #0037ff7e;
-        text-align: left;
     }
     .title_en {
-        font-size: 22px;
+        font-size: 18px;
         margin-top: 5px;
         color: #ccc;
     }
     .intro {
         color:rgb(17, 17, 17);
-        font-size: 19px;
+        font-size: 18px;
         text-align: left;
     }
     .title_en::after{

@@ -8,20 +8,22 @@
                 <div class="intro">
                     <img src="@/assets/img/company/sc/SC-2.jpg" alt="">
                     <div class="text">
-                        <P>Seychelles is an island nation located in the Indian Ocean, famous for its beautiful natural environment and stable political situation. It is one of the important offshore financial centers in the African region.</P>
-                        <P>Seychelles has a sound legal system and favorable tax policies, providing a good business environment and investment opportunities for global investors.</P>
-                        <P>Seychelles International Business Companies (IBC) enjoy advantages such as tax exemption, asset protection, and privacy protection, making them ideal for international trade, investment holding, and wealth management.</P>
+                        <P>Seychelles is one of the most highly developed economic nations worldwide, acting as the 3rd largest economy and a key member of the G8 industrialized nations.</P>
+                        <P>The brand effect of Seychellesese companies is recognized globally, especially in sectors such as cosmetics, catering, heavy machinery, and gaming, uniquely benefiting corporate branding and marketing.</P>
+                        <P>As a core ally of the US, Seychelles’s exceptional corporate infrastructure and deeply robust administrative system ensure a paramount business environment naturally favored by international entrepreneurs.</P>
                     </div>
                 </div>
             </div>
             <div class="content2">
                 <div class="title">
-                    Advantages of Seychelles Company Registration
+                    Advantages
                 </div>
                 <div class="intro">
-                    <div v-for="(item, index) in advantage" :key="index" class="advantage">
+                    <div v-for="(item, index) in advantage" :key="index" class="advantage" :ref="el => { if (el) advantageRefs[index] = el }">
                         <div class="img">
-                            <img :src="item.img" alt="">
+                            <svg class="icon" aria-hidden="true">
+                                <use :xlink:href="item.iconId"></use> 
+                            </svg>
                         </div>
                         <div class="text">
                             {{ item.adv }}
@@ -31,32 +33,34 @@
             </div>
             <div class="content3">
                 <div class="title">
-                    Requirements and Required Documents
+                    Requirements & Preparation
                 </div>
                 <div class="intro">
                     <div class="left">
-                        <div class="condition-item">Shareholders or directors aged 18 or above</div>
-                        <div class="condition-item">Registered address (provided by our company)</div>
-                        <div class="condition-item">Articles of Association</div>
-                        <div class="condition-item">Company name (multiple alternatives provided)</div>
+                        <div class="condition-item">Name: Extremely flexible; allows Katakana, Hiragana, Kanja, numbers, and English.</div>
+                        <div class="condition-item">Restrictions: Prohibits restricted terms like "Bank", "Trust", "Life Insurance", etc.</div>
+                        <div class="condition-item">Capital: No strict limit on registered capital; you can start with as low as 1 JPY.</div>
+                        <div class="condition-item">Address: Lease fee included. Entity operation must provide physical business location.</div>
                     </div>
                     <div class="center"></div>
                     <div class="right">
-                        <div class="condition-item">Identity documents of directors and shareholders</div>
-                        <div class="condition-item">Registered capital</div>
-                        <div class="condition-item">Company secretary (provided by our company)</div>
-                        <div class="condition-item">Signed relevant documents</div>
+                        <div class="condition-item">Scope of Business: Most sectors can be legally registered with virtually no limit.</div>
+                        <div class="condition-item">Representative: A Seychellesese representative or resident must be officially appointed.</div>
+                        <div class="condition-item">Documents: The investor's personal seal certificate (Notarized) is generally necessary.</div>
+                        <div class="condition-item">Visa: Corporate capital ≥ 5M JPY opens up opportunities for a Business Manager Visa.</div>
                     </div>
                 </div>
             </div>
             <div class="content4">
                 <div class="title">
-                    Company Registration Process
+                    Registration Process
                 </div>
                 <div class="intro">
-                    <div v-for="(item, index) in registrationProcess" :key="index" class="advantage">
+                    <div v-for="(item, index) in registrationProcess" :key="index" class="advantage" :ref="el => { if (el) registrationProcessRefs[index] = el }">
                         <div class="img">
-                            <!-- <img :src="item.img" :alt="item.title"> -->
+                            <svg class="icon" aria-hidden="true">
+                                <use :xlink:href="item.iconId"></use> 
+                            </svg>
                         </div>
                         <div class="text1">
                             {{ item.title }}
@@ -69,12 +73,12 @@
             </div>
             <div class="content5">
                 <div class="title">
-                    Our Advantages
+                    Core Strengths
                 </div>
                 <div class="intro">
                     <div v-for="(item, index) in advantages" :key="index" class="advantage">
                         <div class="img">
-                            <!-- <img :src="item.img" :alt="item.title"> -->
+                            <img :src="item.imgSrc" :alt="item.title">
                         </div>
                         <div class="text1">
                             {{ item.title }}
@@ -87,7 +91,7 @@
             </div>
             <div class="content6">
                 <div class="title">
-                    Frequently Asked Questions About Seychelles Company Registration
+                    Frequently Asked Questions
                 </div>
                 <div class="intro">
                     <div 
@@ -116,120 +120,113 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, nextTick } from 'vue'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
-import '@/css_en/company/sc/Sc_content2.css'
+// 保持导入路径不变
+import '@/css_en/company/sc/Sc_content2.css' 
 
 gsap.registerPlugin(ScrollTrigger)
 
 const registrationProcess = [
     {
-        img: '',
-        title: 'Company Name Verification',
-        description: 'Name search and verification of availability.'
+        iconId: '#icon-agreement', 
+        title: 'Confirm Company Info',
+        description: 'Finalize the proposed company name, address, and Seychellesese representative.'
     },
     {
-        img: '',
-        title: 'Prepare Registration Documents',
-        description: 'Prepare identification documents of legal representatives/shareholders, articles of association and other relevant materials.'
+        iconId: '#icon-audit', 
+        title: 'Prepare Notarization',
+        description: 'Organize required documents, such as shareholders\' seal certificates and notarization.'
     },
     {
-        img: '',
-        title: 'Choose Registered Address',
-        description: 'Determine the address for company registration, which can be provided by our company.'
+        iconId: '#icon-notes', 
+        title: 'Draft & Notarize Files',
+        description: 'A dedicated administrative scrivener prepares all required artifacts and gets them officially notarized.'
     },
     {
-        img: '',
-        title: 'Submit Application Documents',
-        description: 'Submit complete registration application documents to the relevant Seychelles authorities.'
+        iconId: '#icon-government-line', 
+        title: 'Submit to Legal Affairs Bureau',
+        description: 'Notarized documents are efficiently submitted to the local Seychellesese Legal Affairs Bureau for registration.'
     },
     {
-        img: '',
-        title: 'Receive Business License',
-        description: 'Upon successful completion of company registration, receive the business license and other relevant certificates.'
+        iconId: '#icon-folder-success-one', 
+        title: 'Complete Registration & Collect Data',
+        description: 'Successfully registered in about 15-20 days, acquiring the business license and corporate seal certificates.'
     },
     {
-        img: '',
-        title: 'Additional Free Services',
-        description: 'Company seal, articles of association, company certificate.'
+        iconId: '#icon-bank-line', 
+        title: 'Tax Account Opening & Operations',
+        description: 'Follow-up processes naturally include tax department banking open, dormancy application if applicable, and annual reviews.'
     }
 ]
 
 const advantage = [
     {
-        img: '',
-        adv: 'Tax benefits, Seychelles companies are exempt from income tax, capital gains tax, etc.'
+        iconId: '#icon-award-line', 
+        adv: 'Brand Image Advantage: High Seychellesese brand effect enhances product promotion and global business appeal.'
     },
     {
-        img: '',
-        adv: 'High confidentiality, no disclosure of shareholder and director information required'
+        iconId: '#icon-city', 
+        adv: 'Superb Business Environment: Highly recognized institutional security paired with impeccable law and infrastructure.'
     },
     {
-        img: '',
-        adv: 'No foreign exchange controls, free flow of funds'
+        iconId: '#icon-trophy', 
+        adv: 'Flexible Scale & Name: High freedom in naming conventions without substantial boundaries on the scope of industries.'
     },
     {
-        img: '',
-        adv: 'Simple registration process, low maintenance costs'
+        iconId: '#icon-finance', 
+        adv: 'Limitless Capital Volume: Zero limitations on initial registered capital; registering a business starting from 1 JPY is possible.'
     },
     {
-        img: '',
-        adv: 'Sound legal system, protecting investor rights'
+        iconId: '#icon-airplane', 
+        adv: 'Potential Visa Pathway: Contributing capital above 5M JPY opens an assured application line for a Business Manager Visa.'
     },
     {
-        img: '',
-        adv: 'High global recognition, facilitating offshore account opening'
+        iconId: '#icon-cooperative-handshake', 
+        adv: 'Immigration Stepping-stone: Living and actively operating helps clear pathways to secure a Seychellesese permanent residency.'
     }
 ]
 
 const advantages = [
     {
-        img: '',
-        title: 'Professional Team',
-        description: 'Experienced professional consultants providing one-stop service solutions'
+        imgSrc: new URL('@/assets/img/temp_img/1.jpg', import.meta.url).href,
+        title: 'Fast-Track Service',
+        description: 'Foreign investors uniquely benefit from our fast-track corporate setup line, enabling fully electronic submissions resolved in just two weeks.'
     },
     {
-        img: '',
-        title: 'Efficient Processing',
-        description: 'Optimized processes and rapid response greatly reducing processing time'
+        imgSrc: new URL('@/assets/img/temp_img/3.jpg', import.meta.url).href,
+        title: 'Profound Experience & Success Rates',
+        description: 'SHI ZHOU TONG primarily centralizes on SME global footprints, dispensing exceptionally experienced counseling to countless enterprises.'
     },
     {
-        img: '',
-        title: 'Transparent Pricing',
-        description: 'Clear pricing with no hidden costs, offering high value-for-money services'
+        imgSrc: new URL('@/assets/img/temp_img/4.jpg', import.meta.url).href,
+        title: 'Comprehensive Value-Added Scope',
+        description: 'Our proprietary overseas team extensively guarantees cohesive finance, tax, and legal support post-registration to assure continuous fluent operations.'
     },
     {
-        img: '',
-        title: 'Full-Service Support',
-        description: 'Comprehensive support from consultation to ongoing maintenance throughout the entire lifecycle'
+        imgSrc: new URL('@/assets/img/temp_img/5.jpg', import.meta.url).href,
+        title: 'Dedicated 1-on-1 Commercial Sync',
+        description: 'Exclusively assigned consulting teams consisting of advisors and certified accountants are dispatched to smoothly maneuver your private timelines.'
     }
 ]
 
 const faqs = ref([
     {
-        question: "How much capital is required to register a Seychelles company?",
-        answer: "There is no minimum registered capital requirement for Seychelles companies. Generally, a registered capital of 50,000 USD is recommended, with no capital verification required."
+        question: "Is there a stringent name approval phase and what is the typical setup timeframe?",
+        answer: "There isn't a strict name confirmation phase in Seychelles. Duplication is allowed. Registration typically concludes successfully within 3 to 4 weeks."
     },
     {
-        question: "How long does it take to register a Seychelles company?",
-        answer: "Generally, Seychelles company registration takes 3-5 working days."
+        question: "What are the core requirements regarding the minimum initial corporate capital?",
+        answer: "There are absolutely no restrictions. You can officially register with as minimal as 1 Seychellesese Yen with no mandatory paid-in regulations."
     },
     {
-        question: "Does a Seychelles company need annual review?",
-        answer: "Yes, Seychelles companies must undergo annual review and submit financial statements."
+        question: "How can someone publicly review an established Seychellesese Corporate profile?",
+        answer: "Corporate records can smoothly be traced on the official National Tax Agency portal leveraging the Corporate Number, Name, or localized Registration Address."
     },
     {
-        question: "How is tax filing conducted for Seychelles companies?",
-        answer: "Seychelles companies are not required to pay taxes locally, but must submit annual returns on time."
-    },
-    {
-        question: "Can foreigners register a company in Seychelles?",
-        answer: "Yes, foreigners can register companies in Seychelles without any restrictions."
-    },
-    {
-        question: "Can a Seychelles company operate in Mainland China?",
-        answer: "A Seychelles company cannot directly operate in mainland China. To operate in China, a representative office must be established or a foreign investment enterprise must be set up."
+        question: "What physical credentials will I obtain once the registration successfully concludes?",
+        answer: "Key deliverables prominently include the corporate Business License Certificate, the standard Corporate Seal, Bank Seal, Invoice Seal, Corporate Seal Certificate, Legal Affairs Bureau Login Card, and the verified Articles of Incorporation."
     }
 ])
 
@@ -239,8 +236,13 @@ const toggleFaq = (index) => {
     expandedItems.value[index] = !expandedItems.value[index]
 }
 
-// 添加过渡动画
-onMounted(() => {
+const advantageRefs = ref([])
+const registrationProcessRefs = ref([])
+
+// 保持动画脚本不变
+onMounted(async () => {
+    await nextTick()
+    
     // content1 动画
     gsap.from('.content1 .title', {
         scrollTrigger: {
@@ -249,7 +251,8 @@ onMounted(() => {
         },
         opacity: 0,
         y: 50,
-        duration: 0.8
+        duration: 0.8,
+        ease: 'power2.out'
     })
 
     gsap.from('.content1 .intro', {
@@ -260,10 +263,11 @@ onMounted(() => {
         opacity: 0,
         y: 50,
         duration: 0.8,
-        delay: 0.2
+        delay: 0.2,
+        ease: 'power2.out'
     })
 
-    // content2 动画
+    // content2 动画 - 参照其他页面统一动画效果
     gsap.from('.content2 .title', {
         scrollTrigger: {
             trigger: '.content2 .title',
@@ -271,18 +275,29 @@ onMounted(() => {
         },
         opacity: 0,
         y: 50,
-        duration: 0.8
+        duration: 0.8,
+        ease: 'power2.out'
     })
 
-    gsap.from('.content2 .advantage', {
-        scrollTrigger: {
-            trigger: '.content2 .intro',
-            start: 'top 80%'
-        },
-        opacity: 0,
-        y: 50,
-        duration: 0.8,
-        stagger: 0.1
+    // 为每个优势项添加动画 - 参照其他页面统一动画效果
+    advantageRefs.value.forEach((el, index) => {
+        gsap.fromTo(el,
+            { 
+                opacity: 0, 
+                y: 50
+            },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.6,
+                delay: index * 0.1,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: '.content2 .intro',
+                    start: 'top 80%'
+                }
+            }
+        )
     })
 
     // content3 动画
@@ -296,7 +311,6 @@ onMounted(() => {
         duration: 0.8
     })
 
-    // 使用fromTo方法解决动画与浮动效果冲突
     const conditionItems = document.querySelectorAll('.content3 .condition-item');
     conditionItems.forEach((item, index) => {
         gsap.fromTo(item,
@@ -309,7 +323,7 @@ onMounted(() => {
                 ease: 'power2.out',
                 scrollTrigger: {
                     trigger: '.content3 .intro',
-                    start: 'top 80%'  // 元素进入视口80%位置时触发
+                    start: 'top 80%'  
                 },
                 onComplete: function() {
                     gsap.set(item, { clearProps: "x,opacity,transition" })
@@ -318,7 +332,7 @@ onMounted(() => {
         );
     });
 
-    // content4 动画
+    // content4 动画 - 参照其他页面统一动画效果
     gsap.from('.content4 .title', {
         scrollTrigger: {
             trigger: '.content4 .title',
@@ -326,18 +340,29 @@ onMounted(() => {
         },
         opacity: 0,
         y: 50,
-        duration: 0.8
+        duration: 0.8,
+        ease: 'power2.out'
     })
 
-    gsap.from('.content4 .advantage', {
-        scrollTrigger: {
-            trigger: '.content4 .intro',
-            start: 'top 80%'
-        },
-        opacity: 0,
-        y: 50,
-        duration: 0.8,
-        stagger: 0.1
+    // 为每个注册流程项添加动画 - 参照其他页面统一动画效果
+    registrationProcessRefs.value.forEach((el, index) => {
+        gsap.fromTo(el,
+            { 
+                opacity: 0, 
+                y: 50
+            },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.6,
+                delay: index * 0.1,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: '.content4 .intro',
+                    start: 'top 80%'
+                }
+            }
+        )
     })
 
     // content5 动画
@@ -351,7 +376,6 @@ onMounted(() => {
         duration: 0.8
     })
 
-    // 使用fromTo方法解决动画与浮动效果冲突
     const content5Advantages = document.querySelectorAll('.content5 .advantage');
     content5Advantages.forEach((item, index) => {
         gsap.fromTo(item,
