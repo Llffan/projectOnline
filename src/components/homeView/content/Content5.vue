@@ -5,7 +5,7 @@
             <div class="cover_content">
                 <div class="content_desc">
                     <p ref="introRef">十洲通提供全球离岸注册地平台超过60多个国家及地区，专注于离岸公司注册、开户、年审、做账审计报税、商标品牌保护。</p>
-                    <div ref="bottonRef" class="button">了解详细<p class="p1">→</p></div>
+                    <div ref="bottonRef" class="button" @click="router.push('/company/hk')" style="cursor: pointer;">了解详细<p class="p1">→</p></div>
                 </div>
                 <div class="content_body">
                     <div class="num_display" ref="coverRef">
@@ -64,11 +64,14 @@
 
 <script setup>
 import '@/css/homeView/content/Content5.css'
+import { useRouter } from 'vue-router'
 import { ref, onMounted } from 'vue'
 import { gsap } from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
+
+const router = useRouter()
 
 let num_display = ref([
     {

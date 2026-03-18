@@ -3,20 +3,20 @@
         <div class="bottom_content">
             <div class="bottom_link">
                 <div class="link">
-                     <a href="">首页</a>
-                     <a href="">全球公司注册</a>
-                     <a href="">海外银行开户</a>
+                     <router-link to="/">首页</router-link>
+                     <router-link to="/company/hk">全球公司注册</router-link>
+                     <router-link to="/bank/hk/constructions">海外银行开户</router-link>
                 </div>
                 <div class="link">
-                    <a href="">国际公证认证</a>
-                    <a href="">跨境知识产权</a>
-                    <a href="">海外投资管理</a>
+                    <router-link to="/notary/hague">国际公证认证</router-link>
+                    <router-link to="/ip/patent">跨境知识产权</router-link>
+                    <router-link to="/secretary/hk-odi">海外投资管理</router-link>
                 </div>
                 <div class="contact_us">
                     <p>联系我们</p>
                     <p>地址：深圳市宝安区中粮商务公园2栋 1317</p>
                     <p>邮箱：ada@shiztong.com</p>
-                    <p>电话：400-930-8099</p>
+                    <p>电话：13380785236</p>
                 </div>
                 <div class="link_img">
                     <img src="@/assets/img/联系我们.jpg" alt="联系我们" style="width: 100%; height: 100%; object-fit: contain;">

@@ -162,7 +162,6 @@
                 </div>
             </div>
             <div class="contact-info">
-                <div class="phone">400-930-8099</div>
                 <div class="website"><a href="/">中文</a></div>
             </div>
         </div>

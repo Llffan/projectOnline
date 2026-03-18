@@ -13,7 +13,7 @@ import PatentContent1 from '@/components_en/ip/patent/PatentContent1.vue'
 import PatentContent2 from '@/components_en/ip/patent/PatentContent2.vue'
 import Top from '@/components_en/common/Top.vue'
 import Link from '@/components_en/ip/common/Link.vue'
-import Bottom1 from '@/components/homeView/bottom/Bottom1.vue'
+import Bottom1 from '@/components_en/homeView/bottom/Bottom1.vue'
 </script>
 
 <style scoped>

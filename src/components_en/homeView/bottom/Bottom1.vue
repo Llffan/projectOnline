@@ -3,20 +3,20 @@
         <div class="bottom_content">
             <div class="bottom_link">
                 <div class="link">
-                     <a href="">Home</a>
-                     <a href="">Global Company Registration</a>
-                     <a href="">Overseas Bank Account Opening</a>
+                     <router-link to="/en">Home</router-link>
+                     <router-link to="/company_en/hk">Global Company Registration</router-link>
+                     <router-link to="/en/bank/hk/constructions">Overseas Bank Account Opening</router-link>
                 </div>
                 <div class="link">
-                    <a href="">International Notary & Apostille</a>
-                    <a href="">Cross-border Intellectual Property</a>
-                    <a href="">Overseas Investment Management</a>
+                    <router-link to="/en/notary/hague">International Notary & Apostille</router-link>
+                    <router-link to="/en/ip/patent">Cross-border Intellectual Property</router-link>
+                    <router-link to="/secretary_en/hk-odi">Overseas Investment Management</router-link>
                 </div>
                 <div class="contact_us">
                     <p>Contact Us</p>
                     <p>Address: Room 1317, Building 2, COFCO Business Park, Bao'an District, Shenzhen</p>
                     <p>Email: ada@shiztong.com</p>
-                    <p>Phone: 400-930-8099</p>
+                    <p>Phone: 13380785236</p>
                 </div>
                 <div class="link_img">
                     <img src="@/assets/img/联系我们.jpg" alt="Contact Us" style="width: 100%; height: 100%; object-fit: contain;">

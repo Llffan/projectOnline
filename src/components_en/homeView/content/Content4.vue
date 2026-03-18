@@ -48,7 +48,7 @@
             <p class="p3">Secretarial services are essential for offshore companies to ensure compliance and gain professional support.<br />Choose SHI ZHOU TONG to handle the paperwork securely, so you can focus entirely on core business development.</p>
 
             <div class="scoll_content3" ref="accountBodyRef">
-                <div class="content3_body" v-for="(item, i) in content3_body" :key="item" :ref="el => setAccountCardRef(el, i)">
+                <div class="content3_body" v-for="(item, i) in content3_body" :key="i" :ref="el => setAccountCardRef(el, i)" @click="router.push(item.path)" style="cursor: pointer;">
                     <img :src="item.img" alt="">
                     <p>{{item.title}}</p>
                     <span>{{item.desc}}</span>
@@ -60,9 +60,12 @@
 
 <script setup>
 import '@/css_en/homeView/content/Content4.css'
+import { useRouter } from 'vue-router'
 import { stepsEmits } from 'element-plus'
 import { ref, onMounted } from 'vue'
 import gsap from 'gsap'
+
+const router = useRouter()
 
 const features = [
     { title: 'Transparent Pricing', desc: 'Unified quote, no hidden fees', icon: '#icon-finance' },
@@ -159,25 +162,30 @@ onMounted(() => {
 
 let content3_body = ref([
     {
-        img: new URL('@/assets/img/account/1.png', import.meta.url).href,
+        img: new URL('@/assets/img/temp_img/5.jpg', import.meta.url).href,
         title: 'Global Company Annual Review',
-        desc: 'Ensure global compliance with our professional annual review services, handling all reports and tax declarations promptly.'
+        desc: 'Ensure global compliance with our professional annual review services, handling all reports and tax declarations promptly.',
+        path: '/secretary_en/overseas-annual'
     },{
         img: new URL('@/assets/img/account/2.png', import.meta.url).href,
         title: 'Hong Kong Business Services',
-        desc: 'Expert handling of HK company registration, corporate changes, and deregistration with deep local market knowledge.'
+        desc: 'Expert handling of HK company registration, corporate changes, and deregistration with deep local market knowledge.',
+        path: '/secretary_en/hk-annual'
     },{
         img: new URL('@/assets/img/account/3.png', import.meta.url).href,
         title: 'Barcode Service',
-        desc: 'Obtain international product identifiers quickly through our one-stop barcode service for instant global market access.'
+        desc: 'Obtain international product identifiers quickly through our one-stop barcode service for instant global market access.',
+        path: '/secretary_en/barcode'
     },{
         img: new URL('@/assets/img/account/4.png', import.meta.url).href,
         title: 'Overseas Direct Investment Filing',
-        desc: 'Professional guidance for overseas investment filings, ensuring full compliance with all necessary department approvals.'
+        desc: 'Professional guidance for overseas investment filings, ensuring full compliance with all necessary department approvals.',
+        path: '/secretary_en/hk-odi'
     },{
         img: new URL('@/assets/img/company/2.png', import.meta.url).href,
         title: 'Company Deregistration & Restoration',
-        desc: 'Reliable support for complex company deregistration and restoration, expertly handling debt, tax, and creditor procedures.'
+        desc: 'Reliable support for complex company deregistration and restoration, expertly handling debt, tax, and creditor procedures.',
+        path: '/secretary_en/dissolution'
     }
 ])
 

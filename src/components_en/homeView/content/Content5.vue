@@ -5,7 +5,7 @@
             <div class="cover_content">
                 <div class="content_desc">
                     <p ref="introRef">SHI ZHOU TONG provides global offshore registration platforms in more than 60 countries and regions, focusing on offshore company registration, account opening, annual review, accounting & auditing, tax filing, and trademark brand protection.</p>
-                    <div ref="bottonRef" class="button">Details<p class="p1">→</p></div>
+                    <div ref="bottonRef" class="button" @click="router.push('/company_en/hk')" style="cursor: pointer;">Details<p class="p1">→</p></div>
                 </div>
                 <div class="content_body">
                     <div class="num_display" ref="coverRef">
@@ -64,11 +64,14 @@
 
 <script setup>
 import '@/css_en/homeView/content/Content5.css'
+import { useRouter } from 'vue-router'
 import { ref, onMounted } from 'vue'
 import { gsap } from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
+
+const router = useRouter()
 
 let num_display = ref([
     {

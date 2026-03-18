@@ -84,17 +84,6 @@
             position: relative;
             font-size: 18px;
         }
-        .phone::after {
-            content: "";
-            display: block;
-            width: 2px;
-            height: 16px;
-            background-color: #ddddbd;
-            position: absolute;
-            right: 0;
-            top: 25%;
-            transform: translateX(10px);
-        }
 
         .website {
             font-size: 14px;

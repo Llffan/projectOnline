@@ -37,7 +37,7 @@
         
         <!-- 开户 -->
         <div class="account_body" ref="accountBodyRef">
-            <div v-for="(item, i) in account_body" :key="item" :ref="el => setAccountCardRef(el, i)">
+            <div v-for="(item, i) in account_body" :key="i" :ref="el => setAccountCardRef(el, i)" @click="router.push(item.path)" style="cursor: pointer;">
                 <div>
                     <img :src="item.img" alt="">
                     <div>
@@ -57,8 +57,11 @@
 
 <script setup>
 import '@/css/homeView/content/Content3.css'
+import { useRouter } from 'vue-router'
 import { ref, onMounted } from 'vue'
 import gsap from 'gsap'
+
+const router = useRouter()
 
 const accountBodyRef = ref(null)
 const accountCardRefs = ref([])
@@ -154,19 +157,23 @@ const account_body = ref([
     {
         img: new URL('@/assets/img/account/香港.png', import.meta.url).href,
         title: '香港银行开户',
-        desc: '内地外资银行为在我国境内设立的外国独资银行机构，提供相较于中资银行更为完善和细致的金融服务。其业务范围广泛，涵盖各类国际银行业务，遵照各国银行法规及管理制度运营。'
+        desc: '内地外资银行为在我国境内设立的外国独资银行机构，提供相较于中资银行更为完善和细致的金融服务。其业务范围广泛，涵盖各类国际银行业务，遵照各国银行法规及管理制度运营。',
+        path: '/bank/hk/constructions'
     }, {
         img: new URL('@/assets/img/account/澳门.png', import.meta.url).href,
         title: '澳门银行开户',
-        desc: '澳门银行账户享有类似香港的金融自由度，无外汇管制且资本可自由流动。澳门金融机构网点分布密集，为客户提供便捷高效的操作体验和具有竞争力的融资成本。'
+        desc: '澳门银行账户享有类似香港的金融自由度，无外汇管制且资本可自由流动。澳门金融机构网点分布密集，为客户提供便捷高效的操作体验和具有竞争力的融资成本。',
+        path: '/bank/mo/icbc'
     }, {
         img: new URL('@/assets/img/account/新加坡.png', import.meta.url).href,
         title: '新加坡银行开户',
-        desc: '新加坡作为国际金融中心，其银行业不仅提供传统存贷款服务，更涵盖复杂的综合性金融解决方案。拥有新加坡银行账户有助于解决企业在当地的各类金融及商务难题。'
+        desc: '新加坡作为国际金融中心，其银行业不仅提供传统存贷款服务，更涵盖复杂的综合性金融解决方案。拥有新加坡银行账户有助于解决企业在当地的各类金融及商务难题。',
+        path: '/bank/sg/ocbc'
     }, {
         img: new URL('@/assets/img/account/美国.png', import.meta.url).href,
         title: '美国银行开户',
-        desc: '美国作为全球领先的国际金融中心，其银行业高度发达，为企业提供优惠政策支持。开设美国银行账户可便捷接收北美客户款项，实现即时到账且手续费低廉，同时提升企业国际形象与商业信誉。'
+        desc: '美国作为全球领先的国际金融中心，其银行业高度发达，为企业提供优惠政策支持。开设美国银行账户可便捷接收北美客户款项，实现即时到账且手续费低廉，同时提升企业国际形象与商业信誉。',
+        path: '/bank/us/cbi'
     }
 ])
 </script>

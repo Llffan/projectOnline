@@ -37,7 +37,7 @@
         
         <!-- 开户 -->
         <div class="account_body" ref="accountBodyRef">
-            <div v-for="(item, i) in account_body" :key="item" :ref="el => setAccountCardRef(el, i)">
+            <div v-for="(item, i) in account_body" :key="i" :ref="el => setAccountCardRef(el, i)" @click="router.push(item.path)" style="cursor: pointer;">
                 <div>
                     <img :src="item.img" alt="">
                     <div>
@@ -57,8 +57,11 @@
 
 <script setup>
 import '@/css_en/homeView/content/Content3.css'
+import { useRouter } from 'vue-router'
 import { ref, onMounted } from 'vue'
 import gsap from 'gsap'
+
+const router = useRouter()
 
 const accountBodyRef = ref(null)
 const accountCardRefs = ref([])
@@ -154,19 +157,23 @@ const account_body = ref([
     {
         img: new URL('@/assets/img/account/香港.png', import.meta.url).href,
         title: 'Hong Kong Bank Account',
-        desc: 'Offers comprehensive international financial services under mature banking laws, providing flexible business solutions and free capital flow.'
+        desc: 'Offers comprehensive international financial services under mature banking laws, providing flexible business solutions and free capital flow.',
+        path: '/en/bank/hk/constructions'
     }, {
         img: new URL('@/assets/img/account/澳门.png', import.meta.url).href,
         title: 'Macao Bank Account',
-        desc: 'Enjoy high financial freedom with no foreign exchange controls, offering free capital mobility and highly competitive financing costs.'
+        desc: 'Enjoy high financial freedom with no foreign exchange controls, offering free capital mobility and highly competitive financing costs.',
+        path: '/en/bank/mo/icbc'
     }, {
         img: new URL('@/assets/img/account/新加坡.png', import.meta.url).href,
         title: 'Singapore Bank Account',
-        desc: 'Provides both traditional and complex financial solutions to help global businesses efficiently manage international commercial needs.'
+        desc: 'Provides both traditional and complex financial solutions to help global businesses efficiently manage international commercial needs.',
+        path: '/en/bank/sg/ocbc'
     }, {
         img: new URL('@/assets/img/account/美国.png', import.meta.url).href,
         title: 'US Bank Account',
-        desc: 'Enjoy advanced banking benefits, enabling quick North American payment collection, instant settlements, and enhanced commercial credibility.'
+        desc: 'Enjoy advanced banking benefits, enabling quick North American payment collection, instant settlements, and enhanced commercial credibility.',
+        path: '/en/bank/us/cbi'
     }
 ])
 </script>

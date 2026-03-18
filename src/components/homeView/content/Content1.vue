@@ -16,7 +16,10 @@
                <div class="carousel-slide slide-1">
                   <img :src="images[0]" alt="" draggable="false"/>
                   <div class="slide-content">
-                    <h1 class="main-title animated-element" ref="mainTitleRef">十洲通</h1>
+                    <div class="title-container animated-element" ref="mainTitleRef">
+                      <h1 class="main-title">十洲通</h1>
+                      <div class="license-info">香港公司秘书服务牌照（TCSP License）TC010744</div>
+                    </div>
                     <h2 class="sub-title animated-element" ref="subTitleRef">全球企业服务专业机构</h2>
                     <p class="description animated-element" ref="descriptionRef">
                       聚焦全球公司注册与海外银行开户，<br/>
@@ -24,7 +27,7 @@
                       打通跨境经营链路
                     </p>
                     <div class="button-container animated-element" ref="buttonContainerRef">
-                      <button class="learn-more-btn" ref="learnMoreBtnRef">了解更多</button>
+                      <button class="learn-more-btn" ref="learnMoreBtnRef" @click="router.push('/company/hk')">了解更多</button>
                     </div>
                   </div>
                </div>
@@ -33,7 +36,10 @@
                <div class="carousel-slide slide-2">
                   <img :src="images[1]" alt="" draggable="false"/>
                   <div class="slide-content">
-                    <h1 class="main-title animated-element" ref="mainTitleRef2">十洲通</h1>
+                    <div class="title-container animated-element" ref="mainTitleRef2">
+                       <h1 class="main-title">十洲通</h1>
+                       <div class="license-info">香港公司秘书服务牌照（TCSP License）TC010744</div>
+                    </div>
                     <h2 class="sub-title animated-element" ref="subTitleRef2">全球企业服务专业机构</h2>
                     <p class="description animated-element" ref="descriptionRef2">
                       聚焦全球公司注册与海外银行开户，<br/>
@@ -41,7 +47,7 @@
                       打通跨境经营链路
                     </p>
                     <div class="button-container animated-element" ref="buttonContainerRef2">
-                      <button class="learn-more-btn" ref="learnMoreBtnRef2">了解更多</button>
+                      <button class="learn-more-btn" ref="learnMoreBtnRef2" @click="router.push('/company/hk')">了解更多</button>
                     </div>
                   </div>
                </div>
@@ -52,9 +58,12 @@
 </template>
 
 <script setup>
+import { useRouter } from 'vue-router'
 import { ref, onMounted, onUnmounted, nextTick } from 'vue'
 import '@/css/homeView/content/Content1.css'
 import gsap from 'gsap'
+
+const router = useRouter()
 
 const images = ref([
   new URL('@/assets/img/background-img2.png', import.meta.url).href,

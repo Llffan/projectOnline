@@ -16,7 +16,10 @@
                <div class="carousel-slide slide-1">
                   <img :src="images[0]" alt="" draggable="false"/>
                   <div class="slide-content">
-                    <h1 class="main-title animated-element" ref="mainTitleRef">SHI ZHOU TONG</h1>
+                    <div class="title-container animated-element" ref="mainTitleRef">
+                      <h1 class="main-title">SHI ZHOU TONG</h1>
+                      <div class="license-info">Hong Kong TCSP License No. TC010744</div>
+                    </div>
                     <h2 class="sub-title animated-element" ref="subTitleRef">Global Corporate Services Expert</h2>
                     <p class="description animated-element" ref="descriptionRef">
                       Focusing on global company registration and overseas bank account opening,<br/>
@@ -24,7 +27,7 @@
                       and unblocking cross-border business operations.
                     </p>
                     <div class="button-container animated-element" ref="buttonContainerRef">
-                      <button class="learn-more-btn" ref="learnMoreBtnRef">Learn More</button>
+                      <button class="learn-more-btn" ref="learnMoreBtnRef" @click="router.push('/company_en/hk')">Learn More</button>
                     </div>
                   </div>
                </div>
@@ -33,7 +36,10 @@
                <div class="carousel-slide slide-2">
                   <img :src="images[1]" alt="" draggable="false"/>
                   <div class="slide-content">
-                    <h1 class="main-title animated-element" ref="mainTitleRef2">SHI ZHOU TONG</h1>
+                    <div class="title-container animated-element" ref="mainTitleRef2">
+                      <h1 class="main-title">SHI ZHOU TONG</h1>
+                      <div class="license-info">Hong Kong TCSP License No. TC010744</div>
+                    </div>
                     <h2 class="sub-title animated-element" ref="subTitleRef2">Global Corporate Services Expert</h2>
                     <p class="description animated-element" ref="descriptionRef2">
                       Focusing on global company registration and overseas bank account opening,<br/>
@@ -41,7 +47,7 @@
                       and unblocking cross-border business operations.
                     </p>
                     <div class="button-container animated-element" ref="buttonContainerRef2">
-                      <button class="learn-more-btn" ref="learnMoreBtnRef2">Learn More</button>
+                      <button class="learn-more-btn" ref="learnMoreBtnRef2" @click="router.push('/company_en/hk')">Learn More</button>
                     </div>
                   </div>
                </div>
@@ -52,9 +58,12 @@
 </template>
 
 <script setup>
+import { useRouter } from 'vue-router'
 import { ref, onMounted, onUnmounted, nextTick } from 'vue'
 import '@/css_en/homeView/content/Content1.css'
 import gsap from 'gsap'
+
+const router = useRouter()
 
 const images = ref([
   new URL('@/assets/img/background-img2.png', import.meta.url).href,

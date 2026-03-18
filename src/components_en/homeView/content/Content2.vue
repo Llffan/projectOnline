@@ -24,7 +24,7 @@
                     <el-carousel ref="companyCarousel" trigger="click" :autoplay="false" indicator-position="none" arrow="never" height="400px" @change="onCarouselChange">
                         <el-carousel-item v-for="(group, idx) in displayCompanies" :key="idx">
                             <div class="card-group" ref="cardRef">
-                                <div class="company-card" v-for="(item, i) in group" :key="i" :style="{ backgroundImage: `url(${item.img})`}" >
+                                <div class="company-card" v-for="(item, i) in group" :key="i" :style="{ backgroundImage: `url(${item.img})`}" @click="router.push(item.path)" style="cursor: pointer;">
                                     <div class="company-card-body" :ref="el => setCardBodyRef(el, idx, i)">
                                         <div class="card-content">
                                             <div class="card-title">{{ item.name }}</div>
@@ -46,10 +46,12 @@
 
 <script setup> 
 import '@/css_en/homeView/content/Content2.css'
+import { useRouter } from 'vue-router'
 import { ref, onMounted } from 'vue'
 import { computed } from 'vue'
 import gsap from 'gsap'
 
+const router = useRouter()
 const isSwitching = ref(false)
 const switchDuration = 500 // ms，可根据轮播动画实际时间调整
 const currentIndex = ref(0)
@@ -177,41 +179,50 @@ const Companies = ref([
     {
         name: 'Hong Kong Company Registration',
         description: 'As a global financial hub, HK offers a mature legal system, low taxes, and acts as a bridge connecting China to the world with free capital flow.',
-        img: new URL('@/assets/img/company/香港.jpg', import.meta.url).href
+        img: new URL('@/assets/img/company/香港.jpg', import.meta.url).href,
+        path: '/company_en/hk'
     },{
         name: 'Macao Company Registration',
         description: 'A renowned tourism center blending Eastern and Western cultures, Macao features a simple, transparent tax system for ideal Asian commercial services.',
-        img: new URL('@/assets/img/company/澳门.jpg', import.meta.url).href
+        img: new URL('@/assets/img/company/澳门.jpg', import.meta.url).href,
+        path: '/company_en/mo'
     },{
         name: 'US Company Registration',
         description: 'As the world\'s largest economy, the US provides a robust legal framework and diverse markets with various tax and commercial advantages across states.',
-        img: new URL('@/assets/img/company/1.png', import.meta.url).href
+        img: new URL('@/assets/img/company/1.png', import.meta.url).href,
+        path: '/company_en/us'
     },{
         name: 'Singapore Company Registration',
         description: 'The economic heart of Southeast Asia, Singapore attracts global investors with a stable political environment, advanced finance, and prime location.',
-        img: new URL('@/assets/img/company/新加坡.png', import.meta.url).href
+        img: new URL('@/assets/img/company/新加坡.png', import.meta.url).href,
+        path: '/company_en/sg'
     },
     {
         name: 'Japan Company Registration',
         description: 'The world\'s 3rd largest economy, Japan excels in advanced tech and strict IP protection, serving as a vital Asian R&D and investment center.',
-        img: new URL('@/assets/img/company/日本.jpg', import.meta.url).href
+        img: new URL('@/assets/img/company/日本.jpg', import.meta.url).href,
+        path: '/company_en/jp'
     },{
         name: 'South Korea Company Registration',
         description: 'An Asian Tiger with strong manufacturing and innovative tech, South Korea provides an open, transparent business environment for foreign investment.',
-        img: new URL('@/assets/img/company/韩国.jpg', import.meta.url).href
+        img: new URL('@/assets/img/company/韩国.jpg', import.meta.url).href,
+        path: '/company_en/kr'
     },{
         name: 'UK Company Registration',
         description: 'A premier global financial hub, the UK boasts a rich business tradition and sophisticated legal system, connecting Europe to global markets.',
-        img: new URL('@/assets/img/company/英国.png', import.meta.url).href
+        img: new URL('@/assets/img/company/英国.png', import.meta.url).href,
+        path: '/company_en/uk'
     },{
         name: 'Germany Company Registration',
         description: 'Europe\'s largest economy, Germany is famed globally for its advanced manufacturing, high-quality engineering, and stable business climate.',
-        img: new URL('@/assets/img/company/德国.png', import.meta.url).href
+        img: new URL('@/assets/img/company/德国.png', import.meta.url).href,
+        path: '/company_en/de'
     },
     {
         name: 'France Company Registration',
         description: 'A major European economy with excellent infrastructure, France serves as a vital hub linking European, African, and Middle Eastern markets.',
-        img: new URL('@/assets/img/company/法国.png', import.meta.url).href
+        img: new URL('@/assets/img/company/法国.png', import.meta.url).href,
+        path: '/company_en/fr'
     }
 ])
 </script>

@@ -13,7 +13,7 @@ import DomesticTrademarkContent1 from '@/components_en/ip/domestic/DomesticTrade
 import DomesticTrademarkContent2 from '@/components_en/ip/domestic/DomesticTrademark_content2.vue'
 import Top from '@/components_en/common/Top.vue'
 import Link from '@/components_en/ip/common/Link.vue'
-import Bottom1 from '@/components/homeView/bottom/Bottom1.vue'
+import Bottom1 from '@/components_en/homeView/bottom/Bottom1.vue'
 </script>
 
 <style scoped>
