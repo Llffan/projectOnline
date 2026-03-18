@@ -104,14 +104,14 @@ import { onMounted, nextTick } from 'vue'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import '@/css_en/notary/hk/HkNotaryContent2.css'
-import ChooseUs from '@/components_en/bank_company/common/ChooseUs.vue'
+import ChooseUs from '@/components_en/notary/common/ChooseUs.vue'
 gsap.registerPlugin(ScrollTrigger)
 
 const processSteps = [
     { iconId: '#icon-communication', title: 'Contact Us', description: 'Reach out via phone, WhatsApp, email, or website inquiry to share your needs. We will tailor a notarization solution for you.' },
-    { iconId: '#icon-notes', title: 'Confirm Documents', description: 'Send the relevant documents to be notarized for confirmation, then arrange agreement signing and payment. Original documents, scanned copies, or video signing may be required.' },
+    { iconId: '#icon-notes', title: 'Confirm Documents', description: 'Submit docs for review, sign & pay. Supports originals, scans, or video.' },
     { iconId: '#icon-audit', title: 'Notarization in Progress', description: 'We handle the entire notarization and legalization process for you, keeping you updated on progress at all times.' },
-    { iconId: '#icon-airplane', title: 'Await Delivery', description: 'After completing the notarized documents, we arrange delivery via SF Express, DHL, or other couriers based on your destination.' }
+    { iconId: '#icon-airplane', title: 'Await Delivery', description: 'Completed docs are delivered via SF, DHL, or global express based on your location.' }
 ]
 
 onMounted(async () => {

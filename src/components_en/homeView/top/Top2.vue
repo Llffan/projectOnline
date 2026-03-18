@@ -94,7 +94,7 @@
                     </div>
                 </div>
                 <div class="nav-dropdown nav-dropdown-3">
-                    <router-link to="/bank" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': isBankRoute }">Bank Account Opening</router-link>
+                    <router-link to="/en/bank/hk/personal" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': isBankRoute }">Bank Account Opening</router-link>
                     <div class="dropdown-menu menu-bank">
                         <div class="region-group">
                             <div class="region-title">HK Bank Account</div>
@@ -149,20 +149,20 @@
                     </div>
                 </div>
                 <div class="nav-dropdown nav-dropdown-5">
-                    <router-link to="/intellectual/domestic-trademark" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': isIpRoute }">Intellectual Property Services</router-link>
+                    <router-link to="/en/ip/patent" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': isIpRoute }">Intellectual Property Services</router-link>
                     <div class="dropdown-menu menu-ip">
                         <div class="region-group">
                             <div class="region-countries menu-ip-countries">
-                                <router-link to="/intellectual/domestic-trademark">Domestic Trademarks</router-link>
-                                <router-link to="/intellectual/international-trademark">International Trademarks</router-link>
-                                <router-link to="/intellectual/domestic-patent">Domestic Patents</router-link>
+                                <router-link to="/en/ip/patent">International Patents</router-link>
+                                <router-link to="/en/intellectual/international-trademark">International Trademarks</router-link>
+                                <router-link to="/en/intellectual/domestic-trademark">Domestic Trademarks</router-link>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="contact-info">
-                <div class="phone">400-888-8888</div>
+                <div class="phone">400-930-8099</div>
                 <div class="website"><a href="/">中文</a></div>
             </div>
         </div>
@@ -264,6 +264,9 @@ const countryToRegionMap = {
   '/intellectual/domestic-trademark': 'ip-service',
   '/intellectual/international-trademark': 'ip-service',
   '/intellectual/domestic-patent': 'ip-service',
+  '/en/intellectual/domestic-trademark': 'ip-service',
+  '/en/intellectual/international-trademark': 'ip-service',
+  '/en/ip/patent': 'ip-service',
 
   // 公证认证
   '/notary/hague': 'cert-global',
@@ -288,8 +291,8 @@ const isCompanyRoute = computed(() => {
 })
 const isSecretaryRoute = computed(() => route.path.startsWith('/secretary_en'));
 const isBankRoute = computed(() => route.path.startsWith('/bank') || route.path.startsWith('/en/bank'));
-const isCertRoute = computed(() => route.path.startsWith('/notary'));
-const isIpRoute = computed(() => route.path.startsWith('/intellectual'));
+const isCertRoute = computed(() => route.path.startsWith('/notary') || route.path.startsWith('/en/notary'));
+const isIpRoute = computed(() => route.path.startsWith('/intellectual') || route.path.startsWith('/en/intellectual') || route.path.startsWith('/en/ip'));
 
 // 计算当前激活的区域
 const activeRegion = computed(() => {

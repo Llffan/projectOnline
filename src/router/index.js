@@ -864,6 +864,11 @@ const router = createRouter({
       component: () => import("@/views/notary/HagueNotary.vue"),
     },
     {
+      path: "/notary/embassy",
+      name: "embassy",
+      component: () => import("@/views/notary/EmbassyNotary.vue"),
+    },
+    {
       path: "/notary/hk",
       name: "notary_hk",
       component: () => import("@/views/notary/HkNotary.vue"),
@@ -894,6 +899,11 @@ const router = createRouter({
       component: () => import("@/views_en/notary/HagueNotary.vue"),
     },
     {
+      path: "/en/notary/embassy",
+      name: "embassy_en",
+      component: () => import("@/views_en/notary/EmbassyNotary.vue"),
+    },
+    {
       path: "/en/notary/hk",
       name: "notary_hk_en",
       component: () => import("@/views_en/notary/HkNotary.vue"),
@@ -917,6 +927,36 @@ const router = createRouter({
       path: "/en/notary/sg",
       name: "notary_sg_en",
       component: () => import("@/views_en/notary/SgNotary.vue"),
+    },
+    {
+      path: "/ip/patent",
+      name: "patent",
+      component: () => import("@/views/ip/Patent.vue"),
+    },
+    {
+      path: "/intellectual/domestic-trademark",
+      name: "domestic_trademark",
+      component: () => import("@/views/ip/DomesticTrademark.vue"),
+    },
+    {
+      path: "/intellectual/international-trademark",
+      name: "international_trademark",
+      component: () => import("@/views/ip/IntlTrademark.vue"),
+    },
+    {
+      path: "/en/intellectual/domestic-trademark",
+      name: "domestic_trademark_en",
+      component: () => import("@/views_en/ip/DomesticTrademark.vue"),
+    },
+    {
+      path: "/en/intellectual/international-trademark",
+      name: "international_trademark_en",
+      component: () => import("@/views_en/ip/IntlTrademark.vue"),
+    },
+    {
+      path: "/en/ip/patent",
+      name: "patent_en",
+      component: () => import("@/views_en/ip/Patent.vue"),
     },
   ],
   scrollBehavior(to, from, savedPosition) {

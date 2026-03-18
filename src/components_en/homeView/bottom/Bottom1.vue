@@ -14,12 +14,12 @@
                 </div>
                 <div class="contact_us">
                     <p>Contact Us</p>
-                    <p>Address: Room 1413, Block A, Zhongguan Times Square, Nanshan District, Shenzhen</p>
-                    <p>Email: yjx@yicomply.com</p>
+                    <p>Address: Room 1317, Building 2, COFCO Business Park, Bao'an District, Shenzhen</p>
+                    <p>Email: ada@shiztong.com</p>
                     <p>Phone: 400-930-8099</p>
                 </div>
                 <div class="link_img">
-
+                    <img src="@/assets/img/联系我们.jpg" alt="Contact Us" style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
             </div>
         </div>

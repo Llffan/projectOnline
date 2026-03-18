@@ -125,7 +125,7 @@ import { ref, onMounted, nextTick } from 'vue'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import '@/css_en/notary/hague/HagueNotary_content2.css'
-import ChooseUs from '@/components_en/bank_company/common/ChooseUs.vue'
+import ChooseUs from '@/components_en/notary/common/ChooseUs.vue'
 
 gsap.registerPlugin(ScrollTrigger)
 

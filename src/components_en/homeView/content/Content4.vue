@@ -163,19 +163,19 @@ let content3_body = ref([
         title: 'Global Company Annual Review',
         desc: 'Ensure global compliance with our professional annual review services, handling all reports and tax declarations promptly.'
     },{
-        img: new URL('@/assets/img/account/1.png', import.meta.url).href,
+        img: new URL('@/assets/img/account/2.png', import.meta.url).href,
         title: 'Hong Kong Business Services',
         desc: 'Expert handling of HK company registration, corporate changes, and deregistration with deep local market knowledge.'
     },{
-        img: new URL('@/assets/img/account/1.png', import.meta.url).href,
+        img: new URL('@/assets/img/account/3.png', import.meta.url).href,
         title: 'Barcode Service',
         desc: 'Obtain international product identifiers quickly through our one-stop barcode service for instant global market access.'
     },{
-        img: new URL('@/assets/img/account/1.png', import.meta.url).href,
+        img: new URL('@/assets/img/account/4.png', import.meta.url).href,
         title: 'Overseas Direct Investment Filing',
         desc: 'Professional guidance for overseas investment filings, ensuring full compliance with all necessary department approvals.'
     },{
-        img: new URL('@/assets/img/account/1.png', import.meta.url).href,
+        img: new URL('@/assets/img/company/2.png', import.meta.url).href,
         title: 'Company Deregistration & Restoration',
         desc: 'Reliable support for complex company deregistration and restoration, expertly handling debt, tax, and creditor procedures.'
     }

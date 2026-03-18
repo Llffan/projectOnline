@@ -1,21 +1,19 @@
 <template>
-    <div class="maintenance_guide content3_1">
-        <div class="title">
-            Overseas Account Maintenance Guide
-        </div>
-        <div class="intro">
-            <div v-for="(item, index) in maintenanceItems" :key="index" class="maintenance-item">
-                <div class="icon_box">
-                    <svg class="icon" aria-hidden="true">
-                        <use :xlink:href="item.iconId"></use>
-                    </svg>
-                </div>
-                <div class="text_box">
-                    <div class="item-title">{{ item.title }}</div>
-                    <div class="item-desc">
-                        <p v-for="(point, pIndex) in item.points" :key="pIndex">
-                            {{ point }}
-                        </p>
+    <div class="maintenance_guide">
+        <div class="content_box1">
+            <div class="title">
+                Overseas Account Maintenance Guide
+            </div>
+            <div class="intro">
+                <div class="materials-grid">
+                    <div class="material-card" v-for="(item, index) in maintenanceItems" :key="index">
+                        <div class="card-idx">{{ index + 1 }}</div>
+                        <div class="card-title">{{ item.title }}</div>
+                        <div class="card-desc">
+                            <p v-for="(point, pIndex) in item.points" :key="pIndex">
+                                {{ point }}
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

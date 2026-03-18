@@ -55,7 +55,7 @@
                     </div>
                 </div>
                 <div class="nav-dropdown nav-dropdown-2">
-                    <router-link to="/secretary" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': route.path.startsWith('secretary/hk-annual') }">秘书服务</router-link>
+                    <router-link to="/secretary/hk-annual" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': route.path.startsWith('secretary/hk-annual') }">秘书服务</router-link>
                     <div class="dropdown-menu menu-secretary">
                         <div class="region-group">
                             <div class="region-title">公司年审服务</div>
@@ -92,7 +92,7 @@
                     </div>
                 </div>
                 <div class="nav-dropdown nav-dropdown-3">
-                    <router-link to="/bank" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': route.path.startsWith('/bank') }">银行开户</router-link>
+                    <router-link to="/bank/hk/personal" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': route.path.startsWith('/bank') }">银行开户</router-link>
                     <div class="dropdown-menu menu-bank">
                         <div class="region-group">
                             <div class="region-title">香港银行开户</div>
@@ -125,7 +125,7 @@
                     </div>
                 </div>
                  <div class="nav-dropdown nav-dropdown-4">
-                    <router-link to="/notary" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': route.path.startsWith('/notary') }">公证认证</router-link>
+                    <router-link to="/notary/hague" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': route.path.startsWith('/notary') }">公证认证</router-link>
                     <div class="dropdown-menu menu-cert">
                         <div class="region-group">
                             <div class="region-title">国际认证</div>
@@ -147,20 +147,20 @@
                     </div>
                 </div>
                 <div class="nav-dropdown nav-dropdown-5">
-                    <router-link to="/intellectual" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': route.path.startsWith('/intellectual') }">知识产权服务</router-link>
+                    <router-link to="/ip/patent" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': route.path.startsWith('/intellectual') || route.path.startsWith('/ip') }">知识产权服务</router-link>
                     <div class="dropdown-menu menu-ip">
                         <div class="region-group">
                             <div class="region-countries menu-ip-countries">
-                                <router-link to="/intellectual/domestic-trademark">国内商标服务</router-link>
+                                <router-link to="/ip/patent">国际专利服务</router-link>
                                 <router-link to="/intellectual/international-trademark">国际商标服务</router-link>
-                                <router-link to="/intellectual/domestic-patent">国内专利服务</router-link>
+                                <router-link to="/intellectual/domestic-trademark">国内商标服务</router-link>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="contact-info">
-                <div class="phone">400-888-8888</div>
+                <div class="phone">400-930-8099</div>
                 <div class="website"><a href="/en">English</a></div>
             </div>
         </div>
@@ -221,7 +221,7 @@ const countryToRegionMap = {
   // 知识产权服务
   '/intellectual/domestic-trademark': 'ip-service',
   '/intellectual/international-trademark': 'ip-service',
-  '/intellectual/domestic-patent': 'ip-service'
+  '/ip/patent': 'ip-service'
 }
 
 // 核心修复：确保路径以 '/company' 开头，并且路径本身不等于 '/' 或其他非公司路由

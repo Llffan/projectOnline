@@ -14,12 +14,12 @@
                 </div>
                 <div class="contact_us">
                     <p>联系我们</p>
-                    <p>地址：深圳市南山区众冠时代广场A座1413</p>
-                    <p>邮箱：yjx@yicomply.com</p>
+                    <p>地址：深圳市宝安区中粮商务公园2栋 1317</p>
+                    <p>邮箱：ada@shiztong.com</p>
                     <p>电话：400-930-8099</p>
                 </div>
                 <div class="link_img">
-
+                    <img src="@/assets/img/联系我们.jpg" alt="联系我们" style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
             </div>
         </div>

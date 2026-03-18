@@ -162,19 +162,19 @@ let content3_body = ref([
         title: '全球公司年审',
         desc: '专业团队提供全球公司年审服务，确保您的公司始终符合各地法规要求，及时处理年度报告、财务申报等事务，让您专注于核心业务发展！'
     },{
-        img: new URL('@/assets/img/account/1.png', import.meta.url).href,
+        img: new URL('@/assets/img/account/2.png', import.meta.url).href,
         title: '香港业务服务',
         desc: '深耕香港市场多年，精通公司法例及政府程序，快速响应政策变化，让您的香港公司注册、变更、注销等业务高效完成！'
     },{
-        img: new URL('@/assets/img/account/1.png', import.meta.url).href,
+        img: new URL('@/assets/img/account/3.png', import.meta.url).href,
         title: '条形码服务',
         desc: '一站式条形码服务，帮助企业快速获取国际通用商品标识，打通产品进入全球市场的编码关卡，轻松拓展海外业务！'
     },{
-        img: new URL('@/assets/img/account/1.png', import.meta.url).href,
+        img: new URL('@/assets/img/account/4.png', import.meta.url).href,
         title: '境外投资备案',
         desc: '协助企业完成境外投资备案手续，熟悉发改委、商务部、外管局等部门的审批流程，提供全程指导服务，确保您的海外投资合规顺利进行。'
     },{
-        img: new URL('@/assets/img/account/1.png', import.meta.url).href,
+        img: new URL('@/assets/img/company/2.png', import.meta.url).href,
         title: '公司注销与恢复',
         desc: '妥善处理公司注销与恢复事宜，专业解决债权债务、税务清算等复杂程序，为企业的战略调整提供可靠支持，确保流程合法合规。'
     }

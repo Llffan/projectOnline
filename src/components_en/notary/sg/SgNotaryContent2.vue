@@ -72,7 +72,7 @@ import { onMounted, nextTick } from 'vue'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import '@/css_en/notary/sg/SgNotaryContent2.css'
-import ChooseUs from '@/components_en/bank_company/common/ChooseUs.vue'
+import ChooseUs from '@/components_en/notary/common/ChooseUs.vue'
 gsap.registerPlugin(ScrollTrigger)
 const processSteps = [
     { iconId: '#icon-communication', title: 'Contact Us', description: 'Reach out via multiple channels to share your requirements. We will tailor a notarization solution for you.' },

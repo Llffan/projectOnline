@@ -142,7 +142,7 @@ import { onMounted, nextTick } from 'vue'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import '@/css/notary/hk/HkNotaryContent2.css'
-import ChooseUs from '@/components/bank_company/common/ChooseUs.vue'
+import ChooseUs from '@/components/notary/common/ChooseUs.vue'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -182,17 +182,23 @@ onMounted(async () => {
     ]
     
     sections.forEach(section => {
-        gsap.from(section, {
-            autoAlpha: 0,
-            y: 50,
-            duration: 0.8,
-            ease: 'power2.out',
-            scrollTrigger: {
-                trigger: section,
-                start: 'top 85%',
-                once: true
+        gsap.fromTo(section, 
+            {
+                autoAlpha: 0,
+                y: 50
+            },
+            {
+                autoAlpha: 1,
+                y: 0,
+                duration: 0.8,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: section,
+                    start: 'top 85%',
+                    once: true
+                }
             }
-        })
+        )
     })
 
     // Remove the old process-steps stagger animation because we use advantage class now.

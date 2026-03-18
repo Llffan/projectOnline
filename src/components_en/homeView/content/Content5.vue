@@ -45,8 +45,18 @@
                 <span>Why Choose SHI ZHOU TONG</span>
             </div>
             <p class="p3">Driven by customer needs and development concepts, to create one-stop international services.</p>
-            <div class="scoll_content2">
-                1
+            <div class="scoll_content2" ref="chooseUsRef">
+                <div v-for="(item, index) in advantages" :key="index" class="advantage" :ref="el => advantageRefs[index] = el">
+                    <div class="img">
+                        <img :src="item.imgSrc" :alt="item.title">
+                    </div>
+                    <div class="text1">
+                        {{ item.title }}
+                    </div>
+                    <div class="text2">
+                        {{ item.description }}
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -56,6 +66,9 @@
 import '@/css_en/homeView/content/Content5.css'
 import { ref, onMounted } from 'vue'
 import { gsap } from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 let num_display = ref([
     {
@@ -98,8 +111,33 @@ function startCount() {
 }
 
 const introRef = ref(null)
+const chooseUsRef = ref(null)
 const bottonRef = ref(null)
 const accountRef = ref(null)
+const advantageRefs = ref([])
+
+const advantages = [
+    {
+        imgSrc: new URL('@/assets/img/temp_img/1.jpg', import.meta.url).href,
+        title: 'Fast Track Service',
+        description: 'Foreign investors can enjoy fast-track services and apply electronically, completing registration in just two weeks.'
+    },
+    {
+        imgSrc: new URL('@/assets/img/temp_img/3.jpg', import.meta.url).href,
+        title: 'Rich Experience & Success Cases',
+        description: 'With SME development as its core goal, SHI ZHOU TONG has provided professional consulting for numerous enterprises.'
+    },
+    {
+        imgSrc: new URL('@/assets/img/temp_img/4.jpg', import.meta.url).href,
+        title: 'Professional Value-added Services',
+        description: 'Our overseas teams assist clients with comprehensive financial, tax, and legal services, ensuring high efficiency.'
+    },
+    {
+        imgSrc: new URL('@/assets/img/temp_img/5.jpg', import.meta.url).href,
+        title: 'Dedicated Business Support',
+        description: 'Consultants, accountants, and specialists form dedicated teams for one-on-one advisory and progress coordination.'
+    }
+]
 
 onMounted(() => {
     const observer = new window.IntersectionObserver((entries) => {
@@ -132,6 +170,7 @@ onMounted(() => {
             gsap.set(bottonRef.value, { y: 50, opacity: 0.3 })
         }
     })
+    
     if (introRef.value) introObserver.observe(introRef.value)
 
     const accountObserver = new window.IntersectionObserver((entries) => {
@@ -146,6 +185,28 @@ onMounted(() => {
         }
     })
     if (accountRef.value) accountObserver.observe(accountRef.value)
+
+    // Add ChooseUs style animations
+    advantageRefs.value.forEach((item, index) => {
+        if (!item) return
+        gsap.fromTo(item,
+            { y: 50, opacity: 0, transition: 'none' },
+            { 
+                y: 0, 
+                opacity: 1, 
+                duration: 0.8, 
+                delay: index * 0.1,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: '.scoll_content2',
+                    start: 'top 80%'
+                },
+                onComplete: function() {
+                    gsap.set(item, { clearProps: "y,transition" })
+                }
+            }
+        );
+    })
 })
 
 </script>

@@ -71,24 +71,7 @@
                     </div>
                 </div>
             </div>
-            <div class="content5">
-                <div class="title">
-                    我们的优势
-                </div>
-                <div class="intro">
-                    <div v-for="(item, index) in advantages" :key="index" class="advantage">
-                        <div class="img">
-                            <img :src="item.imgSrc" :alt="item.title">
-                        </div>
-                        <div class="text1">
-                            {{ item.title }}
-                        </div>
-                        <div class="text2">
-                            {{ item.description }}
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <ChooseUs />
             <div class="content6">
                 <div class="title">
                     注册澳门公司常见问题
@@ -123,6 +106,7 @@
 import { ref, onMounted, nextTick } from 'vue'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
+import ChooseUs from '@/components/company/common/ChooseUs.vue'
 // 保持导入路径不变
 import '@/css/company/mo/Mo_content2.css' 
 
@@ -188,28 +172,7 @@ const advantage = [
     }
 ]
 
-const advantages = [
-    {
-        imgSrc: new URL('@/assets/img/temp_img/1.jpg', import.meta.url).href,
-        title: '快速通道服务',
-        description: '外国投资者可享受快速通道服务，无纸化电子方式提交申请，仅需二周时间即可完成注册。'
-    },
-    {
-        imgSrc: new URL('@/assets/img/temp_img/3.jpg', import.meta.url).href,
-        title: '经验丰富，大量成功案例',
-        description: '十洲通以中小企业发展为核心目标，为大量企业提供专业的咨询服务。'
-    },
-    {
-        imgSrc: new URL('@/assets/img/temp_img/4.jpg', import.meta.url).href,
-        title: '提供专业增值服务',
-        description: '在境外拥有自己的团队，协助客户提供综合全面的财务、税务、法律等服务，做到"外有十洲通，注册更通畅"。'
-    },
-    {
-        imgSrc: new URL('@/assets/img/temp_img/5.jpg', import.meta.url).href,
-        title: '专业专属商务对接和支持',
-        description: '顾问、咨询师、会计师等建立计划小组，负责客户一对一的咨询、案子进度和客户协调计划等服务工作。'
-    }
-]
+
 
 const faqs = ref([
     {
@@ -361,37 +324,7 @@ onMounted(async () => {
         )
     })
 
-    // content5 动画
-    gsap.from('.content5 .title', {
-        scrollTrigger: {
-            trigger: '.content5 .title',
-            start: 'top 80%'
-        },
-        opacity: 0,
-        y: 50,
-        duration: 0.8
-    })
 
-    const content5Advantages = document.querySelectorAll('.content5 .advantage');
-    content5Advantages.forEach((item, index) => {
-        gsap.fromTo(item,
-            { y: 50, opacity: 0, transition: 'none' },
-            { 
-                y: 0, 
-                opacity: 1, 
-                duration: 0.8, 
-                delay: index * 0.1,
-                ease: 'power2.out',
-                scrollTrigger: {
-                    trigger: '.content5 .intro',
-                    start: 'top 80%'
-                },
-                onComplete: function() {
-                    gsap.set(item, { clearProps: "y,opacity,transition" })
-                }
-            }
-        );
-    })
 
     // content6 标题动画
     gsap.fromTo('.content6 .title',

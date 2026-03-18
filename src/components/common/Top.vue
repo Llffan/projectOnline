@@ -126,12 +126,18 @@
                     </div>
                 </div>
                  <div class="nav-dropdown nav-dropdown-4">
-                    <router-link to="/notary/hague" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': isCertRoute }">公证认证</router-link>
+                    <router-link to="/notary/hague" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': route.path.startsWith('/notary') }">公证认证</router-link>
                     <div class="dropdown-menu menu-cert">
-                        <div class="region-group" :class="{ 'active-region': activeRegion === 'cert-global' }">
+                        <div class="region-group">
+                            <div class="region-title">国际认证</div>
                             <div class="region-countries menu-cert-countries">
                                 <router-link to="/notary/hague">海牙公证认证</router-link>
                                 <router-link to="/notary/embassy">使馆公证认证</router-link>
+                            </div>
+                        </div>
+                        <div class="region-group">
+                            <div class="region-title">各国认证</div>
+                            <div class="region-countries menu-cert-countries">
                                 <router-link to="/notary/hk">香港公证认证</router-link>
                                 <router-link to="/notary/us">美国公证认证</router-link>
                                 <router-link to="/notary/uk">英国公证认证</router-link>
@@ -142,20 +148,20 @@
                     </div>
                 </div>
                 <div class="nav-dropdown nav-dropdown-5">
-                    <router-link to="/intellectual/domestic-trademark" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': isIpRoute }">知识产权服务</router-link>
+                    <router-link to="/ip/patent" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': isIpRoute }">知识产权服务</router-link>
                     <div class="dropdown-menu menu-ip">
                         <div class="region-group" :class="{ 'active-region': activeRegion === 'ip-global' }">
                             <div class="region-countries menu-ip-countries">
-                                <router-link to="/intellectual/domestic-trademark">国内商标服务</router-link>
+                                <router-link to="/ip/patent">国际专利服务</router-link>
                                 <router-link to="/intellectual/international-trademark">国际商标服务</router-link>
-                                <router-link to="/intellectual/domestic-patent">国内专利服务</router-link>
+                                <router-link to="/intellectual/domestic-trademark">国内商标服务</router-link>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="contact-info">
-                <div class="phone">400-888-8888</div>
+                <div class="phone">400-930-8099</div>
                 <div class="website"><a href="/en">English</a></div>
             </div>
         </div>
@@ -235,7 +241,7 @@ const countryToRegionMap = {
   // 知识产权服务
   '/intellectual/domestic-trademark': 'ip-global',
   '/intellectual/international-trademark': 'ip-global',
-  '/intellectual/domestic-patent': 'ip-global'
+  '/ip/patent': 'ip-global'
 }
 
 // 核心修复：确保路径以 '/company' 开头，并且路径本身不等于 '/' 或其他非公司路由
@@ -243,7 +249,7 @@ const isCompanyRoute = computed(() => route.path.startsWith('/company') && route
 const isSecretaryRoute = computed(() => route.path.startsWith('/secretary'));
 const isBankRoute = computed(() => route.path.startsWith('/bank'));
 const isCertRoute = computed(() => route.path.startsWith('/notary'));
-const isIpRoute = computed(() => route.path.startsWith('/intellectual'));
+const isIpRoute = computed(() => route.path.startsWith('/intellectual') || route.path.startsWith('/ip'));
 
 // 计算当前激活的区域
 const activeRegion = computed(() => {

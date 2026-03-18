@@ -184,11 +184,79 @@
         }
         .p3 {
             text-align: center;
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 40px;
         }
 
         .scoll_content2 {
-            height: 600px;
-            width: 100%;
+            width: 80%;
+            margin: 20px 0 100px 0;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+
+            .advantage {
+                background-color: white;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow: 0 2px 3px 1px rgba(0, 79, 144, 0.1);
+                position: relative;
+                transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                min-height: 240px;
+                padding-bottom: 30px;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+                .img {
+                    width: 100%;
+                    height: 180px;
+                    border-radius: 8px 8px 0 0;
+                    background: #66b3ff;
+                    box-shadow: 0 2px 3px 1px rgba(0, 79, 144, 0.1);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .text1 {
+                    font-size: 18px;
+                    color: #333;
+                    margin: 15px 0 0 0;
+                    font-weight: 700;
+                    text-align: center;
+                }
+
+                .text1::after {
+                    content: "";
+                    display: block;
+                    height: 2px;
+                    width: 50px;
+                    background-color: #92a6eda4;
+                    margin: 10px auto;
+                }
+
+                .text2 {
+                    font-size: 14px;
+                    padding: 0 20px;
+                    text-align: justify;
+                    color: #666;
+                    line-height: 1.6;
+                }
+            }
         }
     }
 }
