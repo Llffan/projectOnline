@@ -3,10 +3,18 @@
             <div class="logo">
                 <img :src="logoSrc" alt="">
             </div>
-            <div class="links">
-                <router-link to="/" class="nav-link" active-class="active" exact-active-class="exact-active">首页</router-link>
+
+            <!-- 移动端菜单按钮 -->
+            <div class="mobile-menu-btn" @click="isMobileMenuOpen = !isMobileMenuOpen">
+                <span :class="{ 'open': isMobileMenuOpen }"></span>
+                <span :class="{ 'open': isMobileMenuOpen }"></span>
+                <span :class="{ 'open': isMobileMenuOpen }"></span>
+            </div>
+
+            <div class="links" :class="{ 'mobile-open': isMobileMenuOpen }">
+                <router-link to="/" class="nav-link" active-class="active" exact-active-class="exact-active" @click="isMobileMenuOpen = false">首页</router-link>
                 <div class="nav-dropdown nav-dropdown-1">
-                    <router-link to="/company/hk" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': isCompanyRoute }">全球公司注册</router-link>
+                    <router-link to="/company/hk" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': isCompanyRoute }" @click="toggleDropdown($event)">全球公司注册</router-link>
                     <div class="dropdown-menu menu-company">
                         <div class="region-group" :class="{ 'active-region': activeRegion === 'east-asia' }">
                             <div class="region-title">东亚公司注册</div>
@@ -55,7 +63,7 @@
                     </div>
                 </div>
                 <div class="nav-dropdown nav-dropdown-2">
-                    <router-link to="/secretary/hk-annual" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': route.path.startsWith('secretary/hk-annual') }">秘书服务</router-link>
+                    <router-link to="/secretary/hk-annual" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': route.path.startsWith('secretary/hk-annual') }" @click="toggleDropdown($event)">秘书服务</router-link>
                     <div class="dropdown-menu menu-secretary">
                         <div class="region-group">
                             <div class="region-title">公司年审服务</div>
@@ -92,7 +100,7 @@
                     </div>
                 </div>
                 <div class="nav-dropdown nav-dropdown-3">
-                    <router-link to="/bank/hk/personal" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': route.path.startsWith('/bank') }">银行开户</router-link>
+                    <router-link to="/bank/hk/personal" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': route.path.startsWith('/bank') }" @click="toggleDropdown($event)">银行开户</router-link>
                     <div class="dropdown-menu menu-bank">
                         <div class="region-group">
                             <div class="region-title">香港银行开户</div>
@@ -125,7 +133,7 @@
                     </div>
                 </div>
                  <div class="nav-dropdown nav-dropdown-4">
-                    <router-link to="/notary/hague" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': route.path.startsWith('/notary') }">公证认证</router-link>
+                    <router-link to="/notary/hague" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': route.path.startsWith('/notary') }" @click="toggleDropdown($event)">公证认证</router-link>
                     <div class="dropdown-menu menu-cert">
                         <div class="region-group">
                             <div class="region-title">国际认证</div>
@@ -147,7 +155,7 @@
                     </div>
                 </div>
                 <div class="nav-dropdown nav-dropdown-5">
-                    <router-link to="/ip/patent" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': route.path.startsWith('/intellectual') || route.path.startsWith('/ip') }">知识产权服务</router-link>
+                    <router-link to="/ip/patent" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': route.path.startsWith('/intellectual') || route.path.startsWith('/ip') }" @click="toggleDropdown($event)">知识产权服务</router-link>
                     <div class="dropdown-menu menu-ip">
                         <div class="region-group">
                             <div class="region-countries menu-ip-countries">
@@ -172,6 +180,20 @@ import '@/css/homeView/top/Top2.css'
 
 const route = useRoute()
 const isScrolled = ref(false)
+const isMobileMenuOpen = ref(false)
+
+// 切换下拉菜单 (移动端)
+const toggleDropdown = (event) => {
+    if (window.innerWidth <= 768) {
+        event.preventDefault();
+        const dropdown = event.target.nextElementSibling;
+        if (dropdown) {
+            dropdown.style.display = dropdown.style.display === 'flex' ? 'none' : 'flex';
+        }
+    } else {
+        isMobileMenuOpen.value = false;
+    }
+}
 
 // 映射国家路由到区域ID
 const countryToRegionMap = {
@@ -247,23 +269,24 @@ const logoSrc = computed(() => {
 })
 
 const handleScroll = () => {
+  // 移动端不执行滚动监听逻辑，直接保持状态
+  if (window.innerWidth <= 768) {
+    isScrolled.value = true
+    return
+  }
+
   const content1Element = document.querySelector('.content1')
-  
   if (content1Element) {
     const content1Rect = content1Element.getBoundingClientRect()
     const content1Height = content1Rect.height
-
     const threshold = content1Height * 2 / 3
-    
-    if (content1Rect.top < -threshold) {
-      isScrolled.value = true
-    } else {
-      isScrolled.value = false
-    }
+    isScrolled.value = content1Rect.top < -threshold
   }
 }
 
 onMounted(() => {
+  // 挂载时立即执行一次判断
+  handleScroll()
   window.addEventListener('scroll', handleScroll)
 })
 
