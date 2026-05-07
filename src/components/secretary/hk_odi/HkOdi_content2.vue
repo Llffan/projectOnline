@@ -6,7 +6,7 @@
                     什么是境外投资备案（ODI备案）
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/hk/HK-2.jpg" alt="ODI备案">
+                    <img loading="lazy" src="@/assets/img/company/hk/HK-2.jpg" alt="ODI备案">
                     <div class="text">
                         <P>境外投资备案（Overseas Direct Investment, 简称ODI）是指在中华人民共和国境内依法设立的企业通过新设、并购及其他方式在境外拥有非金融企业或取得既有非金融企业所有权、控制权、经营管理权及其他权益的行为。</P>
                         <P>通俗来讲，国内企业投资境外企业，不论是新设公司、新建项目还是并购股权，只要涉及直接或间接获得境外公司的所有权、控制权、经营管理等，都需要进行ODI备案。</P>
@@ -78,7 +78,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in advantages" :key="index" class="advantage">
                         <div class="img">
-                            <img :src="item.imgSrc" :alt="item.title">
+                            <img loading="lazy" :src="item.imgSrc" :alt="item.title">
                         </div>
                         <div class="text1">
                             {{ item.title }}

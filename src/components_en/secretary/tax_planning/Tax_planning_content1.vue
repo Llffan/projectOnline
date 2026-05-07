@@ -1,7 +1,7 @@
 <template>
     <div class="tax_planning_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/hk/HK.jpg" alt="tax planning">
+            <img loading="lazy" src="@/assets/img/company/hk/HK.jpg" alt="tax planning">
         </div>
         <div class="intro">
             <div class="title">Accounting and Tax Consulting Solutions</div>

@@ -7,7 +7,7 @@
                     Introduction to UOB (Hong Kong)
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/UOB.jpg" alt="UOB (Hong Kong)">
+                    <img loading="lazy" src="@/assets/img/bank/hk/UOB.jpg" alt="UOB (Hong Kong)">
                     <div class="text">
                         <P>UOB Hong Kong refers to the Hong Kong branch of United Overseas Bank, situated in Central. Established in 1965, it has grown significantly, holding total assets of approximately HKD 260 billion. While it may not match the massive scale of HSBC or Standard Chartered, it remains one of the top 20 banks in Hong Kong. Similar to Citi or J.P. Morgan, its strength lies in its powerful institutional shareholders, making it a major player in the regional financial landscape. Since opening its first overseas branch in Hong Kong in 1965, UOB has been dedicated to helping corporate and institutional clients seize growth opportunities across a dynamic Asia and beyond.</P>
                     </div>

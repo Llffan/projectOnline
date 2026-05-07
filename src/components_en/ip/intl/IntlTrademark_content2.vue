@@ -5,7 +5,7 @@
             <div class="content1">
                 <div class="title">Overview of International Trademarks</div>
                 <div class="intro">
-                    <img src="@/assets/img/core-business.jpg" alt="Global Trademark Registration" class="intro-img">
+                    <img loading="lazy" src="@/assets/img/core-business.jpg" alt="Global Trademark Registration" class="intro-img">
                     <div class="text-container">
                         <p class="desc-text">
                             A trademark is a sign used to distinguish the goods or services of different operators. It is an essential requirement for production, manufacturing, marketing, and services. Trademarks can include words, graphics, letters, numbers, 3D signs, and color combinations. Legal protection is only granted to trademarks approved by the trademark office.

@@ -4,7 +4,7 @@
             <div class="content1">
                 <div class="title">About Axos Bank</div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/us/axos.png" alt="Axos Bank">
+                    <img loading="lazy" src="@/assets/img/bank/us/axos.png" alt="Axos Bank">
                     <div class="text"><p>Axos Bank, formerly known as BofI Federal Bank (founded in 1999), was one of the world's first digital banks, though it also maintains a physical branch in California. The bank was renamed Axos Bank in 2018. Axos Bank is FDIC insured, with individual accounts eligible for up to $200,000 in coverage if the bank fails. Currently, Axos Bank's World Checking Account supports non-U.S. identity account opening, meaning Chinese mainland residents can also successfully open an account.</p></div>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 <template>
     <div class="constructions_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/jp/JP.jpg" alt="">
+            <img loading="lazy" src="@/assets/img/company/jp/JP.jpg" alt="">
         </div>
         <div class="intro">
             <div class="title">香港建设银行（亚洲）</div>

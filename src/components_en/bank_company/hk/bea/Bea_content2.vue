@@ -7,7 +7,7 @@
                     Introduction to Bank of East Asia (Hong Kong)
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/east_asia.jpg" alt="Bank of East Asia (Hong Kong)">
+                    <img loading="lazy" src="@/assets/img/bank/hk/east_asia.jpg" alt="Bank of East Asia (Hong Kong)">
                     <div class="text">
                         <P>Established in 1918, The Bank of East Asia (BEA) has a storied century-long history and is listed on the HKEX as one of Hong Kong's three largest local banks. BEA is dedicated to providing comprehensive commercial, personal, and wealth management services to clients in Hong Kong, Mainland China, and international markets. Renowned for its reputation in Mainland China, BEA opened its first overseas office in Shanghai as early as 1920 and now maintains over 130 service points across the Mainland, Macau, and Taiwan.</P>
                     </div>

@@ -7,7 +7,7 @@
                     Introduction to Citibank (Hong Kong)
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/citibank.jpg" alt="Citibank (Hong Kong)">
+                    <img loading="lazy" src="@/assets/img/bank/hk/citibank.jpg" alt="Citibank (Hong Kong)">
                     <div class="text">
                         <P>Citibank (Hong Kong) is a leading financial institution providing a full spectrum of services, including wealth management, investment, credit cards, insurance, and loans. As the Hong Kong subsidiary of the Citigroup, it began operations in the region in 1902, making it the first foreign bank to establish a presence in Hong Kong. Citibank (Hong Kong) Limited is a locally incorporated licensed bank, currently operating 48 branches across Hong Kong Island, Kowloon, the New Territories, and Macau.</P>
                     </div>

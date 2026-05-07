@@ -1,7 +1,7 @@
 <template>
     <div class="jp_notary_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/jp/JP.jpg" alt="日本公证认证">
+            <img loading="lazy" src="@/assets/img/company/jp/JP.jpg" alt="日本公证认证">
         </div>
         <div class="intro">
             <div class="notary-title">日本公证认证</div>

@@ -6,7 +6,7 @@
                     香港金钱服务经营者牌照(MSO)
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/hk/HK-2.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/company/hk/HK-2.jpg" alt="">
                     <div class="text">
                         <P>香港金钱服务经营者牌照（Money Service Operator License, 简称MSO牌照）是由香港海关总署颁发的金融牌照。任何在香港经营货币兑换服务或汇款服务的个人或企业，都必须向海关关长申领该牌照。</P>
                         <P>MSO牌照是合规进行跨境支付、换汇业务的必要通行证。随着全球监管趋严，持有该牌照能显著提升企业的公信力，是开展国际金融业务的基础。</P>
@@ -78,7 +78,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in advantages" :key="index" class="advantage">
                         <div class="img">
-                            <img :src="item.imgSrc" :alt="item.title">
+                            <img loading="lazy" :src="item.imgSrc" :alt="item.title">
                         </div>
                         <div class="text1">
                             {{ item.title }}

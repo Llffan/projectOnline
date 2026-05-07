@@ -7,7 +7,7 @@
                     美国Arival银行简介
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/us/arival银行.png" alt="美国Arival银行">
+                    <img loading="lazy" src="@/assets/img/bank/us/arival银行.png" alt="美国Arival银行">
                     <div class="text">
                         <p>Arival Bank成立于2021年，是美国本地的的持牌数字银行机构，受OCIF监管。目前已为全球超过30个国家的客户服务。目前公司分别在迈阿密，波多黎各，欧洲，新加坡设有运营机构。有别于一般的银行机构，Arival Bank是一家专为“非传统行业”所成立的数字银行机构。特别地，银行为数字货币，区块链，初创型科技公司，数字技术行业，虚拟技术行业等“非传统”行业提供服务。</p>
                     </div>

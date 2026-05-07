@@ -1,7 +1,7 @@
 <template>
     <div class="us_notary_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/us/US.jpg" alt="US Notarization">
+            <img loading="lazy" src="@/assets/img/company/us/US.jpg" alt="US Notarization">
         </div>
         <div class="intro">
             <div class="notary-title">US Notarization & Legalization</div>

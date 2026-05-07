@@ -1,7 +1,7 @@
 <template>
     <div class="domestic_trademark_content1">
         <div class="img_box">
-            <img src="@/assets/img/ip/patent_banner.png" alt="国内商标服务">
+            <img loading="lazy" src="@/assets/img/ip/patent_banner.png" alt="国内商标服务">
         </div>
         <div class="intro">
             <div class="title">国内商标注册及品牌咨询解决方案</div>

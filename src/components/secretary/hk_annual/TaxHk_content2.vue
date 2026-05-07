@@ -6,7 +6,7 @@
                     香港税务与年审
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/hk/HK-2.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/company/hk/HK-2.jpg" alt="">
                     <div class="text">
                         <P>香港做账报税依照香港法律规定，所有的香港公司无论是否有盈利，都需要申报上一年度的经营情况，并由香港税务局依照一定标准，确定该香港公司是否需要缴纳税收。</P>
                         <P>香港是免税港，对进出口商品不征收任何关税，更没有销售税和其他进口费用的征收。这为国际贸易提供了极大的便利，降低了营商成本。</P>
@@ -78,7 +78,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in advantages" :key="index" class="advantage">
                         <div class="img">
-                            <img :src="item.imgSrc" :alt="item.title">
+                            <img loading="lazy" :src="item.imgSrc" :alt="item.title">
                         </div>
                         <div class="text1">
                             {{ item.title }}

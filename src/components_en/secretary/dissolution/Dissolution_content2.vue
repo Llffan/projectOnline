@@ -7,7 +7,7 @@
                     Hong Kong Company Deregistration Guide
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/hk/HK.jpg" alt="Hong Kong company cancellation">
+                    <img loading="lazy" src="@/assets/img/company/hk/HK.jpg" alt="Hong Kong company cancellation">
                     <div class="text">
                         <P>
                             When your Hong Kong company is no longer required to operate, it is a very important legal obligation to correctly dissolve and cancel the company. Failure to legally cancel may result in fines or even litigation, and reasonable business closure can cut off joint risks.

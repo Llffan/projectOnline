@@ -7,7 +7,7 @@
                     澳门汇丰银行简介
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/mo/汇丰银行.png" alt="澳门汇丰银行">
+                    <img loading="lazy" src="@/assets/img/bank/mo/汇丰银行.png" alt="澳门汇丰银行">
                     <div class="text">
                         <P>
                             汇丰银行是外资银行，全称香港上海汇丰银行有限公司（The Hongkong and Shanghai Banking Corporation Limited），中文直译为“香港和上海银行有限公司”，英文缩写为HSBC，中文简称为“汇丰”，取“汇款丰裕”之意。香港上海汇丰银行有限公司为汇丰控股有限公司的全资附属公司，属于汇丰集团的创始成员以及在亚太地区的旗舰，也是中国香港最大的注册银行，以及中国香港三大发钞银行之一。

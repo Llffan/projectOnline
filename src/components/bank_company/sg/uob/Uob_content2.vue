@@ -7,7 +7,7 @@
                     新加坡大华银行简介
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/sg/大华银行.png" alt="新加坡大华银行">
+                    <img loading="lazy" src="@/assets/img/bank/sg/大华银行.png" alt="新加坡大华银行">
                     <div class="text">
                         <P>大华银行(United Overseas Bank)在1935年创立，是亚洲主要银行，拥有超过500间分行及办事处的环球业务网，分布在亚太、欧洲与北美的19个国家和地区。在亚洲，大华银行通过新加坡总行和在中国、印度尼西亚、马来西亚、泰国及越南的附属银行以及各地分行和办事处，开展广泛的金融业务。如今大华银行获评为世界顶尖银行之一：穆迪投资者服务给“Aa1”评级，标普全球评级和惠誉分别给予“AA-”评级。</P>
                     </div>

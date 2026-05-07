@@ -1,7 +1,7 @@
 <template>
     <div class="dissolution_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/hk/HK.jpg" alt="Company cancellation">
+            <img loading="lazy" src="@/assets/img/company/hk/HK.jpg" alt="Company cancellation">
         </div>
         <div class="intro">
             <div class="title">Company cancellation</div>

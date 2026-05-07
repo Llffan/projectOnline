@@ -7,7 +7,7 @@
                     新加坡渣打银行简介
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/sg/渣打银行.png" alt="新加坡渣打银行">
+                    <img loading="lazy" src="@/assets/img/bank/sg/渣打银行.png" alt="新加坡渣打银行">
                     <div class="text">
                         <P>新加坡渣打银行（Standard Chartered Bank）是渣打国际银行集团的一部分，在新加坡有160年的历史。1999年10月首批获得合格的全行（QFB）执照的国际银行之一，这是对集团在该国长期业务承诺的认可。新加坡渣打银行是全球评级最高的银行之一：标准普尔评级为A，穆迪投资者服务评级为AA3，惠誉评级为A。</P>
                     </div>

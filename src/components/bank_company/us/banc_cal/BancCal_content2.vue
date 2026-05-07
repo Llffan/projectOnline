@@ -7,7 +7,7 @@
                     美国加州银行简介
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/us/加州银行.png" alt="美国加州银行">
+                    <img loading="lazy" src="@/assets/img/bank/us/加州银行.png" alt="美国加州银行">
                     <div class="text">
                         <P>Bank of California, Inc.根据马里兰州法律于2002年3月注册成立，容纳了所有太平洋信托银行的股票。它的资产主要包括银行发行在外的股票、现金和固定收益投资。该银行的主要业务包括吸收来自公众和主要由业主自用零售存款，一到四户住宅，各种消费贷款，多户家庭和商业第一按揭抵押贷款投资这些基金的地产和商业企业贷款。</P>
                     </div>

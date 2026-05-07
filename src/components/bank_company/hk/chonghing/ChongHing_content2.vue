@@ -7,7 +7,7 @@
                     香港创兴银行简介
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/chong_xing.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/bank/hk/chong_xing.jpg" alt="">
                     <div class="text">
                         <P>创兴银行于1948年在香港成立，1994年在香港联合交易所上市（股份代号：01111）。创兴银行及其附属公司为个人及企业客户提供全面商业银行及金融服务，其中包括港币及外币存款、信贷、外汇交易、财富管理、投资、证券、保险、强积金等各项产品及服务。创兴银行现时在香港设有超过30家分行，在广州、北京、深圳、上海、汕头及澳门设有分行。</P>
                     </div>

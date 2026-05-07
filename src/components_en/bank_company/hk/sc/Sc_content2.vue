@@ -7,7 +7,7 @@
                     Introduction to Standard Chartered Bank (Hong Kong)
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/Standard_Chartered.jpg" alt="Standard Chartered Bank (Hong Kong)">
+                    <img loading="lazy" src="@/assets/img/bank/hk/Standard_Chartered.jpg" alt="Standard Chartered Bank (Hong Kong)">
                     <div class="text">
                         <P>Standard Chartered Bank (also known as Standard Chartered) is a British multinational bank headquartered in London. It operates a vast network across many countries, with a particularly strong presence in Asia and Africa. Notably, a significant portion of its global profit (30% in 2004) is generated from its Hong Kong operations. Its parent company, Standard Chartered PLC, is listed on both the London Stock Exchange and the Hong Kong Stock Exchange, and is a constituent of the FTSE 100 Index. Standard Chartered is currently one of the three note-issuing banks in Hong Kong, alongside Bank of China (Hong Kong) and HSBC.</P>
                     </div>

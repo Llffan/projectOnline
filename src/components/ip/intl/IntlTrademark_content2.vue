@@ -5,7 +5,7 @@
             <div class="content1">
                 <div class="title">国际商标服务简介</div>
                 <div class="intro">
-                    <img src="@/assets/img/core-business.jpg" alt="全球商标注册" class="intro-img">
+                    <img loading="lazy" src="@/assets/img/core-business.jpg" alt="全球商标注册" class="intro-img">
                     <div class="text-container">
                         <p class="desc-text">
                             商标是用来区别不同经营者的商品或服务的标志，是企业进行生产、制造、加工、销售、市场拓展和服务的必备条件。商标包括文字、图形、字母、数字、三维标志和颜色组合，以及上述要素的组合，只有经国家商标局核准注册的商标，才受法律保护。

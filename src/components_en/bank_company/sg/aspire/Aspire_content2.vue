@@ -7,7 +7,7 @@
                     Introduction to Aspire Bank Singapore
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/sg/aspire.png" alt="Aspire Bank Singapore">
+                    <img loading="lazy" src="@/assets/img/bank/sg/aspire.png" alt="Aspire Bank Singapore">
                     <div class="text">
                         <P>Aspire Bank Singapore is the first digital bank in Southeast Asia and a representative of digital banking in Singapore, founded by a co-founder of Lazada, the region's largest e-commerce platform. Aspire primarily serves as a financial management service provider focusing on small and medium-sized enterprises (SMEs), specialized in providing convenient and fast banking services for SMEs in Southeast Asia and globally. Its vision is to reinvent the SME financial experience, dedicated to promoting financial inclusion and helping business owners achieve long-term growth through same-day loans, transparent pricing, and flexible digital tools.</P>
                     </div>

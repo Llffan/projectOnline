@@ -4,7 +4,7 @@
             <div class="content1">
                 <div class="title">About HSBC (USA)</div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/us/汇丰银行.png" alt="HSBC USA">
+                    <img loading="lazy" src="@/assets/img/bank/us/汇丰银行.png" alt="HSBC USA">
                     <div class="text">
                         <p>HSBC is one of the world's largest banks, headquartered in London, with an extensive global network. HSBC has multiple branches in the United States, particularly in major cities such as New York and Los Angeles.</p>
                         <p>Opening a personal HSBC account facilitates overseas shopping, education, property purchases, real estate investments, offshore investing, and immigration. It enables global wealth management and improves the efficiency of both domestic and international fund operations.</p>

@@ -4,7 +4,7 @@
             <div class="content1">
                 <div class="title">Well Link Bank Macau Introduction</div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/mo/立桥银行.png" alt="Well Link Bank Macau">
+                    <img loading="lazy" src="@/assets/img/bank/mo/立桥银行.png" alt="Well Link Bank Macau">
                     <div class="text">
                         <P>Well Link Bank was established in 1996 as a renowned full-license commercial bank in Macau. Its predecessor was Banco Espírito Santo de Investimento, S.A., established in Macau by Portugal's second-largest bank by market capitalization. It was renamed Novo Banco Asia in 2014, and officially renamed Well Link Bank in October 2017. With a long history and rich heritage, it is committed to providing high-standard comprehensive banking services to Asia-Pacific clients.</P>
                     </div>

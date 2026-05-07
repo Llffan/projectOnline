@@ -7,7 +7,7 @@
                     香港交通银行简介
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/communications.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/bank/hk/communications.jpg" alt="">
                     <div class="text">
                         <P>交通银行（香港）于2018年1月开业，为交通银行在港全资附属公司，设44个网点遍布全港。作为获惠誉、穆迪及标普肯定且评级展望稳定的全牌照商业银行，交银（香港）为企业及个人客户提供全方位金融与财富管理服务。企业开户可享资金自由调拨、无外汇管制及税务优化优势；个人账户则便利全球资产配置、留学置业，实现资金高效运转。</P>
                     </div>

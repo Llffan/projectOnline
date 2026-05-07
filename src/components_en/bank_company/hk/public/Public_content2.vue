@@ -7,7 +7,7 @@
                     Introduction to Public Bank (Hong Kong)
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/public.png" alt="Public Bank (Hong Kong)">
+                    <img loading="lazy" src="@/assets/img/bank/hk/public.png" alt="Public Bank (Hong Kong)">
                     <div class="text">
                         <P>For enterprises, an offshore bank account is essential for the unrestricted allocation of capital, bypass of foreign exchange controls, and maximization of fund utility. Such accounts offer competitive interest rates compared to domestic options, high flexibility for deposits and withdrawals, and significant advantages for large-scale transaction management. Furthermore, they facilitate the optimization of corporate tax structures and provide vital support for international business expansion. As a prominent licensed financial institution, Public Bank (Hong Kong) provides a full suite of commercial assistance and financial remittance services.</P>
                     </div>

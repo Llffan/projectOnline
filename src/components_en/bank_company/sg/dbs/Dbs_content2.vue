@@ -7,7 +7,7 @@
                     Introduction to DBS Bank Singapore
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/sg/星展银行.png" alt="DBS Bank Singapore">
+                    <img loading="lazy" src="@/assets/img/bank/sg/星展银行.png" alt="DBS Bank Singapore">
                     <div class="text">
                         <P>DBS Bank (DBS), formerly known as the Development Bank of Singapore, is the largest commercial bank in Singapore. Established in 1968, it was originally a development finance institution founded by the Singapore government. Today, DBS provides a full range of financial services, ranking among the top local banks in terms of total assets and various business indicators, and holds extremely high international credit ratings.</P>
                     </div>

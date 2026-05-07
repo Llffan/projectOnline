@@ -1,7 +1,7 @@
 <template>
     <div class="domestic_trademark_content1">
         <div class="img_box">
-            <img src="@/assets/img/ip/patent_banner.png" alt="Domestic Trademark Services">
+            <img loading="lazy" src="@/assets/img/ip/patent_banner.png" alt="Domestic Trademark Services">
         </div>
         <div class="intro">
             <div class="title">Domestic Trademark Registration & Brand Consulting</div>

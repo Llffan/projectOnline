@@ -1,7 +1,7 @@
 <template>
     <div class="sg_ocbc_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/sg/SG.jpg" alt="">
+            <img loading="lazy" src="@/assets/img/company/sg/SG.jpg" alt="">
         </div>
         <div class="intro">
             <div class="title">OCBC Bank Singapore Account Opening</div>

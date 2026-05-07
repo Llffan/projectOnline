@@ -6,7 +6,7 @@
                     英国公司注册
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/uk/UK-2.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/company/uk/UK-2.jpg" alt="">
                     <div class="text">
                         <P>英国是老牌资本主义国家，拥有全世界最健全的法制系统，以及完善的经济系统及银行体制。</P>
                         <P>对于世界各国的投资者而言，注册英国公司对于树立企业国际形象，开拓海外市场具有重要作用。</P>

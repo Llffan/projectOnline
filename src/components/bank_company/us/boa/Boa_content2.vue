@@ -7,7 +7,7 @@
                     美国银行简介
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/us/美国银行.png" alt="美国银行">
+                    <img loading="lazy" src="@/assets/img/bank/us/美国银行.png" alt="美国银行">
                     <div class="text">
                         <P>美国银行（Bank of America，NYSE：BAC）是世界上最大的银行控股公司之一，以资产计是美国第一大商业银行；该行的建立可以追溯到1784年的马萨诸塞州银行，是美国历史第二悠久的银行。美国银行为环球首要的金融服务机构之一，致力提供一应俱全的个人及商业银行服务，服务遍及美国二十一州、哥伦比亚特区及全球三十个国家，为多达数千万个家庭及众多商业客户提供最优质完善的银行服务。</P>
                     </div>

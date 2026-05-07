@@ -1,7 +1,7 @@
 <template>
     <div class="top2" :class="{ 'scrolled': isScrolled }">
             <div class="logo">
-                <img :src="logoSrc" alt="">
+                <img loading="lazy" :src="logoSrc" alt="">
             </div>
 
             <!-- 移动端菜单按钮 -->

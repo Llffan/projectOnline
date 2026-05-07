@@ -2,7 +2,7 @@
     <!-- 顶部导航栏 -->
         <div class="top">
             <div class="logo">
-                <img src="@/assets/img/logo.png" alt="">
+                <img loading="lazy" src="@/assets/img/logo.png" alt="">
             </div>
             <div class="links">
                 <router-link to="/" class="nav-link" active-class="active" exact-active-class="exact-active">首页</router-link>

@@ -1,7 +1,7 @@
 <template>
     <div class="sg_notary_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/sg/SG.jpg" alt="新加坡公证认证">
+            <img loading="lazy" src="@/assets/img/company/sg/SG.jpg" alt="新加坡公证认证">
         </div>
         <div class="intro">
             <div class="notary-title">新加坡公证认证</div>

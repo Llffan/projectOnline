@@ -1,7 +1,7 @@
 <template>
     <div class="everbright_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/hk/HK.jpg" alt="">
+            <img loading="lazy" src="@/assets/img/company/hk/HK.jpg" alt="">
         </div>
         <div class="intro">
             <div class="title">China Everbright Bank Hong Kong</div>

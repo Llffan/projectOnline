@@ -1,7 +1,7 @@
 <template>
     <div class="barcode_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/hk/HK-2.jpg" alt="">
+            <img loading="lazy" src="@/assets/img/company/hk/HK-2.jpg" alt="">
         </div>
         <div class="intro">
             <div class="barcode-title">全球条形码注册</div>

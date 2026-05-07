@@ -7,7 +7,7 @@
                     香港公司变更基本流程
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/hk/HK.jpg" alt="香港公司变更">
+                    <img loading="lazy" src="@/assets/img/company/hk/HK.jpg" alt="香港公司变更">
                     <div class="text">
                         <P>
                             在香港，公司股东和董事的变更可以通过简单的程序进行。股东和董事的变更须经过股东会或董事会的决议，随后进行相应的文件申报。这一过程通常包括向香港公司注册处提交相关文件和表格，以及支付响应的费用。

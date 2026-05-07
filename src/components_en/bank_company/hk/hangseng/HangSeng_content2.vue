@@ -7,7 +7,7 @@
                     Introduction to Hang Seng Bank (Hong Kong)
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/hang_seng.jpg" alt="Hang Seng Bank (Hong Kong)">
+                    <img loading="lazy" src="@/assets/img/bank/hk/hang_seng.jpg" alt="Hang Seng Bank (Hong Kong)">
                     <div class="text">
                         <P>
                             Hang Seng Bank is a robustly capitalized institution providing a comprehensive range of services including personal wealth management, commercial banking, SME and institutional business, treasury services, and private banking. Founded in 1933, our guiding principle has always been the relentless pursuit of service excellence. With over 220 service outlets across Hong Kong, our expansive network reaches nearly every corner of the city, ensuring superior service accessibility for all our clients.

@@ -7,7 +7,7 @@
                     Introduction to ZA Bank (Hong Kong)
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/ZA.png" alt="ZA Bank (Hong Kong)">
+                    <img loading="lazy" src="@/assets/img/bank/hk/ZA.png" alt="ZA Bank (Hong Kong)">
                     <div class="text">
                         <P>ZA Bank was established by ZhongAn International, the Hong Kong-based international subsidiary of the pioneering Chinese insurtech giant ZhongAn Online P&C Insurance Co., Ltd. Awarded a banking license by the Hong Kong Monetary Authority on March 27, 2019, ZA Bank is currently Hong Kong's leading fully digital bank, delivering its comprehensive suite of services primarily through online channels. As a member of the Hong Kong Deposit Protection Scheme, eligible deposits are protected up to a maximum of HKD 500,000 per depositor. ZA Bank adheres to the same stringent regulatory standards as traditional banks, ensuring international levels of institutional governance and security.</P>
                     </div>

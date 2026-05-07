@@ -1,6 +1,6 @@
 ﻿<template>
     <div class="hsbc_content1">
-        <div class="img_box"><img src="@/assets/img/company/香港.jpg" alt=""></div>
+        <div class="img_box"><img loading="lazy" src="@/assets/img/company/香港.jpg" alt=""></div>
         <div class="intro">
             <div class="title">HSBC (USA) Account Opening</div>
             <div class="subtitle">HSBC (USA) Account Opening: Corporate & Personal Account Guide, Advantages, Required Documents, Process & FAQs</div>

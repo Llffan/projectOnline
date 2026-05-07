@@ -1,7 +1,7 @@
 <template>
     <div class="jpm_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/香港.jpg" alt="">
+            <img loading="lazy" src="@/assets/img/company/香港.jpg" alt="">
         </div>
         <div class="intro">
             <div class="title">美国摩根大通银行开户</div>

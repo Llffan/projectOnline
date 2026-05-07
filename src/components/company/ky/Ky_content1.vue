@@ -1,7 +1,7 @@
 <template>
     <div class="ky_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/ky/KY.jpg" alt="">
+            <img loading="lazy" src="@/assets/img/company/ky/KY.jpg" alt="">
         </div>
         <div class="intro">
             <div class="ky-title">开曼公司注册全攻略</div>

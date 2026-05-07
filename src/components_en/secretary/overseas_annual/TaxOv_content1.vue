@@ -1,7 +1,7 @@
 <template>
     <div class="ov_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/bvi/BVI.jpg" alt="">
+            <img loading="lazy" src="@/assets/img/company/bvi/BVI.jpg" alt="">
         </div>
         <div class="intro">
             <div class="ov-title">Overseas company annual review services</div>

@@ -3,20 +3,20 @@
         <div class="account_opening">
             <!-- 银行类型 -->
             <div class="account_type" ref="accountTypeRef">
-                <img class="back_img" src="@/assets/img/company/上海.png" alt="">
+                <img loading="lazy" class="back_img" src="@/assets/img/company/上海.png" alt="">
                 <div class="back_display">
-                    <img src="@/assets/img/bank/1.png" alt="">
-                    <img src="@/assets/img/bank/2.jpg" alt="">
-                    <img src="@/assets/img/bank/3.jpg" alt="">
-                    <img src="@/assets/img/bank/4.jpg" alt="">
-                    <img src="@/assets/img/bank/5.jpg" alt="">
-                    <img src="@/assets/img/bank/6.jpg" alt="">
-                    <img src="@/assets/img/bank/7.jpg" alt="">
-                    <img src="@/assets/img/bank/8.jpg" alt="">
-                    <img src="@/assets/img/bank/9.jpg" alt="">
-                    <img src="@/assets/img/bank/10.jpg" alt="">
-                    <img src="@/assets/img/bank/11.jpg" alt="">
-                    <img src="@/assets/img/bank/12.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/bank/1.png" alt="">
+                    <img loading="lazy" src="@/assets/img/bank/2.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/bank/3.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/bank/4.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/bank/5.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/bank/6.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/bank/7.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/bank/8.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/bank/9.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/bank/10.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/bank/11.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/bank/12.jpg" alt="">
                 </div>
             </div>
 
@@ -39,7 +39,7 @@
         <div class="account_body" ref="accountBodyRef">
             <div v-for="(item, i) in account_body" :key="i" :ref="el => setAccountCardRef(el, i)" @click="router.push(item.path)" style="cursor: pointer;">
                 <div>
-                    <img :src="item.img" alt="">
+                    <img loading="lazy" :src="item.img" alt="">
                     <div>
                         <p class="title1"> {{ item.title }} </p>
                     </div>

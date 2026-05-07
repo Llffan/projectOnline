@@ -6,7 +6,7 @@
                     越南公司注册
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/vn/VN-2.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/company/vn/VN-2.jpg" alt="">
                     <div class="text">
                         <P>越南是一个快速发展的发展中国家，经济增长稳定，投资环境日益改善。凭借在亚洲-太平洋地区的战略地理位置，越南正成为外国投资者的热门目的地。</P>
                         <P>作为东南亚最大的经济体之一，越南拥有年轻的人口、丰富的劳动力资源和充满潜力的消费市场。</P>

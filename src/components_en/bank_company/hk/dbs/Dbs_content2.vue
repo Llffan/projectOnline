@@ -7,7 +7,7 @@
                     Introduction to DBS Bank (Hong Kong)
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/DBS.jpg" alt="DBS Bank (Hong Kong)">
+                    <img loading="lazy" src="@/assets/img/bank/hk/DBS.jpg" alt="DBS Bank (Hong Kong)">
                     <div class="text">
                         <P>
                             DBS Bank (DBS), established in 1968 and formerly known as The Development Bank of Singapore Limited, is the largest commercial bank in Singapore. In the late 1990s, the bank accelerated its international expansion, acquiring various commercial banks across Thailand, the Philippines, Indonesia, Hong Kong, and Taiwan. Following the acquisition of Kwong On Bank in 1998 and the Dao Heng Bank Group in 2001 (including Dao Heng Bank and Overseas Trust Bank), the entities were merged and rebranded as "DBS Bank (Hong Kong)" in 2003. Today, its largest shareholder remains Temasek Holdings, the investment arm of the Singapore government.

@@ -6,7 +6,7 @@
                     马来西亚公司注册
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/my/MY-2.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/company/my/MY-2.jpg" alt="">
                     <div class="text">
                         <P>马来西亚位于马六甲海峡北岸，马来亚半岛南部及加里曼丹岛北部，马来西亚是东盟十国成员国之一，也是东南亚经济较发达的一个国家之一。官方语言为马来语及英语。华语使用广泛。</P>
                         <P>马来西亚商业公司类型主要有四种：独资企业、合伙企业、私人有限公司（马来文简称Sdn Bhd）、代表处。独资企业与合伙企业只有马来西亚公民才能成立。外国人只能选择成立私人有限公司Sdn Bhd.</P>

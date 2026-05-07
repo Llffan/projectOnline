@@ -7,7 +7,7 @@
                     Introduction to Bank of Singapore
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/sg/新加披银行.png" alt="Bank of Singapore">
+                    <img loading="lazy" src="@/assets/img/bank/sg/新加披银行.png" alt="Bank of Singapore">
                     <div class="text">
                         <P>Bank of Singapore is a private bank headquartered in Singapore and a wholly-owned subsidiary of OCBC, the second largest bank in Southeast Asia. Formerly known as ING Asia Private Bank, it was acquired by OCBC in 2009. Its business primarily focuses on Asia and the Middle East. Beyond exclusive private banking services, clients can access a comprehensive range of products and services through its parent company, OCBC, including various commercial solutions, financing, and brokerage services.</P>
                     </div>

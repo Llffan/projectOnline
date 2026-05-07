@@ -1,7 +1,7 @@
 <template>
     <div class="banc_cal_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/香港.jpg" alt="加州银行">
+            <img loading="lazy" src="@/assets/img/company/香港.jpg" alt="加州银行">
         </div>
         <div class="intro">
             <div class="title">美国加州银行开户</div>

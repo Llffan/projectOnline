@@ -7,7 +7,7 @@
                     香港恒生银行简介
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/hang_seng.jpg" alt="香港恒生银行">
+                    <img loading="lazy" src="@/assets/img/bank/hk/hang_seng.jpg" alt="香港恒生银行">
                     <div class="text">
                         <P>
                             恒生银行资本雄厚，主要业务包括个人理财、商业银行、工商及金融机构业务、财资服务，以及私人银行服务。恒生于1933年创立，追求卓越，精益求精一直是我们的服务宗旨。在香港，我们拥有逾220个服务网点，网络庞大，几乎遍布全港每一角落─目的是为你提供更优良的服务。

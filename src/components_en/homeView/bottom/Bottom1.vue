@@ -19,13 +19,13 @@
                     <p>Phone: 13380785236</p>
                 </div>
                 <div class="link_img">
-                    <img src="@/assets/img/联系我们.jpg" alt="Contact Us" style="width: 100%; height: 100%; object-fit: contain;">
+                    <img loading="lazy" src="@/assets/img/联系我们.jpg" alt="Contact Us" style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
             </div>
         </div>
         <div class="bottom_img" ref="imgBox">
-            <img ref="img1" class="img1" src="@/assets/img/bottom/footer.png" alt="">
-            <img ref="img2" class="img2" src="@/assets/img/bottom/footer2.png" alt="">
+            <img loading="lazy" ref="img1" class="img1" src="@/assets/img/bottom/footer.png" alt="">
+            <img loading="lazy" ref="img2" class="img2" src="@/assets/img/bottom/footer2.png" alt="">
         </div>
         <div class="bottom_text">
             © SHI ZHOU TONG (Shenzhen) Technology Co., Ltd. All rights reserved. 粤ICP备2021170722号

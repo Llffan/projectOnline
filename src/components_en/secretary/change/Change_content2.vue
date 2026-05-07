@@ -7,7 +7,7 @@
                     Basic process of Hong Kong company change
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/hk/HK.jpg" alt="Hong Kong company change">
+                    <img loading="lazy" src="@/assets/img/company/hk/HK.jpg" alt="Hong Kong company change">
                     <div class="text">
                         <P>
                             In Hong Kong, changes to company shareholders and directors can be made through simple procedures. Changes in shareholders and directors must be resolved by the shareholders' meeting or the board of directors, followed by corresponding document declarations. This process usually involves submitting relevant documents and forms to the Hong Kong Companies Registry and paying a response fee.

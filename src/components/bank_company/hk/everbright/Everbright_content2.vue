@@ -7,7 +7,7 @@
                     香港光大银行简介
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/everbright.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/bank/hk/everbright.jpg" alt="">
                     <div class="text">
                         <P>中国光大银行香港分行成立于2013年，作为光大银行首家境外分行，其品牌价值位列全球前25，资产规模已突破2,000亿，发展迅猛。企业开设境外账户可享受资金调拨自由、无外汇管制、利率优惠及存取灵活等优势，有效优化税务结构，为海外业务拓展提供有力支持。</P>
                     </div>

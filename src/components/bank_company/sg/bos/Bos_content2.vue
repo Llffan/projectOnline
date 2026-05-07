@@ -7,7 +7,7 @@
                     新加坡银行简介
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/sg/新加披银行.png" alt="新加坡银行">
+                    <img loading="lazy" src="@/assets/img/bank/sg/新加披银行.png" alt="新加坡银行">
                     <div class="text">
                         <P>新加坡银行（Bank of Singapore）是一家总部设于新加坡的私人银行，是东南亚第二大银行华侨银行的全资子公司，原先称ING亚洲私人银行（ING Asia Private Bank）。2009年被华侨银行收购后，其业务主要集中在亚洲及中东等地。除私人银行专属服务外，客户更能通过母公司华侨银行享用全方位的产品及服务组合，包含各类商业方案、融资及经纪服务等。</P>
                     </div>

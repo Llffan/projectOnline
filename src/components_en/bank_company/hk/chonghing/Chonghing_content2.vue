@@ -7,7 +7,7 @@
                     Introduction to Chong Hing Bank (Hong Kong)
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/chong_xing.jpg" alt="Chong Hing Bank (Hong Kong)">
+                    <img loading="lazy" src="@/assets/img/bank/hk/chong_xing.jpg" alt="Chong Hing Bank (Hong Kong)">
                     <div class="text">
                         <P>Established in Hong Kong in 1948, Chong Hing Bank was listed on the Hong Kong Stock Exchange in 1994 (Stock Code: 01111). The bank and its subsidiaries provide comprehensive commercial banking and financial services to individuals and corporate clients, including HKD and foreign currency deposits, credit, FOREX trading, wealth management, investment, securities, insurance, and MPF products. Currently, Chong Hing Bank operates over 30 branches in Hong Kong, with additional branches in Guangzhou, Beijing, Shenzhen, Shanghai, Shantou, and Macau.</P>
                     </div>

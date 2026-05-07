@@ -8,7 +8,7 @@
                     十洲通专业会计及审计服务
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/hk/HK.jpg" alt="会计及审计服务">
+                    <img loading="lazy" src="@/assets/img/company/hk/HK.jpg" alt="会计及审计服务">
                     <div class="text">
                         <p style="font-weight: bold; font-size: 18px;">我们可以为您提供以下专业服务：</p>
                         <ul>

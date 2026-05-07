@@ -6,7 +6,7 @@
                     Macao Company Registration
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/mo/MO-2.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/company/mo/MO-2.jpg" alt="">
                     <div class="text">
                         <P>Macao is one of the most highly developed economic nations worldwide, acting as the 3rd largest economy and a key member of the G8 industrialized nations.</P>
                         <P>The brand effect of Macaoese companies is recognized globally, especially in sectors such as cosmetics, catering, heavy machinery, and gaming, uniquely benefiting corporate branding and marketing.</P>

@@ -1,7 +1,7 @@
 <template>
     <div class="telecom_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/hk/HK-2.jpg" alt="">
+            <img loading="lazy" src="@/assets/img/company/hk/HK-2.jpg" alt="">
         </div>
         <div class="intro">
             <div class="telecom-title">香港电讯牌照</div>

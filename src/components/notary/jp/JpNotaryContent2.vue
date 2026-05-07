@@ -86,10 +86,10 @@
                     日本公证和海牙认证文件样式
                 </div>
                 <div class="intro image-gallery">
-                    <img src="@/assets/img/notary/jp/1.jpg" alt="样例1">
-                    <img src="@/assets/img/notary/jp/2.jpg" alt="样例2">
-                    <img src="@/assets/img/notary/jp/3.jpg" alt="样例3">
-                    <img src="@/assets/img/notary/jp/4.jpg" alt="样例4">
+                    <img loading="lazy" src="@/assets/img/notary/jp/1.jpg" alt="样例1">
+                    <img loading="lazy" src="@/assets/img/notary/jp/2.jpg" alt="样例2">
+                    <img loading="lazy" src="@/assets/img/notary/jp/3.jpg" alt="样例3">
+                    <img loading="lazy" src="@/assets/img/notary/jp/4.jpg" alt="样例4">
                 </div>
                 <div class="subtitle note-text">
                     * 此样式已经包含公证和海牙认证，仅供参考，实际公证文件或有不同，以实际办理为准。

@@ -1,6 +1,6 @@
 ﻿<template>
     <div class="arival_content1">
-        <div class="img_box"><img src="@/assets/img/company/香港.jpg" alt=""></div>
+        <div class="img_box"><img loading="lazy" src="@/assets/img/company/香港.jpg" alt=""></div>
         <div class="intro">
             <div class="title">Arival Bank Account Opening</div>
             <div class="subtitle">Arival Bank Account Opening: Corporate & Personal Account Guide, Advantages, Required Documents, Process & FAQs</div>

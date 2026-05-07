@@ -7,7 +7,7 @@
                     恢复香港公司的核心意义
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/hk/HK.jpg" alt="香港公司恢复">
+                    <img loading="lazy" src="@/assets/img/company/hk/HK.jpg" alt="香港公司恢复">
                     <div class="text">
                         <P>
                             恢复公司注册是处置其已注销名下资产（如银行账户余额、车辆、物业、知识产权等）的唯一合法途径。

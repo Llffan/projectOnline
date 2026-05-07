@@ -7,7 +7,7 @@
                     香港建设银行（亚洲）简介
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/construction.png" alt="">
+                    <img loading="lazy" src="@/assets/img/bank/hk/construction.png" alt="">
                     <div class="text">
                         <P>香港建设银行（亚洲）是建行在港旗舰机构，拥有广泛客户基础，营销网络覆盖全国，与众多大型企业保持密切业务联系。2016年《银行家》全球排名第二，2017年品牌金融全球500强排名第14位，实力雄厚。境外账户可实现资金自由调拨、无外汇管制；个人账户便于海外置业、留学及全球财富管理。</P>
                     </div>

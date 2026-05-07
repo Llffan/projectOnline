@@ -6,7 +6,7 @@
                     BVI公司注册
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/bvi/BVI-2.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/company/bvi/BVI-2.jpg" alt="">
                     <div class="text">
                         <P>BVI又称为英属维尔京群岛或英属处女群岛，是英联邦成员国之一，旅游业及海外离岸公司注册是其两大支柱产业。</P>
                         <P>BVI的金融环境非常利于离岸公司发展，因其被称作为"免税天堂"，基本上所有离岸经营的公司不用缴税。</P>

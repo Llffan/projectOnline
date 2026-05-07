@@ -6,7 +6,7 @@
                     印尼公司注册
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/id/ID-2.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/company/id/ID-2.jpg" alt="">
                     <div class="text">
                         <P>印尼是东盟最大经济体和20国集团重要成员，经济增速多年来一直保持在5%左右，在全球主要经济体中位列前茅。</P>
                         <P>印尼拥有丰富天然资源，包括石油、天然气、锡、铜及黄金。主要进口品为机械设备、化学制品、燃料、食品等。</P>

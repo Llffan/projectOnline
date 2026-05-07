@@ -7,7 +7,7 @@
                     Introduction to Maybank Singapore
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/sg/马来西亚.png" alt="Maybank Singapore">
+                    <img loading="lazy" src="@/assets/img/bank/sg/马来西亚.png" alt="Maybank Singapore">
                     <div class="text">
                         <P>Maybank (Malayan Banking Berhad), headquartered in Kuala Lumpur, Malaysia, is the largest bank in Malaysia and the largest listed company on the Bursa Malaysia. Currently, it has 334 domestic branches and 34 overseas branches, with total assets reaching 337 billion ringgit (approx. 105 billion USD). It serves a massive client base across over 10 Southeast Asian countries and major global hubs including New York, London, Singapore, Hong Kong, and Shanghai.</P>
                     </div>

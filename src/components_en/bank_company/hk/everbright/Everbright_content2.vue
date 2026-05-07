@@ -7,7 +7,7 @@
                     Introduction to China Everbright Bank Hong Kong
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/everbright.jpg" alt="China Everbright Bank Hong Kong">
+                    <img loading="lazy" src="@/assets/img/bank/hk/everbright.jpg" alt="China Everbright Bank Hong Kong">
                     <div class="text">
                         <P>China Everbright Bank Hong Kong Branch, established in 2013 as the bank's first overseas branch, ranks among the top 25 brands globally with total assets exceeding 200 billion. The branch features rapid growth and high professional standards. Corporate clients benefit from unrestricted capital allocation, freedom from exchange controls, preferential interest rates, and flexible withdrawal options, which simplify tax optimization and provide robust support for international business expansion.</P>
                     </div>

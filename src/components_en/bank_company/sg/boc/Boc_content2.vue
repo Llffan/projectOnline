@@ -7,7 +7,7 @@
                     Introduction to Bank of China (Singapore)
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/sg/中国银行.png" alt="Bank of China Singapore">
+                    <img loading="lazy" src="@/assets/img/bank/sg/中国银行.png" alt="Bank of China Singapore">
                     <div class="text">
                         <P>Established in 1936, Bank of China Singapore Branch is one of the longest-standing Chinese banks in Singapore, holding a Qualifying Full Bank (QFB) license issued by the Monetary Authority of Singapore (MAS). As the hub for BOC in Southeast Asia, the branch serves as a major market maker for RMB futures on the Singapore Exchange (SGX) and strategic functions such as commodity financing and Asia bond distribution, with business radiating across global markets. In 2025, it joined hands with Sinopec to successfully launch a cross-border bank-enterprise direct link project in Sri Lanka, marking a major breakthrough for Chinese banks in the field of fund management in South Asia.</P>
                     </div>

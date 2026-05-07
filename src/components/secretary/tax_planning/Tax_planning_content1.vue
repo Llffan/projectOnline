@@ -1,7 +1,7 @@
 <template>
     <div class="tax_planning_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/hk/HK.jpg" alt="税务规划">
+            <img loading="lazy" src="@/assets/img/company/hk/HK.jpg" alt="税务规划">
         </div>
         <div class="intro">
             <div class="title">会计与税务咨询解决方案</div>

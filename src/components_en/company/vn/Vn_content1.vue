@@ -1,7 +1,7 @@
 <template>
     <div class="vn_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/vn/VN.jpg" alt="">
+            <img loading="lazy" src="@/assets/img/company/vn/VN.jpg" alt="">
         </div>
         <div class="intro">
             <div class="vn-title">Vietnam Company Registration Guide</div>

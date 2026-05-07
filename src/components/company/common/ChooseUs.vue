@@ -6,7 +6,7 @@
         <div class="intro" ref="introRef">
             <div v-for="(item, index) in advantages" :key="index" class="advantage" :ref="el => advantageRefs[index] = el">
                 <div class="img">
-                    <img :src="item.imgSrc" :alt="item.title">
+                    <img loading="lazy" :src="item.imgSrc" :alt="item.title">
                 </div>
                 <div class="text1">
                     {{ item.title }}

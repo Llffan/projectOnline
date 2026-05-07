@@ -7,7 +7,7 @@
                     美国水星银行简介
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/us/水星银行.png" alt="美国水星银行">
+                    <img loading="lazy" src="@/assets/img/bank/us/水星银行.png" alt="美国水星银行">
                     <div class="text">
                         <p>美国水星银行mercury是一家数字银行公司，总部位于美国加州旧金山，提供专为初创企业涉及的银行服务和银行账户。优点有很多，注册成本0，WIRE/ACH转账都是0手续费，没有最低金额限制，开户难度小，只是目前mercury仅支持公司账户的开设，不支持个人账户。然而对于我们人在国内做跨境的外贸人，mercury仍然是开设美金账户的首选之一。</p>
                     </div>

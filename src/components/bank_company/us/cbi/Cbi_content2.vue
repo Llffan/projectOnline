@@ -7,7 +7,7 @@
                     美国富港银行简介
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/us/富港银行.png" alt="美国富港银行">
+                    <img loading="lazy" src="@/assets/img/bank/us/富港银行.png" alt="美国富港银行">
                     <div class="text">
                         <P>富港银行（CB International Bank，简称CBiBank）成立于2017年6月，是一家持有美国商业银行牌照受美国银行监督机构监管的商业银行，总部位于美国波多黎各。作为美联储(ABA)、SWIFT网络(代码：CBLBPRSJ)、银联国际(UNIONPAY)及跨境人民币清算(CIPS)等多家机构成员，富港银行业务涵盖企业与个人开户。企业开户可享自由调拨资金、不受外汇管制、存取灵活与优化税务等优势，给予出海业务更大支持；个人开户则便于海外购物、置业、投资、移民及全球财富管理，提升境内外资金运转效率，致力于为客户提供便捷的定制化国际金融解决方案。</P>
                     </div>

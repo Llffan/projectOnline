@@ -6,7 +6,7 @@
                     What is product barcode
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/hk/HK.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/company/hk/HK.jpg" alt="">
                     <div class="text">
                         <P>Product barcode (Bar Code) converts digital codes representing product information into special symbols composed of a set of regularly arranged parallel lines. The information it represents is the internationally accepted commodity code.</P>
                         <P>Commodity barcode is the "ID card" of commodities and the "common language" for commodities circulating in the international market. Retailers in many countries around the world are using barcodes, which have become standard in international trade.</P>
@@ -78,7 +78,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in advantages" :key="index" class="advantage">
                         <div class="img">
-                            <img :src="item.imgSrc" :alt="item.title">
+                            <img loading="lazy" :src="item.imgSrc" :alt="item.title">
                         </div>
                         <div class="text1">
                             {{ item.title }}

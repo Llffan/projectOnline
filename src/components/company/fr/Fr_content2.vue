@@ -6,7 +6,7 @@
                     法国公司注册
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/fr/FR-2.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/company/fr/FR-2.jpg" alt="">
                     <div class="text">
                         <P>法国是最发达国家之一，实行自由贸易政策，与欧盟内各国及美国建立了紧密关系，商品能自由便捷地在欧美销售。</P>
                         <P>随着中欧贸易深化和协定落地，中欧双方市场将更加开放。欧洲市场，特别是法国，是我们未来最重要的市场之一。</P>

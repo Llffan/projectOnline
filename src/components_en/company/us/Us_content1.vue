@@ -1,7 +1,7 @@
 <template>
     <div class="us_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/us/US.jpg" alt="">
+            <img loading="lazy" src="@/assets/img/company/us/US.jpg" alt="">
         </div>
         <div class="intro">
             <div class="us-title">US Company Registration Guide</div>

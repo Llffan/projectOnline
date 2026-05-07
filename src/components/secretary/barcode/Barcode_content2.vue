@@ -6,7 +6,7 @@
                     什么是商品条码
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/hk/HK.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/company/hk/HK.jpg" alt="">
                     <div class="text">
                         <P>商品条码（Bar Code）是将表示商品信息的数字代码转换成由一组规则排列的平行线条构成的特殊符号。它所表示的信息就是国际通用的商品代码。</P>
                         <P>商品条码是商品的“身份证”，是商品流通于国际市场的“共同语言”。全球多个国家的零售商都在使用条码，这已经成为国际贸易的标配。</P>
@@ -78,7 +78,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in advantages" :key="index" class="advantage">
                         <div class="img">
-                            <img :src="item.imgSrc" :alt="item.title">
+                            <img loading="lazy" :src="item.imgSrc" :alt="item.title">
                         </div>
                         <div class="text1">
                             {{ item.title }}

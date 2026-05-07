@@ -1,7 +1,7 @@
 <template>
     <div class="hsbc_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/香港.jpg" alt="美国汇丰银行">
+            <img loading="lazy" src="@/assets/img/company/香港.jpg" alt="美国汇丰银行">
         </div>
         <div class="intro">
             <div class="title">美国汇丰银行开户</div>

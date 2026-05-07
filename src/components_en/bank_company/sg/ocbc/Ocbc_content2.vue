@@ -7,7 +7,7 @@
                     Introduction to OCBC Bank Singapore
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/sg/华侨银行.png" alt="OCBC Bank Singapore">
+                    <img loading="lazy" src="@/assets/img/bank/sg/华侨银行.png" alt="OCBC Bank Singapore">
                     <div class="text">
                         <P>OCBC Bank is the longest-established local bank in Singapore, formed in 1932 through the merger of three major Chinese banks, the earliest of which was founded in 1912. In terms of asset size, OCBC is currently the second-largest financial services group in Southeast Asia and one of the highest-rated banks in the world, with ratings of Aa1 from Moody's, AA- from S&P, and AA- from Fitch. Recognized for its broad financial strength and stability, OCBC has been consistently ranked among the "World's Top 50 Safest Banks" by Global Finance magazine and was named "Best Managed Bank in Singapore and Asia-Pacific" by The Asian Banker.</P>
                     </div>

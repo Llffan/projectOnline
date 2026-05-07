@@ -7,7 +7,7 @@
                     Introduction to Nanyang Commercial Bank
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/NCB.jpg" alt="Nanyang Commercial Bank">
+                    <img loading="lazy" src="@/assets/img/bank/hk/NCB.jpg" alt="Nanyang Commercial Bank">
                     <div class="text">
                         <P>
                             Nanyang Commercial Bank (NCB) was founded in Hong Kong on December 15, 1949, by Chuang Shih-ping, and is currently a subsidiary of China Cinda Asset Management Co., Ltd. Adhering to the service motto of "Customer First, Courtesy and Respect" and the principle of "Reputation First, Service Uppermost," NCB is dedicated to serving clients globally from its base in Hong Kong. The bank provides convenient, rapid, efficient, and professional services through various channels, operating 41 branches in Hong Kong along with multiple Investment and Business Centers. Internationally, it has a presence in San Francisco and maintains a wholly-owned subsidiary, Nanyang Commercial Bank (China) Limited, on the Mainland.

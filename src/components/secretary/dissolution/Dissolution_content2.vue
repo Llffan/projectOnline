@@ -7,7 +7,7 @@
                     香港公司注销指南
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/hk/HK.jpg" alt="香港公司注销">
+                    <img loading="lazy" src="@/assets/img/company/hk/HK.jpg" alt="香港公司注销">
                     <div class="text">
                         <P>
                             当您的香港公司不再需要运营时，正确地解散并注销公司是非常重要的法定义务。未合法注销可能导致罚款乃至被诉讼，合理闭业可以切断连带风险。

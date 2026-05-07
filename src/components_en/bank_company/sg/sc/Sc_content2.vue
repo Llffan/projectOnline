@@ -7,7 +7,7 @@
                     Introduction to Standard Chartered Singapore
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/sg/渣打银行.png" alt="Standard Chartered Singapore">
+                    <img loading="lazy" src="@/assets/img/bank/sg/渣打银行.png" alt="Standard Chartered Singapore">
                     <div class="text">
                         <P>Standard Chartered Bank Singapore is part of the Standard Chartered International Banking Group and has a 160-year history in the country. In October 1999, it was among the first international banks to receive a Qualifying Full Bank (QFB) license, acknowledging the Group's long-term business commitment to the nation. Standard Chartered Singapore is one of the highest-rated banks globally: S&P rated A, Moody's rated AA3, and Fitch rated A.</P>
                     </div>

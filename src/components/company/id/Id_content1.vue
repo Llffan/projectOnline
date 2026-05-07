@@ -1,7 +1,7 @@
 <template>
     <div class="id_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/id/ID.jpg" alt="">
+            <img loading="lazy" src="@/assets/img/company/id/ID.jpg" alt="">
         </div>
         <div class="intro">
             <div class="id-title">印度尼西亚公司注册全攻略</div>

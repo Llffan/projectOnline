@@ -6,7 +6,7 @@
                     德国公司注册
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/de/DE-2.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/company/de/DE-2.jpg" alt="">
                     <div class="text">
                         <P>德国是欧洲四大经济体之一，欧盟经济总量最高的国家，也是世界第三大出口国和第四大经济大国。</P>
                         <P>以汽车和精密机床为代表的高端制造业是德国的重要象征。德国是世界贸易大国，同230多个国家和地区保持贸易关系。</P>

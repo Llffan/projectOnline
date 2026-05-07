@@ -1,7 +1,7 @@
 <template>
     <div class="bvi_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/bvi/BVI.jpg" alt="">
+            <img loading="lazy" src="@/assets/img/company/bvi/BVI.jpg" alt="">
         </div>
         <div class="intro">
             <div class="bvi-title">BVI公司注册全攻略</div>

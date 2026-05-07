@@ -7,7 +7,7 @@
                     新加坡Aspire银行简介
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/sg/aspire.png" alt="新加坡Aspire银行">
+                    <img loading="lazy" src="@/assets/img/bank/sg/aspire.png" alt="新加坡Aspire银行">
                     <div class="text">
                         <P>新加坡Aspire银行是整个东南亚地区首家数字银行，也是新加坡数字银行的代表，由原东南亚最大电商Lazada联合创始人创立。Aspire主要作为专注于中小企业的资金管理服务提供商，专门为东南亚及全球中小企业提供方便快捷的银行业务。其愿景是重塑中小企业金融体验，致力于推动金融包容性，帮助企业主通过当日贷款、透明定价以及灵活的数字工具取得长效业务成长。</P>
                     </div>

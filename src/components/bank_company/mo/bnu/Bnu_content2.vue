@@ -7,7 +7,7 @@
                     澳门大西洋银行简介
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/mo/大西洋银行.png" alt="澳门大西洋银行">
+                    <img loading="lazy" src="@/assets/img/bank/mo/大西洋银行.png" alt="澳门大西洋银行">
                     <div class="text">
                         <P>
                             大西洋银行是澳门商业银行之一。原名为“大西洋国海外汇理银行”，总行设在葡萄牙里斯本。澳葡政府在市流通之纸币，均由该银行发行，为葡萄牙在澳门唯一的发钞银行。地点设于新马路与南湾转角处，是一幢独具规模的建筑物。

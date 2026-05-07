@@ -7,7 +7,7 @@
                     香港中国银行简介
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/china.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/bank/hk/china.jpg" alt="">
                     <div class="text">
                         <P>中国银行香港分行作为总行全资直属分行及全牌照商业银行，地位稳固。企业开户可享资金自由调拨、无外汇管制及优惠利率，助力海外业务与税务优化；个人开户则便利海外置业、留学及全球财富管理，提升资金使用效率。</P>
                     </div>

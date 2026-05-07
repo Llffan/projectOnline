@@ -1,7 +1,7 @@
 <template>
     <div class="my_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/my/MY.jpg" alt="">
+            <img loading="lazy" src="@/assets/img/company/my/MY.jpg" alt="">
         </div>
         <div class="intro">
             <div class="my-title">马来西亚公司注册</div>

@@ -1,7 +1,7 @@
 <template>
     <div class="tax_filing_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/hk/HK.jpg" alt="tax declaration">
+            <img loading="lazy" src="@/assets/img/company/hk/HK.jpg" alt="tax declaration">
         </div>
         <div class="intro">
             <div class="title">tax declaration</div>

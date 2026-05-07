@@ -1,7 +1,7 @@
 <template>
     <div class="mo_boc_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/mo/MO.jpg" alt="">
+            <img loading="lazy" src="@/assets/img/company/mo/MO.jpg" alt="">
         </div>
         <div class="intro">
             <div class="title">Bank of China Macau Account Opening</div>

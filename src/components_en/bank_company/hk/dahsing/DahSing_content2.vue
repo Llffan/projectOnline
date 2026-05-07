@@ -7,7 +7,7 @@
                     Introduction to Dah Sing Bank (Hong Kong)
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/dah_sing.jpg" alt="Dah Sing Bank (Hong Kong)">
+                    <img loading="lazy" src="@/assets/img/bank/hk/dah_sing.jpg" alt="Dah Sing Bank (Hong Kong)">
                     <div class="text">
                         <P>Dah Sing Group is a significant financial services group in Hong Kong, primarily operating in the banking and insurance sectors. The group includes two entities listed on the Hong Kong Stock Exchange: Dah Sing Financial Holdings Limited (since 1987) and Dah Sing Banking Group Limited (since 2004). Dah Sing is widely recognized for its proactive and innovative approach to financial services. Its success is fundamentally driven by a professional management team and a deep-seated commitment to customer service excellency.</P>
                     </div>

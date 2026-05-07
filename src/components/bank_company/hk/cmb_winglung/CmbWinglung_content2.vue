@@ -7,7 +7,7 @@
                     香港招商永隆银行简介
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/merchants_wing_lung.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/bank/hk/merchants_wing_lung.jpg" alt="">
                     <div class="text">
                         <P>招商永隆银行（原永隆银行），自2009年成为招商银行子公司后，业务广泛覆盖零售与企业银行、信贷、证券期货、理财及信托等领域，在海内外设有41家分支机构。企业开设境外账户可享资金自由调拨、无外汇管制、利率优惠及税务优化支持；个人账户则便利海外留学置业、全球财富管理，提升资金运作效率。</P>
                     </div>

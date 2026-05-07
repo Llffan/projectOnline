@@ -6,7 +6,7 @@
                     海外公司年审与维护
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/bvi/BVI-2.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/company/bvi/BVI-2.jpg" alt="">
                     <div class="text">
                         <P>海外离岸公司（如BVI、开曼、塞舌尔等）虽然通常享有税务豁免权，但必须遵守注册地的公司法规定，按时进行年度牌照续费和年审工作，以维持公司的法律地位。</P>
                         <P>年审的主要内容包括缴纳政府牌照费、注册代理人费用及注册地址费用等。未能按时年审将导致高额罚款，甚至导致公司被除名，资产被冻结。</P>
@@ -78,7 +78,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in advantages" :key="index" class="advantage">
                         <div class="img">
-                            <img :src="item.imgSrc" :alt="item.title">
+                            <img loading="lazy" :src="item.imgSrc" :alt="item.title">
                         </div>
                         <div class="text1">
                             {{ item.title }}

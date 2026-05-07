@@ -4,7 +4,7 @@
             <div class="content1">
                 <div class="title">CGB (China Guangfa Bank) Macau Introduction</div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/mo/广发银行.png" alt="CGB Macau">
+                    <img loading="lazy" src="@/assets/img/bank/mo/广发银行.png" alt="CGB Macau">
                     <div class="text">
                         <P>Guangdong Development Bank Macau Branch was approved by the People's Bank of China and the Macau Government, and officially opened in Macau on November 8, 1993. Located at 269-275 Avenida da Praia Grande, Macau. As the first overseas branch established by a Chinese commercial bank, it offers banking services including current and savings deposits, foreign currency deposits, fixed deposits, various commercial loans, import/export documentary credits, mortgage loans, domestic and international remittances, foreign exchange investments, insurance agency, and RMB exchange.</P>
                         <P>Its major shareholders include Guangdong Provincial Treasury (42.7%) and Bank of China Group (14.m%). The bank has always been committed to providing diversified banking services such as mortgage loans, foreign exchange investments, and check savings services.</P>

@@ -7,7 +7,7 @@
                     澳门葡萄牙商业银行简介
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/mo/葡萄牙商业银行.png" alt="澳门葡萄牙商业银行">
+                    <img loading="lazy" src="@/assets/img/bank/mo/葡萄牙商业银行.png" alt="澳门葡萄牙商业银行">
                     <div class="text">
                         <P>
                             葡萄牙商业银行(Banco Comercial Portugues)。是一家葡萄牙银行，该银行成立于1985年，是葡萄牙排行前十银行之一，也是葡萄最大的私人银行。其总部位于波尔图，但其营运总部位于里斯本大奥埃拉斯。它拥有430万世界各地的客户和在葡萄牙拥有超过900家分行。葡萄牙商业银行是泛欧100种股票指数，新行政总裁为努诺·曼努埃尔·席尔瓦·阿马多。

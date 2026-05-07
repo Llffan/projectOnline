@@ -6,7 +6,7 @@
                     马绍尔公司注册
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/mh/MH-2.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/company/mh/MH-2.jpg" alt="">
                     <div class="text">
                         <P>马绍尔是著名的离岸注册地之一，尤其受到想进行离岸操作的外贸企业青睐，近年来声名鹊起。</P>
                         <P>马绍尔公司若非由原居民成立，可合法免除一切税项，并享有高度保密性。</P>

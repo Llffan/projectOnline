@@ -4,7 +4,7 @@
             <div class="content1">
                 <div class="title">HSBC Macau Introduction</div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/mo/汇丰银行.png" alt="HSBC Macau">
+                    <img loading="lazy" src="@/assets/img/bank/mo/汇丰银行.png" alt="HSBC Macau">
                     <div class="text">
                         <P>HSBC is a foreign bank. Its full name is The Hongkong and Shanghai Banking Corporation Limited (HSBC). HSBC Holdings plc is a wholly-owned subsidiary of HSBC Holdings Limited, a founding member and flagship of the HSBC Group in Asia Pacific, and the largest registered bank in Hong Kong, as well as one of the three note-issuing banks in Hong Kong.</P>
                         <P>Headquartered at 1 Queen's Road Central, HSBC Main Building, Hong Kong, HSBC and its subsidiaries currently operate approximately 700 branches and offices in the Asia-Pacific region. On October 18, 2021, the Hong Kong Monetary Authority (HKMA) announced that HSBC was authorized to conduct Cross-boundary Wealth Management Connect business.</P>

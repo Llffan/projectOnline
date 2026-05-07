@@ -4,7 +4,7 @@
             <div class="content1">
                 <div class="title">About Bank of California</div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/us/加州银行.png" alt="Bank of California">
+                    <img loading="lazy" src="@/assets/img/bank/us/加州银行.png" alt="Bank of California">
                     <div class="text"><P>Bank of California, Inc. was incorporated under Maryland law in 2002, absorbing all shares of Pacific Trust Bank. Its main business includes attracting retail deposits from the public, primarily owner-occupied one-to-four family residential loans, various consumer loans, multifamily and commercial first mortgage real estate loans, and commercial enterprise loans.</P></div>
                 </div>
             </div>

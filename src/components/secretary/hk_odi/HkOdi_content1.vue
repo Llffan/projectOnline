@@ -1,7 +1,7 @@
 <template>
     <div class="odi_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/hk/HK-2.jpg" alt="ODI备案">
+            <img loading="lazy" src="@/assets/img/company/hk/HK-2.jpg" alt="ODI备案">
         </div>
         <div class="intro">
             <div class="odi-title">ODI境外投资备案</div>

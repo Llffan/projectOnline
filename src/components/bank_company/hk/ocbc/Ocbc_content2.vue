@@ -7,7 +7,7 @@
                     华侨银行（香港）简介
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/OCBC.jpg" alt="华侨银行（香港）">
+                    <img loading="lazy" src="@/assets/img/bank/hk/OCBC.jpg" alt="华侨银行（香港）">
                     <div class="text">
                         <P>华侨永亨银行有限公司（前身为永亨银行有限公司），是一家持牌银行，总部位于香港，按总资产计算，是香港第八大银行。自2014年7月下旬起，永亨银行成为新加坡华侨银行（OCBC）的子公司。收购永亨为华侨银行提供了一个由约 70 家分行组成的网络，覆盖香港、澳门和中国大陆，以增加华侨银行在香港和中国现有的业务。</P>
                     </div>

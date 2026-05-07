@@ -4,7 +4,7 @@
             <div class="content1">
                 <div class="title">About Mercury Bank</div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/us/水星银行.png" alt="Mercury Bank">
+                    <img loading="lazy" src="@/assets/img/bank/us/水星银行.png" alt="Mercury Bank">
                     <div class="text"><p>Mercury is a digital banking company headquartered in San Francisco, California, offering banking services and accounts specifically designed for startups. It offers many advantages: zero registration cost, zero fees for WIRE/ACH transfers, no minimum balance requirements, and easy account opening. Currently, Mercury only supports corporate accounts, not personal accounts. Nevertheless, for cross-border traders based in China, Mercury remains one of the top choices for opening a USD account.</p></div>
                 </div>
             </div>

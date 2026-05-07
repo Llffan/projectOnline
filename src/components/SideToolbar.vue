@@ -10,7 +10,7 @@
       <!-- WeChat QR Popup -->
       <transition name="fade">
         <div v-if="showWechat" class="qr-popup">
-          <img src="@/assets/img/联系我们.jpg" alt="微信联系我们" />
+          <img loading="lazy" src="@/assets/img/联系我们.jpg" alt="微信联系我们" />
           <p>扫一扫联系我们</p>
           <div class="arrow"></div>
         </div>

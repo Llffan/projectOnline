@@ -68,7 +68,7 @@
                                 <div class="card-header">
                                     <div class="flag-placeholder" :class="item.iconType">
                                         <span v-if="item.iconType === 'text-badge'">{{ item.iconText }}</span>
-                                        <img v-else-if="item.flag" :src="getFlagUrl(item.flag)" />
+                                        <img loading="lazy" v-else-if="item.flag" :src="getFlagUrl(item.flag)" />
                                     </div>
                                     <div class="intl-name">{{ item.name }}</div>
                                 </div>

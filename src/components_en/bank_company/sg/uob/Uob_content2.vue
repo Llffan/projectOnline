@@ -7,7 +7,7 @@
                     Introduction to UOB Bank Singapore
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/sg/大华银行.png" alt="UOB Bank Singapore">
+                    <img loading="lazy" src="@/assets/img/bank/sg/大华银行.png" alt="UOB Bank Singapore">
                     <div class="text">
                         <P>United Overseas Bank (UOB), founded in 1935, is a leading bank in Asia with a global network of more than 500 branches and offices in 19 countries and territories across Asia-Pacific, Europe, and North America. In Asia, UOB operates through its head office in Singapore and banking subsidiaries in China, Indonesia, Malaysia, Thailand, and Vietnam, as well as branches and offices across the region. Today, UOB is rated among the world's top banks: Aa1 by Moody's and AA- by both S&P Global Ratings and Fitch Ratings.</P>
                     </div>

@@ -4,7 +4,7 @@
             <div class="content1">
                 <div class="title">BCP Bank Macau Introduction</div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/mo/葡萄牙商业银行.png" alt="BCP Bank Macau">
+                    <img loading="lazy" src="@/assets/img/bank/mo/葡萄牙商业银行.png" alt="BCP Bank Macau">
                     <div class="text">
                         <P>Banco Comercial Portugues (BCP) is a Portuguese bank established in 1985. It is one of the top ten banks in Portugal and the largest private bank in the country. Headquartered in Porto with operations in Lisbon, it serves over 4.3 million clients worldwide and has more than 900 branches in Portugal. BCP is a constituent of the Euronext 100 index.</P>
                     </div>

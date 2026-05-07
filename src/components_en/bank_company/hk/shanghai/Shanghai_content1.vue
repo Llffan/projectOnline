@@ -1,7 +1,7 @@
 <template>
     <div class="shanghai_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/香港.jpg" alt="">
+            <img loading="lazy" src="@/assets/img/company/香港.jpg" alt="">
         </div>
         <div class="intro">
             <div class="title">Shanghai Commercial Bank (Hong Kong)</div>

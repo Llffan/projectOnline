@@ -6,7 +6,7 @@
                     泰国公司注册
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/th/TH-2.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/company/th/TH-2.jpg" alt="">
                     <div class="text">
                         <P>泰国历来注重吸引外商投资，是东南亚地区较为吸引外商投资的国家之一。</P>
                         <P>根据泰国投资促进协会（BOI）公布的数据，2022年季度外商直接投资占计划总额的70%，与以往相比增长了29%。</P>

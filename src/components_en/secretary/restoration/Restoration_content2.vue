@@ -7,7 +7,7 @@
                     Restoring the core significance of Hong Kong companies
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/hk/HK.jpg" alt="Hong Kong company recovery">
+                    <img loading="lazy" src="@/assets/img/company/hk/HK.jpg" alt="Hong Kong company recovery">
                     <div class="text">
                         <P>Restoring registration is the only legal way to handle a canceled company's remaining assets, including bank balances, vehicles, properties, and intellectual property.</P>
                         <P>If undisposed assets remain after cancellation, the company must be restored before disposal. Unprocessed assets will be classified as ownerless and permanently transferred to the HK government. Act promptly once unhandled assets are discovered.</P>

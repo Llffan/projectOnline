@@ -1,7 +1,7 @@
 <template>
     <div class="ws_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/ws/WS.jpg" alt="">
+            <img loading="lazy" src="@/assets/img/company/ws/WS.jpg" alt="">
         </div>
         <div class="intro">
             <div class="ws-title">Samoa Company Registration Guide</div>

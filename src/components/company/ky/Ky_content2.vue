@@ -6,7 +6,7 @@
                     开曼公司注册
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/ky/KY-2.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/company/ky/KY-2.jpg" alt="">
                     <div class="text">
                         <P>开曼群岛是英国在西印度群岛的海外属地，由三大岛屿组成，是世界第4大离岸金融中心。</P>
                         <P>开曼被誉为真正的税务避风港，公司对个人、公司和信托行业不征收所得税、利润税或财产税。</P>

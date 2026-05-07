@@ -6,7 +6,7 @@
                     澳门公司注册
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/mo/MO-2.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/company/mo/MO-2.jpg" alt="">
                     <div class="text">
                         <P>澳门特别行政区，位于中国珠江三角洲西岸，毗邻珠海，隔海香港，是国际自由港和世界旅游休闲中心，世界人口密度最高的地区之一。</P>
                         <P>也是世界四大赌城之一，其著名的轻工业、旅游业、酒店业和娱乐场使澳门长盛不衰，成为全球最发达富裕的地区之一。</P>

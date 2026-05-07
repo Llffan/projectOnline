@@ -7,7 +7,7 @@
                     新加坡星展银行简介
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/sg/星展银行.png" alt="新加坡星展银行">
+                    <img loading="lazy" src="@/assets/img/bank/sg/星展银行.png" alt="新加坡星展银行">
                     <div class="text">
                         <P>星展银行（DBS），原名新加坡发展银行（Development Bank of Singapore），是新加坡最大的商业银行。银行成立于1968年，原为新加坡政府成立的一家发展融资机构。目前，星展银行为客户提供全方位金融服务，其资产总额和各项业务发展指标在本土名列前茅，并拥有极高的国际信用评级。</P>
                     </div>

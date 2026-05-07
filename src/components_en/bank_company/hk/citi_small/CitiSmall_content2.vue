@@ -7,7 +7,7 @@
                     Introduction to Citibank Small (Hong Kong)
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/citibank2.jpg" alt="Citibank Small (Hong Kong)">
+                    <img loading="lazy" src="@/assets/img/bank/hk/citibank2.jpg" alt="Citibank Small (Hong Kong)">
                     <div class="text">
                         <P>Citibank Small (Hong Kong) branch is part of Citibank (Hong Kong), providing comprehensive services including wealth management, investment, credit cards, insurance, and loans. As a subsidiary of Citigroup operating in Hong Kong since 1902, it was the first foreign bank to enter the market. Citibank (Hong Kong) Limited is a locally incorporated licensed institution, currently maintaining 48 branches across Hong Kong Island, Kowloon, the New Territories, and Macau, tailored to provide accessible services for small enterprises and individuals.</P>
                     </div>

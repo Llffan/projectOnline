@@ -1,7 +1,7 @@
 <template>
     <div class="sg_dbs_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/sg/SG.jpg" alt="">
+            <img loading="lazy" src="@/assets/img/company/sg/SG.jpg" alt="">
         </div>
         <div class="intro">
             <div class="title">新加坡星展银行开户</div>

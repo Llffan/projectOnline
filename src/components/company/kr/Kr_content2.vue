@@ -6,7 +6,7 @@
                     韩国公司注册
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/kr/KR-2.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/company/kr/KR-2.jpg" alt="">
                     <div class="text">
                         <P>韩国位于东亚朝鲜半岛南部，是一个发达的资本主义国家，资讯科技、制造业发达，造船、汽车、电子等产业居世界前列。</P>
                         <P>韩国拥有世界闻名的高速互联网服务、优良的营商环境和发达的市场经济，是投资者开展业务的理想地。</P>

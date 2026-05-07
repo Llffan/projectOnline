@@ -83,10 +83,10 @@
                     香港海牙认证文件样式
                 </div>
                 <div class="intro image-gallery">
-                    <img src="@/assets/img/notary/hk/1-1.jpg" alt="样例1">
-                    <img src="@/assets/img/notary/hk/1-2.jpg" alt="样例2">
-                    <img src="@/assets/img/notary/hk/1-3.jpg" alt="样例3">
-                    <img src="@/assets/img/notary/hk/1-4.jpg" alt="样例4">
+                    <img loading="lazy" src="@/assets/img/notary/hk/1-1.jpg" alt="样例1">
+                    <img loading="lazy" src="@/assets/img/notary/hk/1-2.jpg" alt="样例2">
+                    <img loading="lazy" src="@/assets/img/notary/hk/1-3.jpg" alt="样例3">
+                    <img loading="lazy" src="@/assets/img/notary/hk/1-4.jpg" alt="样例4">
                 </div>
                 <div class="subtitle note-text">
                     * 此样式已经包含公证和海牙认证，仅供参考，实际公证文件或有不同，以实际办理为准。
@@ -99,10 +99,10 @@
                     香港内地转呈认证（中国法律服务香港有限公司）文件样式
                 </div>
                 <div class="intro image-gallery">
-                    <img src="@/assets/img/notary/hk/2-1.jpg" alt="转呈认证样例1">
-                    <img src="@/assets/img/notary/hk/2-2.jpg" alt="转呈认证样例2">
-                    <img src="@/assets/img/notary/hk/2-3.jpg" alt="转呈认证样例3">
-                    <img src="@/assets/img/notary/hk/2-4.jpg" alt="转呈认证样例4">
+                    <img loading="lazy" src="@/assets/img/notary/hk/2-1.jpg" alt="转呈认证样例1">
+                    <img loading="lazy" src="@/assets/img/notary/hk/2-2.jpg" alt="转呈认证样例2">
+                    <img loading="lazy" src="@/assets/img/notary/hk/2-3.jpg" alt="转呈认证样例3">
+                    <img loading="lazy" src="@/assets/img/notary/hk/2-4.jpg" alt="转呈认证样例4">
                 </div>
                 <div class="subtitle note-text">
                     * 此样式已经包含公证和海牙认证，仅供参考，实际公证文件或有不同，以实际办理为准。

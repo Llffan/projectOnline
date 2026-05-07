@@ -1,7 +1,7 @@
 <template>
     <div class="mo_icbc_asia_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/mo/MO.jpg" alt="">
+            <img loading="lazy" src="@/assets/img/company/mo/MO.jpg" alt="">
         </div>
         <div class="intro">
             <div class="title">ICBC Asia Macau Account Opening</div>

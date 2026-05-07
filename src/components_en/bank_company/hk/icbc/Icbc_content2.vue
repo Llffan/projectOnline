@@ -7,7 +7,7 @@
                     Introduction to ICBC (Asia)
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/ICBC.jpg" alt="ICBC (Asia)">
+                    <img loading="lazy" src="@/assets/img/bank/hk/ICBC.jpg" alt="ICBC (Asia)">
                     <div class="text">
                         <P>Industrial and Commercial Bank of China (Asia) Limited, or ICBC (Asia), provides specialized account opening witness services through ICBC branches in Mainland China. This allows eligible clients to establish an "Elite Club Account" or an "Integrated Account" with ICBC (Asia). These accounts serve as comprehensive financial hubs containing various sub-accounts, such as HKD Savings, HKD Current, USD Current, Multi-currency Savings, and Fixed Deposit accounts, facilitating efficient daily wealth management and global transaction processing.</P>
                     </div>

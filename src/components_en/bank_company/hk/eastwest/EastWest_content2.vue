@@ -7,7 +7,7 @@
                     Introduction to East West Bank (Hong Kong)
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/eastwest.jpg" alt="East West Bank (Hong Kong)">
+                    <img loading="lazy" src="@/assets/img/bank/hk/eastwest.jpg" alt="East West Bank (Hong Kong)">
                     <div class="text">
                         <P>The Hong Kong branch of East West Bank is a fully licensed institution authorized by the Hong Kong Monetary Authority (HKMA). It provides comprehensive banking services to clients in Hong Kong, Mainland China, and major global markets, including commercial banking, settlement, FOREX trading, wealth management, and securities investment. Headquartered in Southern California, East West Bank has positioned itself as the premier bridge between East and West, becoming one of the largest Chinese-focused commercial banks in the United States with over 120 locations globally.</P>
                     </div>

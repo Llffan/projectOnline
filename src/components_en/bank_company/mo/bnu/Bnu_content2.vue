@@ -4,7 +4,7 @@
             <div class="content1">
                 <div class="title">BNU (Banco Nacional Ultramarino) Macau Introduction</div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/mo/大西洋银行.png" alt="BNU Macau">
+                    <img loading="lazy" src="@/assets/img/bank/mo/大西洋银行.png" alt="BNU Macau">
                     <div class="text">
                         <P>Banco Nacional Ultramarino (BNU) is one of the commercial banks in Macau. Originally known as "Banco Nacional Ultramarino", its head office is in Lisbon, Portugal. All banknotes circulated by the Macau-Portuguese government were issued by this bank, making it the sole note-issuing bank of Portugal in Macau. Located at the corner of Avenida de Almeida Ribeiro and Praia Grande, it is an imposing building.</P>
                         <P>BNU has been committed to providing quality banking and financial services to individuals and corporate clients in Macau and around the world. Its business scope includes remittances to Portugal and worldwide, government account management, and corporate banking, with vault and safe deposit box facilities.</P>

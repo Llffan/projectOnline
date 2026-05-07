@@ -14,7 +14,7 @@
           >
             <el-carousel-item key="slide-1" ref="firstSlideRef">
                <div class="carousel-slide slide-1">
-                  <img :src="images[0]" alt="" draggable="false"/>
+                  <img loading="lazy" :src="images[0]" alt="" draggable="false"/>
                   <div class="slide-content">
                     <div class="title-container animated-element" ref="mainTitleRef">
                       <h1 class="main-title">SHI ZHOU TONG</h1>
@@ -34,7 +34,7 @@
             </el-carousel-item>
             <el-carousel-item key="slide-2">
                <div class="carousel-slide slide-2">
-                  <img :src="images[1]" alt="" draggable="false"/>
+                  <img loading="lazy" :src="images[1]" alt="" draggable="false"/>
                   <div class="slide-content">
                     <div class="title-container animated-element" ref="mainTitleRef2">
                       <h1 class="main-title">SHI ZHOU TONG</h1>

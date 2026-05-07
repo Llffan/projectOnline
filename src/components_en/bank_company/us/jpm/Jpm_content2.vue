@@ -4,7 +4,7 @@
             <div class="content1">
                 <div class="title">About JPMorgan Chase Bank</div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/us/摩根大通银行.png" alt="JPMorgan Chase">
+                    <img loading="lazy" src="@/assets/img/bank/us/摩根大通银行.png" alt="JPMorgan Chase">
                     <div class="text">
                         <P>JPMorgan Chase, headquartered in New York, holds total assets of $2.5 trillion and total deposits of $1.5 trillion, representing 25% of all U.S. deposits. With over 6,000 branches, it is one of the largest financial services institutions in the United States. Formed in 2000 through the merger of Chase Manhattan Bank and J.P. Morgan & Company, JPMorgan Chase subsequently acquired Chicago First National Bank, Bear Stearns, and Washington Mutual. It is a multinational financial services institution operating in over 60 countries, offering investment banking, financial transaction processing, investment management, commercial finance, and personal banking services.</P>
                     </div>

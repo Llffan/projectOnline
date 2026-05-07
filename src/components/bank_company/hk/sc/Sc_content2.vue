@@ -7,7 +7,7 @@
                     香港渣打银行简介
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/Standard_Chartered.jpg" alt="香港渣打银行">
+                    <img loading="lazy" src="@/assets/img/bank/hk/Standard_Chartered.jpg" alt="香港渣打银行">
                     <div class="text">
                         <P>渣打银行（又称标准渣打银行、标准银行）是一家总部在伦敦的英国银行。它的业务遍及许多国家，尤其是在亚洲和非洲，在英国的客户却非常少，2004年其利润的30%来自于香港地区。渣打银行的母公司渣打集团有限公司则于伦敦证券交易所及香港交易所上市，亦是伦敦金融时报 100指数成份股之一。渣打银行目前是香港三家发钞银行之一，另外两家分别是中国银行(香港)和汇丰银行(Hongkong and Shanghai Banking Corporation)。</P>
                     </div>

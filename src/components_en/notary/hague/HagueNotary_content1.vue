@@ -1,7 +1,7 @@
 <template>
     <div class="hague_notary_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/bvi/BVI.jpg" alt="International Notary">
+            <img loading="lazy" src="@/assets/img/company/bvi/BVI.jpg" alt="International Notary">
         </div>
         <div class="intro">
             <div class="notary-title">Hague Apostille</div>

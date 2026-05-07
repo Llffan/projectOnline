@@ -1,7 +1,7 @@
 <template>
     <div class="sg_notary_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/sg/SG.jpg" alt="Singapore Notarization">
+            <img loading="lazy" src="@/assets/img/company/sg/SG.jpg" alt="Singapore Notarization">
         </div>
         <div class="intro">
             <div class="notary-title">Singapore Notarization & Legalization</div>

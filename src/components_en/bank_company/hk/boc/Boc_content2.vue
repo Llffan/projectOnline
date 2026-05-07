@@ -7,7 +7,7 @@
                     Introduction to Bank of China (Hong Kong)
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/china.jpg" alt="Bank of China (Hong Kong)">
+                    <img loading="lazy" src="@/assets/img/bank/hk/china.jpg" alt="Bank of China (Hong Kong)">
                     <div class="text">
                         <P>Bank of China (Hong Kong), a wholly-owned subsidiary of Bank of China and a full-licensed commercial bank, maintains a premier and solid position in the region. Corporate accounts benefit from unrestricted fund allocation, freedom from exchange controls, and preferential interest rates, providing essential support for overseas business expansion and tax optimization. Personal accounts facilitate global asset configuration, international property acquisition, and study abroad, significantly enhancing the efficiency of capital utilization.</P>
                     </div>

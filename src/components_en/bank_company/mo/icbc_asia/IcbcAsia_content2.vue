@@ -4,7 +4,7 @@
             <div class="content1">
                 <div class="title">ICBC Asia Macau Introduction</div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/mo/工银亚洲银行.png" alt="ICBC Asia Macau">
+                    <img loading="lazy" src="@/assets/img/bank/mo/工银亚洲银行.png" alt="ICBC Asia Macau">
                     <div class="text">
                         <P>The predecessor of ICBC Asia Macau was Seng Heng Bank, established in 1972, which was once the third-largest bank in Macau. In 2009, ICBC acquired 79.9% of its shares, making it a subsidiary of ICBC. ICBC was the first bank in Greater China to issue prepaid debit cards. It operates 106 branches, including a branch in Shenzhen specializing in foreign currency wholesale business, a branch in Singapore, and representative offices in Xiamen and Taipei.</P>
                     </div>

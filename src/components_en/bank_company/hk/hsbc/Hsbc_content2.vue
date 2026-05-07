@@ -7,7 +7,7 @@
                     Introduction to HSBC (Hong Kong)
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/HSBC.jpg" alt="HSBC (Hong Kong)">
+                    <img loading="lazy" src="@/assets/img/bank/hk/HSBC.jpg" alt="HSBC (Hong Kong)">
                     <div class="text">
                         <P>HSBC is a leading international bank, formally known as The Hongkong and Shanghai Banking Corporation Limited. The name "HSBC" is an abbreviation of its English title, and in Chinese, it is known as "Huifeng" (汇丰), which conceptually translates to "Abundant Remittances," reflecting its historical roots and primary financial focus.</P>
                     </div>

@@ -4,7 +4,7 @@
             <div class="content1">
                 <div class="title">Bank of China Macau Introduction</div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/mo/中国银行.png" alt="Bank of China Macau">
+                    <img loading="lazy" src="@/assets/img/bank/mo/中国银行.png" alt="Bank of China Macau">
                     <div class="text">
                         <P>Bank of China Macau Branch (Portuguese: Banco da China, Sucursal de Macau) was established on June 21, 1950. Also known as BOC Macau, its predecessor was Macau Nan Tung Bank. It is currently a state-owned commercial bank of the People's Republic of China, a branch of Bank of China in Macau, and one of the largest commercial banks in Macau. Together with Banco Nacional Ultramarino, it serves as an agent for Macau Pataca issuance and Macau Government Treasury operations.</P>
                     </div>

@@ -1,7 +1,7 @@
 <template>
     <div class="mh_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/mh/MH.jpg" alt="">
+            <img loading="lazy" src="@/assets/img/company/mh/MH.jpg" alt="">
         </div>
         <div class="intro">
             <div class="mh-title">马绍尔公司注册全攻略</div>

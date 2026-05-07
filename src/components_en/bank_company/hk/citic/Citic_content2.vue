@@ -7,7 +7,7 @@
                     Introduction to China CITIC Bank International
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/china_citic.jpg" alt="China CITIC Bank International">
+                    <img loading="lazy" src="@/assets/img/bank/hk/china_citic.jpg" alt="China CITIC Bank International">
                     <div class="text">
                         <P>China CITIC Bank was established in 1987 as one of the earliest emerging commercial banks formed during China's reform and opening-up period. It was the first commercial bank in China to participate in financing across both domestic and international financial markets. Renowned globally for achieving numerous "firsts" in modern Chinese financial history, it has contributed significantly to China's economic development. In April 2007, CITIC Bank achieved a simultaneous A+H share listing on the Shanghai Stock Exchange and the Hong Kong Stock Exchange.</P>
                     </div>

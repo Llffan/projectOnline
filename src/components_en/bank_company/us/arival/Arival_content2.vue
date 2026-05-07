@@ -4,7 +4,7 @@
             <div class="content1">
                 <div class="title">About Arival Bank</div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/us/arival银行.png" alt="Arival Bank">
+                    <img loading="lazy" src="@/assets/img/bank/us/arival银行.png" alt="Arival Bank">
                     <div class="text"><p>Arival Bank, founded in 2021, is a U.S.-licensed digital banking institution regulated by OCIF. It currently serves clients in over 30 countries worldwide, with operations in Miami, Puerto Rico, Europe, and Singapore. Unlike traditional banking institutions, Arival Bank is a digital bank specifically designed for "non-traditional industries," providing services for cryptocurrency, blockchain, tech startups, digital technology, virtual technology, and other emerging sectors.</p></div>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 <template>
     <div class="sg_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/sg/SG.jpg" alt="">
+            <img loading="lazy" src="@/assets/img/company/sg/SG.jpg" alt="">
         </div>
         <div class="intro">
             <div class="sg-title">新加坡公司注册</div>

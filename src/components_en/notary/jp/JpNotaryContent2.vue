@@ -46,10 +46,10 @@
             <div class="content3">
                 <div class="title">Japan Notarization & Hague Apostille Document Samples</div>
                 <div class="intro image-gallery">
-                    <img src="@/assets/img/notary/jp/1.jpg" alt="Sample 1">
-                    <img src="@/assets/img/notary/jp/2.jpg" alt="Sample 2">
-                    <img src="@/assets/img/notary/jp/3.jpg" alt="Sample 3">
-                    <img src="@/assets/img/notary/jp/4.jpg" alt="Sample 4">
+                    <img loading="lazy" src="@/assets/img/notary/jp/1.jpg" alt="Sample 1">
+                    <img loading="lazy" src="@/assets/img/notary/jp/2.jpg" alt="Sample 2">
+                    <img loading="lazy" src="@/assets/img/notary/jp/3.jpg" alt="Sample 3">
+                    <img loading="lazy" src="@/assets/img/notary/jp/4.jpg" alt="Sample 4">
                 </div>
                 <div class="subtitle note-text">* These samples include both notarization and Hague Apostille. For reference only — actual notarized documents may vary.</div>
             </div>

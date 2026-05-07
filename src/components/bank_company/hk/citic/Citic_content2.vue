@@ -7,7 +7,7 @@
                     香港中信银行简介
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/china_citic.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/bank/hk/china_citic.jpg" alt="">
                     <div class="text">
                         <P>中信银行成立于1987年，是中国改革开放中最早成立的新兴商业银行之一，是中国最早参与国内外金融市场融资的商业银行，并以屡创中国现代金融史上多个第一而蜚声海内外，为中国经济建设做出了积极贡献。2007年4月，中信银行实现在上海证券交易所和香港联合交易所A+H股同步上市。</P>
                     </div>

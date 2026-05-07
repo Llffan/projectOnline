@@ -1,7 +1,7 @@
 <template>
     <div class="restoration_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/hk/HK.jpg" alt="company recovery">
+            <img loading="lazy" src="@/assets/img/company/hk/HK.jpg" alt="company recovery">
         </div>
         <div class="intro">
             <div class="title">company recovery</div>

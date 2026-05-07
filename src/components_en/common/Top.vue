@@ -3,7 +3,7 @@
         <div class="top">
             <div class="logo">
                 <router-link to="/en">
-                    <img src="@/assets/img/logo.png" alt="">
+                    <img loading="lazy" src="@/assets/img/logo.png" alt="">
                 </router-link>
             </div>
             <div class="links">

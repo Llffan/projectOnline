@@ -49,7 +49,7 @@
 
             <div class="scoll_content3" ref="accountBodyRef">
                 <div class="content3_body" v-for="(item, i) in content3_body" :key="i" :ref="el => setAccountCardRef(el, i)" @click="router.push(item.path)" style="cursor: pointer;">
-                    <img :src="item.img" alt="">
+                    <img loading="lazy" :src="item.img" alt="">
                     <p>{{item.title}}</p>
                     <span>{{item.desc}}</span>
                 </div>

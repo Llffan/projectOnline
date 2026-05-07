@@ -4,7 +4,7 @@
             <div class="content1">
                 <div class="title">About Bank of America</div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/us/美国银行.png" alt="Bank of America">
+                    <img loading="lazy" src="@/assets/img/bank/us/美国银行.png" alt="Bank of America">
                     <div class="text"><P>Bank of America (NYSE: BAC) is one of the world's largest bank holding companies and, by assets, the largest commercial bank in the United States. Its origins can be traced back to the Massachusetts Bank in 1784, making it the second-oldest bank in U.S. history. As one of the world's leading financial services institutions, Bank of America provides comprehensive personal and commercial banking services across 21 U.S. states, the District of Columbia, and 30 countries worldwide, serving millions of households and numerous business clients.</P></div>
                 </div>
             </div>

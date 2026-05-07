@@ -7,7 +7,7 @@
                     Introduction to Bank of Communications (Hong Kong)
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/communications.jpg" alt="Bank of Communications (Hong Kong)">
+                    <img loading="lazy" src="@/assets/img/bank/hk/communications.jpg" alt="Bank of Communications (Hong Kong)">
                     <div class="text">
                         <P>Bank of Communications (Hong Kong) Limited commenced operations in January 2018 as a wholly-owned subsidiary of Bank of Communications, operating 44 branches across Hong Kong. As a full-licensed commercial bank recognized by Fitch, Moody's, and S&P with a stable outlook, BOCOM (HK) provides a comprehensive suite of financial and wealth management services. Corporate accounts enjoy unrestricted capital allocation, freedom from exchange controls, and tax optimization; personal accounts facilitate global asset configuration and international property acquisition, ensuring highly efficient capital operations.</P>
                     </div>

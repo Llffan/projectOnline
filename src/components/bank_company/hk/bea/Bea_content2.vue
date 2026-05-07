@@ -7,7 +7,7 @@
                     香港东亚银行简介
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/east_asia.jpg" alt="香港东亚银行">
+                    <img loading="lazy" src="@/assets/img/bank/hk/east_asia.jpg" alt="香港东亚银行">
                     <div class="text">
                         <P>香港东亚银行于1918年创立，至今已有百年历史，在香港联合交易所上市，是香港三大本地银行之一。 东亚银行一直致力于为香港、中国内地以及世界其他市场的客户提供全面的商业银行、个人银行和财富管理等服务，且在内地市场声誉卓著。早在1920年，东亚银行便已在上海开设分行为客户服务，在内地、澳门及台湾设有逾130个网点。</P>
                     </div>

@@ -7,7 +7,7 @@
                     Introduction to Citibank Singapore
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/sg/花旗银行.png" alt="Citibank Singapore">
+                    <img loading="lazy" src="@/assets/img/bank/sg/花旗银行.png" alt="Citibank Singapore">
                     <div class="text">
                         <P>Singapore serves as a central hub for Citibank's excellent performance in the Asia-Pacific region, acting as one of its most advanced business and data centers, supporting numerous operations for over 60 countries. The integrated operations center maintains close ties with regional offices outside Singapore, covering multiple levels of banking business including: Asia Retail Banking and Credit Cards, International Personal Banking, Citi Private Bank (Asia and Global), Asia Global Transaction Services, and Asia CVC.</P>
                     </div>

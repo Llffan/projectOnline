@@ -7,7 +7,7 @@
                     大众银行（香港）简介
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/public.png" alt="大众银行（香港）">
+                    <img loading="lazy" src="@/assets/img/bank/hk/public.png" alt="大众银行（香港）">
                     <div class="text">
                         <P>企业开设境外银行账户，其核心原因就在于企业可通过境外银行实现自由调拨资金、不受外汇管制、资金利用最大化、比境内外银行同类存款利率优惠、存取灵活，特别是大额款等优势。以及有效优化税务结构的目的，给予海外业务拓展更大支持。大众银行（香港）作为知名持牌金融机构，能为客户提供全方位的商贸辅助及金融汇通服务。</P>
                     </div>

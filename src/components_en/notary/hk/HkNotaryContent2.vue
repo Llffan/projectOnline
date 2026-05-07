@@ -64,10 +64,10 @@
             <div class="content3">
                 <div class="title">Hong Kong Hague Apostille Document Samples</div>
                 <div class="intro image-gallery">
-                    <img src="@/assets/img/notary/hk/1-1.jpg" alt="Sample 1">
-                    <img src="@/assets/img/notary/hk/1-2.jpg" alt="Sample 2">
-                    <img src="@/assets/img/notary/hk/1-3.jpg" alt="Sample 3">
-                    <img src="@/assets/img/notary/hk/1-4.jpg" alt="Sample 4">
+                    <img loading="lazy" src="@/assets/img/notary/hk/1-1.jpg" alt="Sample 1">
+                    <img loading="lazy" src="@/assets/img/notary/hk/1-2.jpg" alt="Sample 2">
+                    <img loading="lazy" src="@/assets/img/notary/hk/1-3.jpg" alt="Sample 3">
+                    <img loading="lazy" src="@/assets/img/notary/hk/1-4.jpg" alt="Sample 4">
                 </div>
                 <div class="subtitle note-text">* These samples include both notarization and Hague Apostille. For reference only — actual notarized documents may vary.</div>
             </div>
@@ -75,10 +75,10 @@
             <div class="content4">
                 <div class="title">HK Mainland Transfer Legalization (China Legal Service HK Ltd.) Document Samples</div>
                 <div class="intro image-gallery">
-                    <img src="@/assets/img/notary/hk/2-1.jpg" alt="Transfer Sample 1">
-                    <img src="@/assets/img/notary/hk/2-2.jpg" alt="Transfer Sample 2">
-                    <img src="@/assets/img/notary/hk/2-3.jpg" alt="Transfer Sample 3">
-                    <img src="@/assets/img/notary/hk/2-4.jpg" alt="Transfer Sample 4">
+                    <img loading="lazy" src="@/assets/img/notary/hk/2-1.jpg" alt="Transfer Sample 1">
+                    <img loading="lazy" src="@/assets/img/notary/hk/2-2.jpg" alt="Transfer Sample 2">
+                    <img loading="lazy" src="@/assets/img/notary/hk/2-3.jpg" alt="Transfer Sample 3">
+                    <img loading="lazy" src="@/assets/img/notary/hk/2-4.jpg" alt="Transfer Sample 4">
                 </div>
                 <div class="subtitle note-text">* These samples include both notarization and Hague Apostille. For reference only — actual notarized documents may vary.</div>
             </div>

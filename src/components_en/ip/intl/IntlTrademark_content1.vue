@@ -1,7 +1,7 @@
 <template>
     <div class="intl_trademark_content1">
         <div class="img_box">
-            <img src="@/assets/img/ip/patent_banner.png" alt="International Trademark Services">
+            <img loading="lazy" src="@/assets/img/ip/patent_banner.png" alt="International Trademark Services">
         </div>
         <div class="intro">
             <div class="intl-title">International Trademark Services</div>

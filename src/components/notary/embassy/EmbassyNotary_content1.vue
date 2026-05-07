@@ -1,7 +1,7 @@
 <template>
     <div class="embassy_notary_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/bvi/BVI.jpg" alt="Embassy Notary">
+            <img loading="lazy" src="@/assets/img/company/bvi/BVI.jpg" alt="Embassy Notary">
         </div>
         <div class="intro">
             <div class="notary-title">使馆公证认证</div>

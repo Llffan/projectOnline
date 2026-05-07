@@ -4,7 +4,7 @@
             <div class="content1">
                 <div class="title">About Cathay Bank</div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/us/国泰银行.png" alt="Cathay Bank">
+                    <img loading="lazy" src="@/assets/img/bank/us/国泰银行.png" alt="Cathay Bank">
                     <div class="text"><P>Founded in 1962, Cathay Bank was the first Chinese-American bank in Southern California, primarily serving the growing Chinese and Asian communities in greater Los Angeles. Over the years, it has grown into a regional banking group with total assets of $2.5 billion, 23 branches across the U.S., offices in Hong Kong and Shanghai, and has been listed on NASDAQ (CATY) since 1990. Corporate accounts with Cathay Bank enable free fund transfers, no foreign exchange controls, and flexible banking to better support overseas business expansion.</P></div>
                 </div>
             </div>

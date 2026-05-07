@@ -6,7 +6,7 @@
                     加拿大公司注册
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/ca/CA-2.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/company/ca/CA-2.jpg" alt="">
                     <div class="text">
                         <P>加拿大是一个高度发达的资本主义国家，拥有丰富的自然资源和高度发达的科技，是全球生活水准最高的国家之一。</P>
                         <P>加拿大在教育、政府的透明度、社会自由度、生活品质及经济自由的国际排名都名列前茅，是八国集团、20国集团等重要国际组织的成员国。</P>

@@ -1,7 +1,7 @@
 <template>
     <div class="ca_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/ca/CA.jpg" alt="">
+            <img loading="lazy" src="@/assets/img/company/ca/CA.jpg" alt="">
         </div>
         <div class="intro">
             <div class="ca-title">Canada Company Registration Guide</div>

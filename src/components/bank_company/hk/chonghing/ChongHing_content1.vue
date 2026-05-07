@@ -1,7 +1,7 @@
 <template>
     <div class="chonghing_content1">
         <div class="img_box">
-            <img src="@/assets/img/bank/hk/chong_xing.jpg" alt="">
+            <img loading="lazy" src="@/assets/img/bank/hk/chong_xing.jpg" alt="">
         </div>
         <div class="intro">
             <div class="title">香港创兴银行</div>

@@ -7,7 +7,7 @@
                     澳门华侨银行简介
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/mo/华侨银行.png" alt="澳门华侨银行">
+                    <img loading="lazy" src="@/assets/img/bank/mo/华侨银行.png" alt="澳门华侨银行">
                     <div class="text">
                         <P>
                             永亨银行为澳门最具规模的银行之一，1937年在广州市创立，并于1941年迁往澳门继续营业，1984年由香港永亨银行收购澳门永亨银行，使之成为香港永亨银行之全资附属公司及美国纽约银行成员。

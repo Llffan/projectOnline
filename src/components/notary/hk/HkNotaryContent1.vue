@@ -2,7 +2,7 @@
     <div class="hk_notary_content1">
         <div class="img_box">
             <!-- Using an appropriate bank or notary banner img. Let's use the HK bank image or a common one -->
-            <img src="@/assets/img/company/hk/HK.jpg" alt="Hong Kong Notary">
+            <img loading="lazy" src="@/assets/img/company/hk/HK.jpg" alt="Hong Kong Notary">
         </div>
         <div class="intro">
             <div class="notary-title">香港公证认证</div>

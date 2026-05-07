@@ -1,7 +1,7 @@
 <template>
     <div class="kr_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/kr/KR.png" alt="">
+            <img loading="lazy" src="@/assets/img/company/kr/KR.png" alt="">
         </div>
         <div class="intro">
             <div class="kr-title">韩国公司注册全攻略</div>

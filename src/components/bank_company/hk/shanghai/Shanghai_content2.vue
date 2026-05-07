@@ -7,7 +7,7 @@
                     上海商业银行（香港）简介
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/ShangHai.png" alt="上海商业银行（香港）">
+                    <img loading="lazy" src="@/assets/img/bank/hk/ShangHai.png" alt="上海商业银行（香港）">
                     <div class="text">
                         <P>上海商业银行（香港）上海商业银行有限公司于1950年11月在香港注册成立，发展至今逾半个世纪，在香港、内地及海外设有超过50间分行，业务网络遍及英国、美国及上海、深圳等地。</P>
                     </div>

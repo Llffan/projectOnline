@@ -6,7 +6,7 @@
         <div class="bank-grid">
             <div v-for="(bank, index) in banks" :key="index" class="bank-item">
                 <div class="img-box">
-                    <img :src="bank.img" :alt="bank.name">
+                    <img loading="lazy" :src="bank.img" :alt="bank.name">
                 </div>
                 <div class="bank-name">
                     {{ bank.name }}

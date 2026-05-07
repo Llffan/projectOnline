@@ -7,7 +7,7 @@
                     澳门中国银行简介
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/mo/中国银行.png" alt="澳门中国银行">
+                    <img loading="lazy" src="@/assets/img/bank/mo/中国银行.png" alt="澳门中国银行">
                     <div class="text">
                         <P>
                             中国银行澳门分行（葡萄牙语：Banco da China, Sucursal de Macau）于1950年6月21日成立，简称为中银澳门，前身为澳门南通银行，现为中华人民共和国国有商业银行,中国银行在澳门的分支及澳门其中一家最大商业银行之一，与大西洋银行共同承担澳门元的发钞和澳门政府公共库房出纳代理银行的职能。

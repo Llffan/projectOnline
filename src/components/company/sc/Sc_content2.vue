@@ -6,7 +6,7 @@
                     塞舌尔公司注册
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/sc/SC-2.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/company/sc/SC-2.jpg" alt="">
                     <div class="text">
                         <P>塞舌尔，SEYCHELLES，位于印度洋西部和肯尼亚以东约1609公里处。</P>
                         <P>塞舌尔由115个大小岛屿组成，其中马埃岛最大，全国90%的居民住在该岛。</P>

@@ -7,7 +7,7 @@
                     Introduction to Deutsche Bank (Hong Kong Branch)
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/Deutsche.png" alt="Deutsche Bank (Hong Kong Branch)">
+                    <img loading="lazy" src="@/assets/img/bank/hk/Deutsche.png" alt="Deutsche Bank (Hong Kong Branch)">
                     <div class="text">
                         <P>Established in 1870 in Berlin, Germany, Deutsche Bank is a premier international financial services institution. It provides a comprehensive suite of products and services across commercial banking, investment banking, retail banking, transaction banking, and asset/wealth management to corporations, governments, institutional investors, SMEs, and individuals in over 70 countries. Deutsche Bank entered China in 1872 with its first overseas office in Shanghai. Today, Deutsche Bank (China) Co., Ltd. is a wholly-owned subsidiary headquartered in Beijing, with branches in major cities including Beijing, Shanghai, Guangzhou, Tianjin, Chongqing, and Qingdao.</P>
                     </div>

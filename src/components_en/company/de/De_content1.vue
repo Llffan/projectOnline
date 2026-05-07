@@ -1,7 +1,7 @@
 <template>
     <div class="de_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/de/DE.jpg" alt="">
+            <img loading="lazy" src="@/assets/img/company/de/DE.jpg" alt="">
         </div>
         <div class="intro">
             <div class="de-title">Germany Company Registration Guide</div>

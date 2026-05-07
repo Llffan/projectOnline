@@ -1,7 +1,7 @@
 <template>
     <div class="odi_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/hk/HK-2.jpg" alt="ODI filing">
+            <img loading="lazy" src="@/assets/img/company/hk/HK-2.jpg" alt="ODI filing">
         </div>
         <div class="intro">
             <div class="odi-title">ODI overseas investment registration</div>

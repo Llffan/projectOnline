@@ -15,24 +15,24 @@
                         </div>
                     </div>
                     <div class="account_img" ref="accountRef">
-                        <img src="@/assets/img/bank/1.png" alt="">
-                        <img src="@/assets/img/bank/2.jpg" alt="">
-                        <img src="@/assets/img/bank/3.jpg" alt="">
-                        <img src="@/assets/img/bank/4.jpg" alt="">
-                        <img src="@/assets/img/bank/5.jpg" alt="">
-                        <img src="@/assets/img/bank/6.jpg" alt="">
-                        <img src="@/assets/img/bank/7.jpg" alt="">
-                        <img src="@/assets/img/bank/8.jpg" alt="">
-                        <img src="@/assets/img/bank/9.jpg" alt="">
-                        <img src="@/assets/img/bank/10.jpg" alt="">
-                        <img src="@/assets/img/bank/11.jpg" alt="">
-                        <img src="@/assets/img/bank/12.jpg" alt="">
-                        <img src="@/assets/img/bank/1.png" alt="">
-                        <img src="@/assets/img/bank/2.jpg" alt="">
-                        <img src="@/assets/img/bank/3.jpg" alt="">
-                        <img src="@/assets/img/bank/4.jpg" alt="">
-                        <img src="@/assets/img/bank/5.jpg" alt="">
-                        <img src="@/assets/img/bank/6.jpg" alt="">
+                        <img loading="lazy" src="@/assets/img/bank/1.png" alt="">
+                        <img loading="lazy" src="@/assets/img/bank/2.jpg" alt="">
+                        <img loading="lazy" src="@/assets/img/bank/3.jpg" alt="">
+                        <img loading="lazy" src="@/assets/img/bank/4.jpg" alt="">
+                        <img loading="lazy" src="@/assets/img/bank/5.jpg" alt="">
+                        <img loading="lazy" src="@/assets/img/bank/6.jpg" alt="">
+                        <img loading="lazy" src="@/assets/img/bank/7.jpg" alt="">
+                        <img loading="lazy" src="@/assets/img/bank/8.jpg" alt="">
+                        <img loading="lazy" src="@/assets/img/bank/9.jpg" alt="">
+                        <img loading="lazy" src="@/assets/img/bank/10.jpg" alt="">
+                        <img loading="lazy" src="@/assets/img/bank/11.jpg" alt="">
+                        <img loading="lazy" src="@/assets/img/bank/12.jpg" alt="">
+                        <img loading="lazy" src="@/assets/img/bank/1.png" alt="">
+                        <img loading="lazy" src="@/assets/img/bank/2.jpg" alt="">
+                        <img loading="lazy" src="@/assets/img/bank/3.jpg" alt="">
+                        <img loading="lazy" src="@/assets/img/bank/4.jpg" alt="">
+                        <img loading="lazy" src="@/assets/img/bank/5.jpg" alt="">
+                        <img loading="lazy" src="@/assets/img/bank/6.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@
             <div class="scoll_content2" ref="chooseUsRef">
                 <div v-for="(item, index) in advantages" :key="index" class="advantage" :ref="el => advantageRefs[index] = el">
                     <div class="img">
-                        <img :src="item.imgSrc" :alt="item.title">
+                        <img loading="lazy" :src="item.imgSrc" :alt="item.title">
                     </div>
                     <div class="text1">
                         {{ item.title }}

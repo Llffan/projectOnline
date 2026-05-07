@@ -7,7 +7,7 @@
                     Introduction to HSBC Singapore
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/sg/汇丰银行.png" alt="HSBC Singapore">
+                    <img loading="lazy" src="@/assets/img/bank/sg/汇丰银行.png" alt="HSBC Singapore">
                     <div class="text">
                         <P>HSBC is one of the oldest banks established in Singapore, offering a wide range of banking and financial services. These include retail banking and wealth management; commercial, investment, and private banking; insurance; legacy and trustee services; and securities and capital market services, catering to the banking needs of multinational corporations, local businesses, private banking clients, institutions, and retail customers.</P>
                     </div>

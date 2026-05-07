@@ -4,7 +4,7 @@
             <div class="content1">
                 <div class="title">Luso International Banking Introduction</div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/mo/国际银行.png" alt="Luso International Banking">
+                    <img loading="lazy" src="@/assets/img/bank/mo/国际银行.png" alt="Luso International Banking">
                     <div class="text">
                         <P>Luso International Banking Limited was registered and established in Macau in 1974. In 1985, it became a wholly-owned subsidiary of Xiamen International Bank, the first Sino-foreign joint venture bank in China, conducting all commercial banking operations. Over the years, through continuous effort, the bank's business has flourished and grown rapidly. As one of the major commercial banks in Macau, the bank currently has branches throughout major areas of Macau, wholeheartedly serving the general public, and with a stable management approach, proactive strategy, and commitment to quality service, striving to contribute to Macau's development.</P>
                     </div>

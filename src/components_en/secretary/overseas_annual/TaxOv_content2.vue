@@ -6,7 +6,7 @@
                     Overseas company annual review and maintenance
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/bvi/BVI-2.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/company/bvi/BVI-2.jpg" alt="">
                     <div class="text">
                         <P>Although overseas offshore companies (such as BVI, Cayman, Seychelles, etc.) usually enjoy tax exemptions, they must abide by the company laws of the place of registration and conduct annual license renewal and annual review on time to maintain the company's legal status.</P>
                         <P>The main contents of the annual review include payment of government license fees, registered agent fees and registered address fees, etc. Failure to conduct the annual review on time will result in heavy fines, or even the company being delisted and the assets frozen.</P>
@@ -78,7 +78,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in advantages" :key="index" class="advantage">
                         <div class="img">
-                            <img :src="item.imgSrc" :alt="item.title">
+                            <img loading="lazy" :src="item.imgSrc" :alt="item.title">
                         </div>
                         <div class="text1">
                             {{ item.title }}

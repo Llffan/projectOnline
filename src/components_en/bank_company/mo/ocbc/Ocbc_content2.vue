@@ -4,7 +4,7 @@
             <div class="content1">
                 <div class="title">OCBC Bank Macau Introduction</div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/mo/华侨银行.png" alt="OCBC Bank Macau">
+                    <img loading="lazy" src="@/assets/img/bank/mo/华侨银行.png" alt="OCBC Bank Macau">
                     <div class="text">
                         <P>Wing Hang Bank is one of the largest banks in Macau. Founded in Guangzhou in 1937, it relocated to Macau in 1941 to continue operations. In 1984, Hong Kong Wing Hang Bank acquired Macau Wing Hang Bank, making it a wholly-owned subsidiary of Hong Kong Wing Hang Bank and a member of the Bank of New York Mellon.</P>
                         <P>Over the years, Wing Hang Bank has provided retail banking services, corporate banking services, and foreign exchange and financial services, continuously introducing innovative products with a proactive management approach. Wing Hang Bank, as the group's holding company and primary business operating entity, has over 50 branches and representative offices in Hong Kong, Macau, and China.</P>

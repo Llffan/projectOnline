@@ -6,7 +6,7 @@
                     美国公司注册
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/us/US-2.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/company/us/US-2.jpg" alt="">
                     <div class="text">
                         <P>美国是全球最大的经济体，拥有完善的法律体系和高度发达的资本市场。</P>
                         <P>作为世界科技创新中心，在互联网、人工智能、生物技术等领域引领全球发展。</P>

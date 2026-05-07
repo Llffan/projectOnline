@@ -6,7 +6,7 @@
                     What is overseas investment filing (ODI filing)
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/hk/HK-2.jpg" alt="ODI filing">
+                    <img loading="lazy" src="@/assets/img/company/hk/HK-2.jpg" alt="ODI filing">
                     <div class="text">
                         <P>Overseas Direct Investment (ODI) involves Chinese enterprises legally establishing or acquiring non-financial entities abroad to gain ownership, control, or management rights.</P>
                         <P>ODI filing is mandatory for domestic firms investing in overseas projects or acquisitions that grant direct or indirect control over an international entity.</P>
@@ -78,7 +78,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in advantages" :key="index" class="advantage">
                         <div class="img">
-                            <img :src="item.imgSrc" :alt="item.title">
+                            <img loading="lazy" :src="item.imgSrc" :alt="item.title">
                         </div>
                         <div class="text1">
                             {{ item.title }}

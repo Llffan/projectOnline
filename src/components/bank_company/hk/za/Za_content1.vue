@@ -1,7 +1,7 @@
 <template>
     <div class="za_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/香港.jpg" alt="">
+            <img loading="lazy" src="@/assets/img/company/香港.jpg" alt="">
         </div>
         <div class="intro">
             <div class="title">香港众安银行开户</div>

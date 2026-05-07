@@ -1,7 +1,7 @@
 <template>
     <div class="mo_cgb_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/mo/MO.jpg" alt="">
+            <img loading="lazy" src="@/assets/img/company/mo/MO.jpg" alt="">
         </div>
         <div class="intro">
             <div class="title">CGB (China Guangfa Bank) Macau Account Opening</div>

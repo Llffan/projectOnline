@@ -7,7 +7,7 @@
                     Introduction to Shanghai Commercial Bank (Hong Kong)
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/ShangHai.png" alt="Shanghai Commercial Bank (Hong Kong)">
+                    <img loading="lazy" src="@/assets/img/bank/hk/ShangHai.png" alt="Shanghai Commercial Bank (Hong Kong)">
                     <div class="text">
                         <P>Shanghai Commercial Bank Ltd. was incorporated in Hong Kong in November 1950. Over more than half a century of growth, it has established a robust network of over 50 branches across Hong Kong, Mainland China, and international markets including the United Kingdom (London) and the United States (New York, San Francisco), as well as strategic presences in Shanghai and Shenzhen.</P>
                     </div>

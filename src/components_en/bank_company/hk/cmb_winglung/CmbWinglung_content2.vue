@@ -7,7 +7,7 @@
                     Introduction to CMB Wing Lung Bank (Hong Kong)
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/merchants_wing_lung.jpg" alt="CMB Wing Lung Bank (Hong Kong)">
+                    <img loading="lazy" src="@/assets/img/bank/hk/merchants_wing_lung.jpg" alt="CMB Wing Lung Bank (Hong Kong)">
                     <div class="text">
                         <P>CMB Wing Lung Bank (formerly Wing Lung Bank) has been a subsidiary of China Merchants Bank since 2009. It provides expansive services across retail and corporate banking, credit, securities, futures, wealth management, and trusts, operating 41 branches domestically and overseas. Corporate entities benefit from unrestricted capital allocation, freedom from exchange controls, and preferential interest rates, while personal accounts facilitate global wealth management and international education, significantly enhancing capital utilization efficiency.</P>
                     </div>

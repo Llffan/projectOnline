@@ -1,7 +1,7 @@
 <template>
     <div class="patent_content1">
         <div class="img_box">
-            <img src="@/assets/img/ip/patent_banner.png" alt="International Patent Services">
+            <img loading="lazy" src="@/assets/img/ip/patent_banner.png" alt="International Patent Services">
         </div>
         <div class="intro">
             <div class="patent-title">International Patent Application</div>

@@ -7,7 +7,7 @@
                     新加坡汇丰银行简介
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/sg/汇丰银行.png" alt="新加坡汇丰银行">
+                    <img loading="lazy" src="@/assets/img/bank/sg/汇丰银行.png" alt="新加坡汇丰银行">
                     <div class="text">
                         <P>汇丰银行是在新加坡成立的最早的银行之一， 提供广泛的银行和金融服务，包括零售银行和财富管理；商业，投资和私人银行业务；保险; 遗赠和受托人服务；证券和资本市场服务，可满足跨国公司，本土企业，私人银行客户，机构和零售客户的银行需求。</P>
                     </div>

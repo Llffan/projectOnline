@@ -6,7 +6,7 @@
                     Hong Kong taxation and annual review
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/hk/HK-2.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/company/hk/HK-2.jpg" alt="">
                     <div class="text">
                         <P>Accounting and tax filing in Hong Kong are in accordance with Hong Kong law. All Hong Kong companies, regardless of whether they are profitable or not, are required to report their operating conditions for the previous year, and the Hong Kong Inland Revenue Department will determine whether the Hong Kong company needs to pay taxes in accordance with certain standards.</P>
                         <P>Hong Kong is a duty-free port and does not impose any tariffs on imported and exported goods, let alone sales tax and other import fees. This provides great convenience for international trade and reduces business costs.</P>
@@ -78,7 +78,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in advantages" :key="index" class="advantage">
                         <div class="img">
-                            <img :src="item.imgSrc" :alt="item.title">
+                            <img loading="lazy" :src="item.imgSrc" :alt="item.title">
                         </div>
                         <div class="text1">
                             {{ item.title }}

@@ -6,7 +6,7 @@
                     日本公司注册
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/jp/JP-2.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/company/jp/JP-2.jpg" alt="">
                     <div class="text">
                         <P>日本是目前世界上经济发展较好的发达国家之一，亦为世界第三大经济体，是世界八大工业国成员国之一。</P>
                         <P>日本公司的品牌效应受到世界各国认可，尤其在化妆品、餐饮、重工机械、游戏等行业，有利于企业包装和未来的市场推广。</P>

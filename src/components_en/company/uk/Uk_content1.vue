@@ -1,7 +1,7 @@
 <template>
     <div class="uk_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/uk/UK.jpg" alt="">
+            <img loading="lazy" src="@/assets/img/company/uk/UK.jpg" alt="">
         </div>
         <div class="intro">
             <div class="uk-title">UK Company Registration Guide</div>

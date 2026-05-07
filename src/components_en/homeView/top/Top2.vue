@@ -2,7 +2,7 @@
     <div class="top2" :class="{ 'scrolled': isScrolled }">
             <div class="logo">
                 <router-link to="/en">
-                    <img :src="logoSrc" alt="">
+                    <img loading="lazy" :src="logoSrc" alt="">
                 </router-link>
             </div>
             <div class="links">

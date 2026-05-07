@@ -6,7 +6,7 @@
                     香港公司注册
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/hk/HK-2.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/company/hk/HK-2.jpg" alt="">
                     <div class="text">
                         <P>香港是一个融合机遇、创意和进取精神的都市，连续24年被美国传统基金会评为"全球最自由经济体"。</P>
                         <P>作为国际金融中心，香港完善的法律制度、简单的税制、低税率、配套齐全的基建，得到世界各地投资者的青睐。</P>

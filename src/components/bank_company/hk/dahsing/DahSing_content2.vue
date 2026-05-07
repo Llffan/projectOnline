@@ -7,7 +7,7 @@
                     香港大新银行简介
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/dah_sing.jpg" alt="香港大新银行">
+                    <img loading="lazy" src="@/assets/img/bank/hk/dah_sing.jpg" alt="香港大新银行">
                     <div class="text">
                         <P>大新集团为中国香港一家颇具规模的金融服务集团，主要经营银行及保险业务。大新集团包括两家上市公司，为分别于1987年及2004年在香港联合交易所上市的大新金融集团有限公司（大新金融）及大新银行集团有限公司（大新银行集团）。大新集团素以积极进取和不断创新的金融服务著称。其专业的管理队伍、与对服务顾客的热忱承诺，乃集团成功的关键。</P>
                     </div>

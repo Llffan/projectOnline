@@ -8,7 +8,7 @@
                     Shizhoutong Professional Accounting and Auditing Services
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/hk/HK.jpg" alt="Accounting and auditing services">
+                    <img loading="lazy" src="@/assets/img/company/hk/HK.jpg" alt="Accounting and auditing services">
                     <div class="text">
                         <p style="font-weight: bold; font-size: 18px;">We can provide you with the following professional services:</p>
                         <ul>

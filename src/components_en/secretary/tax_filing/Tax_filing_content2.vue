@@ -8,7 +8,7 @@
                     Shizhoutong professional tax services
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/hk/HK.jpg" alt="tax services">
+                    <img loading="lazy" src="@/assets/img/company/hk/HK.jpg" alt="tax services">
                     <div class="text">
                         <p style="font-weight: bold; font-size: 18px;">We can provide you with the following professional services:</p>
                         <ul>

@@ -6,7 +6,7 @@
                     新加坡公司注册
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/sg/SG-2.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/company/sg/SG-2.jpg" alt="">
                     <div class="text">
                         <P>新加坡非营利组织基金会，是在新加坡会计与企业发展局(ACRA)登记注册，类型为公众公司。</P>
                         <P>由于非营利组织没有注册资金，不用交税，所以限制比较多，要求比较严格。</P>

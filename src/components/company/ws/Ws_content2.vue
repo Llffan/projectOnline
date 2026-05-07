@@ -6,7 +6,7 @@
                     萨摩亚公司注册
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/ws/WS-2.jpg" alt="">
+                    <img loading="lazy" src="@/assets/img/company/ws/WS-2.jpg" alt="">
                     <div class="text">
                         <P>一九八七年制定的信托公司法奠定了日后服务离岸客户的信托公司的领牌及规管细则。其它法规包括一九八七年制定的国际公司法、国际信托基金法、离岸银行法、以及在一九八八年制定的国际保险法。</P>
                         <P>萨摩亚国际公司及信托基金是无需缴付任何当地税项，这包括印花税、资产增值税及应课税。此外，萨摩亚亦不高外汇管制及奉行严密的私隐保护。</P>

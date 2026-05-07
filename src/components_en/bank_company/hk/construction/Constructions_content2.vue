@@ -7,7 +7,7 @@
                     Introduction to China Construction Bank (Asia)
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/construction.png" alt="China Construction Bank (Asia)">
+                    <img loading="lazy" src="@/assets/img/bank/hk/construction.png" alt="China Construction Bank (Asia)">
                     <div class="text">
                         <P>China Construction Bank (Asia) is CCB's flagship institution in Hong Kong, boasting a vast client base and a marketing network that spans the entire country. CCB maintains close business ties with numerous large-scale enterprises. In 2016, it was ranked second globally by "The Banker," and in 2017, it placed 14th in the Brand Finance Global 500. With its formidable institutional strength, its offshore accounts facilitate unrestricted capital allocation and movement. Personal accounts are ideal for overseas property acquisition, international education, and comprehensive global wealth management.</P>
                     </div>

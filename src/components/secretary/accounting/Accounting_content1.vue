@@ -1,7 +1,7 @@
 <template>
     <div class="accounting_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/hk/HK.jpg" alt="做账与审计">
+            <img loading="lazy" src="@/assets/img/company/hk/HK.jpg" alt="做账与审计">
         </div>
         <div class="intro">
             <div class="title">做账与审计</div>

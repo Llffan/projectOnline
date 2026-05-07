@@ -4,7 +4,7 @@
             <div class="content1">
                 <div class="title">About CBiBank</div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/us/富港银行.png" alt="CBiBank">
+                    <img loading="lazy" src="@/assets/img/bank/us/富港银行.png" alt="CBiBank">
                     <div class="text">
                         <P>CB International Bank (CBiBank), established in June 2017, is a commercial bank holding a U.S. banking license and regulated by U.S. banking authorities, headquartered in Puerto Rico. As a member of the Federal Reserve (ABA), SWIFT network (code: CBLBPRSJ), UnionPay International, and Cross-border RMB Clearing (CIPS), CBiBank offers both corporate and personal banking services. Corporate accounts enjoy free fund transfers, no foreign exchange controls, flexible deposits/withdrawals, and tax optimization, providing greater support for overseas business. Personal accounts facilitate overseas shopping, property purchases, investments, immigration, and global wealth management.</P>
                     </div>

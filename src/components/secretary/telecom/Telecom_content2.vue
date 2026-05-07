@@ -6,7 +6,7 @@
                     香港电讯牌照
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/hk/HK-2.jpg" alt="香港电讯">
+                    <img loading="lazy" src="@/assets/img/company/hk/HK-2.jpg" alt="香港电讯">
                     <div class="text">
                         <P>依据《香港电讯条例》第9条：除「无线电商牌照(放宽限制)」持牌人外，任何人士如要将无线发送器输入或输出香港，必需持有由通信事务管理局（“管理局”）所批给的许可证。</P>
                         <P>香港电讯牌照是出口手机等电讯产品时，需要提供给海关做通关放行的资料之一。香港对无线电发射器具的进出口实施法律管制，《电讯条例》规定进出口手提电话的人士必须持有许可证或无线电商牌照。</P>
@@ -85,7 +85,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in advantages" :key="index" class="advantage">
                         <div class="img">
-                            <img :src="item.imgSrc" :alt="item.title">
+                            <img loading="lazy" :src="item.imgSrc" :alt="item.title">
                         </div>
                         <div class="text1">
                             {{ item.title }}

@@ -7,7 +7,7 @@
                     美国Axos银行简介
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/us/axos.png" alt="美国Axos银行">
+                    <img loading="lazy" src="@/assets/img/bank/us/axos.png" alt="美国Axos银行">
                     <div class="text">
                         <p>Axos银行的前身是1999年成立的BofI Federal Bank，之后更名美国互联网银行，是全球最早的数字银行之一，但是在加州也是有自己的实体线下银行的。2018年的时候银行改名为Axos Bank。 Axos银行是有FDIC保险的，银行如果破产，单个账户可以获赔20万美元。 目前Axos银行的World Checking Account，也就是全球支票账户，是支持非美国身份开户的，这也就意味着我们中国大陆的居民也可以顺利开户。</p>
                     </div>

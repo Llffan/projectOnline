@@ -1,7 +1,7 @@
 <template>
     <div class="ocbc_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/香港.jpg" alt="">
+            <img loading="lazy" src="@/assets/img/company/香港.jpg" alt="">
         </div>
         <div class="intro">
             <div class="title">华侨银行（香港）开户</div>

@@ -5,7 +5,7 @@
             <div class="content1">
                 <div class="title">ICBC Macau Introduction</div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/mo/工商银行.png" alt="ICBC Macau">
+                    <img loading="lazy" src="@/assets/img/bank/mo/工商银行.png" alt="ICBC Macau">
                     <div class="text">
                         <P>The Industrial and Commercial Bank of China (ICBC) Macau Branch was established in January 2020 as one of the head office's directly-managed overseas branches. Leveraging ICBC's leading market position, diversified business structure, strong innovation capabilities, and outstanding brand value, it provides comprehensive financial services including syndicated loans, project financing, trade financing, and international settlement, committed to becoming an important bridge for the Greater Bay Area and China-Portuguese-speaking countries economic and trade exchanges, and enhancing ICBC's international influence and competitiveness.</P>
                     </div>

@@ -1,7 +1,7 @@
 <template>
     <div class="fr_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/fr/FR.jpg" alt="">
+            <img loading="lazy" src="@/assets/img/company/fr/FR.jpg" alt="">
         </div>
         <div class="intro">
             <div class="fr-title">法国公司注册全攻略</div>

@@ -7,7 +7,7 @@
                     Introduction to OCBC Bank (Hong Kong)
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/hk/OCBC.jpg" alt="OCBC Bank (Hong Kong)">
+                    <img loading="lazy" src="@/assets/img/bank/hk/OCBC.jpg" alt="OCBC Bank (Hong Kong)">
                     <div class="text">
                         <P>OCBC Bank (Hong Kong) Limited, formerly known as OCBC Wing Hang Bank Limited, is a licensed bank headquartered in Hong Kong. Ranked as the 8th largest bank in Hong Kong by total assets, it has been a subsidiary of the Oversea-Chinese Banking Corporation (OCBC) since late July 2014. The acquisition provided OCBC with a robust network of approximately 70 branches spanning Hong Kong, Macau, and Mainland China, significantly bolsters the bank's presence and operational depth in the region.</P>
                     </div>

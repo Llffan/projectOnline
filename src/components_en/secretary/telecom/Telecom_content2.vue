@@ -6,7 +6,7 @@
                     Hong Kong Telecommunications License
                 </div>
                 <div class="intro">
-                    <img src="@/assets/img/company/hk/HK-2.jpg" alt="Hong Kong Telecom">
+                    <img loading="lazy" src="@/assets/img/company/hk/HK-2.jpg" alt="Hong Kong Telecom">
                     <div class="text">
                         <P>Under Section 9 of the HK Telecommunications Ordinance, importing or exporting wireless transmitters (except for "Relaxed" licensees) requires an Authority license.</P>
                         <P>This license is essential for customs clearance; importers and exporters of items like mobile phones must hold a valid permit or wireless business license.</P>
@@ -85,7 +85,7 @@
                 <div class="intro">
                     <div v-for="(item, index) in advantages" :key="index" class="advantage">
                         <div class="img">
-                            <img :src="item.imgSrc" :alt="item.title">
+                            <img loading="lazy" :src="item.imgSrc" :alt="item.title">
                         </div>
                         <div class="text1">
                             {{ item.title }}

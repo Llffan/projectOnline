@@ -4,7 +4,7 @@
             <div class="content1">
                 <div class="title">About East West Bank</div>
                 <div class="intro">
-                    <img src="@/assets/img/bank/us/华美银行.png" alt="East West Bank">
+                    <img loading="lazy" src="@/assets/img/bank/us/华美银行.png" alt="East West Bank">
                     <div class="text">
                         <P>East West Bank, established in 1973 in Los Angeles, California, was the first federally chartered savings institution founded by Chinese Americans. Listed on NASDAQ (EWBC) since 1999, it has consistently ranked among the top 15 on Forbes' America's Best Banks list and is the largest independent commercial bank headquartered in Southern California. East West Bank is dedicated to helping clients across the U.S. and China discover business opportunities, with its unique cross-border financial network supporting countless Chinese-invested enterprises in expanding to the U.S. Corporate accounts enable free fund transfers, no foreign exchange controls, flexible deposits/withdrawals, and tax optimization. Personal accounts facilitate overseas shopping, education, property purchases, investments, immigration, and global wealth management.</P>
                     </div>

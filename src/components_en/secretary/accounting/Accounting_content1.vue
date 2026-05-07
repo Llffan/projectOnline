@@ -1,7 +1,7 @@
 <template>
     <div class="accounting_content1">
         <div class="img_box">
-            <img src="@/assets/img/company/hk/HK.jpg" alt="Accounting and auditing">
+            <img loading="lazy" src="@/assets/img/company/hk/HK.jpg" alt="Accounting and auditing">
         </div>
         <div class="intro">
             <div class="title">Accounting and auditing</div>
