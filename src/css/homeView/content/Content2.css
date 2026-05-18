@@ -15,15 +15,15 @@
         box-sizing: border-box;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
         gap: 25px;
         transform: translateY(-40px);
 
         .company_intro{
-            width: 100%;
-            max-width: 320px;
+            flex: 0 1 320px;
+            min-width: 0;
             height: auto;
             min-height: 400px;
             display: flex;
@@ -83,7 +83,8 @@
         }
 
         .company_body {
-            width: 100%;
+            flex: 1 1 0;
+            min-width: 0;
             max-width: 1050px;
             margin: 0;
             height: auto;
