@@ -59,6 +59,7 @@
             flex: 0 0 auto;
             width: clamp(120px, 15vw, 200px);
             height: clamp(120px, 15vw, 200px);
+            margin-left: clamp(20px, 4vw, 60px);
         }
     }
 
