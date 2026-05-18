@@ -38,13 +38,13 @@
             </div>
         </div>
         <div class="scoll_content">
-            <div class="scoll_content1">
+            <div class="scoll_content1" ref="chooseUsTitleRef">
                 <h2>
                     为什么选择十洲通
                 </h2>
                 <span>Why Choose SHI ZHOU TONG</span>
             </div>
-            <p class="p3">以客户需求和发展理念为驱动力，打造国际一站式服务</p>
+            <p class="p3" ref="chooseUsDescRef">以客户需求和发展理念为驱动力，打造国际一站式服务</p>
             <div class="scoll_content2" ref="chooseUsRef">
                 <div v-for="(item, index) in advantages" :key="index" class="advantage" :ref="el => advantageRefs[index] = el">
                     <div class="img">
@@ -118,6 +118,8 @@ const chooseUsRef = ref(null)
 const bottonRef = ref(null)
 const accountRef = ref(null)
 const advantageRefs = ref([])
+const chooseUsTitleRef = ref(null)
+const chooseUsDescRef = ref(null)
 
 const advantages = [
     {
@@ -194,6 +196,34 @@ onMounted(() => {
         }
     })
     if (accountRef.value) accountObserver.observe(accountRef.value)
+
+    // 标题块初次进入动画（scale + opacity）
+    const chooseUsTitleObserver = new window.IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+            chooseUsTitleObserver.unobserve(entries[0].target)
+            gsap.fromTo(chooseUsTitleRef.value,
+                { scale: 1.5, opacity: 0 },
+                { scale: 1, opacity: 1, duration: 1, delay: 0.15, ease: 'back.out' }
+            )
+        } else {
+            gsap.set(chooseUsTitleRef.value, { scale: 1.5, opacity: 0 })
+        }
+    }, { threshold: 0.3 })
+    if (chooseUsTitleRef.value) chooseUsTitleObserver.observe(chooseUsTitleRef.value)
+
+    // 副标题初次进入动画（右滑入）
+    const chooseUsDescObserver = new window.IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+            chooseUsDescObserver.unobserve(entries[0].target)
+            gsap.fromTo(chooseUsDescRef.value,
+                { x: 100, opacity: 0.3 },
+                { x: 0, opacity: 1, duration: 1, delay: 0.2, ease: 'back.out' }
+            )
+        } else {
+            gsap.set(chooseUsDescRef.value, { x: 100, opacity: 0.3 })
+        }
+    }, { threshold: 0.3 })
+    if (chooseUsDescRef.value) chooseUsDescObserver.observe(chooseUsDescRef.value)
 
     // Add ChooseUs style animations
     advantageRefs.value.forEach((item, index) => {

@@ -210,8 +210,8 @@
         }
 
         .scoll_content2 {
-            width: 90%;
-            max-width: 1400px;
+            width: 85%;
+            max-width: 1200px;
             margin: 20px 0 100px 0;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
