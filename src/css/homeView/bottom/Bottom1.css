@@ -17,17 +17,18 @@
         left: 0;
         width: 100%;
         min-height: 400px;
-        padding: 30px 5%;
+        padding: 30px clamp(10px, 3vw, 60px);
         box-sizing: border-box;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: space-around;
         align-items: flex-start;
-        gap: 30px;
+        gap: clamp(10px, 2vw, 30px);
 
         .link {
-            width: 200px;
+            flex: 0 1 200px;
+            min-width: 0;
             min-height: 250px;
 
             display: flex;
@@ -41,8 +42,8 @@
             }
         }
         .contact_us {
-            width: 350px;
-            max-width: 100%;
+            flex: 0 1 350px;
+            min-width: 0;
             min-height: 250px;
 
             display: flex;
@@ -55,9 +56,9 @@
         }
 
         .link_img{
-            width: 200px;
-            height: 200px;
-            max-width: 100%;
+            flex: 0 0 auto;
+            width: clamp(120px, 15vw, 200px);
+            height: clamp(120px, 15vw, 200px);
         }
     }
 
