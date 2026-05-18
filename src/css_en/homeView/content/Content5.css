@@ -12,7 +12,7 @@
 
     .scoll_backImg {
         width: 100%;
-        height: 600px;
+        min-height: 600px;
         background-image: url('@/assets/img/scoll/5.jpg');
         background-repeat: no-repeat;
         background-size: cover;
@@ -23,28 +23,42 @@
             position: absolute;
             top: 0;
             width: 100%;
-            height: 600px;
+            height: 100%;
+            min-height: 600px;
             background-image: linear-gradient(65deg, hsla(210, 3%, 24%, 0.9) 20%, hsla(211, 84%, 26%, 0.815) 90%);
             opacity: 0.6;
         }
 
         .cover_content {
             width: 100%;
-            height: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            min-height: 600px;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
 
             display: flex;
             flex-direction: row;
+            flex-wrap: nowrap;
             justify-content: center;
             align-items: center;
-            
+            gap: 20px;
+
             .content_desc {
                color: white;
                font-size: 18px;
                z-index: 10;
-               width: 310px;
-               height: 350px;
+               flex: 0 1 310px;
+               min-width: 0;
+               height: auto;
+               align-self: stretch;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
                text-align: left;
-               padding-right: 80px;
+               padding-right: clamp(20px, 5vw, 80px);
+               box-sizing: border-box;
                position: relative;
 
                 .button {
@@ -79,18 +93,21 @@
                 content: "";
                 display: block;
                 width: 1px;
-                height: 100%;
+                height: 60%;
                 background-color: #ccc;
                 position: absolute;
                 right: 0;
-                top: 0;
+                top: 50%;
+                transform: translateY(-50%);
             }
-            
+
             .content_body {
-                height: 100%;
+                height: auto;
                 padding-left: 20px;
                 z-index: 10;
-                
+                flex: 1 1 0;
+                min-width: 0;
+
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -99,10 +116,11 @@
                 .num_display {
                     display: flex;
                     flex-direction: row;
+                    flex-wrap: wrap;
                     justify-content: space-around;
                     align-items: center;
 
-                    width: 900px;
+                    width: min(900px, 100%);
 
                     .num {
                         width: 150px;
@@ -119,10 +137,11 @@
                         }
                     }
                 }
-                
+
                 .account_img {
-                    width: 1000px;
-                    height: 200px;
+                    width: min(1000px, 100%);
+                    height: auto;
+                    min-height: 200px;
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
@@ -132,8 +151,9 @@
                     margin-top: 10px;
 
                     img {
-                        width: 140px;
-                        height: 65px;
+                        width: clamp(100px, 14vw, 140px);
+                        height: auto;
+                        max-height: 65px;
                         border-radius: 4px;
                         background-color: #fff;
                         display: block;
@@ -148,6 +168,7 @@
     .scoll_content {
         margin-top: 55px;
         width: 100%;
+        overflow: hidden;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -190,10 +211,11 @@
         }
 
         .scoll_content2 {
-            width: 80%;
+            width: 85%;
+            max-width: 1200px;
             margin: 20px 0 100px 0;
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 15px;
 
             .advantage {
@@ -252,7 +274,7 @@
                 .text2 {
                     font-size: 14px;
                     padding: 0 20px;
-                    text-align: justify;
+                    text-align: left;
                     color: #666;
                     line-height: 1.6;
                 }
