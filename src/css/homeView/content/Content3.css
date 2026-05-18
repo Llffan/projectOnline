@@ -13,7 +13,8 @@
 
     .account_opening{
         width: 100%;
-        max-width: 1440px;
+        max-width: 1400px;
+        margin: 0 auto;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -90,7 +91,9 @@
 
     .account_body {
         width: 100%;
-        max-width: 1420px;
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
         height: auto;
         min-height: 350px;
         margin-top: 30px;
