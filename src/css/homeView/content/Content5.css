@@ -90,11 +90,12 @@
                 content: "";
                 display: block;
                 width: 1px;
-                height: 100%;
+                height: 60%;
                 background-color: #ccc;
                 position: absolute;
                 right: 0;
-                top: 0;
+                top: 50%;
+                transform: translateY(-50%);
             }
             
             .content_body {
