@@ -168,6 +168,7 @@
     .scoll_content {
         margin-top: 55px;
         width: 100%;
+        overflow: hidden;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
