@@ -8,15 +8,23 @@
     align-items: center;
 
     .register_company{
+        width: 100%;
+        max-width: 1440px;
+        padding: 0 20px;
+        box-sizing: border-box;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        gap: 25px;
         transform: translateY(-40px);
 
         .company_intro{
-            width: 320px;
-            height: 400px;
+            width: 100%;
+            max-width: 320px;
+            height: auto;
+            min-height: 400px;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -74,20 +82,26 @@
         }
 
         .company_body {
-            width: 1050px;
-            margin: 0 25px;
-            height: 400px;
+            width: 100%;
+            max-width: 1050px;
+            margin: 0;
+            height: auto;
+            min-height: 400px;
 
             .card-group {
                 height: 100%;
+                min-height: 400px;
                 display: flex;
                 flex-direction: row;
-                justify-content: space-around;
-                align-items: center;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: stretch;
+                gap: 15px;
 
                 .company-card {
-                    height: 100%;
-                    width: 300px;
+                    height: 400px;
+                    flex: 1 1 240px;
+                    max-width: 300px;
                     background-size: cover;
                     background-position: center;
                     border-radius: 5px;
@@ -101,7 +115,8 @@
 
                     .company-card-body {
                         height: 280px;
-                        width: 280px;
+                        width: calc(100% - 20px);
+                        max-width: 280px;
                         position: absolute;
                         bottom: 0px;
                         transform: translateY(190px);
@@ -199,6 +214,22 @@
                 .company-card > * {
                     position: relative;
                     z-index: 2;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .content2 {
+        padding: 30px 0;
+
+        .register_company {
+            .company_intro {
+                min-height: auto;
+
+                .button1 {
+                    margin-top: 20px;
                 }
             }
         }

@@ -8,7 +8,7 @@
 
     .scoll_backImg {
         width: 100%;
-        height: 600px;
+        min-height: 600px;
         background-image: url('@/assets/img/scoll/scoll1.png');
         background-repeat: no-repeat;
         background-size: cover;
@@ -19,7 +19,8 @@
             position: absolute;
             top: 0;
             width: 100%;
-            height: 600px;
+            height: 100%;
+            min-height: 600px;
             background-image: linear-gradient(-65deg, rgba(49, 51, 53, 0.9) 20%, rgba(4, 65, 144, 0.9) 90%);
             opacity: 0.6;
         }
@@ -64,13 +65,15 @@
                 width: 100%;
                 display: flex;
                 flex-direction: row;
+                flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
                 gap: 1px;
 
                 .nums_display {
                     height: 200px;
-                    width: 350px;
+                    flex: 1 1 220px;
+                    max-width: 350px;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -111,24 +114,30 @@
         align-items: center;
 
         .scoll_content1 {
-            width: 1400px;
-            height: 160px;
+            width: min(1400px, 95%);
+            min-height: 160px;
             border-radius: 12px;
             background: rgba(255, 255, 255, 0.8);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.3);
             transform: translateY(-80px);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05), inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+            padding: 10px 0;
+            box-sizing: border-box;
 
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             justify-content: space-around;
             align-items: center;
+            gap: 10px;
 
             >div {
                 height: 100px;
-                width: 320px;
+                flex: 1 1 240px;
+                max-width: 320px;
                 padding: 0 20px;
+                box-sizing: border-box;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
@@ -254,16 +263,22 @@
         }
 
         .scoll_content3 {
+            width: 100%;
+            max-width: 1400px;
+            padding: 0 20px;
+            box-sizing: border-box;
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch;
             gap: 15px;
             margin: 60px 0 100px 0;
 
             .content3_body {
                 height: 350px;
-                width: 250px;
+                flex: 1 1 220px;
+                max-width: 260px;
                 padding: 5px;
                 border-radius: 6px;
                 border: 1px solid #eee;

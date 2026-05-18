@@ -131,37 +131,39 @@
         top: 100%;
         left: 50%;
         transform: translateX(-50%);
-        min-width: 700px;
+        min-width: min(700px, 92vw);
+        max-width: 95vw;
         background: #fff;
         box-shadow: 0 2px 8px rgba(0,0,0,0.12);
         border-radius: 6px;
         z-index: 200;
         flex-direction: column;
         padding: 8px 0;
+        box-sizing: border-box;
     }
     .nav-dropdown:hover > .dropdown-menu {
         display: flex;
     }
-    
+
     /* 为每个下拉菜单添加独立的最小宽度设置 */
     .nav-dropdown-1 > .dropdown-menu {
-        min-width: 650px;
+        min-width: min(650px, 92vw);
     }
-    
+
     .nav-dropdown-2 > .dropdown-menu {
-        min-width: 500px;
+        min-width: min(500px, 92vw);
     }
-    
+
     .nav-dropdown-3 > .dropdown-menu {
-        min-width: 500px;
+        min-width: min(500px, 92vw);
     }
-    
+
     .nav-dropdown-4 > .dropdown-menu {
-        min-width: 500px;
+        min-width: min(500px, 92vw);
     }
-    
+
     .nav-dropdown-5 > .dropdown-menu {
-        min-width: 300px;
+        min-width: min(300px, 92vw);
     }
     
     .dropdown-menu .region-group {
@@ -197,15 +199,15 @@
     
     .dropdown-menu .region-countries {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
         gap: 8px;
         align-content: flex-start;
     }
-    
+
     /* 公司注册菜单样式 */
     .menu-company .menu-company-countries {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
         gap: 8px;
         align-content: flex-start;
     }
@@ -297,5 +299,112 @@
     /* 添加激活状态下的区域组样式 */
     .menu-secretary .region-group.active-region {
         opacity: 1;
+    }
+
+    /* 移动端汉堡按钮 — 桌面默认隐藏 */
+    .mobile-menu-btn {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 28px;
+        height: 22px;
+        margin-right: 20px;
+        cursor: pointer;
+        z-index: 300;
+
+        span {
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: #fff;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+            transform-origin: center;
+        }
+    }
+    &.scrolled .mobile-menu-btn span {
+        background-color: #666;
+    }
+}
+
+/* 移动端样式 */
+@media (max-width: 992px) {
+    .top2 {
+        .mobile-menu-btn {
+            display: flex;
+        }
+        .contact-info {
+            display: none;
+        }
+
+        .links {
+            position: absolute;
+            top: 80px;
+            left: 0;
+            right: 0;
+            width: 100%;
+            max-height: calc(100vh - 80px);
+            overflow-y: auto;
+            background-color: #fff;
+            flex-direction: column;
+            align-items: stretch;
+            padding: 10px 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            transform: translateY(-10px);
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.25s ease, transform 0.25s ease;
+
+            a {
+                color: #666 !important;
+                width: 100%;
+                text-align: center;
+                padding: 14px 16px;
+                border-radius: 0;
+            }
+        }
+        .links.mobile-open {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        /* 移动端下拉直接展开为内嵌块 */
+        .nav-dropdown {
+            width: 100%;
+            align-items: stretch;
+        }
+        .nav-dropdown > .dropdown-menu {
+            position: static;
+            transform: none;
+            min-width: 0;
+            max-width: 100%;
+            width: 100%;
+            box-shadow: none;
+            border-radius: 0;
+            padding: 0;
+        }
+        .nav-dropdown:hover > .dropdown-menu {
+            display: none; /* 移动端改为点击触发，由 JS 控制 */
+        }
+
+        .links > *:not(:last-child)::after {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .top2 {
+        .logo {
+            margin-left: 12px;
+            img {
+                width: 160px;
+                height: auto;
+            }
+        }
+        .mobile-menu-btn {
+            margin-right: 12px;
+        }
     }
 }
