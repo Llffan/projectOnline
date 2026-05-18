@@ -65,14 +65,12 @@
                 align-items: center;
                 flex-wrap: wrap;
                 width: min(640px, 90%);
-                height: auto;
-                max-height: 200px;
-                top: 22%;
+                height: 200px;
+                top: 75px;
 
                 img {
-                    width: clamp(110px, 22%, 150px);
-                    height: auto;
-                    max-height: 60px;
+                    width: 150px;
+                    height: 60px;
                     border-radius: 4px;
                     background-color: #fff;
                     display: block;
