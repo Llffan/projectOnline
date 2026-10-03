@@ -352,7 +352,7 @@ refactor: extract shared content sections and motion
 
 按访问频率迁移香港秘书、税务申报、海外年审等页面；每迁移一类服务保留旧 URL，不改变页面元信息和主要文案。
 
-- [ ] **Step 4: 收敛详情页 CSS**
+- [x] **Step 4: 收敛详情页 CSS**
 
 将重复的固定宽度、区块间距、标题样式和移动端媒体查询迁移到共享样式；页面特有的银行 logo、步骤图和价格卡片继续保留在页面 CSS。
 
