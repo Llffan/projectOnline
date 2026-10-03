@@ -10,7 +10,7 @@
   </main>
 </template>
 <script setup>
-import '@/css_en/bank_personal/hk/Personal_content.css'
+
 const image = (name) => new URL(`../../../assets/img/bank/hk/${name}`, import.meta.url).href
 const features = [{ title: 'Multi-currency management', text: 'Manage HKD, RMB, USD and other currencies subject to the bank and account type.' }, { title: 'Overseas payments', text: 'Useful for tuition, property, insurance and everyday cross-border spending.' }, { title: 'Cross-border banking', text: 'Use online banking, cards and remittance services according to account features.' }, { title: 'Global wealth planning', text: 'Build a compliant banking foundation for personal wealth management.' }]
 const requirements = ['Valid Mainland Chinese ID card', 'Hong Kong and Macau travel permit or passport', 'Entry record or landing slip', 'Proof of address or correspondence details', 'Tax residency self-certification', 'Source of funds and account purpose']

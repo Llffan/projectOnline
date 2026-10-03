@@ -1,4 +1,1 @@
-.embassy_notary {
-    width: 100%;
-    overflow: hidden;
-}
+@import '../../../css/common/pages/notary/embassy/EmbassyNotary.css';

@@ -1,0 +1,110 @@
+.maintenance_guide {
+  width: 100%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.maintenance_guide .content_box1 {
+  width: 90%;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.maintenance_guide .title {
+  text-align: center;
+  font-size: 32px;
+  color: #0037ff7e;
+  margin-top: 30px;
+}
+
+.maintenance_guide .title::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 500px;
+  background: linear-gradient(to right, #f5f5f5, #0037ff7e, #f5f5f5);
+  margin: 20px auto;
+}
+
+.maintenance_guide .intro {
+  width: 90%;
+  margin-top: 30px;
+}
+
+.maintenance_guide .materials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.maintenance_guide .material-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f8ff 100%);
+  padding: 25px;
+  border-radius: 12px;
+  border-left: 4px solid #0037ff7e;
+  box-shadow: 0 4px 12px rgba(0, 79, 144, 0.05);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.maintenance_guide .material-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 79, 144, 0.15);
+}
+
+.maintenance_guide .card-idx {
+  position: absolute;
+  right: -5px;
+  top: -10px;
+  font-size: 70px;
+  font-weight: 900;
+  color: rgba(0, 55, 255, 0.05);
+  line-height: 1;
+}
+
+.maintenance_guide .card-title {
+  font-size: 18px;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.maintenance_guide .card-desc {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;
+  position: relative;
+  z-index: 1;
+}
+
+.maintenance_guide .card-desc p {
+  margin-bottom: 6px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.maintenance_guide .card-desc p:last-child {
+  margin-bottom: 0;
+}
+
+.maintenance_guide .card-desc p::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #0037ff7e;
+  font-weight: bold;
+}

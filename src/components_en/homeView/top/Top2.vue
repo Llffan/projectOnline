@@ -5,12 +5,12 @@
                     <img loading="lazy" :src="logoSrc" alt="SHI ZHOU TONG">
                 </router-link>
             </div>
-            <button class="mobile-menu-btn" type="button" :aria-expanded="isMobileMenuOpen" aria-label="Open navigation menu" @click="isMobileMenuOpen = !isMobileMenuOpen">
-                <span :class="{ open: isMobileMenuOpen }"></span>
-                <span :class="{ open: isMobileMenuOpen }"></span>
-                <span :class="{ open: isMobileMenuOpen }"></span>
+            <button class="mobile-menu-btn" type="button" ref="menuButton" aria-controls="site-navigation" :aria-expanded="isMenuOpen" aria-label="Open navigation menu" @click="isMenuOpen = !isMenuOpen">
+                <span :class="{ open: isMenuOpen }"></span>
+                <span :class="{ open: isMenuOpen }"></span>
+                <span :class="{ open: isMenuOpen }"></span>
             </button>
-            <div class="links" :class="{ 'mobile-open': isMobileMenuOpen }">
+            <div id="site-navigation" ref="navigationRoot" class="links" :class="{ 'mobile-open': isMenuOpen }" @click="closeMenuOnNavigate">
                 <router-link to="/en" class="nav-link" active-class="active" exact-active-class="exact-active">Home</router-link>
                 <div class="nav-dropdown nav-dropdown-1">
                     <router-link to="/company_en/hk" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': isCompanyRoute }">Global Company Registration</router-link>
@@ -175,12 +175,13 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount, computed } from 'vue'
 import { useRoute } from 'vue-router'
+import { useNavigationMenu } from '@/composables/useNavigationMenu'
 import '@/css_en/homeView/top/Top2.css'
 import SubmenuLink from '@/components/homeView/top/SubmenuLink.vue'
 
 const route = useRoute()
 const isScrolled = ref(false)
-const isMobileMenuOpen = ref(false)
+const { isMenuOpen, menuButton, navigationRoot, closeMenuOnNavigate } = useNavigationMenu(route)
 
 // 映射国家路由到区域ID
 const countryToRegionMap = {
@@ -321,6 +322,10 @@ const logoSrc = computed(() => {
 })
 
 const handleScroll = () => {
+  if (window.innerWidth <= 768) {
+    isScrolled.value = true
+    return
+  }
   const content1Element = document.querySelector('.content1')
   
   if (content1Element) {
@@ -338,11 +343,14 @@ const handleScroll = () => {
 }
 
 onMounted(() => {
+  handleScroll()
   window.addEventListener('scroll', handleScroll)
+  window.addEventListener('resize', handleScroll)
 })
 
 onBeforeUnmount(() => {
   window.removeEventListener('scroll', handleScroll)
+  window.removeEventListener('resize', handleScroll)
 })
 </script>
 

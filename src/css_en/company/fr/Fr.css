@@ -1,11 +1,1 @@
-.fr_box {
-    width: 100%;
-    max-width: var(--site-wide-max-width, 2000px);
-    margin: 0 auto;
-    background: #fff;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
+@import '../../../css/common/pages/company/fr/Fr.css';

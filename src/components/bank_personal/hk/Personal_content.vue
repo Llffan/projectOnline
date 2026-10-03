@@ -32,7 +32,7 @@
   </main>
 </template>
 <script setup>
-import '@/css/bank_personal/hk/Personal_content.css'
+
 const image = (name) => new URL(`../../../assets/img/bank/hk/${name}`, import.meta.url).href
 const features = [
   { title: '多币种资金管理', text: '可按银行政策管理港币、人民币、美元等常用币种，便于跨境收支。' },

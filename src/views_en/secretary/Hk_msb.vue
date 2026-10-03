@@ -7,7 +7,7 @@
 </template>
 
 <script setup>
-import '@/css_en/secretary/hk_msb/Hk_msb.css'
+
 import HkMsbContent1 from '@/components_en/secretary/hk_msb/HkMsb_content1.vue'
 import HkMsbContent2 from '@/components_en/secretary/hk_msb/HkMsb_content2.vue'
 import ServicePageLayout from '@/components_en/secretary/common/ServicePageLayout.vue'

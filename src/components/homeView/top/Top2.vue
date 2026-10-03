@@ -1,18 +1,18 @@
 <template>
     <div class="top2" :class="{ 'scrolled': isScrolled }">
             <div class="logo">
-                <img loading="lazy" :src="logoSrc" alt="十洲通">
+                <router-link to="/" aria-label="十洲通首页"><img loading="lazy" :src="logoSrc" alt="十洲通"></router-link>
             </div>
 
             <!-- 移动端菜单按钮 -->
-            <button class="mobile-menu-btn" type="button" :aria-expanded="isMobileMenuOpen" aria-label="打开导航菜单" @click="isMobileMenuOpen = !isMobileMenuOpen">
-                <span :class="{ 'open': isMobileMenuOpen }"></span>
-                <span :class="{ 'open': isMobileMenuOpen }"></span>
-                <span :class="{ 'open': isMobileMenuOpen }"></span>
+            <button class="mobile-menu-btn" type="button" ref="menuButton" aria-controls="site-navigation" :aria-expanded="isMenuOpen" aria-label="打开导航菜单" @click="isMenuOpen = !isMenuOpen">
+                <span :class="{ 'open': isMenuOpen }"></span>
+                <span :class="{ 'open': isMenuOpen }"></span>
+                <span :class="{ 'open': isMenuOpen }"></span>
             </button>
 
-            <div class="links" :class="{ 'mobile-open': isMobileMenuOpen }">
-                <router-link to="/" class="nav-link" active-class="active" exact-active-class="exact-active" @click="isMobileMenuOpen = false">首页</router-link>
+            <div id="site-navigation" ref="navigationRoot" class="links" :class="{ 'mobile-open': isMenuOpen }" @click="closeMenuOnNavigate">
+                <router-link to="/" class="nav-link" active-class="active" exact-active-class="exact-active" @click="isMenuOpen = false">首页</router-link>
                 <div class="nav-dropdown nav-dropdown-1">
                     <router-link to="/company/hk" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': isCompanyRoute }" @click="toggleDropdown($event)">全球公司注册</router-link>
                     <div class="dropdown-menu menu-company">
@@ -176,12 +176,13 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount, computed } from 'vue'
 import { useRoute } from 'vue-router'
+import { useNavigationMenu } from '@/composables/useNavigationMenu'
 import '@/css/homeView/top/Top2.css'
 import SubmenuLink from './SubmenuLink.vue'
 
 const route = useRoute()
 const isScrolled = ref(false)
-const isMobileMenuOpen = ref(false)
+const { isMenuOpen, menuButton, navigationRoot, closeMenuOnNavigate } = useNavigationMenu(route)
 
 // 切换下拉菜单 (移动端)
 const toggleDropdown = (event) => {
@@ -189,10 +190,11 @@ const toggleDropdown = (event) => {
         event.preventDefault();
         const dropdown = event.target.nextElementSibling;
         if (dropdown) {
+            event.navigationMenuToggle = true;
             dropdown.style.display = dropdown.style.display === 'flex' ? 'none' : 'flex';
         }
     } else {
-        isMobileMenuOpen.value = false;
+        isMenuOpen.value = false;
     }
 }
 
@@ -291,10 +293,12 @@ onMounted(() => {
   // 挂载时立即执行一次判断
   handleScroll()
   window.addEventListener('scroll', handleScroll)
+  window.addEventListener('resize', handleScroll)
 })
 
 onBeforeUnmount(() => {
   window.removeEventListener('scroll', handleScroll)
+  window.removeEventListener('resize', handleScroll)
 })
 </script>
 

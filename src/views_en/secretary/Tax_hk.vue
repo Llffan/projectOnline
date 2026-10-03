@@ -7,7 +7,7 @@
 </template>
 
 <script setup>
-import '@/css_en/secretary/hk_annual/Tax_hk.css'
+
 import TaxHkContent1 from '@/components_en/secretary/hk_annual/TaxHk_content1.vue'
 import TaxHkContent2 from '@/components_en/secretary/hk_annual/TaxHk_content2.vue'
 import ServicePageLayout from '@/components_en/secretary/common/ServicePageLayout.vue'

@@ -1,7 +1,1 @@
-.mo_hsbc_box {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+@import '../../../../css/common/pages/bank_company/mo/hsbc/Hsbc.css';

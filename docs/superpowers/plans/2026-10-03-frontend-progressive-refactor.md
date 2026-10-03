@@ -200,7 +200,7 @@ refactor: add shared responsive design tokens
 - Produces: `site-header` 的统一导航 API、可访问的移动菜单、统一语言切换和返回顶部行为。
 - Consumes: Task 2 的 `--site-*` 令牌。
 
-- [x] **Step 1: 统一导航数据结构**
+- [ ] **Step 1: 统一导航数据结构**
 
 在中英文 Top2 组件中将菜单整理成相同的数据字段：
 
@@ -232,11 +232,11 @@ refactor: add shared responsive design tokens
 
 为导航链接、菜单按钮、语言切换和返回顶部按钮补充可见 `:focus-visible` 样式；图片补充准确的 `alt` 文本。
 
-- [x] **Step 4: 合并重复的移动端布局规则**
+- [ ] **Step 4: 合并重复的移动端布局规则**
 
 中英文 CSS 使用相同的断点、容器和菜单定位规则，只有字体族、字号差异保留在语言文件中。
 
-- [x] **Step 5: 验证导航行为**
+- [ ] **Step 5: 验证导航行为**
 
 检查以下路径：
 

@@ -6,12 +6,12 @@
                     <img loading="lazy" src="@/assets/img/logo.png" alt="Shizhou Tong home">
                 </router-link>
             </div>
-            <button type="button" class="mobile-menu-btn" :aria-expanded="isMenuOpen" aria-controls="site-navigation" aria-label="Toggle navigation menu" @click="toggleMenu">
+            <button type="button" class="mobile-menu-btn" ref="menuButton" :aria-expanded="isMenuOpen" aria-controls="site-navigation" aria-label="Toggle navigation menu" @click="toggleMenu">
                 <span :class="{ open: isMenuOpen }"></span>
                 <span :class="{ open: isMenuOpen }"></span>
                 <span :class="{ open: isMenuOpen }"></span>
             </button>
-            <div id="site-navigation" class="links" :class="{ 'mobile-open': isMenuOpen }" @click="closeMenuOnNavigate">
+            <div id="site-navigation" ref="navigationRoot" class="links" :class="{ 'mobile-open': isMenuOpen }" @click="closeMenuOnNavigate">
                 <router-link to="/en" class="nav-link" active-class="active" exact-active-class="exact-active">Home</router-link>
                 <div class="nav-dropdown nav-dropdown-1">
                     <router-link to="/company_en/hk" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': isCompanyRoute }">Global Company Registration</router-link>
@@ -174,39 +174,14 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount, computed, watch } from 'vue'
+import { computed } from 'vue'
 import { useRoute } from 'vue-router'
+import { useNavigationMenu } from '@/composables/useNavigationMenu'
 import '@/css_en/common/Top.css'
 import SubmenuLink from '@/components/homeView/top/SubmenuLink.vue'
 
 const route = useRoute()
-const isMenuOpen = ref(false)
-
-const toggleMenu = () => {
-  isMenuOpen.value = !isMenuOpen.value
-}
-
-const closeMenu = () => {
-  isMenuOpen.value = false
-}
-
-const closeMenuOnNavigate = (event) => {
-  if (event.target.closest('a')) closeMenu()
-}
-
-const handleKeydown = (event) => {
-  if (event.key === 'Escape') closeMenu()
-}
-
-onMounted(() => window.addEventListener('keydown', handleKeydown))
-watch(isMenuOpen, (open) => {
-  document.body.style.overflow = open ? 'hidden' : ''
-})
-watch(() => route.path, closeMenu)
-onBeforeUnmount(() => {
-  window.removeEventListener('keydown', handleKeydown)
-  document.body.style.overflow = ''
-})
+const { isMenuOpen, menuButton, navigationRoot, toggleMenu, closeMenu, closeMenuOnNavigate } = useNavigationMenu(route)
 
 // 映射国家路由到区域ID
 const countryToRegionMap = {

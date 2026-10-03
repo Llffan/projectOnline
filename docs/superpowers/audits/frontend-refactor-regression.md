@@ -120,3 +120,37 @@ After the bank mobile corrections, all 24 combinations of six core routes and fo
 - Six normal-motion routes (Chinese/English annual review, tax filing and personal accounts) displayed their introductory content after scrolling into view. Four reduced-motion annual-review/tax-filing checks created zero triggers.
 - Final production build passed. External Source Han Serif CSS intermittently returned ERR_CONNECTION_CLOSED in this browser session; fallback fonts rendered. This is an existing dependency issue to consider during final visual regression.
 - Duplicate scan found 216 identical Chinese/English CSS pairs and 84 differing pairs. This is an inventory, not a completed cleanup; Task 6 Step 2 remains open.
+
+### Identical CSS consolidation and regression (2026-10-04)
+
+- Reviewed 216 identical Chinese/English stylesheet pairs: moved 213 rule-bearing pairs into src/css/common/pages with forwarding imports, and removed three comment-only pairs (six empty stylesheets) plus their six Vue imports. The manifest css-shared-layout-manifest.json records tracked paths, shared targets or removedEmpty, and hashes of the original normalized content.
+- Verified original-content hashes against Git HEAD and forwarding targets before consolidation. The 213 retained shared files preserve their original rules; the three removed pairs contained only comments. The sole asset url uses the unchanged @ alias. No original imports needed rebasing.
+- Browser checks exposed an import-order dependency: equal-specificity desktop grid rules overrode mobile rules on cold Chinese routes. The cards remained four narrow columns, producing 2–6px internal overflow. Shared mobile selectors now include their actual section ancestry and explicitly set one grid column for advantage/process grids. The same shared rules cover annual review and tax filing.
+- Final layout checks below used reduced-motion mode and measured document width plus hero, content-container, title, intro and text scroll widths. Zero failures in 56 combinations and zero pageerror events. These layout checks do not by themselves establish normal-animation or complete visual acceptance.
+- Final production build exited 0; the pre-existing removeViewBox optimizer warning remains. Screenshots for each 390px route use output/playwright/css-shared-<route with slashes replaced by hyphens>-390.png.
+- 84 differing stylesheet pairs remain to inspect for shared layout versus language-specific typography. Task 6 Step 2 remains open for that work.
+
+| Route | 1440px | 1024px | 768px | 390px |
+| --- | --- | --- | --- | --- |
+| / | No overflow | No overflow | No overflow | No overflow |
+| /bank/hk/constructions | No overflow | No overflow | No overflow | No overflow |
+| /bank/hk/personal | No overflow | No overflow | No overflow | No overflow |
+| /en | No overflow | No overflow | No overflow | No overflow |
+| /en/bank/hk/constructions | No overflow | No overflow | No overflow | No overflow |
+| /en/bank/hk/personal | No overflow | No overflow | No overflow | No overflow |
+| /secretary_en/hk-annual | No overflow | No overflow | No overflow | No overflow |
+| /secretary_en/hk-msb | No overflow | No overflow | No overflow | No overflow |
+| /secretary_en/overseas-annual | No overflow | No overflow | No overflow | No overflow |
+| /secretary_en/tax-filing | No overflow | No overflow | No overflow | No overflow |
+| /secretary/hk-annual | No overflow | No overflow | No overflow | No overflow |
+| /secretary/hk-msb | No overflow | No overflow | No overflow | No overflow |
+| /secretary/overseas-annual | No overflow | No overflow | No overflow | No overflow |
+| /secretary/tax-filing | No overflow | No overflow | No overflow | No overflow |
+
+### Navigation regression follow-up (2026-10-04)
+
+- Normal-motion interaction checks confirmed homepage slide switching, keyboard account-card routing and FAQ expansion/collapse, but exposed that both homepage menus ignored Escape. This contradicted the earlier Task 3 completion marks.
+- Added useNavigationMenu for all four header components: shared menu state, aria-controls refs, Escape closure and focus restoration, body-scroll restoration, fullPath navigation cleanup, resize closure, and listener cleanup on unmount. Shared focus-visible styles apply to links and buttons. Homepage scroll/logo handling now responds to resize in both languages; the Chinese logo is a home link.
+- Five named routes (/, /en, /bank/hk/personal, /en/bank/hk/personal, /secretary/hk-msb) passed keyboard opening, Escape closure with solid focus outline and restored focus, desktop resize closure, and navigation scroll restoration. Both homepages also close the menu when clicking their current-page Home link. A separate check awaited the destination URL for every Home link; all five destinations matched href.
+- Final 56 layout combinations were rerun after menu and empty-style cleanup; no measured overflow remained. Final build exited 0. The final manifest audit verified 432 historical content hashes, 426 forwarding targets, 213 canonical stylesheets and three removed empty pairs.
+- Reopened Task 3 Steps 1, 4 and 5: existing headers still contain duplicated static menu markup/data and language-specific layout files. Corrected menu interaction is verified, but the unified navigation API and full desktop/highlight/language-switch regression are not yet complete. Other remaining plan items stay open.

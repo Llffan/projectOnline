@@ -1,7 +1,1 @@
-.sg_aspire_box {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+@import '../../../common/pages/bank_company/sg/aspire/Aspire.css';

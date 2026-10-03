@@ -1,7 +1,1 @@
-.mo_icbc_asia_box {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+@import '../../../common/pages/bank_company/mo/icbc_asia/IcbcAsia.css';

@@ -1,0 +1,1301 @@
+[
+  {
+    "chinese": "src/css/bank_company/common/ChooseUs.css",
+    "english": "src/css_en/bank_company/common/ChooseUs.css",
+    "shared": "src/css/common/pages/bank_company/common/ChooseUs.css",
+    "rulesSha256": "a69fd82677e1a87046a8c3ab4e863e343fa3f96d8315423c09c92cbb85052a07"
+  },
+  {
+    "chinese": "src/css/bank_company/common/HK_Cooperative_Bank.css",
+    "english": "src/css_en/bank_company/common/HK_Cooperative_Bank.css",
+    "shared": "src/css/common/pages/bank_company/common/HK_Cooperative_Bank.css",
+    "rulesSha256": "fdfc651973bfc1706ee2e5754763cda02a68a0a2e50eeef478e2cf3b703378d3"
+  },
+  {
+    "chinese": "src/css/bank_company/common/MaintenanceGuide.css",
+    "english": "src/css_en/bank_company/common/MaintenanceGuide.css",
+    "shared": "src/css/common/pages/bank_company/common/MaintenanceGuide.css",
+    "rulesSha256": "339bd8143e878c553b151c88746f264aebfb47052c0e1113d1f7ffe59b7a6bc5"
+  },
+  {
+    "chinese": "src/css/bank_company/common/MO_Cooperative_Bank.css",
+    "english": "src/css_en/bank_company/common/MO_Cooperative_Bank.css",
+    "shared": "src/css/common/pages/bank_company/common/MO_Cooperative_Bank.css",
+    "rulesSha256": "35a189621a8c8a07512d2cdd4ed571776c4bcb69da001be3ec98c12cadfe735b"
+  },
+  {
+    "chinese": "src/css/bank_company/common/SG_Cooperative_Bank.css",
+    "english": "src/css_en/bank_company/common/SG_Cooperative_Bank.css",
+    "shared": "src/css/common/pages/bank_company/common/SG_Cooperative_Bank.css",
+    "rulesSha256": "67d71fc102e6744931c4f5fc9e625d737bd75da78cc569e7b123707ac434e585"
+  },
+  {
+    "chinese": "src/css/bank_company/common/US_Cooperative_Bank.css",
+    "english": "src/css_en/bank_company/common/US_Cooperative_Bank.css",
+    "shared": "src/css/common/pages/bank_company/common/US_Cooperative_Bank.css",
+    "rulesSha256": "73dbf9f46faa2a2b631eb8d36249e104373e45f54926e3f51b3870ab7e19931c"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/bea/Bea.css",
+    "english": "src/css_en/bank_company/hk/bea/Bea.css",
+    "shared": "src/css/common/pages/bank_company/hk/bea/Bea.css",
+    "rulesSha256": "2b231e600df76098cd798a0b1e3c3814909d79c6f2c685ab004ae5d4303169d3"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/bea/Bea_content1.css",
+    "english": "src/css_en/bank_company/hk/bea/Bea_content1.css",
+    "shared": "src/css/common/pages/bank_company/hk/bea/Bea_content1.css",
+    "rulesSha256": "1000d4eef87bb40a9331ee69f801aa4813f060f0dfeb22a906233f64cc4ce18f"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/bea/Bea_content2.css",
+    "english": "src/css_en/bank_company/hk/bea/Bea_content2.css",
+    "shared": "src/css/common/pages/bank_company/hk/bea/Bea_content2.css",
+    "rulesSha256": "0295bf71b08576af684875f79a25cf75cc6a1c1f4232789e0b7a1feda0407857"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/boc/Boc.css",
+    "english": "src/css_en/bank_company/hk/boc/Boc.css",
+    "shared": "src/css/common/pages/bank_company/hk/boc/Boc.css",
+    "rulesSha256": "94c33ee19cbe6e42b53f78b12c8bd1a46512b4c2376b0469f7a8165e36b936f5"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/boc/Boc_content1.css",
+    "english": "src/css_en/bank_company/hk/boc/Boc_content1.css",
+    "shared": "src/css/common/pages/bank_company/hk/boc/Boc_content1.css",
+    "rulesSha256": "eaaa37629d5ead103f5dad2626685eafcd9ae4cf47e67210f694570df43967cd"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/boc/Boc_content2.css",
+    "english": "src/css_en/bank_company/hk/boc/Boc_content2.css",
+    "shared": "src/css/common/pages/bank_company/hk/boc/Boc_content2.css",
+    "rulesSha256": "408e4434d8a89aee080f46d1dd7853e8a9c408ef14a2bf2ef2f31fe0a269de14"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/chonghing/ChongHing_content1.css",
+    "english": "src/css_en/bank_company/hk/chonghing/Chonghing_content1.css",
+    "shared": "src/css/common/pages/bank_company/hk/chonghing/Chonghing_content1.css",
+    "rulesSha256": "93a025c391a2f4968e0d60b9b99f2bcd3373088230352c03e16218c72e3957d0"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/chonghing/ChongHing_content2.css",
+    "english": "src/css_en/bank_company/hk/chonghing/Chonghing_content2.css",
+    "shared": "src/css/common/pages/bank_company/hk/chonghing/Chonghing_content2.css",
+    "rulesSha256": "fb8eab430d1bf6d50a53086d5facd0ef3200f386a3d1abe4185c71bacc209a32"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/citi/Citi.css",
+    "english": "src/css_en/bank_company/hk/citi/Citi.css",
+    "shared": "src/css/common/pages/bank_company/hk/citi/Citi.css",
+    "rulesSha256": "e757705a974326e6372820dd6e3ea82540afdc61983ff2715a5265110640c8a7"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/citi/Citi_content1.css",
+    "english": "src/css_en/bank_company/hk/citi/Citi_content1.css",
+    "shared": "src/css/common/pages/bank_company/hk/citi/Citi_content1.css",
+    "rulesSha256": "eae63482c78319ad77efd6775ca6f5a0fe64c8eb74fb790143e28be08b68298f"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/citi/Citi_content2.css",
+    "english": "src/css_en/bank_company/hk/citi/Citi_content2.css",
+    "shared": "src/css/common/pages/bank_company/hk/citi/Citi_content2.css",
+    "rulesSha256": "2cc9dc550623058edb8d66564ea555340437d49b36ed185ad69cb8e9a34b52e3"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/citi_small/CitiSmall.css",
+    "english": "src/css_en/bank_company/hk/citi_small/CitiSmall.css",
+    "shared": "src/css/common/pages/bank_company/hk/citi_small/CitiSmall.css",
+    "rulesSha256": "6a0a85f01feb66dcc0012e048dd71c76a899a0d715e2581062df6628d5b8a979"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/citi_small/CitiSmall_content1.css",
+    "english": "src/css_en/bank_company/hk/citi_small/CitiSmall_content1.css",
+    "shared": "src/css/common/pages/bank_company/hk/citi_small/CitiSmall_content1.css",
+    "rulesSha256": "c3936eb686ea196ff3c7e30b79a7d47fc8ea7958004969213ffdf659d87d79b9"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/citi_small/CitiSmall_content2.css",
+    "english": "src/css_en/bank_company/hk/citi_small/CitiSmall_content2.css",
+    "shared": "src/css/common/pages/bank_company/hk/citi_small/CitiSmall_content2.css",
+    "rulesSha256": "6415da168d80ceae44632b0f2ea0692462dd5a2949d1f8fcd6e000f1e587b592"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/citic/Citic.css",
+    "english": "src/css_en/bank_company/hk/citic/Citic.css",
+    "shared": "src/css/common/pages/bank_company/hk/citic/Citic.css",
+    "rulesSha256": "31bbcc25e03954a00323c7042a48af4aef4b10818ddf969fb98c9671fd589e81"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/citic/Citic_content1.css",
+    "english": "src/css_en/bank_company/hk/citic/Citic_content1.css",
+    "shared": "src/css/common/pages/bank_company/hk/citic/Citic_content1.css",
+    "rulesSha256": "7bb05f6d2c36c6988903f4a10c556572708e3be08aac08afea56541ef068b3db"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/citic/Citic_content2.css",
+    "english": "src/css_en/bank_company/hk/citic/Citic_content2.css",
+    "shared": "src/css/common/pages/bank_company/hk/citic/Citic_content2.css",
+    "rulesSha256": "4f18a6eeec3171b3892dfb95acd673845f654180e6738d52d3120b98e3e9cd3a"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/cmb_winglung/CmbWinglung.css",
+    "english": "src/css_en/bank_company/hk/cmb_winglung/CmbWinglung.css",
+    "shared": "src/css/common/pages/bank_company/hk/cmb_winglung/CmbWinglung.css",
+    "rulesSha256": "98faeee21824854002b917e14a272ae337f3455b2c0684e7b586a220168f2ee1"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/cmb_winglung/CmbWinglung_content1.css",
+    "english": "src/css_en/bank_company/hk/cmb_winglung/CmbWinglung_content1.css",
+    "shared": "src/css/common/pages/bank_company/hk/cmb_winglung/CmbWinglung_content1.css",
+    "rulesSha256": "7b6887115923424953d85924269e7179d464005b93365733271e93b2c9b738c5"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/cmb_winglung/CmbWinglung_content2.css",
+    "english": "src/css_en/bank_company/hk/cmb_winglung/CmbWinglung_content2.css",
+    "shared": "src/css/common/pages/bank_company/hk/cmb_winglung/CmbWinglung_content2.css",
+    "rulesSha256": "3ec01c702e6af6c75a654730b348e97685cdedf6d748e535bcef2eaec6e86358"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/communications/Communications.css",
+    "english": "src/css_en/bank_company/hk/communications/Communications.css",
+    "shared": "src/css/common/pages/bank_company/hk/communications/Communications.css",
+    "rulesSha256": "73d344955256d2ae411b1127c3bbc5704ff8bbf519d1ff1c325fe2a167d4a8a5"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/communications/Communications_content1.css",
+    "english": "src/css_en/bank_company/hk/communications/Communications_content1.css",
+    "shared": "src/css/common/pages/bank_company/hk/communications/Communications_content1.css",
+    "rulesSha256": "a28802a5ffa101be55582f7b761eceb379dc332edb648fd0a1c8d54cc5a09980"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/communications/Communications_content2.css",
+    "english": "src/css_en/bank_company/hk/communications/Communications_content2.css",
+    "shared": "src/css/common/pages/bank_company/hk/communications/Communications_content2.css",
+    "rulesSha256": "bea2526c72926efe019c5ea8ad4403db3e3805128b3a9718ee0e654ad0d255be"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/construction/Constructions.css",
+    "english": "src/css_en/bank_company/hk/construction/Constructions.css",
+    "shared": "src/css/common/pages/bank_company/hk/construction/Constructions.css",
+    "rulesSha256": "a09881edd6957fcccd264ad4206e56e6032ccd91ae4ff50cf35f9d0826cb8c00"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/construction/Constructions_content2.css",
+    "english": "src/css_en/bank_company/hk/construction/Constructions_content2.css",
+    "shared": "src/css/common/pages/bank_company/hk/construction/Constructions_content2.css",
+    "rulesSha256": "06b4880c2bb026a8e265cc3547835215b5ee4158fc7f8fef75110f6c18b50433"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/dahsing/DahSing.css",
+    "english": "src/css_en/bank_company/hk/dahsing/DahSing.css",
+    "shared": "src/css/common/pages/bank_company/hk/dahsing/DahSing.css",
+    "rulesSha256": "f91f699bf59a637b69576913f24667d74f0051a819144a433b10c38cdaea1fa2"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/dahsing/DahSing_content1.css",
+    "english": "src/css_en/bank_company/hk/dahsing/DahSing_content1.css",
+    "shared": "src/css/common/pages/bank_company/hk/dahsing/DahSing_content1.css",
+    "rulesSha256": "dd23fce7bad5fb72e4bf67475e0eb97b8f62491acc76ad2388f9ccffbfc01a30"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/dahsing/DahSing_content2.css",
+    "english": "src/css_en/bank_company/hk/dahsing/DahSing_content2.css",
+    "shared": "src/css/common/pages/bank_company/hk/dahsing/DahSing_content2.css",
+    "rulesSha256": "6bfbe9df304264fdbe947ba268820cd98db8c2e9f35b1b6622433b8ba754b305"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/dbs/Dbs.css",
+    "english": "src/css_en/bank_company/hk/dbs/Dbs.css",
+    "shared": "src/css/common/pages/bank_company/hk/dbs/Dbs.css",
+    "rulesSha256": "72d5a69fe4877093209d17551665bd4f89218ffa725322e03cfe7aac473178ea"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/dbs/Dbs_content1.css",
+    "english": "src/css_en/bank_company/hk/dbs/Dbs_content1.css",
+    "shared": "src/css/common/pages/bank_company/hk/dbs/Dbs_content1.css",
+    "rulesSha256": "734d936fc6125d492f37322f611d548d5cd36db3ae2711b5b8f8d1a44fb58c8a"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/dbs/Dbs_content2.css",
+    "english": "src/css_en/bank_company/hk/dbs/Dbs_content2.css",
+    "shared": "src/css/common/pages/bank_company/hk/dbs/Dbs_content2.css",
+    "rulesSha256": "73805ce56451536d97d2f239340f92e080235064d46ec9981b4d030262853430"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/deutsche/Deutsche.css",
+    "english": "src/css_en/bank_company/hk/deutsche/Deutsche.css",
+    "shared": "src/css/common/pages/bank_company/hk/deutsche/Deutsche.css",
+    "rulesSha256": "68be59ef0f57cb99106061a89d91d27d406ccb854e2de351736e9d14a2806b8a"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/deutsche/Deutsche_content1.css",
+    "english": "src/css_en/bank_company/hk/deutsche/Deutsche_content1.css",
+    "shared": "src/css/common/pages/bank_company/hk/deutsche/Deutsche_content1.css",
+    "rulesSha256": "cbb9b5c94e68f424f3d77e6b81000a1bf389aad0061c8ccdc0b836f59f92d39e"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/deutsche/Deutsche_content2.css",
+    "english": "src/css_en/bank_company/hk/deutsche/Deutsche_content2.css",
+    "shared": "src/css/common/pages/bank_company/hk/deutsche/Deutsche_content2.css",
+    "rulesSha256": "09ee3729ab01e8509f21d027776e19f0fcaff37d50a10df4d94c02d728c43baa"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/eastwest/EastWest.css",
+    "english": "src/css_en/bank_company/hk/eastwest/EastWest.css",
+    "shared": "src/css/common/pages/bank_company/hk/eastwest/EastWest.css",
+    "rulesSha256": "8efb0a15c33b7d8a30b72c4ddab6b667ee25d4f75e397c86909d70a686b6684c"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/eastwest/EastWest_content1.css",
+    "english": "src/css_en/bank_company/hk/eastwest/EastWest_content1.css",
+    "shared": "src/css/common/pages/bank_company/hk/eastwest/EastWest_content1.css",
+    "rulesSha256": "7e6b9cd6e07fc29170a2b64a77e9b9495ec116a5f0042182abf3837d2b6ec285"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/eastwest/EastWest_content2.css",
+    "english": "src/css_en/bank_company/hk/eastwest/EastWest_content2.css",
+    "shared": "src/css/common/pages/bank_company/hk/eastwest/EastWest_content2.css",
+    "rulesSha256": "71bf85b2f62144445730e053a5e55ecc78e6c4e9b7384a646042fb7011e3d284"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/everbright/Everbright.css",
+    "english": "src/css_en/bank_company/hk/everbright/Everbright.css",
+    "shared": "src/css/common/pages/bank_company/hk/everbright/Everbright.css",
+    "rulesSha256": "47c58d877256e0843abf385921349387dc2efe552a095bab99c7587fce7e8b1c"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/everbright/Everbright_content1.css",
+    "english": "src/css_en/bank_company/hk/everbright/Everbright_content1.css",
+    "shared": "src/css/common/pages/bank_company/hk/everbright/Everbright_content1.css",
+    "rulesSha256": "6c5f66ba53ca201223ba4d7be3437183fcc1cd341c4bcf4a1566cbb39785af5d"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/everbright/Everbright_content2.css",
+    "english": "src/css_en/bank_company/hk/everbright/Everbright_content2.css",
+    "shared": "src/css/common/pages/bank_company/hk/everbright/Everbright_content2.css",
+    "rulesSha256": "7c5299e258b498b09ab182a05445508cb5f9bf13d41a4a78fbccfa47f41583d7"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/hangseng/HangSeng.css",
+    "english": "src/css_en/bank_company/hk/hangseng/HangSeng.css",
+    "shared": "src/css/common/pages/bank_company/hk/hangseng/HangSeng.css",
+    "rulesSha256": "5f46d04420631a93acfd80b2fbd53d763ea5543ef9c8a882151c4f2852a624bc"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/hangseng/HangSeng_content1.css",
+    "english": "src/css_en/bank_company/hk/hangseng/HangSeng_content1.css",
+    "shared": "src/css/common/pages/bank_company/hk/hangseng/HangSeng_content1.css",
+    "rulesSha256": "722c33a6a99c0e6f9ecfc75b2ac0b00ea3a5ccb0ac1f3370492ff97111ef6994"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/hangseng/HangSeng_content2.css",
+    "english": "src/css_en/bank_company/hk/hangseng/HangSeng_content2.css",
+    "shared": "src/css/common/pages/bank_company/hk/hangseng/HangSeng_content2.css",
+    "rulesSha256": "0aaa328e3e02a78ca344f00be27c9297391530047a599de0826bc042d0a71453"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/hsbc/Hsbc.css",
+    "english": "src/css_en/bank_company/hk/hsbc/Hsbc.css",
+    "shared": "src/css/common/pages/bank_company/hk/hsbc/Hsbc.css",
+    "rulesSha256": "9a1855f6d57b591be053749807e5c0360271fe32ad639cc39418b393623abca1"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/hsbc/Hsbc_content1.css",
+    "english": "src/css_en/bank_company/hk/hsbc/Hsbc_content1.css",
+    "shared": "src/css/common/pages/bank_company/hk/hsbc/Hsbc_content1.css",
+    "rulesSha256": "c9e8d753c831084bc5b88719c7479b590612ff93f68098e5289360508caec90b"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/hsbc/Hsbc_content2.css",
+    "english": "src/css_en/bank_company/hk/hsbc/Hsbc_content2.css",
+    "shared": "src/css/common/pages/bank_company/hk/hsbc/Hsbc_content2.css",
+    "rulesSha256": "38bebe0a412caa7b95872a0695d577f9cbf52945470f83efee8436f8de3b176b"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/icbc/Icbc.css",
+    "english": "src/css_en/bank_company/hk/icbc/Icbc.css",
+    "shared": "src/css/common/pages/bank_company/hk/icbc/Icbc.css",
+    "rulesSha256": "e4cb5a5d21f11dbe0c61cf663480b333af460261cde78a0510164d1b84aa5d74"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/icbc/Icbc_content1.css",
+    "english": "src/css_en/bank_company/hk/icbc/Icbc_content1.css",
+    "shared": "src/css/common/pages/bank_company/hk/icbc/Icbc_content1.css",
+    "rulesSha256": "3b48dd44943b7c5cc77ccaf4fb5bc7be33f7fad474010275db928a25229445fb"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/icbc/Icbc_content2.css",
+    "english": "src/css_en/bank_company/hk/icbc/Icbc_content2.css",
+    "shared": "src/css/common/pages/bank_company/hk/icbc/Icbc_content2.css",
+    "rulesSha256": "bd741ed1dbfcd74d86abddbd547db02a8ebf26aa2f43df35f9d56ffcf0a75cc2"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/nanyang/Nanyang.css",
+    "english": "src/css_en/bank_company/hk/nanyang/Nanyang.css",
+    "shared": "src/css/common/pages/bank_company/hk/nanyang/Nanyang.css",
+    "rulesSha256": "6f352893c4cb8a88b126f4abb0cbd5786fd179741d9bc1cec0629e5ec6ea248f"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/nanyang/Nanyang_content1.css",
+    "english": "src/css_en/bank_company/hk/nanyang/Nanyang_content1.css",
+    "shared": "src/css/common/pages/bank_company/hk/nanyang/Nanyang_content1.css",
+    "rulesSha256": "78a7c90e76a53c50e1c022d72243db4ab458177c6fa12751d9d6533d56e88359"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/nanyang/Nanyang_content2.css",
+    "english": "src/css_en/bank_company/hk/nanyang/Nanyang_content2.css",
+    "shared": "src/css/common/pages/bank_company/hk/nanyang/Nanyang_content2.css",
+    "rulesSha256": "8bba7d744a4729f8223a0e96840e5fc298bcd8b228669e56fc5b3c14291fb6d4"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/ocbc/Ocbc.css",
+    "english": "src/css_en/bank_company/hk/ocbc/Ocbc.css",
+    "shared": "src/css/common/pages/bank_company/hk/ocbc/Ocbc.css",
+    "rulesSha256": "fcdab868088f89ad227857ff1e6519a050a96e120a0ee3087743538602d1ecd3"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/ocbc/Ocbc_content1.css",
+    "english": "src/css_en/bank_company/hk/ocbc/Ocbc_content1.css",
+    "shared": "src/css/common/pages/bank_company/hk/ocbc/Ocbc_content1.css",
+    "rulesSha256": "e10b61f5ace31c66d08bd004a341b1e89d56ee7625dc45e0635d875a58eec3ea"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/ocbc/Ocbc_content2.css",
+    "english": "src/css_en/bank_company/hk/ocbc/Ocbc_content2.css",
+    "shared": "src/css/common/pages/bank_company/hk/ocbc/Ocbc_content2.css",
+    "rulesSha256": "332aa9d7ad9fce348bb78c61d6d47a995bbef842f6300b6a4249861639731736"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/public/Public.css",
+    "english": "src/css_en/bank_company/hk/public/Public.css",
+    "shared": "src/css/common/pages/bank_company/hk/public/Public.css",
+    "rulesSha256": "0d615384166ef333e3fc41d858c3facedc869496e1d3a346993f6f0ee2460b2b"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/public/Public_content1.css",
+    "english": "src/css_en/bank_company/hk/public/Public_content1.css",
+    "shared": "src/css/common/pages/bank_company/hk/public/Public_content1.css",
+    "rulesSha256": "5fa3959c4744d1b1311b1f4da3e76dfab45e58fea8f1866d754bdf77c7f3d47e"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/public/Public_content2.css",
+    "english": "src/css_en/bank_company/hk/public/Public_content2.css",
+    "shared": "src/css/common/pages/bank_company/hk/public/Public_content2.css",
+    "rulesSha256": "16731084cdb40d15b63e6179e3d514223729c3271d66525307bbf904f935df01"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/sc/Sc.css",
+    "english": "src/css_en/bank_company/hk/sc/Sc.css",
+    "shared": "src/css/common/pages/bank_company/hk/sc/Sc.css",
+    "rulesSha256": "cca65a952d07ccafe251d95e27351a3ae61e20dcfa6e22ad3eecb7490a534fcc"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/sc/Sc_content1.css",
+    "english": "src/css_en/bank_company/hk/sc/Sc_content1.css",
+    "shared": "src/css/common/pages/bank_company/hk/sc/Sc_content1.css",
+    "rulesSha256": "aecb1f987bb97853e23488b22785cb7b89c8dca86e9f8451f1a94aba24ba1226"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/sc/Sc_content2.css",
+    "english": "src/css_en/bank_company/hk/sc/Sc_content2.css",
+    "shared": "src/css/common/pages/bank_company/hk/sc/Sc_content2.css",
+    "rulesSha256": "ba6d3c67fe3616f2259e4055dce6cc4fbd756e71a4eeadcdda1f08b97cd67be8"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/shanghai/Shanghai.css",
+    "english": "src/css_en/bank_company/hk/shanghai/Shanghai.css",
+    "shared": "src/css/common/pages/bank_company/hk/shanghai/Shanghai.css",
+    "rulesSha256": "714c3340d45ee5dd67b938c17678be314797a920d357a5408391f4896ff67616"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/shanghai/Shanghai_content1.css",
+    "english": "src/css_en/bank_company/hk/shanghai/Shanghai_content1.css",
+    "shared": "src/css/common/pages/bank_company/hk/shanghai/Shanghai_content1.css",
+    "rulesSha256": "4eca1a5115e56a5faa21db80b381e22d30ef91317300c17b00565766d7e365ff"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/shanghai/Shanghai_content2.css",
+    "english": "src/css_en/bank_company/hk/shanghai/Shanghai_content2.css",
+    "shared": "src/css/common/pages/bank_company/hk/shanghai/Shanghai_content2.css",
+    "rulesSha256": "8c1b4929f9df0ccfa788aa89c1eaeb1c37d39036636452e2e2f45b9f2d63b1cc"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/uob/Uob.css",
+    "english": "src/css_en/bank_company/hk/uob/Uob.css",
+    "shared": "src/css/common/pages/bank_company/hk/uob/Uob.css",
+    "rulesSha256": "36dbf70a133c5c06f57b0235c0f30124e9619fea0396aa705cd27b18970fe153"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/uob/Uob_content1.css",
+    "english": "src/css_en/bank_company/hk/uob/Uob_content1.css",
+    "shared": "src/css/common/pages/bank_company/hk/uob/Uob_content1.css",
+    "rulesSha256": "404c46f6795e3cad82b565751a26b37a27117e8ef82d00eeb01d3d5ca03aeb07"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/uob/Uob_content2.css",
+    "english": "src/css_en/bank_company/hk/uob/Uob_content2.css",
+    "shared": "src/css/common/pages/bank_company/hk/uob/Uob_content2.css",
+    "rulesSha256": "94775b7c24ea6474b52db57de01fb65174b0c115ba0af12efd6e2c80bec20424"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/za/Za.css",
+    "english": "src/css_en/bank_company/hk/za/Za.css",
+    "shared": "src/css/common/pages/bank_company/hk/za/Za.css",
+    "rulesSha256": "cbd8f1648432217282b96f61e7b17e6a43c85dd7b369dbed9a762cc09e300a8c"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/za/Za_content1.css",
+    "english": "src/css_en/bank_company/hk/za/Za_content1.css",
+    "shared": "src/css/common/pages/bank_company/hk/za/Za_content1.css",
+    "rulesSha256": "972b11c27376864980a745de4333020ba00b29ae8239199a5ec0fcab6c0e6d72"
+  },
+  {
+    "chinese": "src/css/bank_company/hk/za/Za_content2.css",
+    "english": "src/css_en/bank_company/hk/za/Za_content2.css",
+    "shared": "src/css/common/pages/bank_company/hk/za/Za_content2.css",
+    "rulesSha256": "cc2e06cb2ca037cf8474fefcb150513b0c4fe3e56817af4441650d4d15bc8106"
+  },
+  {
+    "chinese": "src/css/bank_company/mo/bcp/Bcp.css",
+    "english": "src/css_en/bank_company/mo/bcp/Bcp.css",
+    "shared": "src/css/common/pages/bank_company/mo/bcp/Bcp.css",
+    "rulesSha256": "548fa51c74ee3f5bc35bc92233f0615e27c8cbb9384af8e7c50e09bab4e2c6bf"
+  },
+  {
+    "chinese": "src/css/bank_company/mo/bcp/Bcp_content1.css",
+    "english": "src/css_en/bank_company/mo/bcp/Bcp_content1.css",
+    "shared": "src/css/common/pages/bank_company/mo/bcp/Bcp_content1.css",
+    "rulesSha256": "d90dd70846a7ed670538b7ee0bbc2f0bfa2b07c3d06eb155b2c34dcf86ce66c5"
+  },
+  {
+    "chinese": "src/css/bank_company/mo/bcp/Bcp_content2.css",
+    "english": "src/css_en/bank_company/mo/bcp/Bcp_content2.css",
+    "shared": "src/css/common/pages/bank_company/mo/bcp/Bcp_content2.css",
+    "rulesSha256": "2e6885bbc592c9b68012c52a59283c71efec3c74c9abfac09f43ef190694e2fc"
+  },
+  {
+    "chinese": "src/css/bank_company/mo/bnu/Bnu.css",
+    "english": "src/css_en/bank_company/mo/bnu/Bnu.css",
+    "shared": "src/css/common/pages/bank_company/mo/bnu/Bnu.css",
+    "rulesSha256": "9916eb8f6b5fdfceced9333c85431abca34c6066aa8ccabe12e245285c4b2d78"
+  },
+  {
+    "chinese": "src/css/bank_company/mo/bnu/Bnu_content1.css",
+    "english": "src/css_en/bank_company/mo/bnu/Bnu_content1.css",
+    "shared": "src/css/common/pages/bank_company/mo/bnu/Bnu_content1.css",
+    "rulesSha256": "4aa5e53d12ba61e9ca2ca772ed9135900efd3f25e66c43c586b4d64e0c97b19c"
+  },
+  {
+    "chinese": "src/css/bank_company/mo/bnu/Bnu_content2.css",
+    "english": "src/css_en/bank_company/mo/bnu/Bnu_content2.css",
+    "shared": "src/css/common/pages/bank_company/mo/bnu/Bnu_content2.css",
+    "rulesSha256": "7b161e0234f8df44dc4105d19494a1457d32c9d0ea78fd6db99667b915ee1bb5"
+  },
+  {
+    "chinese": "src/css/bank_company/mo/boc/Boc.css",
+    "english": "src/css_en/bank_company/mo/boc/Boc.css",
+    "shared": "src/css/common/pages/bank_company/mo/boc/Boc.css",
+    "rulesSha256": "b38517a38bf0b38153eb337349caefcda516cd3c33e951b9fcaa93d5b7ca1ee8"
+  },
+  {
+    "chinese": "src/css/bank_company/mo/boc/Boc_content1.css",
+    "english": "src/css_en/bank_company/mo/boc/Boc_content1.css",
+    "shared": "src/css/common/pages/bank_company/mo/boc/Boc_content1.css",
+    "rulesSha256": "61b5dbe540da66c9f1093331f12ac6c7e04c7130f5947172c9efcf318709b479"
+  },
+  {
+    "chinese": "src/css/bank_company/mo/boc/Boc_content2.css",
+    "english": "src/css_en/bank_company/mo/boc/Boc_content2.css",
+    "shared": "src/css/common/pages/bank_company/mo/boc/Boc_content2.css",
+    "rulesSha256": "ef5e1b160d0008b4614c479cf6e2a90b29b34623fd14ca9c00ed61053551541c"
+  },
+  {
+    "chinese": "src/css/bank_company/mo/cgb/Cgb.css",
+    "english": "src/css_en/bank_company/mo/cgb/Cgb.css",
+    "shared": "src/css/common/pages/bank_company/mo/cgb/Cgb.css",
+    "rulesSha256": "de76ecd0ed71a95129b42c227635e634cebc5f5f15830112a5d002b8507aaaff"
+  },
+  {
+    "chinese": "src/css/bank_company/mo/cgb/Cgb_content1.css",
+    "english": "src/css_en/bank_company/mo/cgb/Cgb_content1.css",
+    "shared": "src/css/common/pages/bank_company/mo/cgb/Cgb_content1.css",
+    "rulesSha256": "e84fcbe9e2320f4de21debf9aa1ee4d5d68d70128811a68c44fd23dedf2b0045"
+  },
+  {
+    "chinese": "src/css/bank_company/mo/cgb/Cgb_content2.css",
+    "english": "src/css_en/bank_company/mo/cgb/Cgb_content2.css",
+    "shared": "src/css/common/pages/bank_company/mo/cgb/Cgb_content2.css",
+    "rulesSha256": "1d24f04bd20cba8686ed2d07f01ea955666d8c89f5d076317570d026815340f3"
+  },
+  {
+    "chinese": "src/css/bank_company/mo/hsbc/Hsbc.css",
+    "english": "src/css_en/bank_company/mo/hsbc/Hsbc.css",
+    "shared": "src/css/common/pages/bank_company/mo/hsbc/Hsbc.css",
+    "rulesSha256": "c578b5870102db606b17d9d9735aa67c736ac45fcbe54cf12c1b0040ecb50c45"
+  },
+  {
+    "chinese": "src/css/bank_company/mo/hsbc/Hsbc_content1.css",
+    "english": "src/css_en/bank_company/mo/hsbc/Hsbc_content1.css",
+    "shared": "src/css/common/pages/bank_company/mo/hsbc/Hsbc_content1.css",
+    "rulesSha256": "2e9080daf09918a08c864c35aa79aa3082484f5a1b29b06e41e5d2c6c4e470c6"
+  },
+  {
+    "chinese": "src/css/bank_company/mo/hsbc/Hsbc_content2.css",
+    "english": "src/css_en/bank_company/mo/hsbc/Hsbc_content2.css",
+    "shared": "src/css/common/pages/bank_company/mo/hsbc/Hsbc_content2.css",
+    "rulesSha256": "1343c5ca9fada156612a4db25a38d385699481245ef38604c05049c1d152336a"
+  },
+  {
+    "chinese": "src/css/bank_company/mo/icbc/Icbc.css",
+    "english": "src/css_en/bank_company/mo/icbc/Icbc.css",
+    "shared": "src/css/common/pages/bank_company/mo/icbc/Icbc.css",
+    "rulesSha256": "b07837b75618beddba63f3a2e3a34837cd01ebf8c94fa23d7f22c5cd4c941331"
+  },
+  {
+    "chinese": "src/css/bank_company/mo/icbc/Icbc_content1.css",
+    "english": "src/css_en/bank_company/mo/icbc/Icbc_content1.css",
+    "shared": "src/css/common/pages/bank_company/mo/icbc/Icbc_content1.css",
+    "rulesSha256": "e29729f15864105c9bbaf398885d5eb70b588ff2e2a73bd6c63765c3ff12afcb"
+  },
+  {
+    "chinese": "src/css/bank_company/mo/icbc/Icbc_content2.css",
+    "english": "src/css_en/bank_company/mo/icbc/Icbc_content2.css",
+    "shared": "src/css/common/pages/bank_company/mo/icbc/Icbc_content2.css",
+    "rulesSha256": "f5049232effeb0e3781e2d8ab85a3e2d8071134e3a98702002afacab78f0bf90"
+  },
+  {
+    "chinese": "src/css/bank_company/mo/icbc_asia/IcbcAsia.css",
+    "english": "src/css_en/bank_company/mo/icbc_asia/IcbcAsia.css",
+    "shared": "src/css/common/pages/bank_company/mo/icbc_asia/IcbcAsia.css",
+    "rulesSha256": "ccbd884f5dc073bef854e776954eafea2b6ff19f2bc8b7c16d969a3530936927"
+  },
+  {
+    "chinese": "src/css/bank_company/mo/icbc_asia/IcbcAsia_content1.css",
+    "english": "src/css_en/bank_company/mo/icbc_asia/IcbcAsia_content1.css",
+    "shared": "src/css/common/pages/bank_company/mo/icbc_asia/IcbcAsia_content1.css",
+    "rulesSha256": "c5b6daa4ad66be774d198caa162f470573a70edd4b73d851d8f0db309cbd6c27"
+  },
+  {
+    "chinese": "src/css/bank_company/mo/icbc_asia/IcbcAsia_content2.css",
+    "english": "src/css_en/bank_company/mo/icbc_asia/IcbcAsia_content2.css",
+    "shared": "src/css/common/pages/bank_company/mo/icbc_asia/IcbcAsia_content2.css",
+    "rulesSha256": "d37e61e21790884ab50b1dba88c096a6010b69e73676afb615e7a9b63a55e35b"
+  },
+  {
+    "chinese": "src/css/bank_company/mo/lusobank/Lusobank.css",
+    "english": "src/css_en/bank_company/mo/lusobank/Lusobank.css",
+    "shared": "src/css/common/pages/bank_company/mo/lusobank/Lusobank.css",
+    "rulesSha256": "2912b996fb7215a241219c026454e95e18d7bd092c791cc04933cc11e1cdd508"
+  },
+  {
+    "chinese": "src/css/bank_company/mo/lusobank/Lusobank_content1.css",
+    "english": "src/css_en/bank_company/mo/lusobank/Lusobank_content1.css",
+    "shared": "src/css/common/pages/bank_company/mo/lusobank/Lusobank_content1.css",
+    "rulesSha256": "0cf75fb0a18217fef929c0bf3cc34fde5e8566717e7486cd152c5afec9aa7624"
+  },
+  {
+    "chinese": "src/css/bank_company/mo/lusobank/Lusobank_content2.css",
+    "english": "src/css_en/bank_company/mo/lusobank/Lusobank_content2.css",
+    "shared": "src/css/common/pages/bank_company/mo/lusobank/Lusobank_content2.css",
+    "rulesSha256": "34ad76d2569222e313fbe5e18c9b0c4f7e93d07489f0aea2f91304da72d5bae4"
+  },
+  {
+    "chinese": "src/css/bank_company/mo/ocbc/Ocbc.css",
+    "english": "src/css_en/bank_company/mo/ocbc/Ocbc.css",
+    "shared": "src/css/common/pages/bank_company/mo/ocbc/Ocbc.css",
+    "rulesSha256": "880cd8a77f6a6c38022288af506deb974d077a144d904363ce84e6d348aed319"
+  },
+  {
+    "chinese": "src/css/bank_company/mo/ocbc/Ocbc_content1.css",
+    "english": "src/css_en/bank_company/mo/ocbc/Ocbc_content1.css",
+    "shared": "src/css/common/pages/bank_company/mo/ocbc/Ocbc_content1.css",
+    "rulesSha256": "b70914b5ce3d3bd7ef1d5d5a11c8b61aeda4a125bfa8f77440b096592f940ec5"
+  },
+  {
+    "chinese": "src/css/bank_company/mo/ocbc/Ocbc_content2.css",
+    "english": "src/css_en/bank_company/mo/ocbc/Ocbc_content2.css",
+    "shared": "src/css/common/pages/bank_company/mo/ocbc/Ocbc_content2.css",
+    "rulesSha256": "c7a4c8f6364d1823f624958aec40fe1aa4a7ca66b756901acc1e2e5e3aa8aefa"
+  },
+  {
+    "chinese": "src/css/bank_company/mo/wl/Wl.css",
+    "english": "src/css_en/bank_company/mo/wl/Wl.css",
+    "shared": "src/css/common/pages/bank_company/mo/wl/Wl.css",
+    "rulesSha256": "6afd81e24841571287edf29ed1fedacee950ee5129e0d758e64206903786cd63"
+  },
+  {
+    "chinese": "src/css/bank_company/mo/wl/Wl_content1.css",
+    "english": "src/css_en/bank_company/mo/wl/Wl_content1.css",
+    "shared": "src/css/common/pages/bank_company/mo/wl/Wl_content1.css",
+    "rulesSha256": "a6311dd3eda3fb9b00ec9736d341e6158df1160bb52edcb442c4d169b82f858f"
+  },
+  {
+    "chinese": "src/css/bank_company/mo/wl/Wl_content2.css",
+    "english": "src/css_en/bank_company/mo/wl/Wl_content2.css",
+    "shared": "src/css/common/pages/bank_company/mo/wl/Wl_content2.css",
+    "rulesSha256": "0ca931e2731383f382bfdf7a718156428df42f332cfa989d1a86e3783977175f"
+  },
+  {
+    "chinese": "src/css/bank_company/sg/aspire/Aspire.css",
+    "english": "src/css_en/bank_company/sg/aspire/Aspire.css",
+    "shared": "src/css/common/pages/bank_company/sg/aspire/Aspire.css",
+    "rulesSha256": "e4e30b6a9f86c7ce429805b891abe9c18615d347157d16813b67640caf5903a3"
+  },
+  {
+    "chinese": "src/css/bank_company/sg/aspire/Aspire_content1.css",
+    "english": "src/css_en/bank_company/sg/aspire/Aspire_content1.css",
+    "shared": "src/css/common/pages/bank_company/sg/aspire/Aspire_content1.css",
+    "rulesSha256": "ae4f6db7dd9c3be2b5ce6ee9eae5b2cee4fc9e90da8b18adb6bbe1661beea72a"
+  },
+  {
+    "chinese": "src/css/bank_company/sg/aspire/Aspire_content2.css",
+    "english": "src/css_en/bank_company/sg/aspire/Aspire_content2.css",
+    "shared": "src/css/common/pages/bank_company/sg/aspire/Aspire_content2.css",
+    "rulesSha256": "00879a550b59780ee4f604307cf2e03da141c83aa166d506060572785d2fa28a"
+  },
+  {
+    "chinese": "src/css/bank_company/sg/boc/Boc.css",
+    "english": "src/css_en/bank_company/sg/boc/Boc.css",
+    "shared": "src/css/common/pages/bank_company/sg/boc/Boc.css",
+    "rulesSha256": "424a190e1e60d650bf332593e8123061bf508cc6c3cc98c25093fd3316be1256"
+  },
+  {
+    "chinese": "src/css/bank_company/sg/boc/Boc_content1.css",
+    "english": "src/css_en/bank_company/sg/boc/Boc_content1.css",
+    "shared": "src/css/common/pages/bank_company/sg/boc/Boc_content1.css",
+    "rulesSha256": "678725e9fe23872d8cf09a05b6118c75f757663bf5e9fcd423b349c97e29e506"
+  },
+  {
+    "chinese": "src/css/bank_company/sg/boc/Boc_content2.css",
+    "english": "src/css_en/bank_company/sg/boc/Boc_content2.css",
+    "shared": "src/css/common/pages/bank_company/sg/boc/Boc_content2.css",
+    "rulesSha256": "29c4c696adec1ab9aba45f4ded1774ef0944b23a636ad27b5f2f59a55a139ea0"
+  },
+  {
+    "chinese": "src/css/bank_company/sg/bos/Bos.css",
+    "english": "src/css_en/bank_company/sg/bos/Bos.css",
+    "shared": "src/css/common/pages/bank_company/sg/bos/Bos.css",
+    "rulesSha256": "f9fdb063933dbf69d49b6e62b36717ca4bdda941bb125bbea9dcdf1b590ed13d"
+  },
+  {
+    "chinese": "src/css/bank_company/sg/bos/Bos_content1.css",
+    "english": "src/css_en/bank_company/sg/bos/Bos_content1.css",
+    "shared": "src/css/common/pages/bank_company/sg/bos/Bos_content1.css",
+    "rulesSha256": "b4b3840510d936d077c3b5fc4242ea4142821c622566c911099f32db72bd473c"
+  },
+  {
+    "chinese": "src/css/bank_company/sg/bos/Bos_content2.css",
+    "english": "src/css_en/bank_company/sg/bos/Bos_content2.css",
+    "shared": "src/css/common/pages/bank_company/sg/bos/Bos_content2.css",
+    "rulesSha256": "75ff520f5976e9e18f68d816aa27c575cd6b81d3ba185032d575939d136a376f"
+  },
+  {
+    "chinese": "src/css/bank_company/sg/citi/Citi.css",
+    "english": "src/css_en/bank_company/sg/citi/Citi.css",
+    "shared": "src/css/common/pages/bank_company/sg/citi/Citi.css",
+    "rulesSha256": "66f0313af7be70d563024e1fa0c9c58a6fd70a2c189a971a1ed79983c74fdf45"
+  },
+  {
+    "chinese": "src/css/bank_company/sg/citi/Citi_content1.css",
+    "english": "src/css_en/bank_company/sg/citi/Citi_content1.css",
+    "shared": "src/css/common/pages/bank_company/sg/citi/Citi_content1.css",
+    "rulesSha256": "fc449f31059e65e7c9833e1077f7ee8ad846a8f24b04554d3c19f7f3e43ee113"
+  },
+  {
+    "chinese": "src/css/bank_company/sg/citi/Citi_content2.css",
+    "english": "src/css_en/bank_company/sg/citi/Citi_content2.css",
+    "shared": "src/css/common/pages/bank_company/sg/citi/Citi_content2.css",
+    "rulesSha256": "4fead7882239dd15681f464dd547ccea4329a2f9fd375756869e24a7022b907e"
+  },
+  {
+    "chinese": "src/css/bank_company/sg/dbs/Dbs.css",
+    "english": "src/css_en/bank_company/sg/dbs/Dbs.css",
+    "shared": "src/css/common/pages/bank_company/sg/dbs/Dbs.css",
+    "rulesSha256": "49f22f324ea64971e054c1dcd87137b45c05b5c1a9b218df37692c3f24b905a6"
+  },
+  {
+    "chinese": "src/css/bank_company/sg/dbs/Dbs_content1.css",
+    "english": "src/css_en/bank_company/sg/dbs/Dbs_content1.css",
+    "shared": "src/css/common/pages/bank_company/sg/dbs/Dbs_content1.css",
+    "rulesSha256": "31028c039d62ed16ed417a4df658831c036e42fb299d68cb569a028025bf758a"
+  },
+  {
+    "chinese": "src/css/bank_company/sg/dbs/Dbs_content2.css",
+    "english": "src/css_en/bank_company/sg/dbs/Dbs_content2.css",
+    "shared": "src/css/common/pages/bank_company/sg/dbs/Dbs_content2.css",
+    "rulesSha256": "add7e2a6d4a1445608b79e826433669b480fc7c35f3fac592a43b84d6b51074a"
+  },
+  {
+    "chinese": "src/css/bank_company/sg/hsbc/Hsbc.css",
+    "english": "src/css_en/bank_company/sg/hsbc/Hsbc.css",
+    "shared": "src/css/common/pages/bank_company/sg/hsbc/Hsbc.css",
+    "rulesSha256": "2ad824a55cbf50bbf4233eccf1735c2619f082e96023ad1f6f59ef20d4660dd6"
+  },
+  {
+    "chinese": "src/css/bank_company/sg/hsbc/Hsbc_content1.css",
+    "english": "src/css_en/bank_company/sg/hsbc/Hsbc_content1.css",
+    "shared": "src/css/common/pages/bank_company/sg/hsbc/Hsbc_content1.css",
+    "rulesSha256": "85262873e87855cb55b3d9e2095a74730312c1623db3767f4004f551a8845d3b"
+  },
+  {
+    "chinese": "src/css/bank_company/sg/hsbc/Hsbc_content2.css",
+    "english": "src/css_en/bank_company/sg/hsbc/Hsbc_content2.css",
+    "shared": "src/css/common/pages/bank_company/sg/hsbc/Hsbc_content2.css",
+    "rulesSha256": "2904f6b35945843e8310a834929cfb27acdf5522747a94a63c41c0e53b236cc7"
+  },
+  {
+    "chinese": "src/css/bank_company/sg/maybank/Maybank.css",
+    "english": "src/css_en/bank_company/sg/maybank/Maybank.css",
+    "shared": "src/css/common/pages/bank_company/sg/maybank/Maybank.css",
+    "rulesSha256": "b1172e3b1b630268ade9c4681f39673feb5a788dd0e312548b005c8dcfe14362"
+  },
+  {
+    "chinese": "src/css/bank_company/sg/maybank/Maybank_content1.css",
+    "english": "src/css_en/bank_company/sg/maybank/Maybank_content1.css",
+    "shared": "src/css/common/pages/bank_company/sg/maybank/Maybank_content1.css",
+    "rulesSha256": "94c5b5516a5ee8bb268705b54b6541ae6be37128fd0066a139bfb2aa0f236a61"
+  },
+  {
+    "chinese": "src/css/bank_company/sg/maybank/Maybank_content2.css",
+    "english": "src/css_en/bank_company/sg/maybank/Maybank_content2.css",
+    "shared": "src/css/common/pages/bank_company/sg/maybank/Maybank_content2.css",
+    "rulesSha256": "51f3bc6ae2a847dc1a16307c19b58131f5d487fee22ef6cbbef86d366a0947ce"
+  },
+  {
+    "chinese": "src/css/bank_company/sg/ocbc/Ocbc.css",
+    "english": "src/css_en/bank_company/sg/ocbc/Ocbc.css",
+    "shared": "src/css/common/pages/bank_company/sg/ocbc/Ocbc.css",
+    "rulesSha256": "47ace3f00e5457b3bb6c5b1979ff481407447b7fbf2b3d3fd1b83a3bab797a06"
+  },
+  {
+    "chinese": "src/css/bank_company/sg/ocbc/Ocbc_content1.css",
+    "english": "src/css_en/bank_company/sg/ocbc/Ocbc_content1.css",
+    "shared": "src/css/common/pages/bank_company/sg/ocbc/Ocbc_content1.css",
+    "rulesSha256": "fa7accb0f7ec8d33b0437fcc777bfb768bbe861e76766e0904aca9676caa009c"
+  },
+  {
+    "chinese": "src/css/bank_company/sg/ocbc/Ocbc_content2.css",
+    "english": "src/css_en/bank_company/sg/ocbc/Ocbc_content2.css",
+    "shared": "src/css/common/pages/bank_company/sg/ocbc/Ocbc_content2.css",
+    "rulesSha256": "82d0bf9a680831058beb946917248d483d2785d57f73a08163545c9d80c2479b"
+  },
+  {
+    "chinese": "src/css/bank_company/sg/sc/Sc.css",
+    "english": "src/css_en/bank_company/sg/sc/Sc.css",
+    "shared": "src/css/common/pages/bank_company/sg/sc/Sc.css",
+    "rulesSha256": "ba409ee845404a330a0f946e70156d593dc0d70365ca8bb757c27ab3a3063aad"
+  },
+  {
+    "chinese": "src/css/bank_company/sg/sc/Sc_content1.css",
+    "english": "src/css_en/bank_company/sg/sc/Sc_content1.css",
+    "shared": "src/css/common/pages/bank_company/sg/sc/Sc_content1.css",
+    "rulesSha256": "3096febe48bbc288725750fb3c458939c14622165130bea57aef072f739a5d3e"
+  },
+  {
+    "chinese": "src/css/bank_company/sg/sc/Sc_content2.css",
+    "english": "src/css_en/bank_company/sg/sc/Sc_content2.css",
+    "shared": "src/css/common/pages/bank_company/sg/sc/Sc_content2.css",
+    "rulesSha256": "7144eb08f85c3851aacb601599538efa3c9785aa305ef7dad255e6a8c5925834"
+  },
+  {
+    "chinese": "src/css/bank_company/sg/uob/Uob.css",
+    "english": "src/css_en/bank_company/sg/uob/Uob.css",
+    "shared": "src/css/common/pages/bank_company/sg/uob/Uob.css",
+    "rulesSha256": "115a6b71a23391687363a0870506bf430aaddb805052ddecc9f59278ad108006"
+  },
+  {
+    "chinese": "src/css/bank_company/sg/uob/Uob_content1.css",
+    "english": "src/css_en/bank_company/sg/uob/Uob_content1.css",
+    "shared": "src/css/common/pages/bank_company/sg/uob/Uob_content1.css",
+    "rulesSha256": "2dbeb5ef234c85180aac1449fd454f9972a5b5cb93b3371b098ca2c4710b93d9"
+  },
+  {
+    "chinese": "src/css/bank_company/sg/uob/Uob_content2.css",
+    "english": "src/css_en/bank_company/sg/uob/Uob_content2.css",
+    "shared": "src/css/common/pages/bank_company/sg/uob/Uob_content2.css",
+    "rulesSha256": "f548ad4184532f4d8bfbfabc821bcfe5cb32b10b2b3f7efadeec4779f360d551"
+  },
+  {
+    "chinese": "src/css/bank_company/us/arival/Arival.css",
+    "english": "src/css_en/bank_company/us/arival/Arival.css",
+    "shared": "src/css/common/pages/bank_company/us/arival/Arival.css",
+    "rulesSha256": "0a4cfda39bb714a74931bb37b1f594a9978f1afee958da828bfc256fed171645"
+  },
+  {
+    "chinese": "src/css/bank_company/us/arival/Arival_content1.css",
+    "english": "src/css_en/bank_company/us/arival/Arival_content1.css",
+    "shared": "src/css/common/pages/bank_company/us/arival/Arival_content1.css",
+    "rulesSha256": "370f0b0accb770c1bca8f030f1b617f554f7df9be7778c3270f3f851077762f2"
+  },
+  {
+    "chinese": "src/css/bank_company/us/arival/Arival_content2.css",
+    "english": "src/css_en/bank_company/us/arival/Arival_content2.css",
+    "shared": "src/css/common/pages/bank_company/us/arival/Arival_content2.css",
+    "rulesSha256": "d2f1e181efcaee7965724f68dbef127ddb310e8a9a3f08668f399e2e127857cc"
+  },
+  {
+    "chinese": "src/css/bank_company/us/axos/Axos.css",
+    "english": "src/css_en/bank_company/us/axos/Axos.css",
+    "shared": "src/css/common/pages/bank_company/us/axos/Axos.css",
+    "rulesSha256": "454607c3d81ef1da5255b18bf18e9ee63a7f1b3aee2ce58b39327a391eb71dd0"
+  },
+  {
+    "chinese": "src/css/bank_company/us/axos/Axos_content1.css",
+    "english": "src/css_en/bank_company/us/axos/Axos_content1.css",
+    "shared": "src/css/common/pages/bank_company/us/axos/Axos_content1.css",
+    "rulesSha256": "376e9d62a7f6eced9f9b23969cf4ee0b58c059560d03fd830c9220c18da2afea"
+  },
+  {
+    "chinese": "src/css/bank_company/us/axos/Axos_content2.css",
+    "english": "src/css_en/bank_company/us/axos/Axos_content2.css",
+    "shared": "src/css/common/pages/bank_company/us/axos/Axos_content2.css",
+    "rulesSha256": "4c5f1c32d0278d8287f034fcf65e0e5c7524756fabda8325e77389cffbaf5b30"
+  },
+  {
+    "chinese": "src/css/bank_company/us/banc_cal/BancCal.css",
+    "english": "src/css_en/bank_company/us/banc_cal/BancCal.css",
+    "shared": "src/css/common/pages/bank_company/us/banc_cal/BancCal.css",
+    "rulesSha256": "1ca045e76d9314f45457ddb508ea66a5bfe56b76979b1632ba467fe576f83b4e"
+  },
+  {
+    "chinese": "src/css/bank_company/us/banc_cal/BancCal_content1.css",
+    "english": "src/css_en/bank_company/us/banc_cal/BancCal_content1.css",
+    "shared": "src/css/common/pages/bank_company/us/banc_cal/BancCal_content1.css",
+    "rulesSha256": "1b29d6cf3d2e3e8544db10d9301f0a8e883f73d8c58f1a881f83caeca0b67b37"
+  },
+  {
+    "chinese": "src/css/bank_company/us/banc_cal/BancCal_content2.css",
+    "english": "src/css_en/bank_company/us/banc_cal/BancCal_content2.css",
+    "shared": "src/css/common/pages/bank_company/us/banc_cal/BancCal_content2.css",
+    "rulesSha256": "6fc0794bfefa8e8165e885244f5bc6f281dbe09a9fc37a074ddb16dc03cf2c4a"
+  },
+  {
+    "chinese": "src/css/bank_company/us/boa/Boa.css",
+    "english": "src/css_en/bank_company/us/boa/Boa.css",
+    "shared": "src/css/common/pages/bank_company/us/boa/Boa.css",
+    "rulesSha256": "ba1687b8b2ccd67ca7dfdf6254a788ed81545aad92d415ee715967695a71a3cc"
+  },
+  {
+    "chinese": "src/css/bank_company/us/boa/Boa_content1.css",
+    "english": "src/css_en/bank_company/us/boa/Boa_content1.css",
+    "shared": "src/css/common/pages/bank_company/us/boa/Boa_content1.css",
+    "rulesSha256": "c8da73cfc0d1a24163aafdbeedd98a3e295c95784f259cf0a6abe0526a9ccbb6"
+  },
+  {
+    "chinese": "src/css/bank_company/us/boa/Boa_content2.css",
+    "english": "src/css_en/bank_company/us/boa/Boa_content2.css",
+    "shared": "src/css/common/pages/bank_company/us/boa/Boa_content2.css",
+    "rulesSha256": "b41301ad171a91ca1f42bedb3de06ed487f92b30ab267097445827b31c197216"
+  },
+  {
+    "chinese": "src/css/bank_company/us/cathay/Cathay.css",
+    "english": "src/css_en/bank_company/us/cathay/Cathay.css",
+    "shared": "src/css/common/pages/bank_company/us/cathay/Cathay.css",
+    "rulesSha256": "26eea12c2f92caba1685d4e6bb38b50d1d643b0bec23f8351f5ecfc24c032a42"
+  },
+  {
+    "chinese": "src/css/bank_company/us/cathay/Cathay_content1.css",
+    "english": "src/css_en/bank_company/us/cathay/Cathay_content1.css",
+    "shared": "src/css/common/pages/bank_company/us/cathay/Cathay_content1.css",
+    "rulesSha256": "3f98ccffae9d554308e734aaae6ce1235e198914dce4eac9e7a51081620207ea"
+  },
+  {
+    "chinese": "src/css/bank_company/us/cathay/Cathay_content2.css",
+    "english": "src/css_en/bank_company/us/cathay/Cathay_content2.css",
+    "shared": "src/css/common/pages/bank_company/us/cathay/Cathay_content2.css",
+    "rulesSha256": "710411f6a71d2f23c94be420df3f1f957a825f1d23d308e34004291548e209f0"
+  },
+  {
+    "chinese": "src/css/bank_company/us/cbi/Cbi.css",
+    "english": "src/css_en/bank_company/us/cbi/Cbi.css",
+    "shared": "src/css/common/pages/bank_company/us/cbi/Cbi.css",
+    "rulesSha256": "1230fde4aca9d19b5eebeae2d089b8b05fa05b1690216c1f75b6550fbb6cc386"
+  },
+  {
+    "chinese": "src/css/bank_company/us/cbi/Cbi_content1.css",
+    "english": "src/css_en/bank_company/us/cbi/Cbi_content1.css",
+    "shared": "src/css/common/pages/bank_company/us/cbi/Cbi_content1.css",
+    "rulesSha256": "1e52a735198be344053d9413fbdb7c69267666093464caa89d8d265c91fe38b9"
+  },
+  {
+    "chinese": "src/css/bank_company/us/cbi/Cbi_content2.css",
+    "english": "src/css_en/bank_company/us/cbi/Cbi_content2.css",
+    "shared": "src/css/common/pages/bank_company/us/cbi/Cbi_content2.css",
+    "rulesSha256": "8cc806688b9c68653e1f85bd8d5e86a032fc93b0ea1a39418fbcfeafb67b1f66"
+  },
+  {
+    "chinese": "src/css/bank_company/us/ew/Ew.css",
+    "english": "src/css_en/bank_company/us/ew/Ew.css",
+    "shared": "src/css/common/pages/bank_company/us/ew/Ew.css",
+    "rulesSha256": "dd077f9b5892bc3bac307c81533c46753ce8bc4d069e0113a0d34b7285c55a2b"
+  },
+  {
+    "chinese": "src/css/bank_company/us/ew/Ew_content1.css",
+    "english": "src/css_en/bank_company/us/ew/Ew_content1.css",
+    "shared": "src/css/common/pages/bank_company/us/ew/Ew_content1.css",
+    "rulesSha256": "25a89b2a827e49751b883e39c1412f2dfdd58643013e81ed48436514f8f7eaca"
+  },
+  {
+    "chinese": "src/css/bank_company/us/ew/Ew_content2.css",
+    "english": "src/css_en/bank_company/us/ew/Ew_content2.css",
+    "shared": "src/css/common/pages/bank_company/us/ew/Ew_content2.css",
+    "rulesSha256": "9dc1ff5e2d3e1df2a29db7c77e54219a4fb9cdc3fc03e3c90b2d9b6ad8c607a0"
+  },
+  {
+    "chinese": "src/css/bank_company/us/hsbc/Hsbc.css",
+    "english": "src/css_en/bank_company/us/hsbc/Hsbc.css",
+    "shared": "src/css/common/pages/bank_company/us/hsbc/Hsbc.css",
+    "rulesSha256": "9a1855f6d57b591be053749807e5c0360271fe32ad639cc39418b393623abca1"
+  },
+  {
+    "chinese": "src/css/bank_company/us/hsbc/Hsbc_content1.css",
+    "english": "src/css_en/bank_company/us/hsbc/Hsbc_content1.css",
+    "shared": "src/css/common/pages/bank_company/us/hsbc/Hsbc_content1.css",
+    "rulesSha256": "c9e8d753c831084bc5b88719c7479b590612ff93f68098e5289360508caec90b"
+  },
+  {
+    "chinese": "src/css/bank_company/us/hsbc/Hsbc_content2.css",
+    "english": "src/css_en/bank_company/us/hsbc/Hsbc_content2.css",
+    "shared": "src/css/common/pages/bank_company/us/hsbc/Hsbc_content2.css",
+    "rulesSha256": "2147f84664c83b1df4b53ab8b166d703b3da296056338f783ad52f46f20c5492"
+  },
+  {
+    "chinese": "src/css/bank_company/us/jpm/Jpm.css",
+    "english": "src/css_en/bank_company/us/jpm/Jpm.css",
+    "shared": "src/css/common/pages/bank_company/us/jpm/Jpm.css",
+    "rulesSha256": "5efe3c8b24ec1cc339ad4ade06c72add364fabf453692203d1193ad889ab228f"
+  },
+  {
+    "chinese": "src/css/bank_company/us/jpm/Jpm_content1.css",
+    "english": "src/css_en/bank_company/us/jpm/Jpm_content1.css",
+    "shared": "src/css/common/pages/bank_company/us/jpm/Jpm_content1.css",
+    "rulesSha256": "5a1a957871d4f286f99c5c03a62d9fae65cb1d9fb23839f981d6d93fb905faba"
+  },
+  {
+    "chinese": "src/css/bank_company/us/jpm/Jpm_content2.css",
+    "english": "src/css_en/bank_company/us/jpm/Jpm_content2.css",
+    "shared": "src/css/common/pages/bank_company/us/jpm/Jpm_content2.css",
+    "rulesSha256": "472cd84854a0139221228fde985c3eca2c2e9f3a649438e882b7fa1a59ad73d1"
+  },
+  {
+    "chinese": "src/css/bank_company/us/mercury/Mercury.css",
+    "english": "src/css_en/bank_company/us/mercury/Mercury.css",
+    "shared": "src/css/common/pages/bank_company/us/mercury/Mercury.css",
+    "rulesSha256": "7136ca3f23ce5767b2722271c9a923795c0c7cc66beb38e1a88e870f777624f4"
+  },
+  {
+    "chinese": "src/css/bank_company/us/mercury/Mercury_content1.css",
+    "english": "src/css_en/bank_company/us/mercury/Mercury_content1.css",
+    "shared": "src/css/common/pages/bank_company/us/mercury/Mercury_content1.css",
+    "rulesSha256": "8746fb5927c714faea306b5521e5fc6495eba2f4df2c677264539f5fd70bde85"
+  },
+  {
+    "chinese": "src/css/bank_company/us/mercury/Mercury_content2.css",
+    "english": "src/css_en/bank_company/us/mercury/Mercury_content2.css",
+    "shared": "src/css/common/pages/bank_company/us/mercury/Mercury_content2.css",
+    "rulesSha256": "2c404418ebcbc6fb05daf7bbdb0ef8f1cb863399bf63c246a3d0cfced7c861ea"
+  },
+  {
+    "chinese": "src/css/bank_personal/hk/Personal.css",
+    "english": "src/css_en/bank_personal/hk/Personal.css",
+    "shared": "src/css/common/pages/bank_personal/hk/Personal.css",
+    "rulesSha256": "ffab14a3dfab1725f837df826b6a41e4c9d39fe352f1216bfad316ce7e4341b7"
+  },
+  {
+    "chinese": "src/css/bank_personal/hk/Personal_content.css",
+    "english": "src/css_en/bank_personal/hk/Personal_content.css",
+    "shared": null,
+    "rulesSha256": "83b51cf6842063445f66ce10c46d7835e0dac356ec0999541c3c7f484a156fe8",
+    "removedEmpty": true
+  },
+  {
+    "chinese": "src/css/company/bvi/BVI.css",
+    "english": "src/css_en/company/bvi/Bvi.css",
+    "shared": "src/css/common/pages/company/bvi/Bvi.css",
+    "rulesSha256": "063d6fe445768d70fbe076b535c45162144ead1e77cd1af85dd309ae539a0772"
+  },
+  {
+    "chinese": "src/css/company/ca/CA.css",
+    "english": "src/css_en/company/ca/Ca.css",
+    "shared": "src/css/common/pages/company/ca/Ca.css",
+    "rulesSha256": "1714f7ee3d1a928e692c6ba4ae1557ef256ce131d715b49fa0df4630771b2daa"
+  },
+  {
+    "chinese": "src/css/company/de/DE.css",
+    "english": "src/css_en/company/de/De.css",
+    "shared": "src/css/common/pages/company/de/De.css",
+    "rulesSha256": "1519bef3ce062f643f94324aec6fcd06075b9e376a4d3c522b1d298616712c0e"
+  },
+  {
+    "chinese": "src/css/company/fr/FR.css",
+    "english": "src/css_en/company/fr/Fr.css",
+    "shared": "src/css/common/pages/company/fr/Fr.css",
+    "rulesSha256": "4b7ccd02116bb0c6f57a8652e1cc9658e777a0e203a678e068cd897e800610b6"
+  },
+  {
+    "chinese": "src/css/company/hk/HK.css",
+    "english": "src/css_en/company/hk/Hk.css",
+    "shared": "src/css/common/pages/company/hk/Hk.css",
+    "rulesSha256": "42055f2a195e00ad970ea72ed3372cb6fd51aec4c8119a88ae96f7a06c508971"
+  },
+  {
+    "chinese": "src/css/company/id/ID.css",
+    "english": "src/css_en/company/id/ID.css",
+    "shared": "src/css/common/pages/company/id/ID.css",
+    "rulesSha256": "60b042aea0ac41a2a14d2e5414732f58bfb4709a5188a3ffe78c51b229d783f8"
+  },
+  {
+    "chinese": "src/css/company/kr/KR.css",
+    "english": "src/css_en/company/kr/KR.css",
+    "shared": "src/css/common/pages/company/kr/KR.css",
+    "rulesSha256": "3954537771574b7b212941accb9b2287a56b887b50273690bae58755a237d8e2"
+  },
+  {
+    "chinese": "src/css/company/ky/KY.css",
+    "english": "src/css_en/company/ky/KY.css",
+    "shared": "src/css/common/pages/company/ky/KY.css",
+    "rulesSha256": "7c270e872f60d3d5e97c7d3a453a212cece3f5240aa6831b2ea0b8464419b56c"
+  },
+  {
+    "chinese": "src/css/company/mh/MH.css",
+    "english": "src/css_en/company/mh/MH.css",
+    "shared": "src/css/common/pages/company/mh/MH.css",
+    "rulesSha256": "970e47295c9e2e60c41e25020c1c70050bd92a9eedebddc6f7db96178c577578"
+  },
+  {
+    "chinese": "src/css/company/mo/MO.css",
+    "english": "src/css_en/company/mo/MO.css",
+    "shared": "src/css/common/pages/company/mo/MO.css",
+    "rulesSha256": "63538c7b25ff736209a5ab6e1ce2f079a58128e7d7841f516e238a2d0b2c78d7"
+  },
+  {
+    "chinese": "src/css/company/my/MY.css",
+    "english": "src/css_en/company/my/MY.css",
+    "shared": "src/css/common/pages/company/my/MY.css",
+    "rulesSha256": "c4573a43ed379cd48b8540f99608187e867fa9edff3ddb343c731c0b78aa7f2d"
+  },
+  {
+    "chinese": "src/css/company/sc/SC.css",
+    "english": "src/css_en/company/sc/SC.css",
+    "shared": "src/css/common/pages/company/sc/SC.css",
+    "rulesSha256": "e957e013280d277101067b5eaa60f5b688891546213a2698b9b90461980c3dc3"
+  },
+  {
+    "chinese": "src/css/company/sg/SG.css",
+    "english": "src/css_en/company/sg/SG.css",
+    "shared": "src/css/common/pages/company/sg/SG.css",
+    "rulesSha256": "43439f349fb1ef77376f167eef434ce04806d3846b38b4f8dd18473310fce9b1"
+  },
+  {
+    "chinese": "src/css/company/th/TH.css",
+    "english": "src/css_en/company/th/TH.css",
+    "shared": "src/css/common/pages/company/th/TH.css",
+    "rulesSha256": "3dfa8d6e1bcc915949467282db79344642eff25975479c7ab5fb9ce32883a4c4"
+  },
+  {
+    "chinese": "src/css/company/uk/UK.css",
+    "english": "src/css_en/company/uk/UK.css",
+    "shared": "src/css/common/pages/company/uk/UK.css",
+    "rulesSha256": "626ec7da1c83f281dcd1f52ee12fad381d1d1234a2b9b7edb7b67309a164c48f"
+  },
+  {
+    "chinese": "src/css/company/us/US.css",
+    "english": "src/css_en/company/us/US.css",
+    "shared": "src/css/common/pages/company/us/US.css",
+    "rulesSha256": "7f8b9329c35b02fa3a1e698e4e1a005dfa7fc35c5dbdb0b056587baff9af8dbd"
+  },
+  {
+    "chinese": "src/css/company/vn/VN.css",
+    "english": "src/css_en/company/vn/VN.css",
+    "shared": "src/css/common/pages/company/vn/VN.css",
+    "rulesSha256": "322c93e9d8df35c43f86985de340e53283252533a92b114f0f05b168228eb42a"
+  },
+  {
+    "chinese": "src/css/company/ws/WS.css",
+    "english": "src/css_en/company/ws/WS.css",
+    "shared": "src/css/common/pages/company/ws/WS.css",
+    "rulesSha256": "724db368e7e579a0bce31414fbfda5f15e07c5131735115bdfcac6111c13dbd5"
+  },
+  {
+    "chinese": "src/css/ip/common/ChooseUs.css",
+    "english": "src/css_en/ip/common/ChooseUs.css",
+    "shared": "src/css/common/pages/ip/common/ChooseUs.css",
+    "rulesSha256": "a69fd82677e1a87046a8c3ab4e863e343fa3f96d8315423c09c92cbb85052a07"
+  },
+  {
+    "chinese": "src/css/ip/common/Link.css",
+    "english": "src/css_en/ip/common/Link.css",
+    "shared": "src/css/common/pages/ip/common/Link.css",
+    "rulesSha256": "b9232b79d46ff1af68f107c8e0aaec32b11aa35c26d125e054c6a41e61c9b661"
+  },
+  {
+    "chinese": "src/css/ip/domestic/DomesticTrademark_content1.css",
+    "english": "src/css_en/ip/domestic/DomesticTrademark_content1.css",
+    "shared": "src/css/common/pages/ip/domestic/DomesticTrademark_content1.css",
+    "rulesSha256": "6e27d069a1e6bc9cc3627eb9cb8b9ddcde1e704c55923dc9562e76a65ecef9fd"
+  },
+  {
+    "chinese": "src/css/ip/domestic/DomesticTrademark_content2.css",
+    "english": "src/css_en/ip/domestic/DomesticTrademark_content2.css",
+    "shared": "src/css/common/pages/ip/domestic/DomesticTrademark_content2.css",
+    "rulesSha256": "78c4806831d0005a84ce1f77bb36351acbb3e50fee83bcf89ff24670ebbf4270"
+  },
+  {
+    "chinese": "src/css/ip/intl/IntlTrademark_content2.css",
+    "english": "src/css_en/ip/intl/IntlTrademark_content2.css",
+    "shared": "src/css/common/pages/ip/intl/IntlTrademark_content2.css",
+    "rulesSha256": "32bee07426e9b6107a5459fd42ff27fca25aca14b918722842f4143989fa5492"
+  },
+  {
+    "chinese": "src/css/notary/common/ChooseUs.css",
+    "english": "src/css_en/notary/common/ChooseUs.css",
+    "shared": "src/css/common/pages/notary/common/ChooseUs.css",
+    "rulesSha256": "a69fd82677e1a87046a8c3ab4e863e343fa3f96d8315423c09c92cbb85052a07"
+  },
+  {
+    "chinese": "src/css/notary/embassy/EmbassyNotary.css",
+    "english": "src/css_en/notary/embassy/EmbassyNotary.css",
+    "shared": "src/css/common/pages/notary/embassy/EmbassyNotary.css",
+    "rulesSha256": "d70576bb2cc480fb84297d1592a7738951a72127ba2cf47b9852df3cdd78445d"
+  },
+  {
+    "chinese": "src/css/notary/embassy/EmbassyNotary_content1.css",
+    "english": "src/css_en/notary/embassy/EmbassyNotary_content1.css",
+    "shared": "src/css/common/pages/notary/embassy/EmbassyNotary_content1.css",
+    "rulesSha256": "2159a88382efb0da5284a4c71d76ed320989832415d553bb51f2184649e6e85b"
+  },
+  {
+    "chinese": "src/css/notary/hague/HagueNotary.css",
+    "english": "src/css_en/notary/hague/HagueNotary.css",
+    "shared": "src/css/common/pages/notary/hague/HagueNotary.css",
+    "rulesSha256": "6b7011a4df892e0172cfd7d78d68671a16b8e114b7bb007410eed198389d7395"
+  },
+  {
+    "chinese": "src/css/notary/hague/HagueNotary_content1.css",
+    "english": "src/css_en/notary/hague/HagueNotary_content1.css",
+    "shared": "src/css/common/pages/notary/hague/HagueNotary_content1.css",
+    "rulesSha256": "17e5f3a9bd924fd41f3dba06e8a21794eb52436a6274f26524c927c5c7380f90"
+  },
+  {
+    "chinese": "src/css/notary/hague/HagueNotary_content2.css",
+    "english": "src/css_en/notary/hague/HagueNotary_content2.css",
+    "shared": "src/css/common/pages/notary/hague/HagueNotary_content2.css",
+    "rulesSha256": "334613b060aae35433385862ed64470d140e54cdf651d8c697b14711ba1ae288"
+  },
+  {
+    "chinese": "src/css/notary/hk/HkNotary.css",
+    "english": "src/css_en/notary/hk/HkNotary.css",
+    "shared": "src/css/common/pages/notary/hk/HkNotary.css",
+    "rulesSha256": "623c8f663542bf9c4ca752c1b35324f13ac45eebcc824cd787ecd6cd540c048d"
+  },
+  {
+    "chinese": "src/css/notary/hk/HkNotaryContent1.css",
+    "english": "src/css_en/notary/hk/HkNotaryContent1.css",
+    "shared": "src/css/common/pages/notary/hk/HkNotaryContent1.css",
+    "rulesSha256": "7cb1c02cd1643c44809436fc3e5cd0b18c5cf186e827e6f74abcf87296d7ab63"
+  },
+  {
+    "chinese": "src/css/notary/hk/HkNotaryContent2.css",
+    "english": "src/css_en/notary/hk/HkNotaryContent2.css",
+    "shared": "src/css/common/pages/notary/hk/HkNotaryContent2.css",
+    "rulesSha256": "4dbc6d0137d01b4dac4e5b477f6fe310d08bfbfbb8545759306462d15c29380d"
+  },
+  {
+    "chinese": "src/css/notary/jp/JpNotaryContent1.css",
+    "english": "src/css_en/notary/jp/JpNotaryContent1.css",
+    "shared": "src/css/common/pages/notary/jp/JpNotaryContent1.css",
+    "rulesSha256": "4694cc06766eb63e5c95041c676af307efe7ee34d722c48dcdbcb1ef43b76593"
+  },
+  {
+    "chinese": "src/css/notary/jp/JpNotaryContent2.css",
+    "english": "src/css_en/notary/jp/JpNotaryContent2.css",
+    "shared": "src/css/common/pages/notary/jp/JpNotaryContent2.css",
+    "rulesSha256": "2234e501984aa535df4dbae9f56d8a2ec2c7ccc3a479dc0056e4cffe17414acf"
+  },
+  {
+    "chinese": "src/css/notary/sg/SgNotaryContent1.css",
+    "english": "src/css_en/notary/sg/SgNotaryContent1.css",
+    "shared": "src/css/common/pages/notary/sg/SgNotaryContent1.css",
+    "rulesSha256": "862dcbdde64a6d7c9273e46cfc695a3c08bc11bfeeb132dfc0d1b4a86a0583d3"
+  },
+  {
+    "chinese": "src/css/notary/uk/UkNotaryContent1.css",
+    "english": "src/css_en/notary/uk/UkNotaryContent1.css",
+    "shared": "src/css/common/pages/notary/uk/UkNotaryContent1.css",
+    "rulesSha256": "07bed812ac578f1196fe1935568b0df9d421bf6f57b97794aa5b1354ccab5873"
+  },
+  {
+    "chinese": "src/css/notary/us/UsNotaryContent1.css",
+    "english": "src/css_en/notary/us/UsNotaryContent1.css",
+    "shared": "src/css/common/pages/notary/us/UsNotaryContent1.css",
+    "rulesSha256": "7967c6e2ad578f928d84ad3832043c89406e1fd7e880a7d40fc4e295d77aaf7a"
+  },
+  {
+    "chinese": "src/css/notary/us/UsNotaryContent2.css",
+    "english": "src/css_en/notary/us/UsNotaryContent2.css",
+    "shared": "src/css/common/pages/notary/us/UsNotaryContent2.css",
+    "rulesSha256": "7751c13260267edcad99f451510f3565a5a567ab6fc9f86587a8213ce1daca0d"
+  },
+  {
+    "chinese": "src/css/secretary/barcode/Barcode.css",
+    "english": "src/css_en/secretary/barcode/Barcode.css",
+    "shared": "src/css/common/pages/secretary/barcode/Barcode.css",
+    "rulesSha256": "469bd8bba7ef1e5841cbe28e73d4f447c63e005b63032c87acae0060e663105d"
+  },
+  {
+    "chinese": "src/css/secretary/change/Change.css",
+    "english": "src/css_en/secretary/change/Change.css",
+    "shared": "src/css/common/pages/secretary/change/Change.css",
+    "rulesSha256": "1639c19814e32a27b23ba36e8da8a71ab51bfd58800d1959191a9f3806463487"
+  },
+  {
+    "chinese": "src/css/secretary/dissolution/Dissolution.css",
+    "english": "src/css_en/secretary/dissolution/Dissolution.css",
+    "shared": "src/css/common/pages/secretary/dissolution/Dissolution.css",
+    "rulesSha256": "95f447b850027a9f62af7e28dbaba8de1f8f08b6238e473784947803f6ad73d1"
+  },
+  {
+    "chinese": "src/css/secretary/hk_annual/Tax_hk.css",
+    "english": "src/css_en/secretary/hk_annual/Tax_hk.css",
+    "shared": null,
+    "rulesSha256": "59e3ebec672d3002a149b3c7e3e27d572fdfec122ad569d23103a5230f025261",
+    "removedEmpty": true
+  },
+  {
+    "chinese": "src/css/secretary/hk_msb/Hk_msb.css",
+    "english": "src/css_en/secretary/hk_msb/Hk_msb.css",
+    "shared": null,
+    "rulesSha256": "59e3ebec672d3002a149b3c7e3e27d572fdfec122ad569d23103a5230f025261",
+    "removedEmpty": true
+  },
+  {
+    "chinese": "src/css/secretary/hk_odi/Hk_odi.css",
+    "english": "src/css_en/secretary/hk_odi/Hk_odi.css",
+    "shared": "src/css/common/pages/secretary/hk_odi/Hk_odi.css",
+    "rulesSha256": "a9ecdf6bf113ad38948ac789c729788fa27cdfec9fc505c268c24805e16f9e3b"
+  },
+  {
+    "chinese": "src/css/secretary/overseas_annual/Tax_ov.css",
+    "english": "src/css_en/secretary/overseas_annual/Tax_ov.css",
+    "shared": "src/css/common/pages/secretary/overseas_annual/Tax_ov.css",
+    "rulesSha256": "852090baf7112c8fefdbf086b58d9f4eaa2032496d90fbd9d06b82666776aad7"
+  },
+  {
+    "chinese": "src/css/secretary/restoration/Restoration.css",
+    "english": "src/css_en/secretary/restoration/Restoration.css",
+    "shared": "src/css/common/pages/secretary/restoration/Restoration.css",
+    "rulesSha256": "28f29ef87326d9b7160c13c4a725aa63a1bc30e0680b7de72c835bcb1a2feb03"
+  },
+  {
+    "chinese": "src/css/secretary/tax_planning/Tax_planning.css",
+    "english": "src/css_en/secretary/tax_planning/Tax_planning.css",
+    "shared": "src/css/common/pages/secretary/tax_planning/Tax_planning.css",
+    "rulesSha256": "468afba58c05d8a86af7a8cf4faaf778e5c758712157556f32d0c0de93aa9ef1"
+  },
+  {
+    "chinese": "src/css/secretary/telecom/Telecom.css",
+    "english": "src/css_en/secretary/telecom/Telecom.css",
+    "shared": "src/css/common/pages/secretary/telecom/Telecom.css",
+    "rulesSha256": "0de1f40c7d90632d2a10ae9146a82009f559a3188e5915e688be816bd5ba7d63"
+  }
+]
