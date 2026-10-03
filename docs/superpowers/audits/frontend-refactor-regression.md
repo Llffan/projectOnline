@@ -71,3 +71,11 @@ After the bank mobile corrections, all 24 combinations of six core routes and fo
 - At 390px, both homepages rendered four bank cards, no extra FeatureCard content heading, and body width equaled viewport width.
 - Keyboard Enter on the first bank card navigated from `/` to `/bank/hk/constructions` and from `/en` to `/en/bank/hk/constructions`; the test collected no pageerror events.
 - Latest production build exited 0. Content1, Content4, Content5 and full visual regression remain pending.
+
+### Homepage service and advantage sections
+
+- Migrated Content4 and Content5 in both languages to AnimatedSection and FeatureCard, removing their unmanaged observers and GSAP code.
+- Added shared useCountUp with reduced-motion handling and observer/animation-frame cleanup. Equal initial/final counts no longer create intervals that never terminate.
+- Eight browser checks (two languages, four widths) rendered five service cards and four advantage cards, expected counts 1/100/10/10 and 40/60/50/30, and visible content after scrolling. No pageerror events were collected.
+- Latest build exited 0. English homepage body scroll width at 768px was 930px, while each Content1–5 container measured 768px; the remaining document-level overflow is unresolved. Other measured body widths matched the viewport.
+- Full hero migration and complete visual/interaction regression remain pending.

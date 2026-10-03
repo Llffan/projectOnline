@@ -1,11 +1,11 @@
 <template>
-    <div class="content5">
+    <AnimatedSection class="content5">
         <div class="scoll_backImg scoll_common">
             <div class="scoll_cover"></div>
             <div class="cover_content">
                 <div class="content_desc">
-                    <p ref="introRef">十洲通提供覆盖60多个国家及地区的全球离岸注册服务，专注于公司注册、开户、年审、做账审计报税和商标品牌保护。</p>
-                    <div ref="bottonRef" class="button" @click="router.push('/company/hk')" style="cursor: pointer;">了解详细<p class="p1">→</p></div>
+                    <p>十洲通提供覆盖60多个国家及地区的全球离岸注册服务，专注于公司注册、开户、年审、做账审计报税和商标品牌保护。</p>
+                    <div class="button" @click="router.push('/company/hk')" style="cursor: pointer;">了解详细<p class="p1">→</p></div>
                 </div>
                 <div class="content_body">
                     <div class="num_display" ref="coverRef">
@@ -14,7 +14,7 @@
                             <p>{{ item.desc }}</p>
                         </div>
                     </div>
-                    <div class="account_img" ref="accountRef">
+                    <div class="account_img">
                         <img loading="lazy" src="@/assets/img/bank/1.png" alt="">
                         <img loading="lazy" src="@/assets/img/bank/2.jpg" alt="">
                         <img loading="lazy" src="@/assets/img/bank/3.jpg" alt="">
@@ -38,15 +38,15 @@
             </div>
         </div>
         <div class="scoll_content">
-            <div class="scoll_content1" ref="chooseUsTitleRef">
+            <div class="scoll_content1">
                 <h2>
                     为什么选择十洲通
                 </h2>
                 <span>Why Choose SHI ZHOU TONG</span>
             </div>
-            <p class="p3" ref="chooseUsDescRef">以客户需求和发展理念为驱动力，打造国际一站式服务</p>
-            <div class="scoll_content2" ref="chooseUsRef">
-                <div v-for="(item, index) in advantages" :key="index" class="advantage" :ref="el => advantageRefs[index] = el">
+            <p class="p3">以客户需求和发展理念为驱动力，打造国际一站式服务</p>
+            <div class="scoll_content2">
+                <FeatureCard v-for="item in advantages" :key="item.title" :title="item.title" class="advantage">
                     <div class="img">
                         <img loading="lazy" :src="item.imgSrc" :alt="item.title">
                     </div>
@@ -56,20 +56,21 @@
                     <div class="text2">
                         {{ item.description }}
                     </div>
-                </div>
+                </FeatureCard>
             </div>
         </div>
-    </div>
+    </AnimatedSection>
 </template>
 
 <script setup>
+import AnimatedSection from '@/components/common/AnimatedSection.vue'
+import FeatureCard from '@/components/common/FeatureCard.vue'
+import { useCountUp } from '@/composables/useCountUp'
 import '@/css/homeView/content/Content5.css'
 import { useRouter } from 'vue-router'
-import { ref, onMounted } from 'vue'
-import { gsap } from 'gsap'
-import ScrollTrigger from 'gsap/ScrollTrigger'
+import { ref } from 'vue'
 
-gsap.registerPlugin(ScrollTrigger)
+
 
 const router = useRouter()
 
@@ -93,33 +94,7 @@ let num_display = ref([
     }
 ])
 
-let cover_displayValues = ref(num_display.value.map(item => item.initialValue))
-const coverRef = ref(null)
-function startCount() {
-    const duration = 2000
-    const interval = 20
-    const steps = duration / interval
-    num_display.value.forEach((item, idx) => {
-        const stepValue = (item.finalValue - item.initialValue) / steps
-        let current = item.initialValue
-        const timer = setInterval(() => {
-            current += stepValue
-            if ((stepValue > 0 && current >= item.finalValue) || (stepValue < 0 && current <= item.finalValue)) {
-                current = item.finalValue
-                clearInterval(timer)
-            }
-            cover_displayValues.value[idx] = Math.floor(current)
-        }, interval)
-    })
-}
-
-const introRef = ref(null)
-const chooseUsRef = ref(null)
-const bottonRef = ref(null)
-const accountRef = ref(null)
-const advantageRefs = ref([])
-const chooseUsTitleRef = ref(null)
-const chooseUsDescRef = ref(null)
+const { trigger: coverRef, values: cover_displayValues } = useCountUp(num_display)
 
 const advantages = [
     {
@@ -143,109 +118,5 @@ const advantages = [
         description: '顾问、咨询师、会计师等组成项目小组，负责客户一对一咨询、项目进度跟进和沟通协调。'
     }
 ]
-
-onMounted(() => {
-    const observer = new window.IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-            startCount()
-            observer.disconnect()
-        }
-    })
-    if (coverRef.value) {
-        observer.observe(coverRef.value)
-    }
-
-    const introObserver = new window.IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-            introObserver.unobserve(entries[0].target)
-            gsap.fromTo(introRef.value, 
-                { x: -100, opacity: 0.3 },
-                { x: 0, opacity: 1, duration: 1, ease: 'back.out', delay: 0.2 }
-            )
-            gsap.fromTo(bottonRef.value, 
-                { y: 50, opacity: 0.3, transition: 'none' },
-                { y: 0, opacity: 1, duration: 1, ease: 'back.out', delay: 0.2, 
-                    onComplete: function() {
-                        gsap.set(bottonRef.value, { clearProps: "y,opacity,transition" })
-                    }
-                }
-            )
-        } else {
-            gsap.set(introRef.value, { x: -100, opacity: 0.3 })
-            gsap.set(bottonRef.value, { y: 50, opacity: 0.3 })
-        }
-    })
-    // Note: introRef is now reused for the scoll_content2 section observer in ChooseUs style
-    // But let's keep the existing introRef usage for the first intro section to be safe
-    // Actually, introRef was ref(null) at line 100, used at line 118.
-    // I should probably rename my new ref to something else if there's a conflict
-    // but the user's ChooseUs uses introRef.
-    // In Content5, introRef is used for a <p> tag at line 7.
-    
-    if (introRef.value) introObserver.observe(introRef.value)
-
-    const accountObserver = new window.IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-            accountObserver.unobserve(entries[0].target)
-            gsap.fromTo(accountRef.value, 
-                { x: 100, opacity: 0.3 },
-                { x: 0, opacity: 1, duration: 1, ease: 'back.out', delay: 0.2 }
-            )
-        } else {
-            gsap.set(accountRef.value, { x: 100, opacity: 0.3 })
-        }
-    })
-    if (accountRef.value) accountObserver.observe(accountRef.value)
-
-    // 标题块初次进入动画（scale + opacity）
-    const chooseUsTitleObserver = new window.IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-            chooseUsTitleObserver.unobserve(entries[0].target)
-            gsap.fromTo(chooseUsTitleRef.value,
-                { scale: 1.5, opacity: 0 },
-                { scale: 1, opacity: 1, duration: 1, delay: 0.15, ease: 'back.out' }
-            )
-        } else {
-            gsap.set(chooseUsTitleRef.value, { scale: 1.5, opacity: 0 })
-        }
-    }, { threshold: 0.3 })
-    if (chooseUsTitleRef.value) chooseUsTitleObserver.observe(chooseUsTitleRef.value)
-
-    // 副标题初次进入动画（右滑入）
-    const chooseUsDescObserver = new window.IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-            chooseUsDescObserver.unobserve(entries[0].target)
-            gsap.fromTo(chooseUsDescRef.value,
-                { x: 100, opacity: 0.3 },
-                { x: 0, opacity: 1, duration: 1, delay: 0.2, ease: 'back.out' }
-            )
-        } else {
-            gsap.set(chooseUsDescRef.value, { x: 100, opacity: 0.3 })
-        }
-    }, { threshold: 0.3 })
-    if (chooseUsDescRef.value) chooseUsDescObserver.observe(chooseUsDescRef.value)
-
-    // Add ChooseUs style animations
-    advantageRefs.value.forEach((item, index) => {
-        if (!item) return
-        gsap.fromTo(item,
-            { y: 50, opacity: 0, transition: 'none' },
-            { 
-                y: 0, 
-                opacity: 1, 
-                duration: 0.8, 
-                delay: index * 0.1,
-                ease: 'power2.out',
-                scrollTrigger: {
-                    trigger: '.scoll_content2',
-                    start: 'top 80%'
-                },
-                onComplete: function() {
-                    gsap.set(item, { clearProps: "y,transition" })
-                }
-            }
-        );
-    })
-})
 
 </script>

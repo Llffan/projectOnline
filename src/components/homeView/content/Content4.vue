@@ -1,5 +1,5 @@
 <template>
-    <div class="content4">
+    <AnimatedSection class="content4">
         <div class="scoll_backImg scoll_common">
             <div class="scoll_cover"></div>
             <div class="cover_content">
@@ -47,25 +47,27 @@
             </div>
             <p class="p3">在企业发展过程中，专业秘书服务已成为众多企业，尤其是离岸公司实现合规、高效运营的重要保障。作为企业的“贴身助手”，秘书服务不仅能够协助企业处理日常行政及合规事务，还能提供专业、高效的商务支持。<br />选择十洲通秘书服务，让您专注于核心业务发展，其余事务交由我们的专业团队处理，省心、放心、安心。</p>
 
-            <div class="scoll_content3" ref="accountBodyRef">
-                <div class="content3_body" v-for="(item, i) in content3_body" :key="i" :ref="el => setAccountCardRef(el, i)" role="link" tabindex="0" @click="router.push(item.path)" @keydown.enter="router.push(item.path)" style="cursor: pointer;">
+            <div class="scoll_content3">
+                <FeatureCard class="content3_body" v-for="item in content3_body" :key="item.path" :title="item.title" :to="item.path">
                     <img loading="lazy" :src="item.img" :alt="item.title">
                     <p>{{item.title}}</p>
                     <span>{{item.desc}}</span>
-                </div>
+                </FeatureCard>
             </div>
         </div>
-    </div>
+    </AnimatedSection>
 </template>
 
 <script setup>
+import AnimatedSection from '@/components/common/AnimatedSection.vue'
+import FeatureCard from '@/components/common/FeatureCard.vue'
+import { useCountUp } from '@/composables/useCountUp'
 import '@/css/homeView/content/Content4.css'
-import { useRouter } from 'vue-router'
-import { stepsEmits } from 'element-plus'
-import { ref, onMounted } from 'vue'
-import gsap from 'gsap'
 
-const router = useRouter()
+
+import { ref } from 'vue'
+
+
 
 const features = [
     { title: '价格透明', desc: '统一报价，无隐形消费', icon: '#icon-finance' },
@@ -97,67 +99,7 @@ let cover_content = ref([
         desc: '企业成为长期客户'
     },
 ])
-let cover_displayValues = ref(cover_content.value.map(item => item.initialValue))
-const coverRef = ref(null)
-function startCount() {
-    const duration = 2000
-    const interval = 20
-    const steps = duration / interval
-    cover_content.value.forEach((item, idx) => {
-        const stepValue = (item.finalValue - item.initialValue) / steps
-        let current = item.initialValue
-        const timer = setInterval(() => {
-            current += stepValue
-            if ((stepValue > 0 && current >= item.finalValue) || (stepValue < 0 && current <= item.finalValue)) {
-                current = item.finalValue
-                clearInterval(timer)
-            }
-            cover_displayValues.value[idx] = Math.floor(current)
-        }, interval)
-    })
-}
-
-// 账号卡片动画
-const accountCardRefs = ref([])
-const accountBodyRef = ref(null)
-function setAccountCardRef(el, idx) {
-    if (!el) return
-    accountCardRefs.value[idx] = el
-}
-
-onMounted(() => {
-    const observer = new window.IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-            startCount()
-            observer.disconnect()
-        }
-    })
-    if (coverRef.value) {
-        observer.observe(coverRef.value)
-    }
-
-    // 开户卡片依次浮现动画
-    const cardObserver = new window.IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-            cardObserver.unobserve(entries[0].target)
-            accountCardRefs.value.forEach((el, idx) => {
-                gsap.fromTo(el,
-                    { opacity: 0, y: 50, transition: 'none' },
-                    { opacity: 1, y: 0, duration: 0.5, ease: 'power2.out', delay: idx * 0.15 + 0.2, onComplete: function() {
-                        gsap.set(el, {clearProps: "y,opacity,transition" })
-                    }}
-                )
-            })
-        } else {
-            accountCardRefs.value.forEach((el, idx) => {
-                gsap.set(el, { opacity: 0, y: 50, transition: 'none' })
-            })
-        }
-    }, {
-        threshold: 0.3
-    })
-    if (accountBodyRef.value) cardObserver.observe(accountBodyRef.value)
-})
+const { trigger: coverRef, values: cover_displayValues } = useCountUp(cover_content)
 
 let content3_body = ref([
     {
