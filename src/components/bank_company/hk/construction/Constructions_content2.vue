@@ -1,5 +1,5 @@
 ﻿<template>
-    <div class="constructions_content2">
+    <AnimatedSection class="constructions_content2">
         <div class="content_box">
             <!-- 1. 银行简介 & 开户形式 -->
             <div class="content1">
@@ -9,7 +9,7 @@
                 <div class="intro">
                     <img loading="lazy" src="@/assets/img/bank/hk/construction.png" alt="">
                     <div class="text">
-                        <P>香港建设银行（亚洲）是建行在港旗舰机构，拥有广泛客户基础，营销网络覆盖全国，与众多大型企业保持密切业务联系。2016年《银行家》全球排名第二，2017年品牌金融全球500强排名第14位，实力雄厚。境外账户可实现资金自由调拨、无外汇管制；个人账户便于海外置业、留学及全球财富管理。</P>
+                        <p>香港建设银行（亚洲）是建行在港旗舰机构，拥有广泛客户基础，营销网络覆盖全国，与众多大型企业保持密切业务联系。2016年《银行家》全球排名第二，2017年品牌金融全球500强排名第14位，实力雄厚。境外账户可实现资金自由调拨、无外汇管制；个人账户便于海外置业、留学及全球财富管理。</p>
                     </div>
                 </div>
             </div>
@@ -117,19 +117,16 @@
                 </div>
             </div>
         </div>
-    </div>
+    </AnimatedSection>
 </template>
 
 <script setup>
-import { ref, onMounted, nextTick } from 'vue'
-import gsap from 'gsap'
-import ScrollTrigger from 'gsap/ScrollTrigger'
+import { ref } from 'vue'
 import '@/css/bank_company/hk/construction/Constructions_content2.css'
 import HK_Cooperative_Bank from '@/components/bank_company/common/HK_Cooperative_Bank.vue'
 import MaintenanceGuide from '@/components/bank_company/common/MaintenanceGuide.vue'
 import ChooseUs from '@/components/bank_company/common/ChooseUs.vue'
-
-gsap.registerPlugin(ScrollTrigger)
+import AnimatedSection from '@/components/common/AnimatedSection.vue'
 
 
 
@@ -214,32 +211,4 @@ const toggleFaq = (index) => {
 
 
 
-onMounted(async () => {
-    await nextTick()
-    
-    const sections = [
-        '.constructions_content2 .content1',
-        '.constructions_content2 .content2',
-        '.constructions_content2 .content3',
-        '.constructions_content2 .content3_1',
-        '.constructions_content2 .content4',
-        '.constructions_content2 .content5',
-        '.content_bank',
-        '.constructions_content2 .content6'
-    ]
-
-    sections.forEach(section => {
-        gsap.from(section, {
-            autoAlpha: 0,
-            y: 50,
-            duration: 0.8,
-            ease: 'power2.out',
-            scrollTrigger: {
-                trigger: section,
-                start: 'top 85%',
-                once: true
-            }
-        })
-    })
-})
 </script>

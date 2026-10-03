@@ -1,5 +1,5 @@
 <template>
-    <div class="constructions_content1">
+    <AnimatedSection class="constructions_content1">
         <div class="img_box">
             <img loading="lazy" src="@/assets/img/company/jp/JP.jpg" alt="">
         </div>
@@ -10,52 +10,10 @@
                 <p>Fast VIP scheduling for account opening with full professional guidance, oral coaching before interviews, guaranteed quality and brand, successful account opening ensured or a full refund.</p>
             </div>
         </div>
-    </div>
+    </AnimatedSection>
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
-import gsap from 'gsap'
 import '@/css_en/bank_company/hk/construction/Constructions_content1.css'
-
-// Transition Animations
-onMounted(() => {
-    const tl = gsap.timeline()
-    
-    // Initial state
-    gsap.set('.title', { 
-        opacity: 0, 
-        y: 50 
-    })
-    
-    gsap.set('.subtitle', { 
-        opacity: 0, 
-        y: 50 
-    })
-    
-    gsap.set('.description', { 
-        opacity: 0, 
-        y: 50 
-    })
-    
-    // Animation sequence
-    tl.to('.title', {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        ease: 'power2.out'
-    })
-    .to('.subtitle', {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        ease: 'power2.out'
-    }, '-=0.7')
-    .to('.description', {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        ease: 'power2.out'
-    }, '-=0.7')
-})
+import AnimatedSection from '@/components_en/common/AnimatedSection.vue'
 </script>

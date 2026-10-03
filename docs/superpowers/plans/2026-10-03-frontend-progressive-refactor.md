@@ -344,7 +344,7 @@ refactor: extract shared content sections and motion
 }
 ```
 
-- [ ] **Step 2: 迁移香港公司开户中英文页面**
+- [x] **Step 2: 迁移香港公司开户中英文页面**
 
 先迁移与个人开户结构最接近的香港公司开户页面，确保公司开户原有加载动画与个人开户保持相同入口和清理逻辑。
 
@@ -447,6 +447,7 @@ chore: remove migrated frontend duplication and record regression checks
 - `npm run build` 成功。
 - 迁移页面不再依赖会导致小屏溢出的固定容器宽度。
 - 每个迁移阶段有独立提交和可回滚边界。
+
 
 
 

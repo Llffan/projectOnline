@@ -1,5 +1,5 @@
 <template>
-    <div class="constructions_content2">
+    <AnimatedSection class="constructions_content2">
         <div class="content_box">
             <!-- 1. Bank Introduction & Account Opening Form -->
             <div class="content1">
@@ -9,7 +9,7 @@
                 <div class="intro">
                     <img loading="lazy" src="@/assets/img/bank/hk/construction.png" alt="China Construction Bank (Asia)">
                     <div class="text">
-                        <P>China Construction Bank (Asia) is CCB's flagship institution in Hong Kong, boasting a vast client base and a marketing network that spans the entire country. CCB maintains close business ties with numerous large-scale enterprises. In 2016, it was ranked second globally by "The Banker," and in 2017, it placed 14th in the Brand Finance Global 500. With its formidable institutional strength, its offshore accounts facilitate unrestricted capital allocation and movement. Personal accounts are ideal for overseas property acquisition, international education, and comprehensive global wealth management.</P>
+                        <p>China Construction Bank (Asia) is CCB's flagship institution in Hong Kong, boasting a vast client base and a marketing network that spans the entire country. CCB maintains close business ties with numerous large-scale enterprises. In 2016, it was ranked second globally by "The Banker," and in 2017, it placed 14th in the Brand Finance Global 500. With its formidable institutional strength, its offshore accounts facilitate unrestricted capital allocation and movement. Personal accounts are ideal for overseas property acquisition, international education, and comprehensive global wealth management.</p>
                     </div>
                 </div>
             </div>
@@ -117,19 +117,16 @@
                 </div>
             </div>
         </div>
-    </div>
+    </AnimatedSection>
 </template>
 
 <script setup>
-import { ref, onMounted, nextTick } from 'vue'
-import gsap from 'gsap'
-import ScrollTrigger from 'gsap/ScrollTrigger'
+import { ref } from 'vue'
 import '@/css_en/bank_company/hk/construction/Constructions_content2.css'
 import HK_Cooperative_Bank from '@/components_en/bank_company/common/HK_Cooperative_Bank.vue'
 import MaintenanceGuide from '@/components_en/bank_company/common/MaintenanceGuide.vue'
 import ChooseUs from '@/components_en/bank_company/common/ChooseUs.vue'
-
-gsap.registerPlugin(ScrollTrigger)
+import AnimatedSection from '@/components_en/common/AnimatedSection.vue'
 
 const registrationProcess = [
     {
@@ -208,32 +205,4 @@ const toggleFaq = (index) => {
     expandedItems.value[index] = !expandedItems.value[index]
 }
 
-onMounted(async () => {
-    await nextTick()
-    
-    const sections = [
-        '.constructions_content2 .content1',
-        '.constructions_content2 .content2',
-        '.constructions_content2 .content3',
-        '.constructions_content2 .content3_1',
-        '.constructions_content2 .content4',
-        '.constructions_content2 .content5',
-        '.content_bank',
-        '.constructions_content2 .content6'
-    ]
-
-    sections.forEach(section => {
-        gsap.from(section, {
-            autoAlpha: 0,
-            y: 50,
-            duration: 0.8,
-            ease: 'power2.out',
-            scrollTrigger: {
-                trigger: section,
-                start: 'top 85%',
-                once: true
-            }
-        })
-    })
-})
 </script>
