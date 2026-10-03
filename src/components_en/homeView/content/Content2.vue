@@ -3,14 +3,7 @@
     <div class="content2" ref="content2Ref">
         <div class="register_company">
             <div class="company_intro">
-                <div ref="titleRef">
-                    <div class="title">
-                    Global Company Registration
-                    </div>
-                    <div class="title_en">
-                        Offshore Company Registration
-                    </div>
-                </div>
+                <SectionHeading ref="titleRef" title="Global Company Registration" subtitle="Offshore Company Registration" />
                 <div class="intro" ref="introRef">
                     In today's global economic integration, registering an overseas company is a crucial way for enterprises to go international and enhance their brand image.
                 </div>
@@ -24,7 +17,7 @@
                     <el-carousel ref="companyCarousel" trigger="click" :autoplay="false" indicator-position="none" arrow="never" height="400px" @change="onCarouselChange">
                         <el-carousel-item v-for="(group, idx) in displayCompanies" :key="idx">
                             <div class="card-group" ref="cardRef">
-                                <div class="company-card" v-for="(item, i) in group" :key="i" :style="{ backgroundImage: `url(${item.img})`}" @click="router.push(item.path)" style="cursor: pointer;">
+                                <FeatureCard class="company-card" v-for="(item, i) in group" :key="i" :to="item.path" :style="{ backgroundImage: `url(${item.img})`}">
                                     <div class="company-card-body" :ref="el => setCardBodyRef(el, idx, i)">
                                         <div class="card-content">
                                             <div class="card-title">{{ item.name }}</div>
@@ -34,7 +27,7 @@
                                             <p>→</p>
                                         </div>
                                     </div>
-                                </div>
+                                </FeatureCard>
                             </div>
                         </el-carousel-item>
                     </el-carousel>
@@ -50,6 +43,8 @@ import { useRouter } from 'vue-router'
 import { ref, onMounted } from 'vue'
 import { computed } from 'vue'
 import gsap from 'gsap'
+import SectionHeading from '@/components_en/common/SectionHeading.vue'
+import FeatureCard from '@/components_en/common/FeatureCard.vue'
 
 const router = useRouter()
 const isSwitching = ref(false)

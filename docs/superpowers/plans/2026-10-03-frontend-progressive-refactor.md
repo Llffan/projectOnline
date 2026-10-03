@@ -280,11 +280,11 @@ refactor: unify responsive site navigation
 - `FeatureCard.vue`: props `title: string`, `description?: string`, `icon?: string`; emits no events.
 - `AnimatedSection.vue`: props `once?: boolean`, `y?: number`; exposes a wrapper slot and creates a GSAP ScrollTrigger only when motion is enabled.
 
-- [ ] **Step 1: 抽离静态标题和卡片模板**
+- [x] **Step 1: 抽离静态标题和卡片模板**
 
 先保持现有 DOM class 名称，在组件内部映射现有标题、描述和插槽，确保页面 CSS 可逐步迁移。
 
-- [ ] **Step 2: 统一动画入口**
+- [x] **Step 2: 统一动画入口**
 
 将开户页标题、描述和滚动内容区的 GSAP 初始化收敛到 `AnimatedSection.vue` 或同等共享 composable；组件卸载时调用 `ctx.revert()`，避免路由切换后触发旧节点动画。
 
@@ -292,7 +292,7 @@ refactor: unify responsive site navigation
 
 Content1 至 Content5 按区块逐个替换标题、卡片和统计数字的重复结构，保留现有业务文案和图片资源。
 
-- [ ] **Step 4: 迁移个人开户中英文页面**
+- [x] **Step 4: 迁移个人开户中英文页面**
 
 确保首屏加载动画、滚动进入动画、加载失败时的静态可见内容和 reduced-motion 行为一致。
 
@@ -447,6 +447,7 @@ chore: remove migrated frontend duplication and record regression checks
 - `npm run build` 成功。
 - 迁移页面不再依赖会导致小屏溢出的固定容器宽度。
 - 每个迁移阶段有独立提交和可回滚边界。
+
 
 
 
