@@ -1,18 +1,8 @@
 <template>
     <div class="service-content ov_content2">
         <div class="content_box">
-            <AnimatedSection class="content1">
-                <div class="title">
-                    Overseas company annual review and maintenance
-                </div>
-                <div class="intro">
-                    <img loading="lazy" src="@/assets/img/company/bvi/BVI-2.jpg" alt="">
-                    <div class="text">
-                        <P>Although overseas offshore companies (such as BVI, Cayman, Seychelles, etc.) usually enjoy tax exemptions, they must abide by the company laws of the place of registration and conduct annual license renewal and annual review on time to maintain the company's legal status.</P>
-                        <P>The main contents of the annual review include payment of government license fees, registered agent fees and registered address fees, etc. Failure to conduct the annual review on time will result in heavy fines, or even the company being delisted and the assets frozen.</P>
-                        <P>For companies that need to maintain their listing status or conduct international investment and financing, maintaining a good company survival status (Good Standing) is crucial. We provide one-stop annual review services to ensure the long-term compliance operation of your offshore company.</P>
-                    </div>
-                </div>
+            <AnimatedSection>
+                <ServiceSection v-for="section in sections" :key="section.title" class="content1" v-bind="section" />
             </AnimatedSection>
             <AnimatedSection class="content2">
                 <div class="title">
@@ -120,6 +110,21 @@
 </template>
 
 <script setup>
+import ServiceSection from '@/components/common/ServiceSection.vue'
+import sectionImage from '@/assets/img/company/bvi/BVI-2.jpg'
+
+const sections = [ {
+  "title": "Overseas company annual review and maintenance",
+  "body": [
+    "Although overseas offshore companies (such as BVI, Cayman, Seychelles, etc.) usually enjoy tax exemptions, they must abide by the company laws of the place of registration and conduct annual license renewal and annual review on time to maintain the company's legal status.",
+    "The main contents of the annual review include payment of government license fees, registered agent fees and registered address fees, etc. Failure to conduct the annual review on time will result in heavy fines, or even the company being delisted and the assets frozen.",
+    "For companies that need to maintain their listing status or conduct international investment and financing, maintaining a good company survival status (Good Standing) is crucial. We provide one-stop annual review services to ensure the long-term compliance operation of your offshore company."
+  ],
+  "imageAlt": "",
+  "reversed": false,
+  "image": sectionImage
+} ]
+
 import { ref } from 'vue'
 import '@/css_en/secretary/overseas_annual/TaxOv_content2.css'
 

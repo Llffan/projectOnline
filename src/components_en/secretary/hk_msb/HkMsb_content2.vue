@@ -1,19 +1,7 @@
 <template>
     <AnimatedSection class="service-content msb_content2">
         <div class="content_box">
-            <div class="content1">
-                <div class="title">
-                    Hong Kong Money Services Operator License (MSO)
-                </div>
-                <div class="intro">
-                    <img loading="lazy" src="@/assets/img/company/hk/HK-2.jpg" alt="">
-                    <div class="text">
-                        <p>The Hong Kong Money Service Operator License (MSO License) is a financial license issued by the Hong Kong Customs Department. Any individual or enterprise operating currency exchange services or remittance services in Hong Kong must apply for this license from the Commissioner of Customs and Excise.</p>
-                        <p>The MSO license is a necessary pass for compliant cross-border payment and currency exchange business. As global regulation tightens, holding this license can significantly enhance the credibility of the company and is the basis for conducting international financial business.</p>
-                        <p>We provide one-stop services from company registration, venue leasing, compliance officer appointment to license application and subsequent maintenance, helping you successfully obtain a license and conduct business in compliance with regulations.</p>
-                    </div>
-                </div>
-            </div>
+            <ServiceSection v-for="section in sections" :key="section.title" class="content1" v-bind="section" />
             <div class="content2">
                 <div class="title">
                     MSO牌照优势
@@ -120,6 +108,21 @@
 </template>
 
 <script setup>
+import ServiceSection from '@/components/common/ServiceSection.vue'
+import sectionImage from '@/assets/img/company/hk/HK-2.jpg'
+
+const sections = [ {
+  "title": "Hong Kong Money Services Operator License (MSO)",
+  "body": [
+    "The Hong Kong Money Service Operator License (MSO License) is a financial license issued by the Hong Kong Customs Department. Any individual or enterprise operating currency exchange services or remittance services in Hong Kong must apply for this license from the Commissioner of Customs and Excise.",
+    "The MSO license is a necessary pass for compliant cross-border payment and currency exchange business. As global regulation tightens, holding this license can significantly enhance the credibility of the company and is the basis for conducting international financial business.",
+    "We provide one-stop services from company registration, venue leasing, compliance officer appointment to license application and subsequent maintenance, helping you successfully obtain a license and conduct business in compliance with regulations."
+  ],
+  "imageAlt": "",
+  "reversed": false,
+  "image": sectionImage
+} ]
+
 import { ref } from 'vue'
 import '@/css_en/secretary/hk_msb/HkMsb_content2.css'
 import AnimatedSection from '@/components_en/common/AnimatedSection.vue'

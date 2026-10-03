@@ -1,18 +1,8 @@
 <template>
     <div class="service-content ov_content2">
         <div class="content_box">
-            <AnimatedSection class="content1">
-                <div class="title">
-                    海外公司年审与维护
-                </div>
-                <div class="intro">
-                    <img loading="lazy" src="@/assets/img/company/bvi/BVI-2.jpg" alt="">
-                    <div class="text">
-                        <P>海外离岸公司（如BVI、开曼、塞舌尔等）虽然通常享有税务豁免权，但必须遵守注册地的公司法规定，按时进行年度牌照续费和年审工作，以维持公司的法律地位。</P>
-                        <P>年审的主要内容包括缴纳政府牌照费、注册代理人费用及注册地址费用等。未能按时年审将导致高额罚款，甚至导致公司被除名，资产被冻结。</P>
-                        <P>对于需要维持上市地位或进行国际投融资的企业，保持良好的公司续存状态（Good Standing）至关重要。我们提供一站式的年审服务，确保您的离岸公司长期合规运营。</P>
-                    </div>
-                </div>
+            <AnimatedSection>
+                <ServiceSection v-for="section in sections" :key="section.title" class="content1" v-bind="section" />
             </AnimatedSection>
             <AnimatedSection class="content2">
                 <div class="title">
@@ -120,6 +110,21 @@
 </template>
 
 <script setup>
+import ServiceSection from '@/components/common/ServiceSection.vue'
+import sectionImage from '@/assets/img/company/bvi/BVI-2.jpg'
+
+const sections = [ {
+  "title": "海外公司年审与维护",
+  "body": [
+    "海外离岸公司（如BVI、开曼、塞舌尔等）虽然通常享有税务豁免权，但必须遵守注册地的公司法规定，按时进行年度牌照续费和年审工作，以维持公司的法律地位。",
+    "年审的主要内容包括缴纳政府牌照费、注册代理人费用及注册地址费用等。未能按时年审将导致高额罚款，甚至导致公司被除名，资产被冻结。",
+    "对于需要维持上市地位或进行国际投融资的企业，保持良好的公司续存状态（Good Standing）至关重要。我们提供一站式的年审服务，确保您的离岸公司长期合规运营。"
+  ],
+  "imageAlt": "",
+  "reversed": false,
+  "image": sectionImage
+} ]
+
 import { ref } from 'vue'
 import '@/css/secretary/overseas_annual/TaxOv_content2.css'
 

@@ -2,17 +2,7 @@
     <AnimatedSection class="service-content constructions_content2">
         <div class="content_box">
             <!-- 1. 银行简介 & 开户形式 -->
-            <div class="content1">
-                <div class="title">
-                    香港建设银行（亚洲）简介
-                </div>
-                <div class="intro">
-                    <img loading="lazy" src="@/assets/img/bank/hk/construction.png" alt="">
-                    <div class="text">
-                        <p>香港建设银行（亚洲）是建行在港旗舰机构，拥有广泛客户基础，营销网络覆盖全国，与众多大型企业保持密切业务联系。2016年《银行家》全球排名第二，2017年品牌金融全球500强排名第14位，实力雄厚。境外账户可实现资金自由调拨、无外汇管制；个人账户便于海外置业、留学及全球财富管理。</p>
-                    </div>
-                </div>
-            </div>
+            <ServiceSection v-for="section in sections" :key="section.title" class="content1" v-bind="section" />
 
             <!-- 2. 开户优势 -->
             <div class="content2">
@@ -121,6 +111,19 @@
 </template>
 
 <script setup>
+import ServiceSection from '@/components/common/ServiceSection.vue'
+import sectionImage from '@/assets/img/bank/hk/construction.png'
+
+const sections = [ {
+  "title": "香港建设银行（亚洲）简介",
+  "body": [
+    "香港建设银行（亚洲）是建行在港旗舰机构，拥有广泛客户基础，营销网络覆盖全国，与众多大型企业保持密切业务联系。2016年《银行家》全球排名第二，2017年品牌金融全球500强排名第14位，实力雄厚。境外账户可实现资金自由调拨、无外汇管制；个人账户便于海外置业、留学及全球财富管理。"
+  ],
+  "imageAlt": "",
+  "reversed": false,
+  "image": sectionImage
+} ]
+
 import { ref } from 'vue'
 import '@/css/bank_company/hk/construction/Constructions_content2.css'
 import HK_Cooperative_Bank from '@/components/bank_company/common/HK_Cooperative_Bank.vue'

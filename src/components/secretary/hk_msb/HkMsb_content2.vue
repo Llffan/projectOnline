@@ -1,19 +1,7 @@
 <template>
     <AnimatedSection class="service-content msb_content2">
         <div class="content_box">
-            <div class="content1">
-                <div class="title">
-                    香港金钱服务经营者牌照(MSO)
-                </div>
-                <div class="intro">
-                    <img loading="lazy" src="@/assets/img/company/hk/HK-2.jpg" alt="">
-                    <div class="text">
-                        <p>香港金钱服务经营者牌照（Money Service Operator License, 简称MSO牌照）是由香港海关总署颁发的金融牌照。任何在香港经营货币兑换服务或汇款服务的个人或企业，都必须向海关关长申领该牌照。</p>
-                        <p>MSO牌照是合规进行跨境支付、换汇业务的必要通行证。随着全球监管趋严，持有该牌照能显著提升企业的公信力，是开展国际金融业务的基础。</p>
-                        <p>我们提供从公司注册、场地租赁、合规主任委任到牌照申请及后续维护的一站式服务，助您顺利获取牌照，合规开展业务。</p>
-                    </div>
-                </div>
-            </div>
+            <ServiceSection v-for="section in sections" :key="section.title" class="content1" v-bind="section" />
             <div class="content2">
                 <div class="title">
                     MSO牌照优势
@@ -120,6 +108,21 @@
 </template>
 
 <script setup>
+import ServiceSection from '@/components/common/ServiceSection.vue'
+import sectionImage from '@/assets/img/company/hk/HK-2.jpg'
+
+const sections = [ {
+  "title": "香港金钱服务经营者牌照(MSO)",
+  "body": [
+    "香港金钱服务经营者牌照（Money Service Operator License, 简称MSO牌照）是由香港海关总署颁发的金融牌照。任何在香港经营货币兑换服务或汇款服务的个人或企业，都必须向海关关长申领该牌照。",
+    "MSO牌照是合规进行跨境支付、换汇业务的必要通行证。随着全球监管趋严，持有该牌照能显著提升企业的公信力，是开展国际金融业务的基础。",
+    "我们提供从公司注册、场地租赁、合规主任委任到牌照申请及后续维护的一站式服务，助您顺利获取牌照，合规开展业务。"
+  ],
+  "imageAlt": "",
+  "reversed": false,
+  "image": sectionImage
+} ]
+
 import { ref } from 'vue'
 import '@/css/secretary/hk_msb/HkMsb_content2.css'
 import AnimatedSection from '@/components/common/AnimatedSection.vue'

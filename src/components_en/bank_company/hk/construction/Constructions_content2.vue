@@ -2,17 +2,7 @@
     <AnimatedSection class="service-content constructions_content2">
         <div class="content_box">
             <!-- 1. Bank Introduction & Account Opening Form -->
-            <div class="content1">
-                <div class="title">
-                    Introduction to China Construction Bank (Asia)
-                </div>
-                <div class="intro">
-                    <img loading="lazy" src="@/assets/img/bank/hk/construction.png" alt="China Construction Bank (Asia)">
-                    <div class="text">
-                        <p>China Construction Bank (Asia) is CCB's flagship institution in Hong Kong, boasting a vast client base and a marketing network that spans the entire country. CCB maintains close business ties with numerous large-scale enterprises. In 2016, it was ranked second globally by "The Banker," and in 2017, it placed 14th in the Brand Finance Global 500. With its formidable institutional strength, its offshore accounts facilitate unrestricted capital allocation and movement. Personal accounts are ideal for overseas property acquisition, international education, and comprehensive global wealth management.</p>
-                    </div>
-                </div>
-            </div>
+            <ServiceSection v-for="section in sections" :key="section.title" class="content1" v-bind="section" />
 
             <!-- 2. Account Opening Advantages -->
             <div class="content2">
@@ -121,6 +111,19 @@
 </template>
 
 <script setup>
+import ServiceSection from '@/components/common/ServiceSection.vue'
+import sectionImage from '@/assets/img/bank/hk/construction.png'
+
+const sections = [ {
+  "title": "Introduction to China Construction Bank (Asia)",
+  "body": [
+    "China Construction Bank (Asia) is CCB's flagship institution in Hong Kong, boasting a vast client base and a marketing network that spans the entire country. CCB maintains close business ties with numerous large-scale enterprises. In 2016, it was ranked second globally by \"The Banker,\" and in 2017, it placed 14th in the Brand Finance Global 500. With its formidable institutional strength, its offshore accounts facilitate unrestricted capital allocation and movement. Personal accounts are ideal for overseas property acquisition, international education, and comprehensive global wealth management."
+  ],
+  "imageAlt": "China Construction Bank (Asia)",
+  "reversed": false,
+  "image": sectionImage
+} ]
+
 import { ref } from 'vue'
 import '@/css_en/bank_company/hk/construction/Constructions_content2.css'
 import HK_Cooperative_Bank from '@/components_en/bank_company/common/HK_Cooperative_Bank.vue'

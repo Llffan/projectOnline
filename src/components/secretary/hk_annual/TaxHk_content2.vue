@@ -1,19 +1,7 @@
 <template>
     <div class="service-content hk_content2">
         <div class="content_box">
-            <div class="content1">
-                <div class="title">
-                    香港税务与年审
-                </div>
-                <div class="intro">
-                    <img loading="lazy" src="@/assets/img/company/hk/HK-2.jpg" alt="">
-                    <div class="text">
-                        <P>香港做账报税依照香港法律规定，所有的香港公司无论是否有盈利，都需要申报上一年度的经营情况，并由香港税务局依照一定标准，确定该香港公司是否需要缴纳税收。</P>
-                        <P>香港是免税港，对进出口商品不征收任何关税，更没有销售税和其他进口费用的征收。这为国际贸易提供了极大的便利，降低了营商成本。</P>
-                        <P>关于香港公司报税工作，必须严格遵循法定程序，委托专业的持牌会计师机构进行审计和办理，以确保合规经营，避免不必要的法律风险。</P>
-                    </div>
-                </div>
-            </div>
+            <ServiceSection v-for="section in sections" :key="section.title" class="content1" v-bind="section" />
             <div class="content2">
                 <div class="title">
                     香港税制优势
@@ -120,6 +108,21 @@
 </template>
 
 <script setup>
+import ServiceSection from '@/components/common/ServiceSection.vue'
+import sectionImage from '@/assets/img/company/hk/HK-2.jpg'
+
+const sections = [ {
+  "title": "香港税务与年审",
+  "body": [
+    "香港做账报税依照香港法律规定，所有的香港公司无论是否有盈利，都需要申报上一年度的经营情况，并由香港税务局依照一定标准，确定该香港公司是否需要缴纳税收。",
+    "香港是免税港，对进出口商品不征收任何关税，更没有销售税和其他进口费用的征收。这为国际贸易提供了极大的便利，降低了营商成本。",
+    "关于香港公司报税工作，必须严格遵循法定程序，委托专业的持牌会计师机构进行审计和办理，以确保合规经营，避免不必要的法律风险。"
+  ],
+  "imageAlt": "",
+  "reversed": false,
+  "image": sectionImage
+} ]
+
 import { ref, onMounted, nextTick } from 'vue'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'

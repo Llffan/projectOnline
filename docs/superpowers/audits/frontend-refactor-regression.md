@@ -101,3 +101,12 @@ After the bank mobile corrections, all 24 combinations of six core routes and fo
 - Screenshot: output/playwright/service-overseas-en-390-content.png. Production build passed after the CSS deletions and content migration; pre-existing removeViewBox warnings remain.
 - Task 5 Step 1 is still incomplete: the sections[{title, body, image, reversed}] schema and its real page consumers remain to be implemented. The hero portion is implemented, but this does not establish completion of the full template or global regression.
 - Additional runtime checks: all 12 heroes returned opacity 1 in reduced-motion mode; a Vue Router transition from English personal accounts to overseas annual review and browser Back restored the personal-account heading with opacity 1 and no pageerror events.
+
+### Shared service sections (2026-10-04)
+
+- Added ServiceSection with title, body (paragraph array), image, imageAlt and reversed fields. Ten Chinese/English introductions now render sections data: Construction Bank, personal accounts, MSB, Hong Kong annual review and overseas annual review. Tax filing retains its specialized list content.
+- Compared migrated section data against Git HEAD: all ten titles, paragraphs and image paths were preserved. Removed eight duplicate introduction CSS blocks, retaining the bank-image contain sizing through shared custom properties.
+- 40 route/width checks in reduced-motion mode returned no introduction overflow, document width equal to viewport width, and column stacking at 768/390px. Each check scrolled to the section and waited for lazy-loaded images before measuring.
+- Mounted the real shared components in the browser to verify their contracts: reversed=true rendered row-reverse at 1440px and column at 390px; two body entries produced two paragraphs. Optional contactLabel/contactRoute rendered the expected link and Enter navigated to /en/bank/hk/personal. Temporary mounts were unmounted afterward.
+- Task 5 Step 1 now has implemented and consumed hero/section interfaces for every specified field. This does not complete all page migrations or global regression; existing Hong Kong annual-review and tax-filing content animations still need lifecycle cleanup.
+- Screenshot: output/playwright/service-section-en-390.png.

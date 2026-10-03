@@ -329,7 +329,7 @@ refactor: extract shared content sections and motion
 - Produces: 个人开户、公司开户、秘书服务页面可以共享相同的 Banner、标题区、内容区和联系入口布局。
 - Consumes: Task 2 的设计令牌和 Task 4 的共享内容组件。
 
-- [ ] **Step 1: 选择页面模板字段**
+- [x] **Step 1: 选择页面模板字段**
 
 为银行/服务详情页统一以下字段：
 

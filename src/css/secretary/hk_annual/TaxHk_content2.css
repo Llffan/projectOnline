@@ -1,51 +1,5 @@
 .hk_content2 {
   .content_box {
-    .content1 {
-            width: 100%;
-            height: 500px;
-            transform: translateY(0);
-            margin: 50px 0 100px 0;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-
-            .intro {
-                width: 80%;
-                flex: 1;
-                margin-top: 20px;
-
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-                background: linear-gradient(135deg, #f8f9fa 0%, #e9f5ff 100%);
-                border-radius: 15px 0 0 15px;
-                border-left: 5px solid #0037ff7e;
-                box-shadow: 0 2px 3px 1px rgba(0, 79, 144, 0.1);
-
-                img {
-                    width: 250px;
-                    height: 350px;
-                    object-fit: cover;
-                    margin-left: 15px;
-                    border-radius: 5px;
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                }
-
-                .text {
-                    flex: 1;
-                    padding: 0 50px;
-                    P {
-                        font-size: 18px;
-                        color: #333;
-                        line-height: 1.8;
-                        margin: 20px;
-                    }
-                }
-            }
-        }
 
         .content2 {
             width: 100%;

@@ -1,19 +1,7 @@
 <template>
     <div class="service-content hk_content2">
         <div class="content_box">
-            <div class="content1">
-                <div class="title">
-                    Hong Kong taxation and annual review
-                </div>
-                <div class="intro">
-                    <img loading="lazy" src="@/assets/img/company/hk/HK-2.jpg" alt="">
-                    <div class="text">
-                        <P>Accounting and tax filing in Hong Kong are in accordance with Hong Kong law. All Hong Kong companies, regardless of whether they are profitable or not, are required to report their operating conditions for the previous year, and the Hong Kong Inland Revenue Department will determine whether the Hong Kong company needs to pay taxes in accordance with certain standards.</P>
-                        <P>Hong Kong is a duty-free port and does not impose any tariffs on imported and exported goods, let alone sales tax and other import fees. This provides great convenience for international trade and reduces business costs.</P>
-                        <P>Regarding the tax filing of Hong Kong companies, legal procedures must be strictly followed and a professional licensed accounting firm must be entrusted with auditing and handling to ensure compliance and avoid unnecessary legal risks.</P>
-                    </div>
-                </div>
-            </div>
+            <ServiceSection v-for="section in sections" :key="section.title" class="content1" v-bind="section" />
             <div class="content2">
                 <div class="title">
                     Hong Kong’s tax system advantages
@@ -120,6 +108,21 @@
 </template>
 
 <script setup>
+import ServiceSection from '@/components/common/ServiceSection.vue'
+import sectionImage from '@/assets/img/company/hk/HK-2.jpg'
+
+const sections = [ {
+  "title": "Hong Kong taxation and annual review",
+  "body": [
+    "Accounting and tax filing in Hong Kong are in accordance with Hong Kong law. All Hong Kong companies, regardless of whether they are profitable or not, are required to report their operating conditions for the previous year, and the Hong Kong Inland Revenue Department will determine whether the Hong Kong company needs to pay taxes in accordance with certain standards.",
+    "Hong Kong is a duty-free port and does not impose any tariffs on imported and exported goods, let alone sales tax and other import fees. This provides great convenience for international trade and reduces business costs.",
+    "Regarding the tax filing of Hong Kong companies, legal procedures must be strictly followed and a professional licensed accounting firm must be entrusted with auditing and handling to ensure compliance and avoid unnecessary legal risks."
+  ],
+  "imageAlt": "",
+  "reversed": false,
+  "image": sectionImage
+} ]
+
 import { ref, onMounted, nextTick } from 'vue'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
