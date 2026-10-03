@@ -1,5 +1,5 @@
 <template>
-    <AnimatedSection class="constructions_content1">
+    <AnimatedSection class="service-hero constructions_content1">
         <div class="img_box">
             <img loading="lazy" src="@/assets/img/company/jp/JP.jpg" alt="">
         </div>
@@ -15,5 +15,6 @@
 
 <script setup>
 import '@/css_en/bank_company/hk/construction/Constructions_content1.css'
+import '@/css_en/common/service-hero.css'
 import AnimatedSection from '@/components_en/common/AnimatedSection.vue'
 </script>

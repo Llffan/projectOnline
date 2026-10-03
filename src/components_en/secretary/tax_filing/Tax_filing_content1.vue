@@ -1,5 +1,5 @@
 <template>
-    <div class="tax_filing_content1">
+    <AnimatedSection class="service-hero tax_filing_content1">
         <div class="img_box">
             <img loading="lazy" src="@/assets/img/company/hk/HK.jpg" alt="tax declaration">
         </div>
@@ -10,41 +10,11 @@
                 <p>Changjiajie uses its professional tax experience to help you with compliance reporting, risk reduction, and cost-saving planning.</p>
             </div>
         </div>
-    </div>
+    </AnimatedSection>
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
-import gsap from 'gsap'
 import '@/css_en/secretary/tax_filing/Tax_filing_content1.css'
-
-// transition animation
-onMounted(() => {
-    const tl = gsap.timeline()
-    
-    // Initial state settings
-    gsap.set('.title', { 
-        opacity: 0, 
-        y: 50 
-    })
-    
-    gsap.set('.description', { 
-        opacity: 0, 
-        y: 50 
-    })
-    
-    // Add animation sequence
-    tl.to('.title', {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        ease: 'power2.out'
-    })
-    .to('.description', {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        ease: 'power2.out'
-    }, '-=0.7')
-})
+import '@/css_en/common/service-hero.css'
+import AnimatedSection from '@/components_en/common/AnimatedSection.vue'
 </script>

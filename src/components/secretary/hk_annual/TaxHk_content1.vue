@@ -1,5 +1,5 @@
 <template>
-    <div class="hk_content1">
+    <AnimatedSection class="service-hero hk_content1">
         <div class="img_box">
             <img loading="lazy" src="@/assets/img/company/hk/HK.jpg" alt="">
         </div>
@@ -10,52 +10,11 @@
                 <p>- Hong Kong Tax Declaration & Annual Return</p>
             </div>
         </div>
-    </div>
+    </AnimatedSection>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
-import gsap from 'gsap'
 import '@/css/secretary/hk_annual/TaxHk_content1.css'
-
-// 过渡动画
-onMounted(() => {
-    const tl = gsap.timeline()
-    
-    // 初始状态设置
-    gsap.set('.hk-title', { 
-        opacity: 0, 
-        y: 50 
-    })
-    
-    gsap.set('.hk-subtitle', { 
-        opacity: 0, 
-        y: 50 
-    })
-    
-    gsap.set('.hk-description', { 
-        opacity: 0, 
-        y: 50 
-    })
-    
-    // 添加动画序列
-    tl.to('.hk-title', {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        ease: 'power2.out'
-    })
-    .to('.hk-subtitle', {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        ease: 'power2.out'
-    }, '-=0.7')
-    .to('.hk-description', {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        ease: 'power2.out'
-    }, '-=0.7')
-})
+import '@/css/common/service-hero.css'
+import AnimatedSection from '@/components/common/AnimatedSection.vue'
 </script>
