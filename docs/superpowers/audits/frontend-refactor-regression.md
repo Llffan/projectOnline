@@ -31,3 +31,9 @@ At the available browser viewport (1280px), all four routes reported `document.b
 - Kept dropdown minimum widths and image/content maximum widths where they describe desktop presentation; mobile dropdown rules already override them.
 - Added mobile stacking and minimum-width resets to the tax-planning and domestic-trademark form layouts.
 - Added shared mobile Link navigation rules for all Chinese and English service Link components; desktop language-specific styles remain in their existing files.
+
+### Shared CSS consolidation follow-up
+
+- English tokens, service shell, hero, content, and Link styles now import the canonical files in src/css/common; 193 duplicate lines removed.
+- Fixed a self-reference in --site-wide-max-width introduced by the earlier bulk replacement; its value is 2000px.
+- Reopened Task 5 CSS convergence: legacy page rules still duplicate shared rules and may override them. Four-viewport checks remain pending; build results alone do not prove responsive completion.
