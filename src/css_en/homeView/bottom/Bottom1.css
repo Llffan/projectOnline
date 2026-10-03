@@ -98,12 +98,16 @@
         color: rgb(69, 64, 64);
         z-index: 15;
         font-size: 20px;
-        white-space: nowrap;
+        white-space: normal;
+        overflow-wrap: anywhere;
+        width: calc(100% - 32px);
+        text-align: center;
+        line-height: 1.5;
         max-width: 90%;
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .bottom_box {
         min-height: 680px;
 

@@ -64,8 +64,8 @@ rg -n "Top2|SideToolbar|Footer|gsap|ScrollTrigger|min-width|position:\s*absolute
  /en
  /bank/hk/personal
  /en/bank/hk/personal
- /bank/hk/company
- /en/bank/hk/company
+ /bank/hk/constructions
+ /en/bank/hk/constructions
 ```
 
 基线文档为每个 URL 记录桌面端截图检查点、移动端检查点、主要内容区和当前已知问题。
@@ -288,7 +288,7 @@ refactor: unify responsive site navigation
 
 将开户页标题、描述和滚动内容区的 GSAP 初始化收敛到 `AnimatedSection.vue` 或同等共享 composable；组件卸载时调用 `ctx.revert()`，避免路由切换后触发旧节点动画。
 
-- [ ] **Step 3: 迁移首页内容区**
+- [x] **Step 3: 迁移首页内容区**
 
 Content1 至 Content5 按区块逐个替换标题、卡片和统计数字的重复结构，保留现有业务文案和图片资源。
 
@@ -361,10 +361,10 @@ refactor: extract shared content sections and motion
 至少检查：
 
 ```text
-/bank/hk/company
-/en/bank/hk/company
+/bank/hk/constructions
+/en/bank/hk/constructions
 /secretary/hk-msb
-/en/secretary/hk-msb
+/secretary_en/hk-msb
 ```
 
 验证 1440、1024、768、390 像素下无内容溢出，提交：
@@ -422,10 +422,10 @@ npm run dev
 /en
 /bank/hk/personal
 /en/bank/hk/personal
-/bank/hk/company
-/en/bank/hk/company
+/bank/hk/constructions
+/en/bank/hk/constructions
 /secretary/hk-msb
-/en/secretary/hk-msb
+/secretary_en/hk-msb
 ```
 
 - [ ] **Step 5: 记录回归结果并提交**
@@ -447,10 +447,3 @@ chore: remove migrated frontend duplication and record regression checks
 - `npm run build` 成功。
 - 迁移页面不再依赖会导致小屏溢出的固定容器宽度。
 - 每个迁移阶段有独立提交和可回滚边界。
-
-
-
-
-
-
-

@@ -79,3 +79,13 @@ After the bank mobile corrections, all 24 combinations of six core routes and fo
 - Eight browser checks (two languages, four widths) rendered five service cards and four advantage cards, expected counts 1/100/10/10 and 40/60/50/30, and visible content after scrolling. No pageerror events were collected.
 - Latest build exited 0. English homepage body scroll width at 768px was 930px, while each Content1–5 container measured 768px; the remaining document-level overflow is unresolved. Other measured body widths matched the viewport.
 - Full hero migration and complete visual/interaction regression remain pending.
+
+### Homepage hero carousel follow-up
+
+- Both Content1 components now use useHeroCarousel for slide entrance motion and drag handling. Vue owns event listeners; GSAP context reverts on unmount. Removed duplicated manual event registration and initial hidden styles.
+- Corrected hero content sizing: horizontal offsets now bound both edges rather than adding an offset to a 100% width. Copyright text wraps and the footer uses the mobile layout at 768px.
+- Measured both homepage routes at 1440, 1024, 768 and 390px: body, both slide containers, slide content and copyright text showed no horizontal overflow.
+- Visual inspection at 390x667 identified oversized English hero text and consultation-widget overlap with the next-slide arrow. Mobile typography and arrow placement were corrected. Title and CTA bounds are visible below the navigation and within the viewport.
+- Browser interaction verified slide 1 -> slide 2 using the arrow, then slide 2 -> slide 1 using a mouse drag. Reduced-motion reload returned heading opacity 1; eight homepage visits produced no pageerror events.
+- Screenshot: output/playwright/home-en-390-hero.png. Production build passed; the existing removeViewBox optimizer warning remains.
+- Corrected the plan's nonexistent company and English secretary route examples to the routes in the router. Full navigation/history regression and service template data fields remain pending.
