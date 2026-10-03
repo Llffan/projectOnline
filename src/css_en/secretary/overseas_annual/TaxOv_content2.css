@@ -1,37 +1,6 @@
 .ov_content2 {
-    width: 100%;
-    padding: 30px 0;
-    background: linear-gradient(135deg, #f5f5f5 0%, #e6f0ff 50%, #f5f5f5 100%);
-    background-size: 200% 200%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    .content_box {
-        width: 80%;
-        background: rgba(255, 255, 255, 0.9);
-        backdrop-filter: blur(10px);
-        box-shadow: 0 2px 5px 2px rgba(0, 79, 144, 0.15);
-        border-radius: 15px;
-
-        .title {
-            text-align: center;
-            font-size: 28px;
-            color: #0037ff7e;
-            margin-top: 30px;
-        }
-
-        .title::after {
-            content: "";
-            display: block;
-            height: 2px;
-            width: 500px;
-            background: linear-gradient(to right, #f5f5f5, #0037ff7e, #f5f5f5);
-            margin: 20px auto;
-        }
-
+  --service-title-size: 28px;
+  .content_box {
         .content1 {
             width: 100%;
             height: 500px;

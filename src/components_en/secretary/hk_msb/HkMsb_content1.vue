@@ -1,20 +1,19 @@
 <template>
-    <AnimatedSection class="service-hero msb_content1">
-        <div class="img_box">
-            <img loading="lazy" src="@/assets/img/company/hk/HK.jpg" alt="">
-        </div>
-        <div class="intro">
-            <div class="msb-title">Hong Kong MSB license application</div>
-            <div class="msb-subtitle">Money Service Operator License / (MSO) / Compliance Operation / Financial License</div>
-            <div class="msb-description">
-                <p>- Money Service Operator License (MSO)</p>
-            </div>
-        </div>
-    </AnimatedSection>
+  <ServiceHero class="msb_content1" v-bind="hero" />
 </template>
 
 <script setup>
-import '@/css_en/secretary/hk_msb/HkMsb_content1.css'
-import '@/css_en/common/service-hero.css'
-import AnimatedSection from '@/components_en/common/AnimatedSection.vue'
+import ServiceHero from '@/components/common/ServiceHero.vue'
+import heroImage from '@/assets/img/company/hk/HK.jpg'
+
+const hero = {
+  "title": "Hong Kong MSB license application",
+  "subtitle": "Money Service Operator License / (MSO) / Compliance Operation / Financial License",
+  "description": [
+    "- Money Service Operator License (MSO)"
+  ],
+  "imageAlt": "",
+  "language": "en",
+  heroImage,
+}
 </script>

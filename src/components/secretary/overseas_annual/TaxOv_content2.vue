@@ -1,7 +1,7 @@
 <template>
-    <div class="ov_content2">
+    <div class="service-content ov_content2">
         <div class="content_box">
-            <div class="content1">
+            <AnimatedSection class="content1">
                 <div class="title">
                     海外公司年审与维护
                 </div>
@@ -13,13 +13,13 @@
                         <P>对于需要维持上市地位或进行国际投融资的企业，保持良好的公司续存状态（Good Standing）至关重要。我们提供一站式的年审服务，确保您的离岸公司长期合规运营。</P>
                     </div>
                 </div>
-            </div>
-            <div class="content2">
+            </AnimatedSection>
+            <AnimatedSection class="content2">
                 <div class="title">
                     离岸公司优势维护
                 </div>
                 <div class="intro">
-                    <div v-for="(item, index) in advantage" :key="index" class="advantage" :ref="el => { if (el) advantageRefs[index] = el }">
+                    <div v-for="(item, index) in advantage" :key="index" class="advantage">
                         <div class="img">
                             <svg class="icon" aria-hidden="true">
                                 <use :xlink:href="item.iconId"></use> 
@@ -30,8 +30,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="content3">
+            </AnimatedSection>
+            <AnimatedSection class="content3">
                 <div class="title">
                     主要法域年审时间与规定
                 </div>
@@ -50,13 +50,13 @@
                         <div class="condition-item">资产风险：被除名的公司资产归政府所有，需恢复后方可处理。</div>
                     </div>
                 </div>
-            </div>
-            <div class="content4">
+            </AnimatedSection>
+            <AnimatedSection class="content4">
                 <div class="title">
                     年审办理流程
                 </div>
                 <div class="intro">
-                    <div v-for="(item, index) in registrationProcess" :key="index" class="advantage" :ref="el => { if (el) registrationProcessRefs[index] = el }">
+                    <div v-for="(item, index) in registrationProcess" :key="index" class="advantage">
                         <div class="img">
                             <svg class="icon" aria-hidden="true">
                                 <use :xlink:href="item.iconId"></use> 
@@ -70,8 +70,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="content5">
+            </AnimatedSection>
+            <AnimatedSection class="content5">
                 <div class="title">
                     我们的服务优势
                 </div>
@@ -88,8 +88,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="content6">
+            </AnimatedSection>
+            <AnimatedSection class="content6">
                 <div class="title">
                     海外年审常见问题
                 </div>
@@ -114,18 +114,17 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </AnimatedSection>
         </div>
     </div>
 </template>
 
 <script setup>
-import { ref, onMounted, nextTick } from 'vue'
-import gsap from 'gsap'
-import ScrollTrigger from 'gsap/ScrollTrigger'
+import { ref } from 'vue'
 import '@/css/secretary/overseas_annual/TaxOv_content2.css'
 
-gsap.registerPlugin(ScrollTrigger)
+import AnimatedSection from '@/components/common/AnimatedSection.vue'
+import '@/css/common/service-content.css'
 
 const registrationProcess = [
     {
@@ -235,205 +234,4 @@ const toggleFaq = (index) => {
     expandedItems.value[index] = !expandedItems.value[index]
 }
 
-const advantageRefs = ref([])
-const registrationProcessRefs = ref([])
-
-onMounted(async () => {
-    await nextTick()
-    
-    // content1 动画
-    gsap.from('.content1 .title', {
-        scrollTrigger: {
-            trigger: '.content1 .title',
-            start: 'top 90%'
-        },
-        opacity: 0,
-        y: 50,
-        duration: 0.8,
-        ease: 'power2.out'
-    })
-
-    gsap.from('.content1 .intro', {
-        scrollTrigger: {
-            trigger: '.content1 .intro',
-            start: 'top 80%'
-        },
-        opacity: 0,
-        y: 50,
-        duration: 0.8,
-        delay: 0.2,
-        ease: 'power2.out'
-    })
-
-    // content2 动画
-    gsap.from('.content2 .title', {
-        scrollTrigger: {
-            trigger: '.content2 .title',
-            start: 'top 80%'
-        },
-        opacity: 0,
-        y: 50,
-        duration: 0.8,
-        ease: 'power2.out'
-    })
-
-    // 为每个优势项添加动画
-    advantageRefs.value.forEach((el, index) => {
-        gsap.fromTo(el,
-            { 
-                opacity: 0, 
-                y: 50
-            },
-            {
-                opacity: 1,
-                y: 0,
-                duration: 0.6,
-                delay: index * 0.1,
-                ease: 'power2.out',
-                scrollTrigger: {
-                    trigger: '.content2 .intro',
-                    start: 'top 80%'
-                }
-            }
-        )
-    })
-
-    // content3 动画
-    gsap.from('.content3 .title', {
-        scrollTrigger: {
-            trigger: '.content3 .title',
-            start: 'top 80%'
-        },
-        opacity: 0,
-        y: 50,
-        duration: 0.8
-    })
-
-    const conditionItems = document.querySelectorAll('.content3 .condition-item');
-    conditionItems.forEach((item, index) => {
-        gsap.fromTo(item,
-            { x: -50, opacity: 0, transition: 'none' },
-            { 
-                x: 0, 
-                opacity: 1, 
-                duration: 0.6, 
-                delay: index * 0.1,
-                ease: 'power2.out',
-                scrollTrigger: {
-                    trigger: '.content3 .intro',
-                    start: 'top 80%'  
-                },
-                onComplete: function() {
-                    gsap.set(item, { clearProps: "x,opacity,transition" })
-                }
-            }
-        );
-    });
-
-    // content4 动画
-    gsap.from('.content4 .title', {
-        scrollTrigger: {
-            trigger: '.content4 .title',
-            start: 'top 80%'
-        },
-        opacity: 0,
-        y: 50,
-        duration: 0.8,
-        ease: 'power2.out'
-    })
-
-    // 为每个注册流程项添加动画
-    registrationProcessRefs.value.forEach((el, index) => {
-        gsap.fromTo(el,
-            { 
-                opacity: 0, 
-                y: 50
-            },
-            {
-                opacity: 1,
-                y: 0,
-                duration: 0.6,
-                delay: index * 0.1,
-                ease: 'power2.out',
-                scrollTrigger: {
-                    trigger: '.content4 .intro',
-                    start: 'top 80%'
-                }
-            }
-        )
-    })
-
-    // content5 动画
-    gsap.from('.content5 .title', {
-        scrollTrigger: {
-            trigger: '.content5 .title',
-            start: 'top 80%'
-        },
-        opacity: 0,
-        y: 50,
-        duration: 0.8
-    })
-
-    const content5Advantages = document.querySelectorAll('.content5 .advantage');
-    content5Advantages.forEach((item, index) => {
-        gsap.fromTo(item,
-            { y: 50, opacity: 0, transition: 'none' },
-            { 
-                y: 0, 
-                opacity: 1, 
-                duration: 0.8, 
-                delay: index * 0.1,
-                ease: 'power2.out',
-                scrollTrigger: {
-                    trigger: '.content5 .intro',
-                    start: 'top 80%'
-                },
-                onComplete: function() {
-                    gsap.set(item, { clearProps: "y,opacity,transition" })
-                }
-            }
-        );
-    })
-
-    // content6 标题动画
-    gsap.fromTo('.content6 .title',
-        { y: 50, opacity: 0, transition: 'none' },
-        {
-            y: 0,
-            opacity: 1,
-            duration: 0.8,
-            ease: 'power2.out',
-            scrollTrigger: {
-                trigger: '.content6 .title',
-                start: 'top 80%'
-            },
-            onComplete: function() {
-                gsap.set('.content6 .title', { clearProps: "y,opacity,transition" })
-            }
-        }
-    );
-
-    // content6 常见问题动画
-    const faqItems = document.querySelectorAll('.content6 .faq-item');
-    faqItems.forEach((item, index) => {
-        // FAQ项进入动画
-        gsap.fromTo(item,
-            { y: 30, opacity: 0, transition: 'none' },
-            { 
-                y: 0, 
-                opacity: 1, 
-                duration: 0.6, 
-                delay: index * 0.1,
-                ease: 'power2.out',
-                scrollTrigger: {
-                    trigger: '.content6 .intro',
-                    start: 'top 85%'
-                },
-                onComplete: function() {
-                    gsap.set(item, { clearProps: "y,opacity,transition" })
-                }
-            }
-        );
-    });
-})
 </script>

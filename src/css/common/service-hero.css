@@ -45,3 +45,83 @@
     width: 88%;
   }
 }
+
+/* The shared detail hero grows with translated content instead of clipping it. */
+.service-hero.service-detail-hero {
+  height: auto;
+  min-height: 400px;
+}
+
+.service-detail-hero .img_box {
+  inset: 0;
+}
+
+.service-detail-hero .intro {
+  position: relative;
+  inset: auto;
+  width: 100%;
+  min-height: 400px;
+  padding: 56px 10%;
+  box-sizing: border-box;
+  gap: 12px;
+  overflow-wrap: anywhere;
+}
+
+.service-detail-hero .service-hero-title {
+  margin: 0 0 8px;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.service-detail-hero .service-hero-subtitle {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.service-detail-hero .service-hero-description {
+  max-width: 800px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.service-detail-hero .service-hero-description p {
+  margin: 0;
+}
+
+.service-detail-hero .service-hero-description p + p {
+  margin-top: 12px;
+}
+
+.service-detail-hero--english .service-hero-title { font-size: 36px; }
+.service-detail-hero--english .service-hero-subtitle { font-size: 20px; }
+.service-detail-hero--english .service-hero-description { font-size: 16px; }
+
+.service-detail-hero .service-hero-contact {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid currentColor;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+}
+
+.service-detail-hero .service-hero-contact:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 4px;
+}
+
+@media (max-width: 768px) {
+  .service-hero.service-detail-hero { min-height: 320px; }
+  .service-detail-hero .intro {
+    min-height: 320px;
+    padding: 40px 6%;
+  }
+  .service-detail-hero .service-hero-title { font-size: 28px; }
+  .service-detail-hero--english .service-hero-title { font-size: 24px; }
+  .service-detail-hero .service-hero-subtitle { font-size: 18px; }
+  .service-detail-hero .service-hero-description { font-size: 16px; }
+}

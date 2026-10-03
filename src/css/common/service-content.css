@@ -53,35 +53,35 @@
 }
 
 @media (max-width: 768px) {
-  .service-content:is(.msb_content2, .constructions_content2) .content_box > div {
+  .service-content:is(.msb_content2, .constructions_content2, .ov_content2) .content_box > div {
     height: auto;
     min-height: 0;
     margin: 32px 0;
   }
 
-  .service-content:is(.msb_content2, .constructions_content2) .content_box .intro {
+  .service-content:is(.msb_content2, .constructions_content2, .ov_content2) .content_box .intro {
     width: calc(100% - 24px);
     flex-direction: column;
     gap: 16px;
     box-sizing: border-box;
   }
 
-  .service-content:is(.msb_content2, .constructions_content2) .content_box .intro > img {
+  .service-content:is(.msb_content2, .constructions_content2, .ov_content2) .content_box .intro > img {
     width: min(250px, 100%);
     height: auto;
     margin: 0;
   }
 
-  .service-content:is(.msb_content2, .constructions_content2) .content_box .intro .text {
+  .service-content:is(.msb_content2, .constructions_content2, .ov_content2) .content_box .intro .text {
     min-width: 0;
     padding: 0 16px;
     overflow-wrap: anywhere;
   }
 
-  .service-content:is(.msb_content2, .constructions_content2) .content_box .intro .left,
-  .service-content:is(.msb_content2, .constructions_content2) .content_box .intro .right,
-  .service-content:is(.msb_content2, .constructions_content2) .content_box .intro .advantage,
-  .service-content:is(.msb_content2, .constructions_content2) .content_box .intro .condition-item {
+  .service-content:is(.msb_content2, .constructions_content2, .ov_content2) .content_box .intro .left,
+  .service-content:is(.msb_content2, .constructions_content2, .ov_content2) .content_box .intro .right,
+  .service-content:is(.msb_content2, .constructions_content2, .ov_content2) .content_box .intro .advantage,
+  .service-content:is(.msb_content2, .constructions_content2, .ov_content2) .content_box .intro .condition-item {
     width: 100%;
     min-width: 0;
     height: auto;
@@ -89,12 +89,12 @@
     overflow-wrap: anywhere;
   }
 
-  .service-content:is(.msb_content2, .constructions_content2) .content_box .intro .advantage {
+  .service-content:is(.msb_content2, .constructions_content2, .ov_content2) .content_box .intro .advantage {
     margin: 12px 0;
     padding: 20px 0;
   }
 
-  .service-content:is(.msb_content2, .constructions_content2) .content_box .intro .center {
+  .service-content:is(.msb_content2, .constructions_content2, .ov_content2) .content_box .intro .center {
     display: none;
   }
 }

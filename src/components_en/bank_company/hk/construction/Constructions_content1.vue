@@ -1,20 +1,19 @@
 <template>
-    <AnimatedSection class="service-hero constructions_content1">
-        <div class="img_box">
-            <img loading="lazy" src="@/assets/img/company/jp/JP.jpg" alt="">
-        </div>
-        <div class="intro">
-            <div class="title">China Construction Bank (Asia)</div>
-            <div class="subtitle">Account Opening Service: Comprehensive Guide for Corporate and Personal Accounts, Advantages, Document Checklist, Process, and FAQs</div>
-            <div class="description">
-                <p>Fast VIP scheduling for account opening with full professional guidance, oral coaching before interviews, guaranteed quality and brand, successful account opening ensured or a full refund.</p>
-            </div>
-        </div>
-    </AnimatedSection>
+  <ServiceHero class="constructions_content1" v-bind="hero" />
 </template>
 
 <script setup>
-import '@/css_en/bank_company/hk/construction/Constructions_content1.css'
-import '@/css_en/common/service-hero.css'
-import AnimatedSection from '@/components_en/common/AnimatedSection.vue'
+import ServiceHero from '@/components/common/ServiceHero.vue'
+import heroImage from '@/assets/img/company/jp/JP.jpg'
+
+const hero = {
+  "title": "China Construction Bank (Asia)",
+  "subtitle": "Account Opening Service: Comprehensive Guide for Corporate and Personal Accounts, Advantages, Document Checklist, Process, and FAQs",
+  "description": [
+    "Fast VIP scheduling for account opening with full professional guidance, oral coaching before interviews, guaranteed quality and brand, successful account opening ensured or a full refund."
+  ],
+  "imageAlt": "",
+  "language": "en",
+  heroImage,
+}
 </script>

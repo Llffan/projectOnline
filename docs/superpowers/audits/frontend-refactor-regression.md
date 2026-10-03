@@ -89,3 +89,15 @@ After the bank mobile corrections, all 24 combinations of six core routes and fo
 - Browser interaction verified slide 1 -> slide 2 using the arrow, then slide 2 -> slide 1 using a mouse drag. Reduced-motion reload returned heading opacity 1; eight homepage visits produced no pageerror events.
 - Screenshot: output/playwright/home-en-390-hero.png. Production build passed; the existing removeViewBox optimizer warning remains.
 - Corrected the plan's nonexistent company and English secretary route examples to the routes in the router. Full navigation/history regression and service template data fields remain pending.
+
+### Shared service hero and overseas annual-review content (2026-10-04)
+
+- Added ServiceHero with title, subtitle, heroImage, description paragraphs, imageAlt and language fields. It accepts optional contactLabel/contactRoute; existing pages keep their contact navigation unchanged. Uses the canonical AnimatedSection and CSS rather than a duplicated English component.
+- Migrated 12 Chinese/English heroes: Construction Bank, Hong Kong personal accounts, MSB, Hong Kong annual review, overseas annual review and tax filing. Script comparison against the previous Git version confirmed all 12 titles, subtitles, paragraphs and image paths were preserved.
+- Removed ten unreferenced hero stylesheets. Shared styles retain language-dependent font sizes, introduce semantic h1 headings and allow hero height to grow with long translations.
+- 48 route/width combinations (12 routes x 1440/1024/768/390px) showed no hero content overflow or clipping. Overseas annual-review body overflow was separately detected at 390px (583px Chinese / 664px English document width) and then corrected.
+- Overseas annual-review content now uses shared section-container/title/mobile rules and six managed AnimatedSection wrappers. Removed unmanaged GSAP selectors, refs and handlers; FAQ state and business data remain.
+- After correction, eight overseas annual-review route/width checks returned document width equal to viewport width and no internal overflow for .content_box, .intro, .text, .title or .advantage. FAQ class changed from faq-answer to faq-answer expanded and back; no pageerror events occurred.
+- Screenshot: output/playwright/service-overseas-en-390-content.png. Production build passed after the CSS deletions and content migration; pre-existing removeViewBox warnings remain.
+- Task 5 Step 1 is still incomplete: the sections[{title, body, image, reversed}] schema and its real page consumers remain to be implemented. The hero portion is implemented, but this does not establish completion of the full template or global regression.
+- Additional runtime checks: all 12 heroes returned opacity 1 in reduced-motion mode; a Vue Router transition from English personal accounts to overseas annual review and browser Back restored the personal-account heading with opacity 1 and no pageerror events.
