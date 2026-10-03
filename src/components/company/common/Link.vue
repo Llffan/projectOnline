@@ -162,4 +162,5 @@ onMounted(() => {
   selectedRegionId.value = activeRegion.value
 })
 
+import '@/css/common/link-layout.css'
 </script>

@@ -140,4 +140,5 @@ onMounted(() => {
   selectedCategoryId.value = activeCategory.value
 })
 
+import '@/css_en/common/link-layout.css'
 </script>
