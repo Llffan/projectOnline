@@ -10,15 +10,24 @@
   </div></div>
 </template>
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted, nextTick } from 'vue'
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
 import '@/css_en/bank_company/hk/construction/Constructions_content2.css'
 import MaintenanceGuide from '@/components_en/bank_company/common/MaintenanceGuide.vue'
 import ChooseUs from '@/components_en/bank_company/common/ChooseUs.vue'
 import PersonalBanks from '@/components_en/bank_personal/hk/Personal_Banks.vue'
+gsap.registerPlugin(ScrollTrigger)
 const advantages = [{iconId:'#icon-finance',title:'Multi-currency banking',description:'Manage HKD, RMB, USD and other currencies according to the bank and account type.'},{iconId:'#icon-bank-line',title:'Cross-border payments',description:'Support compliant tuition, property, insurance and personal living expenses.'},{iconId:'#icon-airplane',title:'International access',description:'Manage funds through online banking, cards and remittance services.'},{iconId:'#icon-folder-success-one',title:'Wealth planning',description:'Build a compliant banking foundation for personal wealth management.'}]
 const requirements = ['Valid Mainland Chinese identity card','Hong Kong and Macau travel permit or passport','Entry record or landing slip','Proof of address or valid correspondence details','Tax residency self-certification','Source of funds, occupation and account purpose']
 const processes = [{iconId:'#icon-agreement',title:'Consultation',description:'Review identity, purpose, source of funds and bank preferences.'},{iconId:'#icon-notes',title:'Document review',description:'Prepare and supplement documents required by the selected bank.'},{iconId:'#icon-city',title:'Branch appointment',description:'Book a Hong Kong branch appointment for in-person verification.'},{iconId:'#icon-audit',title:'Bank review',description:'The bank completes identity checks, due diligence and approval.'},{iconId:'#icon-award-line',title:'Account materials',description:'Receive account and card materials according to bank arrangements.'},{iconId:'#icon-folder-success-one',title:'Account activation',description:'Activate online banking and maintain the account as required.'}]
 const faqs = [{question:'Can Mainland residents apply for a Hong Kong personal account?',answer:'Some Hong Kong banks accept eligible Mainland residents. Acceptance and documents depend on the bank, customer profile and current policy.'},{question:'Is an in-person visit to Hong Kong required?',answer:'Most traditional banks require identity verification and an interview at a Hong Kong branch. The selected bank requirements apply.'},{question:'How long does account opening take?',answer:'Appointment availability and compliance review times vary by bank and document completeness. No fixed approval time can be guaranteed.'},{question:'How should the account be maintained?',answer:'Keep reasonable activity, respond to bank reviews promptly, maintain valid contact details and retain evidence of source of funds and transaction purpose.'}]
 const expandedItems = ref({})
 const toggleFaq = index => { expandedItems.value[index] = !expandedItems.value[index] }
+
+onMounted(async () => {
+  await nextTick()
+  const sections = ['.constructions_content2 .content1', '.constructions_content2 .content2', '.constructions_content2 .content3', '.constructions_content2 .content4', '.constructions_content2 .content5', '.content_bank', '.constructions_content2 .content6']
+  sections.forEach(section => gsap.from(section, { autoAlpha: 0, y: 50, duration: 0.8, ease: 'power2.out', scrollTrigger: { trigger: section, start: 'top 85%', once: true } }))
+})
 </script>
