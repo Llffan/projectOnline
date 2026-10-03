@@ -50,3 +50,15 @@ Measured actual browser viewport widths with Playwright, including nested conten
 - Removed duplicate root, card, and title rules from six MSB, annual-review, and tax-filing CSS files. English 28px headings remain through a custom property.
 - Fixed MSB mobile content stacking, condition-card box sizing, image sizing, and long-text wrapping. Before correction, the English 390px content card had client width 366px and scroll width 612px; after correction no measured internal overflow remained.
 - Company-account content overflow still requires correction. Screenshots and interaction checks remain pending; these measurements do not constitute full visual acceptance.
+
+### Bank content follow-up verification
+
+After the bank mobile corrections, all 24 combinations of six core routes and four viewport widths returned rendered service content with no measured horizontal overflow in `.content_box`, `.intro`, `.text`, and `.title`.
+
+- Routes: `/bank/hk/constructions`, `/en/bank/hk/constructions`, `/bank/hk/personal`, `/en/bank/hk/personal`, `/secretary/hk-msb`, `/secretary_en/hk-msb`.
+- Widths: 1440, 1024, 768, 390px.
+- Removed duplicated Construction Bank content container/title declarations, and migrated both personal-account content roots to shared service styles because they reuse the bank CSS.
+- Fixed mobile grid stacking, image margins, card sizing, and specificity conflicts; account-maintenance and service-advantage cards use one column on small screens.
+- Fixed GSAP context scope in both AnimatedSection components to pass the DOM element (`root.value`). A real scroll traversal confirmed personal-page content visibility and opacity 1.
+- Latest build exited 0. Earlier invalid-scope warnings were corrected; an external jsDelivr font request failed once during verification.
+- This supersedes the bank overflow failures above. Full homepage migration, visual/interaction acceptance for every planned page, and template-field work remain incomplete.

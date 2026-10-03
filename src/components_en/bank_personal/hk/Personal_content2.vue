@@ -1,5 +1,5 @@
 <template>
-  <div class="constructions_content2"><AnimatedSection class="content_box">
+  <div class="service-content constructions_content2"><AnimatedSection class="content_box">
     <div class="content1"><div class="title">Hong Kong Personal Bank Accounts</div><div class="intro"><img loading="lazy" src="@/assets/img/account/香港.png" alt="Hong Kong personal bank account"><div class="text"><p>Hong Kong personal bank accounts can support overseas study, property purchases, investment, immigration and cross-border living expenses. Multi-currency banking, online banking, cards and remittance services depend on the bank and account type. Final requirements and approval remain subject to bank review.</p></div></div></div>
     <div class="content2"><div class="title">Benefits of a Hong Kong Personal Account</div><div class="intro"><div v-for="item in advantages" :key="item.title" class="advantage"><div class="img"><svg class="icon" aria-hidden="true"><use :xlink:href="item.iconId"></use></svg></div><div class="text1">{{ item.title }}</div><div class="text2">{{ item.description }}</div></div></div></div>
     <div class="content3"><div class="title">Common Documents for Personal Account Opening</div><div class="intro"><div class="left"><div v-for="item in requirements.slice(0,3)" :key="item" class="condition-item">{{ item }}</div></div><div class="center"></div><div class="right"><div v-for="item in requirements.slice(3)" :key="item" class="condition-item">{{ item }}</div></div></div></div>
@@ -23,4 +23,5 @@ const faqs = [{question:'Can Mainland residents apply for a Hong Kong personal a
 const expandedItems = ref({})
 const toggleFaq = index => { expandedItems.value[index] = !expandedItems.value[index] }
 
+import '@/css_en/common/service-content.css'
 </script>

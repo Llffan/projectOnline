@@ -1,5 +1,5 @@
 <template>
-  <div class="constructions_content2"><AnimatedSection class="content_box">
+  <div class="service-content constructions_content2"><AnimatedSection class="content_box">
     <div class="content1"><div class="title">香港个人银行账户简介</div><div class="intro"><img loading="lazy" src="@/assets/img/account/香港.png" alt="香港个人银行账户"><div class="text"><p>香港个人银行账户适合海外留学、置业、投资、移民及跨境生活支出等场景。账户通常可提供多币种资金管理、网上银行、银行卡和跨境汇款服务，具体功能、开户条件和审批结果以银行最终审核为准。</p></div></div></div>
     <div class="content2"><div class="title">香港个人账户开户优势</div><div class="intro"><div v-for="item in advantages" :key="item.title" class="advantage"><div class="img"><svg class="icon" aria-hidden="true"><use :xlink:href="item.iconId"></use></svg></div><div class="text1">{{ item.title }}</div><div class="text2">{{ item.description }}</div></div></div></div>
     <div class="content3"><div class="title">个人开户常用资料</div><div class="intro"><div class="left"><div v-for="item in requirements.slice(0,3)" :key="item" class="condition-item">{{ item }}</div></div><div class="center"></div><div class="right"><div v-for="item in requirements.slice(3)" :key="item" class="condition-item">{{ item }}</div></div></div></div>
@@ -24,4 +24,5 @@ const faqs = [{question:'内地居民可以申请香港个人银行账户吗？'
 const expandedItems = ref({})
 const toggleFaq = index => { expandedItems.value[index] = !expandedItems.value[index] }
 
+import '@/css/common/service-content.css'
 </script>

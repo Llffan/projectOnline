@@ -13,7 +13,7 @@ onMounted(() => {
   gsap.registerPlugin(ScrollTrigger)
   context = gsap.context(() => {
     gsap.from(root.value, { autoAlpha: 0, y: props.y, duration: props.duration, ease: 'power2.out', scrollTrigger: { trigger: root.value, start: 'top 85%', once: props.once } })
-  }, root)
+  }, root.value)
 })
 onBeforeUnmount(() => context?.revert())
 </script>

@@ -53,35 +53,35 @@
 }
 
 @media (max-width: 768px) {
-  .service-content.msb_content2 .content_box > div {
+  .service-content:is(.msb_content2, .constructions_content2) .content_box > div {
     height: auto;
     min-height: 0;
     margin: 32px 0;
   }
 
-  .service-content.msb_content2 .content_box .intro {
+  .service-content:is(.msb_content2, .constructions_content2) .content_box .intro {
     width: calc(100% - 24px);
     flex-direction: column;
     gap: 16px;
     box-sizing: border-box;
   }
 
-  .service-content.msb_content2 .intro > img {
+  .service-content:is(.msb_content2, .constructions_content2) .content_box .intro > img {
     width: min(250px, 100%);
     height: auto;
     margin: 0;
   }
 
-  .service-content.msb_content2 .intro .text {
+  .service-content:is(.msb_content2, .constructions_content2) .content_box .intro .text {
     min-width: 0;
     padding: 0 16px;
     overflow-wrap: anywhere;
   }
 
-  .service-content.msb_content2 .intro .left,
-  .service-content.msb_content2 .intro .right,
-  .service-content.msb_content2 .intro .advantage,
-  .service-content.msb_content2 .intro .condition-item {
+  .service-content:is(.msb_content2, .constructions_content2) .content_box .intro .left,
+  .service-content:is(.msb_content2, .constructions_content2) .content_box .intro .right,
+  .service-content:is(.msb_content2, .constructions_content2) .content_box .intro .advantage,
+  .service-content:is(.msb_content2, .constructions_content2) .content_box .intro .condition-item {
     width: 100%;
     min-width: 0;
     height: auto;
@@ -89,12 +89,43 @@
     overflow-wrap: anywhere;
   }
 
-  .service-content.msb_content2 .intro .advantage {
+  .service-content:is(.msb_content2, .constructions_content2) .content_box .intro .advantage {
     margin: 12px 0;
     padding: 20px 0;
   }
 
-  .service-content.msb_content2 .intro .center {
+  .service-content:is(.msb_content2, .constructions_content2) .content_box .intro .center {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-content.constructions_content2 .content2 .intro,
+  .service-content.constructions_content2 .content4 .intro {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .service-content.constructions_content2 .content_box .content1 .intro > img {
+    width: min(250px, 100%);
+    height: auto;
+    margin: 0;
+  }
+
+  .service-content.constructions_content2 .content_box .content1 .intro .text {
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 16px;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-content.constructions_content2 .choose_us .intro,
+  .service-content.constructions_content2 .maintenance_guide .materials-grid {
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr);
   }
 }
