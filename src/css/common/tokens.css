@@ -1,6 +1,6 @@
 :root {
   --site-max-width: 1200px;
-  --site-wide-max-width: 2000px;
+  --site-wide-max-width: var(--site-wide-max-width, 2000px);
   --site-gutter: 24px;
   --site-gutter-mobile: 16px;
   --section-gap: 96px;
