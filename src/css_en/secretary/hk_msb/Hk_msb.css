@@ -1,7 +1,1 @@
-.msb_box {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+/* Page shell styles are centralized in common/service-layout.css. */

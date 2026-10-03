@@ -1,6 +1,6 @@
 <template>
     <!-- 香港税务 -->
-    <ServicePageLayout class="hk_tax_box">
+    <ServicePageLayout>
         <template #hero><TaxHkContent1 /></template>
         <template #content><TaxHkContent2 /></template>
     </ServicePageLayout>

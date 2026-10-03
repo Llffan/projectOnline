@@ -11,4 +11,5 @@
 import Top from '@/components_en/common/Top.vue'
 import Link from '@/components_en/secretary/common/Link.vue'
 import Bottom1 from '@/components_en/homeView/bottom/Bottom1.vue'
+import '@/css_en/common/service-layout.css'
 </script>
