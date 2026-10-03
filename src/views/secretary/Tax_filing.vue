@@ -1,19 +1,14 @@
 <template>
-  <div class="tax-filing-page">
-    <Top />
-    <Tax_filing_content1 />
-    <Link />
-    <Tax_filing_content2 />
-    <Bottom1 />
-  </div>
+  <ServicePageLayout class="tax-filing-page">
+    <template #hero><Tax_filing_content1 /></template>
+    <template #content><Tax_filing_content2 /></template>
+  </ServicePageLayout>
 </template>
 
 <script setup>
-import Top from '@/components/common/Top.vue'
-import Link from '@/components/secretary/common/Link.vue'
-import Bottom1 from '@/components/homeView/bottom/Bottom1.vue'
 import Tax_filing_content1 from '@/components/secretary/tax_filing/Tax_filing_content1.vue'
 import Tax_filing_content2 from '@/components/secretary/tax_filing/Tax_filing_content2.vue'
+import ServicePageLayout from '@/components/secretary/common/ServicePageLayout.vue'
 </script>
 
 <style scoped>

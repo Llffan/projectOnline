@@ -348,7 +348,7 @@ refactor: extract shared content sections and motion
 
 先迁移与个人开户结构最接近的香港公司开户页面，确保公司开户原有加载动画与个人开户保持相同入口和清理逻辑。
 
-- [ ] **Step 3: 迁移秘书服务高频页面**
+- [x] **Step 3: 迁移秘书服务高频页面**
 
 按访问频率迁移香港秘书、税务申报、海外年审等页面；每迁移一类服务保留旧 URL，不改变页面元信息和主要文案。
 
@@ -447,6 +447,7 @@ chore: remove migrated frontend duplication and record regression checks
 - `npm run build` 成功。
 - 迁移页面不再依赖会导致小屏溢出的固定容器宽度。
 - 每个迁移阶段有独立提交和可回滚边界。
+
 
 
 
