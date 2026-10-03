@@ -30,3 +30,4 @@ At the available browser viewport (1280px), all four routes reported `document.b
 - Replaced 42 repeated `max-width: 2000px` declarations in country pages with `var(--site-wide-max-width, 2000px)`.
 - Kept dropdown minimum widths and image/content maximum widths where they describe desktop presentation; mobile dropdown rules already override them.
 - Added mobile stacking and minimum-width resets to the tax-planning and domestic-trademark form layouts.
+- Added shared mobile Link navigation rules for all Chinese and English service Link components; desktop language-specific styles remain in their existing files.
