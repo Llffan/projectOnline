@@ -388,7 +388,7 @@ refactor: migrate core service pages to shared templates
 - Produces: 旧重复样式清理记录、页面回归清单和最终构建结果。
 - Consumes: 前五个任务已经迁移的页面组。
 
-- [ ] **Step 1: 扫描未迁移的固定布局**
+- [x] **Step 1: 扫描未迁移的固定布局**
 
 运行：
 

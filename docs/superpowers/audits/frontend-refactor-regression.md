@@ -23,3 +23,10 @@ At the available browser viewport (1280px), all four routes reported `document.b
 ### Follow-up
 
 - Repeat the same route checks at 1440px, 1024px, 768px, and 390px using a viewport-capable browser runner before marking the page-group regression step complete.
+
+### Fixed-layout scan
+
+- Scanned `src/css` and `src/css_en` for fixed minimum widths, oversized widths, and large positional offsets.
+- Replaced 42 repeated `max-width: 2000px` declarations in country pages with `var(--site-wide-max-width, 2000px)`.
+- Kept dropdown minimum widths and image/content maximum widths where they describe desktop presentation; mobile dropdown rules already override them.
+- Added mobile stacking and minimum-width resets to the tax-planning and domestic-trademark form layouts.
