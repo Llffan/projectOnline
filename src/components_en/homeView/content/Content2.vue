@@ -1,13 +1,13 @@
 <template>
     <!-- 业务介绍 -->
-    <div class="content2" ref="content2Ref">
+    <AnimatedSection class="content2">
         <div class="register_company">
             <div class="company_intro">
-                <SectionHeading ref="titleRef" title="Global Company Registration" subtitle="Offshore Company Registration" />
-                <div class="intro" ref="introRef">
+                <SectionHeading title="Global Company Registration" subtitle="Offshore Company Registration" />
+                <div class="intro">
                     In today's global economic integration, registering an overseas company is a crucial way for enterprises to go international and enhance their brand image.
                 </div>
-                <div class="button1" ref="bottonRef">
+                <div class="button1">
                     <button class="btn_l" type="button" @click="handlePrev" :disabled="currentIndex === 0">&lt;</button>
                     <button class="btn_2" type="button" @click="handleNext" :disabled="currentIndex === totalPages - 1">&gt;</button>
                 </div>
@@ -16,9 +16,9 @@
                 <div class="block text-center" m="t-4">
                     <el-carousel ref="companyCarousel" trigger="click" :autoplay="false" indicator-position="none" arrow="never" height="400px" @change="onCarouselChange">
                         <el-carousel-item v-for="(group, idx) in displayCompanies" :key="idx">
-                            <div class="card-group" ref="cardRef">
+                            <div class="card-group">
                                 <FeatureCard class="company-card" v-for="(item, i) in group" :key="i" :to="item.path" :style="{ backgroundImage: `url(${item.img})`}">
-                                    <div class="company-card-body" :ref="el => setCardBodyRef(el, idx, i)">
+                                    <div class="company-card-body">
                                         <div class="card-content">
                                             <div class="card-title">{{ item.name }}</div>
                                             <div class="card-desc">{{ item.description }}</div>
@@ -34,7 +34,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </AnimatedSection>
 </template>
 
 <script setup> 
@@ -42,7 +42,7 @@ import '@/css_en/homeView/content/Content2.css'
 import { useRouter } from 'vue-router'
 import { ref, onMounted } from 'vue'
 import { computed } from 'vue'
-import gsap from 'gsap'
+import AnimatedSection from '@/components_en/common/AnimatedSection.vue'
 import SectionHeading from '@/components_en/common/SectionHeading.vue'
 import FeatureCard from '@/components_en/common/FeatureCard.vue'
 
@@ -88,87 +88,7 @@ const displayCompanies = computed(() => {
   return arr
 })
 
-// 挂载动画
-const titleRef = ref(null)
-const introRef = ref(null)
-const content2Ref = ref(null)
-const bottonRef = ref(null)
-const cardRef = ref(null)
-// 用于存储所有 company-card-body 的 refs
-const cardBodyRefs = ref([])
-
-function setCardBodyRef(el, groupIdx, cardIdx) {
-    if (!el) return
-    // 计算唯一索引
-    const idx = `${groupIdx}-${cardIdx}`
-    cardBodyRefs.value[idx] = el
-}
-
-onMounted(() => {
-    carouselInstance = companyCarousel.value
-    // 标题动画
-    const titleObserver = new window.IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-            titleObserver.unobserve(entries[0].target)
-            gsap.fromTo(titleRef.value,
-                { scale: 1.5, opacity: 0 },
-                { scale: 1, opacity: 1, duration: 1, delay: 0.15, ease: 'back.out' }
-            )
-        } else {
-            gsap.set(titleRef.value, { scale: 1.5, opacity: 0 })
-        }
-    })
-    if (titleRef.value) titleObserver.observe(titleRef.value)
-
-    // 介绍动画
-    const introObserver = new window.IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-            introObserver.unobserve(entries[0].target)
-            gsap.fromTo(introRef.value,
-                { opacity: 0, y: 50 },
-                { opacity: 1, y: 0, duration: 0.6, delay: 0.15, ease: 'back.out' }
-            )
-        } else {
-            gsap.set(introRef.value, { opacity: 0, y: 50 })
-        }
-    })
-    if (introRef.value) introObserver.observe(introRef.value)
-
-    // 按钮动画
-    const buttonObserver = new window.IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-            buttonObserver.unobserve(entries[0].target)
-            gsap.fromTo(bottonRef.value,
-                {opacity: 0, y: 50},
-                {opacity: 1, y: 0, duration: 0.6, delay: 0.15, ease: 'back.out' }
-            )
-        } else {
-            gsap.set(bottonRef.value,{opacity: 0, y: 50})
-        }
-    })
-    if (bottonRef.value) buttonObserver.observe(bottonRef.value)
-
-    // 每个 company-card-body 独立动画
-    setTimeout(() => {
-        Object.values(cardBodyRefs.value).forEach((el) => {
-            if (!el) return
-            const cardObserver = new window.IntersectionObserver((entries) => {
-                if (entries[0].isIntersecting) {
-                    gsap.fromTo(el,
-                        { opacity: 0, y: 220, transition: 'none' },
-                        { opacity: 1, y: 190, duration: 0.7, delay: 0.15, ease: 'power2.out', onComplete: function() {
-                            gsap.set(el, {clearProps: 'y,opacity,transition'})
-                        }}
-                    )
-                } else {
-                    gsap.set(el, {opacity: 0, y: 50})
-                }
-            })
-            cardObserver.observe(el)
-        })
-    }, 0)
-})
-
+onMounted(() => { carouselInstance = companyCarousel.value })
 
 const Companies = ref([
     {

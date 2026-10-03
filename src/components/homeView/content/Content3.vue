@@ -1,8 +1,8 @@
 <template>
-    <div class="content3" ref="content3Ref">
+    <div class="content3">
         <div class="account_opening">
             <!-- 银行类型 -->
-            <div class="account_type" ref="accountTypeRef">
+            <div class="account_type">
                 <img loading="lazy" class="back_img" src="@/assets/img/company/上海.png" alt="">
                 <div class="back_display">
                     <img loading="lazy" src="@/assets/img/bank/1.png" alt="">
@@ -20,24 +20,17 @@
                 </div>
             </div>
 
-            <div class="account_intro">
-                <div ref="titleRef">
-                    <div class="title">
-                        银行开户
-                    </div>
-                    <div class="title_en">
-                        Bank Account Opening Service
-                    </div>
-                </div>
-                <div class="intro" ref="introRef">
+            <AnimatedSection class="account_intro">
+                <SectionHeading title="银行开户" subtitle="Bank Account Opening Service" />
+                <div class="intro">
                     随着全球经济一体化，开设海外账户成为个人和企业进行全球资产配置的重要途径。
                 </div>
-            </div>
+            </AnimatedSection>
         </div>
         
         <!-- 开户 -->
-        <div class="account_body" ref="accountBodyRef">
-            <div v-for="(item, i) in account_body" :key="i" :ref="el => setAccountCardRef(el, i)" role="link" tabindex="0" @click="router.push(item.path)" @keydown.enter="router.push(item.path)" style="cursor: pointer;">
+        <div class="account_body">
+            <FeatureCard v-for="item in account_body" :key="item.path" :title="item.title" :to="item.path">
                 <div>
                     <img loading="lazy" :src="item.img" alt="">
                     <div>
@@ -50,108 +43,17 @@
                         <p>→</p>
                     </div>
                 </div>
-            </div>
+            </FeatureCard>
         </div>
     </div>
 </template>
 
 <script setup>
 import '@/css/homeView/content/Content3.css'
-import { useRouter } from 'vue-router'
-import { ref, onMounted } from 'vue'
-import gsap from 'gsap'
-
-const router = useRouter()
-
-const accountBodyRef = ref(null)
-const accountCardRefs = ref([])
-function setAccountCardRef(el, idx) {
-    if (!el) return
-    accountCardRefs.value[idx] = el
-}
-
-// 挂载动画
-const titleRef = ref(null)
-const titleEnRef = ref(null)
-const introRef = ref(null)
-const accountTypeRef = ref(null)
-
-onMounted(() => {
-    // 标题动画
-    const titleObserver = new window.IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-            titleObserver.unobserve(entries[0].target)
-            gsap.fromTo(titleRef.value,
-                { scale: 1.5, opacity: 0 },
-                { scale: 1, opacity: 1, duration: 1, delay: 0.15, ease: 'back.out' }
-            )
-        } else {
-            gsap.set(titleRef.value,{ scale: 1.5, opacity: 0 })
-        }
-    }, {
-        threshold: 0.3
-    })
-    if (titleRef.value) titleObserver.observe(titleRef.value)
-
-    // 介绍动画
-    const introObserver = new window.IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-            introObserver.unobserve(entries[0].target)
-            gsap.fromTo(introRef.value,
-                { opacity: 0.3, x: 100 },
-                { opacity: 1, x: 0, duration: 1, delay: 0.15, ease: 'back.out' }
-            )
-        } else {
-            gsap.set(introRef.value, { opacity: 0.3, x: 100 })
-        }
-    }, {
-        threshold: 0.3
-    })
-    if (introRef.value) introObserver.observe(introRef.value)
-
-    // 银行类型动画
-    const typeObserver = new window.IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-            // 先取消观察，确保只触发一次
-            typeObserver.unobserve(entries[0].target)
-
-            gsap.fromTo(accountTypeRef.value,
-                { opacity: 0, x: -100 },
-                { opacity: 1, x: 0, duration: 1, delay: 0.15, ease: 'back.out' }
-            )
-        } else {
-            gsap.set(accountTypeRef.value,{ opacity: 0, x: -100 })
-        }
-    }, {
-        threshold: 0.3
-    })
-    if (accountTypeRef.value) typeObserver.observe(accountTypeRef.value)
-
-    // 开户卡片依次浮现动画
-    const cardObserver = new window.IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-            // 先取消观察，确保只触发一次
-            cardObserver.unobserve(entries[0].target)
-
-            accountCardRefs.value.forEach((el, idx) => {
-                gsap.fromTo(el,
-                    { opacity: 0, y: 50, transition: 'none' },
-                    { opacity: 1, y: 0, duration: 0.5, ease: 'back.out', delay: idx * 0.2 + 0.3, onComplete: function() {
-                        gsap.set(el, {clearProps: 'y,opacity,transition'})
-                    }}
-                )
-            })
-        } else {
-            accountCardRefs.value.forEach((el, idx) => {
-                gsap.set(el, { opacity: 0, y: 50, transition: 'none' })
-            })
-        }
-    }, {
-        threshold: 0.3
-    })
-    if (accountBodyRef.value) cardObserver.observe(accountBodyRef.value)
-})
-
+import { ref } from 'vue'
+import AnimatedSection from '@/components/common/AnimatedSection.vue'
+import SectionHeading from '@/components/common/SectionHeading.vue'
+import FeatureCard from '@/components/common/FeatureCard.vue'
 
 const account_body = ref([
     {

@@ -62,3 +62,12 @@ After the bank mobile corrections, all 24 combinations of six core routes and fo
 - Fixed GSAP context scope in both AnimatedSection components to pass the DOM element (`root.value`). A real scroll traversal confirmed personal-page content visibility and opacity 1.
 - Latest build exited 0. Earlier invalid-scope warnings were corrected; an external jsDelivr font request failed once during verification.
 - This supersedes the bank overflow failures above. Full homepage migration, visual/interaction acceptance for every planned page, and template-field work remain incomplete.
+
+### Homepage registration and bank-section migration
+
+- Migrated Content3 in both languages to SectionHeading, FeatureCard, and AnimatedSection for its introduction; removed its unmanaged IntersectionObserver animation code.
+- Removed old Content2 observers that attempted to observe a Vue SectionHeading instance, causing a mounted-hook TypeError. Both languages now use AnimatedSection while preserving carousel initialization.
+- Fixed FeatureCard slot rendering to avoid generating an empty extra heading, and added keyboard focus/Enter navigation for linked cards.
+- At 390px, both homepages rendered four bank cards, no extra FeatureCard content heading, and body width equaled viewport width.
+- Keyboard Enter on the first bank card navigated from `/` to `/bank/hk/constructions` and from `/en` to `/en/bank/hk/constructions`; the test collected no pageerror events.
+- Latest production build exited 0. Content1, Content4, Content5 and full visual regression remain pending.
