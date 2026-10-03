@@ -1,5 +1,5 @@
-﻿<template>
-    <AnimatedSection class="constructions_content2">
+<template>
+    <AnimatedSection class="service-content constructions_content2">
         <div class="content_box">
             <!-- 1. 银行简介 & 开户形式 -->
             <div class="content1">
@@ -211,4 +211,5 @@ const toggleFaq = (index) => {
 
 
 
+import '@/css/common/service-content.css'
 </script>

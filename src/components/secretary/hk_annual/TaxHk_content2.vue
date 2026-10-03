@@ -1,5 +1,5 @@
 <template>
-    <div class="hk_content2">
+    <div class="service-content hk_content2">
         <div class="content_box">
             <div class="content1">
                 <div class="title">
@@ -438,4 +438,5 @@ onMounted(async () => {
         );
     });
 })
+import '@/css/common/service-content.css'
 </script>

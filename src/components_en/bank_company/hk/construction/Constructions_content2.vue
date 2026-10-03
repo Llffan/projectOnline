@@ -1,5 +1,5 @@
 <template>
-    <AnimatedSection class="constructions_content2">
+    <AnimatedSection class="service-content constructions_content2">
         <div class="content_box">
             <!-- 1. Bank Introduction & Account Opening Form -->
             <div class="content1">
@@ -205,4 +205,5 @@ const toggleFaq = (index) => {
     expandedItems.value[index] = !expandedItems.value[index]
 }
 
+import '@/css_en/common/service-content.css'
 </script>

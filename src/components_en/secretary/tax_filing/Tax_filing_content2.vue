@@ -1,5 +1,5 @@
 <template>
-    <div class="tax_filing_content2">
+    <div class="service-content tax_filing_content2">
         <div class="content_box">
             
             <!-- 1. Shizhoutong professional tax services -->
@@ -207,4 +207,5 @@ onMounted(async () => {
         })
     })
 })
+import '@/css_en/common/service-content.css'
 </script>

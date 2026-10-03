@@ -1,5 +1,5 @@
 <template>
-    <AnimatedSection class="msb_content2">
+    <AnimatedSection class="service-content msb_content2">
         <div class="content_box">
             <div class="content1">
                 <div class="title">
@@ -234,6 +234,7 @@ const toggleFaq = (index) => {
 
 const advantageRefs = ref([])
 const registrationProcessRefs = ref([])
+import '@/css_en/common/service-content.css'
 </script>
 
 
