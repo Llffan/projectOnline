@@ -19,45 +19,45 @@
                         <div class="region-group" :class="{ 'active-region': activeRegion === 'east-asia' }">
                             <div class="region-title">东亚公司注册</div>
                             <div class="region-countries menu-company-countries">
-                                <router-link to="/company/jp">日本公司注册</router-link>
-                                <router-link to="/company/kr">韩国公司注册</router-link>
-                                <router-link to="/company/hk">中国香港公司注册</router-link>
-                                <router-link to="/company/mo">中国澳门公司注册</router-link>
+                                <SubmenuLink to="/company/jp">日本公司注册</SubmenuLink>
+                                <SubmenuLink to="/company/kr">韩国公司注册</SubmenuLink>
+                                <SubmenuLink to="/company/hk">中国香港公司注册</SubmenuLink>
+                                <SubmenuLink to="/company/mo">中国澳门公司注册</SubmenuLink>
                             </div>
                         </div>
                         <div class="region-group" :class="{ 'active-region': activeRegion === 'southeast-asia' }">
                             <div class="region-title">东南亚公司注册</div>
                             <div class="region-countries menu-company-countries">
-                                <router-link to="/company/vn">越南公司注册</router-link>
-                                <router-link to="/company/th">泰国公司注册</router-link>
-                                <router-link to="/company/my">马来西亚公司注册</router-link>
-                                <router-link to="/company/id">印度尼西亚公司注册</router-link>
-                                <router-link to="/company/sg">新加坡公司注册</router-link>
+                                <SubmenuLink to="/company/vn">越南公司注册</SubmenuLink>
+                                <SubmenuLink to="/company/th">泰国公司注册</SubmenuLink>
+                                <SubmenuLink to="/company/my">马来西亚公司注册</SubmenuLink>
+                                <SubmenuLink to="/company/id">印度尼西亚公司注册</SubmenuLink>
+                                <SubmenuLink to="/company/sg">新加坡公司注册</SubmenuLink>
                             </div>
                         </div>
                         <div class="region-group" :class="{ 'active-region': activeRegion === 'north-america' }">
                             <div class="region-title">北美公司注册</div>
                             <div class="region-countries menu-company-countries">
-                                <router-link to="/company/us">美国公司注册</router-link>
-                                <router-link to="/company/ca">加拿大公司注册</router-link>
+                                <SubmenuLink to="/company/us">美国公司注册</SubmenuLink>
+                                <SubmenuLink to="/company/ca">加拿大公司注册</SubmenuLink>
                             </div>
                         </div>
                         <div class="region-group" :class="{ 'active-region': activeRegion === 'europe' }">
                             <div class="region-title">欧洲公司注册</div>
                             <div class="region-countries menu-company-countries">
-                                <router-link to="/company/uk">英国公司注册</router-link>
-                                <router-link to="/company/de">德国公司注册</router-link>
-                                <router-link to="/company/fr">法国公司注册</router-link>
+                                <SubmenuLink to="/company/uk">英国公司注册</SubmenuLink>
+                                <SubmenuLink to="/company/de">德国公司注册</SubmenuLink>
+                                <SubmenuLink to="/company/fr">法国公司注册</SubmenuLink>
                             </div>
                         </div>
                         <div class="region-group" :class="{ 'active-region': activeRegion === 'offshore' }">
                             <div class="region-title">群岛公司注册</div>
                             <div class="region-countries menu-company-countries">
-                                <router-link to="/company/bvi">BVI公司注册</router-link>
-                                <router-link to="/company/ky">开曼公司注册</router-link>
-                                <router-link to="/company/sc">塞舌尔公司注册</router-link>
-                                <router-link to="/company/mh">马绍尔公司注册</router-link>
-                                <router-link to="/company/ws">萨摩亚公司注册</router-link>
+                                <SubmenuLink to="/company/bvi">BVI公司注册</SubmenuLink>
+                                <SubmenuLink to="/company/ky">开曼公司注册</SubmenuLink>
+                                <SubmenuLink to="/company/sc">塞舌尔公司注册</SubmenuLink>
+                                <SubmenuLink to="/company/mh">马绍尔公司注册</SubmenuLink>
+                                <SubmenuLink to="/company/ws">萨摩亚公司注册</SubmenuLink>
                             </div>
                         </div>
                     </div>
@@ -68,33 +68,33 @@
                         <div class="region-group">
                             <div class="region-title">公司年审服务</div>
                             <div class="region-countries menu-secretary-countries">
-                                <router-link to="/secretary/hk-annual">香港公司年审</router-link>
-                                <router-link to="/secretary/overseas-annual">海外公司年审</router-link>
-                                <router-link to="/secretary/barcode">条形码服务</router-link>
+                                <SubmenuLink to="/secretary/hk-annual">香港公司年审</SubmenuLink>
+                                <SubmenuLink to="/secretary/overseas-annual">海外公司年审</SubmenuLink>
+                                <SubmenuLink to="/secretary/barcode">条形码服务</SubmenuLink>
                             </div>
                         </div>
                         <div class="region-group">
                             <div class="region-title">香港牌照服务</div>
                             <div class="region-countries menu-secretary-countries">
-                                <router-link to="/secretary/msb">香港MSB牌照</router-link>
-                                <router-link to="/secretary/telecom">香港电信牌照</router-link>
-                                <router-link to="/secretary/hk-odi">境外投资备案</router-link>
+                                <SubmenuLink to="/secretary/msb">香港MSB牌照</SubmenuLink>
+                                <SubmenuLink to="/secretary/telecom">香港电信牌照</SubmenuLink>
+                                <SubmenuLink to="/secretary/hk-odi">境外投资备案</SubmenuLink>
                             </div>
                         </div>
                         <div class="region-group">
                             <div class="region-title">公司变更服务</div>
                             <div class="region-countries menu-secretary-countries">
-                                <router-link to="/secretary/change">公司变更</router-link>
-                                <router-link to="/secretary/dissolution">公司注销</router-link>
-                                <router-link to="/secretary/restoration">公司恢复</router-link>
+                                <SubmenuLink to="/secretary/change">公司变更</SubmenuLink>
+                                <SubmenuLink to="/secretary/dissolution">公司注销</SubmenuLink>
+                                <SubmenuLink to="/secretary/restoration">公司恢复</SubmenuLink>
                             </div>
                         </div>
                         <div class="region-group">
                             <div class="region-title">财务税务服务</div>
                             <div class="region-countries menu-secretary-countries">
-                                <router-link to="/secretary/accounting">做账审计</router-link>
-                                <router-link to="/secretary/tax-filing">税务申报</router-link>
-                                <router-link to="/secretary/tax-planning">税务规划</router-link>
+                                <SubmenuLink to="/secretary/accounting">做账审计</SubmenuLink>
+                                <SubmenuLink to="/secretary/tax-filing">税务申报</SubmenuLink>
+                                <SubmenuLink to="/secretary/tax-planning">税务规划</SubmenuLink>
                             </div>
                         </div>
                     </div>
@@ -105,29 +105,29 @@
                         <div class="region-group">
                             <div class="region-title">香港银行开户</div>
                             <div class="region-countries menu-bank-countries">
-                                <router-link to="/bank/hk/personal">香港个人账户</router-link>
-                                <router-link to="/bank/hk/constructions">香港公司账户</router-link>
+                                <SubmenuLink to="/bank/hk/personal">香港个人账户</SubmenuLink>
+                                <SubmenuLink to="/bank/hk/constructions">香港公司账户</SubmenuLink>
                             </div>
                         </div>
                         <div class="region-group">
                             <div class="region-title">新加坡银行开户</div>
                             <div class="region-countries menu-bank-countries">
-                                <router-link to="/bank/sg/personal">新加坡个人账户</router-link>
-                                <router-link to="/bank/sg/ocbc">新加坡公司账户</router-link>
+                                <SubmenuLink to="/bank/sg/personal">新加坡个人账户</SubmenuLink>
+                                <SubmenuLink to="/bank/sg/ocbc">新加坡公司账户</SubmenuLink>
                             </div>
                         </div>
                         <div class="region-group">
                             <div class="region-title">澳门银行开户</div>
                             <div class="region-countries menu-bank-countries">
-                                <router-link to="/bank/mo/personal">澳门个人账户</router-link>
-                                <router-link to="/bank/mo/icbc">澳门公司账户</router-link>
+                                <SubmenuLink to="/bank/mo/personal">澳门个人账户</SubmenuLink>
+                                <SubmenuLink to="/bank/mo/icbc">澳门公司账户</SubmenuLink>
                             </div>
                         </div>
                         <div class="region-group">
                             <div class="region-title">美国银行开户</div>
                             <div class="region-countries menu-bank-countries">
-                                <router-link to="/bank/us/personal">美国个人账户</router-link>
-                                <router-link to="/bank/us/cbi">美国公司账户</router-link>
+                                <SubmenuLink to="/bank/us/personal">美国个人账户</SubmenuLink>
+                                <SubmenuLink to="/bank/us/cbi">美国公司账户</SubmenuLink>
                             </div>
                         </div>
                     </div>
@@ -138,18 +138,18 @@
                         <div class="region-group">
                             <div class="region-title">国际认证</div>
                             <div class="region-countries menu-cert-countries">
-                                <router-link to="/notary/hague">海牙公证认证</router-link>
-                                <router-link to="/notary/embassy">使馆公证认证</router-link>
+                                <SubmenuLink to="/notary/hague">海牙公证认证</SubmenuLink>
+                                <SubmenuLink to="/notary/embassy">使馆公证认证</SubmenuLink>
                             </div>
                         </div>
                         <div class="region-group">
                             <div class="region-title">各国认证</div>
                             <div class="region-countries menu-cert-countries">
-                                <router-link to="/notary/hk">香港公证认证</router-link>
-                                <router-link to="/notary/us">美国公证认证</router-link>
-                                <router-link to="/notary/uk">英国公证认证</router-link>
-                                <router-link to="/notary/jp">日本公证认证</router-link>
-                                <router-link to="/notary/sg">新加坡公证认证</router-link>
+                                <SubmenuLink to="/notary/hk">香港公证认证</SubmenuLink>
+                                <SubmenuLink to="/notary/us">美国公证认证</SubmenuLink>
+                                <SubmenuLink to="/notary/uk">英国公证认证</SubmenuLink>
+                                <SubmenuLink to="/notary/jp">日本公证认证</SubmenuLink>
+                                <SubmenuLink to="/notary/sg">新加坡公证认证</SubmenuLink>
                             </div>
                         </div>
                     </div>
@@ -159,9 +159,9 @@
                     <div class="dropdown-menu menu-ip">
                         <div class="region-group">
                             <div class="region-countries menu-ip-countries">
-                                <router-link to="/ip/patent">国际专利服务</router-link>
-                                <router-link to="/intellectual/international-trademark">国际商标服务</router-link>
-                                <router-link to="/intellectual/domestic-trademark">国内商标服务</router-link>
+                                <SubmenuLink to="/ip/patent">国际专利服务</SubmenuLink>
+                                <SubmenuLink to="/intellectual/international-trademark">国际商标服务</SubmenuLink>
+                                <SubmenuLink to="/intellectual/domestic-trademark">国内商标服务</SubmenuLink>
                             </div>
                         </div>
                     </div>
@@ -177,6 +177,7 @@
 import { ref, onMounted, onBeforeUnmount, computed } from 'vue'
 import { useRoute } from 'vue-router'
 import '@/css/homeView/top/Top2.css'
+import SubmenuLink from './SubmenuLink.vue'
 
 const route = useRoute()
 const isScrolled = ref(false)
@@ -252,6 +253,8 @@ const isCompanyRoute = computed(() => {
 
 // 计算当前激活的区域
 const activeRegion = computed(() => {
+  const bankMatch = route.path.match(/^\/(?:en\/)?bank\/(hk|sg|mo|us)(?:\/|$)/)
+  if (bankMatch) return 'bank-' + bankMatch[1]
   const matchedRegion = countryToRegionMap[route.path];
   if (matchedRegion) {
     return matchedRegion;

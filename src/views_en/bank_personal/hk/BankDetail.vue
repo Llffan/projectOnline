@@ -1,0 +1,30 @@
+<template>
+  <component :is="bankView" v-if="bankView" />
+</template>
+
+<script setup>
+import { computed, defineAsyncComponent } from 'vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+const views = {
+  constructions: () => import('@/views_en/bank_company/hk/Constructions.vue'),
+  boc: () => import('@/views_en/bank_company/hk/Boc.vue'),
+  communications: () => import('@/views_en/bank_company/hk/Communications.vue'),
+  'cmb-winglung': () => import('@/views_en/bank_company/hk/CmbWinglung.vue'),
+  citic: () => import('@/views_en/bank_company/hk/Citic.vue'),
+  hsbc: () => import('@/views_en/bank_company/hk/Hsbc.vue'),
+  chonghing: () => import('@/views_en/bank_company/hk/Chonghing.vue'),
+  dbs: () => import('@/views_en/bank_company/hk/Dbs.vue'),
+  hangseng: () => import('@/views_en/bank_company/hk/HangSeng.vue'),
+  ncb: () => import('@/views_en/bank_company/hk/Nanyang.vue'),
+  bea: () => import('@/views_en/bank_company/hk/Bea.vue'),
+  dahsing: () => import('@/views_en/bank_company/hk/DahSing.vue'),
+  ocbc: () => import('@/views_en/bank_company/hk/Ocbc.vue'),
+  citi: () => import('@/views_en/bank_company/hk/Citi.vue'),
+  sc: () => import('@/views_en/bank_company/hk/Sc.vue'),
+  icbc: () => import('@/views_en/bank_company/hk/Icbc.vue'),
+  'shanghai-commercial': () => import('@/views_en/bank_company/hk/Shanghai.vue')
+}
+const bankView = computed(() => views[route.params.bank] ? defineAsyncComponent(views[route.params.bank]) : null)
+</script>

@@ -5,7 +5,7 @@
           <el-carousel 
             ref="carouselRef"
             trigger="click" 
-            height="100vh" 
+            height="calc(100vh + 82px)" 
             :autoplay="false" 
             indicator-position="inside" 
             arrow="always"
@@ -16,16 +16,14 @@
                <div class="carousel-slide slide-1">
                   <img loading="lazy" :src="images[0]" alt="" draggable="false"/>
                   <div class="slide-content">
-                    <div class="title-container animated-element" ref="mainTitleRef">
-                      <h1 class="main-title">SHI ZHOU TONG</h1>
-                      <div class="license-info">Hong Kong TCSP License No. TC010744</div>
-                    </div>
+                    <h1 class="main-title animated-element" ref="mainTitleRef">SHI ZHOU TONG</h1>
                     <h2 class="sub-title animated-element" ref="subTitleRef">Global Corporate Services Expert</h2>
                     <p class="description animated-element" ref="descriptionRef">
                       Focusing on global company registration and overseas bank account opening,<br/>
                       helping enterprises easily expand into international markets,<br/>
                       and unblocking cross-border business operations.
                     </p>
+                    <div class="license-info animated-element" ref="licenseInfoRef">Hong Kong TCSP License No. TC010744</div>
                     <div class="button-container animated-element" ref="buttonContainerRef">
                       <button class="learn-more-btn" ref="learnMoreBtnRef" @click="router.push('/company_en/hk')">Learn More</button>
                     </div>
@@ -36,16 +34,14 @@
                <div class="carousel-slide slide-2">
                   <img loading="lazy" :src="images[1]" alt="" draggable="false"/>
                   <div class="slide-content">
-                    <div class="title-container animated-element" ref="mainTitleRef2">
-                      <h1 class="main-title">SHI ZHOU TONG</h1>
-                      <div class="license-info">Hong Kong TCSP License No. TC010744</div>
-                    </div>
+                    <h1 class="main-title animated-element" ref="mainTitleRef2">SHI ZHOU TONG</h1>
                     <h2 class="sub-title animated-element" ref="subTitleRef2">Global Corporate Services Expert</h2>
                     <p class="description animated-element" ref="descriptionRef2">
                       Focusing on global company registration and overseas bank account opening,<br/>
                       helping enterprises easily expand into international markets,<br/>
                       and unblocking cross-border business operations.
                     </p>
+                    <div class="license-info animated-element" ref="licenseInfoRef2">Hong Kong TCSP License No. TC010744</div>
                     <div class="button-container animated-element" ref="buttonContainerRef2">
                       <button class="learn-more-btn" ref="learnMoreBtnRef2" @click="router.push('/company_en/hk')">Learn More</button>
                     </div>
@@ -82,6 +78,7 @@ let isDragging = false
 const mainTitleRef = ref(null)
 const subTitleRef = ref(null)
 const descriptionRef = ref(null)
+const licenseInfoRef = ref(null)
 const buttonContainerRef = ref(null)
 const learnMoreBtnRef = ref(null)
 
@@ -89,6 +86,7 @@ const learnMoreBtnRef = ref(null)
 const mainTitleRef2 = ref(null)
 const subTitleRef2 = ref(null)
 const descriptionRef2 = ref(null)
+const licenseInfoRef2 = ref(null)
 const buttonContainerRef2 = ref(null)
 const learnMoreBtnRef2 = ref(null)
 
@@ -121,8 +119,10 @@ const playFirstSlideAnimation = () => {
   // 使用GSAP时间线创建连续动画
   const tl = gsap.timeline();
 
+  const elements = [mainTitleRef.value, subTitleRef.value, descriptionRef.value, licenseInfoRef.value, buttonContainerRef.value].filter(Boolean);
+
   // 先将所有元素设置为初始状态
-  gsap.set([mainTitleRef.value, subTitleRef.value, descriptionRef.value, buttonContainerRef.value], {
+  gsap.set(elements, {
     opacity: 0,
     y: 50
   });
@@ -139,6 +139,11 @@ const playFirstSlideAnimation = () => {
     duration: 1,
     ease: "power4.out"
   }, "-=0.6").to(descriptionRef.value, {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    ease: "power4.out"
+  }, "-=0.6").to(licenseInfoRef.value, {
     opacity: 1,
     y: 0,
     duration: 1,
@@ -161,8 +166,10 @@ const playSecondSlideAnimation = () => {
   // 使用GSAP时间线创建连续动画
   const tl = gsap.timeline();
 
+  const elements2 = [mainTitleRef2.value, subTitleRef2.value, descriptionRef2.value, licenseInfoRef2.value, buttonContainerRef2.value].filter(Boolean);
+
   // 先将所有元素设置为初始状态
-  gsap.set([mainTitleRef2.value, subTitleRef2.value, descriptionRef2.value, buttonContainerRef2.value], {
+  gsap.set(elements2, {
     opacity: 0,
     y: 50
   });
@@ -179,6 +186,11 @@ const playSecondSlideAnimation = () => {
     duration: 1,
     ease: "power4.out"
   }, "-=0.6").to(descriptionRef2.value, {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    ease: "power4.out"
+  }, "-=0.6").to(licenseInfoRef2.value, {
     opacity: 1,
     y: 0,
     duration: 1,

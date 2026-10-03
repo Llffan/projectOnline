@@ -10,10 +10,10 @@
                     <img loading="lazy" src="@/assets/img/company/hk/HK.jpg" alt="Hong Kong company cancellation">
                     <div class="text">
                         <P>
-                            When your Hong Kong company is no longer required to operate, it is a very important legal obligation to correctly dissolve and cancel the company. Failure to legally cancel may result in fines or even litigation, and reasonable business closure can cut off joint risks.
+                            To apply for deregistration of a Hong Kong company, key conditions must generally be met: unanimous consent of all members, no business operations for at least 3 consecutive months prior to application, no outstanding liabilities, no pending legal proceedings, and completion of all relevant tax matters.
                         </P>
                         <P>
-                            Cancellation of a Hong Kong company requires the consent of all shareholders, no outstanding debts, and tax compliance. The core process includes tax liquidation, application submission, 3-month gazetting period and final approval by the registration office, which usually takes 6-8 months and involves government fees of approximately HK$1,920-2,420.
+                            The core process includes applying to the Inland Revenue Department (IRD) for a "Notice of No Objection to a Company Being Deregistered", submitting the deregistration application to the Companies Registry, and completing a 3-month gazetting procedure. If no objections are raised, the Companies Registry will publish a formal deregistration notice in the Gazette and the company will be dissolved. The entire process generally takes around 5 months (actual time may vary based on the company's tax and compliance status), with total official statutory fees for the IRD and Companies Registry amounting to approximately HK$690.
                         </P>
                     </div>
                 </div>

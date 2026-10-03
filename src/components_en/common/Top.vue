@@ -14,45 +14,45 @@
                         <div class="region-group" :class="{ 'active-region': activeRegion === 'east-asia' }">
                             <div class="region-title">East Asia Incorporation</div>
                             <div class="region-countries menu-company-countries">
-                                <router-link to="/company_en/jp">Japan Company</router-link>
-                                <router-link to="/company_en/kr">South Korea Company</router-link>
-                                <router-link to="/company_en/hk">Hong Kong Company</router-link>
-                                <router-link to="/company_en/mo">Macao Company</router-link>
+                                <SubmenuLink to="/company_en/jp">Japan Company</SubmenuLink>
+                                <SubmenuLink to="/company_en/kr">South Korea Company</SubmenuLink>
+                                <SubmenuLink to="/company_en/hk">Hong Kong Company</SubmenuLink>
+                                <SubmenuLink to="/company_en/mo">Macao Company</SubmenuLink>
                             </div>
                         </div>
                         <div class="region-group" :class="{ 'active-region': activeRegion === 'southeast-asia' }">
                             <div class="region-title">Southeast Asia Incorporation</div>
                             <div class="region-countries menu-company-countries">
-                                <router-link to="/company_en/vn">Vietnam Company</router-link>
-                                <router-link to="/company_en/th">Thailand Company</router-link>
-                                <router-link to="/company_en/my">Malaysia Company</router-link>
-                                <router-link to="/company_en/id">Indonesia Company</router-link>
-                                <router-link to="/company_en/sg">Singapore Company</router-link>
+                                <SubmenuLink to="/company_en/vn">Vietnam Company</SubmenuLink>
+                                <SubmenuLink to="/company_en/th">Thailand Company</SubmenuLink>
+                                <SubmenuLink to="/company_en/my">Malaysia Company</SubmenuLink>
+                                <SubmenuLink to="/company_en/id">Indonesia Company</SubmenuLink>
+                                <SubmenuLink to="/company_en/sg">Singapore Company</SubmenuLink>
                             </div>
                         </div>
                         <div class="region-group" :class="{ 'active-region': activeRegion === 'north-america' }">
                             <div class="region-title">North America Incorporation</div>
                             <div class="region-countries menu-company-countries">
-                                <router-link to="/company_en/us">US Company</router-link>
-                                <router-link to="/company_en/ca">Canada Company</router-link>
+                                <SubmenuLink to="/company_en/us">US Company</SubmenuLink>
+                                <SubmenuLink to="/company_en/ca">Canada Company</SubmenuLink>
                             </div>
                         </div>
                         <div class="region-group" :class="{ 'active-region': activeRegion === 'europe' }">
                             <div class="region-title">Europe Incorporation</div>
                             <div class="region-countries menu-company-countries">
-                                <router-link to="/company_en/uk">UK Company</router-link>
-                                <router-link to="/company_en/de">Germany Company</router-link>
-                                <router-link to="/company_en/fr">France Company</router-link>
+                                <SubmenuLink to="/company_en/uk">UK Company</SubmenuLink>
+                                <SubmenuLink to="/company_en/de">Germany Company</SubmenuLink>
+                                <SubmenuLink to="/company_en/fr">France Company</SubmenuLink>
                             </div>
                         </div>
                         <div class="region-group" :class="{ 'active-region': activeRegion === 'offshore' }">
                             <div class="region-title">Offshore Incorporation</div>
                             <div class="region-countries menu-company-countries">
-                                <router-link to="/company_en/bvi">BVI Company</router-link>
-                                <router-link to="/company_en/ky">Cayman Company</router-link>
-                                <router-link to="/company_en/sc">Seychelles Company</router-link>
-                                <router-link to="/company_en/mh">Marshall Company</router-link>
-                                <router-link to="/company_en/ws">Samoa Company</router-link>
+                                <SubmenuLink to="/company_en/bvi">BVI Company</SubmenuLink>
+                                <SubmenuLink to="/company_en/ky">Cayman Company</SubmenuLink>
+                                <SubmenuLink to="/company_en/sc">Seychelles Company</SubmenuLink>
+                                <SubmenuLink to="/company_en/mh">Marshall Company</SubmenuLink>
+                                <SubmenuLink to="/company_en/ws">Samoa Company</SubmenuLink>
                             </div>
                         </div>
                     </div>
@@ -63,33 +63,33 @@
                         <div class="region-group" :class="{ 'active-region': activeRegion === 'annual-review' }">
                             <div class="region-title">Company Annual Review</div>
                             <div class="region-countries menu-secretary-countries">
-                                <router-link to="/secretary_en/hk-annual">HK Annual Review</router-link>
-                                <router-link to="/secretary_en/overseas-annual">Overseas Annual Review</router-link>
-                                <router-link to="/secretary_en/barcode">Barcode Service</router-link>
+                                <SubmenuLink to="/secretary_en/hk-annual">HK Annual Review</SubmenuLink>
+                                <SubmenuLink to="/secretary_en/overseas-annual">Overseas Annual Review</SubmenuLink>
+                                <SubmenuLink to="/secretary_en/barcode">Barcode Service</SubmenuLink>
                             </div>
                         </div>
                         <div class="region-group" :class="{ 'active-region': activeRegion === 'hk-license' }">
                             <div class="region-title">HK License Service</div>
                             <div class="region-countries menu-secretary-countries">
-                                <router-link to="/secretary_en/hk-msb">HK MSB License</router-link>
-                                <router-link to="/secretary_en/telecom">HK Telecom License</router-link>
-                                <router-link to="/secretary_en/hk-odi">ODI Filing</router-link>
+                                <SubmenuLink to="/secretary_en/hk-msb">HK MSB License</SubmenuLink>
+                                <SubmenuLink to="/secretary_en/telecom">HK Telecom License</SubmenuLink>
+                                <SubmenuLink to="/secretary_en/hk-odi">ODI Filing</SubmenuLink>
                             </div>
                         </div>
                         <div class="region-group" :class="{ 'active-region': activeRegion === 'company-changes' }">
                             <div class="region-title">Company Changes</div>
                             <div class="region-countries menu-secretary-countries">
-                                <router-link to="/secretary_en/change">Company Change</router-link>
-                                <router-link to="/secretary_en/dissolution">Company Deregistration</router-link>
-                                <router-link to="/secretary_en/restoration">Company Restoration</router-link>
+                                <SubmenuLink to="/secretary_en/change">Company Change</SubmenuLink>
+                                <SubmenuLink to="/secretary_en/dissolution">Company Deregistration</SubmenuLink>
+                                <SubmenuLink to="/secretary_en/restoration">Company Restoration</SubmenuLink>
                             </div>
                         </div>
                         <div class="region-group" :class="{ 'active-region': activeRegion === 'financial-tax' }">
                             <div class="region-title">Financial & Tax Services</div>
                             <div class="region-countries menu-secretary-countries">
-                                <router-link to="/secretary_en/accounting">Accounting & Auditing</router-link>
-                                <router-link to="/secretary_en/tax-filing">Tax Filing</router-link>
-                                <router-link to="/secretary_en/tax-planning">Tax Planning</router-link>
+                                <SubmenuLink to="/secretary_en/accounting">Accounting & Auditing</SubmenuLink>
+                                <SubmenuLink to="/secretary_en/tax-filing">Tax Filing</SubmenuLink>
+                                <SubmenuLink to="/secretary_en/tax-planning">Tax Planning</SubmenuLink>
                             </div>
                         </div>
                     </div>
@@ -100,29 +100,29 @@
                         <div class="region-group" :class="{ 'active-region': activeRegion === 'bank-hk' }">
                             <div class="region-title">HK Bank Account</div>
                             <div class="region-countries menu-bank-countries">
-                                <router-link to="/en/bank/hk/personal">HK Personal Account</router-link>
-                                <router-link to="/en/bank/hk/constructions">HK Corporate Account</router-link>
+                                <SubmenuLink to="/en/bank/hk/personal">HK Personal Account</SubmenuLink>
+                                <SubmenuLink to="/en/bank/hk/constructions">HK Corporate Account</SubmenuLink>
                             </div>
                         </div>
                         <div class="region-group" :class="{ 'active-region': activeRegion === 'bank-sg' }">
                             <div class="region-title">SG Bank Account</div>
                             <div class="region-countries menu-bank-countries">
-                                <router-link to="/bank/sg/personal">SG Personal Account</router-link>
-                                <router-link to="/en/bank/sg/ocbc">SG Corporate Account</router-link>
+                                <SubmenuLink to="/en/bank/sg/personal">SG Personal Account</SubmenuLink>
+                                <SubmenuLink to="/en/bank/sg/ocbc">SG Corporate Account</SubmenuLink>
                             </div>
                         </div>
                         <div class="region-group" :class="{ 'active-region': activeRegion === 'bank-mo' }">
                             <div class="region-title">Macao Bank Account</div>
                             <div class="region-countries menu-bank-countries">
-                                <router-link to="/bank/mo/personal">Macao Personal Account</router-link>
-                                <router-link to="/en/bank/mo/icbc">Macao Corporate Account</router-link>
+                                <SubmenuLink to="/en/bank/mo/personal">Macao Personal Account</SubmenuLink>
+                                <SubmenuLink to="/en/bank/mo/icbc">Macao Corporate Account</SubmenuLink>
                             </div>
                         </div>
                         <div class="region-group" :class="{ 'active-region': activeRegion === 'bank-us' }">
                             <div class="region-title">US Bank Account</div>
                             <div class="region-countries menu-bank-countries">
-                                <router-link to="/en/bank/us/cbi">US Personal Account</router-link>
-                                <router-link to="/en/bank/us/cbi">US Corporate Account</router-link>
+                                <SubmenuLink to="/en/bank/us/personal">US Personal Account</SubmenuLink>
+                                <SubmenuLink to="/en/bank/us/cbi">US Corporate Account</SubmenuLink>
                             </div>
                         </div>
                     </div>
@@ -133,18 +133,18 @@
                         <div class="region-group" :class="{ 'active-region': activeRegion === 'cert-global' }">
                             <div class="region-title">International Certification</div>
                             <div class="region-countries menu-cert-countries">
-                                <router-link to="/en/notary/hague">Hague Apostille</router-link>
-                                <router-link to="/en/notary/embassy">Embassy Legalization</router-link>
+                                <SubmenuLink to="/en/notary/hague">Hague Apostille</SubmenuLink>
+                                <SubmenuLink to="/en/notary/embassy">Embassy Legalization</SubmenuLink>
                             </div>
                         </div>
                         <div class="region-group" :class="{ 'active-region': activeRegion === 'cert-country' }">
                             <div class="region-title">Country Legalization</div>
                             <div class="region-countries menu-cert-countries">
-                                <router-link to="/en/notary/hk">HK Notary</router-link>
-                                <router-link to="/en/notary/us">US Notary</router-link>
-                                <router-link to="/en/notary/uk">UK Notary</router-link>
-                                <router-link to="/en/notary/jp">Japan Notary</router-link>
-                                <router-link to="/en/notary/sg">Singapore Notary</router-link>
+                                <SubmenuLink to="/en/notary/hk">HK Notary</SubmenuLink>
+                                <SubmenuLink to="/en/notary/us">US Notary</SubmenuLink>
+                                <SubmenuLink to="/en/notary/uk">UK Notary</SubmenuLink>
+                                <SubmenuLink to="/en/notary/jp">Japan Notary</SubmenuLink>
+                                <SubmenuLink to="/en/notary/sg">Singapore Notary</SubmenuLink>
                             </div>
                         </div>
                     </div>
@@ -154,9 +154,9 @@
                     <div class="dropdown-menu menu-ip">
                         <div class="region-group" :class="{ 'active-region': activeRegion === 'ip-global' }">
                             <div class="region-countries menu-ip-countries">
-                                <router-link to="/en/ip/patent">International Patents</router-link>
-                                <router-link to="/en/intellectual/international-trademark">International Trademarks</router-link>
-                                <router-link to="/en/intellectual/domestic-trademark">Domestic Trademarks</router-link>
+                                <SubmenuLink to="/en/ip/patent">International Patents</SubmenuLink>
+                                <SubmenuLink to="/en/intellectual/international-trademark">International Trademarks</SubmenuLink>
+                                <SubmenuLink to="/en/intellectual/domestic-trademark">Domestic Trademarks</SubmenuLink>
                             </div>
                         </div>
                     </div>
@@ -172,6 +172,7 @@
 import { ref, onMounted, onBeforeUnmount, computed } from 'vue'
 import { useRoute } from 'vue-router'
 import '@/css_en/common/Top.css'
+import SubmenuLink from '@/components/homeView/top/SubmenuLink.vue'
 
 const route = useRoute()
 
@@ -225,7 +226,7 @@ const countryToRegionMap = {
   '/en/bank/hk/personal': 'bank-hk',
   '/bank/hk/constructions': 'bank-hk',
   '/en/bank/hk/constructions': 'bank-hk',
-  '/bank/sg/personal': 'bank-sg',
+  '/en/bank/sg/personal': 'bank-sg',
   '/en/bank/sg/ocbc': 'bank-sg',
   '/en/bank/sg/dbs': 'bank-sg',
   '/en/bank/sg/uob': 'bank-sg',
@@ -236,7 +237,7 @@ const countryToRegionMap = {
   '/en/bank/sg/aspire': 'bank-sg',
   '/en/bank/sg/bos': 'bank-sg',
   '/en/bank/sg/boc': 'bank-sg',
-  '/bank/mo/personal': 'bank-mo',
+  '/en/bank/mo/personal': 'bank-mo',
   '/en/bank/mo/icbc': 'bank-mo',
   '/en/bank/mo/wl': 'bank-mo',
   '/en/bank/mo/icbc-asia': 'bank-mo',
@@ -247,7 +248,7 @@ const countryToRegionMap = {
   '/en/bank/mo/bnu': 'bank-mo',
   '/en/bank/mo/cgb': 'bank-mo',
   '/en/bank/mo/ocbc': 'bank-mo',
-  '/bank/us/personal': 'bank-us',
+  '/en/bank/us/personal': 'bank-us',
   '/bank/us/cbi': 'bank-us',
   '/en/bank/us/cbi': 'bank-us',
   '/en/bank/us/ew': 'bank-us',
@@ -294,6 +295,8 @@ const isIpRoute = computed(() => route.path.startsWith('/intellectual') || route
 
 // 计算当前激活的区域
 const activeRegion = computed(() => {
+  const bankMatch = route.path.match(/^\/(?:en\/)?bank\/(hk|sg|mo|us)(?:\/|$)/)
+  if (bankMatch) return 'bank-' + bankMatch[1]
   const matchedRegion = countryToRegionMap[route.path];
   if (matchedRegion) {
     return matchedRegion;

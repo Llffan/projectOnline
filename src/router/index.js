@@ -324,6 +324,62 @@ const router = createRouter({
       component: () => import("@/views_en/secretary/Hk_odi.vue"),
     },
     {
+      path: "/bank/hk/personal",
+      name: "hk_personal",
+      component: () => import("@/views/bank_personal/hk/Personal.vue"),
+    },
+    {
+      path: "/en/bank/hk/personal",
+      name: "hk_personal_en",
+      component: () => import("@/views_en/bank_personal/hk/Personal.vue"),
+    },
+    {
+      path: "/bank/sg/personal",
+      name: "sg_personal",
+      component: () => import("@/views/bank_personal/RegionPersonal.vue"),
+      props: { region: "sg" },
+    },
+    {
+      path: "/bank/mo/personal",
+      name: "mo_personal",
+      component: () => import("@/views/bank_personal/RegionPersonal.vue"),
+      props: { region: "mo" },
+    },
+    {
+      path: "/bank/us/personal",
+      name: "us_personal",
+      component: () => import("@/views/bank_personal/RegionPersonal.vue"),
+      props: { region: "us" },
+    },
+    {
+      path: "/en/bank/sg/personal",
+      name: "sg_personal_en",
+      component: () => import("@/views_en/bank_personal/RegionPersonal.vue"),
+      props: { region: "sg" },
+    },
+    {
+      path: "/en/bank/mo/personal",
+      name: "mo_personal_en",
+      component: () => import("@/views_en/bank_personal/RegionPersonal.vue"),
+      props: { region: "mo" },
+    },
+    {
+      path: "/en/bank/us/personal",
+      name: "us_personal_en",
+      component: () => import("@/views_en/bank_personal/RegionPersonal.vue"),
+      props: { region: "us" },
+    },
+    {
+      path: "/bank/:region/personal/:bank",
+      name: "personal_bank",
+      component: () => import("@/views/bank_personal/BankDetail.vue"),
+    },
+    {
+      path: "/en/bank/:region/personal/:bank",
+      name: "personal_bank_en",
+      component: () => import("@/views_en/bank_personal/BankDetail.vue"),
+    },
+    {
       path: "/bank/hk/constructions",
       name: "hk_constructions",
       component: () => import("@/views/bank_company/hk/Constructions.vue"),

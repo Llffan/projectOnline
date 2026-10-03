@@ -45,7 +45,7 @@
                 </h2>
                 <span>Secretarial Service</span>
             </div>
-            <p class="p3">在企业发展过程中，秘书服务成为许多公司特别是离岸公司的必备选项。作为企业的"贴身助手"，秘书服务不仅能够确保公司合规运营，还能提供专业的商务支持。<br />选择十洲通秘书服务，让您专注于核心业务发展，其余事务交给我们专业团队处理，省心、放心、安心！</p>
+            <p class="p3">在企业发展过程中，专业秘书服务已成为众多企业，尤其是离岸公司实现合规、高效运营的重要保障。作为企业的“贴身助手”，秘书服务不仅能够协助企业处理日常行政及合规事务，还能提供专业、高效的商务支持。<br />选择十洲通秘书服务，让您专注于核心业务发展，其余事务交由我们的专业团队处理，省心、放心、安心。</p>
 
             <div class="scoll_content3" ref="accountBodyRef">
                 <div class="content3_body" v-for="(item, i) in content3_body" :key="i" :ref="el => setAccountCardRef(el, i)" @click="router.push(item.path)" style="cursor: pointer;">

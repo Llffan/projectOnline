@@ -17,7 +17,7 @@
     <div class="content">
         <div v-if="selectedCategory" class="country-grid">
           <div 
-            v-for="service in selectedCategory.services" 
+            v-for="service in displayedServices"
             :key="service.name"
             class="country-item"
             :class="{ 'active-country': route.path === service.route }"
@@ -127,26 +127,79 @@ const categories = ref([
 ])
 
 // 计算当前激活的分类
+const personalRouteMatch = computed(() => route.path.match(/^\/en\/bank\/(hk|sg|mo|us)\/personal(?:\/|$)/))
+
 const activeCategory = computed(() => {
+  if (personalRouteMatch.value) return personalRouteMatch.value[1]
   for (const cat of categories.value) {
-    if (cat.services.some(s => route.path.includes(s.route))) {
-      return cat.id
-    }
+    if (cat.services.some(s => s.route === route.path)) return cat.id
   }
-  return 'hk' // 默认为香港银行
+  return 'hk'
 })
 
-// 当前选中的分类
 const selectedCategoryId = ref('hk')
+watch(route, () => { selectedCategoryId.value = activeCategory.value })
 
-// 监听路由变化，自动切换到对应的分类
-watch(route, () => {
-  selectedCategoryId.value = activeCategory.value
-})
+const selectedCategory = computed(() => categories.value.find(c => c.id === selectedCategoryId.value))
+const personalBankSlugs = {
+  "hk": {
+    "/en/bank/hk/constructions": "constructions",
+    "/en/bank/hk/boc": "boc",
+    "/en/bank/hk/communications": "communications",
+    "/en/bank/hk/cmb-winglung": "cmb-winglung",
+    "/en/bank/hk/citic": "citic",
+    "/en/bank/hk/hsbc": "hsbc",
+    "/en/bank/hk/chonghing": "chonghing",
+    "/en/bank/hk/dbs": "dbs",
+    "/en/bank/hk/hangseng": "hangseng",
+    "/en/bank/hk/ncb": "ncb",
+    "/en/bank/hk/bea": "bea",
+    "/en/bank/hk/dahSing": "dahsing",
+    "/en/bank/hk/ocbc": "ocbc",
+    "/en/bank/hk/citi": "citi",
+    "/en/bank/hk/sc": "sc",
+    "/en/bank/hk/icbc": "icbc",
+    "/en/bank/hk/shanghai-commercial": "shanghai-commercial"
+  },
+  "sg": {
+    "/en/bank/sg/ocbc": "ocbc",
+    "/en/bank/sg/hsbc": "hsbc",
+    "/en/bank/sg/maybank": "maybank",
+    "/en/bank/sg/sc": "sc",
+    "/en/bank/sg/uob": "uob",
+    "/en/bank/sg/dbs": "dbs",
+    "/en/bank/sg/citi": "citi",
+    "/en/bank/sg/bos": "bos",
+    "/en/bank/sg/boc": "boc"
+  },
+  "mo": {
+    "/en/bank/mo/wl": "wl",
+    "/en/bank/mo/icbc-asia": "icbc-asia",
+    "/en/bank/mo/boc": "boc",
+    "/en/bank/mo/lusobank": "lusobank",
+    "/en/bank/mo/hsbc": "hsbc",
+    "/en/bank/mo/cgb": "cgb",
+    "/en/bank/mo/ocbc": "ocbc"
+  },
+  "us": {
+    "/en/bank/us/cbi": "cbi",
+    "/en/bank/us/ew": "ew",
+    "/en/bank/us/cathay": "cathay",
+    "/en/bank/us/boa": "boa",
+    "/en/bank/us/arival": "arival",
+    "/en/bank/us/axos": "axos",
+    "/en/bank/us/hsbc": "hsbc"
+  }
+}
 
-// 计算属性：获取选中的分类对象
-const selectedCategory = computed(() => {
-  return categories.value.find(c => c.id === selectedCategoryId.value)
+const displayedServices = computed(() => {
+  if (!selectedCategory.value) return []
+  const region = personalRouteMatch.value?.[1]
+  if (!region || selectedCategory.value.id !== region) return selectedCategory.value.services
+  const slugs = personalBankSlugs[region]
+  return selectedCategory.value.services
+    .filter(service => slugs[service.route])
+    .map(service => ({ ...service, route: '/en/bank/' + region + '/personal/' + slugs[service.route] }))
 })
 
 // 判断是否为当前激活的分类

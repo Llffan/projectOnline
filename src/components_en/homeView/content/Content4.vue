@@ -45,7 +45,7 @@
                 </h2>
                 <span>Secretarial Service</span>
             </div>
-            <p class="p3">Secretarial services are essential for offshore companies to ensure compliance and gain professional support.<br />Choose SHI ZHOU TONG to handle the paperwork securely, so you can focus entirely on core business development.</p>
+            <p class="p3">In the course of business development, professional secretarial services have become a crucial safeguard for many enterprises—especially offshore companies—to maintain compliance and achieve operational efficiency. As a trusted corporate assistant, secretarial services not only assist with daily administrative and compliance matters, but also deliver professional and efficient business support.<br />Choose SHI ZHOU TONG Secretarial Services so you can focus on core business growth, leaving the rest to our professional team with total peace of mind.</p>
 
             <div class="scoll_content3" ref="accountBodyRef">
                 <div class="content3_body" v-for="(item, i) in content3_body" :key="i" :ref="el => setAccountCardRef(el, i)" @click="router.push(item.path)" style="cursor: pointer;">
