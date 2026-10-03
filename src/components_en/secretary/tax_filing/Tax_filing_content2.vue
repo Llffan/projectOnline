@@ -1,5 +1,5 @@
 <template>
-    <div class="service-content tax_filing_content2">
+    <div class="service-content tax_filing_content2" ref="motionRoot">
         <div class="content_box">
             
             <!-- 1. Shizhoutong professional tax services -->
@@ -137,12 +137,12 @@ The above is for reference only. Exact quotes will be provided after assessing t
 </template>
 
 <script setup>
-import { ref, onMounted, nextTick } from 'vue'
+import { ref } from 'vue'
 import gsap from 'gsap'
-import ScrollTrigger from 'gsap/ScrollTrigger'
+import { useSectionMotion } from '@/composables/useSectionMotion'
 import '@/css_en/secretary/tax_filing/Tax_filing_content2.css'
 
-gsap.registerPlugin(ScrollTrigger)
+const motionRoot = ref(null)
 
 const processSteps = [
     { iconId: '#icon-agreement', title: 'Assessment, quotation and signing of tax declaration agreement', description: 'After communication and negotiation, both parties will evaluate the situation and sign a tax declaration agreement to clarify the service content and charges.' },
@@ -183,8 +183,7 @@ const toggleFaq = (index) => {
     expandedItems.value[index] = !expandedItems.value[index]
 }
 
-onMounted(async () => {
-    await nextTick()
+useSectionMotion(motionRoot, element => {
     
     const sections = [
         '.tax_filing_content2 .content1',

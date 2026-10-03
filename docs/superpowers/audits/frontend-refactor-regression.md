@@ -110,3 +110,13 @@ After the bank mobile corrections, all 24 combinations of six core routes and fo
 - Mounted the real shared components in the browser to verify their contracts: reversed=true rendered row-reverse at 1440px and column at 390px; two body entries produced two paragraphs. Optional contactLabel/contactRoute rendered the expected link and Enter navigated to /en/bank/hk/personal. Temporary mounts were unmounted afterward.
 - Task 5 Step 1 now has implemented and consumed hero/section interfaces for every specified field. This does not complete all page migrations or global regression; existing Hong Kong annual-review and tax-filing content animations still need lifecycle cleanup.
 - Screenshot: output/playwright/service-section-en-390.png.
+
+### Managed section animation lifecycle (2026-10-04)
+
+- Reproduced a lifecycle leak before editing: SPA navigation from Hong Kong annual review to tax filing and back to personal accounts left 39 ScrollTrigger entries pointing to disconnected DOM nodes.
+- Added useSectionMotion to scope GSAP selectors to the current DOM root, skip setup for reduced-motion, and revert the context on unmount. Hong Kong annual-review and tax-filing content use it in both languages; explicit DOM queries now use the scoped root.
+- AnimatedSection uses the same composable. Its English component forwards attributes and its slot to the canonical component through a Vue wrapper; a direct SFC re-export was rejected after runtime checks showed missing slots.
+- Final fresh SPA checks waited for each actual route's heading and content to mount. Trigger totals followed the current page (36 annual review, 5 tax filing, 2 personal accounts, 7 overseas annual review); disconnected trigger count stayed zero across all eight transitions in both languages. No pageerror events occurred.
+- Six normal-motion routes (Chinese/English annual review, tax filing and personal accounts) displayed their introductory content after scrolling into view. Four reduced-motion annual-review/tax-filing checks created zero triggers.
+- Final production build passed. External Source Han Serif CSS intermittently returned ERR_CONNECTION_CLOSED in this browser session; fallback fonts rendered. This is an existing dependency issue to consider during final visual regression.
+- Duplicate scan found 216 identical Chinese/English CSS pairs and 84 differing pairs. This is an inventory, not a completed cleanup; Task 6 Step 2 remains open.

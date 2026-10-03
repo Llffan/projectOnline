@@ -1,5 +1,5 @@
 <template>
-    <div class="service-content tax_filing_content2">
+    <div class="service-content tax_filing_content2" ref="motionRoot">
         <div class="content_box">
             
             <!-- 1. 十洲通专业税务服务 -->
@@ -137,12 +137,12 @@
 </template>
 
 <script setup>
-import { ref, onMounted, nextTick } from 'vue'
+import { ref } from 'vue'
 import gsap from 'gsap'
-import ScrollTrigger from 'gsap/ScrollTrigger'
+import { useSectionMotion } from '@/composables/useSectionMotion'
 import '@/css/secretary/tax_filing/Tax_filing_content2.css'
 
-gsap.registerPlugin(ScrollTrigger)
+const motionRoot = ref(null)
 
 const processSteps = [
     { iconId: '#icon-agreement', title: '评估、报价签报税协定', description: '双方沟通商洽后，评估情况并签订报税协定，明确服务内容及收费。' },
@@ -183,8 +183,7 @@ const toggleFaq = (index) => {
     expandedItems.value[index] = !expandedItems.value[index]
 }
 
-onMounted(async () => {
-    await nextTick()
+useSectionMotion(motionRoot, element => {
     
     const sections = [
         '.tax_filing_content2 .content1',

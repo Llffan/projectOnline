@@ -1,5 +1,5 @@
 <template>
-    <div class="service-content hk_content2">
+    <div class="service-content hk_content2" ref="motionRoot">
         <div class="content_box">
             <ServiceSection v-for="section in sections" :key="section.title" class="content1" v-bind="section" />
             <div class="content2">
@@ -123,13 +123,13 @@ const sections = [ {
   "image": sectionImage
 } ]
 
-import { ref, onMounted, nextTick } from 'vue'
+import { ref } from 'vue'
 import gsap from 'gsap'
-import ScrollTrigger from 'gsap/ScrollTrigger'
+import { useSectionMotion } from '@/composables/useSectionMotion'
 // 保持导入路径不变
 import '@/css/secretary/hk_annual/TaxHk_content2.css' 
 
-gsap.registerPlugin(ScrollTrigger)
+const motionRoot = ref(null)
 
 const registrationProcess = [
     {
@@ -242,9 +242,8 @@ const toggleFaq = (index) => {
 const advantageRefs = ref([])
 const registrationProcessRefs = ref([])
 
-// 保持动画脚本不变
-onMounted(async () => {
-    await nextTick()
+// 通过共享 context 管理本页的分组动画。
+useSectionMotion(motionRoot, element => {
     
     // content1 动画
     gsap.from('.content1 .title', {
@@ -314,7 +313,7 @@ onMounted(async () => {
         duration: 0.8
     })
 
-    const conditionItems = document.querySelectorAll('.content3 .condition-item');
+    const conditionItems = element.querySelectorAll('.content3 .condition-item');
     conditionItems.forEach((item, index) => {
         gsap.fromTo(item,
             { x: -50, opacity: 0, transition: 'none' },
@@ -379,7 +378,7 @@ onMounted(async () => {
         duration: 0.8
     })
 
-    const content5Advantages = document.querySelectorAll('.content5 .advantage');
+    const content5Advantages = element.querySelectorAll('.content5 .advantage');
     content5Advantages.forEach((item, index) => {
         gsap.fromTo(item,
             { y: 50, opacity: 0, transition: 'none' },
@@ -419,7 +418,7 @@ onMounted(async () => {
     );
 
     // content6 常见问题动画
-    const faqItems = document.querySelectorAll('.content6 .faq-item');
+    const faqItems = element.querySelectorAll('.content6 .faq-item');
     faqItems.forEach((item, index) => {
         // FAQ项进入动画
         gsap.fromTo(item,
