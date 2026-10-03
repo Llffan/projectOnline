@@ -37,3 +37,16 @@ At the available browser viewport (1280px), all four routes reported `document.b
 - English tokens, service shell, hero, content, and Link styles now import the canonical files in src/css/common; 193 duplicate lines removed.
 - Fixed a self-reference in --site-wide-max-width introduced by the earlier bulk replacement; its value is 2000px.
 - Reopened Task 5 CSS convergence: legacy page rules still duplicate shared rules and may override them. Four-viewport checks remain pending; build results alone do not prove responsive completion.
+
+### Four-viewport content measurements
+
+Measured actual browser viewport widths with Playwright, including nested content scroll widths rather than only document width.
+
+| Routes | 1440 | 1024 | 768 | 390 |
+| --- | --- | --- | --- | --- |
+| /secretary/hk-msb and /secretary_en/hk-msb | No measured internal overflow | No measured internal overflow | No measured internal overflow | No measured internal overflow |
+| /bank/hk/constructions and /en/bank/hk/constructions | No measured internal overflow | No measured internal overflow | Intro overflow detected | Content and intro overflow detected |
+
+- Removed duplicate root, card, and title rules from six MSB, annual-review, and tax-filing CSS files. English 28px headings remain through a custom property.
+- Fixed MSB mobile content stacking, condition-card box sizing, image sizing, and long-text wrapping. Before correction, the English 390px content card had client width 366px and scroll width 612px; after correction no measured internal overflow remained.
+- Company-account content overflow still requires correction. Screenshots and interaction checks remain pending; these measurements do not constitute full visual acceptance.
