@@ -200,7 +200,7 @@ refactor: add shared responsive design tokens
 - Produces: `site-header` 的统一导航 API、可访问的移动菜单、统一语言切换和返回顶部行为。
 - Consumes: Task 2 的 `--site-*` 令牌。
 
-- [ ] **Step 1: 统一导航数据结构**
+- [x] **Step 1: 统一导航数据结构**
 
 在中英文 Top2 组件中将菜单整理成相同的数据字段：
 
@@ -214,7 +214,7 @@ refactor: add shared responsive design tokens
 
 路由判断统一使用当前路由的完整路径匹配，避免通过字符串截断导致菜单高亮错误。
 
-- [ ] **Step 2: 统一移动菜单交互**
+- [x] **Step 2: 统一移动菜单交互**
 
 移动端使用一个按钮控制 `isMenuOpen`，按钮必须包含：
 
@@ -228,15 +228,15 @@ refactor: add shared responsive design tokens
 
 菜单打开时禁止页面横向滚动，点击路由后恢复关闭状态，按 Escape 关闭菜单。
 
-- [ ] **Step 3: 统一可访问性和焦点样式**
+- [x] **Step 3: 统一可访问性和焦点样式**
 
 为导航链接、菜单按钮、语言切换和返回顶部按钮补充可见 `:focus-visible` 样式；图片补充准确的 `alt` 文本。
 
-- [ ] **Step 4: 合并重复的移动端布局规则**
+- [x] **Step 4: 合并重复的移动端布局规则**
 
 中英文 CSS 使用相同的断点、容器和菜单定位规则，只有字体族、字号差异保留在语言文件中。
 
-- [ ] **Step 5: 验证导航行为**
+- [x] **Step 5: 验证导航行为**
 
 检查以下路径：
 
@@ -447,6 +447,7 @@ chore: remove migrated frontend duplication and record regression checks
 - `npm run build` 成功。
 - 迁移页面不再依赖会导致小屏溢出的固定容器宽度。
 - 每个迁移阶段有独立提交和可回滚边界。
+
 
 
 

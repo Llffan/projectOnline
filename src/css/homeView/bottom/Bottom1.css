@@ -1,6 +1,6 @@
 .bottom_box {
     width: 100%;
-    max-width: 2000px;
+    max-width: var(--site-wide-max-width);
     min-height: 500px;
     background-color: #10123b;
     position: relative;
@@ -100,5 +100,37 @@
         font-size: 16px;
         white-space: nowrap;
         max-width: 90%;
+    }
+}
+
+@media (max-width: 767px) {
+    .bottom_box {
+        min-height: 680px;
+
+        .bottom_link {
+            min-height: 0;
+            padding: 36px var(--site-gutter-mobile) 220px;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 24px 16px;
+
+            .link,
+            .contact_us {
+                min-height: 0;
+                gap: 14px;
+                justify-content: flex-start;
+            }
+
+            .contact_us { grid-column: 1 / -1; }
+            .link_img { width: 120px; height: 120px; margin-left: 0; }
+        }
+
+        .bottom_text {
+            bottom: 8%;
+            width: calc(100% - 32px);
+            white-space: normal;
+            text-align: center;
+            line-height: 1.5;
+        }
     }
 }

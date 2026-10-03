@@ -1,7 +1,7 @@
 <template>
   <div class="side-toolbar-container">
     <!-- WeChat Item -->
-    <div class="toolbar-item" @mouseenter="showWechat = true" @mouseleave="showWechat = false">
+    <button class="toolbar-item" type="button" :aria-label="isEnglish ? 'Contact us on WeChat' : '联系微信'" @mouseenter="showWechat = true" @mouseleave="showWechat = false" @focus="showWechat = true" @blur="showWechat = false">
       <div class="icon-box">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
       </div>
@@ -11,19 +11,19 @@
       <transition name="fade">
         <div v-if="showWechat" class="qr-popup">
           <img loading="lazy" src="@/assets/img/联系我们.jpg" alt="微信联系我们" />
-          <p>扫一扫联系我们</p>
+          <p>{{ isEnglish ? 'Scan to contact us' : '扫一扫联系我们' }}</p>
           <div class="arrow"></div>
         </div>
       </transition>
-    </div>
+    </button>
 
     <!-- Back to Top -->
-    <div class="toolbar-item back-to-top" @click="scrollToTop">
+    <button class="toolbar-item back-to-top" type="button" :aria-label="isEnglish ? 'Back to top' : '回到顶部'" @click="scrollToTop">
       <div class="icon-box">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
       </div>
       <span class="label">{{ isEnglish ? 'Back to top' : '回顶部' }}</span>
-    </div>
+    </button>
   </div>
 </template>
 
@@ -70,6 +70,9 @@ const scrollToTop = () => {
   box-shadow: -2px 0 12px rgba(0, 0, 0, 0.1);
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
+  border: 0;
+  font: inherit;
+  padding: 0;
 }
 
 .back-to-top {

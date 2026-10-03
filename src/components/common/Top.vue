@@ -2,9 +2,16 @@
     <!-- 顶部导航栏 -->
         <div class="top">
             <div class="logo">
-                <img loading="lazy" src="@/assets/img/logo.png" alt="">
+                <router-link to="/">
+                    <img loading="lazy" src="@/assets/img/logo.png" alt="十洲通首页">
+                </router-link>
             </div>
-            <div class="links">
+            <button type="button" class="mobile-menu-btn" :aria-expanded="isMenuOpen" aria-controls="site-navigation" aria-label="切换导航菜单" @click="toggleMenu">
+                <span :class="{ open: isMenuOpen }"></span>
+                <span :class="{ open: isMenuOpen }"></span>
+                <span :class="{ open: isMenuOpen }"></span>
+            </button>
+            <div id="site-navigation" class="links" :class="{ 'mobile-open': isMenuOpen }" @click="closeMenuOnNavigate">
                 <router-link to="/" class="nav-link" active-class="active" exact-active-class="exact-active">首页</router-link>
                 <div class="nav-dropdown nav-dropdown-1">
                     <router-link to="/company/hk" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': isCompanyRoute }">全球公司注册</router-link>
@@ -167,12 +174,39 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount, computed } from 'vue'
+import { ref, onMounted, onBeforeUnmount, computed, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import '@/css/common/Top.css'
 import SubmenuLink from '@/components/homeView/top/SubmenuLink.vue'
 
 const route = useRoute()
+const isMenuOpen = ref(false)
+
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value
+}
+
+const closeMenu = () => {
+  isMenuOpen.value = false
+}
+
+const closeMenuOnNavigate = (event) => {
+  if (event.target.closest('a')) closeMenu()
+}
+
+const handleKeydown = (event) => {
+  if (event.key === 'Escape') closeMenu()
+}
+
+onMounted(() => window.addEventListener('keydown', handleKeydown))
+watch(isMenuOpen, (open) => {
+  document.body.style.overflow = open ? 'hidden' : ''
+})
+watch(() => route.path, closeMenu)
+onBeforeUnmount(() => {
+  window.removeEventListener('keydown', handleKeydown)
+  document.body.style.overflow = ''
+})
 
 // 映射国家路由到区域ID
 const countryToRegionMap = {
