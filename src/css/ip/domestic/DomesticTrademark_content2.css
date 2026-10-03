@@ -46,7 +46,7 @@
 
     .right-section {
       width: 40%;
-      min-width: 350px;
+      min-width: min(350px, 100%);
       
       .form-card {
         background: white;
@@ -132,5 +132,24 @@
       color: #000;
       text-align: right;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .domestic_trademark_content2 {
+    padding: 40px 0;
+  }
+
+  .domestic_trademark_content2 .content_wrapper {
+    width: calc(100% - 24px);
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .domestic_trademark_content2 .content_wrapper .left-section,
+  .domestic_trademark_content2 .content_wrapper .right-section {
+    width: 100%;
+    min-width: 0;
+    padding-right: 0;
   }
 }
