@@ -13,7 +13,7 @@
                 </div>
                 <div class="content_body" ref="coverRef">
                     <div class="nums_display" v-for="(item, idx) in cover_content" :key="idx">
-                        <p><span class="num">{{ cover_displayValues[idx] }}</span>{{item.unit}}</p>
+                        <p><span class="num">{{ cover_displayValues[idx] }}</span>{{ idx === 0 && cover_displayValues[idx] === 1 ? ' Year' : (idx === 0 ? ' Years' : item.unit) }}</p>
                         <p>{{ item.desc }}</p>
                     </div>
                 </div>
@@ -48,8 +48,8 @@
             <p class="p3">In the course of business development, professional secretarial services have become a crucial safeguard for many enterprises—especially offshore companies—to maintain compliance and achieve operational efficiency. As a trusted corporate assistant, secretarial services not only assist with daily administrative and compliance matters, but also deliver professional and efficient business support.<br />Choose SHI ZHOU TONG Secretarial Services so you can focus on core business growth, leaving the rest to our professional team with total peace of mind.</p>
 
             <div class="scoll_content3" ref="accountBodyRef">
-                <div class="content3_body" v-for="(item, i) in content3_body" :key="i" :ref="el => setAccountCardRef(el, i)" @click="router.push(item.path)" style="cursor: pointer;">
-                    <img loading="lazy" :src="item.img" alt="">
+                <div class="content3_body" v-for="(item, i) in content3_body" :key="i" :ref="el => setAccountCardRef(el, i)" role="link" tabindex="0" @click="router.push(item.path)" @keydown.enter="router.push(item.path)" style="cursor: pointer;">
+                    <img loading="lazy" :src="item.img" :alt="item.title">
                     <p>{{item.title}}</p>
                     <span>{{item.desc}}</span>
                 </div>
@@ -77,22 +77,22 @@ const features = [
 let cover_content = ref([
     {
         initialValue: 1,
-        finalValue: 10,
+        finalValue: 1,
         unit: ' Years',
         desc: 'Company Registration Experience'
     },{
         initialValue: 100,
-        finalValue: 2000,
+        finalValue: 100,
         unit: '+',
         desc: 'Successful Overseas Companies Established'
     },{
         initialValue: 10,
-        finalValue: 1120,
+        finalValue: 10,
         unit: '+',
         desc: 'Successful Overseas Bank Accounts Opened'
     },{
         initialValue: 10,
-        finalValue: 1520,
+        finalValue: 10,
         unit: '+',
         desc: 'Enterprises Became Long-Term Clients'
     },

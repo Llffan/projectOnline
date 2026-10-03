@@ -320,3 +320,7 @@
         }
     }
 }
+.content3_body:focus-visible {
+    outline: 3px solid rgba(37, 99, 235, .45);
+    outline-offset: 3px;
+}

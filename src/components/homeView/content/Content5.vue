@@ -4,7 +4,7 @@
             <div class="scoll_cover"></div>
             <div class="cover_content">
                 <div class="content_desc">
-                    <p ref="introRef">十洲通提供全球离岸注册地平台超过60多个国家及地区，专注于离岸公司注册、开户、年审、做账审计报税、商标品牌保护。</p>
+                    <p ref="introRef">十洲通提供覆盖60多个国家及地区的全球离岸注册服务，专注于公司注册、开户、年审、做账审计报税和商标品牌保护。</p>
                     <div ref="bottonRef" class="button" @click="router.push('/company/hk')" style="cursor: pointer;">了解详细<p class="p1">→</p></div>
                 </div>
                 <div class="content_body">
@@ -75,19 +75,19 @@ const router = useRouter()
 
 let num_display = ref([
     {
-        initialValue: 0,
+        initialValue: 40,
         finalValue: 40,
         desc: '全球银行开户'
     },{
-        initialValue: 0,
+        initialValue: 60,
         finalValue: 60,
         desc: '国家企业注册业务'
     },{
-        initialValue: 0,
+        initialValue: 50,
         finalValue: 50,
         desc: '国家金融牌照注册'
     },{
-        initialValue: 0,
+        initialValue: 30,
         finalValue: 30,
         desc: '国家商标注册'
     }
@@ -140,7 +140,7 @@ const advantages = [
     {
         imgSrc: new URL('@/assets/img/temp_img/5.jpg', import.meta.url).href,
         title: '专业专属商务对接和支持',
-        description: '顾问、咨询师、会计师等建立计划小组，负责客户一对一的咨询、案子进度和客户协调计划等服务工作。'
+        description: '顾问、咨询师、会计师等组成项目小组，负责客户一对一咨询、项目进度跟进和沟通协调。'
     }
 ]
 

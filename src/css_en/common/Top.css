@@ -310,3 +310,14 @@
         opacity: 1;
     }
 }
+
+@media (max-width: 768px) {
+    .top {
+        height: 64px;
+        overflow: hidden;
+        .logo { height: 52px; margin-left: 10px; img { width: 164px; height: 52px; object-fit: contain; } }
+        .links { justify-content: flex-start; overflow-x: auto; min-width: 0; a { font-size: 14px; padding: 12px 8px; white-space: nowrap; } }
+        .nav-dropdown > .dropdown-menu { min-width: 280px; max-width: calc(100vw - 20px); }
+        .contact-info { display: none; }
+    }
+}

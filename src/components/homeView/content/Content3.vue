@@ -37,7 +37,7 @@
         
         <!-- 开户 -->
         <div class="account_body" ref="accountBodyRef">
-            <div v-for="(item, i) in account_body" :key="i" :ref="el => setAccountCardRef(el, i)" @click="router.push(item.path)" style="cursor: pointer;">
+            <div v-for="(item, i) in account_body" :key="i" :ref="el => setAccountCardRef(el, i)" role="link" tabindex="0" @click="router.push(item.path)" @keydown.enter="router.push(item.path)" style="cursor: pointer;">
                 <div>
                     <img loading="lazy" :src="item.img" alt="">
                     <div>
@@ -157,7 +157,7 @@ const account_body = ref([
     {
         img: new URL('@/assets/img/account/香港.png', import.meta.url).href,
         title: '香港银行开户',
-        desc: '内地外资银行为在我国境内设立的外国独资银行机构，提供相较于中资银行更为完善和细致的金融服务。其业务范围广泛，涵盖各类国际银行业务，遵照各国银行法规及管理制度运营。',
+        desc: '香港作为国际金融中心，银行体系成熟，能够为企业提供多币种账户、跨境收付款和国际贸易结算等服务。我们根据企业业务和资金流向匹配合适的开户方案。',
         path: '/bank/hk/constructions'
     }, {
         img: new URL('@/assets/img/account/澳门.png', import.meta.url).href,

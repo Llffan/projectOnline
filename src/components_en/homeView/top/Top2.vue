@@ -2,10 +2,15 @@
     <div class="top2" :class="{ 'scrolled': isScrolled }">
             <div class="logo">
                 <router-link to="/en">
-                    <img loading="lazy" :src="logoSrc" alt="">
+                    <img loading="lazy" :src="logoSrc" alt="SHI ZHOU TONG">
                 </router-link>
             </div>
-            <div class="links">
+            <button class="mobile-menu-btn" type="button" :aria-expanded="isMobileMenuOpen" aria-label="Open navigation menu" @click="isMobileMenuOpen = !isMobileMenuOpen">
+                <span :class="{ open: isMobileMenuOpen }"></span>
+                <span :class="{ open: isMobileMenuOpen }"></span>
+                <span :class="{ open: isMobileMenuOpen }"></span>
+            </button>
+            <div class="links" :class="{ 'mobile-open': isMobileMenuOpen }">
                 <router-link to="/en" class="nav-link" active-class="active" exact-active-class="exact-active">Home</router-link>
                 <div class="nav-dropdown nav-dropdown-1">
                     <router-link to="/company_en/hk" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': isCompanyRoute }">Global Company Registration</router-link>
@@ -175,6 +180,7 @@ import SubmenuLink from '@/components/homeView/top/SubmenuLink.vue'
 
 const route = useRoute()
 const isScrolled = ref(false)
+const isMobileMenuOpen = ref(false)
 
 // 映射国家路由到区域ID
 const countryToRegionMap = {

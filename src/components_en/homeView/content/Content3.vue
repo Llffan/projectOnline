@@ -37,7 +37,7 @@
         
         <!-- 开户 -->
         <div class="account_body" ref="accountBodyRef">
-            <div v-for="(item, i) in account_body" :key="i" :ref="el => setAccountCardRef(el, i)" @click="router.push(item.path)" style="cursor: pointer;">
+            <div v-for="(item, i) in account_body" :key="i" :ref="el => setAccountCardRef(el, i)" role="link" tabindex="0" @click="router.push(item.path)" @keydown.enter="router.push(item.path)" style="cursor: pointer;">
                 <div>
                     <img loading="lazy" :src="item.img" alt="">
                     <div>

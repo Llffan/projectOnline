@@ -1,15 +1,15 @@
 <template>
     <div class="top2" :class="{ 'scrolled': isScrolled }">
             <div class="logo">
-                <img loading="lazy" :src="logoSrc" alt="">
+                <img loading="lazy" :src="logoSrc" alt="十洲通">
             </div>
 
             <!-- 移动端菜单按钮 -->
-            <div class="mobile-menu-btn" @click="isMobileMenuOpen = !isMobileMenuOpen">
+            <button class="mobile-menu-btn" type="button" :aria-expanded="isMobileMenuOpen" aria-label="打开导航菜单" @click="isMobileMenuOpen = !isMobileMenuOpen">
                 <span :class="{ 'open': isMobileMenuOpen }"></span>
                 <span :class="{ 'open': isMobileMenuOpen }"></span>
                 <span :class="{ 'open': isMobileMenuOpen }"></span>
-            </div>
+            </button>
 
             <div class="links" :class="{ 'mobile-open': isMobileMenuOpen }">
                 <router-link to="/" class="nav-link" active-class="active" exact-active-class="exact-active" @click="isMobileMenuOpen = false">首页</router-link>
@@ -63,7 +63,7 @@
                     </div>
                 </div>
                 <div class="nav-dropdown nav-dropdown-2">
-                    <router-link to="/secretary/hk-annual" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': route.path.startsWith('secretary/hk-annual') }" @click="toggleDropdown($event)">秘书服务</router-link>
+                    <router-link to="/secretary/hk-annual" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': route.path.startsWith('/secretary') }" @click="toggleDropdown($event)">秘书服务</router-link>
                     <div class="dropdown-menu menu-secretary">
                         <div class="region-group">
                             <div class="region-title">公司年审服务</div>
@@ -76,7 +76,7 @@
                         <div class="region-group">
                             <div class="region-title">香港牌照服务</div>
                             <div class="region-countries menu-secretary-countries">
-                                <SubmenuLink to="/secretary/msb">香港MSB牌照</SubmenuLink>
+                                <SubmenuLink to="/secretary/hk-msb">香港MSB牌照</SubmenuLink>
                                 <SubmenuLink to="/secretary/telecom">香港电信牌照</SubmenuLink>
                                 <SubmenuLink to="/secretary/hk-odi">境外投资备案</SubmenuLink>
                             </div>
@@ -230,7 +230,7 @@ const countryToRegionMap = {
   // 秘书服务
   '/secretary/hk-annual': 'annual-review',
   '/secretary/overseas-annual': 'annual-review',
-  '/secretary/msb': 'hk-license',
+  '/secretary/hk-msb': 'hk-license',
   '/secretary/telecom': 'hk-license',
   '/secretary/change': 'company-changes',
   '/secretary/dissolution': 'company-changes',

@@ -4,7 +4,7 @@
             <div class="scoll_cover"></div>
             <div class="cover_content">
                 <div class="content_desc">
-                    <p ref="introRef">SHI ZHOU TONG provides global offshore registration platforms in more than 60 countries and regions, focusing on offshore company registration, account opening, annual review, accounting & auditing, tax filing, and trademark brand protection.</p>
+                    <p ref="introRef">SHI ZHOU TONG provides offshore registration services across more than 60 countries and regions, focusing on company registration, account opening, annual review, accounting and tax filing, and trademark protection.</p>
                     <div ref="bottonRef" class="button" @click="router.push('/company_en/hk')" style="cursor: pointer;">Details<p class="p1">→</p></div>
                 </div>
                 <div class="content_body">
@@ -75,19 +75,19 @@ const router = useRouter()
 
 let num_display = ref([
     {
-        initialValue: 0,
+        initialValue: 40,
         finalValue: 40,
         desc: 'Global Bank Accounts Opened'
     },{
-        initialValue: 0,
+        initialValue: 60,
         finalValue: 60,
         desc: 'Countries for Company Registration'
     },{
-        initialValue: 0,
+        initialValue: 50,
         finalValue: 50,
         desc: 'Countries for Financial License'
     },{
-        initialValue: 0,
+        initialValue: 30,
         finalValue: 30,
         desc: 'Countries for Trademark Registration'
     }

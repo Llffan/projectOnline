@@ -7,7 +7,7 @@
             trigger="click" 
             height="calc(100vh + 82px)" 
             :autoplay="false" 
-            indicator-position="inside" 
+            indicator-position="none"
             arrow="always"
             @change="handleSlideChange"
             :loop="false"

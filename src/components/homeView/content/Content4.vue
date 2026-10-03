@@ -48,8 +48,8 @@
             <p class="p3">在企业发展过程中，专业秘书服务已成为众多企业，尤其是离岸公司实现合规、高效运营的重要保障。作为企业的“贴身助手”，秘书服务不仅能够协助企业处理日常行政及合规事务，还能提供专业、高效的商务支持。<br />选择十洲通秘书服务，让您专注于核心业务发展，其余事务交由我们的专业团队处理，省心、放心、安心。</p>
 
             <div class="scoll_content3" ref="accountBodyRef">
-                <div class="content3_body" v-for="(item, i) in content3_body" :key="i" :ref="el => setAccountCardRef(el, i)" @click="router.push(item.path)" style="cursor: pointer;">
-                    <img loading="lazy" :src="item.img" alt="">
+                <div class="content3_body" v-for="(item, i) in content3_body" :key="i" :ref="el => setAccountCardRef(el, i)" role="link" tabindex="0" @click="router.push(item.path)" @keydown.enter="router.push(item.path)" style="cursor: pointer;">
+                    <img loading="lazy" :src="item.img" :alt="item.title">
                     <p>{{item.title}}</p>
                     <span>{{item.desc}}</span>
                 </div>
@@ -77,22 +77,22 @@ const features = [
 let cover_content = ref([
     {
         initialValue: 1,
-        finalValue: 10,
+        finalValue: 1,
         unit: '年',
         desc: '公司注册从业经验'
     },{
         initialValue: 100,
-        finalValue: 2000,
+        finalValue: 100,
         unit: '家',
         desc: '成功设立的海外公司'
     },{
         initialValue: 10,
-        finalValue: 1120,
+        finalValue: 10,
         unit: '个',
         desc: '成功开通的海外银行账户'
     },{
         initialValue: 10,
-        finalValue: 1520,
+        finalValue: 10,
         unit: '个',
         desc: '企业成为长期客户'
     },
