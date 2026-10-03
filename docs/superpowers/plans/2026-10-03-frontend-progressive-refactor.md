@@ -102,7 +102,7 @@ docs: record frontend refactor baseline
 - Produces: 全站可使用的 CSS 自定义属性、`.site-container`、`.section-spacing`、统一断点和 reduced-motion 规则。
 - Consumes: 现有全局样式加载顺序和 Top/HomeView 的布局约定。
 
-- [ ] **Step 1: 编写令牌文件**
+- [x] **Step 1: 编写令牌文件**
 
 在两个语言目录分别定义相同的结构令牌，中文和英文只允许存在字体差异：
 
@@ -138,11 +138,11 @@ docs: record frontend refactor baseline
 }
 ```
 
-- [ ] **Step 2: 在 `src/main.js` 中按现有顺序引入 tokens**
+- [x] **Step 2: 在 `src/main.js` 中按现有顺序引入 tokens**
 
 保证 tokens 在页面 CSS 之前加载，避免覆盖现有页面的必要规则。
 
-- [ ] **Step 3: 增加统一容器和间距工具类**
+- [x] **Step 3: 增加统一容器和间距工具类**
 
 在公共样式中加入：
 
@@ -163,11 +163,11 @@ docs: record frontend refactor baseline
 }
 ```
 
-- [ ] **Step 4: 替换首页和公共导航中的硬编码容器值**
+- [x] **Step 4: 替换首页和公共导航中的硬编码容器值**
 
 只替换与容器宽度、左右留白和区块间距相关的值；保留页面视觉上有业务含义的图片尺寸和装饰定位。
 
-- [ ] **Step 5: 验证四个视口**
+- [x] **Step 5: 验证四个视口**
 
 运行：
 
@@ -447,5 +447,6 @@ chore: remove migrated frontend duplication and record regression checks
 - `npm run build` 成功。
 - 迁移页面不再依赖会导致小屏溢出的固定容器宽度。
 - 每个迁移阶段有独立提交和可回滚边界。
+
 
 
