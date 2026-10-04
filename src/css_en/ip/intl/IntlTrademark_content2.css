@@ -33,6 +33,9 @@
     }
 
     .content1 {
+      /* Keep the homepage carousel .content1 styles out of this introduction. */
+      transform: translateY(0);
+      height: auto;
       width: 100%;
       margin: 50px 0 100px 0;
       display: flex;

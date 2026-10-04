@@ -126,15 +126,15 @@
     
     /* 为每个下拉菜单添加独立的最小宽度设置 */
     .nav-dropdown-1 > .dropdown-menu {
-        min-width: 650px;
+        min-width: 800px;
     }
     
     .nav-dropdown-2 > .dropdown-menu {
-        min-width: 500px;
+        min-width: 600px;
     }
     
     .nav-dropdown-3 > .dropdown-menu {
-        min-width: 500px;
+        min-width: 600px;
     }
     
     .nav-dropdown-4 > .dropdown-menu {
@@ -142,7 +142,7 @@
     }
     
     .nav-dropdown-5 > .dropdown-menu {
-        min-width: 300px;
+        min-width: 560px;
     }
     
     .dropdown-menu .region-group {

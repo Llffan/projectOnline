@@ -86,7 +86,7 @@ const icon = computed(() => {
   const { to } = props
 
   if (to.includes('/company')) return Building2
-  if (to.includes('/bank')) return to.endsWith('/personal') ? UserRound : Landmark
+  if (to.includes('/bank')) return  /\/personal(?:\/|$)/.test(to) ? UserRound : Landmark
   if (to.includes('/notary/hague') || to.includes('/notary/embassy')) return Stamp
   if (to.includes('/notary')) return BadgeCheck
   if (to.includes('/ip/patent')) return Lightbulb

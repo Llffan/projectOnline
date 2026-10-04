@@ -94,33 +94,33 @@
                     </div>
                 </div>
                 <div class="nav-dropdown nav-dropdown-3">
-                    <router-link to="/en/bank/hk/personal" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': isBankRoute }">Bank Account Opening</router-link>
+                    <router-link to="/en/bank/hk/personal/constructions" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': isBankRoute }">Bank Account Opening</router-link>
                     <div class="dropdown-menu menu-bank">
                         <div class="region-group">
                             <div class="region-title">HK Bank Account</div>
                             <div class="region-countries menu-bank-countries">
-                                <SubmenuLink to="/en/bank/hk/personal">HK Personal Account</SubmenuLink>
+                                <SubmenuLink to="/en/bank/hk/personal/constructions">HK Personal Account</SubmenuLink>
                                 <SubmenuLink to="/en/bank/hk/constructions">HK Corporate Account</SubmenuLink>
                             </div>
                         </div>
                         <div class="region-group">
                             <div class="region-title">SG Bank Account</div>
                             <div class="region-countries menu-bank-countries">
-                                <SubmenuLink to="/en/bank/sg/personal">SG Personal Account</SubmenuLink>
+                                <SubmenuLink to="/en/bank/sg/personal/ocbc">SG Personal Account</SubmenuLink>
                                 <SubmenuLink to="/en/bank/sg/ocbc">SG Corporate Account</SubmenuLink>
                             </div>
                         </div>
                         <div class="region-group">
                             <div class="region-title">Macao Bank Account</div>
                             <div class="region-countries menu-bank-countries">
-                                <SubmenuLink to="/en/bank/mo/personal">Macao Personal Account</SubmenuLink>
+                                <SubmenuLink to="/en/bank/mo/personal/wl">Macao Personal Account</SubmenuLink>
                                 <SubmenuLink to="/en/bank/mo/icbc">Macao Corporate Account</SubmenuLink>
                             </div>
                         </div>
                         <div class="region-group">
                             <div class="region-title">US Bank Account</div>
                             <div class="region-countries menu-bank-countries">
-                                <SubmenuLink to="/en/bank/us/personal">US Personal Account</SubmenuLink>
+                                <SubmenuLink to="/en/bank/us/personal/cbi">US Personal Account</SubmenuLink>
                                 <SubmenuLink to="/en/bank/us/cbi">US Corporate Account</SubmenuLink>
                             </div>
                         </div>

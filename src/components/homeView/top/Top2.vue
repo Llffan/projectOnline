@@ -100,33 +100,33 @@
                     </div>
                 </div>
                 <div class="nav-dropdown nav-dropdown-3">
-                    <router-link to="/bank/hk/personal" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': route.path.startsWith('/bank') }" @click="toggleDropdown($event)">银行开户</router-link>
+                    <router-link to="/bank/hk/personal/constructions" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': route.path.startsWith('/bank') }" @click="toggleDropdown($event)">银行开户</router-link>
                     <div class="dropdown-menu menu-bank">
                         <div class="region-group">
                             <div class="region-title">香港银行开户</div>
                             <div class="region-countries menu-bank-countries">
-                                <SubmenuLink to="/bank/hk/personal">香港个人账户</SubmenuLink>
+                                <SubmenuLink to="/bank/hk/personal/constructions">香港个人账户</SubmenuLink>
                                 <SubmenuLink to="/bank/hk/constructions">香港公司账户</SubmenuLink>
                             </div>
                         </div>
                         <div class="region-group">
                             <div class="region-title">新加坡银行开户</div>
                             <div class="region-countries menu-bank-countries">
-                                <SubmenuLink to="/bank/sg/personal">新加坡个人账户</SubmenuLink>
+                                <SubmenuLink to="/bank/sg/personal/ocbc">新加坡个人账户</SubmenuLink>
                                 <SubmenuLink to="/bank/sg/ocbc">新加坡公司账户</SubmenuLink>
                             </div>
                         </div>
                         <div class="region-group">
                             <div class="region-title">澳门银行开户</div>
                             <div class="region-countries menu-bank-countries">
-                                <SubmenuLink to="/bank/mo/personal">澳门个人账户</SubmenuLink>
+                                <SubmenuLink to="/bank/mo/personal/wl">澳门个人账户</SubmenuLink>
                                 <SubmenuLink to="/bank/mo/icbc">澳门公司账户</SubmenuLink>
                             </div>
                         </div>
                         <div class="region-group">
                             <div class="region-title">美国银行开户</div>
                             <div class="region-countries menu-bank-countries">
-                                <SubmenuLink to="/bank/us/personal">美国个人账户</SubmenuLink>
+                                <SubmenuLink to="/bank/us/personal/cbi">美国个人账户</SubmenuLink>
                                 <SubmenuLink to="/bank/us/cbi">美国公司账户</SubmenuLink>
                             </div>
                         </div>

@@ -93,33 +93,33 @@
                     </div>
                 </div>
                 <div class="nav-dropdown nav-dropdown-3">
-                    <router-link to="/bank/hk/personal" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': isBankRoute }">银行开户</router-link>
+                    <router-link to="/bank/hk/personal/constructions" class="nav-link" active-class="active" exact-active-class="exact-active" :class="{ 'exact-active': isBankRoute }">银行开户</router-link>
                     <div class="dropdown-menu menu-bank">
                         <div class="region-group" :class="{ 'active-region': activeRegion === 'bank-hk' }">
                             <div class="region-title">香港银行开户</div>
                             <div class="region-countries menu-bank-countries">
-                                <SubmenuLink to="/bank/hk/personal">香港个人账户</SubmenuLink>
+                                <SubmenuLink to="/bank/hk/personal/constructions">香港个人账户</SubmenuLink>
                                 <SubmenuLink to="/bank/hk/constructions">香港公司账户</SubmenuLink>
                             </div>
                         </div>
                         <div class="region-group" :class="{ 'active-region': activeRegion === 'bank-sg' }">
                             <div class="region-title">新加坡银行开户</div>
                             <div class="region-countries menu-bank-countries">
-                                <SubmenuLink to="/bank/sg/personal">新加坡个人账户</SubmenuLink>
+                                <SubmenuLink to="/bank/sg/personal/ocbc">新加坡个人账户</SubmenuLink>
                                 <SubmenuLink to="/bank/sg/ocbc">新加坡公司账户</SubmenuLink>
                             </div>
                         </div>
                         <div class="region-group" :class="{ 'active-region': activeRegion === 'bank-mo' }">
                             <div class="region-title">澳门银行开户</div>
                             <div class="region-countries menu-bank-countries">
-                                <SubmenuLink to="/bank/mo/personal">澳门个人账户</SubmenuLink>
+                                <SubmenuLink to="/bank/mo/personal/wl">澳门个人账户</SubmenuLink>
                                 <SubmenuLink to="/bank/mo/icbc">澳门公司账户</SubmenuLink>
                             </div>
                         </div>
                         <div class="region-group" :class="{ 'active-region': activeRegion === 'bank-us' }">
                             <div class="region-title">美国银行开户</div>
                             <div class="region-countries menu-bank-countries">
-                                <SubmenuLink to="/bank/us/personal">美国个人账户</SubmenuLink>
+                                <SubmenuLink to="/bank/us/personal/cbi">美国个人账户</SubmenuLink>
                                 <SubmenuLink to="/bank/us/cbi">美国公司账户</SubmenuLink>
                             </div>
                         </div>
@@ -161,7 +161,7 @@
                 </div>
             </div>
             <div class="contact-info">
-                <div class="website"><a href="/en">English</a></div>
+                <div class="website"><a :href="personalLanguageRoute">English</a></div>
             </div>
         </div>
 </template>
@@ -173,6 +173,7 @@ import '@/css/common/Top.css'
 import SubmenuLink from '@/components/homeView/top/SubmenuLink.vue'
 
 const route = useRoute()
+const personalLanguageRoute = computed(() => /^\/bank\/(hk|sg|mo|us)\/personal(?:\/|$)/.test(route.path) ? '/en' + route.fullPath : '/en');
 
 // 映射国家路由到区域ID
 const countryToRegionMap = {

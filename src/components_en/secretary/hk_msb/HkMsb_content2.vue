@@ -8,9 +8,9 @@
                 <div class="intro">
                     <img loading="lazy" src="@/assets/img/company/hk/HK-2.jpg" alt="">
                     <div class="text">
-                        <P>The Hong Kong Money Service Operator License (MSO License) is a financial license issued by the Hong Kong Customs Department. Any individual or enterprise operating currency exchange services or remittance services in Hong Kong must apply for this license from the Commissioner of Customs and Excise.</P>
-                        <P>The MSO license is a necessary pass for compliant cross-border payment and currency exchange business. As global regulation tightens, holding this license can significantly enhance the credibility of the company and is the basis for conducting international financial business.</P>
-                        <P>We provide one-stop services from company registration, venue leasing, compliance officer appointment to license application and subsequent maintenance, helping you successfully obtain a license and conduct business in compliance with regulations.</P>
+                        <p>The Hong Kong Money Service Operator License (MSO License) is a financial license issued by the Hong Kong Customs Department. Any individual or enterprise operating currency exchange services or remittance services in Hong Kong must apply for this license from the Commissioner of Customs and Excise.</p>
+                        <p>The MSO license is a necessary pass for compliant cross-border payment and currency exchange business. As global regulation tightens, holding this license can significantly enhance the credibility of the company and is the basis for conducting international financial business.</p>
+                        <p>We provide one-stop services from company registration, venue leasing, compliance officer appointment to license application and subsequent maintenance, helping you successfully obtain a license and conduct business in compliance with regulations.</p>
                     </div>
                 </div>
             </div>

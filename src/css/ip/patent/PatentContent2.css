@@ -33,6 +33,8 @@
     }
 
     .content1 {
+      /* Keep the homepage carousel .content1 styles out of this introduction. */
+      transform: translateY(0);
         width: 100%;
         height: auto;
         min-height: 480px;

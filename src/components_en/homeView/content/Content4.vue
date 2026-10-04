@@ -13,7 +13,7 @@
                 </div>
                 <div class="content_body" ref="coverRef">
                     <div class="nums_display" v-for="(item, idx) in cover_content" :key="idx">
-                        <p><span class="num">{{ cover_displayValues[idx] }}</span>{{item.unit}}</p>
+                        <p><span class="num">{{ cover_displayValues[idx] }}</span>{{ idx === 0 && cover_displayValues[idx] === 1 ? ' Year' : (idx === 0 ? ' Years' : item.unit) }}</p>
                         <p>{{ item.desc }}</p>
                     </div>
                 </div>

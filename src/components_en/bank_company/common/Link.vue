@@ -34,6 +34,7 @@
 import '@/css_en/bank_company/common/Link.css'
 
 import { ref, computed, onMounted, watch } from 'vue'
+import { isListedPersonalBank } from '@/components/bank_personal/common/personalBankProfiles.js'
 import { useRoute, useRouter } from 'vue-router'
 
 const router = useRouter()
@@ -194,11 +195,11 @@ const personalBankSlugs = {
 
 const displayedServices = computed(() => {
   if (!selectedCategory.value) return []
-  const region = personalRouteMatch.value?.[1]
-  if (!region || selectedCategory.value.id !== region) return selectedCategory.value.services
+  if (!personalRouteMatch.value) return selectedCategory.value.services
+  const region = selectedCategory.value.id
   const slugs = personalBankSlugs[region]
   return selectedCategory.value.services
-    .filter(service => slugs[service.route])
+    .filter(service => slugs[service.route] && isListedPersonalBank(region, slugs[service.route]))
     .map(service => ({ ...service, route: '/en/bank/' + region + '/personal/' + slugs[service.route] }))
 })
 

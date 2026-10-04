@@ -1,4 +1,23 @@
 const images = {
+  'bank/hk/construction.png': new URL('../../../assets/img/bank/hk/construction.png', import.meta.url).href,
+  'bank/hk/china.jpg': new URL('../../../assets/img/bank/hk/china.jpg', import.meta.url).href,
+  'bank/hk/communications.jpg': new URL('../../../assets/img/bank/hk/communications.jpg', import.meta.url).href,
+  'bank/hk/merchants_wing_lung.jpg': new URL('../../../assets/img/bank/hk/merchants_wing_lung.jpg', import.meta.url).href,
+  'bank/hk/china_citic.jpg': new URL('../../../assets/img/bank/hk/china_citic.jpg', import.meta.url).href,
+  'bank/hk/HSBC.jpg': new URL('../../../assets/img/bank/hk/HSBC.jpg', import.meta.url).href,
+  'bank/hk/chong_xing.jpg': new URL('../../../assets/img/bank/hk/chong_xing.jpg', import.meta.url).href,
+  'bank/hk/DBS.jpg': new URL('../../../assets/img/bank/hk/DBS.jpg', import.meta.url).href,
+  'bank/hk/hang_seng.jpg': new URL('../../../assets/img/bank/hk/hang_seng.jpg', import.meta.url).href,
+  'bank/hk/NCB.jpg': new URL('../../../assets/img/bank/hk/NCB.jpg', import.meta.url).href,
+  'bank/hk/east_asia.jpg': new URL('../../../assets/img/bank/hk/east_asia.jpg', import.meta.url).href,
+  'bank/hk/dah_sing.jpg': new URL('../../../assets/img/bank/hk/dah_sing.jpg', import.meta.url).href,
+  'bank/hk/OCBC.jpg': new URL('../../../assets/img/bank/hk/OCBC.jpg', import.meta.url).href,
+  'bank/hk/citibank.jpg': new URL('../../../assets/img/bank/hk/citibank.jpg', import.meta.url).href,
+  'bank/hk/Standard_Chartered.jpg': new URL('../../../assets/img/bank/hk/Standard_Chartered.jpg', import.meta.url).href,
+  'bank/hk/ICBC.jpg': new URL('../../../assets/img/bank/hk/ICBC.jpg', import.meta.url).href,
+  'bank/hk/ShangHai.png': new URL('../../../assets/img/bank/hk/ShangHai.png', import.meta.url).href,
+  'company/hk/HK.jpg': new URL('../../../assets/img/company/hk/HK.jpg', import.meta.url).href,
+  'account/香港.png': new URL('../../../assets/img/account/香港.png', import.meta.url).href,
   'company/sg/SG.jpg': new URL('../../../assets/img/company/sg/SG.jpg', import.meta.url).href,
   'account/新加坡.png': new URL('../../../assets/img/account/新加坡.png', import.meta.url).href,
   'bank/sg/华侨银行.png': new URL('../../../assets/img/bank/sg/华侨银行.png', import.meta.url).href,
@@ -57,7 +76,7 @@ const makeCopy = (name, nameEn) => ({
       { iconId: '#icon-award-line', title: '收取资料', description: '审批通过后按银行安排收取账户及银行卡资料。' },
       { iconId: '#icon-folder-success-one', title: '激活账户', description: '启用网上银行并按银行要求维护账户。' }
     ],
-    banksTitle: `支持个人开户的${name}银行`,
+    banksTitle: `${name}个人银行选择与资格说明`,
     faqTitle: `${name}个人开户常见问题`,
     faqs: [
       { question: `内地居民可以申请${name}个人银行账户吗？`, answer: '部分银行接受符合条件的非本地居民申请，是否受理及所需资料由银行按客户情况和最新政策审核。' },
@@ -90,7 +109,7 @@ const makeCopy = (name, nameEn) => ({
       { iconId: '#icon-award-line', title: 'Account materials', description: 'Receive account and card materials according to bank arrangements.' },
       { iconId: '#icon-folder-success-one', title: 'Account activation', description: 'Activate online banking and maintain the account as required.' }
     ],
-    banksTitle: `${nameEn} Banks Supporting Personal Account Applications`,
+    banksTitle: `${nameEn} Personal Bank Options and Eligibility`,
     faqTitle: `${nameEn} Personal Account FAQs`,
     faqs: [
       { question: `Can Mainland residents apply for a ${nameEn} personal account?`, answer: 'Some banks accept eligible non-resident applicants. Acceptance and documents depend on the bank, customer profile and current policy.' },
@@ -102,6 +121,29 @@ const makeCopy = (name, nameEn) => ({
 })
 
 export const regionPersonalConfigs = {
+  hk: {
+    region: 'hk', boxClass: 'constructions_box', content1Class: 'constructions_content1', content2Class: 'constructions_content2', bankClass: 'HK_Cooperative_Bank',
+    heroImage: asset('company/hk/HK.jpg'), accountImage: asset('account/香港.png'), copy: makeCopy('香港', 'Hong Kong'),
+    banks: [
+      bank('香港建设银行（亚洲）','CCB Asia','constructions','bank/hk/construction.png'),
+      bank('香港中国银行','Bank of China Hong Kong','boc','bank/hk/china.jpg'),
+      bank('香港交通银行','Bank of Communications Hong Kong','communications','bank/hk/communications.jpg'),
+      bank('香港招商永隆银行','CMB Wing Lung Bank','cmb-winglung','bank/hk/merchants_wing_lung.jpg'),
+      bank('香港中信银行（国际）','CNCBI','citic','bank/hk/china_citic.jpg'),
+      bank('香港汇丰银行','HSBC Hong Kong','hsbc','bank/hk/HSBC.jpg'),
+      bank('香港创兴银行','Chong Hing Bank','chonghing','bank/hk/chong_xing.jpg'),
+      bank('香港星展银行','DBS Hong Kong','dbs','bank/hk/DBS.jpg'),
+      bank('香港恒生银行','Hang Seng Bank','hangseng','bank/hk/hang_seng.jpg'),
+      bank('南洋商业银行','Nanyang Commercial Bank','ncb','bank/hk/NCB.jpg'),
+      bank('香港东亚银行','Bank of East Asia','bea','bank/hk/east_asia.jpg'),
+      bank('香港大新银行','Dah Sing Bank','dahsing','bank/hk/dah_sing.jpg'),
+      bank('华侨银行（香港）','OCBC Hong Kong','ocbc','bank/hk/OCBC.jpg'),
+      bank('香港花旗银行','Citibank Hong Kong','citi','bank/hk/citibank.jpg'),
+      bank('香港渣打银行','Standard Chartered Hong Kong','sc','bank/hk/Standard_Chartered.jpg'),
+      bank('工银亚洲银行','ICBC Asia','icbc','bank/hk/ICBC.jpg'),
+      bank('上海商业银行（香港）','Shanghai Commercial Bank','shanghai-commercial','bank/hk/ShangHai.png')
+    ]
+  },
   sg: {
     region: 'sg', boxClass: 'sg_ocbc_box', content1Class: 'sg_ocbc_content1', content2Class: 'sg_ocbc_content2', bankClass: 'SG_Cooperative_Bank',
     heroImage: asset('company/sg/SG.jpg'), accountImage: asset('account/新加坡.png'), copy: makeCopy('新加坡', 'Singapore'),
